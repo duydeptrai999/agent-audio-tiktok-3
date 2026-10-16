@@ -229,13 +229,68 @@ class ChineseStoryKnowledgeBase:
 
         self._all_stories = []
         for genre_key, stories_list in genre_collections:
-            self._genre_map[genre_key] = stories_list
+            self._genre_map[genre_key] = list(stories_list)
             for s in stories_list:
                 s_copy = dict(s)
                 s_copy["genre_key"] = genre_key
                 self._all_stories.append(s_copy)
 
-        logger.info(f"Đã lập chỉ mục thành công {len(self._all_stories)} tác phẩm trong Knowledge Base.")
+        # Nạp động các tác phẩm cào từ Crawl4AI trong data/crawled_stories/
+        crawled_dir = root_dir / "data" / "crawled_stories"
+        crawled_count = 0
+        if crawled_dir.exists():
+            for json_path in crawled_dir.glob("*.json"):
+                try:
+                    with open(json_path, "r", encoding="utf-8") as f:
+                        c_data = json.load(f)
+                    title = c_data.get("title", json_path.stem)
+                    meta = c_data.get("metadata", {})
+                    analysis = c_data.get("analysis", {})
+                    
+                    # Tự động phân loại genre_key
+                    g_key = "NGUOC_TAM"
+                    text_blob = f"{title} {meta.get('genre', '')} {c_data.get('content', '')[:600]}".lower()
+                    if any(w in text_blob for w in ["trọng sinh", "vả mặt", "sảng văn", "thức tỉnh"]):
+                        g_key = "TRONG_SINH"
+                    elif any(w in text_blob for w in ["án mạng", "trinh thám", "pháp y", "camera"]):
+                        g_key = "HUYEN_NGHI"
+                    elif any(w in text_blob for w in ["mẹ chồng", "nàng dâu", "ly hôn", "gia đình"]):
+                        g_key = "ME_CHONG"
+                    elif any(w in text_blob for w in ["tổng tài", "hào môn", "hợp đồng", "thái tử"]):
+                        g_key = "HAO_MON"
+                    elif any(w in text_blob for w in ["quái đàm", "kinh dị", "quy tắc", "bệnh viện đêm"]):
+                        g_key = "KINH_DI"
+                    elif any(w in text_blob for w in ["sa điêu", "tiếng lòng", "hài hước", "tấu hài"]):
+                        g_key = "SA_DIEU"
+                    elif any(w in text_blob for w in ["cung đấu", "trạch đấu", "hoàng hậu"]):
+                        g_key = "CUNG_DAU"
+                    elif any(w in text_blob for w in ["cứu rỗi", "chữa lành", "thanh xuân"]):
+                        g_key = "CUU_ROI"
+                    elif any(w in text_blob for w in ["mạt thế", "vô hạn", "tích trữ", "kỷ băng hà"]):
+                        g_key = "VO_HAN"
+
+                    c_story = {
+                        "id": 1000 + len(self._all_stories),
+                        "title_vn": title,
+                        "title_cn": title,
+                        "author_platform": f"{meta.get('platform', 'Crawl4AI')} - {meta.get('url', '')}",
+                        "genre": meta.get("genre", "Đoản văn cào tự động"),
+                        "premise": analysis.get("pacing_beat_sheet", {}).get("hoi_1_thiet_lap_va_hook", title),
+                        "characters": f"- Nhân vật chính: Xây dựng theo mô-típ {g_key}\n- Đối kháng: Phản diện leo thang",
+                        "golden_hook": analysis.get("golden_retention_hook_5s", ""),
+                        "acts_and_pacing": f"Hồi 1: {analysis.get('pacing_beat_sheet', {}).get('hoi_1_thiet_lap_va_hook', '')}\nHồi 2: {analysis.get('pacing_beat_sheet', {}).get('hoi_2_nen_ap_suat_va_leo_thang', '')}\nHồi 3: {analysis.get('pacing_beat_sheet', {}).get('hoi_3_bung_no_va_sa_van_shuangdian', '')}",
+                        "plot_twist": analysis.get("cliffhanger_or_ending", ""),
+                        "core_lessons": "\n".join(analysis.get("scriptwriting_takeaways", ["Áp dụng từ dữ liệu Crawl4AI"])),
+                        "genre_key": g_key,
+                        "is_crawled": True
+                    }
+                    self._all_stories.append(c_story)
+                    self._genre_map.setdefault(g_key, []).append(c_story)
+                    crawled_count += 1
+                except Exception as e:
+                    logger.debug(f"Không thể nạp file crawled story {json_path}: {e}")
+
+        logger.info(f"Đã lập chỉ mục thành công {len(self._all_stories)} tác phẩm trong Knowledge Base (bao gồm {crawled_count} truyện cào từ Crawl4AI).")
 
     @property
     def total_stories(self) -> int:
@@ -252,36 +307,44 @@ class ChineseStoryKnowledgeBase:
         topic_title: str = "",
         topic_summary: str = "",
         category: Optional[VideoCategory] = None,
-        top_k: int = 3
+        top_k: int = 3,
+        genre_hint: str = ""
     ) -> Dict[str, Any]:
         """
         Tra cứu cơ sở dữ liệu để tìm ra các case study và bài học tương đồng nhất.
         Được gọi bắt buộc trước mỗi lần biên kịch sinh kịch bản mới.
         """
-        text_corpus = f"{topic_title} {topic_summary}".lower()
+        text_corpus = f"{topic_title} {topic_summary} {genre_hint}".lower()
         
         # 1. Định hướng nhóm thể loại ưu tiên
         target_genre_keys = []
-        if any(w in text_corpus for w in ["ngược", "hỏa táng", "bạch nguyệt quang", "thế thân", "bỏ lỡ", "tàn tâm"]):
-            target_genre_keys.append("NGUOC_TAM")
-        if any(w in text_corpus for w in ["trọng sinh", "vả mặt", "thiên kim", "sống lại", "thức tỉnh", "sảng văn"]):
-            target_genre_keys.append("TRONG_SINH")
-        if any(w in text_corpus for w in ["án mạng", "camera", "phòng kín", "thám tử", "sát nhân", "công an", "pháp y", "manh mối", "50 mét"]):
-            target_genre_keys.append("HUYEN_NGHI")
-        if any(w in text_corpus for w in ["mẹ chồng", "nàng dâu", "sính lễ", "nhà chồng", "ly hôn", "ngoại tình", "tiểu tam", "em trai chồng", "ma đệ ma", "cực phẩm"]):
-            target_genre_keys.append("ME_CHONG")
-        if any(w in text_corpus for w in ["hợp đồng", "tổng tài", "100 tỷ", "hào môn", "gả thay", "thái tử", "giả nghèo", "cưới trước yêu sau"]):
-            target_genre_keys.append("HAO_MON")
-        if any(w in text_corpus for w in ["quy tắc", "quái đàm", "kinh dị", "bệnh viện đêm", "ký túc xá", "ma-nơ-canh", "sinh tồn"]):
-            target_genre_keys.append("KINH_DI")
-        if any(w in text_corpus for w in ["tiếng lòng", "đọc suy nghĩ", "mèo", "tấu hài", "sa điêu", "hài hước", "nhầm tin nhắn", "phản sáo lộ"]):
-            target_genre_keys.append("SA_DIEU")
-        if any(w in text_corpus for w in ["cung đấu", "hoàng hậu", "thám hoa", "thứ nữ", "khoa cử", "vương phi", "trạch đấu"]):
-            target_genre_keys.append("CUNG_DAU")
-        if any(w in text_corpus for w in ["chữa lành", "thanh xuân", "học bá", "khiếm thính", "bức thư", "hộp thời gian", "bác trương", "cứu rỗi"]):
-            target_genre_keys.append("CUU_ROI")
-        if any(w in text_corpus for w in ["mạt thế", "bão tuyết", "kỷ băng hà", "tích trữ", "vô hạn lưu", "zombie", "thần chết", "axit"]):
-            target_genre_keys.append("VO_HAN")
+        if genre_hint:
+            gh = genre_hint.upper().strip()
+            for k in ["NGUOC_TAM", "TRONG_SINH", "HUYEN_NGHI", "ME_CHONG", "HAO_MON", "KINH_DI", "SA_DIEU", "CUNG_DAU", "CUU_ROI", "VO_HAN"]:
+                if k in gh or gh in k:
+                    if k not in target_genre_keys:
+                        target_genre_keys.append(k)
+
+        if any(w in text_corpus for w in ["nguoc", "ngược", "hỏa táng", "hoa tang", "bạch nguyệt quang", "the than", "thế thân", "bỏ lỡ", "tàn tâm", "tan tam"]):
+            if "NGUOC_TAM" not in target_genre_keys: target_genre_keys.append("NGUOC_TAM")
+        if any(w in text_corpus for w in ["trong_sinh", "trọng sinh", "vả mặt", "va mat", "thiên kim", "thien kim", "sống lại", "song lai", "thức tỉnh", "sảng văn"]):
+            if "TRONG_SINH" not in target_genre_keys: target_genre_keys.append("TRONG_SINH")
+        if any(w in text_corpus for w in ["huyen_nghi", "trinh_tham", "án mạng", "an mang", "camera", "phòng kín", "thám tử", "sát nhân", "công an", "pháp y", "manh mối", "50 mét"]):
+            if "HUYEN_NGHI" not in target_genre_keys: target_genre_keys.append("HUYEN_NGHI")
+        if any(w in text_corpus for w in ["me_chong", "mẹ chồng", "nàng dâu", "nang dau", "sính lễ", "nhà chồng", "ly hôn", "ngoại tình", "tiểu tam", "em trai chồng", "ma đệ ma", "cực phẩm"]):
+            if "ME_CHONG" not in target_genre_keys: target_genre_keys.append("ME_CHONG")
+        if any(w in text_corpus for w in ["hao_mon", "hợp đồng", "tổng tài", "tong tai", "100 tỷ", "hào môn", "gả thay", "thái tử", "giả nghèo", "cưới trước yêu sau"]):
+            if "HAO_MON" not in target_genre_keys: target_genre_keys.append("HAO_MON")
+        if any(w in text_corpus for w in ["kinh_di", "quai_dam", "quy tắc", "quái đàm", "kinh dị", "bệnh viện đêm", "ký túc xá", "ma-nơ-canh", "sinh tồn"]):
+            if "KINH_DI" not in target_genre_keys: target_genre_keys.append("KINH_DI")
+        if any(w in text_corpus for w in ["sa_dieu", "hai_huoc", "tiếng lòng", "tieng long", "đọc suy nghĩ", "mèo", "tấu hài", "sa điêu", "hài hước", "nhầm tin nhắn", "phản sáo lộ"]):
+            if "SA_DIEU" not in target_genre_keys: target_genre_keys.append("SA_DIEU")
+        if any(w in text_corpus for w in ["cung_dau", "trach_dau", "cung đấu", "hoàng hậu", "thám hoa", "thứ nữ", "khoa cử", "vương phi", "trạch đấu"]):
+            if "CUNG_DAU" not in target_genre_keys: target_genre_keys.append("CUNG_DAU")
+        if any(w in text_corpus for w in ["cuu_roi", "chua_lanh", "chữa lành", "thanh xuân", "học bá", "khiếm thính", "bức thư", "hộp thời gian", "bác trương", "cứu rỗi"]):
+            if "CUU_ROI" not in target_genre_keys: target_genre_keys.append("CUU_ROI")
+        if any(w in text_corpus for w in ["vo_han", "mat_the", "mạt thế", "bão tuyết", "kỷ băng hà", "tích trữ", "vô hạn lưu", "zombie", "thần chết", "axit"]):
+            if "VO_HAN" not in target_genre_keys: target_genre_keys.append("VO_HAN")
 
         # Fallback theo Category nếu không tìm thấy từ khóa
         if not target_genre_keys:
@@ -357,18 +420,25 @@ class ChineseStoryKnowledgeBase:
         category: Optional[VideoCategory] = None,
         topic_title: str = "",
         topic_summary: str = "",
-        top_k: int = 3
+        top_k: int = 3,
+        genre_hint: str = ""
     ) -> Dict[str, Any]:
         """
         Hàm bắt buộc gọi trước khi biên soạn bất kỳ kịch bản nào.
         Thực hiện tra cứu, lập kế hoạch chỉ dẫn và lưu vết audit log vào data/knowledge_consultations.jsonl.
+        Gắn kèm consultation_token duy nhất để làm thẻ bài thông qua Cổng Kiểm Duyệt Tri Thức.
         """
         brief = self.query_masterclass(
             topic_title=topic_title,
             topic_summary=topic_summary,
             category=category,
-            top_k=top_k
+            top_k=top_k,
+            genre_hint=genre_hint
         )
+
+        token = f"TOKEN_KB_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{os.urandom(4).hex()}"
+        brief["consultation_token"] = token
+        brief["consulted_at"] = datetime.now().isoformat()
 
         # Ghi log lịch sử tra cứu (Audit Trail)
         consult_log_path = root_dir / "data" / "knowledge_consultations.jsonl"
@@ -376,6 +446,7 @@ class ChineseStoryKnowledgeBase:
 
         log_entry = {
             "timestamp": datetime.now().isoformat(),
+            "consultation_token": token,
             "query_title": topic_title,
             "target_genres": brief.get("target_genres", []),
             "matched_cases": [c["title"] for c in brief.get("relevant_cases", [])],
@@ -434,8 +505,46 @@ def require_knowledge_consultation(
     category: Optional[VideoCategory] = None,
     topic_title: str = "",
     topic_summary: str = "",
-    top_k: int = 3
+    top_k: int = 3,
+    genre_hint: str = ""
 ) -> Dict[str, Any]:
     """Hàm tiện ích toàn cục bắt buộc gọi trước khi tạo bất kỳ kịch bản nào"""
     kb = get_knowledge_base()
-    return kb.consult_before_writing(category=category, topic_title=topic_title, topic_summary=topic_summary, top_k=top_k)
+    return kb.consult_before_writing(category=category, topic_title=topic_title, topic_summary=topic_summary, top_k=top_k, genre_hint=genre_hint)
+
+
+class KnowledgeGateViolationError(Exception):
+    """
+    Ngoại lệ nghiêm ngặt: Ném ra khi một tiến trình biên kịch cố tình bỏ qua
+    bước tra cứu Cơ sở dữ liệu 100 tác phẩm kinh điển!
+    """
+    pass
+
+
+def verify_knowledge_gate(consult_data: Optional[Dict[str, Any]]) -> bool:
+    """
+    Cổng kiểm duyệt tri thức bắt buộc (Mandatory Knowledge Gate):
+    Xác minh xem kịch bản đã được đối soát qua Cơ sở tri thức 100 bộ truyện kinh điển chưa.
+    Nếu chưa -> Ném ngoại lệ KnowledgeGateViolationError và từ chối sinh kịch bản.
+    """
+    if not consult_data or not isinstance(consult_data, dict):
+        raise KnowledgeGateViolationError(
+            "🚨 VI PHẠM NGUYÊN TẮC BIÊN KỊCH: "
+            "Bắt buộc phải tra cứu Cơ sở tri thức 100 tác phẩm đoản văn kinh điển "
+            "(thông qua 'require_knowledge_consultation' hoặc 'consult_before_writing') "
+            "trước khi tiến hành lập dàn ý hoặc sinh kịch bản!"
+        )
+
+    token = consult_data.get("consultation_token")
+    cases = consult_data.get("relevant_cases", [])
+
+    if not token or not cases:
+        raise KnowledgeGateViolationError(
+            "🚨 CƠ SỞ TRI THỨC CHƯA ĐƯỢC ĐỐI SOÁT HỢP LỆ: "
+            "Dữ liệu tư vấn thiếu Thẻ bài tri thức (consultation_token) "
+            "hoặc danh sách Case Study tham chiếu hợp lệ!"
+        )
+
+    logger.info(f"✅ Knowledge Gate PASSED! Thẻ bài tri thức: {token} ({len(cases)} Case Studies được bảo chứng).")
+    return True
+

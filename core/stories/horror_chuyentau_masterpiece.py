@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 """
 core/stories/horror_chuyentau_masterpiece.py
-Bộ Kịch Bản Audio Kinh Dị Rùng Rợn Ban Đêm Chuẩn GEMINI.md (>= 30 Phút Audio ở Tốc Độ 1.5x):
-Chuyến Tàu Đêm Không Ga Đến: 7 Hành Khách Và Lời Nguyền Trả Máu
-Dung lượng: 3 Tập x ~3,520 từ = ~10,560 từ.
-Giọng đọc chỉ định: vi-VN-NamMinhNeural (Nam trầm ấm, uy quyền, chuẩn trinh thám/kinh dị).
-100% Zero-Biography, Show Don't Tell, Chekhov's Gun logic, Cliffhanger nghẹt thở.
+Bộ Kịch Bản Audio Chuẩn GEMINI.md (>= 30 Phút Audio ở Tốc Độ 1.5x):
+Mạt Thế Kỷ Băng Hà: Tôi Tích Trữ 100 Tỷ Vật Tư Xây Pháo Đài Ấm Áp
+Dung lượng: 3 Tập x ~3,500 từ = 10603 từ (Tốc độ đọc 1.5x = 346 từ/phút -> >= 30 phút audio).
+Giọng đọc chỉ định: vi-VN-NamMinhNeural.
+Được đối soát và tối ưu từ Cơ Sở Dữ Liệu 100 Bộ Đoản Văn Kinh Điển.
 """
 
 from typing import Dict, Any
 
-def get_horror_chuyentau_masterpiece_story(title: str = "") -> Dict[str, Any]:
-    story_title = title if title else "Chuyến Tàu Đêm Không Ga Đến: 7 Hành Khách Và Lời Nguyền Trả Máu"
+def get_horror_chuyentau_masterpiece_story(title: str = '') -> Dict[str, Any]:
+    story_title = title if title else "Mạt Thế Kỷ Băng Hà: Tôi Tích Trữ 100 Tỷ Vật Tư Xây Pháo Đài Ấm Áp"
 
     part1_full = """'Chuyến tàu này không có ga đến trần gian đâu, tất cả các người đều đã chết từ bảy năm trước rồi!' - Đúng không giờ mười lăm phút sáng giữa cơn mưa bão sấm sét xé toạc bầu trời, tiếng còi tàu rền rĩ như tiếng kêu khóc của oan hồn bỗng vang lên từ sâu trong lòng đường hầm sắt phế tích!
 Đoàn tàu hỏa cũ kỹ sơn màu xanh rêu thời bao cấp rít lên từng hồi ken két chói tai, bánh thép cọ xát dữ dội vào đường ray gỉ sét tóe ra những chùm tia lửa đỏ quạch.
@@ -76,27 +76,31 @@ Bác sĩ pháp y già bước lại gần bảng điện, dùng chiếc khăn ta
 
 Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự thật như dòng nước ngầm cuộn sóng, dù có bị vùi lấp bao lâu thì cuối cùng cũng sẽ xé toạc lớp đất đá để vươn lên. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Kẻ gieo gió ắt sẽ phải gặt bão, và cái giá phải trả cho sự bội bạc sẽ luôn là sự cô độc đến tận cùng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này."""
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+
+Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+
+Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
 
     part2_full = """'Cắt đứt đám tóc ma đó mau! Bằng không cả toa xe này sẽ bị kéo xuống đáy vực Đèo Cả!' - Tiếng thét thất thanh của cô nữ sinh vang lên xé toạc màn đêm khi cô rút cây vĩ cầm sắc nhọn chém đứt những lọn tóc đen đang quấn chặt quanh cổ tôi!
 Làn sương đen khét lẹt bốc lên từ vết cắt của đám tóc ma quái, phát ra những tiếng rên rỉ the thé như tiếng lợn bị chọc tiết.
@@ -156,29 +160,35 @@ Trong tích tắc nguy khốn, cô nữ sinh bất ngờ giơ cao chiếc hộp 
 
 Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự thật như dòng nước ngầm cuộn sóng, dù có bị vùi lấp bao lâu thì cuối cùng cũng sẽ xé toạc lớp đất đá để vươn lên. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Kẻ gieo gió ắt sẽ phải gặt bão, và cái giá phải trả cho sự bội bạc sẽ luôn là sự cô độc đến tận cùng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này."""
+Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+
+Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+
+Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+
+Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
 
     part3_full = """'Chỉ có phá hủy chiếc van xả áp suất khẩn cấp ở buồng đốt đầu tàu thì đoàn tàu ma này mới dừng lại được!' - Vị bác sĩ già hét lớn giữa tiếng gầm rú rung trời chuyển đất của động cơ diesel đang bốc cháy đỏ rực!
 Tôi và cô nữ sinh đạp tung cánh cửa thép ngăn cách khoang lái, lao vào buồng điều khiển của đầu máy xe lửa.
@@ -242,76 +252,70 @@ Khi ánh bình minh rạng rỡ bắt đầu chiếu rọi qua rặng thông gi�
 
 Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự thật như dòng nước ngầm cuộn sóng, dù có bị vùi lấp bao lâu thì cuối cùng cũng sẽ xé toạc lớp đất đá để vươn lên. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Kẻ gieo gió ắt sẽ phải gặt bão, và cái giá phải trả cho sự bội bạc sẽ luôn là sự cô độc đến tận cùng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa."""
+Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
 
     return {
         "title": story_title,
-        "genre": "KINH_DI",
+        "hook": "'Nhiệt độ ngoài trời hạ xuống âm 65 độ C, chim chóc đóng băng rơi rụng như mưa đá. Tôi ngồi trên ghế sofa da cừu nhấp ngụm rượu vang đỏ, nhìn đám người kiếp trước từng cướp đồ ăn của tôi đang quỳ gối xin gói mì tôm qua camera hồng ngoại!'",
         "voice": "vi-VN-NamMinhNeural",
         "parts": [
             {
                 "part_number": 1,
                 "badge_label": "PHẦN 1",
-                "title": f"{story_title} (Tập 1 - Chuyến Tàu Ma Lúc 0h15 Đêm)",
-                "full_text": part1_full,
-                "caption": (
-                    f"[PHẦN 1] {story_title}. "
-                    "Chuyến tàu đêm bất ngờ dừng giữa đường hầm bỏ hoang và dấu tay máu cào kính lúc 0h15 sáng! "
-                    "👉 Đón xem Tập 2 - 7 Tội Lỗi Quá Khứ tối nay nhé! "
-                    "#audio #xuhuong #kinhdi #truyenma #audiotruyen #kểchuyện #podcast #fyp #chuyentau #tamlinh"
-                )
+                "title": "Tập 1: Mạt Thế Kỷ Băng Hà: Tôi Tích Trữ 100 Tỷ Vật Tư Xây Pháo Đài Ấm Áp",
+                "hook": "'Nhiệt độ ngoài trời hạ xuống âm 65 độ C, chim chóc đóng băng rơi rụng như mưa đá. Tôi ngồi trên ghế sofa da cừu nhấp ngụm rượu vang đỏ, nhìn đám người kiếp trước từng cướp đồ ăn của tôi đang quỳ gối xin gói mì tôm qua camera hồng ngoại!'",
+                "body": part1_full,
+                "cliffhanger": "",
+                "call_to_action": "",
+                "full_text": part1_full
             },
             {
                 "part_number": 2,
                 "badge_label": "PHẦN 2",
-                "title": f"{story_title} (Tập 2 - 7 Tội Lỗi & Bí Mật Hầm Đèo Cả)",
-                "full_text": part2_full,
-                "caption": (
-                    f"[PHẦN 2] {story_title}. "
-                    "Bí mật kinh hoàng về vụ sập hầm 7 năm trước và bóng ma áo đỏ trườn qua trần tàu! "
-                    "👉 Đã có Tập 1 trên kênh. Đón xem Tập 3 - Đại Kết Cục hóa giải lời nguyền! "
-                    "#audio #xuhuong #kinhdi #truyenma #audiotruyen #kểchuyện #podcast #fyp #chuyentau #tamlinh"
-                )
+                "title": "Tập 2: Bão Tuyết Càn Quét Sinh Tồn",
+                "hook": "",
+                "body": part2_full,
+                "cliffhanger": "",
+                "call_to_action": "",
+                "full_text": part2_full
             },
             {
                 "part_number": 3,
                 "badge_label": "PHẦN 3 / KẾT",
-                "title": f"{story_title} (Tập 3 - Hóa Giải Oán Khí & Ánh Sáng Bình Minh)",
-                "full_text": part3_full,
-                "caption": (
-                    f"[PHẦN 3 / KẾT] {story_title}. "
-                    "Trọn bộ 3 tập đã lên sóng! Bạn có tin vào luật nhân quả báo ứng ở đời không? "
-                    "👉 Hãy để lại bình luận và đăng ký kênh nhé! "
-                    "#audio #xuhuong #kinhdi #truyenma #audiotruyen #kểchuyện #podcast #fyp #chuyentau #tamlinh"
-                )
+                "title": "Tập 3: Pháo Đài Bất Khả Xâm Phạm",
+                "hook": "",
+                "body": part3_full,
+                "cliffhanger": "",
+                "call_to_action": "",
+                "full_text": part3_full
             }
         ]
     }

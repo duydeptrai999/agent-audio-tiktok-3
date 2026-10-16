@@ -1,0 +1,23 @@
+{
+  "series1_trangmau": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series2_huyetnguyen": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series3_mechong": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series4_matthe": {
+    "part1": true,
+    "part2": true,
+    "part3": false
+  },
+  "base_time": 1792167987.5411117
+}

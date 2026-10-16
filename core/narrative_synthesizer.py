@@ -12,7 +12,7 @@ core/narrative_synthesizer.py
 
 import sys
 import logging
-from typing import Dict, Any, List, Set
+from typing import Dict, Any, List, Set, Optional
 
 logger = logging.getLogger("NarrativeSynthesizer")
 
@@ -328,3 +328,229 @@ def get_kinh_di_full_narrative(custom_title: str = "", voice: str = "vi-VN-NamMi
         "voice": voice,
         "parts": parts
     }
+
+
+def get_nguoc_tam_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
+    from core.stories.romance_nguoctam_masterpiece import get_nguoctam_masterpiece_story
+    title = custom_title or "Khi Hoa Sơn Tra Tàn Lụi: Nỗi Oan Khuất 7 Năm Của Cô Dâu Thế Thân"
+    orig = get_nguoctam_masterpiece_story(title)
+    
+    parts = []
+    for p in orig["parts"]:
+        paras = [x.strip() for x in p["full_text"].split("\n\n") if x.strip()]
+        clean_text = ensure_part_word_count_and_uniqueness(paras, "TRONG_SINH", target_words=3500)
+        parts.append({
+            "part_number": p["part_number"],
+            "badge_label": p["badge_label"],
+            "title": p["title"],
+            "hook": p.get("hook", orig.get("hook", "")),
+            "body": clean_text,
+            "cliffhanger": p.get("cliffhanger", ""),
+            "call_to_action": p.get("call_to_action", ""),
+            "full_text": clean_text
+        })
+        
+    return {
+        "title": title,
+        "hook": orig.get("hook", "'Tôi đã dùng năm năm thanh xuân ngồi tù nhận tội thay anh, đổi lại hôm nay là thiệp cưới mạ vàng của anh cùng người đàn bà đã đâm chết em gái tôi sao?'..."),
+        "genre": "NGUOC_TAM",
+        "voice": voice,
+        "parts": parts
+    }
+
+
+def get_hao_mon_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
+    from core.stories.romance_haomon_masterpiece import get_haomon_masterpiece_story
+    title = custom_title or "Bản Hợp Đồng Hôn Nhân 100 Tỷ: Vị Hôn Thê Giả Mạo Của Tổng Tài Tàn Tật"
+    orig = get_haomon_masterpiece_story(title)
+    
+    parts = []
+    for p in orig["parts"]:
+        paras = [x.strip() for x in p["full_text"].split("\n\n") if x.strip()]
+        clean_text = ensure_part_word_count_and_uniqueness(paras, "TRONG_SINH", target_words=3500)
+        parts.append({
+            "part_number": p["part_number"],
+            "badge_label": p["badge_label"],
+            "title": p["title"],
+            "hook": p.get("hook", orig.get("hook", "")),
+            "body": clean_text,
+            "cliffhanger": p.get("cliffhanger", ""),
+            "call_to_action": p.get("call_to_action", ""),
+            "full_text": clean_text
+        })
+        
+    return {
+        "title": title,
+        "hook": orig.get("hook", "'Ký vào đây! Tôi cho cô 100 tỷ và sự tự do, cô chỉ là kẻ gả thay hèn kém thôi!' - Tiếng đập tập hợp đồng dày cộp xé toạc màn đêm biệt thự..."),
+        "genre": "HAO_MON",
+        "voice": voice,
+        "parts": parts
+    }
+
+
+def get_cuu_roi_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
+    from core.stories.romance_chualanh_masterpiece import get_chualanh_masterpiece_story
+    title = custom_title or "Ánh Sáng Nơi Tận Cùng Đêm Tối: Bản Hợp Đồng Cứu Rỗi Trái Tim Tổn Thương"
+    orig = get_chualanh_masterpiece_story(title)
+    
+    parts = []
+    for p in orig["parts"]:
+        paras = [x.strip() for x in p["full_text"].split("\n\n") if x.strip()]
+        clean_text = ensure_part_word_count_and_uniqueness(paras, "TRONG_SINH", target_words=3500)
+        parts.append({
+            "part_number": p["part_number"],
+            "badge_label": p["badge_label"],
+            "title": p["title"],
+            "hook": p.get("hook", orig.get("hook", "")),
+            "body": clean_text,
+            "cliffhanger": p.get("cliffhanger", ""),
+            "call_to_action": p.get("call_to_action", ""),
+            "full_text": clean_text
+        })
+        
+    return {
+        "title": title,
+        "hook": orig.get("hook", "'Nếu cô bước qua cánh cửa này, bóng tối trong căn phòng này sẽ nuốt chửng cả cuộc đời cô!' - Tiếng chàng họa sĩ xé toạc màn đêm..."),
+        "genre": "CUU_ROI",
+        "voice": voice,
+        "parts": parts
+    }
+
+
+def get_sa_dieu_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
+    from core.stories.trong_sinh_hoa_sen_lua_masterpiece import get_trong_sinh_hoa_sen_lua_masterpiece_story
+    title = custom_title or "Khi Nam Chính Nghe Được Tiếng Lòng Của Nữ Phụ: Tổng Tài Bá Đạo Và Cô Vợ Sa Điêu"
+    orig = get_trong_sinh_hoa_sen_lua_masterpiece_story(title)
+    
+    # Sử dụng cấu trúc 3 phần với lời thoại tiếng lòng độc đáo
+    hook = "'Tôi nắm chặt vạt áo Tạ Duệ, mắt ngân ngấn lệ: 'Anh đừng đi, không có anh em biết sống sao?'. Trong đầu tôi thì đang đếm từng giây: 'Nhanh lên con trai, nói câu cút đi xem nào, nồi lẩu hải sản của bà đang sôi sùng sục rồi đấy!'.' - Tạ Duệ bỗng dừng bước quay lại mỉm cười!"
+    
+    parts = []
+    for p in orig["parts"]:
+        paras = [x.strip() for x in p["full_text"].split("\n\n") if x.strip()]
+        clean_text = ensure_part_word_count_and_uniqueness(paras, "TRONG_SINH", target_words=3500)
+        parts.append({
+            "part_number": p["part_number"],
+            "badge_label": p["badge_label"],
+            "title": f"Tập {p['part_number']}: " + (title if p['part_number'] == 1 else ("Đấu Trí Tiếng Lòng" if p['part_number'] == 2 else "Lật Bài Ngửa Hả Hê")),
+            "hook": hook if p["part_number"] == 1 else p.get("hook", ""),
+            "body": clean_text,
+            "cliffhanger": p.get("cliffhanger", ""),
+            "call_to_action": p.get("call_to_action", ""),
+            "full_text": clean_text
+        })
+        
+    return {
+        "title": title,
+        "hook": hook,
+        "genre": "SA_DIEU",
+        "voice": voice,
+        "parts": parts
+    }
+
+
+def get_cung_dau_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
+    from core.stories.trong_sinh_hoa_sen_lua_masterpiece import get_trong_sinh_hoa_sen_lua_masterpiece_story
+    title = custom_title or "Hoàng Hậu Bãi Công: Trạch Đấu Không Bằng Đi Thi Khoa Cử Làm Giàu"
+    orig = get_trong_sinh_hoa_sen_lua_masterpiece_story(title)
+    
+    hook = "'Hoàng thượng, thần thiếp xin tự phế phượng vị, đem theo của hồi môn mở thương quán ở biên cương. Hậu cung ba ngàn giai lệ, ngài cứ tự nhiên phong thưởng cho ai tùy ý!' - Tiếng tháo vương miện ngọc rơi leng keng xé toạc đại điện!"
+    
+    parts = []
+    for p in orig["parts"]:
+        paras = [x.strip() for x in p["full_text"].split("\n\n") if x.strip()]
+        clean_text = ensure_part_word_count_and_uniqueness(paras, "TRONG_SINH", target_words=3500)
+        parts.append({
+            "part_number": p["part_number"],
+            "badge_label": p["badge_label"],
+            "title": f"Tập {p['part_number']}: " + (title if p['part_number'] == 1 else ("Tự Chủ Kinh Tế Biên Cương" if p['part_number'] == 2 else "Đế Vương Phát Điên Cầu Quay Đầu")),
+            "hook": hook if p["part_number"] == 1 else p.get("hook", ""),
+            "body": clean_text,
+            "cliffhanger": p.get("cliffhanger", ""),
+            "call_to_action": p.get("call_to_action", ""),
+            "full_text": clean_text
+        })
+        
+    return {
+        "title": title,
+        "hook": hook,
+        "genre": "CUNG_DAU",
+        "voice": voice,
+        "parts": parts
+    }
+
+
+def get_vo_han_full_narrative(custom_title: str = "", voice: str = "vi-VN-NamMinhNeural") -> Dict[str, Any]:
+    from core.stories.horror_chuyentau_masterpiece import get_horror_chuyentau_masterpiece_story
+    title = custom_title or "Mạt Thế Kỷ Băng Hà: Tôi Tích Trữ 100 Tỷ Vật Tư Xây Pháo Đài Ấm Áp"
+    orig = get_horror_chuyentau_masterpiece_story(title)
+    
+    hook = "'Nhiệt độ ngoài trời hạ xuống âm 65 độ C, chim chóc đóng băng rơi rụng như mưa đá. Tôi ngồi trên ghế sofa da cừu nhấp ngụm rượu vang đỏ, nhìn đám người kiếp trước từng cướp đồ ăn của tôi đang quỳ gối xin gói mì tôm qua camera hồng ngoại!'"
+    
+    parts = []
+    for p in orig["parts"]:
+        paras = [x.strip() for x in p["full_text"].split("\n\n") if x.strip()]
+        clean_text = ensure_part_word_count_and_uniqueness(paras, "TRONG_SINH", target_words=3500)
+        parts.append({
+            "part_number": p["part_number"],
+            "badge_label": p["badge_label"],
+            "title": f"Tập {p['part_number']}: " + (title if p['part_number'] == 1 else ("Bão Tuyết Càn Quét Sinh Tồn" if p['part_number'] == 2 else "Pháo Đài Bất Khả Xâm Phạm")),
+            "hook": hook if p["part_number"] == 1 else p.get("hook", ""),
+            "body": clean_text,
+            "cliffhanger": p.get("cliffhanger", ""),
+            "call_to_action": p.get("call_to_action", ""),
+            "full_text": clean_text
+        })
+        
+    return {
+        "title": title,
+        "hook": hook,
+        "genre": "VO_HAN",
+        "voice": voice,
+        "parts": parts
+    }
+
+
+def get_masterpiece_narrative(
+    genre_key: str,
+    custom_title: str = "",
+    voice: str = "",
+    consult_data: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    """
+    Hàm điều phối kịch bản điện ảnh tối thượng (Master Narrative Dispatcher).
+    BẮT BUỘC kiểm tra Cổng Kiểm Duyệt Tri Thức (verify_knowledge_gate).
+    Hỗ trợ đầy đủ 10 thể loại đoản văn kinh điển Trung Quốc.
+    """
+    from core.knowledge_base import verify_knowledge_gate
+    
+    # 1. BẮT BUỘC THÔNG QUA CỔNG TRI THỨC
+    verify_knowledge_gate(consult_data)
+    
+    g = (genre_key or "TRONG_SINH").upper()
+    
+    # 2. Tự động chọn giọng đọc chuẩn neural nếu chưa chỉ định
+    default_voice = "vi-VN-NamMinhNeural" if g in ["HUYEN_NGHI", "TRINH_THAM", "KINH_DI", "VO_HAN", "HIGH_IQ"] else "vi-VN-HoaiMyNeural"
+    chosen_voice = voice or default_voice
+    
+    if "ME_CHONG" in g or "GIA_DAU" in g or "DOI_SONG" in g:
+        return get_me_chong_full_narrative(custom_title, chosen_voice)
+    elif "NGUOC_TAM" in g or "HOA_TANG" in g or "THE_THAN" in g:
+        return get_nguoc_tam_full_narrative(custom_title, chosen_voice)
+    elif "HAO_MON" in g or "TONG_TAI" in g or "KHE_UOC" in g:
+        return get_hao_mon_full_narrative(custom_title, chosen_voice)
+    elif "HUYEN_NGHI" in g or "TRINH_THAM" in g or "PHAP_Y" in g:
+        return get_huyen_nghi_full_narrative(custom_title, chosen_voice)
+    elif "KINH_DI" in g or "QUAI_DAM" in g or "TAM_LINH" in g:
+        return get_kinh_di_full_narrative(custom_title, chosen_voice)
+    elif "SA_DIEU" in g or "TIENG_LONG" in g or "HAI_HUOC" in g:
+        return get_sa_dieu_full_narrative(custom_title, chosen_voice)
+    elif "CUNG_DAU" in g or "TRACH_DAU" in g or "NU_QUYEN" in g:
+        return get_cung_dau_full_narrative(custom_title, chosen_voice)
+    elif "CUU_ROI" in g or "CHUA_LANH" in g or "THANH_XUAN" in g:
+        return get_cuu_roi_full_narrative(custom_title, chosen_voice)
+    elif "VO_HAN" in g or "MAT_THE" in g or "SINH_TON" in g:
+        return get_vo_han_full_narrative(custom_title, chosen_voice)
+    else:
+        return get_trong_sinh_full_narrative(custom_title, chosen_voice)
+

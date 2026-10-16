@@ -68,17 +68,19 @@ class MasterScriptEngine:
         category: Optional[VideoCategory] = None,
         topic_title: str = "",
         topic_summary: str = "",
-        top_k: int = 3
+        top_k: int = 3,
+        genre_hint: str = ""
     ) -> Dict[str, Any]:
         """
         GIAI ĐOẠN 1: Bắt buộc tra cứu cơ sở tri thức trước khi viết.
         """
-        logger.info(f"Đang tra cứu cơ sở tri thức cho đề tài: '{topic_title}'...")
+        logger.info(f"Đang tra cứu cơ sở tri thức cho đề tài: '{topic_title}' (genre: '{genre_hint}')...")
         brief = require_knowledge_consultation(
             category=category,
             topic_title=topic_title,
             topic_summary=topic_summary,
-            top_k=top_k
+            top_k=top_k,
+            genre_hint=genre_hint
         )
         return brief
 
@@ -91,7 +93,11 @@ class MasterScriptEngine:
     ) -> Dict[str, Any]:
         """
         GIAI ĐOẠN 2: Lập dàn ý kiến trúc 3 hồi, cài cắm súng Chekhov và điểm cắt nghẹt thở.
+        BẮT BUỘC KIỂM TRA CỔNG TRI THỨC (verify_knowledge_gate).
         """
+        from core.knowledge_base import verify_knowledge_gate
+        verify_knowledge_gate(consult_data)
+
         relevant_cases = consult_data.get("relevant_cases", [])
         hook_template = consult_data.get("recommended_hook_template", OPENING_HOOK_TEMPLATES_6[0])
 
@@ -99,6 +105,7 @@ class MasterScriptEngine:
             "title": title,
             "genre_key": genre_key,
             "premise": premise,
+            "consultation_token": consult_data.get("consultation_token", ""),
             "benchmark_cases": [c["title"] for c in relevant_cases],
             "hook_strategy": hook_template["type"],
             "chekhov_guns": [
@@ -142,24 +149,69 @@ class MasterScriptEngine:
         """
         GIAI ĐOẠN 3: Biên soạn kịch bản điện ảnh 3 phần đạt chuẩn >= 3,460 từ/tập (Tổng >= 10,380 từ).
         100% không lặp lại đoạn văn, tiết tấu ngắt nghỉ câu ngắn 10-20 từ cho Edge-TTS Neural Speech.
+        BẮT BUỘC KIỂM TRA CỔNG TRI THỨC (verify_knowledge_gate).
         """
-        from core.narrative_synthesizer import (
-            get_trong_sinh_full_narrative,
-            get_me_chong_full_narrative,
-            get_huyen_nghi_full_narrative,
-            get_kinh_di_full_narrative
+        from core.knowledge_base import verify_knowledge_gate
+        verify_knowledge_gate(consult_data)
+
+        from core.narrative_synthesizer import get_masterpiece_narrative
+        return get_masterpiece_narrative(
+            genre_key=genre_key,
+            custom_title=title,
+            voice=voice,
+            consult_data=consult_data
         )
 
-        genre_upper = (genre_key or "TRONG_SINH").upper()
-
-        if "ME_CHONG" in genre_upper or "GIA_DAU" in genre_upper or "DOI_SONG" in genre_upper:
-            return get_me_chong_full_narrative(title, voice)
-        elif "HUYEN_NGHI" in genre_upper or "TRINH_THAM" in genre_upper:
-            return get_huyen_nghi_full_narrative(title, voice)
-        elif "KINH_DI" in genre_upper or "TAM_LINH" in genre_upper:
-            return get_kinh_di_full_narrative(title, voice)
-        else:
-            return get_trong_sinh_full_narrative(title, voice)
+    def generate_full_masterpiece(
+        self,
+        genre_key: str = "TRONG_SINH",
+        title: str = "",
+        premise: str = "",
+        voice: str = ""
+    ) -> Dict[str, Any]:
+        """
+        Quy trình chuẩn khép kín 5 giai đoạn:
+        1. Consult Knowledge -> 2. Build Blueprint -> 3. Synthesize -> 4. Audit -> 5. Export
+        """
+        # Giai đoạn 1: Tra cứu tri thức
+        consult_data = self.step1_consult_knowledge(
+            topic_title=title or f"Kiệt tác đoản văn {genre_key}",
+            topic_summary=premise or f"Kịch bản điện ảnh audio 30 phút {genre_key}",
+            genre_hint=genre_key
+        )
+        
+        # Giai đoạn 2: Lập dàn ý
+        blueprint = self.step2_build_blueprint(
+            genre_key=genre_key,
+            title=title or f"Kiệt tác đoản văn {genre_key}",
+            premise=premise,
+            consult_data=consult_data
+        )
+        
+        # Giai đoạn 3: Biên soạn kịch bản
+        story_dict = self.step3_synthesize_script(
+            genre_key=genre_key,
+            title=title,
+            premise=premise,
+            consult_data=consult_data,
+            voice=voice
+        )
+        
+        # Giai đoạn 4: Thẩm định 5 chiều
+        audit = self.step4_audit_script(story_dict)
+        
+        # Giai đoạn 5: Xuất file
+        slug = re.sub(r'[^a-zA-Z0-9]+', '_', (title or genre_key).lower()).strip('_')[:35]
+        py_file = self.export_script_module(story_dict, slug, voice=story_dict.get("voice", voice or "vi-VN-HoaiMyNeural"))
+        
+        return {
+            "status": "SUCCESS",
+            "consult_data": consult_data,
+            "blueprint": blueprint,
+            "story": story_dict,
+            "audit": audit,
+            "exported_py": str(py_file)
+        }
 
     def step4_audit_script(self, story_dict: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -256,9 +308,10 @@ class MasterScriptEngine:
             json.dump(story_dict, f, ensure_ascii=False, indent=2)
 
         # 2. Tạo file Python module trong core/stories/
+        clean_slug = file_slug[:-12] if file_slug.endswith("_masterpiece") else file_slug
         stories_dir = root_dir / "core" / "stories"
         stories_dir.mkdir(parents=True, exist_ok=True)
-        py_file = stories_dir / f"{file_slug}_masterpiece.py"
+        py_file = stories_dir / f"{clean_slug}_masterpiece.py"
 
         title = story_dict.get("title", "Kịch Bản Truyện Audio")
         parts = story_dict.get("parts", [])
@@ -266,7 +319,7 @@ class MasterScriptEngine:
         py_lines = []
         py_lines.append("# -*- coding: utf-8 -*-")
         py_lines.append('"""')
-        py_lines.append(f"core/stories/{file_slug}_masterpiece.py")
+        py_lines.append(f"core/stories/{clean_slug}_masterpiece.py")
         py_lines.append(f"Bộ Kịch Bản Audio Chuẩn GEMINI.md (>= 30 Phút Audio ở Tốc Độ 1.5x):")
         py_lines.append(f"{title}")
         total_w = sum(len(p.get("full_text", "").split()) for p in parts)
@@ -277,7 +330,7 @@ class MasterScriptEngine:
         py_lines.append("")
         py_lines.append("from typing import Dict, Any")
         py_lines.append("")
-        py_lines.append(f"def get_{file_slug}_masterpiece_story(title: str = '') -> Dict[str, Any]:")
+        py_lines.append(f"def get_{clean_slug}_masterpiece_story(title: str = '') -> Dict[str, Any]:")
         py_lines.append(f'    story_title = title if title else "{title}"')
         py_lines.append("")
 
