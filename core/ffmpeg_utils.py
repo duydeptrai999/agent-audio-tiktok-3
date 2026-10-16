@@ -272,17 +272,28 @@ def render_playable_video(
             from config.settings import ENABLE_SUBTITLES
             enable_subtitles = ENABLE_SUBTITLES
         except Exception:
-            enable_subtitles = False
+            enable_subtitles = True
 
-    # Khắc phụ đề SRT chữ trắng viền đen chuẩn TikTok (chỉ kích hoạt nếu enable_subtitles=True)
+    # Khắc phụ đề Kinetic Subtitles chữ vàng/trắng viền đen chuẩn TikTok High-CTR
     if enable_subtitles and srt_path and os.path.exists(srt_path) and os.path.getsize(srt_path) > 10:
-        # Đường dẫn Windows cần escape ký tự : cho libass filter của FFmpeg
-        escaped_srt = str(Path(srt_path).resolve()).replace("\\", "/").replace(":", "\\:")
-        sub_filter = (
-            f"subtitles='{escaped_srt}':force_style='FontSize=22,FontName=Arial,PrimaryColour=&H00FFFFFF,"
-            f"OutlineColour=&H00000000,BorderStyle=3,Outline=2,Alignment=2,MarginV=180'"
-        )
-        filters_list.append(sub_filter)
+        try:
+            from core.subtitle_engine import get_tiktok_subtitles_filter_param
+            from config.settings import SUBTITLE_COLOR, SUBTITLE_FONT_SIZE, SUBTITLE_MARGIN_V
+            sub_filter = get_tiktok_subtitles_filter_param(
+                Path(srt_path),
+                color_scheme=getattr(sys.modules.get('config.settings'), 'SUBTITLE_COLOR', 'yellow'),
+                font_size=getattr(sys.modules.get('config.settings'), 'SUBTITLE_FONT_SIZE', 28),
+                margin_v=getattr(sys.modules.get('config.settings'), 'SUBTITLE_MARGIN_V', 220)
+            )
+            filters_list.append(sub_filter)
+        except Exception as e_sub:
+            # Fallback filter chuẩn
+            escaped_srt = str(Path(srt_path).resolve()).replace("\\", "/").replace(":", "\\:")
+            sub_filter = (
+                f"subtitles='{escaped_srt}':force_style='FontSize=28,FontName=Arial,Bold=1,"
+                f"PrimaryColour=&H0000FFFF,OutlineColour=&H00000000,BorderStyle=1,Outline=3,Shadow=2,Alignment=2,MarginV=220'"
+            )
+            filters_list.append(sub_filter)
 
     video_filter = ",".join(filters_list) if filters_list else "null"
 

@@ -85,7 +85,10 @@ VIDEO_FPS = 30
 BGM_VOLUME = 0.22  # Nhạc nền nhỏ hơn (22%) êm dịu, không lấn át giọng đọc
 VOICE_VOLUME = 1.0 # Giọng đọc 100%
 
-# Cấu hình Phụ đề trên Video
-ENABLE_SUBTITLES = False  # Đặt False để không chèn phụ đề lên video theo yêu cầu
+# Cấu hình Phụ đề Động trên Video (Kinetic Subtitles High-CTR)
+ENABLE_SUBTITLES = True   # Bật phụ đề chữ động để neo giữ mắt người xem 3s đầu và đẩy tỷ lệ xem hết (AVD)
+SUBTITLE_COLOR = "yellow" # "yellow" (vàng tươi viền đen) hoặc "white" (trắng tuyết viền đen)
+SUBTITLE_FONT_SIZE = 28   # Kích thước font chữ rõ ràng, dễ đọc trên di động
+SUBTITLE_MARGIN_V = 220   # Vị trí cách đáy màn hình 220px để không bị che bởi thanh công cụ TikTok
 
 

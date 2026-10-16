@@ -207,6 +207,19 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
             print(f"⚠️ Lỗi tạo thumbnail: {e}")
             part_thumb = None
 
+        # 4. Sinh Phụ đề Động Kinetic Subtitles chuẩn TikTok High-CTR
+        sub_dir = ROOT / "assets" / "subtitles"
+        sub_dir.mkdir(parents=True, exist_ok=True)
+        part_srt = sub_dir / f"{prefix}_part{p_num}.srt"
+        try:
+            from core.subtitle_engine import generate_srt_from_text_and_duration
+            from config.settings import ENABLE_SUBTITLES
+            if not part_srt.exists() or part_srt.stat().st_size < 10:
+                print(f"📝 Đang tạo phụ đề động chuẩn TikTok High-CTR cho {badge}...")
+                generate_srt_from_text_and_duration(part["full_text"], dur, part_srt)
+        except Exception as e_srt:
+            print(f"⚠️ Không thể sinh phụ đề: {e_srt}")
+
         if not part_video.exists() or part_video.stat().st_size < 1000000:
             print(f"🎥 Đang render video 1080p 16:9 cho {badge} (thời lượng: {dur/60:.1f} phút)...")
             render_playable_video(
@@ -217,7 +230,8 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
                 badge_label=badge,
                 bgm_volume=BGM_VOLUME,
                 voice_volume=VOICE_VOLUME,
-                enable_subtitles=False,
+                srt_path=str(part_srt) if part_srt.exists() else None,
+                enable_subtitles=True,
                 thumbnail_path=str(part_thumb) if part_thumb and part_thumb.exists() else None
             )
             print(f"  ✅ ĐÃ RENDER THÀNH CÔNG: {part_video.name} ({part_video.stat().st_size / (1024*1024):.1f} MB)")
@@ -257,7 +271,7 @@ def wait_until(target_timestamp: float, label: str = ""):
 
 def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
     badge = f"[TẬP {part_num}]" if part_num < 3 else "[TẬP 3 - KẾT]"
-    tag_genre = "#thanhxuan #hocduong #ngontinh #khododanh #vungtromkhothegiau #ngọtsủng"
+    tag_genre = "#thanhxuan #hocduong #ngontinh #khododanh #vungtromkhothegiau #ngọtsủng #audiotruyen #reviewtruyen"
 
     if series_key == "series1_vungtrom":
         hook_text = (
@@ -267,6 +281,13 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
             if part_num == 2
             else "Không phải em thích thầm anh, mà là anh đã yêu em từ rất lâu rồi!"
         )
+        magnet_q = (
+            "👉 Đố bạn anh ấy phát hiện tình cảm từ lúc nào? Bình luận 1 (lúc cho kẹo) hoặc 2 (lúc thấy thư) nhé!"
+            if part_num == 1
+            else "👉 Nếu là bạn, bạn có dũng cảm chờ đợi 10 năm không? Bình luận 1 (Có) hoặc 2 (Không) nhé!"
+            if part_num == 2
+            else "👉 Cái kết này có làm bạn rơi nước mắt không? Hãy để lại cảm xúc của bạn dưới bình luận nhé!"
+        )
     elif series_key == "series2_khododanh":
         hook_text = (
             "Cậu bạn cùng bàn ngổ ngáo khó dỗ dành và hộp sữa dâu tây đặt nhầm chỗ."
@@ -274,6 +295,13 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
             else "Chiếc áo khoác mùi gỗ tuyết tùng và lời tuyên chiến bảo bọc giữa sân trường."
             if part_num == 2
             else "Chàng đại ca ngỗ nghịch kiêu ngạo cả đời này chỉ dịu dàng dỗ dành một mình em!"
+        )
+        magnet_q = (
+            "👉 Bạn thích mẫu bạn trai 'ngoài lạnh trong nóng' hay 'dịu dàng chu đáo'? Bình luận 1 hoặc 2 nhé!"
+            if part_num == 1
+            else "👉 Theo bạn chiêu bảo bọc này là ngầu hay sến? Bình luận số 1 hoặc 2 để tranh luận nào!"
+            if part_num == 2
+            else "👉 Tình yêu học đường như này có thật ngoài đời không? Bình luận quan điểm của bạn nhé!"
         )
     else:
         hook_text = (
@@ -283,9 +311,15 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
             if part_num == 2
             else "Bản tình ca mùa hè chưa từng tắt và lời cầu hôn thiêng liêng bên phím dương cầm!"
         )
+        magnet_q = (
+            "👉 Bạn đoán xem ai là người giữ chiếc kẹp tóc suốt 5 năm? Bình luận 1 (Nam chính) hoặc 2 (Bạn thân) nhé!"
+            if part_num == 1
+            else "👉 Gặp lại người yêu cũ sau 5 năm, bạn sẽ chọn bước tiếp hay quay lại? Bình luận 1 hoặc 2 nhé!"
+            if part_num == 2
+            else "👉 5 năm đổi lấy một đời hạnh phúc, có xứng đáng không? Để lại bình luận cho mình biết nhé!"
+        )
 
-    cta = "👉 Đón xem Tập tiếp theo trên kênh nhé!" if part_num < 3 else "👉 Hãy để lại bình luận và đăng ký kênh nhé!"
-    return f"{badge} {title}. {hook_text} {cta} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp {tag_genre}"
+    return f"{badge} {title}. {hook_text} {magnet_q} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp {tag_genre}"
 
 def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bool = False, publish_only: bool = False):
     from core.stories.school_romance_vungtrom_masterpiece import get_vungtrom_masterpiece_story

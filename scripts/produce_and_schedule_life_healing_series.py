@@ -206,6 +206,18 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
             print(f"⚠️ Lỗi tạo thumbnail: {e}")
             part_thumb = None
 
+        # 4. Sinh Phụ đề Động Kinetic Subtitles chuẩn TikTok High-CTR
+        sub_dir = ROOT / "assets" / "subtitles"
+        sub_dir.mkdir(parents=True, exist_ok=True)
+        part_srt = sub_dir / f"{prefix}_part{p_num}.srt"
+        try:
+            from core.subtitle_engine import generate_srt_from_text_and_duration
+            if not part_srt.exists() or part_srt.stat().st_size < 10:
+                print(f"📝 Đang tạo phụ đề động chuẩn TikTok High-CTR cho {badge}...")
+                generate_srt_from_text_and_duration(part["full_text"], dur, part_srt)
+        except Exception as e_srt:
+            print(f"⚠️ Không thể sinh phụ đề: {e_srt}")
+
         if not part_video.exists() or part_video.stat().st_size < 1000000:
             print(f"🎥 Đang render video 1080p 16:9 cho {badge} (thời lượng: {dur/60:.1f} phút)...")
             render_playable_video(
@@ -216,7 +228,8 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
                 badge_label=badge,
                 bgm_volume=BGM_VOLUME,
                 voice_volume=VOICE_VOLUME,
-                enable_subtitles=False,
+                srt_path=str(part_srt) if part_srt.exists() else None,
+                enable_subtitles=True,
                 thumbnail_path=str(part_thumb) if part_thumb and part_thumb.exists() else None
             )
             print(f"  ✅ ĐÃ RENDER THÀNH CÔNG: {part_video.name} ({part_video.stat().st_size / (1024*1024):.1f} MB)")
@@ -254,7 +267,7 @@ def wait_until(target_timestamp: float, label: str = ""):
 
 def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
     badge = f"[TẬP {part_num}]" if part_num < 3 else "[TẬP 3 - KẾT]"
-    tag_genre = "#đờithường #chữalành #chill #relaxing #thưgiãn"
+    tag_genre = "#đờithường #chữalành #chill #relaxing #thưgiãn #audiotruyen #radiotamsu"
     hook_text = (
         "Chuyến xe buýt lúc 11 giờ đêm và chén trà hoa cúc sưởi ấm tâm hồn mệt mỏi nơi phố thị."
         if part_num == 1
@@ -262,8 +275,14 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
         if part_num == 2
         else "Bức thư đáy hộp thiếc 20 năm và bữa cơm đoàn viên thấm đẫm tình mẫu tử thiêng liêng."
     )
-    cta = "👉 Đón xem Tập tiếp theo trên kênh nhé!" if part_num < 3 else "👉 Hãy để lại bình luận và đăng ký kênh nhé!"
-    return f"{badge} {title}. {hook_text} {cta} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp {tag_genre}"
+    magnet_q = (
+        "👉 Bạn có thói quen đi dạo hay nghe radio một mình khi mệt mỏi không? Bình luận 1 (Có) hoặc 2 (Không) nhé!"
+        if part_num == 1
+        else "👉 Buông bỏ một người từng là tất cả có khó không? Bình luận trải lòng của bạn dưới đây nhé!"
+        if part_num == 2
+        else "👉 Bạn đã bao lâu rồi chưa về ăn bữa cơm cùng gia đình? Hãy để lại lời nhắn yêu thương cho mẹ nhé!"
+    )
+    return f"{badge} {title}. {hook_text} {magnet_q} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp {tag_genre}"
 
 def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bool = False, publish_only: bool = False):
     from core.stories.life_healing_masterpiece import get_life_healing_masterpiece_story

@@ -55,13 +55,19 @@ QUY TẮC CỐT TỬ NÂNG TẦM KỊCH BẢN:
    - Đầy đủ trường đoạn đối thoại sắc bén, đấu trí tâm lý, bóc mẽ chứng cứ ngoại phạm.
 6. THUẦN TÚY LỜI KỂ CHUYỆN (100% SẠCH TỪ META):
    - Tuyệt đối không nói 'Ở tập 1', 'Đón xem tập 2', 'Bấm follow'. Người nghe chỉ đắm chìm vào thế giới truyện.
-7. HOOK 5 - 10 GIÂY ĐẦU VÀNG:
+7. COLD OPEN HOOK 0 - 3 GIÂY ĐẦU VÀNG:
    - Cấm mở đầu tả thời tiết, cấm đọc lý lịch tuổi tác. Ném ngay câu thoại áp chế, hiện trường rùng mình hoặc nghịch lý bất khả thi lên 15 từ đầu tiên!
+8. CHIẾN THUẬT NAM CHÂM BÌNH LUẬN (COMMENT MAGNET):
+   - Thuật toán TikTok đánh giá điểm Bình luận (Comments) cao nhất để mở khóa đề xuất từ 100 views lên 10,000 views.
+   - Cấm kết thúc bằng câu xin like/sub sáo rỗng. BẮT BUỘC đặt câu hỏi phân cực 2 lựa chọn (1 hoặc 2) ở cuối tập và trong call_to_action để người nghe gõ phím tranh luận!
+     * Tập 1 CTA: Đố plot twist ("Bạn đoán xem ai là kẻ đứng sau? Bình luận 1 hay 2 nhé!")
+     * Tập 2 CTA: Tình huống đạo đức ("Nếu là bạn, bạn sẽ chọn tha thứ hay trả thù? Bình luận 1 hoặc 2 để xem ai cùng phe!")
+     * Tập 3 CTA: Tranh luận cái kết ("Cái kết này đã đủ thỏa mãn chưa? Bạn đã từng gặp cảnh này ngoài đời chưa? Chia sẻ dưới bình luận nhé!")
 
 CẤU TRÚC 3 TẬP NỐI TIẾP (CHUẨN 30 PHÚT Ở 1.5X = 3 TẬP X 3,460+ TỪ):
-- TẬP 1: Cú sốc mở màn 5s -> Hiện trường câu đố phòng kín / Nghịch lý thời gian -> Manh mối ngầm Chekhov's Gun -> Cliffhanger nghẹt thở.
-- TẬP 2: Nối tiếp tự nhiên -> Lật tẩy chứng cứ giả -> Đấu trí phản gián -> Dồn nhân vật vào hiểm cảnh sống còn.
-- TẬP 3: Đối đầu trực diện -> Giải mã toàn bộ câu đố -> Lật màn công lý đanh thép -> Dư âm nhân sinh sâu sắc & Câu hỏi tương tác phân cực.
+- TẬP 1: Cú sốc mở màn 5s -> Hiện trường câu đố phòng kín / Nghịch lý thời gian -> Manh mối ngầm Chekhov's Gun -> Cliffhanger nghẹt thở -> Comment Magnet.
+- TẬP 2: Nối tiếp tự nhiên -> Lật tẩy chứng cứ giả -> Đấu trí phản gián -> Dồn nhân vật vào hiểm cảnh sống còn -> Comment Magnet.
+- TẬP 3: Đối đầu trực diện -> Giải mã toàn bộ câu đố -> Lật màn công lý đanh thép -> Dư âm nhân sinh sâu sắc -> Comment Magnet kích nổ tranh luận.
 
 Đầu ra JSON:
 {
@@ -72,10 +78,10 @@ CẤU TRÚC 3 TẬP NỐI TIẾP (CHUẨN 30 PHÚT Ở 1.5X = 3 TẬP X 3,460+ T
       "part_number": 1,
       "badge_label": "PHẦN 1",
       "title": "Tên tập 1",
-      "hook": "Câu mở đầu tập 1",
+      "hook": "Câu mở đầu tập 1 (Cold open hook)",
       "body": "Nội dung kể chuyện chi tiết tập 1 (đầy đủ thoại sắc bén, bối cảnh, miêu tả giác quan)",
       "cliffhanger": "Cú ngắt lửng nghẹt thở cuối tập 1",
-      "call_to_action": "Bấm theo dõi để đón xem Tập 2 phát sóng tối nay!",
+      "call_to_action": "👉 Bạn đoán xem chiếc vali có chứa chứng cứ thật không? Bình luận 1 (Có) hay 2 (Không) nhé!",
       "full_text": "Toàn bộ văn bản tập 1 để lồng tiếng (thuần kể chuyện, ngắt nhịp dấu câu biểu cảm)"
     },
     {
@@ -85,7 +91,7 @@ CẤU TRÚC 3 TẬP NỐI TIẾP (CHUẨN 30 PHÚT Ở 1.5X = 3 TẬP X 3,460+ T
       "hook": "Câu mở đầu nối tiếp cao trào tập 1 (thuần kể chuyện)",
       "body": "Nội dung chi tiết tập 2 (leo thang căng thẳng, đấu trí bẻ lái)",
       "cliffhanger": "Cú ngắt lửng tột độ cuối tập 2",
-      "call_to_action": "Đón xem Tập 3 - Đại Kết Cục phát sóng tối nay!",
+      "call_to_action": "👉 Nếu là bạn, bạn sẽ chọn đối đầu trực diện hay tương kế tựu kế? Bình luận 1 hoặc 2 nhé!",
       "full_text": "Toàn bộ văn bản tập 2 để lồng tiếng (thuần kể chuyện)"
     },
     {
@@ -95,7 +101,7 @@ CẤU TRÚC 3 TẬP NỐI TIẾP (CHUẨN 30 PHÚT Ở 1.5X = 3 TẬP X 3,460+ T
       "hook": "Câu mở đầu cao trào giải mã nối tiếp tập 2",
       "body": "Nội dung chi tiết tập 3 (vạch trần chân tướng, đại kết cục công lý)",
       "cliffhanger": "",
-      "call_to_action": "Theo bạn, cái kết này có thực sự công bằng? Hãy để lại bình luận nhé!",
+      "call_to_action": "👉 Bản án này đã thực sự công bằng cho kẻ phản bội? Để lại góc nhìn của bạn dưới bình luận nhé!",
       "full_text": "Toàn bộ văn bản tập 3 để lồng tiếng (thuần kể chuyện)"
     }
   ]

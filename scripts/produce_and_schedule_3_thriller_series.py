@@ -216,7 +216,19 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
             print(f"⚠️ Lỗi tạo thumbnail: {e}")
             part_thumb = None
 
-        # 4. Render Video MP4 1080p 16:9
+        # 4. Sinh Phụ đề Động Kinetic Subtitles chuẩn TikTok High-CTR
+        sub_dir = ROOT / "assets" / "subtitles"
+        sub_dir.mkdir(parents=True, exist_ok=True)
+        part_srt = sub_dir / f"{prefix}_part{p_num}.srt"
+        try:
+            from core.subtitle_engine import generate_srt_from_text_and_duration
+            if not part_srt.exists() or part_srt.stat().st_size < 10:
+                print(f"📝 Đang tạo phụ đề động chuẩn TikTok High-CTR cho {badge}...")
+                generate_srt_from_text_and_duration(part["full_text"], dur, part_srt)
+        except Exception as e_srt:
+            print(f"⚠️ Không thể sinh phụ đề: {e_srt}")
+
+        # 5. Render Video MP4 1080p 16:9
         if not part_video.exists() or part_video.stat().st_size < 1000000:
             print(f"🎥 Đang render video 1080p 16:9 cho {badge} (thời lượng: {dur/60:.1f} phút)...")
             render_playable_video(
@@ -227,7 +239,8 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
                 badge_label=badge,
                 bgm_volume=BGM_VOLUME,
                 voice_volume=VOICE_VOLUME,
-                enable_subtitles=False,
+                srt_path=str(part_srt) if part_srt.exists() else None,
+                enable_subtitles=True,
                 thumbnail_path=str(part_thumb) if part_thumb and part_thumb.exists() else None
             )
             print(f"✅ ĐÃ RENDER THÀNH CÔNG: {part_video.name} ({part_video.stat().st_size / (1024*1024):.1f} MB)")
@@ -279,17 +292,55 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
     badge = f"[PHẦN {part_num}]" if part_num < 3 else "[PHẦN 3 / KẾT]"
     
     if "phapan" in series_key:
-        tag_genre = "#trinhtham #phapan #vuan #kyan #hinhsu"
-        hook_text = "Cuộc gọi tử thần lúc 2h sáng từ người đồng đội đã mất 5 năm trước." if part_num == 1 else "Đột phá hầm ngầm Ba Vì và giải mã vali danh sách rửa tiền nghìn tỷ." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Bạn nghĩ gì về sự trả giá của kẻ phản bội?"
+        tag_genre = "#trinhtham #phapan #vuan #kyan #hinhsu #audiotruyen #reviewtruyen"
+        hook_text = (
+            "Cuộc gọi tử thần lúc 2h sáng từ người đồng đội đã mất 5 năm trước."
+            if part_num == 1
+            else "Đột phá hầm ngầm Ba Vì và giải mã vali danh sách rửa tiền nghìn tỷ."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Đại kết cục công lý làm sáng tỏ mọi uẩn khúc!"
+        )
+        magnet_q = (
+            "👉 Bạn đoán xem ai là kẻ đứng sau cuộc gọi? Bình luận 1 (Đồng đội còn sống) hay 2 (Hung thủ giả mạo) nhé!"
+            if part_num == 1
+            else "👉 Theo bạn chiếc vali có chứa chứng cứ thật không? Bình luận 1 hoặc 2 để cùng đoán!"
+            if part_num == 2
+            else "👉 Bạn thấy hình phạt cho kẻ phản bội đã thỏa đáng chưa? Để lại bình luận cho mình biết nhé!"
+        )
     elif "guongquy" in series_key:
-        tag_genre = "#kinhdi #truyenma #tamlinh #quykhe #guongquy"
-        hook_text = "Chiếc gương cổ tự động tuột lụa đỏ lúc 2h sáng và bóng ma cào kính rợn tóc gáy." if part_num == 1 else "Bóng ma bẻ ngược khớp bò trên trần nhà và sự thật quỷ khế 7 mạng người." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Bạn nghĩ ma quỷ hay lòng tham con người đáng sợ hơn?"
+        tag_genre = "#kinhdi #truyenma #tamlinh #quykhe #guongquy #audiotruyen"
+        hook_text = (
+            "Chiếc gương cổ tự động tuột lụa đỏ lúc 2h sáng và bóng ma cào kính rợn tóc gáy."
+            if part_num == 1
+            else "Bóng ma bẻ ngược khớp bò trên trần nhà và sự thật quỷ khế 7 mạng người."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Chân tướng kinh hoàng sau bức màn nhung đỏ!"
+        )
+        magnet_q = (
+            "👉 Đố bạn dám soi gương lúc 2h sáng không? Bình luận 1 (Dám) hoặc 2 (Không dám) nào!"
+            if part_num == 1
+            else "👉 Theo bạn ma quỷ hay lòng tham con người đáng sợ hơn? Bình luận 1 hoặc 2 để tranh luận!"
+            if part_num == 2
+            else "👉 Bạn có tin vào quỷ khế và nghiệp báo không? Để lại câu chuyện của bạn dưới bình luận nhé!"
+        )
     else:
-        tag_genre = "#truyenma #kinhdi #tamlinh #trocot #kethuac"
-        hook_text = "Tiếng cào cửa lúc 2h15 sáng và dấu chân bùn đen dẫn vào gầm giường." if part_num == 1 else "Oan hồn cô gái áo trắng 3 năm trước và đạo bùa Kumanthong giam giữ tro cốt." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Bạn có tin vào luật nhân quả báo ứng ở đời không?"
+        tag_genre = "#truyenma #kinhdi #tamlinh #trocot #kethuac #audiotruyen"
+        hook_text = (
+            "Tiếng cào cửa lúc 2h15 sáng và dấu chân bùn đen dẫn vào gầm giường."
+            if part_num == 1
+            else "Oan hồn cô gái áo trắng 3 năm trước và đạo bùa Kumanthong giam giữ tro cốt."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Ánh sáng công lý hóa giải mọi oán hận!"
+        )
+        magnet_q = (
+            "👉 Dấu chân bùn đen từ đâu mà có? Bình luận 1 (Oan hồn) hay 2 (Người sống đóng giả) nhé!"
+            if part_num == 1
+            else "👉 Bạn có tin bùa ngải có thật ngoài đời không? Bình luận 1 (Có) hoặc 2 (Không) nhé!"
+            if part_num == 2
+            else "👉 Luật nhân quả có bao giờ bỏ sót ai? Để lại suy ngẫm của bạn dưới bình luận nhé!"
+        )
 
-    cta = "👉 Đón xem Tập tiếp theo trên kênh!" if part_num < 3 else "👉 Hãy để lại bình luận và đăng ký kênh nhé!"
-    return f"{badge} {title}. {hook_text} {cta} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #banđêm {tag_genre}"
+    return f"{badge} {title}. {hook_text} {magnet_q} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #banđêm {tag_genre}"
 
 # ==============================================================================
 # 3. TIẾN TRÌNH THỰC THI CHÍNH

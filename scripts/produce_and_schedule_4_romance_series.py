@@ -212,7 +212,20 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
             print(f"⚠️ Lỗi tạo thumbnail: {e}")
             part_thumb = None
 
-        # 4. Render Video MP4 1080p 16:9
+        # 4. Sinh Phụ đề Động Kinetic Subtitles chuẩn TikTok High-CTR
+        sub_dir = ROOT / "assets" / "subtitles"
+        sub_dir.mkdir(parents=True, exist_ok=True)
+        part_srt = sub_dir / f"{prefix}_part{p_num}.srt"
+        try:
+            from core.subtitle_engine import generate_srt_from_text_and_duration
+            dur_probe = probe_media_file(part_audio).get("duration", 600.0)
+            if not part_srt.exists() or part_srt.stat().st_size < 10:
+                print(f"📝 Đang tạo phụ đề động chuẩn TikTok High-CTR cho {badge}...")
+                generate_srt_from_text_and_duration(part["full_text"], dur_probe, part_srt)
+        except Exception as e_srt:
+            print(f"⚠️ Không thể sinh phụ đề: {e_srt}")
+
+        # 5. Render Video MP4 1080p 16:9
         part_video = out_dir / f"{prefix}_part{p_num}_final.mp4"
         if not part_video.exists() or part_video.stat().st_size < 1000000:
             print(f"🎥 Đang render video 1080p 16:9 cho {badge}...")
@@ -224,7 +237,8 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
                 badge_label=badge,
                 bgm_volume=BGM_VOLUME,
                 voice_volume=VOICE_VOLUME,
-                enable_subtitles=False,
+                srt_path=str(part_srt) if part_srt.exists() else None,
+                enable_subtitles=True,
                 thumbnail_path=str(part_thumb) if part_thumb and part_thumb.exists() else None
             )
             print(f"✅ ĐÃ RENDER THÀNH CÔNG: {part_video.name} ({part_video.stat().st_size / (1024*1024):.1f} MB)")
@@ -277,20 +291,71 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
     badge = f"[PHẦN {part_num}]" if part_num < 3 else "[PHẦN 3 / KẾT]"
     
     if "haomon" in series_key:
-        tag_genre = "#haomon #tongtai #cuoituocyeusau"
-        hook_text = "Hợp đồng hôn nhân 100 tỷ và đêm tân hôn giông bão." if part_num == 1 else "Bí mật người đàn ông đứng dậy trong đêm tối." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Bạn có tin vào tình yêu đích thực chốn hào môn?"
+        tag_genre = "#haomon #tongtai #cuoituocyeusau #audiotruyen #reviewtruyen"
+        hook_text = (
+            "Hợp đồng hôn nhân 100 tỷ và đêm tân hôn giông bão."
+            if part_num == 1
+            else "Bí mật người đàn ông đứng dậy trong đêm tối."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Tình yêu đích thực chiến thắng mọi toan tính hào môn!"
+        )
+        magnet_q = (
+            "👉 Nếu được trả 100 tỷ để kết hôn hợp đồng, bạn có đồng ý không? Bình luận 1 (Có) hoặc 2 (Không) nhé!"
+            if part_num == 1
+            else "👉 Theo bạn anh ấy giả vờ tàn tật để làm gì? Bình luận 1 (Bảo vệ bản thân) hay 2 (Bắt kẻ phản bội)!"
+            if part_num == 2
+            else "👉 Bạn có tin vào tình yêu chân thành chốn hào môn không? Để lại quan điểm dưới bình luận nhé!"
+        )
     elif "thanhxuan" in series_key:
-        tag_genre = "#thanhxuan #moitinhdau #tuoitre #hocduong"
-        hook_text = "Lời hứa 10 năm dưới cơn mưa tốt nghiệp năm mười bảy tuổi." if part_num == 1 else "Mảnh giấy chuyển tiền chu cấp bí mật suốt 10 năm." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Bạn có dũng cảm tỏ tình với mối tình đầu năm 17 tuổi?"
+        tag_genre = "#thanhxuan #moitinhdau #tuoitre #hocduong #audiotruyen"
+        hook_text = (
+            "Lời hứa 10 năm dưới cơn mưa tốt nghiệp năm mười bảy tuổi."
+            if part_num == 1
+            else "Mảnh giấy chuyển tiền chu cấp bí mật suốt 10 năm."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Mối tình thanh xuân trọn vẹn nhất cuộc đời!"
+        )
+        magnet_q = (
+            "👉 Bạn còn nhớ tên mối tình đầu năm 17 tuổi không? Bình luận 1 (Còn nhớ) hoặc 2 (Đã quên) nhé!"
+            if part_num == 1
+            else "👉 10 năm âm thầm hy sinh không một lời kể công, người như vậy có thật không? Bình luận 1 hoặc 2 nhé!"
+            if part_num == 2
+            else "👉 Nếu gặp lại mối tình đầu năm ấy, bạn sẽ nói câu gì đầu tiên? Chia sẻ dưới bình luận nhé!"
+        )
     elif "nguoctam" in series_key:
-        tag_genre = "#nguoctam #hoatang #nguocluyen #danong"
-        hook_text = "5 năm oan khuất nhận tội thay và thiệp cưới mạ vàng ngày trở về." if part_num == 1 else "Sự thật hồ sơ bệnh án hiến tủy và biển axit trả giá." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Liệu sự sám hối muộn màng có đủ xóa nhòa tổn thương?"
+        tag_genre = "#nguoctam #hoatang #nguocluyen #danong #audiotruyen"
+        hook_text = (
+            "5 năm oan khuất nhận tội thay và thiệp cưới mạ vàng ngày trở về."
+            if part_num == 1
+            else "Sự thật hồ sơ bệnh án hiến tủy và biển axit trả giá."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Đại kết cục sám hối đẫm nước mắt!"
+        )
+        magnet_q = (
+            "👉 Đổi 5 năm thanh xuân đi tù thay người yêu, đáng hay ngu ngốc? Bình luận 1 (Đáng) hoặc 2 (Ngu ngốc) nhé!"
+            if part_num == 1
+            else "👉 Khi biết sự thật hiến tủy, bạn có tha thứ không? Bình luận 1 (Tha thứ) hay 2 (Không bao giờ)!"
+            if part_num == 2
+            else "👉 Sự sám hối muộn màng có bù đắp được 5 năm cay đắng? Để lại bình luận cho mình biết nhé!"
+        )
     else:
-        tag_genre = "#chualanh #tinhcam #tamly #healing #langnghe"
-        hook_text = "Bản hợp đồng trị liệu tâm lý 100 ngày bên hồ sương mù." if part_num == 1 else "Tiếng súng trong đêm bão tuyết và sự trỗi dậy của thiên tài." if part_num == 2 else "Trọn bộ 3 tập đã lên sóng! Bạn có tin luôn có một người sinh ra để chữa lành vết thương cho bạn?"
+        tag_genre = "#chualanh #tinhcam #tamly #healing #langnghe #audiotruyen"
+        hook_text = (
+            "Bản hợp đồng trị liệu tâm lý 100 ngày bên hồ sương mù."
+            if part_num == 1
+            else "Tiếng súng trong đêm bão tuyết và sự trỗi dậy của thiên tài."
+            if part_num == 2
+            else "Trọn bộ 3 tập đã lên sóng! Ánh sáng dịu dàng xua tan bóng tối tâm hồn!"
+        )
+        magnet_q = (
+            "👉 Bạn có tin mỗi người đều có một 'bác sĩ tâm hồn' của riêng mình? Bình luận 1 (Có) hoặc 2 (Không) nhé!"
+            if part_num == 1
+            else "👉 Khi bị tổn thương, bạn chọn một mình chịu đựng hay chia sẻ? Bình luận 1 hoặc 2 nhé!"
+            if part_num == 2
+            else "👉 Câu chuyện này có chữa lành tâm trạng hôm nay của bạn không? Hãy để lại cảm nghĩ nhé!"
+        )
 
-    cta = "👉 Đón xem Tập tiếp theo trên kênh!" if part_num < 3 else "👉 Hãy để lại bình luận và đăng ký kênh nhé!"
-    return f"{badge} {title}. {hook_text} {cta} #audio #xuhuong #ngontinh #audiotruyen #kểchuyện #podcast #fyp #tamtrang {tag_genre}"
+    return f"{badge} {title}. {hook_text} {magnet_q} #audio #xuhuong #ngontinh #audiotruyen #kểchuyện #podcast #fyp #tamtrang {tag_genre}"
 
 # ==============================================================================
 # 3. TIẾN TRÌNH THỰC THI CHÍNH

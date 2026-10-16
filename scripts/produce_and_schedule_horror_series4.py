@@ -209,7 +209,19 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
             print(f"⚠️ Lỗi tạo thumbnail: {e}")
             part_thumb = None
 
-        # 4. Render Video MP4 1080p 16:9
+        # 4. Sinh Phụ đề Động Kinetic Subtitles chuẩn TikTok High-CTR
+        sub_dir = ROOT / "assets" / "subtitles"
+        sub_dir.mkdir(parents=True, exist_ok=True)
+        part_srt = sub_dir / f"{prefix}_part{p_num}.srt"
+        try:
+            from core.subtitle_engine import generate_srt_from_text_and_duration
+            if not part_srt.exists() or part_srt.stat().st_size < 10:
+                print(f"📝 Đang tạo phụ đề động chuẩn TikTok High-CTR cho {badge}...")
+                generate_srt_from_text_and_duration(part["full_text"], dur, part_srt)
+        except Exception as e_srt:
+            print(f"⚠️ Không thể sinh phụ đề: {e_srt}")
+
+        # 5. Render Video MP4 1080p 16:9
         if not part_video.exists() or part_video.stat().st_size < 1000000:
             print(f"🎥 Đang render video 1080p 16:9 cho {badge} (thời lượng: {dur/60:.1f} phút)...")
             render_playable_video(
@@ -220,7 +232,8 @@ def produce_single_series(story_data: dict, prefix: str, bgm_file: Path) -> List
                 badge_label=badge,
                 bgm_volume=BGM_VOLUME,
                 voice_volume=VOICE_VOLUME,
-                enable_subtitles=False,
+                srt_path=str(part_srt) if part_srt.exists() else None,
+                enable_subtitles=True,
                 thumbnail_path=str(part_thumb) if part_thumb and part_thumb.exists() else None
             )
             print(f"✅ ĐÃ RENDER THÀNH CÔNG: {part_video.name} ({part_video.stat().st_size / (1024*1024):.1f} MB)")
@@ -264,16 +277,22 @@ def wait_until(target_timestamp: float, label: str):
 
 def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
     badge = f"[PHẦN {part_num}]" if part_num < 3 else "[PHẦN 3 / KẾT]"
-    tag_genre = "#kinhdi #truyenma #tamlinh #chuyentau #deoca"
+    tag_genre = "#kinhdi #truyenma #tamlinh #chuyentau #deoca #audiotruyen #reviewtruyen"
     hook_text = (
         "Chuyến tàu đêm bất ngờ dừng giữa đường hầm bỏ hoang và dấu tay máu cào kính lúc 0h15 sáng."
         if part_num == 1
         else "Bí mật kinh hoàng về vụ sập hầm 7 năm trước và bóng ma áo đỏ trườn qua trần tàu."
         if part_num == 2
-        else "Trọn bộ 3 tập đã lên sóng! Bạn có tin vào luật nhân quả báo ứng ở đời không?"
+        else "Trọn bộ 3 tập đã lên sóng! Ánh sáng công lý hóa giải lời nguyền đường hầm đèo Cả!"
     )
-    cta = "👉 Đón xem Tập tiếp theo trên kênh!" if part_num < 3 else "👉 Hãy để lại bình luận và đăng ký kênh nhé!"
-    return f"{badge} {title}. {hook_text} {cta} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #banđêm {tag_genre}"
+    magnet_q = (
+        "👉 Nếu tàu dừng giữa hầm tối và nghe tiếng cào kính ngoài cửa sổ, bạn sẽ mở rèm hay nhắm mắt? Bình luận 1 hoặc 2!"
+        if part_num == 1
+        else "👉 Bạn đoán xem ai là kẻ chủ mưu chôn sống 7 công nhân năm xưa? Bình luận 1 (Trưởng ga) hay 2 (Chủ thầu) nhé!"
+        if part_num == 2
+        else "👉 Oan có đầu, nợ có chủ — bạn có tin vào quả báo nhãn tiền không? Để lại quan điểm dưới bình luận nhé!"
+    )
+    return f"{badge} {title}. {hook_text} {magnet_q} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #banđêm {tag_genre}"
 
 def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bool = False, publish_only: bool = False):
     from core.stories.horror_chuyentau_masterpiece import get_horror_chuyentau_masterpiece_story
