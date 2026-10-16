@@ -36,6 +36,8 @@ data/*.lock
 # Temporary and log files
 *.log
 *.tmp
+.env
+.env.*
 temp_caption.txt
 desktop.ini
 .DS_Store

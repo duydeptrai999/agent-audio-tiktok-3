@@ -8,7 +8,7 @@
     "current_offset": 0.0,
     "audios_used": 0,
     "max_audios": 2,
-    "registered_at": "2026-10-15 21:46:30"
+    "registered_at": "2026-10-17 04:20:25"
   },
   "used_history": [
     {
@@ -147,7 +147,62 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-15 21:14:30"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 593.66,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-15 21:46:30"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 500.5799999999999,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 03:24:01"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 578.3499999999999,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 03:27:55"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 494.84,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 04:17:01"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 495.43,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 04:18:43"
     }
   ],
-  "rotation_count": 8
+  "rotation_count": 13
 }

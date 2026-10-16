@@ -321,6 +321,24 @@ def upload_and_publish_video(
     print(f"📝 Caption: {caption[:90]}...")
     print("=" * 70)
 
+    # 🛡️ KIỂM DUYỆT CHỐNG ĐĂNG LẠI AUDIO CŨ (ANTI-REPOST GUARD)
+    try:
+        from core.anti_repost_guard import AntiRepostGuard
+        is_safe, reason = AntiRepostGuard.verify_candidate_audio(
+            title=caption,
+            caption=caption,
+            video_path=video_path
+        )
+        if not is_safe:
+            print(f"🚨 [AntiRepostGuard] TỪ CHỐI ĐĂNG VIDEO CŨ!")
+            print(f"   => Nguyên nhân: {reason}")
+            print(f"   => Hủy bỏ tiến trình upload để bảo vệ kênh chống vi phạm thuật toán!")
+            return False
+        else:
+            print(f"  🛡️ [AntiRepostGuard] Xác nhận video mới 100%: {reason}")
+    except Exception as e_guard:
+        print(f"  ⚠️ Cảnh báo kiểm tra AntiRepostGuard: {e_guard}")
+
     # Sử dụng Inter-process FileLock để tránh xung đột ProcessSingleton giữa các scheduler
     data_dir = Path(__file__).resolve().parent.parent / "data"
     data_dir.mkdir(parents=True, exist_ok=True)

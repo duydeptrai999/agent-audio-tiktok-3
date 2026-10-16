@@ -81,8 +81,18 @@
         "context": "User Directive 2026-10-09"
       }
     ],
-    "qa_lead": [],
-    "publisher": []
+    "qa_lead": [
+      {
+        "feedback": "CHỈ THỊ SẾP: Bắt buộc kích hoạt AntiRepostGuard 4 tầng kiểm tra trước khi xuất xưởng. Đối soát tiêu đề, kịch bản hash và audio hash với published_audio_registry. Nếu phát hiện trùng lặp > 65% với bất kỳ audio cũ nào đã từng đăng, lập tức từ chối và cảnh báo vi phạm.",
+        "context": "User Directive 2026-10-17 Anti-Repost Guard"
+      }
+    ],
+    "publisher": [
+      {
+        "feedback": "CHỈ THỊ SẾP: Trước khi tải lên TikTok Studio, Publisher bắt buộc phải gọi AntiRepostGuard.verify_candidate_audio. Chỉ được phép đăng video và audio hoàn toàn mới. Ngay sau khi đăng thành công 1 video, lập tức xóa video MP4, audio MP3 và thumbnail cục bộ để chống đăng trùng tuyệt đối.",
+        "context": "User Directive 2026-10-17 Anti-Repost Guard"
+      }
+    ]
   },
   "history": [
     {

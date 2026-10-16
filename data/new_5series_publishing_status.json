@@ -1,0 +1,48 @@
+{
+  "new_series1_sadieu": {
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": true,
+    "part1_produced": false,
+    "part2_produced": false,
+    "part3_produced": false
+  },
+  "new_series2_cungdau": {
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": true,
+    "part1_produced": false,
+    "part2_produced": false,
+    "part3_produced": false
+  },
+  "new_series3_trinhtham": {
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": true,
+    "part1_produced": false,
+    "part2_produced": false,
+    "part3_produced": false
+  },
+  "new_series4_vohan": {
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": true,
+    "part1_produced": false,
+    "part2_produced": false,
+    "part3_produced": false
+  },
+  "new_series5_vamat": {
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": true,
+    "part1_produced": false,
+    "part2_produced": false,
+    "part3_produced": false
+  },
+  "scheduled_base_time": 1792195200.0
+}
