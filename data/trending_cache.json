@@ -1,0 +1,352 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-10-05T00:00:00Z",
+  "description": "Kho ý tưởng cốt truyện Audio TikTok: 100% Truyện Ngôn Tình, Tình Cảm, Trinh Thám, Kỳ Án, Drama Đời Sống Triệu View",
+  "sources": {
+    "tiktok": [
+      {
+        "topic_id": "tt_doraemon_mystery_01",
+        "title": "Kỳ Án Cỗ Máy Thời Gian: Lời Cảnh Báo Lúc Nửa Đêm Của 20 Năm Sau",
+        "summary": "Khám phá ngăn bàn học của người ông phát minh, chiếc điện thoại cổ không dây bỗng reo vang với lời cảnh báo đẫm máu từ 20 năm sau về Cánh Cửa Thần Kỳ.",
+        "source": "tiktok",
+        "category_match": "HIGH_IQ",
+        "category_affinity": "HIGH_IQ",
+        "recommended_hook": "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - Lời cảnh báo đẫm máu rơi ra từ ngăn bàn học cũ...",
+        "keywords": [
+          "doraemon",
+          "cỗ máy thời gian",
+          "cánh cửa thần kỳ",
+          "trinh thám",
+          "kỳ án",
+          "đấu trí"
+        ],
+        "key_facts": [
+          "Cỗ Máy Thời Gian và bức ảnh án mạng năm 2046 trong ngăn bàn học",
+          "Cánh Cửa Thần Kỳ kết nối phòng thí nghiệm lượng tử dưới hầm số 7",
+          "Màn đấu trí Conan vạch trần kẻ mạo danh đeo mặt nạ silicon"
+        ],
+        "metrics": {
+          "views": 2150000,
+          "likes": 178000,
+          "comments": 28500,
+          "shares": 42000,
+          "growth_velocity": 72000.0,
+          "engagement_rate": 0.13,
+          "sentiment_score": 0.94
+        },
+        "viral_score": 99.5
+      },
+      {
+        "topic_id": "tt_crime_01",
+        "title": "Kỳ Án Căn Phòng Số 13: 3 Cuộc Gọi Bí Ẩn Lúc Nửa Đêm Của Người Đã Mất",
+        "summary": "Năm năm sau khi qua đời trong vụ tai nạn thảm khốc, chiếc điện thoại bàn đã cắt dây bỗng reo lên đúng 2 giờ sáng, hé lộ bí mật đen tối của gia tộc.",
+        "source": "tiktok",
+        "category_match": "HIGH_IQ",
+        "category_affinity": "HIGH_IQ",
+        "recommended_hook": "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!' - Đúng 2 giờ sáng, chiếc điện thoại cắt dây 5 năm bỗng rung chuông...",
+        "keywords": [
+          "trinh thám",
+          "kỳ án",
+          "bí ẩn",
+          "phòng kín",
+          "đấu trí"
+        ],
+        "key_facts": [
+          "Chiếc điện thoại bàn cổ bị cắt dây 5 năm trước",
+          "Bức di thư đẫm máu giấu dưới gạch men căn phòng số 13",
+          "Kẻ chủ mưu thực sự lại chính là người thừa kế vô tội nhất"
+        ],
+        "metrics": {
+          "views": 1250000,
+          "likes": 98000,
+          "comments": 14200,
+          "shares": 26000,
+          "growth_velocity": 45000.0,
+          "engagement_rate": 0.11,
+          "sentiment_score": 0.85
+        },
+        "viral_score": 96.5
+      },
+      {
+        "topic_id": "tt_crime_02",
+        "title": "Vụ Mất Tích Giữa Phố Đông: 50 Mét Đường Giữa Hai Chiếc Camera An Ninh",
+        "summary": "Một cô gái trẻ bước ra khỏi trung tâm thương mại tấp nập, camera 1 ghi hình rõ nét nhưng camera 2 cách đó chỉ 50 mét lại không thấy bóng dáng cô đâu.",
+        "source": "tiktok",
+        "category_match": "HIGH_IQ",
+        "category_affinity": "HIGH_IQ",
+        "recommended_hook": "'Camera số 1 ghi hình rõ nét, nhưng cách đó chỉ 50 mét, cô gái đã bốc hơi hoàn toàn!' - Kỳ án mất tích bí ẩn...",
+        "keywords": [
+          "kỳ án có thật",
+          "mất tích bí ẩn",
+          "camera an ninh",
+          "phá án"
+        ],
+        "key_facts": [
+          "Khoảng cách điểm mù chỉ vỏn vẹn 50 mét",
+          "Hai chiếc điện thoại đồng loạt tắt sóng cùng một giây",
+          "Cuộc điện thoại bí ẩn 10 giây trước khi biến mất"
+        ],
+        "metrics": {
+          "views": 980000,
+          "likes": 75000,
+          "comments": 11500,
+          "shares": 18200,
+          "growth_velocity": 38000.0,
+          "engagement_rate": 0.1,
+          "sentiment_score": 0.8
+        },
+        "viral_score": 93.0
+      },
+      {
+        "topic_id": "tt_romance_01",
+        "title": "Cưới Em Trước Cưng Chiều Em Sau: Bản Hợp Đồng Hôn Nhân 100 Tỷ",
+        "summary": "Cô gái nghèo bị gia đình ép gả thay em gái cho vị tổng tài tàn tật lạnh lùng khét tiếng, nào ngờ sau đêm tân hôn lại được anh cưng chiều như bảo bối.",
+        "source": "tiktok",
+        "category_match": "SLEEP_CHILL",
+        "category_affinity": "SLEEP_CHILL",
+        "recommended_hook": "'Ký vào đây! Tôi cho cô 100 tỷ và sự tự do, cô chỉ là kẻ gả thay hèn kém thôi!' - Vị tổng tài tàn tật ném mạnh hợp đồng xuống bàn...",
+        "keywords": [
+          "ngôn tình",
+          "tổng tài",
+          "cưới trước yêu sau",
+          "sủng ngọt",
+          "hào môn"
+        ],
+        "key_facts": [
+          "Bản hợp đồng hôn nhân giả thời hạn 1 năm",
+          "Tổng tài giả vờ tàn tật để vạch trần kẻ hãm hại trong gia tộc",
+          "Màn bảo vệ vợ trước sự khinh miệt của gia đình mẹ đẻ"
+        ],
+        "metrics": {
+          "views": 1830000,
+          "likes": 145000,
+          "comments": 22000,
+          "shares": 35000,
+          "growth_velocity": 65000.0,
+          "engagement_rate": 0.12,
+          "sentiment_score": 0.95
+        },
+        "viral_score": 98.2
+      },
+      {
+        "topic_id": "tt_romance_02",
+        "title": "Thiên Kim Thật Trở Về: Màn Đáp Trả Đanh Thép Khiến Cả Hào Môn Kinh Hãi",
+        "summary": "Bảy năm lưu lạc ở nước ngoài, thiên kim đích thực của Khương gia trở về đúng đêm đính hôn của kẻ giả mạo và người bạn trai phản bội năm xưa.",
+        "source": "tiktok",
+        "category_match": "SLEEP_CHILL",
+        "category_affinity": "SLEEP_CHILL",
+        "recommended_hook": "'Cầm lấy 10 triệu tệ này và biến khỏi mắt tôi, cô chỉ là đồ con nuôi giả tạo!' - 7 năm chịu nhục, thiên kim thật trở về đoạt lại tất cả...",
+        "keywords": [
+          "ngôn tình",
+          "trùng sinh",
+          "thiên kim thật",
+          "hào môn",
+          "trả thù"
+        ],
+        "key_facts": [
+          "Bữa tiệc đính hôn long trọng của thiên kim giả",
+          "Chiếc váy haute couture phiên bản giới hạn đè bẹp kẻ đóng kịch",
+          "Tổng tài quyền lực nhất Bắc Kinh công khai đứng về phía nữ chính"
+        ],
+        "metrics": {
+          "views": 1088000,
+          "likes": 92000,
+          "comments": 15600,
+          "shares": 24000,
+          "growth_velocity": 42000.0,
+          "engagement_rate": 0.11,
+          "sentiment_score": 0.9
+        },
+        "viral_score": 95.4
+      }
+    ],
+    "reddit": [
+      {
+        "topic_id": "rd_crime_01",
+        "title": "Bí Mật Dưới Lớp Gạch Men: Bản Án Sau 10 Năm Chôn Vùi Của Người Vợ Trẻ",
+        "summary": "Người đàn ông góa vợ luôn được hàng xóm kính trọng vì sự chung thủy suốt 10 năm, cho đến khi thợ sửa đường ống nước phát hiện chiếc hộp sắt dưới nền bếp.",
+        "source": "reddit",
+        "category_match": "HIGH_IQ",
+        "category_affinity": "HIGH_IQ",
+        "recommended_hook": "'Khi ta đã loại bỏ tất cả những điều không thể, điều còn lại dù khó tin đến đâu cũng chính là sự thật!' - Chiếc hộp sắt chôn 10 năm dưới nền bếp...",
+        "keywords": [
+          "trinh thám",
+          "kỳ án",
+          "bí mật gia đình",
+          "tâm lý tội phạm"
+        ],
+        "key_facts": [
+          "Chiếc hộp sắt chôn sâu 2 mét dưới nền xi măng",
+          "Bức thư tuyệt mệnh chưa từng được gửi đi",
+          "Màn lật mặt chấn động của người đàn ông hoàn hảo"
+        ],
+        "metrics": {
+          "views": 850000,
+          "likes": 64000,
+          "comments": 9800,
+          "shares": 16000,
+          "growth_velocity": 31000.0,
+          "engagement_rate": 0.09,
+          "sentiment_score": 0.75
+        },
+        "viral_score": 91.0
+      },
+      {
+        "topic_id": "rd_romance_01",
+        "title": "Gặp Lại Sau 7 Năm: Bản Hợp Đồng Hôn Nhân Giữa Đêm Mưa",
+        "summary": "Từng chia tay trong nước mắt vì gia cảnh nghèo khó, 7 năm sau cô bất ngờ gặp lại anh trong vai trò sếp tổng của tập đoàn mua lại công ty cô đang làm việc.",
+        "source": "reddit",
+        "category_match": "SLEEP_CHILL",
+        "category_affinity": "SLEEP_CHILL",
+        "recommended_hook": "'Năm xưa cô vì tiền bỏ rơi tôi, bây giờ tôi mua lại cả công ty này để ép cô làm vợ tôi!' - Bản hợp đồng ném thẳng vào ngực...",
+        "keywords": [
+          "ngôn tình",
+          "gương vỡ lại lành",
+          "ngược luyến",
+          "tổng tài",
+          "tình cảm"
+        ],
+        "key_facts": [
+          "Lời nói dối đau đớn năm 20 tuổi",
+          "Sự hận thù biến thành tình yêu cố chấp",
+          "Sự thật hé lộ trong đêm say rượu bão bùng"
+        ],
+        "metrics": {
+          "views": 940000,
+          "likes": 81000,
+          "comments": 13400,
+          "shares": 19000,
+          "growth_velocity": 35000.0,
+          "engagement_rate": 0.1,
+          "sentiment_score": 0.92
+        },
+        "viral_score": 93.8
+      }
+    ],
+    "quora": [
+      {
+        "topic_id": "qu_crime_01",
+        "title": "Màn Đấu Trí Phòng Kín: Kẻ Thủ Ác Giấu Mặt Trong Bức Ảnh Gia Tộc Đêm Giao Thừa",
+        "summary": "Trong căn biệt thự cổ bị khóa trái từ bên trong giữa cơn bão tuyết, một vụ án mạng xảy ra và 7 người trong nhà đều có bằng chứng ngoại phạm hoàn hảo.",
+        "source": "quora",
+        "category_match": "HIGH_IQ",
+        "category_affinity": "HIGH_IQ",
+        "recommended_hook": "'Cánh cửa phòng kín khóa chốt từ bên trong, 7 người trong nhà đều có bằng chứng ngoại phạm, vậy ai là kẻ sát nhân?' - Thủ đoạn phòng kín kinh điển của Conan...",
+        "keywords": [
+          "trinh thám",
+          "phòng kín",
+          "đấu trí cân não",
+          "thám tử"
+        ],
+        "key_facts": [
+          "Bằng chứng ngoại phạm trùng khớp đến từng giây",
+          "Chi tiết giọt nến chảy ngược trên chiếc lò sưởi",
+          "Vị thám tử tìm ra kẻ sát nhân nhờ một cử chỉ vô thức trong bức ảnh"
+        ],
+        "metrics": {
+          "views": 780000,
+          "likes": 59000,
+          "comments": 8900,
+          "shares": 14500,
+          "growth_velocity": 28000.0,
+          "engagement_rate": 0.09,
+          "sentiment_score": 0.78
+        },
+        "viral_score": 89.5
+      },
+      {
+        "topic_id": "qu_romance_01",
+        "title": "Thanh Xuân Bỏ Lỡ: Bức Thư Tình Viết Dở Trong Hộc Bàn Năm 18 Tuổi",
+        "summary": "Mười năm sau ngày tốt nghiệp, cô giáo chủ nhiệm dọn dẹp lớp học cũ và tìm thấy bức thư tình chưa kịp gửi, mở ra câu chuyện tình yêu dang dở khiến triệu người rơi lệ.",
+        "source": "quora",
+        "category_match": "SLEEP_CHILL",
+        "category_affinity": "SLEEP_CHILL",
+        "recommended_hook": "'10 năm sau ngày tốt nghiệp, bức thư tình viết dở năm 18 tuổi bỗng xuất hiện dưới hộc bàn học...' - Câu chuyện tình yêu dang dở...",
+        "keywords": [
+          "ngôn tình",
+          "thanh xuân vườn trường",
+          "tình cảm",
+          "chữa lành",
+          "xúc động"
+        ],
+        "key_facts": [
+          "Bức thư tình 10 năm không phai màu mực",
+          "Chàng trai năm 18 tuổi và chuyến bay không bao giờ trở lại",
+          "Lời hẹn ước dưới cây phong lá đỏ mùa thu"
+        ],
+        "metrics": {
+          "views": 1140000,
+          "likes": 105000,
+          "comments": 16800,
+          "shares": 27000,
+          "growth_velocity": 48000.0,
+          "engagement_rate": 0.11,
+          "sentiment_score": 0.96
+        },
+        "viral_score": 96.0
+      }
+    ],
+    "life_stories": [
+      {
+        "topic_id": "lf_romance_01",
+        "title": "Đêm Gỡ Duyên Âm: Vô Tình Phát Hiện Ra Lá Bùa Yểm Dưới Giường Cưới",
+        "summary": "Người vợ trẻ thường xuyên nằm mơ thấy người đàn ông lạ đứng đầu giường, đi thầy gỡ duyên âm mới bàng hoàng phát hiện bí mật rùng mình mà mẹ chồng giấu kín suốt 4 năm.",
+        "source": "life_stories",
+        "category_match": "SLEEP_CHILL",
+        "category_affinity": "SLEEP_CHILL",
+        "recommended_hook": "'Đi gỡ duyên âm thì phát hiện mình bị chính mẹ chồng yểm bùa dưới chân giường cưới suốt 4 năm!' - Bí mật gia tộc rùng mình...",
+        "keywords": [
+          "tâm sự",
+          "drama đời sống",
+          "tình duyên",
+          "bí mật gia đình"
+        ],
+        "key_facts": [
+          "Giấc mơ lặp đi lặp lại về một bóng người mờ ảo",
+          "Mảnh vải đỏ giấu dưới chân giường cưới",
+          "Sự thật về người con gái từng đính hôn với chồng năm xưa"
+        ],
+        "metrics": {
+          "views": 2200000,
+          "likes": 180000,
+          "comments": 29000,
+          "shares": 48000,
+          "growth_velocity": 75000.0,
+          "engagement_rate": 0.12,
+          "sentiment_score": 0.88
+        },
+        "viral_score": 99.0
+      },
+      {
+        "topic_id": "lf_crime_01",
+        "title": "Kỳ Án Người Đàn Ông Mang Ô Đen Dưới Cơn Mưa Tầm Tã",
+        "summary": "Mỗi khi trời mưa bão lúc 1 giờ sáng, camera trước con hẻm nhỏ lại ghi nhận một bóng người mang ô đen đứng im suốt 30 phút trước căn nhà số 44.",
+        "source": "life_stories",
+        "category_match": "HIGH_IQ",
+        "category_affinity": "HIGH_IQ",
+        "recommended_hook": "'Đúng 1 giờ sáng đêm mưa bão, bóng người mang ô đen lại đứng im lìm trước cửa căn nhà hoang số 44!' - Manh mối vụ án mất tích...",
+        "keywords": [
+          "kỳ án",
+          "trinh thám",
+          "rùng mình",
+          "bí ẩn"
+        ],
+        "key_facts": [
+          "Bóng người mang ô đen không bao giờ để lộ mặt",
+          "Căn nhà số 44 vốn bỏ hoang từ vụ án năm 2015",
+          "Bí mật về chiếc chìa khóa cũ chôn dưới chậu hoa trước cửa"
+        ],
+        "metrics": {
+          "views": 920000,
+          "likes": 71000,
+          "comments": 10500,
+          "shares": 17800,
+          "growth_velocity": 34000.0,
+          "engagement_rate": 0.1,
+          "sentiment_score": 0.82
+        },
+        "viral_score": 92.5
+      }
+    ]
+  }
+}

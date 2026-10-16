@@ -1,0 +1,464 @@
+1
+00:00:00,000 --> 00:00:06,718
+Nếu năm ấy cậu không đứng đợi dưới cơn mưa tầm tã suốt ba tiếng đồng hồ với chiếc áo đồng phục ướt sũng, có lẽ mười năm qua tôi đã không phải sống trong nỗi dằn vặt khôn nguôi này!
+
+2
+00:00:06,718 --> 00:00:10,814
+- Tiếng nấc nghẹn ngào của cô gái bỗng chốc làm cả khán phòng dạ tiệc họp lớp mười năm sau lặng phắc như tờ!
+
+3
+00:00:10,814 --> 00:00:13,272
+Những tiếng ly rượu vang va chạm leng keng bỗng chốc ngưng bặt hoàn toàn.
+
+4
+00:00:13,272 --> 00:00:19,171
+Hàng chục ánh mắt của những người bạn học cũ khóa chuyên Toán năm xưa đổ dồn về phía góc bàn, nơi hai bóng hình đang đối diện nhau trong sự ngột ngạt đến nghẹt thở.
+
+5
+00:00:19,171 --> 00:00:28,183
+Mười năm trôi qua kể từ mùa hè rực lửa của kỳ thi đại học năm ấy, người thiếu niên nghèo mặc chiếc áo sơ mi bạc màu với đôi mắt sáng ngời hoài bão ngày nào, giờ đây đã là một kiến trúc sư trưởng danh tiếng lẫy lừng của tập đoàn quốc tế.
+
+6
+00:00:28,183 --> 00:00:32,280
+Anh khoác trên mình bộ vest màu ghi xám sang trọng, toát lên phong thái điềm đạm và quyền uy của một người thành đạt.
+
+7
+00:00:32,280 --> 00:00:37,195
+Thế nhưng đôi bàn tay của Cố Nam Thành lúc này lại đang run rẩy siết chặt lấy chiếc ly pha lê đến mức các khớp ngón tay trắng bệch.
+
+8
+00:00:37,195 --> 00:00:43,422
+Ánh mắt sâu thẳm đen láy của anh dán chặt vào đôi mắt ngấn lệ của Hạ Mộc Miên - người con gái từng biến mất không một dấu vết ngay trong đêm bế giảng mười năm trước!
+
+9
+00:00:43,422 --> 00:00:50,304
+Khuôn mặt Mộc Miên vẫn thanh tú như một đóa hoa dành dành đầu mùa, nhưng nét ngây thơ trong trẻo tuổi học trò đã được thay bằng vẻ trầm mặc, phong trần của người từng đi qua bão giông cuộc đời.
+
+10
+00:00:50,304 --> 00:00:56,203
+Chiếc váy dạ hội lụa đen giản dị càng làm nổi bật làn da trắng ngần và sợi dây chuyền mặt cỏ bốn lá bằng bạc cũ kỹ vẫn đeo ngay ngắn nơi xương quai xanh.
+
+11
+00:00:56,203 --> 00:01:02,921
+Đó là kỷ vật duy nhất mà Nam Thành từng dùng toàn bộ tiền làm thêm giao báo suốt ba tháng ròng rã mỗi sáng sớm mùa đông lạnh cóng để mua tặng cô nhân ngày sinh nhật tuổi mười bảy!
+
+12
+00:01:02,921 --> 00:01:07,345
+Ký ức của những năm tháng thanh xuân thuần khiết bỗng chốc ùa về như một cuốn phim quay chậm trong tâm trí những người có mặt.
+
+13
+00:01:07,345 --> 00:01:11,114
+Năm mười bảy tuổi, lớp học mười hai A nằm trên tầng ba của ngôi trường cổ rợp bóng phượng vĩ đỏ rực.
+
+14
+00:01:11,114 --> 00:01:16,521
+Cố Nam Thành khi ấy là cậu học trò nghèo mồ côi cha, sống cùng người mẹ đau ốm triền miên trong căn nhà cấp bốn dột nát ven bờ sông ngoại thành.
+
+15
+00:01:16,521 --> 00:01:20,290
+Gia cảnh bần hàn khiến anh luôn mang một vẻ ngoài lạnh lùng, ít nói và khép kín với tất cả mọi người.
+
+16
+00:01:20,290 --> 00:01:25,697
+Mỗi sáng sớm tinh mơ, Nam Thành luôn là người đến lớp đầu tiên để quét dọn phòng học, lau sạch bảng đen và sắp xếp lại từng dãy bàn ghế ngay ngắn.
+
+17
+00:01:25,697 --> 00:01:31,105
+Chiếc áo đồng phục trắng sờn vai của anh luôn được giặt giũ phẳng phiu, thơm mùi xà phòng thơm rẻ tiền mà mẹ anh chắt chiu từng đồng mua ở chợ cóc.
+
+18
+00:01:31,105 --> 00:01:36,184
+Trái ngược với sự u trầm của Nam Thành, Hạ Mộc Miên lại là cô lớp phó học tập dịu dàng, hoạt bát với nụ cười tỏa nắng như sương mai.
+
+19
+00:01:36,184 --> 00:01:39,297
+Cô là người duy nhất không bao giờ nhìn Nam Thành bằng ánh mắt thương hại hay xa lánh.
+
+20
+00:01:39,297 --> 00:01:43,230
+Ngược lại, Mộc Miên luôn tìm mọi cách để lặng lẽ bước vào thế giới khép kín của cậu bạn cùng bàn kiên cường.
+
+21
+00:01:43,230 --> 00:01:48,965
+Mỗi buổi sáng, cô luôn lén nhét vào ngăn bàn của anh một chiếc bánh mì kẹp thịt còn nóng hổi, hoặc một chai sữa đậu nành ngọt lịm do chính tay mẹ cô nấu.
+
+22
+00:01:48,965 --> 00:01:53,881
+Khi Nam Thành ngẩng lên ngơ ngác nhìn, Mộc Miên chỉ mỉm cười tinh nghịch, thì thầm: Tớ mua thừa một phần, cậu không ăn là lãng phí đấy nhé!
+
+23
+00:01:53,881 --> 00:01:55,381
+.
+
+24
+00:01:55,381 --> 00:01:57,675
+Nam Thành biết rõ cô đang nói dối để giữ thể diện cho mình.
+
+25
+00:01:57,675 --> 00:02:00,952
+Anh cắn từng miếng bánh mì ấm nóng, nuốt trọn cả sự biết ơn sâu sắc vào tận đáy lòng.
+
+26
+00:02:00,952 --> 00:02:07,998
+Những buổi chiều tan học muộn, khi sân trường chỉ còn lại tiếng ve râm ran và những tia nắng vàng vọt cuối ngày, hai đứa trẻ lại cùng nhau đạp xe qua những con phố rợp bóng cây xà cừ cổ thụ.
+
+27
+00:02:07,998 --> 00:02:15,699
+Chiếc xe đạp phượng hoàng cà tàng của Nam Thành phát ra tiếng kêu cọt kẹt, nhưng phía sau yên xe, Mộc Miên luôn ngồi nghiêng người, hai tay khẽ túm lấy vạt áo đồng phục của anh, cất tiếng hát trong trẻo như chim sơn ca.
+
+28
+00:02:15,699 --> 00:02:20,943
+Những ngày trời đổ mưa rào bất chợt, hai đứa cùng nép mình dưới một chiếc ô rách cán, vừa đi vừa cười khúc khích dù gấu quần ướt sũng nước mưa.
+
+29
+00:02:20,943 --> 00:02:28,316
+Những buổi tối mùa đông cúp điện đột ngột, lớp học chìm trong bóng tối dày đặc, hai đứa lại ngồi nép bên bậu cửa sổ, thắp lên một ngọn nến nhỏ le lói để cùng nhau giải những bài toán tích phân hóc búa.
+
+30
+00:02:28,316 --> 00:02:34,215
+Hơi ấm từ bàn tay lóng ngóng của chàng thiếu niên chạm nhẹ vào mu bàn tay nhỏ nhắn của cô bạn cùng bàn, làm cả hai cùng đỏ ửng mặt dưới ánh nến lung linh.
+
+31
+00:02:34,215 --> 00:02:36,181
+Tim Nam Thành đập thình thịch như đánh trống trong lồng ngực.
+
+32
+00:02:36,181 --> 00:02:38,967
+Anh vội vã rụt tay lại, lúng túng làm rơi cả cây bút mực xuống sàn nhà.
+
+33
+00:02:38,967 --> 00:02:43,719
+Mộc Miên bật cười khúc khích, cúi người nhặt bút giúp anh, mái tóc đen mượt thoảng mùi hương bồ kết vương vấn quanh cánh mũi chàng trai trẻ.
+
+34
+00:02:43,719 --> 00:02:54,042
+Vào một buổi chiều hoàng hôn rực rỡ trước kỳ thi tốt nghiệp một tháng, khi cả lớp đã về hết, Nam Thành đã dùng mũi compa cẩn thận khắc lên góc mặt bàn gỗ của Mộc Miên một dòng chữ sâu hoắm: Đợi tôi đỗ Đại học Kiến trúc, tôi sẽ xây cho cậu một ngôi nhà ngập tràn hoa hồng .
+
+35
+00:02:54,042 --> 00:02:56,500
+Mộc Miên nhìn dòng chữ ấy, đôi mắt long lanh ngấn lệ vì xúc động.
+
+36
+00:02:56,500 --> 00:03:01,088
+Cô khẽ nắm lấy bàn tay chai sần của anh, gật đầu thì thầm: Tớ sẽ đợi, Cho dù bao lâu, tớ cũng nhất định sẽ đợi cậu!
+
+37
+00:03:01,088 --> 00:03:02,588
+.
+
+38
+00:03:02,588 --> 00:03:07,831
+Tình cảm học trò thuần khiết và thiêng liêng ấy từng là ngọn hải đăng rực rỡ nhất soi sáng chuỗi ngày tăm tối, nghèo khó của tuổi trẻ Cố Nam Thành.
+
+39
+00:03:07,831 --> 00:03:14,058
+Anh xem lời hứa ấy như kim chỉ nam của cuộc đời mình, ngày đêm vùi đầu vào sách vở, giải hàng nghìn đề thi để quyết tâm chạm tay vào cánh cổng trường đại học mơ ước.
+
+40
+00:03:14,058 --> 00:03:19,629
+Những ngày ôn thi căng thẳng nhất, Nam Thành nhịn ăn sáng suốt cả tháng trời để gom góp từng đồng mua tặng cô một chiếc kẹp tóc hoa cúc nhỏ bằng kim loại.
+
+41
+00:03:19,629 --> 00:03:24,709
+Còn Mộc Miên lại âm thầm xin mẹ cuộn chỉ đỏ, tỉ mỉ ngồi thêu từng đường kim mũi chỉ lên chiếc áo khoác đồng phục bị sờn rách của anh.
+
+42
+00:03:24,709 --> 00:03:28,641
+Cô thêu một bông hoa nhỏ nơi ngực áo, kèm theo một biểu tượng may mắn bí mật mà chỉ hai người mới hiểu.
+
+43
+00:03:28,641 --> 00:03:31,755
+Thế nhưng, cuộc đời vốn dĩ chưa bao giờ êm đềm như những trang lưu bút tuổi học trò.
+
+44
+00:03:31,755 --> 00:03:36,670
+Ngay trước kỳ thi đại học ba ngày, một tai họa khủng khiếp từ trên trời giáng xuống đã vỡ vụn hoàn toàn giấc mơ thanh xuân của hai người.
+
+45
+00:03:36,670 --> 00:03:43,061
+Mẹ của Nam Thành - người phụ nữ tần tảo cả đời làm phụ hồ trên các công trường - bất ngờ ngã quỵ từ giàn giáo cao xuống đất vì một cơn nhồi máu cơ tim cấp tính!
+
+46
+00:03:43,061 --> 00:03:47,813
+Khi Nam Thành hớt hải chạy vào bệnh viện huyện, người mẹ già đã hôn mê sâu trên giường cấp cứu, toàn thân cắm đầy những ống truyền dịch.
+
+47
+00:03:47,813 --> 00:03:52,237
+Bác sĩ trưởng khoa nghiêm nét mặt thông báo một tin sét đánh: Mẹ cậu bị suy tim giai đoạn cuối kèm theo chấn thương phổi nặng.
+
+48
+00:03:52,237 --> 00:03:56,661
+Nếu không tiến hành phẫu thuật thay van tim nhân tạo khẩn cấp trong vòng bảy mươi hai giờ tới, bà ấy sẽ không thể qua khỏi.
+
+49
+00:03:56,661 --> 00:03:58,464
+Chi phí phẫu thuật trọn gói là năm trăm triệu đồng!
+
+50
+00:03:58,464 --> 00:03:59,964
+.
+
+51
+00:03:59,964 --> 00:04:01,464
+Năm trăm triệu đồng!
+
+52
+00:04:01,464 --> 00:04:04,249
+Một con số thiên văn đối với một cậu học trò nghèo không một xu dính túi!
+
+53
+00:04:04,249 --> 00:04:07,854
+Trong túi quần Nam Thành khi ấy chỉ còn vỏn vẹn ba mươi lăm nghìn đồng tiền làm thêm chưa kịp tiêu.
+
+54
+00:04:07,854 --> 00:04:14,244
+Chàng trai mười tám tuổi gục ngã hoàn toàn, quỳ sụp xuống sàn hành lang bệnh viện lạnh ngắt, hai tay ôm chặt lấy đầu, những giọt nước mắt bất lực trào ra ướt đẫm vạt áo đồng phục.
+
+55
+00:04:14,244 --> 00:04:19,324
+Anh tuyệt vọng nghĩ đến việc ký vào đơn bảo lưu kết quả học tập, từ bỏ kỳ thi đại học để đi vay nặng lãi hoặc bán thận cứu mẹ!
+
+56
+00:04:19,324 --> 00:04:27,681
+Chính trong khoảnh khắc Nam Thành cận kề bờ vực tuyệt vọng nhất, Lâm Uyển Nhi - cô hoa khôi kiêu kỳ của trường, con gái của viện trưởng bệnh viện tỉnh - đã âm thầm tìm gặp riêng Hạ Mộc Miên tại quán cà phê đối diện cổng bệnh viện.
+
+57
+00:04:27,681 --> 00:04:34,071
+Uyển Nhi từ lâu đã đem lòng say mê tài năng và khí chất kiên cường của Nam Thành, nhưng luôn ôm lòng đố kỵ với tình cảm gắn bó như hình với bóng giữa anh và Mộc Miên.
+
+58
+00:04:34,071 --> 00:04:42,428
+Ngồi đối diện với Mộc Miên, Uyển Nhi đẩy sang một tờ séc ngân hàng trị giá đúng năm trăm triệu đồng, kèm theo một bản cam kết học bổng du học toàn phần tại Singapore dành cho Nam Thành do quỹ từ thiện của gia đình cô ta bảo trợ.
+
+59
+00:04:42,428 --> 00:04:51,932
+Uyển Nhi nhìn Mộc Miên bằng ánh mắt sắc lạnh như băng tuyết, cất giọng tàn nhẫn: Gia đình tôi có thể cứu sống mẹ Nam Thành ngay trong đêm nay, đồng thời bảo đảm cho cậu ấy một tương lai xán lạn nhất mà một kẻ nghèo hèn như cô cả đời cũng không thể mang lại!
+
+60
+00:04:51,932 --> 00:04:54,881
+Nhưng điều kiện duy nhất của tôi là: Cô phải vĩnh viễn biến mất khỏi thành phố này!
+
+61
+00:04:54,881 --> 00:04:57,831
+Ngay sau đêm bế giảng, cô phải cắt đứt toàn bộ liên lạc và rời đi thật xa!
+
+62
+00:04:57,831 --> 00:04:59,331
+.
+
+63
+00:04:59,331 --> 00:05:04,738
+Uyển Nhi cười nhạt, buông thêm những lời cay độc như dao cứa vào tim cô gái nhỏ: Nếu cô thực sự yêu cậu ấy, hãy buông tay để cậu ấy bay cao!
+
+64
+00:05:04,738 --> 00:05:11,128
+Còn nếu cô ích kỷ giữ cậu ấy lại bên mình, cậu ấy sẽ phải bỏ học đi bốc vác kiếm tiền trả nợ, và mẹ cậu ấy sẽ chết trong đau đớn vì sự cố chấp của cô!
+
+65
+00:05:11,128 --> 00:05:14,733
+Hãy chọn đi: Tình yêu ích kỷ của cô, hay tính mạng của mẹ Nam Thành và tương lai của cậu ấy?
+
+66
+00:05:14,733 --> 00:05:16,233
+.
+
+67
+00:05:16,233 --> 00:05:18,855
+Những lời đay nghiến tàn nhẫn ấy như bóp nghẹt từng nhịp thở của Mộc Miên.
+
+68
+00:05:18,855 --> 00:05:25,246
+Nhìn qua khung cửa kính bệnh viện, thấy Nam Thành đang quỳ gối van xin bác sĩ kéo dài thời gian đóng viện phí, trái tim Mộc Miên đau đớn như bị hàng nghìn mảnh thủy tinh đâm nát.
+
+69
+00:05:25,246 --> 00:05:28,359
+Cô cắn chặt môi đến bật máu, hai bàn tay siết chặt tà áo đồng phục đến run rẩy.
+
+70
+00:05:28,359 --> 00:05:34,094
+Vì người con trai mình yêu hơn cả tính mạng, cô gái nhỏ mười tám tuổi năm ấy đã nuốt trọn toàn bộ cay đắng, gật đầu chấp thuận bản giao ước tàn nhẫn ấy!
+
+71
+00:05:34,094 --> 00:05:39,665
+Để Nam Thành có thể toàn tâm toàn ý bước vào phòng thi mà không vướng bận bất kỳ điều gì, Mộc Miên đã âm thầm giấu kín toàn bộ sự thật đau lòng.
+
+72
+00:05:39,665 --> 00:05:44,745
+Cô giả vờ như không có chuyện gì xảy ra, vẫn mỉm cười động viên anh hoàn thành xuất sắc kỳ thi đại học với số điểm thủ khoa rực rỡ.
+
+73
+00:05:44,745 --> 00:05:53,101
+Thế nhưng ngay trong đêm liên hoan bế giảng sau kỳ thi, khi Nam Thành háo hức cầm bó hoa dại đứng đợi cô dưới gốc cây phượng vĩ cổ thụ suốt ba tiếng đồng hồ dưới cơn mưa giông tầm tã, Mộc Miên đã không bao giờ xuất hiện nữa.
+
+74
+00:05:53,101 --> 00:05:58,673
+Anh đứng đó trong bóng đêm mịt mùng, mặc cho những hạt mưa quất rát bỏng vào da thịt, đôi mắt đỏ hoe ngóng trông bóng hình quen thuộc của cô bạn cùng bàn.
+
+75
+00:05:58,673 --> 00:06:05,882
+Anh không hề hay biết rằng, ngay trong buổi tối định mệnh ấy, Mộc Miên đang ngồi trên chuyến xe khách đò muộn, ôm người mẹ ruột cũng đang mắc bạo bệnh lặng lẽ rời khỏi thành phố trong nước mắt lã chã rơi.
+
+76
+00:06:05,882 --> 00:06:11,945
+Sáng hôm sau, khi Nam Thành sốt cao run rẩy tìm đến căn nhà trọ của Mộc Miên, nơi đó chỉ còn lại cánh cửa sắt hoen gỉ bị khóa chặt bằng một ổ khóa lạnh lùng.
+
+77
+00:06:11,945 --> 00:06:14,731
+Cô gái nhỏ đã dọn đi không để lại một dòng thư, không một lời từ biệt!
+
+78
+00:06:14,731 --> 00:06:20,630
+Chàng thiếu niên mười tám tuổi ngã quỵ ngay trước hiên nhà trọ, cơn sốt cao co giật biến chứng thành viêm phổi nặng khiến anh phải nhập viện cấp cứu suốt hai tuần ròng rã.
+
+79
+00:06:20,630 --> 00:06:23,415
+Trong cơn mê man sốt li bì, anh liên tục gọi tên Mộc Miên trong tuyệt vọng.
+
+80
+00:06:23,415 --> 00:06:29,314
+Khi tỉnh lại, người đầu tiên anh nhìn thấy bên giường bệnh là Lâm Uyển Nhi cùng lời thông báo rằng viện phí của mẹ anh đã được gia đình họ Lâm thanh toán toàn bộ.
+
+81
+00:06:29,314 --> 00:06:37,343
+Cùng lúc đó, những lời đồn thổi ác ý bắt đầu lan truyền khắp trường học: Rằng Hạ Mộc Miên đã theo một đại gia giàu có chuyển vào phương Nam sinh sống, vứt bỏ người bạn trai nghèo rớt mồng tơi như một món đồ chơi cũ kỹ!
+
+82
+00:06:37,343 --> 00:06:46,028
+Nỗi đau đớn bị người mình yêu sâu đậm nhất phản bội đã hóa thành một vết sẹo đen ngòm, hằn sâu vào tâm can Nam Thành suốt mười năm ròng rã, biến anh thành một người đàn ông lạnh lùng, sắt đá và khép kín trái tim với tất cả mọi người.
+
+83
+00:06:46,028 --> 00:06:51,763
+Quay trở lại thực tại của đêm dạ tiệc họp lớp mười năm sau, không khí trong khán phòng khách sạn năm sao vẫn ngột ngạt và căng thẳng như một dây cung kéo căng.
+
+84
+00:06:51,763 --> 00:07:04,380
+Đúng lúc này, người lớp trưởng năm xưa bước lên bục sân khấu, hai tay cẩn thận bê một chiếc hộp thiếc gỉ sét phủ đầy bụi bặm thời gian đặt lên giữa bàn trà: Các bạn ơi, hôm nay trước khi phá dỡ dãy phòng học cũ để xây dựng trường mới, thầy hiệu trưởng đã tình cờ tìm thấy chiếc hộp Nguyện Ước Thời Gian của khóa mười hai A chúng ta mười năm trước!
+
+85
+00:07:04,380 --> 00:07:11,262
+Mười năm trước trong tiết sinh hoạt cuối cùng, mỗi người trong chúng ta đều đã bí mật viết một bức thư gửi cho người mình thầm thương trộm nhớ nhất, hẹn rằng đúng mười năm sau sẽ cùng nhau mở ra!
+
+86
+00:07:11,262 --> 00:07:12,762
+.
+
+87
+00:07:12,762 --> 00:07:15,383
+Tiếng reo hò, vỗ tay của bạn bè xung quanh bỗng chốc vang lên rộn rã.
+
+88
+00:07:15,383 --> 00:07:19,808
+Thế nhưng Mộc Miên lại giật thót mình, bước chân vô thức lùi lại phía sau một bước, lồng ngực đập dồn dập đến mức khó thở.
+
+89
+00:07:19,808 --> 00:07:27,509
+Bởi vì cô biết rõ hơn ai hết, bên trong chiếc hộp thiếc ấy chứa đựng bức thư tỏ tình dài năm trang giấy tập học trò của cô gửi cho Cố Nam Thành, cùng toàn bộ những lời hẹn ước ngây thơ của tuổi mười bảy!
+
+90
+00:07:27,509 --> 00:07:33,080
+Lâm Uyển Nhi - người giờ đây đang khoác tay Nam Thành với tư cách vị hôn thê môn đăng hộ đối được hai gia đình sắp đặt - khẽ nhếch mép cười khẩy.
+
+91
+00:07:33,080 --> 00:07:40,945
+Cô ta bước tới, cố tình lục lọi trong chiếc hộp thiếc và rút ra một phong bì thư màu xanh nhạt đã ố vàng theo năm tháng: Ôi chao, nét chữ nắn nót dịu dàng này chẳng phải của lớp phó học tập Hạ Mộc Miên sao?
+
+92
+00:07:40,945 --> 00:07:47,991
+Để tôi đọc cho cả lớp cùng nghe nhé: Gửi Cố Nam Thành, Nếu sau này cậu trở thành một kiến trúc sư vĩ đại, tớ ước gì có thể làm người đầu tiên bước vào ngôi nhà hoa hồng của cậu, .
+
+93
+00:07:47,991 --> 00:07:54,218
+Uyển Nhi ngẩng đầu lên, ánh mắt sắc như dao lam quét qua khuôn mặt tái nhợt của Mộc Miên, cất giọng châm chọc đầy cay nghiệt: Mộc Miên à, lời lẽ nghe thật cảm động biết bao!
+
+94
+00:07:54,218 --> 00:08:00,117
+Thế nhưng năm đó vừa thi xong đại học, cô lại nhận tiền của người khác rồi bỏ trốn mất tăm mất tích, bỏ mặc Nam Thành đợi chờ dưới mưa đến mức suýt mất mạng!
+
+95
+00:08:00,117 --> 00:08:04,705
+Mười năm qua cô trốn chui trốn nhủi ở đâu, để hôm nay lại mò về đây đóng vai kẻ si tình đáng thương trước mặt mọi người?
+
+96
+00:08:04,705 --> 00:08:06,205
+.
+
+97
+00:08:06,205 --> 00:08:12,267
+Những lời lăng mạ nhục mạ sắc mỏng của Uyển Nhi khiến bạn bè xung quanh bắt đầu xì xào bàn tán, những ánh mắt nhìn Mộc Miên dần chuyển sang sự nghi ngờ và coi thường.
+
+98
+00:08:12,267 --> 00:08:15,708
+Mộc Miên cắn chặt môi đến bật máu, từng giọt nước mắt tủi nhục lăn dài trên gò má gầy guộc.
+
+99
+00:08:15,708 --> 00:08:21,443
+Cô không thể giải thích, bởi vì lời thề bảo mật năm xưa để bảo vệ danh dự cho mẹ Nam Thành vẫn như một sợi xích vô hình khóa chặt lấy cổ họng cô!
+
+100
+00:08:21,443 --> 00:08:23,574
+Cố Nam Thành bước từng bước nặng nề tiến lại gần Mộc Miên.
+
+101
+00:08:23,574 --> 00:08:27,015
+Bóng dáng cao lớn, uy quyền của anh bao trùm lấy thân hình nhỏ bé đang run rẩy của cô gái.
+
+102
+00:08:27,015 --> 00:08:32,422
+Giọng nói của Nam Thành trầm đục, vỡ vụn từng hồi vì nỗi đau đớn kìm nén suốt một thập kỷ: Hạ Mộc Miên, Hãy nhìn thẳng vào mắt tôi và trả lời!
+
+103
+00:08:32,422 --> 00:08:34,880
+Tại sao năm đó cậu lại nhẫn tâm bỏ đi không một lời từ biệt?
+
+104
+00:08:34,880 --> 00:08:39,304
+Cậu có biết tôi đã đứng dưới mưa trước cổng nhà cậu suốt một đêm ròng rã, cầu xin cậu xuất hiện dù chỉ một giây không?
+
+105
+00:08:39,304 --> 00:08:43,728
+Mười năm qua, trong mắt cậu, lời hứa năm mười bảy tuổi của chúng ta và tình cảm của tôi thực sự rẻ rúng đến thế sao?
+
+106
+00:08:43,728 --> 00:08:45,228
+.
+
+107
+00:08:45,228 --> 00:08:57,190
+Mộc Miên nghẹn ngào lắc đầu trong làn nước mắt nhạt nhòa, hai bàn tay siết chặt lấy chiếc túi xách giả da đã sờn rách mép: Nam Thành, Xin cậu đừng hỏi nữa, Tôi không hề phản bội cậu, Chưa từng có một giây phút nào trong đời tôi phản bội cậu cả, Có những chuyện, thà để một mình tôi gánh chịu còn hơn làm tổn thương đến người khác, .
+
+108
+00:08:57,190 --> 00:08:58,690
+Vậy tại sao cô lại bỏ đi?
+
+109
+00:08:58,690 --> 00:09:01,475
+Tại sao lại cắt đứt mọi liên lạc, vứt bỏ toàn bộ những ước hẹn năm xưa?
+
+110
+00:09:01,475 --> 00:09:07,866
+- Nam Thành gầm lên trong đau đớn cùng cực, lồng ngực anh phập phồng dữ dội, bàn tay anh bất ngờ vươn ra, nắm chặt lấy cổ tay mảnh khảnh của Mộc Miên kéo mạnh về phía mình!
+
+111
+00:09:07,866 --> 00:09:12,618
+Anh muốn nhìn thấy sự ân hận trong mắt cô, muốn nghe một lời giải thích chân thật nhất sau mười năm đằng đẵng chờ đợi trong tuyệt vọng!
+
+112
+00:09:12,618 --> 00:09:17,861
+Thế nhưng trong lúc hai người giằng co kịch liệt giữa trung tâm khán phòng tiệc, quai chiếc túi xách cũ kỹ đã mục chỉ của Mộc Miên bỗng chốc đứt phựt!
+
+113
+00:09:17,861 --> 00:09:20,974
+Toàn bộ chiếc túi rơi thẳng xuống nền đá cẩm thạch phát ra một tiếng va chạm chát chúa!
+
+114
+00:09:20,974 --> 00:09:30,151
+Từ bên trong chiếc túi rơi tung tóe khắp mặt sàn: Một cuốn sổ nhật ký bìa xanh đã sờn rách gáy, chiếc kẹp tóc hoa cúc nhỏ bằng kim loại đã gỉ sét của mười năm trước, và hàng chục tờ biên lai chuyển tiền ngân hàng định kỳ đã ố vàng theo năm tháng!
+
+115
+00:09:30,151 --> 00:09:32,445
+Một tờ biên lai rơi ngay dưới mũi giày da của Cố Nam Thành.
+
+116
+00:09:32,445 --> 00:09:32,519
+Ánh mắt anh vô tình liếc xuống, và toàn bộ huyết quản trong cơ thể anh bỗng chốc đông cứng lại khi nhìn thấy dòng chữ viết tay bằng mực đỏ tươi ngay trên đầu trang biên lai: Nội dung chuyển khoản: Mỗi tháng gửi năm triệu đồng chu cấp viện phí điều trị cho mẹ Cố Nam Thành tại viện dưỡng lão Ánh Dương - Tên người gửi: Hạ Mộc Miên !
+

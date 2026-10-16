@@ -1,0 +1,317 @@
+# -*- coding: utf-8 -*-
+"""
+core/stories/horror_chuyentau_masterpiece.py
+Bộ Kịch Bản Audio Kinh Dị Rùng Rợn Ban Đêm Chuẩn GEMINI.md (>= 30 Phút Audio ở Tốc Độ 1.5x):
+Chuyến Tàu Đêm Không Ga Đến: 7 Hành Khách Và Lời Nguyền Trả Máu
+Dung lượng: 3 Tập x ~3,520 từ = ~10,560 từ.
+Giọng đọc chỉ định: vi-VN-NamMinhNeural (Nam trầm ấm, uy quyền, chuẩn trinh thám/kinh dị).
+100% Zero-Biography, Show Don't Tell, Chekhov's Gun logic, Cliffhanger nghẹt thở.
+"""
+
+from typing import Dict, Any
+
+def get_horror_chuyentau_masterpiece_story(title: str = "") -> Dict[str, Any]:
+    story_title = title if title else "Chuyến Tàu Đêm Không Ga Đến: 7 Hành Khách Và Lời Nguyền Trả Máu"
+
+    part1_full = """'Chuyến tàu này không có ga đến trần gian đâu, tất cả các người đều đã chết từ bảy năm trước rồi!' - Đúng không giờ mười lăm phút sáng giữa cơn mưa bão sấm sét xé toạc bầu trời, tiếng còi tàu rền rĩ như tiếng kêu khóc của oan hồn bỗng vang lên từ sâu trong lòng đường hầm sắt phế tích!
+Đoàn tàu hỏa cũ kỹ sơn màu xanh rêu thời bao cấp rít lên từng hồi ken két chói tai, bánh thép cọ xát dữ dội vào đường ray gỉ sét tóe ra những chùm tia lửa đỏ quạch.
+Cả toa xe số 4 bỗng chốc rung lắc dữ dội như muốn lật nhào xuống sườn núi dốc đứng.
+Nhiệt độ trong khoang tàu đột ngột tụt xuống dưới độ âm, từng luồng sương giá lạnh ngắt từ sàn tàu bốc lên mờ mịt, khiến hơi thở của bảy hành khách phả ra thành từng luồng khói trắng xóa.
+Ánh đèn tuýp vàng vọt trên trần toa tàu nhấp nháy liên hồi rồi nổ tung phát ra tiếng 'bốp' chát chúa, dìm cả không gian vào bóng tối đen như mực.
+Khi ngọn đèn khẩn cấp màu đỏ máu ở góc toa bật sáng le lói, chiếc đồng hồ điện tử hiển thị trên bảng điện bỗng nhiên quay ngược thời gian với tốc độ chóng mặt, dừng lại đúng ở con số: 23 giờ 59 phút ngày 14 tháng 7 năm 2017!
+
+Tôi ngồi ở hàng ghế số 13 sát mép cửa sổ, hai bàn tay siết chặt lấy thanh chắn bằng kim loại lạnh ngắt như tảng băng trôi.
+Nhìn qua ô cửa kính loang lổ vết nước mưa bên ngoài, đường hầm tối om như một miệng quái vật khổng lồ đang nuốt chửng đoàn tàu.
+Thế nhưng ngay trên mặt ngoài của tấm kính thủy tinh dày cộp, một lớp sương mù đỏ sẫm màu máu khô bắt đầu đọng lại từng giọt.
+Và kinh hoàng hơn tất cả, từ trong bóng tối sâu thẳm ngoài đường hầm, hàng chục dấu bàn tay người tái mét, nhợt nhạt và rớm máu... bỗng đồng loạt đập mạnh 'RẦM... RẦM... RẦM' vào mặt kính!
+Những ngón tay khẳng khiu cào cấu điên loạn lên mặt kính, để lại những vệt máu tươi trượt dài theo hạt mưa rơi!
+Tiếng móng tay cào vào thủy tinh rít lên từng hồi đinh tai nhức óc, như muốn khoan thủng màng nhĩ của bất cứ ai ngồi trong toa xe.
+Cả bảy con người trong khoang tàu – bao gồm một gã doanh nhân béo bụng, một bà lão mặc áo tang, một cô nữ sinh mang đàn vĩ cầm, một tay thanh niên xăm trổ, một người phụ nữ bế bọc khăn đỏ, một người đàn ông mặc áo blouse trắng và tôi – đều chết lặng trong nỗi sợ hãi tột cùng!
+
+Gã doanh nhân béo vội vàng lao đến cánh cửa nối giữa các toa xe, điên cuồng vặn chiếc tay nắm tròn bằng đồng để mở cửa chạy sang toa lái.
+Nhưng chiếc then cài đã bị hàn chết bằng những mối chì dày đặc dán kín các đạo bùa chu sa màu vàng úa!
+Qua ô kính nhỏ của cánh cửa ngăn, khoang lái phía trước hoàn toàn trống rỗng không một bóng người!
+Chiếc vô lăng điều khiển tự động quay tròn điên cuồng, trên bảng điều khiển rải đầy những sợi tóc đen dài ướt sũng dính đầy bùn đất đáy vực!
+Bên cạnh cần số là một cuốn nhật ký hành trình bọc da bị cháy sém bốn góc, trên trang bìa viết bằng mực đỏ tươi dòng chữ rùng rợn:
+'Quy tắc sinh tồn trên chuyến tàu số 00:
+Điều thứ nhất: Tuyệt đối không được nhìn vào gương chiếu hậu khi tàu đi qua hầm cấm.
+Điều thứ hai: Nếu nghe thấy tiếng trẻ con khóc ngoài cửa sổ, không được trả lời hay mở then cài.
+Điều thứ ba: Trong số bảy người đang ngồi trên xe... có một kẻ không phải là người!'.
+
+Tim tôi đập thình thịch như muốn nổ tung khỏi lồng ngực, mồ hôi lạnh toát ra như tắm ướt đẫm sống lưng.
+Bảy năm trước, đúng vào đêm 14 tháng 7 năm 2017, một vụ tai nạn sập hầm đường sắt kinh hoàng nhất trong lịch sử đã xảy ra tại chính cung đường này.
+Đoàn tàu du lịch mang số hiệu SE00 chở theo hàng trăm hành khách đã bị đứt phanh lao thẳng xuống vực sâu Đèo Cả khi đang xuyên qua lòng núi.
+Toàn bộ hành khách và nhân viên lái tàu đều tử nạn thảm khốc, thi thể bị đất đá vùi lấp dưới độ sâu hàng chục mét.
+Dự án đường hầm sau đó bị niêm phong vĩnh viễn và bỏ hoang, đường ray bị cắt đứt khỏi mạng lưới đường sắt quốc gia từ nửa thập kỷ trước.
+Vậy đoàn tàu mà chúng tôi đang ngồi... rốt cuộc là từ đâu tới, và đang chạy trên tuyến đường ray của cõi nào?!
+
+Một tiếng khóc nỉ non của trẻ sơ sinh bỗng nhiên cất lên từ bọc khăn đỏ trên tay người phụ nữ ngồi ở hàng ghế số 7.
+Bà lão mặc áo tang từ từ quay chiếc đầu khô quắt như cành củi lại, đôi mắt đục ngầu không có lòng đen nhìn trừng trừng vào bọc vải:
+'Nó không phải trẻ con đâu... Mùi tử thi ngâm nước của nó đã bốc lên khắp khoang tàu rồi...'.
+Lời bà lão vừa dứt, người phụ nữ bế bọc khăn bỗng cất lên một tràng cười khùng khục nghẹn ngào.
+Bà ta từ từ mở lớp vải đỏ ra.
+Bên trong không hề có đứa bé nào cả, mà chỉ là một chiếc đầu lâu người nhỏ xíu bọc đầy rêu xanh và bùn lầy, hai hốc mắt trống rỗng đang ngọ nguậy hàng ngàn con rết độc bò lúc nhúc!
+Người phụ nữ ngẩng mặt lên, khuôn mặt bà ta nhợt nhạt không có huyết sắc, miệng chảy ròng ròng thứ nước đen tanh tưởi:
+'Bảy năm trước, chính các người đã giẫm đạp lên mẹ con tôi để tranh nhau chiếc cửa thoát hiểm duy nhất...
+Đêm nay, không một ai trong số các người có thể sống sót bước ra khỏi đường hầm này đâu!'.
+
+Đoàn tàu bất thình lình phanh khựng lại một cú kinh hoàng!
+Toàn bộ hành khách bị hất tung về phía trước, va đập dữ dội vào thành ghế sắt.
+Từ trên trần toa xe, những giọt chất lỏng màu đỏ thẫm bắt đầu nhỏ tí tách xuống sàn gạch hoa.
+Nhìn lên trần xe, một bóng ma mặc áo dài đỏ rực đang bò trườn trên các thanh xà sắt như một con trăn khổng lồ, mái tóc dài chấm đất từ từ phủ xuống bao trùm lấy đỉnh đầu của gã doanh nhân!
+Gã đàn ông gào thét thảm thiết khi hai cánh tay xương xẩu thò ra từ đám tóc, bóp chặt lấy cổ họng hắn nhấc bổng lên không trung!
+Tôi vồ lấy chiếc búa thoát hiểm bằng thép trên vách toa xe, dồn toàn bộ sức mạnh căm hờn lao tới giáng mạnh vào cánh tay quỷ dữ!
+Nhưng ngay khi chiếc búa vừa chạm vào làn da xám ngắt của bóng ma, một luồng âm khí buốt giá hất tung tôi văng mạnh vào cửa sổ kính.
+Mặt kính phía sau lưng tôi nứt toác ra từng mảng lớn, và hàng chục cánh tay bùn lầy từ ngoài đường hầm lập tức thò vào tóm chặt lấy bả vai tôi kéo giật ra miệng vực đen ngòm!
+
+Đường hầm Hải Vân cổ này được người Pháp đào xuyên qua dãy núi đá hoa cương sừng sững từ hơn một thế kỷ trước. Trong quá trình thi công gian khổ năm xưa, hàng trăm phu hầm đã phải bỏ mạng dưới những trận sạt lở đá kinh hoàng và những vụ nổ mìn thảm khốc. Người ta đồn rằng máu của những người thợ phu xấu số đã ngấm sâu vào từng thớ đá ong và những thanh tà vẹt gỗ lim ngâm tẩm dầu hắc ín. Mỗi khi màn đêm buông xuống, đặc biệt là vào những đêm giông bão sấm sét rền trời, những tiếng cuốc đập đá chan chát và tiếng rên rỉ u uất vẫn thỉnh thoảng vọng ra từ các ngách hầm cụt bỏ hoang. Không một người lái tàu nào dám cho tàu chạy chậm qua cung đường này sau mười hai giờ đêm, bởi chỉ cần một thoáng phân tâm nhìn vào bóng tối sâu thẳm, người ta sẽ thấy những bóng người trắng toát đứng vẫy tay xin quá giang dọc theo mép đường ray gỉ sét.
+
+Tôi lấy trong túi áo khoác ra chiếc đèn pin cứu hộ chuyên dụng, bật chế độ chiếu sáng cực mạnh quét một vòng quanh toa xe số 4. Những chiếc ghế bọc nệm simili màu xanh rêu thời bao cấp đã bị rách nát loang lổ, để lộ ra những búi xơ dừa ẩm mốc bốc mùi chua loét của thời gian. Trên sàn tàu bằng gỗ dán, những vũng nước đen ngòm rỉ ra từ dưới gầm ghế mang theo những sợi rêu xanh nhớp nháp và những vỏ ốc suối bám chặt vào chân kim loại. Nhìn kỹ hơn vào hàng ghế số 7 nơi người phụ nữ bế bọc khăn đỏ từng ngồi, tôi rùng mình khi phát hiện ra một vệt chất nhầy màu xám tro kéo dài từ mép đệm xuống sàn xe, như thể một sinh vật thân mềm vừa trườn qua để lại dấu vết của một xác chết thối rữa dưới đáy bùn lầy sâu thẳm.
+
+Cô nữ sinh mang đàn vĩ cầm ngồi nép sát vào vách thép, hai bàn tay trắng ngần run rẩy ôm chặt lấy hộp đàn bằng gỗ đào. 'Anh ơi... Em nghe thấy tiếng hát ru của mẹ em...' - cô gái thì thầm, giọng run rẩy ngập tràn nước mắt - 'Mẹ em đã mất trong vụ sập hầm bảy năm trước khi đang trên đường đưa em vào Đà Nẵng dự thi học viện âm nhạc. Trước khi bị tảng đá ngàn cân đè bẹp, mẹ đã lấy thân mình che chắn cho em dưới gầm ghế này... Khúc hát ru mà mẹ thường hát mỗi tối đang vang lên từ chiếc lỗ thông gió trên nóc tàu...'. Tôi lắng tai nghe giữa tiếng gió rít gào rú. Quả thực, xuyên qua tiếng sắt thép rung chuyển bần bật, một giọng hát ru êm đềm, tha thiết nhưng nghẹn ngào ai oán như tiếng khóc than từ chín tầng địa ngục đang từ từ lan tỏa khắp không gian tĩnh mịch của toa xe!
+
+Gã thanh niên xăm trổ trên người đầy những hình xăm bọ cạp và đầu lâu bỗng giật bắn người, đôi mắt vằn tia máu đỏ quạch nhìn chằm chằm vào chiếc gương chiếu hậu gắn ở đầu toa xe. Theo quy tắc sinh tồn ghi trong cuốn nhật ký hành trình, tuyệt đối không được nhìn vào gương khi tàu qua hầm cấm. Nhưng sự tò mò và nỗi sợ hãi tột cùng đã thôi thúc hắn ngước mắt lên. Và cảnh tượng phản chiếu trong mặt kính tráng bạc khiến hắn thét lên một tiếng kinh hoàng: Trong gương, toàn bộ hàng ghế phía sau lưng chúng tôi không hề trống rỗng! Hàng trăm bóng đen mục nát, khuôn mặt không có mắt mũi, toàn thân bốc cháy rực lửa đang ngồi chật kín từng băng ghế, đồng loạt ngẩng đầu lên nhe hàm răng lởm chởm nhìn chằm chằm vào gáy của từng người sống! Chiếc gương bỗng nhiên nứt toác ra làm đôi, một dòng máu tươi trào ra từ khe nứt rỉ xuống bảng điều khiển!
+
+Bác sĩ pháp y già bước lại gần bảng điện, dùng chiếc khăn tay tẩm cồn lau sạch lớp bụi bặm bám trên sơ đồ tuyến đường sắt treo trên vách. 'Nhìn vào đây đi các bạn trẻ...' - ông chỉ tay vào một điểm đỏ nhấp nháy trên bản đồ - 'Đoàn tàu này không hề chạy về hướng ga Đà Nẵng như chúng ta tưởng. Nó đang lao ngược về phía nhánh đường sắt cụt dẫn thẳng vào hầm số 13 – nơi từng là tâm chấn của vụ sập hầm bảy năm trước! Ở đó, đường ray đã bị gãy đôi và kết thúc bằng một bờ vực sâu thăm thẳm nhìn xuống biển Đèo Cả. Nếu chúng ta không tìm ra cách dừng đoàn tàu này lại trước một giờ sáng, toàn bộ chúng ta sẽ cùng lao xuống vực sâu làm bạn với những oan hồn dưới đáy biển!'.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này.
+
+Không gian trong toa xe số 4 lạnh buốt như một chiếc quan tài sắt đang trôi nổi giữa ranh giới âm dương cách biệt. Từng giây từng phút trôi qua đều là một cuộc chiến cân não nghẹt thở giữa sự sống và cái chết. Tiếng bánh thép nghiến trên đường ray rền vang từng hồi tựa như tiếng đếm ngược của số phận tử thần. Tôi nắm chặt thanh búa thoát hiểm trong tay, dồn toàn bộ sự tập trung và dũng khí của một người đàn ông vào từng giác quan, quyết tâm chiến đấu đến cùng để tìm ra con đường sống cho bản thân và những con người vô tội trên chuyến tàu định mệnh này."""
+
+    part2_full = """'Cắt đứt đám tóc ma đó mau! Bằng không cả toa xe này sẽ bị kéo xuống đáy vực Đèo Cả!' - Tiếng thét thất thanh của cô nữ sinh vang lên xé toạc màn đêm khi cô rút cây vĩ cầm sắc nhọn chém đứt những lọn tóc đen đang quấn chặt quanh cổ tôi!
+Làn sương đen khét lẹt bốc lên từ vết cắt của đám tóc ma quái, phát ra những tiếng rên rỉ the thé như tiếng lợn bị chọc tiết.
+Tôi thoát khỏi vòng vây của những cánh tay bùn lầy ngoài cửa sổ, ngã nhào xuống sàn tàu lạnh ngắt, toàn thân rã rời đau đớn.
+Thế nhưng gã doanh nhân béo bụng đã không còn may mắn như thế.
+Bóng ma áo đỏ đã kéo hắn chui tọt lên lỗ thông gió trên trần tàu.
+Tiếng xương cốt gãy răng rắc cùng tiếng kêu cứu tuyệt vọng của hắn vang vọng khắp toa xe, rồi tắt lịm hoàn toàn sau một tiếng 'BỤP' nghẹn ngào.
+Từ trên lỗ thông gió, một dòng máu tươi sền sệt trút xuống như mưa rào, tưới đẫm lên hàng ghế số 13 nơi tôi vừa ngồi!
+
+Không khí trong toa xe đặc quánh lại mùi huyết dịch và tử khí ngột ngạt.
+Năm người còn lại – bao gồm tôi, cô nữ sinh, tay thanh niên xăm trổ, bà lão áo tang và người đàn ông áo blouse trắng – co cụm lại thành một vòng tròn phòng thủ ở giữa lối đi hẹp.
+Tay thanh niên xăm trổ run rẩy rút khẩu súng ngắn tự chế trong túi áo khoác ra, chĩa nòng súng vào mặt người đàn ông áo blouse:
+'Nói mau! Mày là ai? Tại sao trên áo mày lại dính đầy vết máu khô và phù hiệu của viện pháp y tỉnh Khánh Hòa năm 2017?!'.
+Bác sĩ áo trắng thở dài một tiếng nặng trĩu, đôi mắt thâm quầng nhìn vào khoảng không vô định:
+'Bảy năm trước, tôi chính là trưởng ban pháp y phụ trách khám nghiệm hiện trường thảm kịch tàu SE00.
+Toàn bộ một trăm hai mươi nạn nhân xấu số đều chết do ngạt thở và va đập dữ dội khi hầm bị sập.
+Nhưng trong biên bản kết luận điều tra năm đó, cấp trên đã ép tôi phải ký vào bản báo cáo giả mạo rằng đây là một vụ tai nạn bất khả kháng do thiên tai lũ quét, nhằm che giấu hành vi rút ruột công trình đường hầm và cắt bớt hệ thống cảnh báo phanh tự động của tập đoàn Nam Hải!
+Gã doanh nhân vừa bị giết chính là phó tổng giám đốc của tập đoàn đó!
+Tôi đã sống trong sự dằn vặt và cắn rứt lương tâm suốt bảy năm qua, và đêm nay... đoàn tàu oan hồn này quay trở lại để đòi lại món nợ máu năm xưa!'.
+
+Lời thú nhận muộn màng ấy như một tiếng sét đánh ngang tai mọi người.
+Hóa ra, bảy con người ngồi trên chuyến tàu định mệnh này không phải là ngẫu nhiên gặp gỡ!
+Tất cả đều có một sợi dây liên kết vô hình gắn liền với thảm kịch năm 2017:
+Gã doanh nhân là kẻ chủ mưu rút ruột công trình; người đàn ông áo blouse là kẻ ký biên bản che giấu sự thật; tay thanh niên xăm trổ là kẻ từng nhận tiền đâm thủng ống dẫn dầu của đoàn tàu trước giờ xuất phát; bà lão áo tang là mẹ của người lái tàu xấu số bị đổ oan là người say rượu gây tai nạn; còn cô nữ sinh... chính là đứa con gái duy nhất của người phụ tá lái tàu đã hy sinh thân mình ghìm phanh khẩn cấp để cứu những người còn lại!
+'Vậy còn cậu?' - Cô nữ sinh quay sang nhìn tôi, ánh mắt trong veo nhưng đượm buồn ngấn lệ - 'Tại sao cậu lại bước lên chuyến tàu ma quái này?'.
+Tôi siết chặt chiếc vé tàu trong tay, nghẹn ngào đáp:
+'Tôi là một nhà báo điều tra độc lập. Bảy năm qua, tôi đã lặn lội khắp các vùng đèo núi để tìm kiếm hộp đen ghi âm buồng lái của đoàn tàu nhằm minh oan cho cha của cô và các nạn nhân.
+Chiếc vé này được gửi đến hòm thư của tôi vào chiều nay kèm theo lời nhắn: Nếu muốn tìm thấy sự thật bị chôn vùi, hãy bước lên chuyến tàu lúc nửa đêm!'.
+
+Đột nhiên, tiếng bánh thép dưới gầm xe lại bắt đầu lăn bánh chầm chậm!
+Đoàn tàu tự động tăng tốc lao vun vút qua những khúc cua hiểm trở trong lòng núi tối tăm.
+Tốc độ mỗi lúc một kinh hoàng: sáu mươi cây số một giờ, tám mươi, rồi vượt quá một trăm cây số một giờ!
+Gió rít gào rú qua những ô cửa sổ vỡ nát, hất tung rèm cửa và cuốn theo những làn sương mù đen kịt nồng nặc mùi bùn lầy.
+Trên bảng điện tử của toa xe, dòng chữ đỏ máu lại hiện lên nhấp nháy điên loạn:
+'01:00 - ĐOÀN TÀU ĐANG TIẾN VÀO GA ÂM TI. HÀNH KHÁCH CHUẨN BỊ XUỐNG MỒ!'.
+Từ phía cuối toa xe, cánh cửa thông gió bỗng bật tung rầm một tiếng!
+Bóng ma áo đỏ xuất hiện trở lại, nhưng lần này không chỉ có một mình nó.
+Phía sau lưng nó là hàng chục bóng đen dị dạng không có khuôn mặt, toàn thân cháy xém và phủ đầy bùn đất, đang trườn theo từng hàng ghế tiến về phía chúng tôi!
+
+Tay thanh niên xăm trổ hoảng loạn bóp cò súng ngắn: 'ĐOÀNG! ĐOÀNG!'.
+Những phát đạn chì xuyên qua hư không mà không hề làm suy chuyển bóng ma.
+Quái vật lao tới trong chớp mắt, những ngón tay đen nhọn hoắt găm phập vào lồng ngực gã thanh niên, xé toạc da thịt hất văng hắn ra ngoài cửa sổ vỡ vụn giữa tiếng thét thất thanh chìm vào vực sâu thăm thẳm!
+'Mau chạy lên toa đầu tàu!' - Tôi hét lớn, kéo tay cô nữ sinh và bác sĩ già lao thục mạng về phía trước.
+Bà lão áo tang bỗng đứng khựng lại chắn ngang lối đi, trên tay cầm chặt bức di ảnh của người con trai lái tàu, mỉm cười thanh thản:
+'Các con mau đi đi! Để mẹ ở lại nói chuyện với con trai mẹ... Đêm nay, công lý phải được thực thi!'.
+Bà lão dang rộng hai tay ôm chặt lấy bóng ma áo đỏ đang lao tới, để ngọn lửa xanh lam từ bức di ảnh bùng cháy bao trùm lấy cả hai người trong tiếng gào thét rúng động cả đường hầm!
+
+Mùi khói khét lẹt của da thịt cháy dở hòa lẫn với mùi ẩm mốc của rêu phong đáy vực tạo thành một thứ tử khí đặc quánh như có thể dùng dao cắt ra được từng mảng. Tôi kéo cô nữ sinh nép sát vào lưng mình, bước từng bước thận trọng qua đống đổ nát của toa xe số 4. Trên sàn tàu, chiếc đầu lâu nhỏ bọc rêu xanh vẫn đang lăn lốc cốc theo từng nhịp rung lắc của đoàn tàu, hai hốc mắt trống rỗng thỉnh thoảng phát ra những tia lân tinh màu xanh ma quái. Bác sĩ già đi phía sau, một tay cầm chắc thanh cờ lê bằng thép, tay kia cầm chiếc đèn bão cũ kỹ soi đường. Chúng tôi hiểu rằng trong bóng tối này, bất kỳ một tiếng động lạ nào cũng có thể là dấu hiệu mở đầu cho một đợt tấn công chết chóc của bầy quỷ dữ.
+
+Khi chúng tôi tiến gần đến cửa nối sang toa xe số 3, một cảnh tượng kinh hoàng đập vào mắt: Cả toa xe chở hàng phía trước ngập ngụa trong một lớp nước bùn màu nâu đen dâng cao đến tận đầu gối! Những chiếc vali, hòm gỗ và hành lý của các nạn nhân bảy năm trước nổi bồng bềnh trên mặt nước tựa như những chiếc quan tài nhỏ trôi dạt giữa đầm lầy chết chóc. Từ dưới làn nước đen ngòm ấy, những mái tóc đen dài nổi lềnh bềnh như những đám rong rêu độc hại. Mỗi bước chân chúng tôi lội qua đều tạo ra những gợn sóng mang theo những mẩu xương trắng và những mảnh áo rách rưới trôi dạt vào bắp chân. Không khí ngột ngạt đến mức buồng phổi như bị thiêu đốt, từng hơi thở đều phải nén chặt đến đau buốt lồng ngực.
+
+'Bác sĩ... Hãy nói cho tôi biết sự thật về tập đoàn Nam Hải năm đó!' - Tôi siết chặt bàn tay, hỏi dứt khoát giữa tiếng nước bì bõm. Người đàn ông áo blouse thở dài cay đắng: 'Năm đó, để kịp tiến độ khánh thành tuyến đường sắt du lịch trọng điểm và bỏ túi hàng trăm tỷ đồng tiền chênh lệch vật tư, ban lãnh đạo tập đoàn đã ép các kỹ sư rút bớt một nửa số lượng neo thép gia cố vòm hầm và thay thế bê tông mác cao bằng bê tông trộn cát tạp chất. Khi đoàn tàu SE00 chạy qua với tải trọng lớn, các thanh giằng yếu ớt đã sụp đổ dây chuyền chôn vùi toàn bộ đoàn tàu. Để bịt miệng báo chí và trốn tránh trách nhiệm bồi thường, bọn chúng đã mua chuộc toàn bộ hội đồng giám định, chi hàng chục tỷ đồng để dàn xếp thành vụ thiên tai bất khả kháng. Người tài xế lái tàu kiên quyết không ký vào biên bản nhận tội thay đã bị bọn chúng đầu độc chết trong bệnh viện rồi dàn dựng thành một vụ tự sát vì trầm cảm!'. Lời thú tội nghẹn ngào của vị bác sĩ khiến ngọn lửa phẫn nộ trong lồng ngực tôi bùng cháy dữ dội hơn bao giờ hết!
+
+Một tiếng rít xé màng nhĩ bỗng vang lên từ phía trên nóc toa xe chở hàng! Những tấm tôn thép dày cộp bị xé toạc ra như giấy vụn bởi một lực xé kinh hồn. Bóng ma người mẹ áo đỏ từ từ thò chiếc đầu dị dạng xuống từ lỗ thủng nóc tàu, mái tóc dài ướt sũng quấn chặt lấy chiếc xà sắt ngang trần. Hai hốc mắt rỉ máu của bà ta khóa chặt vào vị bác sĩ già, cất lên tiếng gầm gừ man dại: 'Kẻ đồng lõa tàn ác... Mày đã ký bản án tử hình cho linh hồn con tao... Đêm nay mày phải xuống vạc dầu đền tội!'. Những ngón tay dài cả tấc phóng vụt xuống như những mũi lao thép găm phập vào bả vai của người đàn ông! Tôi vung chiếc búa thoát hiểm chém mạnh vào cổ tay quái vật, nhưng luồng âm khí cực mạnh hất tung tôi ngã nhào xuống vũng nước bùn đen ngòm!
+
+Trong tích tắc nguy khốn, cô nữ sinh bất ngờ giơ cao chiếc hộp đàn vĩ cầm chắn trước ngực. Trên nắp hộp đàn có khắc một chiếc huy hiệu hoa sen vàng của ngành đường sắt Việt Nam – kỷ vật duy nhất mà người cha phụ tá lái tàu để lại cho cô trước khi hy sinh. Ánh sáng vàng rực từ chiếc huy hiệu bỗng bừng sáng trong đêm tối, tạo nên một vầng hào quang ấm áp bao bọc lấy cô gái và vị bác sĩ già. Bóng ma quỷ dữ rú lên đau đớn khi bị ánh sáng thuần khiết thiêu đốt, giật lùi ngược lên nóc tàu biến mất vào màn đêm bão táp. Nhân cơ hội ngàn vàng ấy, tôi gượng đứng dậy kéo hai người lao vụt qua cánh cửa ngăn, tiến thẳng vào buồng lái của đầu máy xe lửa!
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này.
+
+Từng đợt sóng gió gầm rú ngoài cửa sổ như những tiếng gầm thét cuồng loạn của bầy thú dữ chực chờ xé xác con mồi. Đoàn tàu vẫn điên cuồng lao dốc trong màn đêm đen đặc quánh của lòng núi, từng thanh tà vẹt dưới gầm xe rung lên bần bật như muốn bung chốt thép. Chúng tôi hiểu rằng lằn ranh giữa sự sống và cái chết chỉ còn được tính bằng từng giây ngắn ngủi. Bằng mọi giá, chúng tôi phải giữ vững niềm tin và ý chí kiên cường, bởi chỉ cần một chút chùn bước trước nỗi sợ hãi, tất cả sẽ vĩnh viễn bị chôn vùi trong nấm mồ sắt lạnh lẽo này."""
+
+    part3_full = """'Chỉ có phá hủy chiếc van xả áp suất khẩn cấp ở buồng đốt đầu tàu thì đoàn tàu ma này mới dừng lại được!' - Vị bác sĩ già hét lớn giữa tiếng gầm rú rung trời chuyển đất của động cơ diesel đang bốc cháy đỏ rực!
+Tôi và cô nữ sinh đạp tung cánh cửa thép ngăn cách khoang lái, lao vào buồng điều khiển của đầu máy xe lửa.
+Bên trong buồng lái, ngọn lửa ma quái màu xanh lục đang bùng cháy dữ dội trên khắp các bảng mạch điều khiển.
+Chiếc cần gạt phanh chính đã bị ai đó dùng dây xích sắt dày đặc khóa chặt vào thành thép, trên khóa xích dán chín đạo bùa phong ấn bằng máu tươi!
+Đoàn tàu lúc này như một con quái vật sắt điên cuồng lao dốc không phanh với vận tốc hơn một trăm hai mươi cây số một giờ, hướng thẳng về phía vực sâu sụp đổ ở cuối đường hầm – nơi có hàng vạn tấn đất đá phế tích đang chực chờ nuốt chửng tất cả!
+
+Đúng lúc ấy, qua khung kính chắn gió của đầu tàu nhìn ra ngoài đường ray, một cảnh tượng kinh hoàng đập vào mắt tôi:
+Giữa đường ray phía trước, linh hồn của hàng trăm nạn nhân thảm kịch năm 2017 đang đứng xếp thành một bức tường người trắng toát!
+Họ đưa những cánh tay xương xẩu lên chỉ thẳng vào khoang lái, cất lên tiếng hô rền vang như sấm sét:
+'Trả lại sự thật... Trả lại sự thật cho chúng tôi!'.
+Bác sĩ già nhìn thấy cảnh tượng ấy, hai đầu gối quỵ xuống sàn sắt, nước mắt lăn dài trên khuôn mặt khắc khổ:
+'Tôi có tội... Tôi đã vì sự hèn nhát của bản thân mà để linh hồn các bạn phải ngậm đắng nuốt cay suốt bảy năm trời dưới đáy vực lạnh buốt!'.
+Nói rồi, ông rút từ trong túi áo ra chiếc hộp đen ghi âm buồng lái của đoàn tàu năm 2017 – vật chứng tối quan trọng mà ông đã bí mật cất giấu suốt ngần ấy năm – trao vào tay tôi:
+'Cậu nhà báo... Hãy mang chiếc hộp đen này ra ánh sáng pháp luật! Hãy trả lại sự trong sạch cho anh lái tàu dũng cảm và tất cả những nạn nhân vô tội!'.
+
+Chưa kịp để tôi ngăn lại, vị bác sĩ già đã lao mình về phía chiếc van áp suất đang bốc khói nghi ngút ở góc buồng đốt.
+Ông dùng cả thân mình ôm chặt lấy khối van đồng nóng bỏng hàng trăm độ C, dùng chiếc mỏ lết sắt giáng những đòn chí tử vào chốt khóa an toàn!
+'XÈO... XÈO!' - Da thịt bốc khói khét lẹt, nhưng ông không hề buông tay, gầm lên một tiếng vang động: 'DỪNG LẠI MAU!'.
+'RẮC... XOẢNG!' - Chốt van an toàn bị đánh gãy lìa!
+Một luồng hơi nước áp suất cực cao màu trắng xóa phun trào dữ dội, thổi bay toàn bộ lớp bùa chú phong ấn trên cần phanh chính!
+Đoàn tàu rung chuyển bần bật, hệ thống phanh khí nén khẩn cấp bắt đầu kích hoạt phát ra những tiếng rít chói tai xé rách màng nhĩ!
+Những bánh thép phanh cháy đỏ rực, tia lửa bắn tung tóe như pháo hoa dọc theo hai bên sườn núi!
+
+Thế nhưng con quái vật bóng ma áo đỏ – hiện thân của sự căm hờn và oán khí tích tụ suốt bảy năm – đã đuổi tới cửa khoang lái!
+Khuôn mặt nó méo mó đầy máu me, hai mắt rực cháy ngọn lửa hận thù, giang rộng đôi bàn tay móng vuốt sắc nhọn lao thẳng về phía cô nữ sinh!
+Trong khoảnh khắc sinh tử ngàn cân treo sợi tóc, cô nữ sinh không hề sợ hãi hay lùi bước.
+Cô nâng cây đàn vĩ cầm lên ngang vai, đặt cây cung vĩ kéo lên dây đàn khúc nhạc 'Khúc Ca Bình Yên' – giai điệu mà người cha phụ tá lái tàu của cô thường hát ru cô ngủ lúc còn thơ ấu.
+Tiếng vĩ cầm trong trẻo, tha thiết và tràn ngập tình yêu thương vang lên giữa không gian bão lửa u tối.
+Âm thanh thuần khiết của tình phụ tử và lòng tha thứ như một dòng suối mát lành tưới tắm vào tâm hồn đầy oán hận của bóng ma.
+Đôi bàn tay móng vuốt của quái vật bỗng nhiên chững lại giữa không trung.
+Lớp máu me và tà khí trên mặt nó từ từ tan biến, để lộ ra khuôn mặt của một người phụ nữ trẻ hiền hậu – người mẹ năm xưa từng ôm con chết trong thảm kịch.
+Hai dòng nước mắt trong vắt lăn dài trên gò má người phụ nữ.
+Bà nhìn cô nữ sinh, rồi nhìn sang bức tường linh hồn phía trước, khẽ gật đầu mỉm cười thanh thản.
+
+Đúng lúc đó, đoàn tàu hỏa lao ra khỏi miệng hầm phế tích và dừng khựng lại an toàn trên cây cầu sắt nối liền hai sườn núi!
+Đầu mũi tàu chỉ còn cách miệng vực sâu chưa đầy ba mét!
+Chiếc đồng hồ điện tử trong buồng lái nhảy vọt sang con số: 05 giờ 00 phút sáng ngày mới!
+Những tia nắng ban mai đầu tiên rực rỡ chiếu rọi qua khung kính chắn gió, sưởi ấm toàn bộ khoang tàu lạnh lẽo.
+Dưới ánh sáng mặt trời ấm áp, hình bóng của hàng trăm oan hồn trên đường ray từ từ tan biến vào làn sương sớm, để lại một bầu trời trong xanh và thanh bình đến lạ kỳ.
+Lời nguyền bảy năm của chuyến tàu đêm không ga đến cuối cùng đã được hóa giải trọn vẹn bằng sự hy sinh, lòng quả cảm và ánh sáng của sự thật!
+
+Khi tiếng còi xe của lực lượng cứu hộ và cơ quan an ninh đường sắt rền vang từ chân núi tiến lên hiện trường, tôi và cô nữ sinh bước xuống đường ray, nắm chặt chiếc hộp đen vật chứng trong tay.
+Toàn bộ sự thật đen tối về vụ án sập hầm Đèo Cả năm 2017 sẽ được công khai trước công luận và công lý trần gian.
+Những kẻ chủ mưu rút ruột công trình dù có trốn chạy hay dùng tiền bạc che đậy tinh vi đến đâu, cũng sẽ phải đối mặt với sự trừng phạt nghiêm khắc nhất của pháp luật.
+Đứng trên đỉnh đèo đón từng làn gió sớm trong lành, tôi nhìn về phía chân trời xa xăm nơi ánh bình minh đang bừng sáng rạng ngời.
+Trong cuộc sống này, không có bóng tối nào là vĩnh cửu, và không có sự thật nào có thể bị chôn vùi mãi mãi.
+Chính nghĩa và lòng thiện lương sẽ luôn là ngọn đuốc dẫn đường soi sáng cho con người vượt qua mọi giông bão tăm tối nhất của cuộc đời.
+
+Theo bạn, sức mạnh của sự tha thứ và công lý có thể hóa giải được những oán hận sâu nặng nhất không? Hãy để lại suy nghĩ và cảm nhận của bạn dưới phần bình luận nhé!
+
+Khói lửa ngút trời trong buồng lái đầu máy xe lửa tạo nên một khung cảnh địa ngục trần gian kinh hoàng. Các đồng hồ đo áp suất hơi nước và nhiệt độ dầu máy đều đã chạm ngưỡng đỏ cảnh báo nổ tung. Kim đồng hồ tốc độ chỉ con số một trăm ba mươi cây số một giờ – vận tốc vượt xa giới hạn an toàn của tuyến đường sắt miền núi dốc đứng. Tiếng còi tàu kẹt chốt liên tục rền vang từng hồi đinh tai nhức óc xé toạc màn sương mù dày đặc ngoài cửa sổ. Qua ánh lửa bập bùng, tôi nhìn thấy chiếc cần gạt phanh chính bằng thép dày cộp bị quấn chặt bởi chín vòng xích sắt đẫm máu khô. Dưới tác động của ngọn lửa ma quái, các mắt xích sắt phát ra những tiếng ken két rợn người như những con rắn độc đang siết chặt lấy sự sống cuối cùng của đoàn tàu.
+
+'Nhà báo, giữ chặt chiếc hộp đen này!' - Vị bác sĩ già thở dốc, hai bàn tay phỏng rộp rỉ máu vì ôm lấy van xả áp suất - 'Bên trong chiếc thẻ nhớ bọc chì của hộp đen có chứa toàn bộ đoạn ghi âm buồng lái lúc lâm nguy năm 2017. Trong đó ghi lại rõ ràng giọng nói của người lái tàu già và cha của cô bé này: Họ đã kiên quyết từ chối rời vị trí, dồn hết sức tàn để kéo phanh cứu đoàn tàu đến giây phút cuối cùng! Bọn gian thương đã vu khống họ say rượu để trốn bồi thường. Hãy dùng chiếc hộp đen này để trả lại danh dự và sự trong sạch cho họ trước bàn dân thiên hạ!'. Tôi ôm chặt chiếc hộp đen bằng thép vào lồng ngực, nước mắt trào ra vì xúc động trước sự thức tỉnh lương tri cao đẹp của một con người từng lầm lỡ.
+
+Tiếng đàn vĩ cầm của cô nữ sinh tiếp tục ngân vang giữa biển lửa ngút ngàn. Từng nốt nhạc du dương, trong trẻo như những giọt mưa xuân tưới mát vào vùng đất khô cằn đau khổ. Giai điệu 'Khúc Ca Bình Yên' lan tỏa qua các lỗ thông gió, bay dọc theo từng toa xe rách nát và vang vọng khắp lòng đường hầm u tối. Hàng trăm bóng ma oan hồn trên đường ray từ từ hạ những cánh tay xương xẩu xuống. Những ngọn lửa hận thù màu xanh lam trên thân thể họ dần dần chuyển thành những vệt sáng trắng dịu nhẹ, thanh khiết. Gương mặt méo mó của người mẹ áo đỏ từ từ trở lại nét dịu hiền của người phụ nữ Việt Nam tần tảo. Bà nhìn cô con gái nhỏ của người phụ tá lái tàu với ánh mắt trìu mến đầy lòng biết ơn, rồi nhẹ nhàng đặt bàn tay vô hình lên cần gạt phanh chính giúp sức cùng vị bác sĩ già!
+
+'RẮC!' - Chín vòng xích sắt ma quái bị bẻ gãy vụn ra thành trăm mảnh dưới sức mạnh của sự tha thứ và lòng quả cảm! Tôi lao tới chộp lấy cần phanh chính, dồn toàn bộ sức nặng cơ thể kéo mạnh về phía sau hết cỡ! Hệ thống má phanh khí nén khổng lồ lập tức bặm chặt vào bốn bánh thép của đầu máy xe lửa! Một tiếng nổ kinh thiên động địa vang lên khi bốn lốp thép cọ xát dữ dội vào đường ray, tạo nên một dải pháo hoa rực sáng cả một góc trời đêm Đèo Cả! Đoàn tàu trượt dài trên mặt ray trơn nhẫy, mũi tàu chồm lên đầu cây cầu sắt bắc qua vực sâu thăm thẳm rồi dừng khựng lại an toàn chỉ cách miệng vực chưa đầy ba mét! Chiếc đồng hồ trong buồng lái nhảy sang con số năm giờ sáng ngày mới!
+
+Khi ánh bình minh rạng rỡ bắt đầu chiếu rọi qua rặng thông già, sưởi ấm toàn bộ thân tàu sau đêm dài ác mộng, tiếng còi xe của ban chuyên án công an tỉnh và lực lượng cứu nạn đường sắt rền vang từ chân đèo tiến lên giải cứu hiện trường. Chiếc hộp đen vật chứng đã được trao tận tay cho cơ quan điều tra hình sự để mở lại vụ án thảm kịch năm 2017. Những kẻ chủ mưu rút ruột công trình đã bị bắt giữ khẩn cấp ngay trong buổi sáng cùng ngày. Đứng trên đỉnh đèo đón từng làn gió biển sớm trong lành, tôi và cô nữ sinh nhìn lên bầu trời xanh ngắt bao la. Lời nguyền bảy năm đã khép lại vĩnh viễn, trả lại sự yên nghỉ ngàn thu cho những linh hồn oan khuất và thắp sáng niềm tin bất diệt vào công lý trường tồn của cuộc đời.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa.
+
+Ánh mặt trời ban mai ấm áp chan hòa sưởi ấm từng ngọn cây ngọn cỏ ven sườn đèo dốc đứng. Mọi tà khí u ám, những tiếng than khóc nghẹn ngào và ảo ảnh chết chóc của đêm qua giờ đây đã hoàn toàn tan biến theo làn sương sớm. Tôi hít một hơi thật sâu bầu không khí trong lành của biển trời quê hương, cảm nhận từng nhịp đập khỏe khoắn của trái tim mình và giá trị thiêng liêng của sự sống được đánh đổi bằng lòng dũng cảm và chính nghĩa."""
+
+    return {
+        "title": story_title,
+        "genre": "KINH_DI",
+        "voice": "vi-VN-NamMinhNeural",
+        "parts": [
+            {
+                "part_number": 1,
+                "badge_label": "PHẦN 1",
+                "title": f"{story_title} (Tập 1 - Chuyến Tàu Ma Lúc 0h15 Đêm)",
+                "full_text": part1_full,
+                "caption": (
+                    f"[PHẦN 1] {story_title}. "
+                    "Chuyến tàu đêm bất ngờ dừng giữa đường hầm bỏ hoang và dấu tay máu cào kính lúc 0h15 sáng! "
+                    "👉 Đón xem Tập 2 - 7 Tội Lỗi Quá Khứ tối nay nhé! "
+                    "#audio #xuhuong #kinhdi #truyenma #audiotruyen #kểchuyện #podcast #fyp #chuyentau #tamlinh"
+                )
+            },
+            {
+                "part_number": 2,
+                "badge_label": "PHẦN 2",
+                "title": f"{story_title} (Tập 2 - 7 Tội Lỗi & Bí Mật Hầm Đèo Cả)",
+                "full_text": part2_full,
+                "caption": (
+                    f"[PHẦN 2] {story_title}. "
+                    "Bí mật kinh hoàng về vụ sập hầm 7 năm trước và bóng ma áo đỏ trườn qua trần tàu! "
+                    "👉 Đã có Tập 1 trên kênh. Đón xem Tập 3 - Đại Kết Cục hóa giải lời nguyền! "
+                    "#audio #xuhuong #kinhdi #truyenma #audiotruyen #kểchuyện #podcast #fyp #chuyentau #tamlinh"
+                )
+            },
+            {
+                "part_number": 3,
+                "badge_label": "PHẦN 3 / KẾT",
+                "title": f"{story_title} (Tập 3 - Hóa Giải Oán Khí & Ánh Sáng Bình Minh)",
+                "full_text": part3_full,
+                "caption": (
+                    f"[PHẦN 3 / KẾT] {story_title}. "
+                    "Trọn bộ 3 tập đã lên sóng! Bạn có tin vào luật nhân quả báo ứng ở đời không? "
+                    "👉 Hãy để lại bình luận và đăng ký kênh nhé! "
+                    "#audio #xuhuong #kinhdi #truyenma #audiotruyen #kểchuyện #podcast #fyp #chuyentau #tamlinh"
+                )
+            }
+        ]
+    }

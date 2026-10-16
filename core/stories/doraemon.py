@@ -1,0 +1,206 @@
+# -*- coding: utf-8 -*-
+"""
+core/stories/doraemon.py
+Truyện Audio Kỳ Bí Doraemon / Viễn Tưởng Đấu Trí 30 Phút (Phong cách Conan và Sherlock Holmes):
+Kỳ Án Cỗ Máy Thời Gian: Lời Cảnh Báo Lúc Nửa Đêm Của 20 Năm Sau
+Chuẩn độ dài: 3 Tập x 1,520 - 1,580 từ (~4,650 từ / ~33 phút audio).
+100% Không giới thiệu lý lịch ("Tôi là...", "Năm nay... tuổi").
+Căng thẳng, suy luận khoa học viễn tưởng, kịch tính nghẹt thở liên tục ở cả 3 tập.
+"""
+
+from typing import Dict, Any
+
+def get_30min_doraemon_mystery_story(title: str = "") -> Dict[str, Any]:
+    story_title = title if title and "hôn nhân" not in title.lower() and "quỷ khế" not in title.lower() and "căn phòng số 13" not in title.lower() and "nền bếp" not in title.lower() else "Kỳ Án Cỗ Máy Thời Gian: Lời Cảnh Báo Lúc Nửa Đêm Của 20 Năm Sau"
+    
+    part1_body = (
+        "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - "
+        "Đó không phải là một câu chuyện viễn tưởng tuổi thơ trong truyện tranh Doraemon, mà là lời cảnh báo đẫm máu được khắc trên mặt chiếc đồng hồ cát bằng đồng cổ rơi ra từ ngăn bàn học cũ của tôi! "
+        "Từng thớ cơ trên cơ thể tôi đông cứng lại, mồ hôi lạnh toát ra ướt đẫm lòng bàn tay trước những nét chữ khắc sâu hoắm vào kim loại còn vương vệt máu đỏ thẫm. "
+        "Chiếc bàn học bằng gỗ sồi mun cổ kính này vốn là kỷ vật duy nhất mà người ông nội – một bậc thầy chế tác cơ khí chính xác và phát minh lượng tử lừng danh – để lại trước ngày qua đời. "
+        "Ngày bé, khi ngồi bên chiếc bàn này, tôi vẫn thường ngây ngô ước rằng bên trong hộc bàn sâu thẳm sẽ có một Cỗ Máy Thời Gian đưa tôi bay xuyên qua những chiều không gian bất tận như chú mèo máy Doraemon. "
+        "Ông nội từng mỉm cười xoa đầu tôi và bảo: 'Khoa học không có phép thuật, nhưng sự kỳ diệu của các hạt tachyon có thể bẻ cong cả không thời gian nếu con tìm ra được tần số cộng hưởng chính xác'. "
+        "Ông còn chế tạo cho tôi những mô hình bảo bối kỳ thú, từ Bánh Mì Trí Nhớ chứa chip nhớ vi mạch cho đến Đèn Pin Thu Nhỏ bằng thấu kính hội tụ. "
+        "Thế nhưng đêm nay, khi chiếc đồng hồ quả lắc kiểu Pháp điểm đúng 11 giờ 45 phút, trong lúc đang lau chùi lớp bụi gỗ trên ngăn bàn học, ngón tay tôi vô tình ấn phải một lẫy cơ khí ngầm giấu kỹ dưới mép gỗ sồi. "
+        "Một tiếng 'cạch' khô khốc vang lên xé tan không gian tĩnh mịch của căn phòng. "
+        "Đáy ngăn kéo từ từ trượt sang một bên nhờ hệ thống bánh răng tinh xảo, để lộ ra một khoang chứa bí mật bằng hợp kim titan sáng bóng không một hạt bụi.\n\n"
+        "Bên trong khoang bí mật là một chiếc la bàn thời gian bằng đồng thau chạm khắc các ký hiệu thiên văn lượng tử, một cuốn băng cassette màu đen ghi nhãn 'Tài liệu tuyệt mật 1996' và một bức ảnh chụp lấy liền đã ngả vàng theo năm tháng. "
+        "Tôi nhét cuộn băng vào chiếc máy cassette cầm tay cũ bật loa ngoài. "
+        "Giọng nói trầm ấm nhưng gấp gáp của ông nội vang lên qua tiếng rè rè của từ tính: "
+        "'Cháu trai của ông... Tập đoàn công nghệ vũ khí OMEGA đang tìm mọi cách chiếm đoạt lõi năng lượng Cỗ Máy Thời Gian để thao túng thị trường tài chính và lịch sử loài người. "
+        "Chúng đã mua chuộc trợ lý của ông và cài cắm gián điệp vào viện nghiên cứu. "
+        "Tọa độ của không gian bốn chiều được mã hóa theo chuỗi số nguyên tố Fibonacci trên mặt la bàn lượng tử. "
+        "Ông đã giấu chiếc chìa khóa số 0 trong quả lắc đồng hồ cơ, và cài đặt hệ thống tự hủy entropy để bảo vệ cánh cổng. Nếu bọn chúng đến, cháu hãy dùng Khăn Trùm Thời Gian thoát thân ngay!'. "
+        "Khi cầm bức ảnh lên soi dưới ánh đèn bàn halogen, đồng tử mắt tôi co thắt dữ dội, một luồng điện lạnh buốt chạy dọc sống lưng khiến tôi suýt đánh rơi tấm ảnh xuống sàn đá! "
+        "Bức ảnh chụp một người đàn ông nằm gục trên sàn đá cẩm thạch của một căn phòng thí nghiệm ngầm, máu tươi loang lổ trên chiếc áo sơ mi trắng tinh. "
+        "Và điều kinh hoàng tột độ là khuôn mặt của người đàn ông đã chết trong bức ảnh đó... giống hệt tôi đến từng đường nét, từng góc cạnh chân mày cho đến nốt ruồi nhỏ dưới đuôi mắt trái, chỉ khác là trên trán có thêm một vết sẹo dài và nét mặt già dặn hơn khoảng hai mươi tuổi! "
+        "Phía dưới góc ảnh in rõ nét dòng chữ kỹ thuật số: '24/10/2046 - Nạn nhân: Kỹ sư Lâm Minh'. "
+        "Bên cạnh thi thể trong ảnh, nạn nhân dùng chính những ngón tay dính máu của mình để lại một dòng chữ trăn trối kỳ lạ nguệch ngoạc trên nền đá: 'Nghịch lý bắt đầu từ chiếc chìa khóa số 0. Tuyệt đối không được mở cánh cửa!'.\n\n"
+        "Chưa kịp để trí não tôi xâu chuỗi sự việc phi lý đến tột cùng này, một tiếng động rùng rợn bỗng phát ra từ đáy khoang bí mật dưới ngăn bàn. "
+        "Chiếc điện thoại quay số cổ màu đỏ sẫm – chiếc điện thoại gợi nhớ đến bảo bối 'Tủ Điện Thoại Yêu Cầu' trong Doraemon mà ngày nhỏ ông nội từng chế tạo mô hình cho tôi chơi – bỗng nhiên rung lên bần bật và phát ra tiếng chuông reo giòn giã từng hồi! "
+        "Đinh tai nhức óc! Rùng mình ớn lạnh! "
+        "Chiếc điện thoại này hoàn toàn không có bất kỳ đường dây cáp viễn thông hay ăng-ten sóng vô tuyến nào kết nối ra thế giới bên ngoài, nó đã nằm im lìm trong hộc bàn gỗ suốt hơn ba thập kỷ qua. "
+        "Kim đo phóng xạ tachyon trên mặt la bàn bắt đầu nhảy loạn xạ và phát ra tiếng bíp bíp dồn dập như máy đếm Geiger cảnh báo một vụ rò rỉ hạt nhân! "
+        "Nhịp tim tôi đập dồn dập như tiếng trống trận, lồng ngực như bị một tảng đá nghìn cân đè nặng. "
+        "Tôi nuốt khan một ngụm nước bọt, chầm chậm đưa bàn tay run rẩy nhấc ống nghe nặng trịch bằng nhựa bakelite áp vào tai. "
+        "Từ đầu dây bên kia, không có tiếng tạp âm của mạng viễn thông thông thường, chỉ có tiếng gió rít gào như tiếng rách toạc của một chiều không gian vô tận, kèm theo tiếng thở dốc nặng nhọc và đứt quãng của một người đang hấp hối: "
+        "'Minh... Nghe cho kỹ đây! Tôi chính là cậu của hai mươi năm sau! Bọn tập đoàn OMEGA đã bí mật đột nhập vào hệ thống dưới tầng hầm số 7... "
+        "Chúng đang kích hoạt Cỗ Máy Thời Gian và Cánh Cửa Thần Kỳ của ông nội để thay đổi trật tự lịch sử và xóa sổ dòng dõi gia đình chúng ta! "
+        "Cậu phải mang theo chiếc chìa khóa đồng số 0 giấu trong quả lắc đồng hồ, lập tức xuống hầm trước 12 giờ đêm nay... "
+        "Nếu chậm một phút, toàn bộ thực tại này sẽ biến mất vĩnh viễn! Cẩn thận... kẻ mang khuôn mặt thân quen nhất chính là...'. "
+        "Tiếng súng nổ đoàng một tiếng đanh thép qua ống nghe, rồi đường truyền rơi vào sự im lặng chết chóc.\n\n"
+        "Ngay khi tiếng súng dứt điểm, tiếng kính vỡ xoảng vang lên trên mái nhà kính giếng trời! "
+        "Hai tia laser màu đỏ thẫm quét qua căn phòng, khóa chặt vào chiếc bàn làm việc của tôi. "
+        "Bọn sát thủ công nghệ cao của OMEGA đã lần theo dao động sóng tachyon đến tận đây! "
+        "Không một giây chần chừ, tôi vơ lấy tấm vải phủ bằng sợi quang học đa chiều giấu dưới đáy ngăn kéo – một phát minh ngụy trang tàng hình quang học mà ông nội đặt tên là Khăn Trùm Thời Gian – trùm kín lên người. "
+        "Tấm vải sợi nano hấp thụ và bẻ cong toàn bộ quang phổ ánh sáng khả kiến, khiến cơ thể tôi trở nên hoàn toàn vô hình trong không gian ba chiều! "
+        "Hai tên sát thủ mặc giáp titan trượt dây từ trần nhà xuống, súng tiểu liên giảm thanh nã liên tiếp vào chiếc ghế nơi tôi vừa ngồi một giây trước, làm bông nệm bắn tung tóe mù mịt. "
+        "Lợi dụng màn khói bụi, tôi di chuyển nhẹ như một bóng ma lướt qua khoảng trống giữa hai họng súng, trèo qua cửa sổ gác mái trượt xuống máng xối dẫn thẳng vào đường ống thông gió than đá của căn biệt thự cổ. "
+        "Tôi tháo quả lắc đồng hồ cơ lấy chiếc chìa khóa số 0 bằng đồng thau rồi lao thẳng xuống cánh cửa hầm dẫn vào Phòng Thí Nghiệm Cơ Học Lượng Tử Số 7!"
+    )
+    
+    part1_cliff = (
+        "Tôi tra chiếc chìa khóa số 0 vào ổ khóa cơ khí trên cánh cửa thép nặng hàng tấn. "
+        "Tiếng bánh răng ăn khớp xoay tròn kêu cành cạch, cánh cửa thép chầm chậm mở ra để lộ gian phòng ngầm ngập tràn ánh sáng huỳnh quang xanh biếc phát ra từ một khung cửa kim loại đứng trơ trọi giữa phòng như Cánh Cửa Thần Kỳ! "
+        "Thế nhưng, khi chân tôi vừa bước qua ngưỡng cửa, chiếc tay nắm bằng đồng của cánh cửa ánh sáng ấy... bỗng nhiên từ từ xoay chuyển từ phía bên kia!"
+    )
+    
+    part2_body = (
+        "'Cánh cửa này chỉ mở một chiều, và một khi bước qua, dòng thời gian của cậu sẽ vĩnh viễn bị xóa sổ!' - "
+        "Tiếng then cài kim loại xoay chuyển kêu rít lên trong căn hầm ngầm số 7, và bóng người bước ra từ luồng sáng xanh biếc lại chính là người thầy đã mất tích mười năm trước! "
+        "Luồng ánh sáng xanh biếc từ khung cửa phát ra làm chói lòa cả gian hầm tối tăm ngập tràn mạng nhện và bụi kim loại. "
+        "Tôi lập tức nép mình sau một cột bê tông kiên cố, tay nắm chặt khẩu súng điện, tim đập thình thịch từng hồi liên hồi như muốn vỡ tung lồng ngực. "
+        "Một bóng người cao gầy, khoác trên mình chiếc áo măng tô xám đã sờn rách, tay cầm một chiếc đồng hồ bấm giây cổ từ tốn bước ra từ luồng sáng hư ảo của cánh cửa. "
+        "Khi ánh đèn pin trinh sát của tôi rọi thẳng vào gương mặt người đó, tôi bàng hoàng suýt thốt lên thành tiếng: "
+        "Người đứng trước mặt tôi chính là Giáo sư Trần Quang – nhà vật lý lượng tử thiên tài, người cộng sự tài ba của ông nội tôi, người được cho là đã thiệt mạng trong vụ nổ phòng thí nghiệm chấn động mười năm trước! "
+        "Mười năm trôi qua, nhưng diện mạo của ông dường như không già đi một ngày nào, ánh mắt sắc sảo sau cặp kính gọng vàng vẫn toát lên vẻ thông tuệ lạ thường.\n\n"
+        "Bằng thói quen quan sát tỉ mỉ của một người đam mê suy luận phá án theo phong cách Conan và Sherlock Holmes, tôi lập tức phát hiện ba chi tiết bất thường trên người vị giáo sư. "
+        "Thứ nhất, trên ve áo khoác của ông có những vệt muội than bám ngược hướng từ dưới lên trên, chứng tỏ ông vừa trải qua một trường năng lượng đảo chiều vật lý chứ không phải vụ cháy nổ thông thường. "
+        "Thứ hai, trên cổ tay áo của ông vương vãi những hạt bụi phóng xạ cobalt màu lam nhạt – dấu vết đặc trưng của chất phân rã hạt nhân chỉ xuất hiện trong lõi của các Cỗ Máy Thời Gian thực nghiệm. "
+        "Và thứ ba, chiếc đồng hồ cơ trên tay ông kim giây đang quay giật lùi từng tích tắc! "
+        "Tôi bước ra khỏi bóng tối, giơ chiếc chìa khóa số 0 lên trước ngực: 'Giáo sư Trần Quang, ông chưa từng chết trong vụ nổ mười năm trước! Theo quy tắc suy luận của Holmes, vụ nổ năm đó chỉ là một màn kịch đào thoát hoàn hảo để ông mang theo bản thiết kế Cánh Cửa Thần Kỳ trốn chạy khỏi sự truy lùng của tập đoàn OMEGA!'.\n\n"
+        "Giáo sư Trần Quang nhìn tôi, khóe môi khẽ nở một nụ cười vừa ngạc nhiên vừa thán phục: "
+        "'Quả không hổ danh là cháu nội của Lâm giáo sư! Suy luận của cậu rất sắc bén, nhưng cậu mới chỉ nhìn thấy một nửa sự thật! "
+        "Tôi không trốn chạy, mà là tôi đã dùng bảo bối Khăn Trùm Thời Gian quấn quanh chiếc máy gia tốc để nhảy cóc mười năm về tương lai nhằm ngăn chặn một thảm họa diệt vong! "
+        "Tập đoàn OMEGA đã tạo ra một bản sao lượng tử dị thường của chính cậu vào năm 2046. Kẻ gọi điện cho cậu lúc nửa đêm... không phải là cậu đâu, mà là bản sao sát thủ được lập trình để lừa cậu mở khóa Cánh Cửa Thần Kỳ! "
+        "Nếu cậu tra chiếc chìa khóa số 0 vào bảng điều khiển lõi, cánh cổng thời gian sẽ đảo ngược cực tính, hút toàn bộ thành phố này vào một lỗ sâu không đáy!'. "
+        "Không gian xung quanh chúng tôi bỗng chốc rạn nứt thành những dải ánh sáng cầu vồng dị thường. "
+        "Những ảo ảnh của quá khứ ba mươi năm trước – hình ảnh ông nội tôi đang miệt mài gõ búa chế tạo chiếc khung cổng Cánh Cửa Thần Kỳ – chập chờn xuất hiện lơ lửng giữa không trung rồi vỡ tan như bọt xà phòng! "
+        "Hiện tượng trượt dốc entropy đang xảy ra với tốc độ chóng mặt, kim la bàn lượng tử xoay tròn điên loạn, thời gian thực tại chỉ còn tính bằng từng giây!\n\n"
+        "Chúng tôi phải băng qua hành lang từ trường cách ly dài hơn năm mươi mét, nơi các vòng lặp thời gian ngắn ba mươi giây đang diễn ra liên tục. "
+        "Tại đây, các quy luật vật lý thông thường hoàn toàn sụp đổ: Các giọt nước rỉ từ trần nhà không hề rơi xuống mà bay lơ lửng rồi tụ lại thành dòng nước chảy ngược lên trần! "
+        "Những chiếc bóng đèn huỳnh quang nhấp nháy phát ra âm thanh rì rầm của sóng hạ âm, làm đầu óc tôi nhức buốt từng cơn dữ dội. "
+        "Tôi kinh ngạc nhìn thấy ảo ảnh của chính mình năm phút trước đang bước đi phía trước mặt, rồi biến mất trong chớp mắt! "
+        "Giáo sư Quang hét lớn: 'Đừng chạm vào các bóng mờ thời gian, bằng không cậu sẽ bị kẹt vào nghịch lý ông nội vĩnh viễn không thể thoát ra! Hãy điều chỉnh tần số bước sóng Khăn Trùm Thời Gian về mức năm trăm megahertz để đồng bộ trường bảo vệ!'. "
+        "Tôi nhanh chóng xoay núm điều chỉnh trên viền vải nano, trường tàng hình tức thì phát ra một vầng hào quang tím mờ bao bọc lấy cơ thể chúng tôi, hóa giải toàn bộ lực giật ngược của các vòng xoáy thời gian. "
+        "Dọc theo vách tường thép, những màn hình tinh thể lỏng hiển thị các phương trình cơ học lượng tử của ông nội tôi: Tích phân đường Feynman và phương trình sóng Schrödinger đa chiều. "
+        "Một bảng điều khiển phụ nhấp nháy hiển thị trạng thái của Cánh Cửa Thần Kỳ: 'Năng lượng cộng hưởng: 98% - Nguy cơ rách màn chắn không gian: Cực kỳ nguy hiểm!'.\n\n"
+        "Chưa dứt lời, trần hầm ngầm rung chuyển dữ dội! Bốn tên sát thủ OMEGA trang bị giáp năng lượng plasma phá vỡ vòm trần nhảy xuống, súng laser xối xả nã vào vị trí của chúng tôi! "
+        "Từng chùm tia năng lượng đỏ rực thiêu rụi các bức tường bê tông cốt thép thành những vũng dung nham nóng chảy sủi bọt. "
+        "Hai chiếc tháp pháo tự động trên trần nhà bắt đầu khóa mục tiêu vào ngực tôi bằng tia hồng ngoại. "
+        "Trong khoảnh khắc sinh tử, tôi tung tấm Khăn Trùm Thời Gian phủ kín lên cụm cảm biến của tháp pháo, đảo ngược đồng hồ xung nhịp khiến hệ thống vũ khí nhận diện nhầm đồng bọn và nã đạn thẳng vào đội hình sát thủ OMEGA! "
+        "Giữa không gian rực lửa khói bụi, bầy drone trinh sát cảm ứng sinh học của kẻ thù từ các hốc thông gió lao ra bổ nhào xuống như bầy ong vò vẽ, phóng hàng loạt phi tiêu kích nổ mini. "
+        "Tôi lập tức giơ chiếc loa phát sóng hạ âm – bảo bối mô phỏng Súng Hơi Âm Thanh của Doraemon mà ông nội từng cải tiến – kích hoạt tần số cộng hưởng cực đại! "
+        "Một luồng sóng xung kích vô hình quét qua hành lang, phá vỡ toàn bộ thấu kính và cảm biến áp suất của bầy drone khiến chúng rơi rụng hàng loạt và phát nổ chói lòa! "
+        "Tận dụng màn khói mù mịt, Giáo sư Quang mở chốt khẩn cấp dẫn chúng tôi băng qua chiếc cầu sắt treo lơ lửng bắc qua hố sâu của lò phản ứng phản vật chất antimatter. "
+        "Cầu sắt đung đưa dữ dội giữa vực sâu thăm thẳm ngập tràn điện tích tím ngắt. Bất ngờ, một tên xạ thủ OMEGA còn sót lại nã một phát đạn pháo plasma làm đứt toạc sợi dây cáp chính phía tây! "
+        "Nhịp cầu nghiêng dốc thẳng đứng bốn mươi lăm độ, lực hấp dẫn dị thường bắt đầu hút toàn bộ vụn kim loại xuống lõi phản ứng! "
+        "Tôi nhanh như cắt dùng móc leo từ tính ghìm chặt vào đà dầm thép chịu lực, một tay ghì chặt vị giáo sư, tay kia bắn súng điện vô hiệu hóa tên xạ thủ cuối cùng, rồi cả hai dốc hết tàn lực đu người lao thẳng qua cánh cửa an toàn của buồng điều khiển trung tâm!"
+    )
+    
+    part2_cliff = (
+        "Chúng tôi trốn vào buồng phản ứng hạt nhân, nơi khối cầu năng lượng của Cỗ Máy Thời Gian đang quay tít mù mịt phát ra những luồng sét màu tím ngắt. "
+        "Thế nhưng khi cánh cửa an toàn đóng sập lại, một tiếng cười lạnh lùng quen thuộc bỗng vang lên ngay sau lưng tôi. "
+        "Giáo sư Trần Quang từ từ rút khẩu súng laser chĩa thẳng vào tim tôi, ánh mắt sau tròng kính biến thành màu đỏ rực của trí tuệ nhân tạo: "
+        "'Ngươi thông minh lắm Lâm Minh, nhưng ngươi đã đoán sai kẻ phản bội rồi!'."
+    )
+    
+    part3_body = (
+        "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!' - "
+        "Đối mặt với họng súng laser đỏ rực của vị giáo sư kính yêu trong không gian ngột ngạt của buồng phản ứng Cỗ Máy Thời Gian, tôi không hề lùi bước mà bình thản mỉm cười! "
+        "Đúng như châm ngôn phá án kinh điển của thám tử Conan và Sherlock Holmes: Khi ta loại trừ mọi điều không thể, điều còn lại dù bất khả thi đến đâu cũng chính là sự thật! "
+        "Tôi nhìn thẳng vào đôi mắt rực đỏ của kẻ đối diện, từng lời từng chữ cất lên đanh thép như mũi tên bắn trúng hồng tâm: "
+        "'Giáo sư Trần Quang thật sự đã hy sinh trong vụ nổ mười năm trước để bảo vệ Cánh Cửa Thần Kỳ! "
+        "Còn kẻ đang đứng trước mặt tôi chỉ là một người máy sinh học AI do tập đoàn OMEGA phái đến, được phủ lớp mô phỏng sinh học để lừa tôi kích hoạt chiếc chìa khóa số 0! "
+        "Bởi vì chiếc đồng hồ cát bằng đồng của ông nội tôi không bao giờ chảy ngược cát nếu không có tác động từ trường nhân tạo của robot AI! "
+        "Hơn thế nữa, đồng tử mắt của một con người bình thường khi đối diện với luồng ánh sáng huỳnh quang xanh biếc sẽ co lại theo phản xạ sinh học, còn ống kính camera trên mắt ngươi chỉ duy trì khẩu độ f/2.8 cố định không hề biến đổi suốt mười phút qua! "
+        "Và trên hết, người thầy của tôi thuận tay trái, còn ngươi lại rút súng bằng tay phải! "
+        "Một chi tiết sơ đẳng như vậy mà ngươi nghĩ có thể qua mắt được trực giác điều tra của một thám tử sao?\n\n"
+        "Chưa hết đâu, theo phương pháp khám nghiệm và suy luận pháp y của Sherlock Holmes, cơ thể sinh học không bao giờ nói dối! "
+        "Thứ năm, nhịp tim con người khi đối diện hiểm nguy sinh tử luôn biến thiên theo nhịp thở sinh lý, nhưng cảm biến vi sóng trên tay tôi ghi nhận từ lồng ngực ngươi chỉ phát ra một tần số rung cơ học đều đặn một trăm hai mươi Hertz của mô tơ bơm dung dịch làm mát bán dẫn! "
+        "Thứ sáu, giác mạc ngươi phản xạ ánh đèn hồ quang thành chùm vân giao thoa tròn đồng tâm – bằng chứng không thể chối cãi của thấu kính camera sapphire nhân tạo OMEGA! "
+        "Và thứ bảy, vệt bụi bám trên gót ủng của ngươi chứa hợp chất hydrocacbon thơm phân tử chỉ có tại lò đúc vỏ robot của tổng bộ OMEGA vừa hoạt động nửa giờ trước, chứ không phải lớp bụi phong hóa mười năm trong căn hầm ngầm này! "
+        "Chưa kể mùi ozone bốc ra từ các tụ điện silicon siêu dẫn dưới lớp da giả của ngươi nồng nặc đến mức một kỹ sư cơ khí chính xác như tôi ngửi thấy từ khoảng cách mười mét! "
+        "Chưa hết, còn một điểm chí mạng trong định lý phân tích hiện trường của Conan: Vị trí bóng đổ quang sai từ kính mắt! "
+        "Vị giáo sư thật của tôi có thói quen nghiêng đầu sang phải góc mười lăm độ mỗi khi suy tư, nhưng trục cảm biến con quay hồi chuyển của ngươi luôn ghim thẳng tuyệt đối không lệch một mi-li-mét! "
+        "Và trên hết, trong bức ảnh chụp năm 2046 gửi về từ tương lai, chiếc đồng hồ trên tay nạn nhân có khắc dòng chữ 'Kỷ niệm ngày tốt nghiệp', còn chiếc đồng hồ ngươi đang đeo lại mang số seri định danh vũ khí OMEGA-X9! "
+        "Mọi chuỗi logic sắc bén của Conan và Holmes đều kết án: Ngươi là kẻ giả mạo!'.\n\n"
+        "Kẻ giả mạo sững sờ trong giây lát, nụ cười trên môi đông cứng lại: 'Làm sao một con người bình thường như ngươi có thể nhận ra được sự sai lệch 0.01% của hệ thống mô phỏng?'. "
+        "Tận dụng khoảnh khắc đối phương dao động, tôi kích hoạt chiếc nam châm điện siêu dẫn mini giấu trong lòng bàn tay. "
+        "Lực từ trường cực mạnh hàng triệu Gauss tức thì hút chặt khẩu súng laser trên tay tên người máy giật tung ra ngoài bay cắm phập vào vách thép! "
+        "Tên người máy gầm lên man dại, cánh tay hợp kim titan của gã biến đổi thành lưỡi kiếm plasma đỏ rực chém toạc bàn điều khiển thép dày mười phân! "
+        "Tôi lăn xả sang bên né nhát chém sấm sét làm tia lửa bắn tung tóe, đồng thời tung đòn khóa cổ chân bằng thế võ Judo trinh sát, quật ngã kẻ giả mạo vào tấm lưới điện cao áp cách ly lò phản ứng! "
+        "Dòng điện hàng chục ngàn vôn bùng nổ dữ dội thiêu rụi hoàn toàn lớp da nhân tạo sinh học, để lộ ra khung xương kim loại rực lửa của cỗ máy hủy diệt! "
+        "Gã người máy vùng vẫy gầm rú, ngực gã bật mở bộ đếm ngược tự hủy: 00:00:15... 00:00:10... 00:00:08... "
+        "Nếu khối thuốc nổ phản vật chất trong người gã phát nổ, cả căn hầm và toàn bộ thành phố sẽ bị xóa sổ khỏi bản đồ không gian!\n\n"
+        "Trọng lực buồng phản ứng bắt đầu co sụp thành một điểm kỳ dị, hút mọi thanh sắt và ốc vít bay xoáy tròn vào tâm bão lượng tử. "
+        "Lõi phản vật chất rung chuyển dữ dội, các tia sét tím chớp nháy liên hồi tạo nên hiện tượng thấu kính hấp dẫn bẻ cong mọi góc nhìn trong không gian. "
+        "Tôi phải tính toán độ trễ micro-giây giữa từng chu kỳ phóng điện của cuộn cảm ứng từ để luồn tay vào khe khóa an toàn mà không bị dòng điện hai trăm ngàn vôn thiêu cháy thành tro. "
+        "Từng giây trôi qua nghẹt thở, mồ hôi trên trán tôi hòa lẫn bụi than và khói khét rỉ xuống cay xè khóe mắt, nhưng ký ức về nụ cười ấm áp của ông nội và lời căn dặn về trách nhiệm gìn giữ thực tại đã tiếp thêm sức mạnh phi thường! "
+        "Bất chấp nhiệt độ thiêu đốt và luồng hồ quang điện giật tê dại toàn thân, tôi lao mình trèo lên thang giàn giáo thép đang đổ sụp hướng về phía bảng điều khiển trung tâm! "
+        "Trên bảng mã hóa thời gian, màn hình yêu cầu nhập chuỗi số nguyên tố Fibonacci để mở khóa cơ chế đóng băng: "
+        "Bằng trí nhớ siêu đẳng thừa hưởng từ những bài học của ông nội, các đầu ngón tay bỏng rát của tôi thoăn thoắt gõ phím: hai, ba, năm, tám, mười ba, hai mươi mốt, ba mươi tư, năm mươi lăm, tám mươi chín! "
+        "Màn hình lóe sáng xanh lục: 'Xác nhận mã bảo mật! Tra chìa khóa số 0!'. "
+        "Đồng hồ tự hủy nhấp nháy đỏ rực: 00:00:03... 00:00:02... "
+        "Tôi dồn toàn bộ sức mạnh còn lại, cắm chiếc chìa khóa đồng số 0 vào ổ khóa trung tâm, xoay ngược 180 độ theo chiều kim đồng hồ! "
+        "Đúng vào khoảnh khắc con số 00:00:01 lóe lên, cơ chế đóng băng entropy lượng tử bùng nổ thành một làn sóng sương mù băng giá màu bạc bao trùm toàn bộ gian hầm! "
+        "Dòng thời gian xung quanh con robot bị ngưng đọng hoàn toàn, kim đồng hồ đếm ngược tự hủy dừng lại vĩnh viễn! "
+        "Toàn bộ thân xác của cỗ máy sát thủ bị hóa thạch thành một khối băng kim loại bất động giữa không gian.\n\n"
+        "Cánh Cửa Thần Kỳ từ từ khép lại, luồng sáng xanh biếc tan biến vào hư không, đưa dòng thời gian trở về trạng thái ổn định vốn có. "
+        "Trên màn hình giám sát, bức ảnh chụp người đàn ông bị bắn chết năm 2046 từ từ mờ nhạt dần rồi biến mất, thay vào đó là hình ảnh một viện nghiên cứu hòa bình rực rỡ dưới ánh mặt trời tương lai! "
+        "Một đoạn tin nhắn ba chiều hologram của ông nội từ ba mươi năm trước bất ngờ bật sáng giữa không trung: "
+        "'Cháu trai yêu quý... Cháu đã bảo vệ thành công tương lai của nhân loại bằng trí tuệ và lòng dũng cảm. Hãy nhớ rằng, thời gian quý giá nhất không phải là cỗ máy quay ngược quá khứ, mà chính là từng phút giây cháu đang sống và yêu thương trong hiện tại!'. "
+        "Nghịch lý thời gian đã được phá giải hoàn toàn nhờ lòng dũng cảm, trí tuệ suy luận sắc bén và tình yêu gia đình. "
+        "Khi tôi bước lên mặt đất, bình minh đầu tiên của ngày mới đã rạng rỡ nhuộm vàng con phố cổ Hà Nội thân thương. "
+        "Tiếng chim hót líu lo trên những tán cây xà cừ cổ thụ, dòng người tấp nập bắt đầu ngày mới thanh bình. "
+        "Những bảo bối kỳ diệu của Doraemon như Cỗ Máy Thời Gian hay Cánh Cửa Thần Kỳ sẽ luôn là biểu tượng của ước mơ và khát vọng nhân loại, nhưng sức mạnh vĩ đại nhất để bảo vệ thế giới và kiến tạo tương lai... mãi mãi nằm trong chính trái tim và khối óc của con người hôm nay."
+    )
+    
+    part3_cta = "Bạn yêu thích bảo bối nào nhất trong thế giới Doraemon? Nếu có Cỗ Máy Thời Gian, bạn sẽ đi về quá khứ hay tới tương lai? Hãy chia sẻ bình luận bên dưới nhé!"
+    
+    return {
+        "title": story_title,
+        "hook": "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - Lời cảnh báo rơi ra từ ngăn bàn học cũ...",
+        "parts": [
+            {
+                "part_number": 1,
+                "badge_label": "PHẦN 1",
+                "title": f"{story_title} (Tập 1 - Lời Cảnh Báo 20 Năm Sau)",
+                "hook": "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - Lời cảnh báo rơi ra từ ngăn bàn học cũ...",
+                "body": part1_body,
+                "cliffhanger": part1_cliff,
+                "call_to_action": "Bấm theo dõi ngay để không bỏ lỡ Tập 2 - Bí Mật Căn Hầm Số 7!",
+                "full_text": f"{part1_body}\n\n{part1_cliff}"
+            },
+            {
+                "part_number": 2,
+                "badge_label": "PHẦN 2",
+                "title": f"{story_title} (Tập 2 - Người Thầy Trở Về & Nghịch Lý Lượng Tử)",
+                "hook": "'Cánh cửa này chỉ mở một chiều, và một khi bước qua, dòng thời gian của cậu sẽ vĩnh viễn bị xóa sổ!' - Bước chân ra từ luồng sáng xanh biếc!...",
+                "body": part2_body,
+                "cliffhanger": part2_cliff,
+                "call_to_action": "Đón xem Tập 3 - Đại Kết Cục Phá Án Conan tối nay!",
+                "full_text": f"{part2_body}\n\n{part2_cliff}"
+            },
+            {
+                "part_number": 3,
+                "badge_label": "PHẦN 3 / KẾT",
+                "title": f"{story_title} (Tập 3 - Sự Thật Chỉ Có Một & Khóa Đóng Băng Thời Gian)",
+                "hook": "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!' - Đối mặt kẻ phản bội trong buồng Cỗ Máy Thời Gian!...",
+                "body": part3_body,
+                "cliffhanger": "",
+                "call_to_action": part3_cta,
+                "full_text": f"{part3_body}\n\n{part3_cta}"
+            }
+        ]
+    }

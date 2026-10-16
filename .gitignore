@@ -1,0 +1,47 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Large media assets & generated binaries (> 35GB)
+assets/audio/
+assets/bgm/
+assets/footage/
+assets/output/
+assets/thumbnails/
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.mp4
+assets/*.wav
+assets/*.mp3
+
+# Browser profiles, user cookies & large emulator shares (> 1GB)
+data/chrome_tiktok_cloned/
+data/tiktok_chrome_profile/
+data/emulator_share/
+data/*.png
+data/*.lock
+
+# Temporary and log files
+*.log
+*.tmp
+temp_caption.txt
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

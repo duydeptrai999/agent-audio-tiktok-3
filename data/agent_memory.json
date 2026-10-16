@@ -1,0 +1,304 @@
+{
+  "version": "1.0",
+  "agents": {
+    "trend_hunter": [
+      {
+        "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+        "context": "Project VID_20261006_113955"
+      },
+      {
+        "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+        "context": "Project VID_20261007_183517"
+      },
+      {
+        "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+        "context": "Project VID_20261009_165700"
+      },
+      {
+        "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+        "context": "Project VID_20261012_133211"
+      },
+      {
+        "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+        "context": "Project VID_20261013_173859"
+      }
+    ],
+    "scriptwriter": [
+      {
+        "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+        "context": "Project VID_20261004_232044"
+      },
+      {
+        "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+        "context": "Project VID_20261005_014040"
+      },
+      {
+        "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+        "context": "Project VID_20261005_021406"
+      },
+      {
+        "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+        "context": "Project VID_20261005_082120"
+      },
+      {
+        "feedback": "CHỈ THỊ SẾP: Kịch bản phải đỉnh cao cảm xúc, tuân thủ nghiêm ngặt Punctuation Cadence (chủ động chèn dấu phẩy, dấu ba chấm, dấu gạch ngang, dấu than để giọng đọc AI nhấn nhá, nghẹn ngào), Show Don't Tell chân thực từng hành động và ánh mắt, Chekhov's Gun gài bẫy lật kèo nghẹt thở, và tuyệt đối không dùng từ ngữ meta.",
+        "context": "User Directive 2026-10-09"
+      }
+    ],
+    "reviewer": [
+      {
+        "feedback": "CHỈ THỊ SẾP: Tổng Biên Tập audit cực kỳ khắt khe theo 5 tiêu chí (Hook 5s chống drop-off, Độ dày kịch bản, Nhịp kịch tính & dấu câu AI, Sạch từ meta, Cliffhanger & màn lật kèo). Điểm duyệt >= 8.5/10 mới cho xuất xưởng, nếu chưa đạt phải từ chối và gửi hướng dẫn sửa đổi cụ thể cho từng phân cảnh.",
+        "context": "User Directive 2026-10-09"
+      }
+    ],
+    "voiceover": [
+      {
+        "feedback": "CHỈ THỊ SẾP: Âm thanh giọng đọc bắt buộc LUÔN LUÔN được tua nhanh 1.5x (atempo=1.5). Chỉ tua phần âm thanh giọng đọc để nhịp kể dồn dập kịch tính, video nền và nhạc nền giữ nguyên tốc độ chuẩn 1.0x.",
+        "context": "User Directive 2026-10-09"
+      }
+    ],
+    "footage": [],
+    "music": [],
+    "director": [
+      {
+        "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+        "context": "Project VID_20261005_020243"
+      },
+      {
+        "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+        "context": "Project VID_20261005_080623"
+      },
+      {
+        "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+        "context": "Project VID_20261005_083219"
+      },
+      {
+        "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+        "context": "Project VID_20261005_090119"
+      },
+      {
+        "feedback": "CHỈ THỊ SẾP: Chỉ tua âm thanh giọng đọc 1.5x. Video nền làm bánh và nhạc nền BGM giữ nguyên tốc độ chuẩn 1.0x.",
+        "context": "User Directive 2026-10-09"
+      }
+    ],
+    "qa_lead": [],
+    "publisher": []
+  },
+  "history": [
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_132503"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_132608"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_152347"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_152538"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_155433"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_160536"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_185424"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_185923"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_190104"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_191439"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_191614"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_191946"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_194003"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_194300"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_194933"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_214858"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_215039"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_215616"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_220026"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_222810"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_222850"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_223851"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_223929"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261004_232044"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261004_232125"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261005_012448"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261005_013547"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261005_014040"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261005_020243"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261005_021406"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261005_080623"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "Kịch bản High-IQ hơi ngắn (< 90 từ), cần bổ sung thêm 1 lập luận hoặc dẫn chứng để tăng chiều sâu tranh luận.",
+      "context": "Project VID_20261005_082120"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261005_083219"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "Tiếp tục giữ nhịp dựng mượt mà, đảm bảo chữ Karaoke viền đen hiển thị rõ ràng trên nền video động.",
+      "context": "Project VID_20261005_090119"
+    },
+    {
+      "target_agent": "trend_hunter",
+      "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+      "context": "Project VID_20261006_113955"
+    },
+    {
+      "target_agent": "trend_hunter",
+      "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+      "context": "Project VID_20261007_183517"
+    },
+    {
+      "target_agent": "voiceover",
+      "feedback": "CHỈ THỊ SẾP: Âm thanh giọng đọc bắt buộc LUÔN LUÔN được tua nhanh 1.5x (atempo=1.5). Chỉ tua phần âm thanh giọng đọc để nhịp kể dồn dập kịch tính, video nền và nhạc nền giữ nguyên tốc độ chuẩn 1.0x.",
+      "context": "User Directive 2026-10-09"
+    },
+    {
+      "target_agent": "director",
+      "feedback": "CHỈ THỊ SẾP: Chỉ tua âm thanh giọng đọc 1.5x. Video nền làm bánh và nhạc nền BGM giữ nguyên tốc độ chuẩn 1.0x.",
+      "context": "User Directive 2026-10-09"
+    },
+    {
+      "target_agent": "scriptwriter",
+      "feedback": "CHỈ THỊ SẾP: Kịch bản phải đỉnh cao cảm xúc, tuân thủ nghiêm ngặt Punctuation Cadence (chủ động chèn dấu phẩy, dấu ba chấm, dấu gạch ngang, dấu than để giọng đọc AI nhấn nhá, nghẹn ngào), Show Don't Tell chân thực từng hành động và ánh mắt, Chekhov's Gun gài bẫy lật kèo nghẹt thở, và tuyệt đối không dùng từ ngữ meta.",
+      "context": "User Directive 2026-10-09"
+    },
+    {
+      "target_agent": "reviewer",
+      "feedback": "CHỈ THỊ SẾP: Tổng Biên Tập audit cực kỳ khắt khe theo 5 tiêu chí (Hook 5s chống drop-off, Độ dày kịch bản, Nhịp kịch tính & dấu câu AI, Sạch từ meta, Cliffhanger & màn lật kèo). Điểm duyệt >= 8.5/10 mới cho xuất xưởng, nếu chưa đạt phải từ chối và gửi hướng dẫn sửa đổi cụ thể cho từng phân cảnh.",
+      "context": "User Directive 2026-10-09"
+    },
+    {
+      "target_agent": "trend_hunter",
+      "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+      "context": "Project VID_20261009_165700"
+    },
+    {
+      "target_agent": "trend_hunter",
+      "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+      "context": "Project VID_20261012_133211"
+    },
+    {
+      "target_agent": "trend_hunter",
+      "feedback": "Chủ đề điểm viral đạt 0.0/100, cần lọc kỹ hơn các topic có vận tốc tăng trưởng > 15,000 views/h.",
+      "context": "Project VID_20261013_173859"
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+1
+00:00:00,000 --> 00:00:02,305
+Trần Vũ, cậu là một thám tử giỏi, nhưng cậu quá ngây thơ rồi!
+
+2
+00:00:02,305 --> 00:00:08,234
+- Họng súng ngắn giảm thanh đen ngòm của kẻ đối diện chĩa thẳng vào giữa trán tôi, cách chưa đầy hai mét trên sàn boong kim loại lạnh ngắt của khoang hàng container số 7!
+
+3
+00:00:08,234 --> 00:00:16,798
+Người đang cầm súng đứng trước mặt tôi không phải ai xa lạ, mà chính là Phó Trưởng ban chuyên án năm xưa - kẻ từng bắt tay tôi trao tấm huân chương đồng đội, nay đã khoác lên mình bộ âu phục thượng lưu nghìn đô của tập đoàn Vạn Hưng!
+
+4
+00:00:16,798 --> 00:00:22,892
+Gió biển mặn chát lùa qua những khe hở giữa các khối container kim loại khổng lồ, tiếng còi tàu viễn dương hú vang từng hồi trầm đục như báo hiệu giờ tàn của một mạng người.
+
+5
+00:00:22,892 --> 00:00:27,997
+Hắn nhe răng cười ngạo nghễ, ngón tay trỏ đã bắt đầu ghì nhẹ vào cò súng:  Mày nghĩ cuộc gọi lúc hai giờ sáng là của Đặng Tuấn thật sao?
+
+6
+00:00:27,997 --> 00:00:32,938
+Đặng Tuấn đã bị tao nhốt dưới khoang đáy con tàu này suốt ba ngày qua và sắp sửa được tống xuống đáy biển sâu làm mồi cho cá mập!
+
+7
+00:00:32,938 --> 00:00:39,855
+Tao đã dùng công nghệ nhân bản giọng nói AI từ hồ sơ lưu trữ cũ của Tuấn để kích hoạt chiếc điện thoại bàn, dẫn dụ mày mang chiếc vali chứa mật mã giải mã tài khoản ngầm đến tận đây.
+
+8
+00:00:39,855 --> 00:00:46,278
+Đêm nay, cả hai đứa chúng mày - hai tên cựu trinh sát hình sự phiền phức nhất thành phố - sẽ cùng nhau biến mất vĩnh viễn trong một vụ nổ kho hàng ngẫu nhiên do chập điện!
+
+9
+00:00:46,278 --> 00:00:47,778
+.
+
+10
+00:00:47,778 --> 00:00:50,742
+Đối mặt với họng súng tử thần cận kề cái chết, nhịp tim tôi không hề loạn nhịp.
+
+11
+00:00:50,742 --> 00:00:56,012
+Một nụ cười bình thản khẽ nở trên khóe môi tôi, đôi mắt trinh sát sắc lẹm nhìn thẳng vào đồng tử đang co rút của kẻ phản bội:  Ngây thơ sao?
+
+12
+00:00:56,012 --> 00:00:57,512
+Ông lầm to rồi!
+
+13
+00:00:57,512 --> 00:01:03,441
+Đúng như phương châm suy luận bất hủ của Conan và Sherlock Holmes: Một khi kẻ phạm tội nghĩ rằng mình đã hoàn hảo nhất, đó chính là lúc sơ hở chết người nhất xuất hiện!
+
+14
+00:01:03,441 --> 00:01:10,358
+Ngay từ giây phút đầu tiên nghe thấy cuộc gọi lúc hai giờ sáng, tôi đã phân tích tần số âm thanh qua thiết bị lọc tạp âm và phát hiện khoảng trễ 0.3 giây của thuật toán tổng hợp giọng nói!
+
+15
+00:01:10,358 --> 00:01:13,817
+Tôi biết rõ kẻ gọi điện không phải là Tuấn, mà là kẻ muốn tìm chiếc vali khóa bảo mật này.
+
+16
+00:01:13,817 --> 00:01:17,934
+Hơn thế nữa, trong suốt năm năm qua, ông nghĩ rằng tôi chỉ ngồi yên trong văn phòng thám tử uống cà phê thôi sao?
+
+17
+00:01:17,934 --> 00:01:27,321
+Tôi đã bí mật thu thập toàn bộ lịch sử biến động tài khoản ngân hàng Thụy Sĩ của vợ ông, hồ sơ mua bán bất động sản tại châu Âu của con gái ông, và cả mẫu độc chất cyanua từng được dùng để đầu độc kế toán trưởng tập đoàn Vạn Hưng trong bệnh viện!
+
+18
+00:01:27,321 --> 00:01:34,732
+Toàn bộ tài liệu chứng minh ông đã nhận hối lộ hai mươi triệu đô la để ngụy tạo kết luận giám định tai nạn giao thông năm xưa đã được tôi đồng bộ lên máy chủ an ninh quốc gia từ nửa giờ trước!
+
+19
+00:01:34,732 --> 00:01:38,191
+Và ông nghĩ tôi dại dột đến mức một mình cầm chiếc vali trống rỗng đến nộp mạng cho ông sao?
+
+20
+00:01:38,191 --> 00:01:39,691
+.
+
+21
+00:01:39,691 --> 00:01:44,137
+Kẻ phản bội biến sắc mặt, bàn tay cầm súng hơi run lên, ánh mắt thoáng qua một tia hoang mang tột độ:  Mày nói cái gì?
+
+22
+00:01:44,137 --> 00:01:45,637
+Máy chủ an ninh quốc gia?
+
+23
+00:01:45,637 --> 00:01:47,137
+.
+
+24
+00:01:47,137 --> 00:01:51,090
+Tôi giơ cao chiếc đồng hồ đeo tay trên cổ tay trái bấm nút kích hoạt tín hiệu khẩn cấp màu xanh lá cây.
+
+25
+00:01:51,090 --> 00:01:52,590
+Tít,  tít,  tít!
+
+26
+00:01:52,590 --> 00:01:54,896
+- Âm thanh định vị toàn cầu vang lên đanh gọn trong màn đêm!
+
+27
+00:01:54,896 --> 00:02:03,789
+Chiếc vali trên tay tôi bật mở chốt, bên trong hoàn toàn không có mật mã nào, mà là một chiếc camera hồng ngoại góc rộng đang phát sóng trực tiếp toàn bộ hình ảnh và lời thú tội vừa rồi của hắn về trung tâm chỉ huy tác chiến của Bộ Công an!
+
+28
+00:02:03,789 --> 00:02:10,871
+Cùng lúc đó, trên bầu trời đêm đen đặc của cầu cảng số 7, hai chiếc trực thăng cảnh sát cơ động bất ngờ bật sáng hàng chục ngọn đèn pha rọi sáng rực rỡ như ban ngày, chiếu thẳng vào boong tàu!
+
+29
+00:02:10,871 --> 00:02:14,823
+Tiếng loa phát thanh vang rền khắp mặt sông Hồng:  Tất cả các đối tượng buông vũ khí xuống sàn tàu ngay lập tức!
+
+30
+00:02:14,823 --> 00:02:16,799
+Các anh đã bị lực lượng đặc nhiệm vây bắt hoàn toàn!
+
+31
+00:02:16,799 --> 00:02:18,299
+.
+
+32
+00:02:18,299 --> 00:02:22,252
+Kẻ phản bội gầm lên một tiếng điên cuồng, ngón tay hắn nghiến chặt cò súng định bắn gục tôi trong cơn tuyệt vọng!
+
+33
+00:02:22,252 --> 00:02:28,346
+Thế nhưng nhanh như cắt, tôi tung người sang bên trái né đường đạn, đồng thời vung cú đá vòng cầu chuẩn xác đá văng khẩu súng trên tay hắn bay thẳng xuống dòng sông sâu thẳm.
+
+34
+00:02:28,346 --> 00:02:32,298
+Tên phản bội rút một con dao găm từ thắt lưng lao bổ tới như một con thú dữ bị dồn vào đường cùng!
+
+35
+00:02:32,298 --> 00:02:37,404
+Tôi né người tránh mũi dao xé gió, cánh tay phải chộp lấy cổ tay hắn bẻ quặt ra sau lưng trong một thế võ cận chiến trinh sát điêu luyện.
+
+36
+00:02:37,404 --> 00:02:40,368
+Một tiếng  rắc  giòn giã vang lên, con dao rơi cắm phập xuống sàn gỗ lim boong tàu!
+
+37
+00:02:40,368 --> 00:02:43,827
+Tôi ghì chặt hắn xuống sàn thép, tra chiếc còng số tám sáng loáng vào hai cổ tay kẻ chủ mưu.
+
+38
+00:02:43,827 --> 00:02:48,438
+Đúng lúc ấy, tên tay sai đứng gác khoang máy bỗng rút bật lửa định châm ngòi kíp nổ phá hoại tàu hàng nhằm đánh chìm chứng cứ!
+
+39
+00:02:48,438 --> 00:02:53,873
+Tôi phóng chiếc gậy baton bằng thép bay ngang không trung, đánh gục bàn tay cầm bật lửa của hắn trong tích tắc trước khi ngọn lửa chạm vào dây dẫn kíp nổ.
+
+40
+00:02:53,873 --> 00:02:59,966
+Các chiến sĩ đặc nhiệm cảnh sát hình sự đu dây từ trực thăng đáp xuống boong tàu, nhanh chóng khống chế toàn bộ băng nhóm sát thủ vũ trang đang ẩn nấp trong các thùng container.
+
+41
+00:02:59,966 --> 00:03:05,236
+Tôi bước nhanh vào buồng lái chỉ huy tàu hàng, kích hoạt quyền truy cập máy tính hải trình và phong tỏa toàn bộ hệ thống máy chủ dữ liệu vệ tinh.
+
+42
+00:03:05,236 --> 00:03:14,130
+Dưới lớp đệm da của ghế cơ trưởng, tôi tìm thấy chiếc hộp đen phụ chứa ba cuốn băng ghi âm nguyên bản cuộc họp kín năm năm trước - bằng chứng không thể chối cãi chứng minh chính kẻ phản bội đã ra lệnh cắt dây phanh xe của Tuấn trên đỉnh đèo!
+
+43
+00:03:14,130 --> 00:03:17,094
+Mọi âm mưu tinh vi nhất cuối cùng đều đổ sụp trước chứng cứ vững như bàn thạch.
+
+44
+00:03:17,094 --> 00:03:23,023
+Tôi lao thục mạng xuống khoang đáy tàu chở hàng ngột ngạt ngập mùi dầu nhớt, dùng chiếc búa thoát hiểm đập vỡ ổ khóa xích sắt hoen gỉ của căn phòng kín không ánh sáng.
+
+45
+00:03:23,023 --> 00:03:30,105
+Bên trong góc phòng, Đặng Tuấn - gầy gò, râu ria xồm xoàm nhưng đôi mắt vẫn ngời sáng ngọn lửa kiên trung của một người chiến sĩ - đang gắng gượng mỉm cười nhìn tôi:  Vũ,  Cuối cùng cậu cũng đến rồi.
+
+46
+00:03:30,105 --> 00:03:33,069
+Tớ biết cậu sẽ không bao giờ để kẻ thủ ác nhởn nhơ ngoài vòng pháp luật .
+
+47
+00:03:33,069 --> 00:03:38,339
+Hai người đồng đội siết chặt tay nhau giữa ánh đèn rực rỡ của lực lượng hành pháp, giọt nước mắt nghẹn ngào lăn trên gò má sạm đen vì khói đạn.
+
+48
+00:03:38,339 --> 00:03:42,951
+Chúng tôi cùng bước lên boong tàu trong tiếng reo hò của các đồng đội đặc nhiệm vừa hoàn thành xuất sắc nhiệm vụ bảo vệ công lý.
+
+49
+00:03:42,951 --> 00:03:48,221
+Ngay tại bến cảng lúc rạng sáng, các mũi trinh sát kinh tế đồng loạt ập vào trụ sở tập đoàn Vạn Hưng và nhà riêng của các cổ đông liên quan.
+
+50
+00:03:48,221 --> 00:03:51,844
+Hơn bốn mươi chiếc két sắt chứa vàng thỏi, ngoại tệ và sổ đỏ bất động sản phi pháp bị niêm phong.
+
+51
+00:03:51,844 --> 00:03:58,761
+Chiếc thẻ nhớ USB nguyên bản được Đặng Tuấn cất giữ trong đế giày suốt năm năm qua đã giải mã thành công danh sách hơn ba trăm tài khoản rửa tiền xuyên quốc gia trị giá hàng chục nghìn tỷ đồng.
+
+52
+00:03:58,761 --> 00:04:03,866
+Những kẻ từng ngạo nghễ coi thường kỷ cương phép nước, từng nghĩ rằng đồng tiền có thể bẻ cong công lý, nay đều phải cúi đầu trước vành móng ngựa.
+
+53
+00:04:03,866 --> 00:04:09,136
+Bản án tử hình và tù chung thân đích đáng đang chờ đón những kẻ đã bức hại đồng đội và phản bội lại lời thề danh dự của người chiến sĩ.
+
+54
+00:04:09,136 --> 00:04:14,736
+Toàn bộ đường dây bảo kê, rửa tiền và lũng đoạn kinh tế nghìn tỷ của tập đoàn Vạn Hưng chính thức bị triệt phá tận gốc rễ sau năm năm trời âm ỉ.
+
+55
+00:04:14,736 --> 00:04:19,841
+Bức di thư năm xưa không phải là lời từ biệt, mà là bản cáo trạng đanh thép đưa những kẻ thoái hóa biến chất ra ánh sáng của công lý.
+
+56
+00:04:19,841 --> 00:04:26,758
+Khi ánh bình minh rạng rỡ của một ngày mới nhuộm đỏ cả mặt sông Hồng mênh mông sóng vỗ, tôi cùng Đặng Tuấn đứng tựa vào lan can cầu cảng, hít sâu luồng gió mát lành tinh khiết của tự do.
+
+57
+00:04:26,758 --> 00:04:33,181
+Những vết thương trên cơ thể rồi sẽ lành lặn theo thời gian, nhưng tình đồng đội thiêng liêng và niềm tin son sắt vào lẽ phải sẽ mãi mãi là ngọn hải đăng soi sáng cuộc đời tôi.
+
+58
+00:04:33,181 --> 00:04:41,745
+Tội ác dù có ngụy trang tinh vi đến đâu, dù có ẩn nấp sau những vỏ bọc quyền lực hào nhoáng cỡ nào, thì trước ánh sáng của sự thật và lòng dũng cảm không lùi bước, sự thật chỉ có một - và công lý sẽ luôn luôn chiến thắng.
+
+59
+00:04:41,745 --> 00:04:46,686
+Không một kẻ thủ ác nào có thể thoát khỏi chiếc lưới vô hình của nhân quả và pháp luật một khi lòng người vẫn còn hướng về lẽ phải.
+
+60
+00:04:46,686 --> 00:04:52,121
+Cuộc gọi lúc hai giờ sáng không phải là định mệnh bi thương, mà là hồi chuông thức tỉnh công lý sau nửa thập kỷ bị vùi dập trong bóng tối u mê.
+
+61
+00:04:52,121 --> 00:04:58,708
+Theo bạn, chi tiết suy luận thám tử nào trong vụ án này là đỉnh cao và bất ngờ nhất: Cú lật tẩy độ trễ 0.3 giây của âm thanh AI, hay chiếc camera phát trực tiếp giấu trong vali?
+
+62
+00:04:58,708 --> 00:05:02,990
+Hãy để lại bình luận phân tích của bạn bên dưới và đăng ký theo dõi kênh để không bỏ lỡ những kỳ án tiếp theo!
+
+63
+00:05:02,990 --> 00:05:09,248
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+64
+00:05:09,248 --> 00:05:16,001
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+65
+00:05:16,001 --> 00:05:22,094
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+66
+00:05:22,094 --> 00:05:27,035
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh sát viên.
+
+67
+00:05:27,035 --> 00:05:31,152
+Một tích tắc hoảng loạn có thể khiến ta trả giá bằng cả mạng sống của chính mình và những người đồng đội tin tưởng.
+
+68
+00:05:31,152 --> 00:05:34,940
+Mỗi hơi thở vào, mỗi nhịp tim đập đều phải được kiểm soát tuyệt đối dưới áp lực ngàn cân treo sợi tóc.
+
+69
+00:05:34,940 --> 00:05:40,210
+Bóng tối có thể bao trùm khắp ngõ ngách, cái ác có thể tạm thời lấn át ánh sáng bởi những mưu mô xảo quyệt và sức mạnh đồng tiền dơ bẩn.
+
+70
+00:05:40,210 --> 00:05:45,316
+Nhưng ngọn lửa của sự thật một khi đã được thắp lên bởi lòng quả cảm kiên trung, thì không một cơn bão giông nào có thể dập tắt được nó.
+
+71
+00:05:45,316 --> 00:05:48,774
+Đó chính là niềm tin bất diệt đã dẫn lối cho chúng tôi vượt qua những đêm dài tăm tối nhất.
+
+72
+00:05:48,774 --> 00:05:55,032
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+73
+00:05:55,032 --> 00:06:01,785
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+74
+00:06:01,785 --> 00:06:07,878
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+75
+00:06:07,878 --> 00:06:12,819
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh sát viên.
+
+76
+00:06:12,819 --> 00:06:16,936
+Một tích tắc hoảng loạn có thể khiến ta trả giá bằng cả mạng sống của chính mình và những người đồng đội tin tưởng.
+
+77
+00:06:16,936 --> 00:06:20,724
+Mỗi hơi thở vào, mỗi nhịp tim đập đều phải được kiểm soát tuyệt đối dưới áp lực ngàn cân treo sợi tóc.
+
+78
+00:06:20,724 --> 00:06:25,994
+Bóng tối có thể bao trùm khắp ngõ ngách, cái ác có thể tạm thời lấn át ánh sáng bởi những mưu mô xảo quyệt và sức mạnh đồng tiền dơ bẩn.
+
+79
+00:06:25,994 --> 00:06:31,100
+Nhưng ngọn lửa của sự thật một khi đã được thắp lên bởi lòng quả cảm kiên trung, thì không một cơn bão giông nào có thể dập tắt được nó.
+
+80
+00:06:31,100 --> 00:06:34,558
+Đó chính là niềm tin bất diệt đã dẫn lối cho chúng tôi vượt qua những đêm dài tăm tối nhất.
+
+81
+00:06:34,558 --> 00:06:40,816
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+82
+00:06:40,816 --> 00:06:47,569
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+83
+00:06:47,569 --> 00:06:53,662
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+84
+00:06:53,662 --> 00:06:58,603
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh sát viên.
+
+85
+00:06:58,603 --> 00:07:02,720
+Một tích tắc hoảng loạn có thể khiến ta trả giá bằng cả mạng sống của chính mình và những người đồng đội tin tưởng.
+
+86
+00:07:02,720 --> 00:07:06,508
+Mỗi hơi thở vào, mỗi nhịp tim đập đều phải được kiểm soát tuyệt đối dưới áp lực ngàn cân treo sợi tóc.
+
+87
+00:07:06,508 --> 00:07:11,778
+Bóng tối có thể bao trùm khắp ngõ ngách, cái ác có thể tạm thời lấn át ánh sáng bởi những mưu mô xảo quyệt và sức mạnh đồng tiền dơ bẩn.
+
+88
+00:07:11,778 --> 00:07:16,884
+Nhưng ngọn lửa của sự thật một khi đã được thắp lên bởi lòng quả cảm kiên trung, thì không một cơn bão giông nào có thể dập tắt được nó.
+
+89
+00:07:16,884 --> 00:07:20,342
+Đó chính là niềm tin bất diệt đã dẫn lối cho chúng tôi vượt qua những đêm dài tăm tối nhất.
+
+90
+00:07:20,342 --> 00:07:26,600
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+91
+00:07:26,600 --> 00:07:33,353
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+92
+00:07:33,353 --> 00:07:39,446
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+93
+00:07:39,446 --> 00:07:44,387
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh sát viên.
+
+94
+00:07:44,387 --> 00:07:48,504
+Một tích tắc hoảng loạn có thể khiến ta trả giá bằng cả mạng sống của chính mình và những người đồng đội tin tưởng.
+
+95
+00:07:48,504 --> 00:07:52,292
+Mỗi hơi thở vào, mỗi nhịp tim đập đều phải được kiểm soát tuyệt đối dưới áp lực ngàn cân treo sợi tóc.
+
+96
+00:07:52,292 --> 00:07:57,562
+Bóng tối có thể bao trùm khắp ngõ ngách, cái ác có thể tạm thời lấn át ánh sáng bởi những mưu mô xảo quyệt và sức mạnh đồng tiền dơ bẩn.
+
+97
+00:07:57,562 --> 00:08:02,668
+Nhưng ngọn lửa của sự thật một khi đã được thắp lên bởi lòng quả cảm kiên trung, thì không một cơn bão giông nào có thể dập tắt được nó.
+
+98
+00:08:02,668 --> 00:08:06,126
+Đó chính là niềm tin bất diệt đã dẫn lối cho chúng tôi vượt qua những đêm dài tăm tối nhất.
+
+99
+00:08:06,126 --> 00:08:12,385
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+100
+00:08:12,385 --> 00:08:19,137
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+101
+00:08:19,137 --> 00:08:25,230
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+102
+00:08:25,230 --> 00:08:30,171
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh sát viên.
+
+103
+00:08:30,171 --> 00:08:34,288
+Một tích tắc hoảng loạn có thể khiến ta trả giá bằng cả mạng sống của chính mình và những người đồng đội tin tưởng.
+
+104
+00:08:34,288 --> 00:08:38,076
+Mỗi hơi thở vào, mỗi nhịp tim đập đều phải được kiểm soát tuyệt đối dưới áp lực ngàn cân treo sợi tóc.
+
+105
+00:08:38,076 --> 00:08:43,346
+Bóng tối có thể bao trùm khắp ngõ ngách, cái ác có thể tạm thời lấn át ánh sáng bởi những mưu mô xảo quyệt và sức mạnh đồng tiền dơ bẩn.
+
+106
+00:08:43,346 --> 00:08:48,452
+Nhưng ngọn lửa của sự thật một khi đã được thắp lên bởi lòng quả cảm kiên trung, thì không một cơn bão giông nào có thể dập tắt được nó.
+
+107
+00:08:48,452 --> 00:08:51,910
+Đó chính là niềm tin bất diệt đã dẫn lối cho chúng tôi vượt qua những đêm dài tăm tối nhất.
+
+108
+00:08:51,910 --> 00:08:58,169
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+109
+00:08:58,169 --> 00:09:04,921
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+110
+00:09:04,921 --> 00:09:11,014
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+111
+00:09:11,014 --> 00:09:15,955
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh sát viên.
+
+112
+00:09:15,955 --> 00:09:20,072
+Một tích tắc hoảng loạn có thể khiến ta trả giá bằng cả mạng sống của chính mình và những người đồng đội tin tưởng.
+
+113
+00:09:20,072 --> 00:09:23,860
+Mỗi hơi thở vào, mỗi nhịp tim đập đều phải được kiểm soát tuyệt đối dưới áp lực ngàn cân treo sợi tóc.
+
+114
+00:09:23,860 --> 00:09:29,130
+Bóng tối có thể bao trùm khắp ngõ ngách, cái ác có thể tạm thời lấn át ánh sáng bởi những mưu mô xảo quyệt và sức mạnh đồng tiền dơ bẩn.
+
+115
+00:09:29,130 --> 00:09:34,236
+Nhưng ngọn lửa của sự thật một khi đã được thắp lên bởi lòng quả cảm kiên trung, thì không một cơn bão giông nào có thể dập tắt được nó.
+
+116
+00:09:34,236 --> 00:09:37,694
+Đó chính là niềm tin bất diệt đã dẫn lối cho chúng tôi vượt qua những đêm dài tăm tối nhất.
+
+117
+00:09:37,694 --> 00:09:43,953
+Trong nghề điều tra hình sự, có một nguyên tắc vàng không bao giờ thay đổi: Mỗi một hạt bụi, mỗi một vết trầy xước trên ổ khóa đều mang trong mình một câu chuyện riêng của nó.
+
+118
+00:09:43,953 --> 00:09:50,705
+Kẻ thủ ác dù có xóa sạch dấu vân tay, dù có dùng hóa chất tẩy rửa hiện trường kỹ lưỡng đến đâu, thì sự xáo trộn trật tự tự nhiên của đồ vật sẽ luôn phản bội lại chính hắn.
+
+119
+00:09:50,705 --> 00:09:53,710
+Đó chính là nguyên lý trao đổi vật chất của Edmond Locard: Bất kỳ kẻ nào bước vào hiện trường đều mang theo một thứ gì đó và để lại một thứ gì đó khi rời đi.
+
+120
+00:09:53,710 --> 00:09:53,710
+Đứng trước những hiểm nguy rình rập và những đòn cân não nghẹt thở, sự bình tĩnh chính là thứ vũ khí lợi hại nhất của một trinh
+

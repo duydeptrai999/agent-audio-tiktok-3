@@ -1,0 +1,275 @@
+{
+  "version": "2.1",
+  "last_updated": "2026-10-04T22:24:03.222159",
+  "total_insights_learned": 55,
+  "evolution_cycles": 6,
+  "tiktok_audio_mastery": {
+    "visual_pillar": {
+      "insight": "Khán giả nghe truyện audio trên TikTok thường tập trung thính giác, nhưng mắt dễ bị xao nhãng nếu hình ảnh tĩnh hoặc giật cục. Các video làm bánh kem ASMR (Baking), thủ công mỹ nghệ khắc gỗ/gốm (Craft), và cảnh mưa rừng/cabin gỗ (Nature) tạo ra vòng lặp Dopamine (oddly satisfying) giúp duy trì retention > 70% mà không lấn át lời kể.",
+      "recommended_brolls": [
+        "baking",
+        "craft",
+        "nature",
+        "mukbang"
+      ]
+    },
+    "audio_pillar": {
+      "insight": "Giọng đọc là linh hồn của kênh. Tuyệt đối không để tạp âm hay nhạc có lời (vocal) tranh chấp dải tần số của giọng kể. Nhạc nền phải là nhạc không lời (Piano Lofi hoặc Dark Suspense Piano), áp dụng Audio Ducking ở mức -22dB đến -26dB so với giọng đọc để lời kể luôn nổi bật, sắc nét và ấm áp.",
+      "standards": {
+        "voice_clarity": "100% Crisp Neural Speech, không ngắt quãng",
+        "bgm_type": "100% Instrumental Only (No Vocals)",
+        "ducking_level": "-22dB to -26dB (Voice dominant)",
+        "no_copyright": "100% Safe for TikTok Monetization"
+      }
+    },
+    "narrative_pillar": {
+      "insight": "Cấu trúc 3 Hồi cho Bộ Truyện Audio 30 Phút chia 3 Tập: Mở màn với Hook 0-3s gián tiếp đẩy cao trào lên đầu; Tập 1 kết thúc bằng Cliffhanger nghẹt thở; Tập 2 mở màn bằng 15s Recap rồi đẩy cao trào đấu trí/bóc tách dối trá; Tập 3 giải mã toàn bộ bí ẩn, mang lại cảm xúc mãn nhãn và chốt bằng Comment Magnet kích hoạt tranh luận.",
+      "series_split_rule": "3 phần độc lập nhưng liền mạch, badge [PHẦN 1], [PHẦN 2], [PHẦN 3 / KẾT], không ghi thời gian số phút trên tiêu đề."
+    }
+  },
+  "viral_hooks_library": {
+    "HIGH_IQ": [
+      {
+        "formula": "Climax First",
+        "template": "Vào đúng 2 giờ sáng ngày mưa bão năm đó, chiếc điện thoại của người đã mất 10 năm bỗng reo lên...",
+        "example": "Vào đúng 2 giờ sáng ngày mưa bão, chiếc điện thoại bàn cổ lỗ sĩ đã cắt dây bỗng reo lên một cuộc gọi định mệnh...",
+        "retention_impact": "Cực cao (+48% 3s retention)",
+        "source": "tiktok_audio_mystery_study"
+      },
+      {
+        "formula": "Contrarian Shock",
+        "template": "99% mọi người đều tin người tử tế nhất trong bức ảnh là vô tội, cho đến khi bức thư dưới gạch men được tìm thấy...",
+        "example": "Ai cũng nghĩ anh trai tôi qua đời vì tai nạn, cho đến khi tôi tìm thấy chiếc hộp bí mật dưới sàn phòng làm việc.",
+        "retention_impact": "Rất cao (+44% 3s retention)",
+        "source": "douyin_vietsub_drama"
+      },
+      {
+        "formula": "Curiosity Gap",
+        "template": "Quy tắc ngầm số 3 mà các vị thám tử lão luyện không bao giờ ghi vào biên bản hiện trường...",
+        "example": "Có một quy tắc ngầm trong giới điều tra: nơi nào sạch sẽ bất thường, nơi đó có sự dối trá lớn nhất.",
+        "retention_impact": "Cao (+40% completion rate)",
+        "source": "reddit_nosleep_viral"
+      },
+      {
+        "formula": "Identity Callout",
+        "template": "Nếu bạn từng có cảm giác có một ánh mắt luôn theo dõi mình mỗi khi về nhà một mình vào ban đêm...",
+        "example": "Nếu bạn thường xuyên cảm thấy bất an khi nghe tiếng bước chân sau lưng, câu chuyện này sẽ khiến bạn lạnh gáy.",
+        "retention_impact": "Rất cao (+52% comment rate)",
+        "source": "tiktok_storytelling_vietnam"
+      },
+      {
+        "formula": "Confession Dilemma",
+        "template": "Tôi đã nghĩ mình cưới được một người vợ hoàn mỹ suốt 7 năm, cho đến khi bức thư trong gối của con gái lộ ra...",
+        "example": "Suốt 7 năm qua tôi cứ ngỡ mình có một gia đình êm ấm, cho đến khi phát hiện bí mật của mẹ vợ đêm 30 Tết.",
+        "retention_impact": "Cực cao (+55% share rate)",
+        "source": "tiktok_baking_storytime"
+      },
+      {
+        "formula": "Climax First",
+        "template": "Vào đúng 2 giờ sáng ngày mưa bão năm đó, chiếc điện thoại của người đã mất 5 năm bỗng reo lên một cuộc gọi định mệnh...",
+        "example": "Kỳ Án Căn Phòng Số 13: 3 Cuộc Gọi Bí Ẩn Lúc Nửa Đêm Của Người Đã Mất",
+        "retention_impact": "Cực cao (+48% 3s retention)",
+        "source": "tiktok_mystery",
+        "learned_at": "2026-10-05T00:00:00.000000"
+      },
+      {
+        "formula": "Suspense Mystery",
+        "template": "Chỉ trên đoạn đường 50 mét giữa hai chiếc camera an ninh, cô gái trẻ bỗng bốc hơi không một dấu vết...",
+        "example": "Vụ Mất Tích Giữa Phố Đông: 50 Mét Đường Giữa Hai Chiếc Camera",
+        "retention_impact": "Rất cao (+44% completion rate)",
+        "source": "tiktok_crime_story",
+        "learned_at": "2026-10-05T00:00:00.000000"
+      }
+    ],
+    "SLEEP_CHILL": [
+      {
+        "formula": "Sensory Decompression",
+        "template": "Đêm nay, hãy buông bỏ hết những mệt mỏi của ngày dài, hít thở thật sâu và cùng tôi bước vào không gian tĩnh lặng nhất trần gian...",
+        "example": "Đêm nay, cách xa mọi khói bụi thành phố, hãy để tiếng mưa rơi ngoài ô cửa sổ đưa bạn vào giấc ngủ an lành...",
+        "retention_impact": "Rất cao (+72% watch-time xuyên đêm)",
+        "source": "tiktok_sleep_radio"
+      },
+      {
+        "formula": "Hypnotic Landscape",
+        "template": "Ở một nơi cách xa mọi ồn ào và áp lực, có một căn cabin gỗ ấm áp giữa rừng thông mùa thu rả rích mưa...",
+        "example": "Nép mình giữa đồi thông sương mờ Đà Lạt, ngọn lửa tí tách trong lò sưởi và tách trà nóng đang chờ bạn nghỉ ngơi...",
+        "retention_impact": "Cực cao (+75% watch-time xuyên đêm)",
+        "source": "douyin_nature_chill"
+      },
+      {
+        "formula": "Cosmic Tranquility",
+        "template": "Khi cả thế giới ngoài kia đã ngủ say, hãy để tâm trí bạn nhẹ nhàng trôi theo những vì sao trên dải ngân hà tĩnh lặng...",
+        "example": "Dưới bầu trời đêm không một gợn mây, hàng triệu vì sao đang lấp lánh như chiếc chăn bạc vỗ về giấc mơ của bạn...",
+        "retention_impact": "Cao (+68% completion rate)",
+        "source": "tiktok_asmr_study"
+      }
+    ]
+  },
+  "viral_title_templates": {
+    "HIGH_IQ": [
+      "Kỳ Án Căn Phòng Số [X]: Bí Mật Giấu Kín Suốt 10 Năm",
+      "Cuộc Gọi Lúc 2 Giờ Sáng Của Người Đã Mất",
+      "Nghịch Lý Vụ Án Trong Phòng Kín Đêm Mưa Bão",
+      "Chiếc Hộp Bí Mật Dưới Đáy Tủ: Sự Thật Đau Lòng",
+      "Màn Đấu Trí Cân Não Giữa Thám Tử Và Kẻ Chủ Mưu",
+      "Bí Mật Đêm 30 Tết Của Gia Tộc Hào Môn",
+      "Bức Ảnh 10 Năm Trước Và Cú Lừa Hoàn Hảo",
+      "Vụ Mất Tích Giữa Phố Đông: 50 Mét Đường Giữa Hai Chiếc Camera",
+      "Bí Mật Dưới Lớp Gạch Men: Bản Án Sau 10 Năm Chôn Vùi"
+    ],
+    "SLEEP_CHILL": [
+      "Cưới Em Trước Cưng Chiều Em Sau: Bản Hợp Đồng 100 Tỷ",
+      "Thiên Kim Thật Trở Về: Màn Đáp Trả Đanh Thép",
+      "Gặp Lại Sau 7 Năm: Bản Hợp Đồng Hôn Nhân Giữa Đêm Mưa",
+      "Thanh Xuân Bỏ Lỡ: Bức Thư Tình Viết Dở Trong Hộc Bàn",
+      "Truyện Đêm: Tiếng Mưa Rơi Bên Ô Cửa Gỗ Giữa Rừng Thông",
+      "Căn Cabin Mùa Thu: Thả Lỏng Tâm Trí Và Ngủ Ngon"
+    ]
+  },
+  "comment_magnets": {
+    "HIGH_IQ": [
+      "Nếu ở trong hoàn cảnh của nhân vật chính, bạn sẽ chọn im lặng bảo vệ gia đình hay phơi bày sự thật ra ánh sáng?",
+      "Bạn nhận ra ai là kẻ đứng sau từ tập mấy? Hãy để lại suy luận của bạn bên dưới nhé!",
+      "Theo bạn, cái giá 10 năm sống trong dối trá có xứng đáng để đổi lấy cơ nghiệp gia tộc không?",
+      "Nếu là người bạn thân, bạn có tha thứ cho hành động phản bội này không?",
+      "Chi tiết chiếc hộp sắt chôn dưới nền bếp có làm bạn rùng mình không? Theo bạn ai mới là kẻ chủ mưu thực sự?"
+    ],
+    "SLEEP_CHILL": [
+      "Bạn đang nghe câu chuyện này từ thành phố nào? Hãy để lại lời chúc ngủ ngon cho người lướt qua nhé.",
+      "Mong rằng đêm nay bạn sẽ buông bỏ mọi muộn phiền và có một giấc mơ thật đẹp.",
+      "Chúc người đọc được dòng này sẽ luôn tìm thấy sự an yên trong tâm hồn."
+    ]
+  },
+  "broll_synergies": {
+    "baking": {
+      "best_genre": "Truyện Tâm Sự, Gia Đình, Bí Mật Đời Sống",
+      "reason": "Các nhát cắt bánh kem và quét kem bơ mềm mịn tạo hiệu ứng Oddly Satisfying giữ mắt người xem chăm chú, thính giác hoàn toàn đắm chìm vào lời kể.",
+      "synergy_score": 9.8
+    },
+    "craft": {
+      "best_genre": "Kỳ Án, Trinh Thám, Đấu Trí High-IQ",
+      "reason": "Chế tác gỗ thủ công và phục chế đồng hồ cổ thể hiện sự tỉ mỉ, công phu, cộng hưởng hoàn hảo với cấu trúc logic sắc sảo của truyện trinh thám.",
+      "synergy_score": 9.7
+    },
+    "nature": {
+      "best_genre": "Truyện Ru Ngủ, Chữa Lành, Radio Đêm Khuya",
+      "reason": "Cảnh mưa rừng thông và cabin lò sưởi ấm kích hoạt sóng não Alpha, giảm nhịp tim và áp lực thị giác để đưa người nghe vào giấc ngủ sâu.",
+      "synergy_score": 9.9
+    },
+    "mukbang": {
+      "best_genre": "Tâm Sự Đời Thường, Chuyện Nghề, Tình Bạn",
+      "reason": "Tạo cảm giác thân mật, ấm cúng như người bạn đồng hành bên bàn ăn.",
+      "synergy_score": 8.9
+    }
+  },
+  "learned_history": [
+    {
+      "timestamp": "2026-10-04T22:25:00.000000",
+      "new_insights_added": 12,
+      "top_topic": "Nghiên cứu chuyên sâu Top Video Audio Truyện Viral TikTok Việt & Douyin"
+    },
+    {
+      "timestamp": "2026-10-04T22:23:33.607099",
+      "new_insights_added": 5,
+      "top_topic": "Gian hàng nổi bật tại triển lãm Đổi mới sáng tạo 2026"
+    },
+    {
+      "timestamp": "2026-10-04T22:24:03.222159",
+      "new_insights_added": 5,
+      "top_topic": "Nữ tướng công nghệ đầu tiên dẫn dắt công ty đạt 1.000 tỷ USD"
+    }
+  ],
+  "real_tiktok_case_studies": {
+    "total_scraped_videos": 24,
+    "deep_transcript_cases": 4,
+    "archetypes": [
+      {
+        "name": "Conan Deductive Mastery (Thám Tử Lừng Danh / Triệu Views)",
+        "broll": "craft",
+        "hook_style": "Catchphrase & Impossible Paradox: 'Sự thật chỉ có một' + câu đố án mạng phòng kín giật gân trong 5s đầu.",
+        "sample_hook": "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!' - Đúng hai giờ sáng, chiếc điện thoại bàn đã cắt dây từ 5 năm trước bỗng rung lên từng hồi đinh tai nhức óc!"
+      },
+      {
+        "name": "Doraemon Mystery & Time Sci-Fi (Kỳ Án Cỗ Máy Thời Gian & Cánh Cửa Thần Kỳ)",
+        "broll": "craft",
+        "hook_style": "Familiar Icon Shock: Đưa bảo bối Doraemon (Cỗ máy thời gian, Cánh cửa thần kỳ, Ngăn bàn học) vào kỳ án đấu trí nghẹt thở.",
+        "sample_hook": "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - Lời cảnh báo đẫm máu rơi ra từ ngăn bàn học cũ..."
+      },
+      {
+        "name": "Hào Môn 100B Drama (Tổng Tài Bạc Tỷ / Cưới Trước Yêu Sau)",
+        "broll": "baking",
+        "hook_style": "High-Stakes In-Media-Res Clash: Quát tháo dằn mặt, ném hợp đồng 100 tỷ ngay giây thứ 3.",
+        "sample_hook": "'Ký vào đây! Tôi cho cô 100 tỷ và sự tự do, cô chỉ là kẻ gả thay hèn kém thôi!' - Vị tổng tài tàn tật ném mạnh hợp đồng xuống bàn..."
+      },
+      {
+        "name": "Baking Storytime Drama (Nhã Bé Bắp / 787K views)",
+        "broll": "baking",
+        "hook_style": "In-Media-Res Dialogue: Nhảy thẳng vào giữa cuộc đối thoại tranh chấp, không chào hỏi rườm rà.",
+        "sample_hook": "Buổi lễ bắt đầu rồi kìa, khoan đã... Cô ta không phải là người của ngài đâu thưa hoàng tử..."
+      },
+      {
+        "name": "Baking Mystery Confession (Trang Trí Bánh & Chuyện Ma / 2.2M views)",
+        "broll": "baking",
+        "hook_style": "Listener Confession Hook: Kể lại trải nghiệm có thật của người theo dõi kênh.",
+        "sample_hook": "Hôm nay là câu chuyện của một bạn theo dõi kênh khá lâu kể lại. Câu chuyện xảy ra cách đây 4 năm khi xe đang chạy thì gặp trục trặc..."
+      },
+      {
+        "name": "First-Person Audio Drama (Túi Mù Audio / 1.08M views)",
+        "broll": "craft",
+        "hook_style": "High-Drama Sensory Monologue: Ngôi kể thứ nhất, giàu chi tiết giác quan, xung đột giai tầng / trả đũa.",
+        "sample_hook": "Tôi về nước. Chuyến bay 12 tiếng từ Florence đáp xuống sân bay Bắc Kinh. 7 năm đủ để một kẻ chiếm tổ chim khách ảo tưởng mình là Phượng Hoàng..."
+      },
+      {
+        "name": "Bedtime Healing Radio (Radio Truyện Đêm Khuya / 1.14M views)",
+        "broll": "nature",
+        "hook_style": "Sensory Whispering & Decompression: Giọng thì thầm êm ái, kéo dài nguyên âm, âm thanh mưa rơi.",
+        "sample_hook": "Đêm nay, hãy buông bỏ hết những mệt mỏi của ngày dài, hít thở thật sâu và cùng tôi bước vào không gian tĩnh lặng nhất..."
+      }
+    ],
+    "audio_specs_measured": {
+      "voice_peak_db": "-4.4 dB to -7.0 dB",
+      "voice_mean_db": "-20.8 dB to -27.0 dB",
+      "bgm_ducking_level": "-21.0 dB to -27.0 dB (Voice dominant)",
+      "bgm_type": "100% Instrumental Only (Piano Lofi, Ambient, Dark Strings, NO vocals)"
+    },
+    "visual_specs": {
+      "aspect_ratio": "16:9 Widescreen (1920x1080)",
+      "dynamics": "Baking ASMR, Pottery/Wood Crafting, Rain/Cabin Nature loop",
+      "purpose": "Giữ mắt người xem (oddly satisfying visual) để tai tập trung nghe trọn vẹn mạch truyện."
+    }
+  },
+  "chinese_storytelling_masterclass": {
+    "status": "ACQUIRED_100_STORIES",
+    "total_stories_analyzed": 100,
+    "genres_covered": [
+      "Ngược Luyến Tàn Tâm & Hỏa Táng Tràng Truy Thê",
+      "Trọng Sinh Báo Thù & Vả Mặt Sảng Văn",
+      "Huyền Nghi, Trinh Thám & High-IQ Án Mạng",
+      "Mẹ Chồng Nàng Dâu & Hiện Thực Hôn Nhân",
+      "Hào Môn Tổng Tài & Khế Ước Hôn Nhân",
+      "Kinh Dị Đô Thị & Quy Tắc Quái Đàm",
+      "Sa Điêu Hài Hước & Đọc Suy Nghĩ",
+      "Cung Đấu & Nữ Quyền Cổ Đại",
+      "Cứu Rỗi, Chữa Lành & Thanh Xuân Học Đường",
+      "Vô Hạn Lưu & Mạt Thế Sinh Tồn"
+    ],
+    "top_10_golden_rules": [
+      "In Medias Res (Golden Retention Hook 5s)",
+      "Suppression & Catharsis (Pressure Building & Release)",
+      "Chekhov's Gun (Hidden Clues in Act 1 exploded in Act 3)",
+      "Extreme Archetype Contrast",
+      "Subverting Tropes (Anti-trope surprise)",
+      "Punchy Pacing & Cadence (10-20 words per sentence at 1.5x)",
+      "Show, Don't Tell (Actionized states)",
+      "Multi-Layered Plot Twist (Surface -> Deep Motive -> Echo)",
+      "Sober Autonomy (Career & self-worth over romantic begging)",
+      "Mid-point Cliffhangers (Cut 0.5s before resolution)"
+    ],
+    "audio_pacing_at_1_5x": {
+      "speed_multiplier": 1.5,
+      "words_per_minute": 346,
+      "min_words_per_30m": 10380,
+      "standard_words_per_part": 3480
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "series1_vungtrom": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series2_khododanh": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series3_gaplai": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "base_time": 1792033913.1830463
+}

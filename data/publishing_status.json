@@ -1,0 +1,17 @@
+{
+  "series1": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series2": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series3": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  }
+}

@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:01,500
+Xin chào các bạn.
+
+2
+00:00:01,500 --> 00:00:04,269
+Đây là bài kiểm tra tính năng tự động tua âm thanh một chấm năm lần.
+

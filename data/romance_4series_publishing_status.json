@@ -1,0 +1,23 @@
+{
+  "series1_haomon": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series2_thanhxuan": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series3_nguoctam": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series4_chualanh": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "base_time": 1791968943.4578044
+}
