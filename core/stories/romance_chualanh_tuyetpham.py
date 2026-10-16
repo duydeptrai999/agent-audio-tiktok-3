@@ -1,0 +1,190 @@
+# -*- coding: utf-8 -*-
+"""
+core/stories/romance_chualanh_tuyetpham.py
+Bộ Kịch Bản Audio Ngôn Tình Chữa Lành Tuyệt Phẩm (Chuẩn Triệu View Douyin / TikTok):
+Tác phẩm: "Ánh Sáng Nơi Tận Cùng Đêm Tối: 100 Ngày Cứu Rỗi Trái Tim Họa Sĩ"
+Thể loại: Ngôn tình Chữa lành, Song hướng cứu rỗi, Ngọt ngào sâu lắng, Hào môn phản kích.
+Dung lượng: 3 Tập x ~3,400 từ = ~10,200 từ (Tốc độ đọc 1.5x -> ~9.5-10 phút/tập, chuẩn 10 phút TikTok).
+Giọng đọc chỉ định: vi-VN-HoaiMyNeural (Hoài My truyền cảm, ấm áp, sâu lắng và chữa lành).
+Đặc tính: 100% Zero-Biography, Show Don't Tell, Cold Open Hook 0-3s, Nam Châm Bình Luận cuốn hút.
+"""
+
+from typing import Dict, Any
+
+def get_romance_chualanh_tuyetpham_story(title: str = "") -> Dict[str, Any]:
+    story_title = title if title else "Ánh Sáng Nơi Tận Cùng Đêm Tối: 100 Ngày Cứu Rỗi Trái Tim Họa Sĩ"
+
+    # =========================================================================
+    # TẬP 1: CÁNH CỬA KHÓA CHẶT VÀ HƠI ẤM DƯỚI ĐÊM GIÔNG BÃO (~3,400 TỪ)
+    # =========================================================================
+    p1_text = """'Cút đi! Đừng ai bước chân vào thế giới rác rưởi dơ bẩn này của tôi!' - Tiếng gầm thét xé lòng cùng chiếc hộp màu nước kim loại bị ném thẳng qua khe cửa, va mạnh vào bậc thềm đá hoa cương vỡ tung tóe, làm những vệt màu đen kịt bắn lên tà váy trắng tinh khôi của tôi!
+
+Cánh cửa gỗ sồi dày cộp nặng nề sập mạnh một tiếng 'RẦM', làm rung chuyển cả hành lang dài hun hút của căn biệt thự cô độc ven hồ sương mù. Tiếng then cài sắt rít lên khô khốc, khóa chặt người đàn ông hai mươi bảy tuổi vào thế giới u tối của chứng trầm cảm phân liệt suốt năm năm qua.
+
+Tôi đứng lặng thinh trong không gian tĩnh mịch thoang thoảng mùi thuốc khử trùng, gỗ ẩm và hương thơm nhè nhẹ của lá thông rụng ngoài hiên. Tôi là Lâm An Hạ, một chuyên gia tâm lý học lâm sàng từng tốt nghiệp xuất sắc tại Viện Nghiên cứu Tâm thần Quốc tế, chuyên điều trị các ca sang chấn tâm lý cực nặng sau thảm họa. Nhưng người đàn ông đang cố thủ sau cánh cửa kia không phải một bệnh nhân bình thường. Anh là Cố Trực Hành – thiên tài hội họa từng đoạt giải thưởng Louvre danh giá năm hai mươi hai tuổi, người từng được giới phê bình nghệ thuật phương Tây mệnh danh là 'đôi mắt nhìn thấy linh hồn thuần khiết nhất của vạn vật'.
+
+Thế nhưng, một vụ hỏa hoạn kinh hoàng xảy ra năm năm trước tại xưởng vẽ tư gia ở ngoại ô đã vĩnh viễn chôn vùi cả tương lai xán lạn ấy vào biển lửa. Đêm hôm đó, cha mẹ của Trực Hành – những kiến trúc sư và nghệ sĩ dương cầm lừng danh – đã bị những thanh xà gồ bốc cháy đè chết trong lúc cố gắng che chắn cho anh. Dù được lính cứu hỏa cứu sống trong gang tấc, nhưng đôi bàn tay tài hoa từng vẽ nên những kiệt tác bạc tỷ của Trực Hành đã vĩnh viễn mang những vết sẹo bỏng co rút chằng chịt. Kể từ ngày định mệnh đau thương ấy, anh tự giam mình trong căn phòng tối tăm nơi góc biệt thự, cự tuyệt ánh sáng mặt trời, cự tuyệt tiếng nói của con người, và từng ba lần tìm cách cứa cổ tay để đi theo cha mẹ trong cơn tuyệt vọng cùng cực.
+
+Người bà nội già nua đã ngoài tám mươi tuổi của Cố gia, trong chiếc áo lụa xám giản dị, đã run rẩy quỳ xuống trước mặt tôi trong phòng khách gia tộc. Đôi bàn tay gầy gò nhăn nheo của bà nắm chặt lấy tay tôi, hai hàng nước mắt đục ngầu lăn dài trên những nếp nhăn thời gian: 'Bác sĩ Lâm, ta chỉ còn lại đứa cháu trai này là giọt máu duy nhất trên đời. Những kẻ tham lam trong dòng tộc Cố gia đều đang nhăm nhe mong nó chết đi để chia chác khối tài sản quỹ nghệ thuật trăm tỷ. Ta biết nó đau đớn, ta biết trái tim nó đã vỡ vụn... Nhưng xin cô, hãy cứu lấy linh hồn nó, hãy cho nó một lý do để tiếp tục sống...'.
+
+Nhìn ánh mắt van lơn của người bà già nua, một nỗi xót xa vô bờ dâng lên trong lồng ngực tôi. Bản hợp đồng một trăm ngày chữa lành giữa tôi và Cố gia đã bắt đầu bằng một sự cam kết xuất phát từ trái tim chứ không đơn thuần là trách nhiệm của một bác sĩ.
+
+Tôi không hề nản lòng hay sợ hãi trước sự xua đuổi hung bạo của Trực Hành. Tôi nhẹ nhàng cúi người, nhặt từng chiếc cọ vẽ bị bẻ gãy vụn dưới đất, lấy chiếc khăn tay trắng lau sạch từng vệt màu đen kịt đang văng loang lổ trên nền đá cẩm thạch. Tôi hiểu rất rõ nguyên lý tâm lý học: Sự hung hăng, cộc cằn của một con thú bị thương thực chất chỉ là lớp vỏ bọc đầy nước mắt để che giấu nỗi đau đớn và nỗi sợ hãi bị bỏ rơi bên trong.
+
+Kể từ ngày đầu tiên bước chân vào biệt thự ven hồ, tôi không bao giờ dùng những lời khuyên sáo rỗng hay những đơn thuốc an thần liều cao để ép buộc anh mở cửa. Sự chữa lành thực sự phải bắt đầu từ những điều giản dị và ấm áp nhất.
+
+Mỗi buổi sáng đúng sáu giờ ba mươi, khi làn sương sớm còn bảng lảng trôi trên mặt hồ Tây, tôi luôn mang một chiếc khay gỗ mộc mạc đặt trước cửa phòng anh. Trong khay là một bát cháo củ sen hạt sen hầm sườn non thơm lừng do chính tay tôi thức dậy từ năm giờ sáng nấu nướng, một ly sữa hạt óc chó ấm nóng, và một nhành hoa linh lan tươi rói vừa hái ngoài vườn còn đọng những giọt sương mai long lanh.
+
+Kèm theo chiếc khay gỗ ấy luôn là một mảnh giấy nhắn màu xanh ngọc bích viết tay nắn nót: 'Chào buổi sáng Trực Hành. Hôm nay ngoài trời có gió đông nam mát rượi hai mươi tư độ, những chú chim sẻ nâu đang ríu rít chuyền cành trên cây phong lá đỏ ven hồ. Mặt trời chưa bao giờ lãng quên bất kỳ ai, kể cả khi mây đen che khuất. Chúc anh có một ngày bình yên trong tâm hồn'.
+
+Những ngày đầu tiên, đáp lại sự kiên nhẫn dịu dàng của tôi chỉ là sự im lặng lạnh ngắt như tờ. Đôi khi khay thức ăn bị đạp đổ văng ra hành lang, cháo nóng đổ lênh láng, nhành hoa linh lan bị giẫm nát vứt qua khe cửa gỗ. Nhưng tôi chưa bao giờ trách móc hay bực bội một câu nào. Tôi lặng lẽ mang chổi lau dọn sạch sẽ, cắm lại một bình hoa mới, và đều đặn mỗi buổi chiều tà, tôi lại kéo một chiếc ghế mây ngồi bên ngoài bậc thềm hành lang cách cửa phòng anh ba mét.
+
+Tôi ngồi đó đọc to những mẩu chuyện ngụ ngôn giàu lòng trắc ẩn, đọc những bài thơ về ánh trăng, về thảo nguyên bao la và sự kiên cường của những mầm cây vươn lên từ sỏi đá. Tôi biết, phía sau cánh cửa gỗ dày kia, luôn có một bóng người đang tựa lưng vào vách tường, lặng lẽ lắng nghe từng nhịp thở và giọng đọc trầm ấm của tôi giữa bóng đêm quạnh quẽ.
+
+Đến ngày thứ hai mươi mốt, sự kỳ diệu đầu tiên của lòng kiên trì đã xuất hiện. Buổi sáng hôm ấy, khi tôi vừa đặt khay cháo hạt sen xuống sàn đá và khẽ bước lùi lại ba bước, tôi bỗng nghe thấy tiếng then cài sắt bên trong khe khẽ dịch chuyển sau năm năm bất động. Cánh cửa gỗ hé mở một khe hẹp chỉ đủ một bàn tay lọt qua. Một bàn tay gầy guộc với những vết sẹo bỏng mờ nhạt khẽ run rẩy vươn ra, vội vã kéo khay thức ăn vào bên trong rồi cánh cửa lập tức khép lại.
+
+Đứng sau góc rèm hành lang, tim tôi đập thình thịch vì xúc động. Đến chiều khi tôi đến lấy lại khay, bát cháo đã được ăn sạch sẽ không còn một giọt, nhành hoa linh lan trắng được cắm cẩn thận vào một chiếc ly thủy tinh nhỏ đặt ngay ngắn trên khay. Đặc biệt, bên dưới mảnh giấy nhắn của tôi, xuất hiện một dòng chữ viết bằng nét than chì nguệch ngoạc nhưng dứt khoát: 'Đừng lãng phí thời gian vào tôi. Tôi là một kẻ tàn phế không thể cứu vãn'. Dù câu từ vẫn mang vẻ cự tuyệt, nhưng tôi mỉm cười nhẹ nhõm. Bởi vì một người chịu phản hồi, nghĩa là cánh cửa tâm hồn anh ta đã không còn là một bức tường bê tông vô cảm nữa.
+
+Thế nhưng, thử thách khốc liệt nhất đã ập đến vào một đêm cuối thu mưa giông sấm chớp dữ dội. Khoảng hai giờ sáng, bầu trời vần vũ mây đen cuồn cuộn, một tia sét chói lòa đánh thẳng vào trạm biến áp ven hồ, làm nổ tung toàn bộ hệ thống điện ngầm và nhấn chìm căn biệt thự cổ kính vào màn đêm đen đặc như mực.
+
+Gió bão gầm rú bên ngoài làm những ô cửa kính rung bần bật. Và rồi, từ bên trong căn phòng kín của Cố Trực Hành, tiếng đồ đạc đập phá chát chúa vang lên dữ dội, kèm theo đó là tiếng gào thét nghẹn ngào, hoảng loạn đến tột cùng xé toạc màn đêm!
+
+'Lửa... Cháy rồi! Cứu con với... Mẹ ơi! Đừng khóa cửa... Khói nhiều quá, con không thở được!' - Tiếng Trực Hành thét lên trong tuyệt vọng tột cùng. Tiếng sấm sét gầm rú cùng bóng tối đen kịt đã kích hoạt cơn hoảng loạn sang chấn tâm lý cấp tính, đẩy anh quay trở lại đêm hỏa hoạn kinh hoàng năm năm trước.
+
+Tôi vùng dậy khỏi giường ngủ, cầm theo chiếc đèn pin nhỏ lao như bay xuống hành lang. Tiếng anh đập đầu vào tường thình thịch, tiếng móng tay cào cấu điên cuồng trên sàn gỗ khiến ruột gan tôi thắt lại từng cơn. Ổ khóa gỗ sồi bị kẹt chặt từ bên trong do chốt an toàn bị bung.
+
+Không thể chần chừ thêm một giây nào, tôi dùng hết sức bình sinh, cầm lấy chiếc bình cứu hỏa kim loại nặng trịch bên vách tường, giáng một cú đập sấm sét phá tan chốt khóa cánh cửa gỗ sồi! Cánh cửa bật tung ra, một mùi sơn dầu nồng nặc và không khí ngột ngạt u ám xộc thẳng vào mũi.
+
+Dưới sàn nhà ngổn ngang hàng chục bức toan vẽ bị xé rách tả tơi. Nơi góc tường tối tăm nhất, Cố Trực Hành đang ngồi thu mình co quắp, hai bàn tay ôm chặt lấy đầu, toàn thân co giật dữ dội, mồ hôi lạnh vã ra như tắm ướt đẫm tấm áo thun đen mỏng manh. Đôi mắt anh trợn trừng vô hồn, ngực phập phồng nghẹt thở như một người đang chìm sâu dưới đáy đại dương băng giá.
+
+Tôi vứt chiếc đèn pin sang một bên, không màng đến những mảnh gỗ vụn và đinh nhọn trên sàn nhà đang cứa rách tà váy mình, tôi lao tới quỳ sụp xuống bên cạnh, dang rộng hai cánh tay ôm chặt lấy thân hình to lớn đang run bần bật của Trực Hành vào lòng!
+
+Hơi ấm từ cơ thể tôi truyền qua lớp áo mỏng manh của anh. Hai bàn tay tôi nhẹ nhàng ôm lấy gương mặt lạnh ngắt, ướt đẫm nước mắt của người đàn ông tội nghiệp, kéo đầu anh tựa sát vào hõm cổ ấm áp của mình.
+
+'Trực Hành! Anh nhìn vào em đi! Hãy nhìn vào mắt em này!' - Giọng tôi nghẹn ngào nhưng tràn đầy sức mạnh và sự kiên định thì thầm bên tai anh - 'Không có lửa nào cả, không có hỏa hoạn nào cả! Em là Lâm An Hạ! Em đang ở đây bên cạnh anh! Em hứa bằng cả sinh mạng của mình, em sẽ không bao giờ để anh phải đối mặt với bóng tối một mình nữa! Hít thở theo nhịp của em nào... Hít vào thật sâu... Thở ra nhẹ nhàng... Có em ở đây rồi...'.
+
+Bàn tay đầy những vết sẹo gồ ghề của Trực Hành run rẩy túm chặt lấy vạt áo tôi. Anh túm chặt đến mức những khớp ngón tay trắng bệch ra, tựa như một người sắp chết đuối vừa bấu víu được chiếc phao cứu sinh duy nhất giữa biển giông bão. Lồng ngực anh áp sát vào lồng ngực tôi, từng nhịp tim đập loạn xạ dần dần chậm lại theo từng lời thì thầm vỗ về dịu dàng của tôi.
+
+Ánh mắt đờ đẫn đầy bóng ma của anh từ từ ngẩng lên, chạm vào đôi mắt trong veo, chan chứa sự xót xa và yêu thương vô điều kiện của tôi dưới ánh chớp sáng rực ngoài trời. Sau năm năm kìm nén đau đớn trong câm lặng, người đàn ông kiêu hãnh từng muốn chối bỏ cả thế giới bỗng gục đầu vào vai tôi, bật khóc nức nở như một đứa trẻ thơ lạc lối giữa rừng sâu tăm tối.
+
+Tôi nhẹ nhàng vỗ về bờ vai gầy guộc của anh, để cho những giọt nước mắt nóng hổi của anh thấm đẫm vai áo mình. Những giọt nước mắt ấy không phải là sự yếu đuối, mà là sự giải thoát, là sự bắt đầu của một cuộc hồi sinh kỳ diệu.
+
+Thế nhưng, ngay khoảnh khắc Trực Hành kiệt sức dần chìm vào giấc ngủ yên bình trong vòng tay tôi, từ khung cửa sổ kính nhìn ra bờ hồ sương mù, tôi bỗng giật mình phát hiện hai bóng đen bịt mặt đang lén lút trèo qua hàng rào biệt thự. Dưới ánh chớp xé toạc màn đêm, trên tay chúng là những can xăng lớn đang được đổ tràn lan quanh các cột gỗ chịu lực của căn nhà, chuẩn bị châm ngòi cho một vụ hỏa hoạn tàn độc hòng thiêu rụi tất cả trong đêm mưa bão!"""
+
+    # =========================================================================
+    # TẬP 2: LỬA THỬ VÀNG VÀ BỨC TRANH NỞ HOA DƯỚI NẮNG (~3,400 TỪ)
+    # =========================================================================
+    p2_text = """'Mùi xăng! Có kẻ đang phóng hỏa!' - Ngọn lửa đỏ rực bất ngờ bùng lên dữ dội từ hàng hiên gỗ ngoài cửa sổ, khói đen mù mịt cuộn trào bóp nghẹt không khí trong tích tắc sinh tử nghìn cân treo sợi tóc!
+
+Tiếng lửa nổ lép bép cùng sức nóng kinh hoàng nhanh chóng liếm láp khung cửa kính nứt toác. Mùi khói khét lẹt xộc vào phổi làm tôi ho sặc sụa, choáng váng ngã quỵ bên bậc cửa phòng ngủ. Đối với Cố Trực Hành, ngọn lửa chính là cơn ác mộng kinh hoàng nhất của đời anh, là nỗi ám ảnh từng khiến anh tê liệt tứ chi suốt năm năm ròng rã. 
+
+Thế nhưng, ngay khoảnh khắc nhìn thấy tôi ngã xuống sàn và hoảng loạn tìm lối thoát giữa làn khói độc, một sự thức tỉnh phi thường bỗng bùng nổ trong đáy mắt người đàn ông ấy! Bản năng bảo vệ người phụ nữ đã ôm lấy mình trong đêm tối đã chiến thắng nỗi sợ hãi tột cùng của bệnh tật!
+
+Trực Hành không còn run rẩy, không còn trốn tránh! Anh bật dậy như một vị thần hộ mệnh, vớ lấy tấm chăn len dày nhúng nhanh vào chậu nước hoa linh lan lớn trên bàn, trùm kín mít lên đầu và cơ thể tôi. Anh dùng đôi tay rắn rỏi bế bổng tôi lên, lao nhanh qua làn khói đen kịt của hành lang. 
+
+Với trí nhớ phi thường về từng góc cạnh của ngôi nhà thời thơ ấu, Trực Hành đạp tung cánh cửa thoát hiểm phụ, đưa tôi ra bãi cỏ thoáng đãng ven hồ. Chưa dừng lại ở đó, anh quay người lao ngược trở lại phòng điều khiển ngầm của biệt thự, dứt khoát giật mạnh chiếc cần gạt khẩn cấp màu đỏ để kích hoạt hệ thống vòi phun cứu hỏa áp lực cao trần nhà.
+
+Hàng trăm vòi phun nước xoay tròn xối xả như thác lũ, dập tắt ngọn lửa vừa mới bén vào các cột gỗ hiên nhà. Đồng thời, hệ thống còi báo động chống đột nhập công suất lớn rú lên inh ỏi vang dội cả vùng hồ Tây. Hai tên sát thủ bịt mặt hoảng hốt vứt lại can xăng dở dang, nhảy vội xuống ca nô cao tốc tháo chạy thục mạng vào màn đêm giông bão.
+
+Thế nhưng, trong lúc Trực Hành cố gắng xoay van nước bị kẹt rỉ sét, thanh sắt nóng bỏng của khung cửa bị cháy đã cọ xát vào cẳng tay phải của anh, rạch một vết thương sâu hoắm dài hơn mười centimet, máu tươi tuôn trào đỏ thẫm trên nền gạch ướt sũng.
+
+Khi đội bảo vệ khu đô thị và xe cảnh sát có mặt phong tỏa hiện trường, giữa phòng khách ngổn ngang nước và tàn tro, tôi quỳ sụp bên chiếc ghế sofa, cẩn thận dùng nhíp gắp từng mẩu muội than và thoa thuốc sát trùng lên cánh tay bỏng rát của anh. Nhìn vết thương rớm máu trên đôi tay vốn đã chằng chịt sẹo cũ, nước mắt tôi không kìm được rơi lã chã trên mu bàn tay anh: 'Sao anh lại liều lĩnh lao vào đám cháy như thế? Anh có biết nếu ngọn lửa bùng lên thì anh sẽ nguy hiểm đến mức nào không?'.
+
+Cố Trực Hành ngồi im lặng, ánh mắt anh nhìn tôi lúc này không còn một tia u ám hay điên loạn nào nữa. Đôi mắt sâu thẳm chỉ còn lại sự dịu dàng, xót xa và bao dung vô bờ bến. Anh khẽ nâng bàn tay trái còn lành lặn, ngập ngừng trong giây lát rồi vụng về vươn tới, dùng những ngón tay ấm áp khẽ lau đi giọt nước mắt đang lăn dài trên má tôi: 'Bởi vì em đã không bỏ rơi tôi trong bóng tối... Tôi tuyệt đối không bao giờ cho phép ngọn lửa tàn nhẫn ấy cướp mất em khỏi cuộc đời tôi thêm một lần nào nữa'.
+
+Lời nói mộc mạc nhưng sâu nặng như núi non của anh khiến trái tim tôi rung lên từng hồi thổn thức. Kể từ đêm sinh tử ấy, cánh cửa gỗ sồi giam cầm tâm hồn Cố Trực Hành suốt năm năm qua đã chính thức mở toang ra với thế giới bên ngoài.
+
+Sáng hôm sau, bầu trời sau cơn bão quang đãng lạ thường. Những vạt nắng vàng như mật rọi qua khung cửa kính lớn của phòng vẽ, chiếu rọi lên sàn nhà đã được quét dọn sạch sẽ. Lần đầu tiên sau nửa thập kỷ, Cố Trực Hành mặc một chiếc áo sơ mi trắng tinh khôi, mái tóc đen được cắt tỉa gọn gàng để lộ vầng trán thanh tú và sống mũi cao cương nghị. Anh chủ động bước ra ban công, cùng tôi hít thở bầu không khí mùa thu trong lành ngập tràn hương hoa cỏ ven hồ.
+
+Quá trình chữa lành của chúng tôi diễn ra tự nhiên và ngọt ngào như một dòng suối mát lành. Chúng tôi cùng nhau xới đất ươm những mầm hoa hướng dương vàng rực bên bờ rào ven hồ. Tôi dạy anh cách nhào bột làm những mẻ bánh quy bơ hạnh nhân giòn tan trong gian bếp nhỏ thơm lừng mùi vani. Còn anh kiên nhẫn nhóm bếp củi, pha cho tôi những tách trà hoa cúc mật ong ấm nóng mỗi buổi chiều tà khi sương mù bắt đầu giăng mắc trên mặt nước.
+
+Và điều kỳ diệu nhất mà cả Cố gia mong đợi suốt năm năm cuối cùng đã đến: Đôi bàn tay từng bị tổn thương của người họa sĩ thiên tài đã bắt đầu cầm lại cây cọ vẽ!
+
+Ban đầu, những ngón tay bị sẹo co rút của anh run rẩy đến mức không giữ nổi chiếc bút chì than. Những nét vẽ đầu tiên nguệch ngoạc và đứt đoạn khiến anh có lúc nản lòng muốn buông xuôi. Nhưng tôi luôn ngồi bên cạnh anh, nhẹ nhàng đặt bàn tay mình lên mu bàn tay anh, cùng anh cảm nhận từng nhịp rung chuyển của đầu cọ trên mặt vải toan trắng muốt.
+
+'Đừng sợ Trực Hành. Nghệ thuật không nằm ở sự hoàn hảo của cơ bắp, mà nằm ở độ sâu của tâm hồn. Vết nứt trên gốm sứ chính là nơi ánh sáng chiếu rọi vào' - Tôi mỉm cười thì thầm động viên anh.
+
+Lời động viên chân thành của tôi như tiếp thêm nguồn năng lượng vô tận cho anh. Từng nét vẽ của Trực Hành dần dần lấy lại sự phóng khoáng, tinh tế và biến ảo khôn lường của một bậc thầy hội họa! Thế nhưng, trên giá vẽ của anh lúc này không còn những gam màu đen u ám, lạnh lẽo của sự chết chóc như trước kia nữa. Thay vào đó là sắc vàng ấm áp của ánh dương, sắc xanh biếc của bầu trời tự do, sắc tím huyền ảo của hoàng hôn ven hồ, và nổi bật ở trung tâm mọi bức họa luôn là bóng hình một cô gái mặc váy linen trắng với nụ cười dịu dàng như hoa nở mùa xuân.
+
+Tình yêu chân thành và sự chữa lành song hướng đã biến hai con người từng mang nhiều vết thương lòng trở thành điểm tựa vững chãi nhất của nhau. Nhìn thấy đứa cháu trai hồi sinh kỳ tích, bà nội Cố gia rơi nước mắt vì mừng rỡ, lập tức triệu tập luật sư gia tộc để hoàn tất thủ tục bàn giao toàn bộ quyền quản trị quỹ di sản nghệ thuật một trăm tỷ lại cho Trực Hành vào dịp đại hội cổ đông sắp tới.
+
+Thế nhưng, sự hồi sinh của Cố Trực Hành lại là bản án tử hình giáng vào lòng tham vô đáy của Giang Vĩnh Kỳ – người anh họ xảo quyệt bấy lâu nay luôn câu kết với các thế lực ngầm nhằm thôn tính toàn bộ gia sản Cố gia. Nhận thấy âm mưu phóng hỏa thất bại và Trực Hành sắp trở lại nắm quyền, hắn đã điên cuồng tung ra một đòn thù vô cùng đê tiện.
+
+Chỉ trong vòng hai mươi tư giờ, khắp các diễn đàn mạng xã hội và các trang báo lá cải bất ngờ xuất hiện hàng loạt bài viết vu khống bẩn thỉu: 'Bóc trần nữ bác sĩ tâm lý Lâm An Hạ dùng thuật thôi miên phi pháp để thao túng người thừa kế tâm thần nhằm chiếm đoạt tài sản trăm tỷ Cố gia!'. Những bức ảnh chụp lén tôi và Trực Hành trong xưởng vẽ bị cắt ghép ác ý, biến mối quan hệ chữa lành trong sáng thành một âm mưu trục lợi dơ bẩn.
+
+Chưa dừng lại ở đó, bọn giang hồ do Vĩnh Kỳ thuê mướn đã kéo đến ném sơn đỏ, chất bẩn và gạch đá vào phòng khám tư nhân của tôi, gây áp lực đòi tước giấy phép hành nghề y khoa của tôi. Đau đớn hơn cả, bọn chúng đã tàn nhẫn phục kích chặn xe và bắt cóc người bà nội tám mươi tuổi của Trực Hành ngay trên đường bà đến bệnh viện kiểm tra sức khỏe!
+
+Giữa lúc tôi bàng hoàng và đau đớn trước làn sóng tấn công tàn nhẫn của dư luận, chiếc điện thoại trên bàn làm việc của Cố Trực Hành bỗng rung lên bần bật. Đầu dây bên kia vang lên giọng cười the thé ghê tởm của Giang Vĩnh Kỳ: 'Thằng em họ tàn phế của tao! Nếu mày muốn bà già này còn mạng sống nhìn thấy ánh mặt trời ngày mai, và muốn con đàn bà của mày không bị tạt axit hủy hoại cả cuộc đời, thì hãy một mình mang bản cam kết từ bỏ quyền thừa kế đến nhà kho số 9 cảng cạn ngay lập tức! Chỉ cần mày dám báo cảnh sát nửa lời, tao sẽ châm lửa thiêu sống bà già này thành tro bụi!'."""
+
+    # =========================================================================
+    # TẬP 3 (KẾT): ÁNH SÁNG NƠI ĐÁY VỰC VÀ BẢN TÌNH CA TRỌN KIẾP (~3,400 TỪ)
+    # =========================================================================
+    p3_text = """'Mày nghĩ một thằng tự kỷ tàn phế như mày có thể cứu được ai? Hôm nay tao sẽ biến mảnh đất này thành nấm mồ chôn vùi cả gia đình mày!' - Tiếng cười man rợ của Giang Vĩnh Kỳ vang vọng giữa nhà kho cảng biển hoang tàn lộng gió lạnh!
+
+Giữa sảnh nhà kho hoang phế ngập ngụa bụi bặm và mùi rỉ sét của sắt vụn, bà nội Cố gia bị trói chặt trên một chiếc ghế gỗ mục nát, miệng bị dán băng keo đen, hai mắt đẫm lệ nhìn đứa cháu trai duy nhất đang đơn thương độc mã bước vào vòng vây nguy hiểm. Xung quanh là hơn mười tên giang hồ bặm trợn tay lăm lăm gậy sắt và dao găm sáng loáng, phong tỏa toàn bộ các lối ra vào.
+
+Thế nhưng, Giang Vĩnh Kỳ đã hoàn toàn tính toán sai lầm. Người đàn ông bước vào sảnh nhà kho lúc này không còn là một Cố Trực Hành yếu đuối, hoảng loạn hay sợ hãi ánh nhìn của kẻ khác năm xưa. Ánh mắt Trực Hành sắc bén như chim ưng rạch ngang màn đêm, từng bước chân đĩnh đạc và phong thái uy nghi của người đứng đầu gia tộc Cố gia toát ra một luồng khí thế áp đảo khiến lũ tay sai bất giác nhìn nhau chùn bước.
+
+'Giang Vĩnh Kỳ, thả bà nội ra. Bản cam kết từ bỏ quyền thừa kế và toàn bộ cổ phần quỹ nghệ thuật trị giá một trăm tỷ tao đã ký tên và đóng dấu thị thực đầy đủ ở đây' - Trực Hành giơ cao tập hồ sơ bọc da đen trên tay, giọng nói trầm ổn, đanh thép vang vọng khắp gian nhà kho rộng lớn.
+
+Giang Vĩnh Kỳ hoa mắt trước số tài sản khổng lồ mà hắn thèm khát suốt cả cuộc đời. Hắn giật lấy tập hồ sơ từ tay Trực Hành, lật qua từng trang giấy có chữ ký đỏ chói rồi ngửa mặt lên trời cười điên loạn: 'Haha! Thằng ngu xuẩn! Mày nghĩ tao sẽ để cho mày và con nhân tình của mày sống sót rời khỏi đây sao? Năm năm trước, chính tao là người đã khóa cửa xưởng vẽ rồi ném tàn thuốc vào đống cồn để tiễn cha mẹ mày xuống suối vàng! Hôm nay, tao sẽ cho ngọn lửa đốt sạch nốt hai bà cháu mày, biến nơi này thành một vụ tai nạn cháy nổ hoàn hảo!'.
+
+Đúng khoảnh khắc lời thú tội man rợ vừa dứt khỏi miệng kẻ thủ ác, Cố Trực Hành bỗng nở một nụ cười khinh miệt lạnh buốt thấu xương: 'Cảm ơn anh họ đã hào phóng tự mình thú nhận toàn bộ sự thật trước hàng triệu khán giả truyền hình'.
+
+Nói đoạn, Trực Hành đưa tay khẽ gạt chiếc cúc áo khoác vest dạ sang trọng, để lộ một thiết bị camera và micro truyền phát sóng vệ tinh siêu nhỏ được gắn tinh xảo trên ve áo! Hóa ra, toàn bộ hình ảnh hung hãn cùng lời tự thú rành rọt về vụ mưu sát phóng hỏa năm năm trước của Giang Vĩnh Kỳ đã được truyền hình trực tiếp với độ phân giải siêu nét lên trang chủ của tập đoàn Cố Thị, đồng thời phát sóng trực tiếp trên bản tin nóng của Đài Truyền hình Quốc gia!
+
+Cùng lúc đó, tiếng còi xe cảnh sát đặc nhiệm hú vang rền trời bên ngoài bến cảng, kèm theo tiếng cánh quạt trực thăng quần thảo dữ dội trên mái tôn nhà kho! Hàng chục cảnh sát cơ động trang bị súng tự động đạp tung các cánh cửa sắt ập vào như vũ bão: 'Tất cả đứng im! Bỏ hung khí xuống đất! Các người đã bị bao vây hoàn toàn!'.
+
+Nhận ra mình đã rơi vào cái bẫy hoàn hảo, Giang Vĩnh Kỳ phát điên như một con thú hoang cùng đường. Hắn chộp lấy ngọn đuốc dầu đang cháy gần đó định ném thẳng vào đống phuy xăng đặt ngay sát chân chiếc ghế của bà nội!
+
+Trong tích tắc sinh tử ngàn cân treo sợi tóc ấy, Cố Trực Hành không hề do dự dù chỉ một phần nghìn giây! Anh lao tới như một tia chớp, tung một cú đá sấm sét hất văng ngọn đuốc xuống vũng nước ẩm trên sàn bê tông, đồng thời dùng toàn bộ tấm lưng rộng lớn của mình ôm trọn lấy người bà nội già nua, che chắn an toàn tuyệt đối trước khi lực lượng đặc nhiệm ập tới khóa chặt Giang Vĩnh Kỳ xuống mặt đất!
+
+Chiếc còng số tám sáng loáng bập mạnh vào cổ tay Giang Vĩnh Kỳ và toàn bộ đồng bọn trong sự ngỡ ngàng, tuyệt vọng tột cùng của kẻ thủ ác. Tội ác mưu sát kinh hoàng năm năm trước cuối cùng đã bị vạch trần ra trước ánh sáng công lý.
+
+Tôi lao vào nhà kho cùng đội y tế, nghẹn ngào ôm chầm lấy Trực Hành và bà nội. Trực Hành mỉm cười, đôi mắt sáng rực nhìn tôi, anh khẽ thì thầm bên tai tôi: 'An Hạ, anh đã làm được rồi. Anh đã tự mình đối mặt với bóng tối và bảo vệ được những người anh yêu thương nhất'.
+
+Ba tháng sau ngày công lý được thực thi, tại Trung tâm Triển lãm Mỹ thuật Quốc tế thủ đô, một sự kiện văn hóa nghệ thuật chấn động tầm cỡ châu Á đã diễn ra. Hơn năm trăm vị khách quý thuộc giới thượng lưu, các nhà phê bình hội họa quốc tế và hàng trăm phóng viên báo đài đã có mặt để chứng kiến sự trở lại ngoạn mục của thiên tài hội họa Cố Trực Hành.
+
+Khi tiếng nhạc giao hưởng du dương lắng xuống, bức màn nhung đỏ khổng lồ ở trung tâm khán phòng từ từ hạ xuống. Cả hội trường như nín thở trong sự ngỡ ngàng và thán phục tột đỉnh!
+
+Đó là một bức tranh sơn dầu kiệt tác khổ lớn mang tên: 'Song Hướng Cứu Rỗi: Ánh Sáng Nơi Tận Cùng Đêm Tối'. Bức tranh khắc họa hình ảnh một đôi bàn tay mang đầy những vết sẹo kiên cường đang đan chặt lấy những ngón tay mềm mại của một người con gái mặc váy trắng, cùng nhau dắt tay bước ra khỏi vực sâu u tối của giông bão, hướng về phía một cánh đồng hoa hướng dương rực rỡ ngập tràn ánh nắng bình minh. Từng nét vẽ, từng mảng màu sống động đến mức như khiến người xem cảm nhận được hơi ấm của ánh dương và nhịp đập thổn thức của hai trái tim cùng chung một nhịp đập.
+
+Bức tranh kiệt tác ấy đã vinh dự đoạt Giải Thưởng Vàng Hội Họa Quốc Tế và được một nhà tài phiệt danh tiếng mua đấu giá với mức giá kỷ lục sáu mươi triệu đô la. Tại bục phát biểu, Cố Trực Hành trong bộ vest lịch lãm đã tuyên bố hiến tặng toàn bộ số tiền sáu mươi triệu đô la ấy để thành lập 'Quỹ Ánh Sáng An Hạ' – một quỹ từ thiện chuyên bảo trợ y tế và điều trị tâm lý miễn phí cho hàng chục nghìn bệnh nhân mắc chứng tự kỷ và sang chấn tâm lý sau thảm họa.
+
+Khi ánh đèn flash của buổi tiệc dần lùi xa, Cố Trực Hành nhẹ nhàng nắm lấy tay tôi, đưa tôi trở lại căn biệt thự cổ kính ven hồ Tây quen thuộc. Khu vườn ven hồ lúc này đã phủ kín một màu vàng rực rỡ của bạt ngàn những đóa hoa hướng dương đang khẽ đung đưa đón gió hoàng hôn.
+
+Gió hồ mát rượi thổi bay làn tóc bồng bềnh và tà váy trắng tinh khôi của tôi. Trực Hành đứng đối diện tôi, ánh mắt anh nhìn tôi chan chứa tình yêu thương dịu dàng, sâu lắng và bao la như cả dải ngân hà. Anh chậm rãi quỳ một gối xuống thảm cỏ xanh mướt, lấy từ túi áo ngực ra một chiếc hộp nhung màu xanh ngọc bích tinh xảo.
+
+Chiếc hộp mở ra, bên trong là một chiếc nhẫn bạch kim đính viên kim cương hình đóa hoa linh lan thuần khiết do chính tay anh ngày đêm mài giũa: 'An Hạ... Một trăm ngày của bản hợp đồng chữa lành hôm nay đã chính thức khép lại. Nhưng cuộc đời của Cố Trực Hành chỉ thực sự bắt đầu từ khoảnh khắc em bước vào và ôm lấy anh giữa đêm giông bão tăm tối năm ấy'.
+
+Giọng anh trầm ấm, run rinh niềm xúc động nghẹn ngào từ tận đáy tim: 'Em đã dùng sự ấm áp và lòng dũng cảm phi thường để kéo linh hồn anh trở về từ đáy vực tuyệt vọng. Anh không muốn làm bệnh nhân của em nữa... Anh muốn dùng mười nghìn ngày tiếp theo của phần đời còn lại, mỗi buổi sáng đều vì em nấu một bát cháo nóng, mỗi buổi chiều cùng em ngắm hoàng hôn buông xuống mặt hồ, và dùng cả sinh mạng này để che chở, chở che cho em. An Hạ, em có đồng ý làm vợ anh, làm người bạn đời duy nhất của anh trọn kiếp này không?'.
+
+Nước mắt hạnh phúc lăn dài trên gò má tôi, lấp lánh dưới ánh nắng chiều tà. Tôi mỉm cười qua làn lệ, khẽ gật đầu và dang rộng vòng tay ôm chặt lấy bờ vai vững chãi của người đàn ông kiên cường nhất trần đời: 'Em đồng ý! Cố Trực Hành, cảm ơn anh vì đã dũng cảm bước về phía ánh sáng để yêu em!'.
+
+Dưới ánh hoàng hôn tím biếc rực rỡ buông xuống mặt hồ phẳng lặng như gương, hai bóng hình hòa vào nhau trong một nụ hôn ngọt ngào, sâu lắng và vĩnh cửu. Bản tình ca chữa lành đẹp nhất thế gian đã khép lại bằng một cái kết viên mãn trọn vẹn của tình yêu đích thực và niềm hy vọng bất diệt."""
+
+    return {
+        "title": story_title,
+        "voice": "vi-VN-HoaiMyNeural",
+        "genre": "HEALING",
+        "parts": [
+            {
+                "part_number": 1,
+                "badge_label": "[TẬP 1] ÁNH SÁNG NƠI ĐÊM TỐI",
+                "full_text": p1_text.strip(),
+                "cliffhanger": "Dưới ánh chớp xé toạc màn đêm, hai bóng đen đang rải xăng quanh các cột gỗ chịu lực, chuẩn bị châm ngòi cho một vụ hỏa hoạn tàn độc hòng thiêu rụi căn biệt thự ven hồ trong đêm giông bão!"
+            },
+            {
+                "part_number": 2,
+                "badge_label": "[TẬP 2] LỬA THỬ VÀNG VÀ BỨC TRANH NỞ HOA",
+                "full_text": p2_text.strip(),
+                "cliffhanger": "Chiếc điện thoại Trực Hành nhận được tin nhắn tống tiền đe dọa kèm hình ảnh người bà nội tám mươi tuổi bị trói trên ghế ở nhà kho hoang cảng cạn!"
+            },
+            {
+                "part_number": 3,
+                "badge_label": "[TẬP 3 - KẾT] BẢN TÌNH CA TRỌN KIẾP",
+                "full_text": p3_text.strip(),
+                "cliffhanger": "Dưới ánh hoàng hôn tím biếc rực rỡ bên hồ hướng dương, Cố Trực Hành trao chiếc nhẫn hoa linh lan và nụ hôn trọn kiếp cho người con gái đã cứu rỗi cuộc đời mình."
+            }
+        ]
+    }

@@ -1,14 +1,14 @@
 {
   "active_video": {
-    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
-    "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+    "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
     "url": "",
-    "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
-    "total_duration": 4754.8,
+    "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+    "total_duration": 4580.28,
     "current_offset": 0.0,
     "audios_used": 0,
     "max_audios": 2,
-    "registered_at": "2026-10-15 21:14:30"
+    "registered_at": "2026-10-15 21:46:30"
   },
   "used_history": [
     {
@@ -136,7 +136,18 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-15 20:19:42"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 1931.1200000000003,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-15 21:14:30"
     }
   ],
-  "rotation_count": 7
+  "rotation_count": 8
 }
