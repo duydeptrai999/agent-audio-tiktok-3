@@ -268,9 +268,8 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
 def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bool = False, publish_only: bool = False):
     from core.stories.life_healing_masterpiece import get_life_healing_masterpiece_story
 
-    bgm_healing = ROOT / "assets" / "bgm" / "healing_radio" / "kiss_the_rain.mp3"
-    if not bgm_healing.exists():
-        bgm_healing = ROOT / "assets" / "bgm" / "healing_radio" / "river_flows_in_you.mp3"
+    from core.bgm_manager import get_safe_bgm_for_genre
+    bgm_healing = get_safe_bgm_for_genre("HEALING")
 
     story_conf = {
         "key": "series_life_healing",

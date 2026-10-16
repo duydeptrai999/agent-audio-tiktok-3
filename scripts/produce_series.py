@@ -76,11 +76,17 @@ async def generate_tts_for_part(text: str, voice: str, output_path: Path):
     raw_merged = output_path.parent / f"{output_path.stem}_raw.mp3"
     semaphore = asyncio.Semaphore(4)
 
+    # Tinh chỉnh Rate và Pitch chuẩn Studio Radio Broadcast
+    # Giọng Nam Minh: Rate +18%, Pitch -2Hz (trầm ấm, đầm, uy quyền)
+    # Giọng Hoài My: Rate +20%, Pitch +1Hz (sáng rõ, dồn dập, truyền cảm)
+    rate_val = "+18%" if "NamMinh" in voice else "+20%"
+    pitch_val = "-2Hz" if "NamMinh" in voice else "+1Hz"
+
     async def synth_chk(idx, chk, fpath):
         async with semaphore:
             for attempt in range(5):
                 try:
-                    comm = edge_tts.Communicate(chk, voice=voice)
+                    comm = edge_tts.Communicate(chk, voice=voice, rate=rate_val, pitch=pitch_val)
                     await asyncio.wait_for(comm.save(str(fpath)), timeout=45.0)
                     if fpath.exists() and fpath.stat().st_size > 500:
                         return
@@ -108,16 +114,17 @@ async def generate_tts_for_part(text: str, voice: str, output_path: Path):
             str(raw_merged)
         ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
 
-        # Áp dụng tốc độ 1.5x (atempo=1.5) theo đúng quy chuẩn GEMINI.md
+        # Tốc độ kết hợp: Edge-TTS Native (+20% = 1.2x) * FFmpeg atempo (1.25x) = 1.50x Chuẩn GEMINI.md
+        # Giữ nguyên cao độ tự nhiên, loại bỏ hoàn toàn hiện tượng méo tiếng và rè âm thanh
         subprocess.run([
             ffmpeg, "-y",
             "-i", str(raw_merged),
-            "-filter:a", "atempo=1.5",
+            "-filter:a", "atempo=1.25",
             "-c:a", "libmp3lame", "-b:a", "192k",
             str(output_path)
         ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
 
-        print(f"  ✅ Đã tạo xong Audio 1.5x: {output_path.name} ({output_path.stat().st_size / 1024:.1f} KB)")
+        print(f"  ✅ Đã tạo xong Audio 1.5x (Studio Radio Broadcast): {output_path.name} ({output_path.stat().st_size / 1024:.1f} KB)")
     finally:
         # Dọn dẹp triệt để file tạm trong khối finally
         try:
@@ -209,13 +216,9 @@ if __name__ == "__main__":
     from core.stories.detective_masterpiece import get_detective_masterpiece_story
     from core.stories.family_drama_masterpiece import get_family_drama_masterpiece_story
 
-    bgm_detective = root / "assets" / "bgm" / "suspense" / "tiktok_horror_suspense.mp3"
-    if not bgm_detective.exists():
-        bgm_detective = root / "assets" / "bgm" / "test_bgm.mp3"
-
-    bgm_drama = root / "assets" / "bgm" / "healing_radio" / "kiss_the_rain.mp3"
-    if not bgm_drama.exists():
-        bgm_drama = root / "assets" / "bgm" / "test_bgm.mp3"
+    from core.bgm_manager import get_safe_bgm_for_genre
+    bgm_detective = get_safe_bgm_for_genre("HUYEN_NGHI")
+    bgm_drama = get_safe_bgm_for_genre("ME_CHONG")
 
     # Sản xuất Bộ 2
     detective_story = get_detective_masterpiece_story()

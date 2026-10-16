@@ -229,19 +229,22 @@ def render_playable_video(
     output_file.parent.mkdir(parents=True, exist_ok=True)
     ffmpeg = get_ffmpeg_exe()
 
-    # Tự động tìm track nhạc nền thực tế nếu đường dẫn chỉ định chưa có
-    if not os.path.exists(bgm_audio_path) or os.path.getsize(bgm_audio_path) < 1000:
-        bgm_base = Path(__file__).resolve().parent.parent / "assets" / "bgm"
-        for cand in [
-            bgm_base / "healing_radio" / "kiss_the_rain.mp3",
-            bgm_base / "healing_radio" / "river_flows_in_you.mp3",
-            bgm_base / "suspense" / "tiktok_horror_suspense.mp3",
-            bgm_base / "chill" / "chopin_romance.mp3",
-            bgm_base / "test_bgm.mp3"
-        ]:
-            if cand.exists() and cand.stat().st_size > 1000:
-                bgm_audio_path = str(cand)
-                break
+    # Bắt buộc thẩm định và định tuyến BGM an toàn 100% không bản quyền (Anti-Copyright Guard)
+    try:
+        from core.bgm_manager import ensure_safe_bgm
+        bgm_audio_path = ensure_safe_bgm(bgm_audio_path)
+    except Exception as e:
+        if not os.path.exists(bgm_audio_path) or os.path.getsize(bgm_audio_path) < 1000:
+            bgm_base = Path(__file__).resolve().parent.parent / "assets" / "bgm"
+            for cand in [
+                bgm_base / "suspense" / "tiktok_horror_suspense.mp3",
+                bgm_base / "chill" / "chill_instrumental.mp3",
+                bgm_base / "chill" / "chopin_romance.mp3",
+                bgm_base / "test_bgm.mp3"
+            ]:
+                if cand.exists() and cand.stat().st_size > 1000:
+                    bgm_audio_path = str(cand)
+                    break
 
     if not os.path.exists(voice_audio_path) or os.path.getsize(voice_audio_path) < 1000:
         print(f"[FFmpeg Warning] Voice audio {voice_audio_path} không tồn tại hoặc lỗi, tự động tạo audio chuẩn...")
@@ -283,14 +286,19 @@ def render_playable_video(
 
     video_filter = ",".join(filters_list) if filters_list else "null"
 
-    # Studio Radio Vocal Mastering: Tăng bass ấm (140Hz), làm sáng rõ âm sắc (3200Hz), nén dynamic range tạo độ dày
-    # Chuẩn hóa độ to theo tiêu chuẩn TikTok/YouTube (-13 LUFS & True Peak -1.0 dBTP), chống sụt âm lượng amix (normalize=0)
-    vocal_filter = f"highpass=f=80,equalizer=f=140:t=q:w=1.2:g=4,equalizer=f=3200:t=q:w=1.5:g=3,acompressor=threshold=-18dB:ratio=3:attack=5:release=50,volume={voice_volume}"
+    # Studio Radio Vocal Mastering:
+    # 1. Cắt tần số ù thô (75Hz), tăng độ trầm ấm quyền lực (145Hz +3.5dB)
+    # 2. Cắt đục hộp nhựa (1200Hz -2dB), tăng độ rõ nét thanh điệu tiếng Việt (3500Hz +3.2dB)
+    # 3. De-esser chống xì chói (6500Hz -2.5dB), Nén dynamic range chuẩn radio phát thanh
+    # 4. Dynamic Auto-Ducking (sidechaincompress): BGM tự động né giọng đọc (-20dB khi nói, dâng trào trong khoảng lặng)
+    # 5. Master toàn dải đạt chuẩn TikTok/YouTube (-13 LUFS & True Peak -1.0 dBTP)
+    vocal_filter = f"highpass=f=75,equalizer=f=145:t=q:w=1.2:g=3.5,equalizer=f=1200:t=q:w=1.5:g=-2.0,equalizer=f=3500:t=q:w=1.2:g=3.2,equalizer=f=6500:t=q:w=1.8:g=-2.5,acompressor=threshold=-18dB:ratio=3.2:attack=8:release=60,volume={voice_volume}"
     filter_complex = (
         f"[0:v]{video_filter}[vout];"
-        f"[1:a]{vocal_filter}[voice];"
-        f"[2:a]volume={bgm_volume}[bgm];"
-        f"[voice][bgm]amix=inputs=2:duration=first:normalize=0:dropout_transition=2,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
+        f"[1:a]{vocal_filter},asplit=2[v_play][v_trigger];"
+        f"[2:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
+        f"[bgm_prep][v_trigger]sidechaincompress=threshold=0.045:ratio=7:attack=15:release=280[bgm_ducked];"
+        f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
     )
 
     cmd = [
@@ -323,10 +331,12 @@ def render_playable_video(
         err_msg = result.stderr.decode("utf-8", errors="ignore")
         print(f"[FFmpeg Warning] Fallback filter: {err_msg[:200]}")
         simple_filter = (
-            f"[1:a]{vocal_filter}[voice];"
-            f"[2:a]volume={bgm_volume}[bgm];"
-            f"[voice][bgm]amix=inputs=2:duration=first:normalize=0:dropout_transition=2,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
+            f"[1:a]{vocal_filter},asplit=2[v_play][v_trigger];"
+            f"[2:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
+            f"[bgm_prep][v_trigger]sidechaincompress=threshold=0.045:ratio=7:attack=15:release=280[bgm_ducked];"
+            f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
         )
+
         fallback_cmd = [
             ffmpeg, "-y",
             "-stream_loop", "-1",

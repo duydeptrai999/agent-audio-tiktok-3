@@ -302,9 +302,8 @@ def main(auto_publish: bool = True, dynamic_schedule: bool = True):
     from core.stories.romance_nguoctam_masterpiece import get_nguoctam_masterpiece_story
     from core.stories.romance_chualanh_masterpiece import get_chualanh_masterpiece_story
 
-    bgm_romance = ROOT / "assets" / "bgm" / "healing_radio" / "kiss_the_rain.mp3"
-    if not bgm_romance.exists():
-        bgm_romance = ROOT / "assets" / "bgm" / "test_bgm.mp3"
+    from core.bgm_manager import get_safe_bgm_for_genre
+    bgm_romance = get_safe_bgm_for_genre("HEALING")
 
     all_series_configs = [
         {

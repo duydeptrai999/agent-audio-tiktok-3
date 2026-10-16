@@ -300,9 +300,10 @@ def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bo
     from core.stories.horror_guongquy_masterpiece import get_horror_guongquy_masterpiece_story
     from core.stories.horror_trocot_masterpiece import get_horror_trocot_masterpiece_story
 
-    bgm_detective = ROOT / "assets" / "bgm" / "suspense" / "moonlight_suspense.mp3"
-    bgm_horror1 = ROOT / "assets" / "bgm" / "horror_mystery" / "the_house_of_leaves.mp3"
-    bgm_horror2 = ROOT / "assets" / "bgm" / "suspense" / "tiktok_horror_suspense.mp3"
+    from core.bgm_manager import ensure_safe_bgm
+    bgm_detective = Path(ensure_safe_bgm(str(ROOT / "assets" / "bgm" / "suspense" / "moonlight_suspense.mp3"), "HUYEN_NGHI"))
+    bgm_horror1 = Path(ensure_safe_bgm(str(ROOT / "assets" / "bgm" / "horror_mystery" / "the_house_of_leaves.mp3"), "KINH_DI"))
+    bgm_horror2 = Path(ensure_safe_bgm(str(ROOT / "assets" / "bgm" / "suspense" / "tiktok_horror_suspense.mp3"), "KINH_DI"))
 
     all_series_configs = [
         {

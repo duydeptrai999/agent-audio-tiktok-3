@@ -292,9 +292,10 @@ def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bo
     from core.stories.school_romance_khododanh_masterpiece import get_khododanh_masterpiece_story
     from core.stories.school_romance_gaplai_masterpiece import get_gaplai_masterpiece_story
 
-    bgm_vungtrom = ROOT / "assets" / "bgm" / "chill" / "a_little_story.mp3"
-    bgm_khododanh = ROOT / "assets" / "bgm" / "chill" / "childhood_memory.mp3"
-    bgm_gaplai = ROOT / "assets" / "bgm" / "healing_radio" / "kiss_the_rain.mp3"
+    from core.bgm_manager import get_safe_bgm_for_genre
+    bgm_vungtrom = get_safe_bgm_for_genre("HEALING")
+    bgm_khododanh = get_safe_bgm_for_genre("HEALING")
+    bgm_gaplai = get_safe_bgm_for_genre("HEALING")
 
     series_list = [
         {

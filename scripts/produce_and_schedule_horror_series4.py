@@ -278,9 +278,8 @@ def get_caption_for_part(series_key: str, part_num: int, title: str) -> str:
 def main(auto_publish: bool = True, fast_schedule: bool = False, render_only: bool = False, publish_only: bool = False):
     from core.stories.horror_chuyentau_masterpiece import get_horror_chuyentau_masterpiece_story
 
-    bgm_horror = ROOT / "assets" / "bgm" / "horror_mystery" / "gathering_darkness.mp3"
-    if not bgm_horror.exists():
-        bgm_horror = ROOT / "assets" / "bgm" / "horror_mystery" / "the_house_of_leaves.mp3"
+    from core.bgm_manager import get_safe_bgm_for_genre
+    bgm_horror = get_safe_bgm_for_genre("KINH_DI")
 
     story_conf = {
         "key": "series4_chuyentau",

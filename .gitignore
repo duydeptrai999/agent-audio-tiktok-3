@@ -15,6 +15,7 @@ ENV/
 # Large media assets & generated binaries (> 35GB)
 assets/audio/
 assets/bgm/
+assets/bgm_quarantine/
 assets/footage/
 assets/output/
 assets/thumbnails/
