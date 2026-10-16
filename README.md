@@ -1,5 +1,7 @@
 # 🎙️ Agent Audio TikTok - Hệ Thống Sản Xuất & Tự Động Hóa Kênh Truyện TikTok Triệu View
 
+Chỉ cần dùng antigravity clone về và dùng thôi ,  lâu lâu thì  cho nó lên cào qua mấy bộ truyện nhiều người xem để update kiến thức làm truyện khôn xíu
+
 [![Python Version](https://img.shields.io/badge/Python-3.11%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)]()
