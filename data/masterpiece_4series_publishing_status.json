@@ -1,0 +1,23 @@
+{
+  "series1_trongsinh": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series2_mechong": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series3_trangmau": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "series4_huyetnguyen": {
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "base_time": 1792067934.8607485
+}
