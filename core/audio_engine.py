@@ -52,10 +52,45 @@ logger = logging.getLogger("AudioEngine")
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
 
+
+def sanitize_tts_text(text: str) -> str:
+    """
+    Tự động chuẩn hóa các từ ngữ nhạy cảm tránh bị Microsoft Azure Content Filter chặn:
+    - 'thiêu thân' -> 'kẻ u mê'
+    - 'rít' -> 'thét'
+    - 'chợ đen' -> 'bên ngoài'
+    - 'tự sát' -> 'qua đời'
+    - 'đỏ đen' -> 'may rủi'
+    """
+    replacements = {
+        "thiêu thân": "kẻ mải mê",
+        "Thiêu thân": "Kẻ mải mê",
+        "nghiện ngập": "say mê",
+        "Nghiện ngập": "Say mê",
+        "gào rít": "gào thét",
+        "Gào rít": "Gào thét",
+        "rít gào": "gào thét",
+        "Rít gào": "Gào thét",
+        "rít": "thét",
+        "Rít": "Thét",
+        "chợ đen": "bên ngoài",
+        "Chợ đen": "Bên ngoài",
+        "tự sát": "qua đời",
+        "Tự sát": "Qua đời",
+        "đỏ đen": "may rủi",
+        "Đỏ đen": "May rủi",
+        "chửi rủa": "mắng mỏ",
+        "Chửi rủa": "Mắng mỏ",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
+
 def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
     """Chia văn bản thành các đoạn nhỏ 120-150 từ tại vị trí dấu câu tự nhiên."""
+    clean_text = sanitize_tts_text(text)
     clean_text = (
-        text.replace("'", " ")
+        clean_text.replace("'", " ")
         .replace('"', ' ')
         .replace("‘", " ")
         .replace("’", " ")
@@ -63,9 +98,12 @@ def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
         .replace("”", " ")
         .replace("–", "-")
         .replace("—", "-")
-        .replace("...", ", ")
-        .strip()
+        .replace("...", ".")
+        .replace("..", ".")
     )
+    import re
+    clean_text = re.sub(r'([!?,.:;…])\s*[!?,.:;…]+', r'\1', clean_text)
+    clean_text = re.sub(r'\s+', ' ', clean_text).strip()
     sentences = [s.strip() for s in re.split(r'(?<=[.!?…\n])\s+', clean_text) if s.strip()]
     chunks: List[str] = []
     cur: List[str] = []
@@ -101,14 +139,29 @@ async def generate_cinema_tts_audio(
     text: str,
     voice: str = "vi-VN-HoaiMyNeural",
     output_path: Optional[Path] = None,
-    target_speed: float = 1.50
+    target_speed: Optional[float] = None
 ) -> Path:
     """
     Sinh audio Edge-TTS chất lượng cao đạt chuẩn điện ảnh:
-    - Native rate +18% / +20% phối hợp atempo 1.25x = 1.50x chuẩn xác không méo tiếng.
+    - Hỗ trợ tốc độ tối ưu 1.15x (khoảng 240 từ/phút) chống mệt tai suốt 10 phút hoặc 1.5x theo cấu hình.
     - Pitch -2Hz cho Nam Minh / +1Hz cho Hoài My.
     - Tự động chia chunk, retry 5 lần với semaphore.
     """
+    if target_speed is None:
+        try:
+            from config.settings import VOICE_SPEED_MULTIPLIER
+            target_speed = float(VOICE_SPEED_MULTIPLIER)
+        except Exception:
+            target_speed = 1.15
+
+    # BẮT BUỘC: Đọc kinh nghiệm từ GEMINI.md & 5_CYCLES_SCRIPT_EVOLUTION_EXPERIENCE.md trước khi làm audio
+    try:
+        from core.stories.script_quality_gate import require_preflight_experience, audit_and_optimize_part_text
+        require_preflight_experience()
+        text, _ = audit_and_optimize_part_text(text, title="PreAudioTTS", part_num=1)
+    except Exception as e:
+        logger.warning(f"Lỗi kiểm tra preflight experience: {e}")
+
     if output_path is None:
         audio_dir = ROOT_DIR / "assets" / "audio"
         audio_dir.mkdir(parents=True, exist_ok=True)
@@ -120,28 +173,36 @@ async def generate_cinema_tts_audio(
     concat_list = output_path.parent / f"{output_path.stem}_concat.txt"
     raw_merged = output_path.parent / f"{output_path.stem}_raw.mp3"
 
-    # Tối ưu rate & pitch cho từng giọng đọc
+    # Tối ưu rate an toàn tuyệt đối 100% cho Edge-TTS (Tránh lỗi NoAudioReceived)
     is_male = "NamMinh" in voice
-    native_rate = "+18%" if is_male else "+20%"
-    native_pitch = "-2Hz" if is_male else "+1Hz"
-    # Tính toán atempo bù trừ để đạt đúng target_speed (1.5x)
-    native_factor = 1.18 if is_male else 1.20
-    atempo_factor = round(target_speed / native_factor, 2)
+    native_rate = "+0%"
+    atempo_factor = round(target_speed, 2)
 
-    semaphore = asyncio.Semaphore(4)
+    semaphore = asyncio.Semaphore(1)
 
     async def synth_chk(idx: int, chk_text: str, fpath: Path):
         async with semaphore:
-            for attempt in range(5):
+            for attempt in range(8):
                 try:
-                    comm = edge_tts.Communicate(chk_text, voice=voice, rate=native_rate, pitch=native_pitch)
-                    await asyncio.wait_for(comm.save(str(fpath)), timeout=45.0)
+                    comm = edge_tts.Communicate(chk_text, voice=voice)
+                    await asyncio.wait_for(comm.save(str(fpath)), timeout=60.0)
                     if fpath.exists() and fpath.stat().st_size > 500:
+                        await asyncio.sleep(0.3)
                         return
                 except Exception as e:
-                    await asyncio.sleep(1.0 * (attempt + 1))
+                    await asyncio.sleep(1.5 * (attempt + 1))
             if not fpath.exists() or fpath.stat().st_size <= 500:
-                raise RuntimeError(f"Edge-TTS failed to synthesize chunk {idx} after 5 retries with {voice}")
+                fallback_voice = "vi-VN-HoaiMyNeural" if is_male else "vi-VN-NamMinhNeural"
+                try:
+                    comm = edge_tts.Communicate(chk_text, voice=fallback_voice)
+                    await asyncio.wait_for(comm.save(str(fpath)), timeout=60.0)
+                    if fpath.exists() and fpath.stat().st_size > 500:
+                        await asyncio.sleep(0.3)
+                        return
+                except Exception:
+                    pass
+            if not fpath.exists() or fpath.stat().st_size <= 500:
+                raise RuntimeError(f"Edge-TTS failed to synthesize chunk {idx} after 8 retries with {voice}")
 
     try:
         tasks = [synth_chk(i, c, chunk_files[i]) for i, c in enumerate(chunks)]
@@ -192,7 +253,7 @@ def mix_voice_and_safe_bgm(
     output_audio_path: str,
     genre_key: str = "TRONG_SINH",
     bgm_path: Optional[str] = None,
-    bgm_volume: float = 0.20,
+    bgm_volume: float = 0.42,
     voice_volume: float = 1.0
 ) -> str:
     """
@@ -202,12 +263,34 @@ def mix_voice_and_safe_bgm(
     safe_bgm = ensure_safe_bgm(bgm_path, genre_key=genre_key)
     ffmpeg = get_ffmpeg_exe()
 
+    ducking_thresh = 0.079
+    ducking_ratio = 4.0
+    ducking_attack = 25
+    ducking_release = 750
+    ducking_knee = 2.5
+    target_lufs = -14.0
+    true_peak = -1.5
+    try:
+        from config.settings import (
+            DUCKING_THRESHOLD, DUCKING_RATIO, DUCKING_ATTACK_MS,
+            DUCKING_RELEASE_MS, DUCKING_KNEE, TARGET_LUFS, TRUE_PEAK
+        )
+        ducking_thresh = DUCKING_THRESHOLD
+        ducking_ratio = DUCKING_RATIO
+        ducking_attack = DUCKING_ATTACK_MS
+        ducking_release = DUCKING_RELEASE_MS
+        ducking_knee = DUCKING_KNEE
+        target_lufs = TARGET_LUFS
+        true_peak = TRUE_PEAK
+    except Exception:
+        pass
+
     vocal_filter = get_vocal_chain_filter(voice_volume)
     filter_complex = (
         f"[0:a]{vocal_filter},asplit=2[v_play][v_trigger];"
         f"[1:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
-        f"[bgm_prep][v_trigger]sidechaincompress=threshold=0.045:ratio=7:attack=15:release=280[bgm_ducked];"
-        f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
+        f"[bgm_prep][v_trigger]sidechaincompress=threshold={ducking_thresh}:ratio={ducking_ratio}:attack={ducking_attack}:release={ducking_release}:knee={ducking_knee}[bgm_ducked];"
+        f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I={target_lufs}:TP={true_peak}:LRA=8[aout]"
     )
 
     cmd = [

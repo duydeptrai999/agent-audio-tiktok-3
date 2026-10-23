@@ -13,117 +13,111 @@ logger = logging.getLogger("LearningEngine")
 LEARNED_PATTERNS_FILE = DATABASE_DIR / "learned_patterns.json"
 
 DEFAULT_LEARNED_KNOWLEDGE: Dict[str, Any] = {
-    "version": "2.1",
-    "last_updated": "2026-10-04T22:25:00Z",
-    "total_insights_learned": 45,
-    "evolution_cycles": 4,
+    "version": "3.0",
+    "last_updated": "2026-10-23T06:00:00Z",
+    "total_insights_learned": 75,
+    "evolution_cycles": 10,
     "tiktok_audio_mastery": {
         "visual_pillar": {
-            "insight": "Khán giả nghe truyện audio trên TikTok tập trung thính giác, nhưng mắt dễ chán nếu hình ảnh tĩnh. Video làm bánh kem ASMR (Baking), thủ công mỹ nghệ khắc gỗ/gốm (Craft), và cảnh mưa rừng/cabin gỗ (Nature) tạo vòng lặp Dopamine giúp duy trì retention > 70%.",
-            "recommended_brolls": ["baking", "craft", "nature", "mukbang"]
+            "insight": "Khán giả nghe kịch truyền thanh trên TikTok tập trung thính giác, thị giác cần video ASMR không lời (làm bánh hoa văn mỹ nghệ, trang điểm ASMR Trung Quốc, làm gốm sứ/gỗ di sản) để mắt không bị xao nhãng và giữ chân > 75%.",
+            "recommended_brolls": ["chinese_beauty_asmr", "chinese_cooking_asmr", "chinese_pastry_baking", "chinese_craft_heritage"]
         },
         "audio_pillar": {
-            "insight": "Giọng đọc là linh hồn của kênh. Tuyệt đối không để tạp âm hay nhạc có lời (vocal) tranh chấp dải tần số của giọng kể. Nhạc nền phải là nhạc không lời (Piano Lofi hoặc Suspense Piano), áp dụng Audio Ducking ở mức -22dB đến -26dB so với giọng đọc.",
+            "insight": "Giọng đọc Edge-TTS (Hoài My / Nam Minh) là linh hồn của audio. Nhạc nền 100% không lời (Instrumental Only), áp dụng Cinema Ducking (threshold=0.079, ratio=4.0, release=750ms). Câu văn 8-16 từ ngắt nhịp dấu câu để AI lấy hơi tự nhiên, chốt câu bằng thanh trắc đanh thép.",
             "standards": {
-                "voice_clarity": "100% Crisp Neural Speech, không ngắt quãng",
+                "voice_clarity": "100% Crisp Neural Speech nhịp 1.15x tự nhiên không mỏi tai",
                 "bgm_type": "100% Instrumental Only (No Vocals)",
                 "ducking_level": "-22dB to -26dB (Voice dominant)",
                 "no_copyright": "100% Safe for TikTok Monetization"
             }
         },
         "narrative_pillar": {
-            "insight": "Cấu trúc 3 Hồi cho Bộ Truyện Audio 30 Phút chia 3 Tập: Mở màn với Hook 0-3s gián tiếp đẩy cao trào lên đầu; Tập 1 kết thúc bằng Cliffhanger nghẹt thở; Tập 2 mở màn bằng 15s Recap rồi đẩy cao trào đấu trí; Tập 3 giải mã toàn bộ bí ẩn, mang lại cảm xúc mãn nhãn và chốt bằng Comment Magnet kích hoạt tranh luận.",
-            "series_split_rule": "3 phần độc lập nhưng liền mạch, badge [PHẦN 1], [PHẦN 2], [PHẦN 3 / KẾT], không ghi thời gian số phút trên tiêu đề."
+            "insight": "Cấu trúc 3 Hồi chuẩn 30 Phút (3 Tập x 10 Phút): Tuyệt đối không dùng văn tả thời tiết, không tóm tắt tiểu sử (Zero-Biography), không độc thoại 'mình trọng sinh rồi sao', không lặp đoạn văn và không độn hóa đơn siêu thị. Mở đầu bằng Cơ Chế Kép Dual-Engine (Thoáng qua hoặc Hiện trường chi tiết).",
+            "series_split_rule": "3 phần độc lập nối tiếp tự nhiên (không nói 'Ở tập 1', 'Đón xem tập 2'), chốt Comment Magnet phân cực 2 lựa chọn."
         }
     },
     "viral_hooks_library": {
-        "HIGH_IQ": [
+        "STRATEGY_A_FLASH_FORWARD": [
             {
-                "formula": "Conan Catchphrase & Impossible Incident",
-                "template": "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!' - [Chi tiết vụ án nghẹt thở trong 5 giây đầu]...",
-                "example": "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!' - Đúng hai giờ sáng, chiếc điện thoại bàn đã cắt dây từ 5 năm trước bỗng rung lên từng hồi đinh tai nhức óc!",
-                "retention_impact": "Đỉnh cao (+65% 5s retention)",
-                "source": "conan_deductive_mastery"
+                "formula": "Lát cắt vật chứng rợn gáy thoáng qua (Forensic / Threatening Glimpse)",
+                "template": "[Vật chứng / Âm thanh cơ học bất thường] + [Phát hiện sinh tử trong 15 từ] + [Cắt sang thời khắc định đoạt]",
+                "example": "Mũi kim đồng hồ trên tay nạn nhân đứng khựng ở hai giờ mười bốn phút sáng, ngay dưới đáy móng tay gãy vụn của cô ấy là sợi len màu xanh cổ vịt - chiếc áo duy nhất tôi mặc trong ngày cưới.",
+                "retention_impact": "Cực cao (+75% 3s retention)",
+                "source": "10_cycles_master_codex"
             },
             {
-                "formula": "Doraemon Mystery & Time Paradox",
-                "template": "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - [Bảo bối rơi ra từ ngăn bàn học]...",
-                "example": "'Nếu bước qua Cánh Cửa Thần Kỳ vào đúng 12 giờ đêm nay, bạn sẽ chứng kiến một vụ án mạng mà nạn nhân chính là bản thân mình 20 năm sau!' - Lời cảnh báo đẫm máu rơi ra từ ngăn bàn học cũ...",
-                "retention_impact": "Đỉnh cao (+62% 5s retention)",
-                "source": "doraemon_urban_mystery"
+                "formula": "Mép khế ước tài chính bạo lực lạnh (Cashflow Guillotine Hook)",
+                "template": "[Đạo cụ xa xỉ] + [Mép văn bản bất ngờ lộ diện] + [Hành động kích hoạt phong tỏa dòng tiền]",
+                "example": "Chiếc thìa mạ vàng vừa chạm vào đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng đã lộ ra trước mắt tôi.",
+                "retention_impact": "Đỉnh cao (+78% 3s retention)",
+                "source": "10_cycles_master_codex"
             },
             {
-                "formula": "Sherlock Holmes Axiomatic Paradox",
-                "template": "'Khi ta đã loại bỏ tất cả những điều không thể, thì điều còn lại dù khó tin đến đâu cũng chính là sự thật!' - [Bằng chứng ngoại phạm phòng kín]...",
-                "example": "'Khi ta đã loại bỏ tất cả những điều không thể, thì điều còn lại dù khó tin đến đâu cũng chính là sự thật!' - Cánh cửa khóa trái từ bên trong, 7 người trong nhà đều có bằng chứng ngoại phạm, vậy ai đã ra tay?",
-                "retention_impact": "Rất cao (+58% 5s retention)",
-                "source": "holmes_classic_puzzle"
+                "formula": "Mũi kéo niêm phong & Tiếng còi xe thanh tra",
+                "template": "[Động tác cắt đứt sợi chỉ niêm phong] + [Tiếng còi xe thanh tra kinh tế rú lên dồn dập]",
+                "example": "Mũi kéo inox của tôi vừa bấm đứt sợi chỉ niêm phong trên tập hồ sơ ba mươi tỷ, tiếng còi xe thanh tra thuế đã rú lên dưới sảnh.",
+                "retention_impact": "Rất cao (+72% 3s retention)",
+                "source": "10_cycles_master_codex"
             }
         ],
-        "SLEEP_CHILL": [
+        "STRATEGY_B_IN_MEDIA_RES": [
             {
-                "formula": "Hào Môn 100B Climax Shock",
-                "template": "'Ký vào đây! Tôi cho cô 100 tỷ và sự tự do, cô chỉ là kẻ gả thay hèn kém thôi!' - [Hành động dằn mặt đập vỡ không gian tĩnh mịch]...",
-                "example": "'Ký vào đây! Tôi cho cô 100 tỷ và sự tự do, cô chỉ là kẻ gả thay hèn kém thôi!' - Vị tổng tài tàn tật ném mạnh bản hợp đồng xuống bàn trà bằng đá thạch anh...",
-                "retention_impact": "Đỉnh cao (+70% 5s retention)",
-                "source": "haomon_drama_study"
+                "formula": "Hiện trường đối đầu cửa bọc thép mạt thế (Bunker Defense Kick-off)",
+                "template": "[Cửa thép đóng sập chốt cơ học] + [Tiếng đập cửa rầm rầm đòi mì gói] + [Lỗ hồng ngoại soi thấu búp bê cao su & xà beng]",
+                "example": "Cánh cửa thép chống đạn ba lớp vừa đóng sập chốt cơ học, tiếng đập cửa rầm rầm đã vang lên kèm tiếng khóc the thé của ả em họ ngoài hành lang: 'Chị Lam ơi! Thằng bé sốt bốn mươi độ rồi, cho em xin mẩu nến và gói mì tôm thôi!'. Tôi không mở cửa. Tôi tựa lưng vào vách thép dày mười lăm phân, ngón tay đặt sẵn trên van xả khí cay áp suất cao.",
+                "retention_impact": "Đỉnh cao (+82% 5s retention)",
+                "source": "10_cycles_master_codex"
             },
             {
-                "formula": "Sensory Decompression",
-                "template": "'Buông bỏ mọi muộn phiền, đêm nay hãy để câu chuyện này khẽ vỗ về tâm hồn bạn...' - [Âm thanh mưa rơi cabin rừng thông]...",
-                "example": "Đêm nay, cách xa mọi khói bụi thành phố, hãy để tiếng mưa rơi ngoài ô cửa sổ đưa bạn vào giấc ngủ an lành...",
-                "retention_impact": "Rất cao (+72% watch-time xuyên đêm)",
-                "source": "tiktok_sleep_radio"
+                "formula": "Tiếng lòng thực tập sinh bóc mẽ hợp đồng 500 tỷ (Satirical Subtext Kick-off)",
+                "template": "[Ngòi bút máy cách chữ ký 1mm] + [Tiếng lòng lanh lảnh dội thẳng vào màng nhĩ sếp tổng bóc mẽ điều khoản ma]",
+                "example": "Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng dội thẳng vào màng nhĩ anh: 'Dừng bút lại đồ ngốc! Bản hợp đồng này ký xuống là mất trắng năm trăm tỷ, chưa kể chiếc cà vạt hoa hòe màu cánh sen chấm bi của sếp nhìn y hệt con công đang xòe đuôi!'.",
+                "retention_impact": "Đỉnh cao (+85% 5s retention)",
+                "source": "10_cycles_master_codex"
+            },
+            {
+                "formula": "Đầu trâm bạc sủi bọt thâm cung (Palace Chemical Reaction Kick-off)",
+                "template": "[Trâm bạc nhúng vào chén trà thanh nhiệt] + [Lớp men sủi bọt xám tro như bồ hóng] + [Nụ cười thâm độc ép uống]",
+                "example": "Chiếc trâm bạc vừa nhúng vào chén trà hoa cúc của Thục phi, đầu trâm đã sủi lên một lớp bọt xám tro như bồ hóng. Thục phi vẫn mỉm cười dịu dàng nâng tách trà lên môi tôi: 'Uống đi con dâu, trà nguội mất ngon'.",
+                "retention_impact": "Rất cao (+76% 5s retention)",
+                "source": "10_cycles_master_codex"
             }
         ]
     },
     "viral_title_templates": {
-        "HIGH_IQ": [
-            "Kỳ Án Căn Phòng Số [X]: Bí Mật Giấu Kín Suốt 10 Năm",
-            "Cuộc Gọi Lúc 2 Giờ Sáng Của Người Đã Mất",
-            "Nghịch Lý Vụ Án Trong Phòng Kín Đêm Mưa Bão",
-            "Chiếc Hộp Bí Mật Dưới Đáy Tủ: Sự Thật Đau Lòng",
-            "Màn Đấu Trí Cân Não Giữa Thám Tử Và Kẻ Chủ Mưu"
-        ],
-        "SLEEP_CHILL": [
-            "Truyện Đêm: Tiếng Mưa Rơi Bên Ô Cửa Gỗ Giữa Rừng Thông",
-            "Căn Cabin Mùa Thu: Thả Lỏng Tâm Trí Và Ngủ Ngon",
-            "Chuyến Tàu Đêm Băng Qua Miền Tuyết Trắng",
-            "Khi Cả Thế Giới Đã Ngủ: Bản Giao Hưởng Của Sự Bình Yên"
+        "DOUYIN_ZHIZU": [
+            "Bát Yến Chưng Dưới Đáy Bản Khế Ước: Đòi Lại Căn Biệt Thự 50 Tỷ",
+            "Thư Ký Giả Ngốc: Tiếng Lòng Chê Tổng Tài Khiến Cả Phòng Họp Cười Xỉu",
+            "Bản Đồ Quy Hoạch Ngầm: Bẫy Đấu Giá Một Trăm Hai Mươi Tỷ",
+            "Cánh Cửa Thép Lúc Âm Sáu Mươi Độ: Búp Bê Cao Su Giả Trẻ Con Sốt",
+            "Chén Trà Hoa Cúc Thâm Cung: Con Dấu Ngự Y Dưới Lớp Men Gốm",
+            "Hàng Ghế Số Bốn Rạp Chiếu Phim Đêm: Người Áo Mưa Đen",
+            "Chiếc Thẻ Nhớ Trong Bút Dạ Quang: Bí Mật Bảng Danh Dự Học Đường",
+            "Bản Khế Ước Niêm Phong Sáp Đỏ: Đại Hội Cổ Đông Ba Mươi Nghìn Tỷ"
         ]
     },
     "comment_magnets": {
-        "HIGH_IQ": [
-            "Nếu ở trong hoàn cảnh của nhân vật chính, bạn sẽ chọn im lặng bảo vệ gia đình hay phơi bày sự thật ra ánh sáng?",
-            "Bạn nhận ra ai là kẻ đứng sau từ tập mấy? Hãy để lại suy luận của bạn bên dưới nhé!",
-            "Theo bạn, cái giá 10 năm sống trong dối trá có xứng đáng để đổi lấy cơ nghiệp gia tộc không?"
-        ],
-        "SLEEP_CHILL": [
-            "Bạn đang nghe câu chuyện này từ thành phố nào? Hãy để lại lời chúc ngủ ngon cho người lướt qua nhé.",
-            "Mong rằng đêm nay bạn sẽ buông bỏ mọi muộn phiền và có một giấc mơ thật đẹp.",
-            "Chúc người đọc được dòng này sẽ luôn tìm thấy sự an yên trong tâm hồn."
+        "DOUYIN_ZHIZU": [
+            "Nếu ở vị trí của nữ chính, bạn sẽ chọn phong tỏa tài sản ngay tại bàn tiệc (Bình luận 1) hay tương kế tựu kế thu thập thêm chứng cứ (Bình luận 2)?",
+            "Bạn nhận ra kẻ đứng sau mưu đồ tráo đổi từ chi tiết chiếc bút dạ quang hay bản kiểm toán? Để lại bình luận số 1 hoặc 2 nhé!",
+            "Màn vả mặt này đã đủ hả dạ chưa? Bạn muốn thấy kẻ phản bội phải trả lời trước pháp luật như thế nào?"
         ]
     },
     "broll_synergies": {
-        "baking": {
-            "best_genre": "Truyện Tâm Sự, Gia Đình, Bí Mật Đời Sống",
-            "reason": "Các nhát cắt bánh kem và quét kem bơ mềm mịn tạo hiệu ứng Oddly Satisfying giữ mắt người xem chăm chú, thính giác hoàn toàn đắm chìm vào lời kể.",
-            "synergy_score": 9.8
-        },
-        "craft": {
-            "best_genre": "Kỳ Án, Trinh Thám, Đấu Trí High-IQ",
-            "reason": "Chế tác gỗ thủ công và phục chế đồng hồ cổ thể hiện sự tỉ mỉ, công phu, cộng hưởng hoàn hảo với cấu trúc logic sắc sảo của truyện trinh thám.",
-            "synergy_score": 9.7
-        },
-        "nature": {
-            "best_genre": "Truyện Ru Ngủ, Chữa Lành, Radio Đêm Khuya",
-            "reason": "Cảnh mưa rừng thông và cabin lò sưởi ấm kích hoạt sóng não Alpha, giảm nhịp tim và áp lực thị giác để đưa người nghe vào giấc ngủ sâu.",
+        "chinese_pastry_baking": {
+            "best_genre": "Gia Đấu, Mẹ Chồng Nàng Dâu, Trọng Sinh Hào Môn",
+            "reason": "Các nét cắt bột làm bánh hoa cúc, hoa sen tinh xảo giữ mắt người xem mê mẩn, giúp thính giác hấp thụ 100% drama gia tộc nghẹt thở.",
             "synergy_score": 9.9
         },
-        "mukbang": {
-            "best_genre": "Tâm Sự Đời Thường, Chuyện Nghề, Tình Bạn",
-            "reason": "Tạo cảm giác thân mật, ấm cúng như người bạn đồng hành bên bàn ăn.",
-            "synergy_score": 8.9
+        "chinese_beauty_asmr": {
+            "best_genre": "Tiếng Lòng, Sa Điêu Hài Hước, Trà Xanh Liễu Như Yên",
+            "reason": "Cảnh trang điểm cổ phong lụa là, chuốt mi tỉ mỉ tạo tương phản cực mạnh với lời bóc phốt trào phúng, kích nổ thời gian xem hết video.",
+            "synergy_score": 9.8
+        },
+        "chinese_craft_heritage": {
+            "best_genre": "Trinh Thám Kỳ Án, Đấu Trí Thương Trường, Mạt Thế Sinh Tồn",
+            "reason": "Âm thanh đục đẽo gỗ, nung men gốm và rèn thép thủ công tạo cảm giác cơ học chân thực, bổ trợ tối đa cho các tình tiết phá án và xây hầm ngầm.",
+            "synergy_score": 9.9
         }
     },
     "learned_history": []

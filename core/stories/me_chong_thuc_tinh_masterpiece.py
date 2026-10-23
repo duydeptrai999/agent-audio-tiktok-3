@@ -13,7 +13,7 @@ from typing import Dict, Any
 def get_me_chong_thuc_tinh_masterpiece_story(title: str = '') -> Dict[str, Any]:
     story_title = title if title else "Đêm Mưa Thức Tỉnh: Bản Khế Ước Gia Tộc Đòi Lại 50 Tỷ"
 
-    part1_full = """Tiếng mưa gào rít bên ngoài khung cửa kính khách sạn năm sao như một bản nhạc đệm ai oán cho ký ức của bảy năm về trước. Trong khán phòng dát vàng lộng lẫy, ánh mắt của Tô Nhược Dao lạnh buốt như lưỡi dao cạo vừa được mài sắc. Bảy năm trước, cũng chính những con người đang ngồi đây đã nhìn mẹ con cô bằng ánh mắt khinh miệt của kẻ bề trên nhìn loài sâu bọ.
+    part1_full = """Bản khế ước đòi lại tài sản năm mươi tỷ đồng được Tô Nhược Dao ném thẳng lên bàn tiệc khách sạn năm sao. Bảy năm trước, cũng chính những con người đang run rẩy ngồi đây đã nhẫn tâm ném vali của hai mẹ con cô ra đường giữa đêm bão tuyết. Trong khán phòng dát vàng lộng lẫy, ánh mắt của Tô Nhược Dao lạnh buốt như lưỡi dao cạo vừa được mài sắc. Bảy năm trước, mẹ chồng và cả gia đình này đã coi mẹ con cô như loài cỏ rác dưới đáy xã hội.
 
 Bà Mai ngồi đối diện, chiếc vòng ngọc phỉ thúy trên cổ tay bà ta va vào mặt bàn kính kêu lách cách theo từng nhịp run rẩy. Người đàn bà từng một thời thét ra lửa trong gia tộc họ Hoàng, từng tự hào về dòng máu trâm anh thế phiệt ba đời, nay co rúm lại như một kẻ tử tù đang chờ ngày tuyên án.
 
@@ -27,7 +27,7 @@ Và để che đậy tội lỗi tày trời của con gái rượu, bà Mai đ�
 
 Bà Mai đã dùng chiếc khăn ăn lau nhẹ khóe miệng, rồi đột ngột đứng phắt dậy tát thẳng vào mặt Nhược Dao một cú trời giáng! Tiếng bạt tai vang dội giữa bàn tiệc, làm vỡ tan chiếc ly pha lê đựng rượu vang đỏ sóng sánh trên khăn trải bàn trắng muốt.
 
-'Đồ tiện tì ăn cắp! Gia đình tao đón nhận một đứa nhà quê như mày vào cửa là ân huệ ba đời tổ tiên mày để lại, thế mà mày dám giở thói trộm cắp chuỗi ngọc gia bảo của tổ tiên họ Hoàng!' - Tiếng thét the thé của bà Mai như từng nhát dao cứa nát danh dự của người mẹ trẻ.
+'Đồ ăn cắp trơ trẽn! Gia đình tao đón nhận một đứa nhà quê như mày vào cửa là ân huệ ba đời tổ tiên mày để lại, thế mà mày dám giở thói trộm cắp chuỗi ngọc gia bảo của tổ tiên họ Hoàng!' - Tiếng thét the thé của bà Mai như từng nhát dao cứa nát danh dự của người mẹ trẻ.
 
 Nhược Dao quỳ sụp dưới sàn đá cẩm thạch lạnh buốt, nước mắt lã chã rơi đẫm mu bàn tay: 'Mẹ ơi... con thề có trời đất chứng giám, con không hề bước chân vào phòng mẹ chiều nay! Xin mẹ hãy kiểm tra camera hành lang!'.
 
@@ -41,11 +41,9 @@ Người chồng từng thề non hẹn biển – Hoàng Minh Triết – chỉ
 
 Dưới cơn mưa xối xả ngập trời, Nhược Dao ôm chặt đứa con thơ đang sốt cao co giật trong lòng. Từng bước chân lảo đảo trên con đường sình lầy tối tăm không một bóng đèn đường. Đôi chân cô trần trụi giẫm lên những mảnh đá dăm sắc nhọn, máu hòa lẫn nước mưa đỏ tươi từng vệt trên mặt đường nhựa.
 
-Nhưng đúng vào thời khắc sinh tử ngàn cân treo sợi tóc, khi sức cùng lực kiệt và đôi mắt bắt đầu mờ đi vì kiệt sức, ánh đèn pha vàng rực của chiếc Rolls-Royce Phantom bọc thép đã xé toạc màn đêm mưa bão!
+Nhưng chính trong thời khắc nghiệt ngã ấy, Tô Nhược Dao đã không gục ngã. Cô ôm chặt con gái nhỏ, từng bước lảo đảo bước vào sảnh tòa án nhân dân thành phố nộp đơn tố giác khẩn cấp kèm bản sao kê kiểm toán độc lập mà ba chồng cô từng bí mật gửi vào két sắt ngân hàng trước khi qua đời.
 
-Người đàn ông bước xuống xe với mái tóc hoa râm nhưng khí chất vương giả áp đảo khắp bốn phương – Cố Vạn Toàn – người sáng lập tập đoàn tài chính Đông Á khét tiếng. Ông nhìn vết bớt hình cánh sen đỏ thắm trên cổ tay Nhược Dao, đôi bàn tay run rẩy gạt dòng nước mưa trên khuôn mặt cô.
-
-'Hai mươi năm qua... cha đã tìm con khắp hang cùng ngõ hẻm... Cuối cùng ông trời cũng trả con gái về cho cha!' - Tiếng khóc nghẹn ngào của người đàn ông quyền lực nhất châu Á làm rung chuyển cả màn đêm bão bùng.
+Vị viện trưởng viện kiểm sát thụ lý hồ sơ nhìn thấy những trang chứng từ chuyển tiền lòng vòng hàng trăm tỷ của gia tộc họ Hoàng, lập tức ký lệnh bảo vệ nhân chứng đặc biệt và phong tỏa toàn bộ tài sản bảo đảm!
 
 Và trong khoảnh khắc chiếc vali rách của Nhược Dao bị bánh xe cán qua, chiếc đáy da bong tróc để lộ một cuốn sổ tay bìa da màu nâu cũ kỹ. Đó là cuốn sổ tay kiểm toán nội bộ mà ba chồng cô – cố chủ tịch Hoàng Gia – đã bí mật ghi chép lại trước khi qua đời.
 
@@ -63,47 +61,7 @@ Nhược Dao khẽ mỉm cười, một nụ cười đanh thép chứa đựng 
 
 Đêm ấy, ánh trăng mờ ảo sau cơn bão rọi chiếu lên mặt hồ Tây lấp lánh ánh bạc. Một đóa hoa sen trắng đã thức tỉnh từ vũng bùn lầy cay đắng, chuẩn bị bung nở rực rỡ và kiêu hãnh giữa bầu trời công lý!
 
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Trong thế giới thương trường khốc liệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Sự kiêu ngạo và lòng tham mù quáng chính là liều thuốc độc ngọt ngào nhất đẩy con người ta vào hố sâu diệt vong. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Bảy năm sống trong bùn lầy tủi nhục đã tôi luyện nên một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bé Sam nép sát vào người mẹ, đôi mắt ngây thơ tròn xoe nhìn những người lớn đang tranh cãi kịch liệt. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vị luật sư trưởng của tập đoàn Đông Á mở tập tài liệu niêm phong đỏ, từng ngón tay lật giở các trang chứng từ đanh thép. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn phóng viên truyền hình liên tục lia ống kính máy quay về phía bục diễn thuyết, ghi lại từng khoảnh khắc lịch sử. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Cố Vạn Toàn đứng sừng sững bên cạnh con gái, vóc dáng uy nghiêm của bậc tài phiệt tỏa ra áp lực vô hình khắp khán phòng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Từng nhân viên an ninh trong bộ vest đen đứng gác nghiêm trang tại các lối ra vào, đảm bảo trật tự tuyệt đối cho phiên làm việc. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Mỗi biến cố xảy ra trong cuộc đời đều là một phép thử nghiệt ngã để thanh lọc những điều giả dối và tôn vinh chân lý. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Những đối tác làm ăn từng bị gia đình họ Hoàng chèn ép nay lặng lẽ mỉm cười, chờ đợi thời khắc công lý được thực thi. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bé Sam nép sát vào người mẹ, đôi mắt ngây thơ tròn xoe nhìn những người lớn đang tranh cãi kịch liệt. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vị luật sư trưởng của tập đoàn Đông Á mở tập tài liệu niêm phong đỏ, từng ngón tay lật giở các trang chứng từ đanh thép. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn phóng viên truyền hình liên tục lia ống kính máy quay về phía bục diễn thuyết, ghi lại từng khoảnh khắc lịch sử. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Cố Vạn Toàn đứng sừng sững bên cạnh con gái, vóc dáng uy nghiêm của bậc tài phiệt tỏa ra áp lực vô hình khắp khán phòng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Từng nhân viên an ninh trong bộ vest đen đứng gác nghiêm trang tại các lối ra vào, đảm bảo trật tự tuyệt đối cho phiên làm việc. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Những đối tác làm ăn từng bị gia đình họ Hoàng chèn ép nay lặng lẽ mỉm cười, chờ đợi thời khắc công lý được thực thi. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
+Cầm cuốn sổ tay bí mật chứa đựng bằng chứng trốn thuế chấn động của gia tộc họ Hoàng, ánh mắt Tô Nhược Dao rực sáng trong đêm đen. """
 
     part2_full = """Bảy năm rèn giũa tại trung tâm tài chính Phố Wall và sàn giao dịch London đã tôi luyện nên một Tô Nhược Dao hoàn toàn khác biệt: Sắc sảo, quyết đoán, và sở hữu trực giác kinh doanh nhạy bén đến mức khiến các đối thủ sừng sỏ nhất cũng phải kiêng dè.
 
@@ -153,53 +111,7 @@ Cô lập tức bấm máy gọi cho đội ngũ luật sư đặc nhiệm: 'Kí
 
 Gió đêm thổi lồng lộng qua ban công tầng cao, mang theo hơi thở sảng khoái của chiến thắng cận kề. Vở kịch kéo dài suốt bảy năm cuối cùng cũng sắp đi đến hồi kết thúc!
 
-Đêm nay sẽ là đêm ác mộng cuối cùng của những kẻ thủ ác, và ngày mai ánh sáng công lý sẽ rọi chiếu tới từng ngóc ngách tối tăm nhất!
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Trong thế giới thương trường khốc liệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Sự kiêu ngạo và lòng tham mù quáng chính là liều thuốc độc ngọt ngào nhất đẩy con người ta vào hố sâu diệt vong. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Bảy năm sống trong bùn lầy tủi nhục đã tôi luyện nên một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bé Sam nép sát vào người mẹ, đôi mắt ngây thơ tròn xoe nhìn những người lớn đang tranh cãi kịch liệt. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vị luật sư trưởng của tập đoàn Đông Á mở tập tài liệu niêm phong đỏ, từng ngón tay lật giở các trang chứng từ đanh thép. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn phóng viên truyền hình liên tục lia ống kính máy quay về phía bục diễn thuyết, ghi lại từng khoảnh khắc lịch sử. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Cố Vạn Toàn đứng sừng sững bên cạnh con gái, vóc dáng uy nghiêm của bậc tài phiệt tỏa ra áp lực vô hình khắp khán phòng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Từng nhân viên an ninh trong bộ vest đen đứng gác nghiêm trang tại các lối ra vào, đảm bảo trật tự tuyệt đối cho phiên làm việc. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Mỗi biến cố xảy ra trong cuộc đời đều là một phép thử nghiệt ngã để thanh lọc những điều giả dối và tôn vinh chân lý. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Những đối tác làm ăn từng bị gia đình họ Hoàng chèn ép nay lặng lẽ mỉm cười, chờ đợi thời khắc công lý được thực thi. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bé Sam nép sát vào người mẹ, đôi mắt ngây thơ tròn xoe nhìn những người lớn đang tranh cãi kịch liệt. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vị luật sư trưởng của tập đoàn Đông Á mở tập tài liệu niêm phong đỏ, từng ngón tay lật giở các trang chứng từ đanh thép. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn phóng viên truyền hình liên tục lia ống kính máy quay về phía bục diễn thuyết, ghi lại từng khoảnh khắc lịch sử. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Cố Vạn Toàn đứng sừng sững bên cạnh con gái, vóc dáng uy nghiêm của bậc tài phiệt tỏa ra áp lực vô hình khắp khán phòng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Từng nhân viên an ninh trong bộ vest đen đứng gác nghiêm trang tại các lối ra vào, đảm bảo trật tự tuyệt đối cho phiên làm việc. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Những đối tác làm ăn từng bị gia đình họ Hoàng chèn ép nay lặng lẽ mỉm cười, chờ đợi thời khắc công lý được thực thi. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
+Đêm nay sẽ là đêm ác mộng cuối cùng của những kẻ thủ ác, và ngày mai ánh sáng công lý sẽ rọi chiếu tới từng ngóc ngách tối tăm nhất!"""
 
     part3_full = """Sáng hôm sau, bầu trời thủ đô quang đãng không một gợn mây. Trước cổng sắt mạ vàng của căn biệt thự năm mươi tỷ ven sông, hơn năm mươi cơ quan thông tấn báo chí và hàng trăm người dân hiếu kỳ đã tập trung đông nghẹt để chứng kiến lễ tiếp quản tài sản chấn động nhất trong năm.
 
@@ -241,55 +153,7 @@ Bé Sam ôm chặt lấy tay mẹ, ngẩng đầu lên với ánh mắt lấp l�
 
 Bản lĩnh của người phụ nữ hiện đại không nằm ở việc cam chịu và hy sinh mù quáng, mà nằm ở dũng khí tự đứng lên làm chủ cuộc đời mình, dùng tri thức và năng lực để bảo vệ những giá trị thiêng liêng nhất.
 
-Bão giông đã vĩnh viễn lùi lại phía sau, nhường chỗ cho một tương lai rạng rỡ, nơi tình mẫu tử thiêng liêng và lòng quả cảm được tôn vinh ở vị trí cao quý nhất trên cõi đời này!
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Trong thế giới thương trường khốc liệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Sự kiêu ngạo và lòng tham mù quáng chính là liều thuốc độc ngọt ngào nhất đẩy con người ta vào hố sâu diệt vong. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Bảy năm sống trong bùn lầy tủi nhục đã tôi luyện nên một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bé Sam nép sát vào người mẹ, đôi mắt ngây thơ tròn xoe nhìn những người lớn đang tranh cãi kịch liệt. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vị luật sư trưởng của tập đoàn Đông Á mở tập tài liệu niêm phong đỏ, từng ngón tay lật giở các trang chứng từ đanh thép. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn phóng viên truyền hình liên tục lia ống kính máy quay về phía bục diễn thuyết, ghi lại từng khoảnh khắc lịch sử. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Cố Vạn Toàn đứng sừng sững bên cạnh con gái, vóc dáng uy nghiêm của bậc tài phiệt tỏa ra áp lực vô hình khắp khán phòng. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Từng nhân viên an ninh trong bộ vest đen đứng gác nghiêm trang tại các lối ra vào, đảm bảo trật tự tuyệt đối cho phiên làm việc. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Mỗi biến cố xảy ra trong cuộc đời đều là một phép thử nghiệt ngã để thanh lọc những điều giả dối và tôn vinh chân lý. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Những đối tác làm ăn từng bị gia đình họ Hoàng chèn ép nay lặng lẽ mỉm cười, chờ đợi thời khắc công lý được thực thi. Gió lạnh từ dòng sông ven biệt thự thổi lồng lộng qua các ô cửa kính lớn, làm rung rinh những chùm đèn pha lê lộng lẫy. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bé Sam nép sát vào người mẹ, đôi mắt ngây thơ tròn xoe nhìn những người lớn đang tranh cãi kịch liệt. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vị luật sư trưởng của tập đoàn Đông Á mở tập tài liệu niêm phong đỏ, từng ngón tay lật giở các trang chứng từ đanh thép. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn phóng viên truyền hình liên tục lia ống kính máy quay về phía bục diễn thuyết, ghi lại từng khoảnh khắc lịch sử. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Cố Vạn Toàn đứng sừng sững bên cạnh con gái, vóc dáng uy nghiêm của bậc tài phiệt tỏa ra áp lực vô hình khắp khán phòng. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Từng nhân viên an ninh trong bộ vest đen đứng gác nghiêm trang tại các lối ra vào, đảm bảo trật tự tuyệt đối cho phiên làm việc. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Những đối tác làm ăn từng bị gia đình họ Hoàng chèn ép nay lặng lẽ mỉm cười, chờ đợi thời khắc công lý được thực thi. Ánh hoàng hôn đỏ ối buông xuống phủ lên khuôn viên căn biệt thự một màu tang tóc, báo hiệu sự kết thúc của một đế chế. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Tô Nhược Dao thong thả nhấp ngụm trà Earl Grey thanh mát, đôi mắt sâu thẳm không để lộ một gợn sóng cảm xúc. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Mai run rẩy lấy khăn tay lau mồ hôi lạnh trên trán, ánh mắt đảo quanh tìm kiếm sự giúp đỡ trong vô vọng. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Hoàng Minh Triết cúi gầm mặt xuống sàn đá hoa cương, hai bàn tay nắm chặt đến mức móng tay găm vào da thịt. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị cổ đông lớn trong khán phòng xì xào bàn tán, liên tục lắc đầu ngán ngẩm trước sự thất thế của gia tộc họ Hoàng. Tiếng còi xe cảnh sát từ xa vọng lại từng hồi dồn dập, xé toạc không gian ngột ngạt và căng thẳng của buổi chiều định mệnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
+Bão giông đã vĩnh viễn lùi lại phía sau, nhường chỗ cho một tương lai rạng rỡ, nơi tình mẫu tử thiêng liêng và lòng quả cảm được tôn vinh ở vị trí cao quý nhất trên cõi đời này!"""
 
     return {
         "title": story_title,

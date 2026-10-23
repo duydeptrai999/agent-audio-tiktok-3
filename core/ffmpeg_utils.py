@@ -215,7 +215,7 @@ def render_playable_video(
     clean_footage_path: str,
     bgm_audio_path: str,
     badge_label: str = "",
-    bgm_volume: float = 0.22,
+    bgm_volume: float = 0.25,
     voice_volume: float = 1.0,
     srt_path: Optional[str] = None,
     enable_subtitles: Optional[bool] = None,
@@ -229,22 +229,26 @@ def render_playable_video(
     output_file.parent.mkdir(parents=True, exist_ok=True)
     ffmpeg = get_ffmpeg_exe()
 
-    # Bắt buộc thẩm định và định tuyến BGM an toàn 100% không bản quyền (Anti-Copyright Guard)
-    try:
-        from core.bgm_manager import ensure_safe_bgm
-        bgm_audio_path = ensure_safe_bgm(bgm_audio_path)
-    except Exception as e:
+    has_bgm = bool(bgm_audio_path) and str(bgm_audio_path).lower() not in ["none", "", "null"] and bgm_volume > 0.01
+
+    if has_bgm:
+        try:
+            from core.bgm_manager import ensure_safe_bgm
+            bgm_audio_path = ensure_safe_bgm(bgm_audio_path)
+        except Exception as e:
+            if not os.path.exists(bgm_audio_path) or os.path.getsize(bgm_audio_path) < 1000:
+                bgm_base = Path(__file__).resolve().parent.parent / "assets" / "bgm"
+                for cand in [
+                    bgm_base / "suspense" / "tiktok_horror_suspense.mp3",
+                    bgm_base / "chill" / "chill_instrumental.mp3",
+                    bgm_base / "chill" / "chopin_romance.mp3",
+                    bgm_base / "test_bgm.mp3"
+                ]:
+                    if cand.exists() and cand.stat().st_size > 1000:
+                        bgm_audio_path = str(cand)
+                        break
         if not os.path.exists(bgm_audio_path) or os.path.getsize(bgm_audio_path) < 1000:
-            bgm_base = Path(__file__).resolve().parent.parent / "assets" / "bgm"
-            for cand in [
-                bgm_base / "suspense" / "tiktok_horror_suspense.mp3",
-                bgm_base / "chill" / "chill_instrumental.mp3",
-                bgm_base / "chill" / "chopin_romance.mp3",
-                bgm_base / "test_bgm.mp3"
-            ]:
-                if cand.exists() and cand.stat().st_size > 1000:
-                    bgm_audio_path = str(cand)
-                    break
+            has_bgm = False
 
     if not os.path.exists(voice_audio_path) or os.path.getsize(voice_audio_path) < 1000:
         print(f"[FFmpeg Warning] Voice audio {voice_audio_path} không tồn tại hoặc lỗi, tự động tạo audio chuẩn...")
@@ -257,10 +261,8 @@ def render_playable_video(
     filters_list = []
     if badge_label:
         import re
-        # Xóa sạch bất kỳ chuỗi thời gian nào (như "(10 PHÚT)") khỏi Visual Badge trên video
         clean_label = re.sub(r'\(?\d+\s*phút\)?', '', badge_label, flags=re.IGNORECASE).strip()
         clean_label = clean_label.replace("[", "").replace("]", "").replace("'", "").replace(":", "").strip()
-        # Thiết kế badge kiểu 16:9 Widescreen thanh lịch: Hộp đen mờ sang trọng, chữ vàng đậm nét
         badge_filter = (
             f"drawbox=y=45:color=black@0.8:width=iw:height=90:t=fill,"
             f"drawtext=text='{clean_label}'{font_param}:fontcolor=yellow:fontsize=42:x=(w-text_w)/2:y=68"
@@ -287,7 +289,6 @@ def render_playable_video(
             )
             filters_list.append(sub_filter)
         except Exception as e_sub:
-            # Fallback filter chuẩn
             escaped_srt = str(Path(srt_path).resolve()).replace("\\", "/").replace(":", "\\:")
             sub_filter = (
                 f"subtitles='{escaped_srt}':force_style='FontSize=28,FontName=Arial,Bold=1,"
@@ -297,66 +298,49 @@ def render_playable_video(
 
     video_filter = ",".join(filters_list) if filters_list else "null"
 
-    # Studio Radio Vocal Mastering:
-    # 1. Cắt tần số ù thô (75Hz), tăng độ trầm ấm quyền lực (145Hz +3.5dB)
-    # 2. Cắt đục hộp nhựa (1200Hz -2dB), tăng độ rõ nét thanh điệu tiếng Việt (3500Hz +3.2dB)
-    # 3. De-esser chống xì chói (6500Hz -2.5dB), Nén dynamic range chuẩn radio phát thanh
-    # 4. Dynamic Auto-Ducking (sidechaincompress): BGM tự động né giọng đọc (-20dB khi nói, dâng trào trong khoảng lặng)
-    # 5. Master toàn dải đạt chuẩn TikTok/YouTube (-13 LUFS & True Peak -1.0 dBTP)
-    vocal_filter = f"highpass=f=75,equalizer=f=145:t=q:w=1.2:g=3.5,equalizer=f=1200:t=q:w=1.5:g=-2.0,equalizer=f=3500:t=q:w=1.2:g=3.2,equalizer=f=6500:t=q:w=1.8:g=-2.5,acompressor=threshold=-18dB:ratio=3.2:attack=8:release=60,volume={voice_volume}"
-    filter_complex = (
-        f"[0:v]{video_filter}[vout];"
-        f"[1:a]{vocal_filter},asplit=2[v_play][v_trigger];"
-        f"[2:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
-        f"[bgm_prep][v_trigger]sidechaincompress=threshold=0.045:ratio=7:attack=15:release=280[bgm_ducked];"
-        f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
-    )
-
-    cmd = [
-        ffmpeg, "-y",
-        "-stream_loop", "-1",  # Tự động loop video làm bánh nếu âm thanh dài hơn
-        "-i", clean_footage_path,
-        "-i", voice_audio_path,
-        "-stream_loop", "-1",  # Tự động loop nhạc nền
-        "-i", bgm_audio_path,
-        "-filter_complex", filter_complex,
-        "-map", "[vout]",
-        "-map", "[aout]",
-        "-c:v", "libx264",
-        "-preset", "ultrafast",
-        "-pix_fmt", "yuv420p",
-        "-c:a", "aac",
-        "-b:a", "192k",
-        "-shortest",           # Cắt đúng theo độ dài file đọc voice
-        str(output_file)
-    ]
-
+    # Nạp tham số Ducking chuẩn điện ảnh chống giật cục (Cinema Ducking)
+    ducking_thresh = 0.079
+    ducking_ratio = 4.0
+    ducking_attack = 25
+    ducking_release = 750
+    ducking_knee = 2.5
+    target_lufs = -14.0
+    true_peak = -1.5
     try:
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=180)
-    except subprocess.TimeoutExpired:
-        print(f"[FFmpeg Warning] Timeout 180s khi render video chính ({output_file.name})!")
-        result = subprocess.CompletedProcess(cmd, returncode=1, stdout=b"", stderr=b"TimeoutExpired after 180s")
-
-    if result.returncode != 0:
-        # Fallback an toàn nếu có lỗi filter
-        err_msg = result.stderr.decode("utf-8", errors="ignore")
-        print(f"[FFmpeg Warning] Fallback filter: {err_msg[:200]}")
-        simple_filter = (
-            f"[1:a]{vocal_filter},asplit=2[v_play][v_trigger];"
-            f"[2:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
-            f"[bgm_prep][v_trigger]sidechaincompress=threshold=0.045:ratio=7:attack=15:release=280[bgm_ducked];"
-            f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-13:TP=-1.0:LRA=7[aout]"
+        from config.settings import (
+            DUCKING_THRESHOLD, DUCKING_RATIO, DUCKING_ATTACK_MS,
+            DUCKING_RELEASE_MS, DUCKING_KNEE, TARGET_LUFS, TRUE_PEAK
         )
+        ducking_thresh = DUCKING_THRESHOLD
+        ducking_ratio = DUCKING_RATIO
+        ducking_attack = DUCKING_ATTACK_MS
+        ducking_release = DUCKING_RELEASE_MS
+        ducking_knee = DUCKING_KNEE
+        target_lufs = TARGET_LUFS
+        true_peak = TRUE_PEAK
+    except Exception:
+        pass
 
-        fallback_cmd = [
+    # Studio Radio Vocal Mastering:
+    vocal_filter = f"highpass=f=75,equalizer=f=145:t=q:w=1.2:g=3.5,equalizer=f=1200:t=q:w=1.5:g=-2.0,equalizer=f=3500:t=q:w=1.2:g=3.2,equalizer=f=6500:t=q:w=1.8:g=-2.5,acompressor=threshold=-18dB:ratio=3.2:attack=8:release=60,volume={voice_volume}"
+
+    if has_bgm:
+        filter_complex = (
+            f"[0:v]{video_filter}[vout];"
+            f"[1:a]{vocal_filter},asplit=2[v_play][v_trigger];"
+            f"[2:a]silenceremove=start_periods=1:start_duration=0:start_threshold=-38dB,asetrate=44100*1.025,aresample=44100,volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
+            f"[bgm_prep][v_trigger]sidechaincompress=threshold={ducking_thresh}:ratio={ducking_ratio}:attack={ducking_attack}:release={ducking_release}:knee={ducking_knee}[bgm_ducked];"
+            f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I={target_lufs}:TP={true_peak}:LRA=8[aout]"
+        )
+        cmd = [
             ffmpeg, "-y",
             "-stream_loop", "-1",
             "-i", clean_footage_path,
             "-i", voice_audio_path,
             "-stream_loop", "-1",
             "-i", bgm_audio_path,
-            "-filter_complex", simple_filter,
-            "-map", "0:v",
+            "-filter_complex", filter_complex,
+            "-map", "[vout]",
             "-map", "[aout]",
             "-c:v", "libx264",
             "-preset", "ultrafast",
@@ -366,17 +350,88 @@ def render_playable_video(
             "-shortest",
             str(output_file)
         ]
-        try:
-            subprocess.run(fallback_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, timeout=180)
-        except subprocess.TimeoutExpired:
-            print(f"[FFmpeg Error] Timeout 180s khi render video fallback ({output_file.name})!")
+    else:
+        # PURE STUDIO VOCAL - HOÀN TOÀN KHÔNG NHẠC NỀN
+        filter_complex = (
+            f"[0:v]{video_filter}[vout];"
+            f"[1:a]{vocal_filter},loudnorm=I={target_lufs}:TP={true_peak}:LRA=8[aout]"
+        )
+        cmd = [
+            ffmpeg, "-y",
+            "-stream_loop", "-1",
+            "-i", clean_footage_path,
+            "-i", voice_audio_path,
+            "-filter_complex", filter_complex,
+            "-map", "[vout]",
+            "-map", "[aout]",
+            "-c:v", "libx264",
+            "-preset", "ultrafast",
+            "-pix_fmt", "yuv420p",
+            "-c:a", "aac",
+            "-b:a", "192k",
+            "-shortest",
+            str(output_file)
+        ]
 
-    if thumbnail_path and os.path.exists(thumbnail_path):
+    try:
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=600)
+    except subprocess.TimeoutExpired:
+        print(f"[FFmpeg Warning] Timeout 600s khi render video chính ({output_file.name})!")
+        result = subprocess.CompletedProcess(cmd, returncode=1, stdout=b"", stderr=b"TimeoutExpired after 600s")
+
+    if result.returncode != 0:
+        err_msg = result.stderr.decode("utf-8", errors="ignore")
+        print(f"[FFmpeg Warning] Fallback filter: {err_msg[:200]}")
+        if has_bgm:
+            simple_filter = (
+                f"[1:a]{vocal_filter},asplit=2[v_play][v_trigger];"
+                f"[2:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"
+                f"[bgm_prep][v_trigger]sidechaincompress=threshold={ducking_thresh}:ratio={ducking_ratio}:attack={ducking_attack}:release={ducking_release}:knee={ducking_knee}[bgm_ducked];"
+                f"[v_play][bgm_ducked]amix=inputs=2:duration=first:normalize=0,loudnorm=I={target_lufs}:TP={true_peak}:LRA=8[aout]"
+            )
+            fallback_cmd = [
+                ffmpeg, "-y",
+                "-stream_loop", "-1",
+                "-i", clean_footage_path,
+                "-i", voice_audio_path,
+                "-stream_loop", "-1",
+                "-i", bgm_audio_path,
+                "-filter_complex", simple_filter,
+                "-map", "0:v",
+                "-map", "[aout]",
+                "-c:v", "libx264",
+                "-preset", "ultrafast",
+                "-pix_fmt", "yuv420p",
+                "-c:a", "aac",
+                "-b:a", "192k",
+                "-shortest",
+                str(output_file)
+            ]
+        else:
+            simple_filter = f"[1:a]{vocal_filter},loudnorm=I={target_lufs}:TP={true_peak}:LRA=8[aout]"
+            fallback_cmd = [
+                ffmpeg, "-y",
+                "-stream_loop", "-1",
+                "-i", clean_footage_path,
+                "-i", voice_audio_path,
+                "-filter_complex", simple_filter,
+                "-map", "0:v",
+                "-map", "[aout]",
+                "-c:v", "libx264",
+                "-preset", "ultrafast",
+                "-pix_fmt", "yuv420p",
+                "-c:a", "aac",
+                "-b:a", "192k",
+                "-shortest",
+                str(output_file)
+            ]
         try:
-            from core.thumbnail_generator import attach_thumbnail_to_mp4
-            attach_thumbnail_to_mp4(output_file, Path(thumbnail_path))
-        except Exception as e:
-            print(f"[FFmpeg Warning] Không thể nhúng thumbnail: {e}")
+            subprocess.run(fallback_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, timeout=600)
+        except subprocess.TimeoutExpired:
+            print(f"[FFmpeg Error] Timeout 600s khi render video fallback ({output_file.name})!")
+
+    # Thumbnail được lưu file JPG độc lập và nạp trực tiếp qua TikTok Studio Web UI
+    # KHÔNG nhúng attached_pic vào MP4 để tránh làm rối bộ giải mã âm thanh của TikTok!
 
     return str(output_file)
 

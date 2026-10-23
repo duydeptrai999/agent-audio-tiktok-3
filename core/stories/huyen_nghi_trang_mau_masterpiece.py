@@ -112,7 +112,7 @@ Nhìn xuống chiếc huy hiệu trinh sát bằng bạc trên ngực áo mình,
 
 Tiếng mưa rơi lộp độp trên mái tôn cũ kỹ như từng nhịp đếm của chiếc đồng hồ số phận. Trong không gian tĩnh mịch ngột ngạt của màn đêm, từng giây trôi qua đều là một cuộc đấu trí căng thẳng giữa sự sống và cái chết. Một thám tử chân chính không bao giờ được phép để cảm xúc lấn át lý trí trong những thời khắc sinh tử như thế này. Tôi tiếp tục cẩn trọng kiểm tra lại toàn bộ trang thiết bị tác chiến, từ ngòi nổ vô tuyến cho đến băng đạn dự phòng. Từng manh mối dù là nhỏ nhất cũng có thể là chìa khóa then chốt mở ra sự thật bị chôn vùi suốt năm năm qua dưới đáy vực sâu. Không một thế lực đen tối nào có thể dùng tiền bạc và quyền lực để che giấu mãi mãi bàn tay nhúng chàm trước vành móng ngựa của công lý!
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười nhạt thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
 
     part2_full = """'Thám tử Trần Vũ... Cậu đến muộn rồi! Cậu không nên bước chân vào căn phòng số mười ba này!' - 
 Tiếng kim loại lên đạn lách cách vừa dứt, một luồng gió rít xé toạc màn đêm lao vút tới từ phía sau gáy! 
@@ -194,7 +194,7 @@ Một bóng đen cao lớn đứng sau họng súng ngắn giảm thanh từ t�
 Dưới ánh đèn cao áp vàng vọt rọi xuống, khuôn mặt quen thuộc của kẻ chủ mưu lộ diện khiến toàn thân tôi rúng động: 
 Đó không phải là trùm tài phiệt Lâm Bá Cường... 
 Mà chính là Thượng tá Hoàng – vị cựu thủ trưởng đáng kính của ban chuyên án năm xưa, người từng đích thân trao tấm Huân chương Chiến công cho tôi và Đặng Tuấn! 
-Thượng tá Hoàng nhếch mép cười lạnh lùng, ngón tay trỏ khẽ siết chặt cò súng: 
+Thượng tá Hoàng nhếch mép cười nhạt lùng, ngón tay trỏ khẽ siết chặt cò súng: 
 'Trần Vũ, cậu là một thám tử giỏi, nhưng cậu quá ngây thơ rồi! Đặng Tuấn đã chết từ năm năm trước, và hôm nay, chiếc USB này sẽ cùng cậu chìm sâu dưới đáy đại dương!'.
 
 Dưới ánh sáng lờ mờ của chiếc đèn khẩn cấp trong hầm ngầm, ông Ba Cần đưa cho tôi một cuốn sổ tay bọc da đã sờn rách bốn góc. 'Cậu Vũ, đây là toàn bộ nhật ký trinh sát mà Đặng Tuấn đã ghi chép trong suốt năm năm ẩn dật vừa qua. Từng trang viết trong này đều thấm đẫm mồ hôi và cả máu của cậu ấy'. Tôi cẩn thận lật từng trang giấy mỏng. Những dòng chữ viết tay rắn rỏi, dứt khoát của Tuấn hiện lên từng ngày tháng cụ thể. Danh sách những tài khoản ngân hàng ma tại Thụy Sĩ, những chuyến tàu chở container chứa tiền mặt ngụy trang dưới danh nghĩa phân bón hóa học, và đặc biệt là những buổi gặp gỡ bí mật giữa các ông trùm tài chính với một nhân vật bí ẩn mang mật danh 'Bóng Ma'. Đọc đến đâu, sống lưng tôi lạnh toát đến đó. Quy mô của đường dây này vượt xa mọi dự đoán ban đầu của ban chuyên án!
@@ -209,7 +209,7 @@ Chiếc cano cứu sinh ngụy trang dưới những tán cây dừa nước d�
 
 Tiếng mưa rơi lộp độp trên mái tôn cũ kỹ như từng nhịp đếm của chiếc đồng hồ số phận. Trong không gian tĩnh mịch ngột ngạt của màn đêm, từng giây trôi qua đều là một cuộc đấu trí căng thẳng giữa sự sống và cái chết. Một thám tử chân chính không bao giờ được phép để cảm xúc lấn át lý trí trong những thời khắc sinh tử như thế này. Tôi tiếp tục cẩn trọng kiểm tra lại toàn bộ trang thiết bị tác chiến, từ ngòi nổ vô tuyến cho đến băng đạn dự phòng. Từng manh mối dù là nhỏ nhất cũng có thể là chìa khóa then chốt mở ra sự thật bị chôn vùi suốt năm năm qua dưới đáy vực sâu. Không một thế lực đen tối nào có thể dùng tiền bạc và quyền lực để che giấu mãi mãi bàn tay nhúng chàm trước vành móng ngựa của công lý!
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười nhạt thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
 Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
@@ -228,7 +228,7 @@ Nụ cười nham hiểm của Thượng tá Hoàng tựa như một lưỡi dao
 Người thủ trưởng từng dạy tôi từng bài học trinh sát đầu đời, người từng đứng trước quốc kỳ thề hy sinh vì công lý, giờ đây lại khoác chiếc áo khoác dạ hàng hiệu, tay cầm khẩu súng giảm thanh bảo vệ cho đường dây rửa tiền xuyên quốc gia! 
 Tôi nhìn thẳng vào đôi mắt vằn tia máu của Hoàng, giọng đanh thép cất lên: 
 'Năm mươi triệu đô la tiền hối lộ và mười phần trăm cổ phần tập đoàn Vạn Hưng... Đó là cái giá để ông bán rẻ danh dự người chiến sĩ công an và bán đứng mạng sống của đồng đội mình sao, Thượng tá Hoàng?'. 
-Hoàng cười khẩy, ánh mắt lộ rõ sự điên cuồng của kẻ đã lún quá sâu vào tội ác: 
+Hoàng nhếch mép, ánh mắt lộ rõ sự điên cuồng của kẻ đã lún quá sâu vào tội ác: 
 'Lý tưởng ư? Công lý ư? Những thứ đó có nuôi sống được gia đình tao không? 
 Thằng Tuấn quá cứng đầu! Tao đã cho nó cơ hội chia chác, nhưng nó lại muốn đưa tao ra tòa án binh! 
 Năm năm trước tao không tự tay bóp cò bắn chết nó là một sai lầm lớn nhất đời tao. Nhưng hôm nay, ở giữa vùng biển quốc tế này, không ai có thể cứu được mày nữa!'.
@@ -253,7 +253,7 @@ Thượng tá Hoàng lồm cồm bò dậy, rút chiếc điều khiển kíp n�
 'Tao đã cài ba khối thuốc nổ C4 dưới đáy khoang tàu này! Nếu tao chết, chiếc USB và cả con tàu này sẽ chìm xuống đáy biển cùng bọn mày!'. 
 Hắn điên cuồng ấn nút kích nổ! 
 Nhưng chiếc điều khiển chỉ phát ra tiếng tít tít vô vọng không hề có vụ nổ nào xảy ra! 
-Tuấn bước tới, giơ cao chiếc kìm cắt dây kỹ thuật còn dính thuốc nổ trên tay, cười lạnh lùng: 
+Tuấn bước tới, giơ cao chiếc kìm cắt dây kỹ thuật còn dính thuốc nổ trên tay, cười nhạt lùng: 
 'Ông Ba Cần đã ngắt toàn bộ kíp nổ vô tuyến của ông từ nửa tiếng trước rồi, Hoàng ạ!'.
 
 Tôi mở chiếc vali kim loại, rút chiếc USB màu đen chứa toàn bộ dữ liệu rửa tiền của tập đoàn Vạn Hưng cắm thẳng vào cổng truyền thông vệ tinh. 
@@ -291,7 +291,7 @@ Khi những chiếc còng số tám sáng loáng bập vào tay Thượng tá Ho
 
 Tiếng mưa rơi lộp độp trên mái tôn cũ kỹ như từng nhịp đếm của chiếc đồng hồ số phận. Trong không gian tĩnh mịch ngột ngạt của màn đêm, từng giây trôi qua đều là một cuộc đấu trí căng thẳng giữa sự sống và cái chết. Một thám tử chân chính không bao giờ được phép để cảm xúc lấn át lý trí trong những thời khắc sinh tử như thế này. Tôi tiếp tục cẩn trọng kiểm tra lại toàn bộ trang thiết bị tác chiến, từ ngòi nổ vô tuyến cho đến băng đạn dự phòng. Từng manh mối dù là nhỏ nhất cũng có thể là chìa khóa then chốt mở ra sự thật bị chôn vùi suốt năm năm qua dưới đáy vực sâu. Không một thế lực đen tối nào có thể dùng tiền bạc và quyền lực để che giấu mãi mãi bàn tay nhúng chàm trước vành móng ngựa của công lý!
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười nhạt thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
 Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
@@ -311,7 +311,7 @@ Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên t�
 
 Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười nhạt thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 
 Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
 

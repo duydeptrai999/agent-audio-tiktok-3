@@ -61,13 +61,18 @@ def load_status() -> dict:
         }
         for item in series_list
     }
+    default_status["_meta"] = {
+        "last_published_timestamp": 0.0,
+        "last_published_time_str": "",
+        "last_published_episode": ""
+    }
     if STATUS_FILE.exists():
         try:
             data = json.loads(STATUS_FILE.read_text(encoding='utf-8'))
             for k, v in default_status.items():
                 if k not in data:
                     data[k] = v
-                else:
+                elif isinstance(v, dict) and isinstance(data[k], dict):
                     for sub_k, sub_v in v.items():
                         if sub_k not in data[k]:
                             data[k][sub_k] = sub_v
@@ -219,18 +224,21 @@ def wait_until(target_timestamp: float, label: str):
         return
     diff = int(target_timestamp - now)
     print(f"\n⏳ [{datetime.now().strftime('%H:%M:%S')}] Chờ đến mốc đăng {label} (còn {diff // 3600}h {(diff % 3600) // 60}m {diff % 60}s)...", flush=True)
+    last_print = time.time()
     while time.time() < target_timestamp:
         remaining = int(target_timestamp - time.time())
-        if remaining % 300 == 0 or (remaining <= 60 and remaining % 10 == 0) or remaining <= 5:
+        if (time.time() - last_print >= 30) or remaining <= 10:
             print(f"  [{datetime.now().strftime('%H:%M:%S')}] Còn {remaining // 3600}h {(remaining % 3600) // 60}m {remaining % 60}s tới mốc đăng {label}...", flush=True)
-        time.sleep(min(5, max(1, remaining)))
+            last_print = time.time()
+        time.sleep(min(2, max(0.5, remaining)))
 
 def run_scheduler_at_7am(
     target_start_hour: int = 7,
     target_start_minute: int = 0,
     interval_parts_min: int = 20,
     interval_series_min: int = 60,
-    reset: bool = False
+    reset: bool = False,
+    immediate: bool = False
 ):
     """
     Quản trị lịch trình đăng bài:
@@ -250,19 +258,21 @@ def run_scheduler_at_7am(
 
     status = load_status()
 
-    # Tính toán mốc 07:00 AM hôm nay
-    now = datetime.now()
-    target_7am = now.replace(hour=target_start_hour, minute=target_start_minute, second=0, microsecond=0)
-    if target_7am.timestamp() < time.time() - 3600:
+    # Tính toán mốc thời gian bắt đầu
+    if immediate:
         base_time = time.time()
+        interval_parts_sec = 35
+        interval_series_sec = 60
+        print("⚡ [CHẾ ĐỘ ĐĂNG LIÊN TỤC] Kích hoạt! Giãn cách an toàn 35s giữa các tập.")
     else:
-        base_time = target_7am.timestamp()
-
-    status["scheduled_base_time"] = base_time
-    save_status(status)
-
-    interval_parts_sec = interval_parts_min * 60
-    interval_series_sec = interval_series_min * 60
+        now = datetime.now()
+        target_7am = now.replace(hour=target_start_hour, minute=target_start_minute, second=0, microsecond=0)
+        if target_7am.timestamp() < time.time() - 3600:
+            base_time = time.time()
+        else:
+            base_time = target_7am.timestamp()
+        interval_parts_sec = interval_parts_min * 60
+        interval_series_sec = interval_series_min * 60
 
     print("=" * 80)
     print("🚀 [LỊCH TRÌNH ĐĂNG BÀI MASTER TIKTOK] 5 BỘ TRUYỆN AUDIO HOÀN TOÀN MỚI")
@@ -271,11 +281,38 @@ def run_scheduler_at_7am(
     print(f"🧹 Cơ chế: Đăng thành công tập nào -> Tự động xóa ngay video/audio tập đó để chống đăng lặp!")
     print("=" * 80)
 
+    # Lịch trình phân bổ các khung giờ phát sóng tiêu chuẩn cho 5 bộ (rải đều các khung giờ vàng)
+    # Bộ 1 (Sáng sớm): 07:00 -> 07:40
+    # Bộ 2 (Giữa sáng): 09:00 -> 09:40 (Nghỉ > 1 tiếng sau Bộ 1)
+    # Bộ 3 (Buổi trưa): 11:30 -> 12:10 (Nghỉ > 1.5 tiếng sau Bộ 2)
+    # Bộ 4 (Chiều): 15:00 -> 15:40 (Nghỉ > 2.5 tiếng sau Bộ 3)
+    # Bộ 5 (Tối vàng): 19:30 -> 20:10 (Nghỉ > 3.5 tiếng sau Bộ 4)
+    series_fixed_schedule = {
+        0: (7, 0),    # Bộ 1
+        1: (9, 0),    # Bộ 2
+        2: (11, 30),  # Bộ 3
+        3: (15, 0),   # Bộ 4
+        4: (19, 30),  # Bộ 5
+    }
+
     for s_idx, conf in enumerate(series_list):
         s_key = conf["key"]
         s_title = conf["title"]
         prefix = conf["prefix"]
-        s_start_time = base_time + s_idx * interval_series_sec
+
+        if not immediate and s_idx in series_fixed_schedule:
+            h, m = series_fixed_schedule[s_idx]
+            s_start_time = now.replace(hour=h, minute=m, second=0, microsecond=0).timestamp()
+        else:
+            s_start_time = base_time + s_idx * interval_series_sec
+
+        # 🛡️ BẢO VỆ TUYỆT ĐỐI NGUYÊN TẮC: NGHỈ TỐI THIỂU 60 PHÚT (1 TIẾNG) SAU KHI HẾT 1 BỘ
+        if not immediate:
+            last_series_comp = status.get("_meta", {}).get("last_series_completed_timestamp", 0.0)
+            if last_series_comp > 0:
+                min_series_start = last_series_comp + 3600.0  # Nghỉ tối thiểu 60 phút
+                if s_start_time < min_series_start:
+                    s_start_time = min_series_start
 
         print(f"\n" + "#" * 70)
         print(f"🎬 BỘ {s_idx + 1}/5: {s_title}")
@@ -289,6 +326,15 @@ def run_scheduler_at_7am(
                 continue
 
             target_ts = s_start_time + (p_idx - 1) * interval_parts_sec
+
+            # 🛡️ BẢO VỆ TUYỆT ĐỐI NGUYÊN TẮC GIÃN CÁCH 20 PHÚT GIỮA 2 TẬP LIÊN TIẾP
+            if not immediate:
+                last_pub_ts = status.get("_meta", {}).get("last_published_timestamp", 0.0)
+                if last_pub_ts > 0:
+                    min_safe_ts = last_pub_ts + interval_parts_sec
+                    if target_ts < min_safe_ts:
+                        target_ts = min_safe_ts
+
             wait_until(target_ts, f"Bộ {s_idx + 1} - Tập {p_idx}")
 
             vid_file = out_dir / f"{prefix}_part{p_idx}_final.mp4"
@@ -304,6 +350,8 @@ def run_scheduler_at_7am(
             # 🛡️ KIỂM DUYỆT BẢO VỆ CHỐNG ĐĂNG LẠI AUDIO CŨ
             is_safe, reason = AntiRepostGuard.verify_candidate_audio(
                 title=conf["title"],
+                prefix=prefix,
+                part_num=p_idx,
                 caption=caption,
                 audio_path=part_audio_file,
                 video_path=vid_file
@@ -333,6 +381,11 @@ def run_scheduler_at_7am(
 
                 if upload_success:
                     status[s_key][p_key] = True
+                    if "_meta" not in status:
+                        status["_meta"] = {}
+                    status["_meta"]["last_published_timestamp"] = time.time()
+                    status["_meta"]["last_published_time_str"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    status["_meta"]["last_published_episode"] = f"{prefix}_part{p_idx}"
                     save_status(status)
                     print(f"🎉 ĐÃ XUẤT BẢN THÀNH CÔNG: {s_key} - {p_key} lúc {datetime.now().strftime('%H:%M:%S')}!")
 
@@ -378,9 +431,14 @@ def run_scheduler_at_7am(
             if not upload_success:
                 print(f"❌ CẢNH BÁO: Đăng {s_key} - {p_key} thất bại sau 3 lần thử!")
 
-        # 🧹 Khi đăng trọn vẹn cả 3 tập của bộ -> Xóa kịch bản JSON
+        # 🧹 Khi đăng trọn vẹn cả 3 tập của bộ -> Xóa kịch bản JSON & Ghi nhận mốc kết thúc bộ
         all_parts_posted = all(status[s_key].get(f"part{i}", False) for i in [1, 2, 3])
         if all_parts_posted:
+            if "_meta" not in status:
+                status["_meta"] = {}
+            status["_meta"]["last_series_completed_timestamp"] = time.time()
+            save_status(status)
+
             script_json_file = scripts_dir / f"{prefix}.json"
             if script_json_file.exists():
                 try:
@@ -403,6 +461,7 @@ def main():
     parser.add_argument("--start-hour", type=int, default=7, help="Giờ bắt đầu đăng (mặc định 7h sáng)")
     parser.add_argument("--start-minute", type=int, default=0, help="Phút bắt đầu đăng (mặc định 0)")
     parser.add_argument("--reset", action="store_true", help="Reset trạng thái đăng")
+    parser.add_argument("--immediate", action="store_true", help="Đăng liên tục ngay lập tức, giãn cách an toàn 35s giữa các tập")
     args = parser.parse_args()
 
     if args.produce_only:
@@ -411,14 +470,16 @@ def main():
         run_scheduler_at_7am(
             target_start_hour=args.start_hour,
             target_start_minute=args.start_minute,
-            reset=args.reset
+            reset=args.reset,
+            immediate=args.immediate
         )
     else:
         produce_all_new_series()
         run_scheduler_at_7am(
             target_start_hour=args.start_hour,
             target_start_minute=args.start_minute,
-            reset=args.reset
+            reset=args.reset,
+            immediate=args.immediate
         )
 
 if __name__ == "__main__":

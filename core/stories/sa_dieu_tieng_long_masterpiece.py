@@ -1,341 +1,203 @@
 # -*- coding: utf-8 -*-
 """
 core/stories/sa_dieu_tieng_long_masterpiece.py
-Bộ Kịch Bản Audio Chuẩn GEMINI.md (>= 30 Phút Audio ở Tốc Độ 1.5x):
-Khi Nam Chính Nghe Được Tiếng Lòng Của Nữ Phụ: Tổng Tài Bá Đạo Và Cô Vợ Sa Điêu
-Dung lượng: 3 Tập x ~3,500 từ = 10575 từ (Tốc độ đọc 1.5x = 346 từ/phút -> >= 30 phút audio).
+Bộ Kịch Bản Audio Sa Điêu Hài Hước - Độc Quyền Triệu View:
+Thư Ký Giả Ngốc: Tiếng Lòng Chê Tổng Tài Khiến Cả Phòng Họp Cười Xỉu
+Dung lượng: 3 Tập chuẩn điện ảnh, nhịp độ dồn dập, hài hước, kịch tính, không lặp lại.
 Giọng đọc chỉ định: vi-VN-HoaiMyNeural.
-Được đối soát và tối ưu từ Cơ Sở Dữ Liệu 100 Bộ Đoản Văn Kinh Điển.
 """
 
 from typing import Dict, Any
 
 def get_sa_dieu_tieng_long_masterpiece_story(title: str = '') -> Dict[str, Any]:
-    story_title = title if title else "Khi Nam Chính Nghe Được Tiếng Lòng Của Nữ Phụ: Tổng Tài Bá Đạo Và Cô Vợ Sa Điêu"
+    story_title = title if title else "Thư Ký Giả Ngốc: Tiếng Lòng Chê Tổng Tài Khiến Cả Phòng Họp Cười Xỉu"
 
-    part1_full = """'Tôi đã dùng năm năm thanh xuân ngồi tù nhận tội thay anh, đổi lại hôm nay là thiệp cưới mạ vàng của anh cùng người đàn bà đã đâm chết em gái tôi sao?' - Tiếng xé toạc tấm thiệp cưới mạ vàng vang lên đanh thép giữa sảnh đường khách sạn bảy sao sang trọng bậc nhất thành phố!
+    part1_full = """Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng nổ tung trong đầu anh: 'Dừng bút lại đồ ngốc! Bản hợp đồng này ký xuống là mất trắng năm trăm tỷ, chưa kể chiếc cà vạt hoa hòe màu cánh sen chấm bi của sếp nhìn y hệt con công đang xòe đuôi ve vãn bạn tình!'.
 
-Từng mảnh giấy vụn màu đỏ thắm bay lả tả trong không trung như những cánh hoa sơn tra tàn lụi giữa cơn mưa mùa đông buốt giá. Cả sảnh tiệc đính hôn xa hoa với hàng trăm quan khách thượng lưu bỗng chốc rơi vào im lặng như tờ.
+Bàn tay đang cầm bút của vị tổng tài tối cao tập đoàn Lục Thị khựng lại giữa không trung. Đồng tử anh co rút kịch liệt, suýt chút nữa làm rơi chiếc bút xuống mặt bàn kính!
 
-Những tiếng cười nói rôm rả, tiếng chạm ly pha lê vang lừng bỗng chốc ngưng bặt hoàn toàn. Những vị khách quyền quý trong những bộ váy dạ hội lấp lánh kim cương trố mắt nhìn người con gái vừa xuất hiện ở trung tâm sảnh tiệc.
+Anh ngẩng phắt đầu lên, ánh mắt sắc lẹm quét qua toàn bộ phòng họp tầng sáu mươi. Ba mươi vị giám đốc cấp cao vẫn đang im phăng phắc nín thở. Chú hai Lục Chấn Phong vẫn đang mỉm cười đắc ý, còn gã đại diện đối tác ngoại quốc vẫn đang vuốt cằm tỏ vẻ phong nhã. Hoàn toàn không có ai mở miệng!
 
-Đứng giữa thảm đỏ lộng lẫy, người con gái mặc chiếc áo khoác dạ màu nâu xỉn đã cũ sờn rách mép, mái tóc đen dài gầy guộc ướt sũng nước mưa – Thẩm Diên – vừa bước chân ra khỏi cánh cổng sắt lạnh ngắt của trại giam số 4 sau đúng một nghìn tám trăm hai mươi lăm ngày bị giam cầm trong bóng tối tủi nhục.
+Đứng ngay sau lưng anh là Cố Cẩm Chi - cô thư ký thực tập mới tròn ba ngày, đeo kính gọng tròn to đùng che nửa mặt, ôm khư khư cuốn sổ tay, vẻ mặt ngơ ngác vô tội như một chú nai tơ.
 
-Đôi bàn tay cô từng là bàn tay của một nghệ sĩ dương cầm thiên tài với những giải thưởng quốc tế danh giá, từng lướt trên những phím đàn dương cầm mượt mà làm say đắm biết bao thính phòng hòa nhạc châu Âu.
+Trời đất quỷ thần ơi! Sếp của tôi nhìn thì đẹp trai ngời ngời phong độ ngút trời, mà sao mắt nhìn người lại mù dở thế này chứ! Cái gã đối tác mũi lõ da trắng ngồi đối diện kia thực chất là trùm lừa đảo xuyên quốc gia bị Interpol truy nã đỏ, công ty mẹ ở quần đảo Cayman chỉ là cái vỏ bọc rỗng tuếch không có lấy một xu dính túi! Bản hợp đồng này mà ký xuống một cái là năm trăm tỷ tiền mặt của tập đoàn bốc hơi theo mây khói, lúc đó sếp chỉ có nước ra gầm cầu mà uống gió tây bắc! Chưa kể hôm nay sếp phối đồ kiểu gì mà chiếc cà vạt hoa hòe màu cánh sen chấm bi nhìn y hệt con công đang xòe đuôi ve vãn bạn tình thế kia, gu thẩm mỹ âm vô cực đúng là phí hoài một gương mặt yêu nghiệt!
 
-Thế nhưng giờ đây, các đốt ngón tay thon thả năm nào đã bị biến dạng vẹo vọ vì những tháng ngày lao động khổ sai trong hầm mỏ khai thác đá của nhà tù, và trên mu bàn tay chằng chịt những vết sẹo bỏng sâu hoắm do bị những kẻ thù địch trong tù hành hạ bạo lực năm xưa.
+Ai vừa nói? Giọng nói trầm thấp của Lục Cảnh Hoài cất lên, mang theo luồng hàn khí thấu xương làm cả phòng họp rùng mình.
 
-Trước mặt cô, vị tổng tài quyền lực nhất giới thương trường – Phó Cẩm Thần – trong bộ âu phục đặt may riêng lộng lẫy, đứng bên cạnh thiên kim tiểu thư Bạch Uyển Đình đang khoác tay anh tình tứ.
+Các vị giám đốc nhìn nhau ngơ ngác, run rẩy lắc đầu: Dạ thưa Chủ tịch, không ai dám lên tiếng ạ!
 
-Khuôn mặt Phó Cẩm Thần thoáng qua một nét chấn động cực độ, đồng tử anh co thắt lại trong giây lát khi nhìn thấy bóng hình thân quen từng khắc sâu trong ký ức. Nhưng rồi rất nhanh, sự chấn động ấy lập tức bị sự lạnh lùng tàn nhẫn quen thuộc che lấp.
+Lục Cảnh Hoài nheo mắt nhìn quanh, cuối cùng ánh mắt anh dừng lại trên người cô thư ký thực tập Cố Cẩm Chi đang đứng ngay sát bên cạnh. Khuôn mặt cô gái vẫn ngơ ngác như nai tơ, đôi mắt tròn xoe chớp chớp đầy vẻ vô tội, hai tay ôm khư khư cuốn sổ tay trước ngực.
 
-Anh khẽ nheo đôi mắt phượng nguy hiểm, siết chặt ly rượu trên tay, giọng nói trầm thấp vang lên đầy khinh bạc và ghê tởm:
+Nhưng ngay trong giây tiếp theo, tiếng nói lanh lảnh kia lại rộn ràng gào thét bên tai anh!
 
-'Thẩm Diên! Ai cho phép một kẻ mang tiền án tiền sự như cô đặt chân đến đây phá đám? Năm năm trước cô lái xe trong lúc say xỉn gây tai nạn chết người trên đường cao tốc, tôi đã nể tình nghĩa xưa cũ mà thuê luật sư hàng đầu giảm án cho cô từ mười năm xuống còn năm năm tù giam, cô còn chưa biết đủ hay sao?
+Ủa sếp liếc nhìn tui làm chi vậy cà? Tui chỉ là con bé thực tập quèn lương sáu triệu một tháng đi làm vì đam mê thôi nha! Mau dừng bút lại đi đồ ngốc! Lật ngay sang trang mười bốn, nhìn vào dòng chữ in nhỏ xíu ở điều khoản ba chấm hai kìa! Bọn chúng gài bẫy quy đổi ngoại tệ với điều khoản phạt bồi thường gấp mười lần nếu tiến độ thi công trễ một ngày! Đội ngũ pháp chế của công ty ăn lương trăm triệu mà mắt để dưới gót chân hay sao mà duyệt được cái hợp đồng bán mạng này vậy trời!
 
-Đừng tưởng diễn màn kịch đáng thương nghèo khổ này thì tôi sẽ mềm lòng cho cô một đồng tiền bồi thường nào! Bảo vệ, lập tức tống cổ người đàn bà điên này ra ngoài! Đừng để cô ta làm bẩn buổi tiệc của tôi và Uyển Đình!'.
+Từng câu từng chữ như từng quả bom nổ tung trong màng nhĩ của Lục Cảnh Hoài!
 
-Từng lời nói cay độc, vô tình của người đàn ông mà Thẩm Diên từng dùng cả tính mạng, danh dự và thanh xuân để yêu thương như những mũi dao nhọn hoắt đâm nát cõi lòng cô!
+Anh rốt cuộc nhận ra: Tiếng nói này không phải phát ra từ loa, cũng không phải ảo giác... mà chính là suy nghĩ nội tâm, là tiếng lòng của cô thư ký ngố tàu này!
 
-Năm năm trước, trong đêm mưa bão sấm sét định mệnh trên đường vành đai ven sông, chính chiếc siêu xe thể thao do Phó Cẩm Thần cầm lái đã mất lái đâm vào dải phân cách và va chạm kinh hoàng với một chiếc xe máy đi cùng chiều.
+Lục Cảnh Hoài cố nén sự chấn động kinh hoàng trong lồng ngực, mặt không đổi sắc lập tức lật mạnh tập tài liệu dày cộp đến đúng trang mười bốn. Ngón tay thon dài của anh lướt nhanh qua từng dòng chữ in nhỏ xíu ở góc dưới điều khoản ba chấm hai.
 
-Khi chiếc xe dừng lại bên bờ vực, Phó Cẩm Thần đã bất tỉnh nhân sự trên vô lăng vì nồng độ cồn trong máu quá cao sau bữa tiệc chiêu đãi đối tác, và trên ghế phụ là tập tài liệu sáp nhập dự án nghìn tỷ của tập đoàn Phó Thị.
+Và khi những con số pháp lý tinh vi hiện ra trước mắt, sắc mặt của vị tổng tài tối cao lập tức đen kịt lại như đáy nồi! Quả nhiên đúng từng dấu chấm dấu phẩy như tiếng lòng của cô ta vừa bóc phốt!
 
-Nếu Phó Cẩm Thần bị cảnh sát giao thông xét nghiệm và kết tội lái xe say xỉn gây tai nạn chết người, anh không chỉ đối mặt với án tù cả chục năm mà toàn bộ cơ nghiệp dòng họ Phó Thị sẽ rơi vào cảnh phá sản, cổ phiếu bị xé nát trên sàn chứng khoán.
+Một cái bẫy hoàn hảo được dàn dựng công phu nhằm rút ruột tài sản tập đoàn và đẩy anh vào vòng lao lý!
 
-Vì yêu anh đến mức mù quáng, cô gái hai mươi tuổi tràn đầy tương lai Thẩm Diên đã không ngần ngại tự mình trèo sang ghế lái, nắm lấy chiếc vô lăng vấy máu, dọn sạch mọi dấu vết của anh rồi bước xuống nhận hết mọi tội lỗi về mình trước còi xe cảnh sát!
+Lục Cảnh Hoài ném mạnh tập tài liệu xuống giữa bàn, phát ra một tiếng rầm vang dội làm vỡ tan bầu không khí trang nghiêm!
 
-Trước vành móng ngựa của phiên tòa sơ thẩm, cô đã cắn chặt môi chấp nhận mọi lời kết tội, chịu đựng sự phỉ báng nhục nhã của dư luận xã hội, sự thóa mạ của báo chí truyền thông, và nỗi đau đớn khi bị chính gia đình ruột thịt từ mặt đuổi ra khỏi dòng họ... tất cả chỉ để giữ cho người đàn ông cô yêu một tiền đồ trong sạch, một vị thế tổng tài lẫy lừng không một vết nhơ!
+Anh đứng phắt dậy, đôi mắt phượng rực lửa nhìn thẳng vào gã đối tác ngoại quốc và người chú ruột đang bắt đầu toát mồ hôi hột: Giám đốc Lục Chấn Phong! Chú giải thích thế nào về điều khoản bồi thường phạt vi phạm tỷ giá tại trang mười bốn này?
 
-Thế nhưng tấn bi kịch ghê rợn nhất mà Thẩm Diên phải đón nhận lại xảy ra vào ngày cô bước qua cánh cổng sắt trại giam. Người duy nhất đến thăm cô không phải là Phó Cẩm Thần – người mà cô hy sinh cả đời để cứu vớt – mà lại chính là Bạch Uyển Đình trong bộ váy dạ hội lộng lẫy cùng nụ cười độc địa như mãng xà:
+Lục Chấn Phong mặt cắt không còn một giọt máu, lắp bắp: Việc này... việc này chắc do bên soạn thảo sơ suất...
 
-'Cảm ơn cô Thẩm đã ngu ngốc thế mạng vào tù thay cho Cẩm Thần nhé! Nhưng cô có biết nạn nhân trên chiếc xe máy bị chiếc siêu xe đâm trúng đêm đó là ai không? Chính là con bé em gái sinh đôi của cô đấy!
+Sơ suất? Lục Cảnh Hoài nhếch mép cười nhạt, giọng nói đanh thép vang vọng: Đội an ninh đâu! Lập tức phong tỏa toàn bộ cửa ra vào, tịch thu tài liệu và mời cảnh sát kinh tế đến đây làm việc cho tôi!
 
-Chính tôi đã bí mật cắt đứt dây phanh xe máy của nó và tạo hiện trường để dụ chiếc siêu xe của Cẩm Thần đâm vào! Còn Cẩm Thần ư? Sau khi tỉnh rượu, anh ấy đã hoàn toàn tin vào bản giám định giả mạo do bố tôi làm ra, tin rằng chính cô là kẻ trộm xe lái ẩu hại chết em gái mình rồi đổ vấy tội lỗi! Cả đời này anh ấy sẽ căm thù cô tột cùng! Cứ mục rữa trong bốn bức tường đá này đi con ngốc!'.
+Gã đối tác ngoại quốc thấy kế hoạch bại lộ liền hoảng loạn xách cặp toan bỏ chạy, nhưng đã bị đội vệ sĩ bọc thép tóm gọn ngay tại cửa! Cả phòng họp rơi vào cảnh hỗn loạn nghẹt thở.
 
-Tin tức ấy như sét đánh ngang tai, bóp nghẹt buồng phổi Thẩm Diên, khiến cô nôn ra một búng máu tươi ngay tại phòng thăm nuôi! Cái chết oan khiên của người em gái nhỏ vô tội cùng sự tráo trở tàn độc của Bạch gia đã biến năm năm ngục tù của Thẩm Diên thành một chuỗi ngày địa ngục trần gian.
+Trong lúc hỗn loạn, Lục Cảnh Hoài khẽ liếc mắt nhìn sang Cố Cẩm Chi. Cô nàng vẫn đứng khép nép góc tường, gương mặt giả vờ sợ sệt nép sát góc tường, nhưng tiếng lòng bên trong thì đang mở tiệc ăn mừng rộn rã:
 
-Những đêm đông lạnh buốt trong buồng giam số 4, Thẩm Diên co ro cuộn tròn trên sàn xi măng lạnh ngắt. Từng cơn đau quặn thắt từ vết thương cũ nhức nhối thấu tận xương tủy.
+Haha! Đáng đời quân lừa đảo! Cơ mà sếp ngầu thật đấy, ném tập tài liệu cái rầm nhìn uy quyền ghê chưa! Mỗi tội chiếc cà vạt hồng chấm bi vẫn là một vết nhơ thời trang không thể gột rửa! Tan họp mau mau đi sếp ơi, mười hai giờ trưa rồi, tui muốn xuống căn tin ăn cơm sườn nướng mười lăm ngàn quá trời rồi nè!
 
-Trong bóng tối mịt mùng, hình ảnh nụ cười ngây thơ của em gái nhỏ và ánh mắt dịu dàng của người yêu năm nào cứ chập chờn hiện về như một nhát dao cứa nát cõi lòng cô.
+Khóe môi Lục Cảnh Hoài giật giật kịch liệt. Anh quay lưng bước nhanh ra khỏi phòng họp, vừa đi vừa phải cắn chặt môi để không bật cười thành tiếng trước toàn thể nhân viên!"""
 
-Thẩm Diên tự hứa với lòng mình, dù có phải trả bất kỳ giá nào, dù có phải cào rách từng ngón tay trong hầm đá, cô cũng nhất định phải sống sót bước ra khỏi cánh cổng sắt này để đòi lại món nợ máu cho em gái!
+    part2_full = """Sau màn lật tẩy ngoạn mục tại phòng họp hội đồng quản trị, Cố Cẩm Chi chính thức được thăng chức thần tốc từ thư ký thực tập lên làm thư ký đặc nhiệm riêng của Tổng giám đốc, mức lương nhảy vọt từ sáu triệu lên ba mươi triệu đồng một tháng!
 
-Công lý có thể đến muộn, nhưng kẻ thủ ác nhất định sẽ phải quỳ gối đền tội trước linh hồn người vô tội!
+Cô nàng vui sướng đến mức đêm nào cũng mơ thấy mình bơi trong một bể đầy ắp tiền mặt. Nhưng niềm vui ngắn chẳng tày gang, nhiệm vụ đầu tiên ở vị trí mới lại là tháp tùng sếp lớn tham dự đêm dạ tiệc thượng lưu mừng sinh nhật sáu mươi tuổi của vị thị trưởng thành phố tại khách sạn Metropole.
 
-Phó Cẩm Thần hốt hoảng lao theo định giữ lấy cánh tay Thẩm Diên, nhưng đúng khoảnh khắc ngón tay anh vừa chạm vào mép áo khoác cũ của cô, một tiếng sấm sét nổ vang làm mất toàn bộ ánh sáng trong khách sạn! Giữa bóng tối hỗn loạn và tiếng la hét thất thanh, một bóng đen bất ngờ vung chiếc gậy sắt giáng mạnh một đòn chí tử vào sau gáy Thẩm Diên, khiến cô ngã quỵ xuống vũng nước mưa buốt giá ngoài cửa sảnh, máu tươi loang lổ trên nền đá trắng tinh khôi!
+Đêm tiệc quy tụ toàn bộ giới tài phiệt, minh tinh màn bạc và các thiên kim tiểu thư danh gia vọng tộc. Lục Cảnh Hoài trong bộ tuxedo đen tuyền lịch lãm, dáng người cao lớn thẳng tắp như cây tùng bách ngạo nghễ, vừa bước vào cửa đã trở thành tâm điểm của hàng trăm ánh mắt ngưỡng mộ.
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Cố Cẩm Chi mặc bộ đầm công sở nhã nhặn, đeo kính cận, lặng lẽ cầm cuốn sổ tay và ly nước khoáng đứng nép ở một góc bàn tiệc buffet ngắm nghía đồ ăn ngon.
 
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Thế nhưng, khoảnh khắc yên bình chưa kéo dài được bao lâu thì thiên kim tiểu thư tập đoàn dược phẩm - Bạch Nhược Vi - trong bộ váy dạ hội màu đỏ xẻ tà quyến rũ, tay cầm hai ly rượu vang đỏ thong thả lướt tới gần Lục Cảnh Hoài.
 
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Khuôn mặt Bạch Nhược Vi trang điểm tinh xảo, nở nụ cười kiều diễm mềm mại như nước, giọng nói ngọt ngào phát ra khiến bất kỳ người đàn ông nào cũng phải tan chảy: Anh Cảnh Hoài, lâu lắm rồi không gặp! Chúc mừng dự án mới của anh. Em có thể vinh dự mời anh một ly rượu mừng này được không?
 
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Lục Cảnh Hoài nhàn nhạt nhìn ả, khẽ gật đầu đưa tay định nhận lấy ly rượu vang.
 
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Đúng lúc này, chiếc đài phát thanh độc quyền trong đầu anh lại bắt đầu phát sóng với âm lượng cực đại!
 
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự thật như dòng nước ngầm cuộn sóng, dù có bị vùi lấp bao lâu thì cuối cùng cũng sẽ xé toạc lớp đất đá để vươn lên. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Ối dồi ôi! Chị gái trà xanh ngàn năm tu luyện này lại bắt đầu giở trò mỹ nhân kế rồi! Nhìn cái bộ mặt giả nai ngây thơ kia kìa, bên ngoài thì e ấp ngọt ngào như kẹo sữa, bên trong bụng dạ thì đen ngòm như nước cống! Trong cái ly rượu vang đỏ trên tay phải của ả có bỏ ba viên thuốc an thần cực mạnh kết hợp với bột kích dục nhập lậu từ chợ đen đấy! Chỉ cần sếp uống một ngụm nhỏ, mười lăm phút sau sẽ hoa mắt chóng mặt lăn đùng ra bất tỉnh! Lúc đó ả sẽ giả bộ dìu sếp lên phòng VIP tầng tám, sắp sẵn một đám phóng viên lá cải phục kích chụp ảnh giường chiếu để ép sếp phải cưới ả vào cửa! Tối hôm qua ả vừa nhắn tin với tay nhiếp ảnh gia là 'Lục Cảnh Hoài khó tính như ông già khó ở, sau khi cưới ép gã ký vào bản cam kết phân chia tài sản xong là tôi đá gã ra chuồng gà ngay'! Sếp ơi là sếp, đừng có dại gái mà uống nha, uống xong là mất cả đời trai tân lẫy lừng đấy!
 
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Bàn tay Lục Cảnh Hoài vừa chạm vào thành ly rượu vang bỗng khựng lại như bị điện giật!
 
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Khóe mắt anh co giật liên hồi. Khó ở như ông già? Mất cả đời trai tân?
 
-Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Kẻ gieo gió ắt sẽ phải gặt bão, và cái giá phải trả cho sự bội bạc sẽ luôn là sự cô độc đến tận cùng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Lục Cảnh Hoài hít sâu một hơi để ổn định lại nhịp tim đang đập thình thịch vì tức giận lẫn buồn cười. Anh nhìn chằm chằm vào ly rượu vang đỏ sóng sánh trên tay Bạch Nhược Vi, ánh mắt lạnh lẽo đến mức khiến nụ cười kiều diễm của ả ta bắt đầu cứng đờ lại.
 
-Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Bạch tiểu thư, Lục Cảnh Hoài cất giọng từ tốn, ánh mắt sắc lẹm như chim ưng nhìn con mồi: Tôi trước nay không có thói quen uống rượu của người khác đưa. Hay là... cô uống ly rượu này trước để tỏ lòng thành ý đi?
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Bạch Nhược Vi giật bắn mình, sắc mặt lập tức tái nhợt như tờ giấy trắng. Đôi bàn tay cầm ly rượu run bần bật: Anh... anh Cảnh Hoài nói đùa rồi... Đây là ly em lấy riêng cho anh mà...
 
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Sao vậy? Không dám uống à? Lục Cảnh Hoài nhếch mép, từng bước áp sát: Chẳng lẽ trong ly rượu này... có thứ gì đó không nên có sao?
 
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Tiếng động bên bàn tiệc lập tức thu hút sự chú ý của hàng chục quan khách và các phóng viên báo chí xung quanh. Mọi ánh mắt bắt đầu đổ dồn về phía Bạch Nhược Vi.
 
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Bị dồn vào chân tường, Bạch Nhược Vi hoảng sợ lúng túng lùi lại, đôi giày cao gót mười phân bất ngờ trượt trên sàn đá cẩm thạch trơn bóng!
 
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Ả hét lên một tiếng thất thanh, thân hình lảo đảo ngã nhào về phía trước! Toàn bộ ly rượu vang đỏ trên tay hắt thẳng vào chiếc váy dạ hội đắt tiền của chính ả, và theo một đường cong tuyệt mỹ, cả thân hình Bạch tiểu thư đập thẳng mặt vào chiếc bánh kem sinh nhật năm tầng khổng lồ đặt ngay cạnh đó!
 
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Bộp! Rầm!
 
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Chiếc bánh kem sụp đổ tan tành, kem tươi màu trắng xóa và mứt dâu tây đỏ lòm dính bê bết từ đầu đến chân thiên kim tiểu thư họ Bạch! Ả ngẩng đầu lên với bộ mặt lem luốc như một chú hề xiếc thất bại, vừa nhục nhã vừa sợ hãi khóc thét lên giữa tiếng cười ồ của toàn thể quan khách!
 
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Trong lúc lực lượng bảo vệ vội vã đưa Bạch Nhược Vi ra ngoài cấp cứu sự cố, Lục Cảnh Hoài quay sang nhìn Cố Cẩm Chi.
 
-Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Cô nàng đang vội vã lấy khăn tay che miệng, đôi vai gầy rung lên bần bật như đang khóc thương cho đồng loại, nhưng tiếng lòng bên trong thì đang nổ pháo hoa râm ran:
 
-Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Trời ơi cứu tui cứu tui! Cười chết mất thôi haha! Màn úp sọt bánh kem thế kỷ này xứng đáng nhận giải Oscar! Đáng đời cái thói rắp tâm hại người! Mà công nhận sếp mình tỉnh đòn thật, một chiêu gậy ông đập lưng ông chuẩn không cần chỉnh! Tối nay về phải thưởng cho sếp mười điểm thanh lịch không có nhưng! Cơ mà cái đĩa thịt bò nướng đằng kia sắp bị người ta gắp hết rồi, sếp ơi mau tha cho tui ra ăn đi mà!
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Lục Cảnh Hoài khẽ lắc đầu, trong mắt vô thức hiện lên nét dịu dàng ấm áp mà chính anh cũng không hề hay biết."""
 
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
+    part3_full = """Sự cố bánh kem chấn động giới thượng lưu chưa kịp lắng xuống thì cơn bão lớn nhất trong lịch sử gia tộc họ Lục chính thức bùng nổ tại đại hội cổ đông thường niên!
 
-    part2_full = """'Thẩm Diên!' - Tiếng gầm xé ruột xé gan của Phó Cẩm Thần vang lên xé toạc màn đêm bão giông mịt mùng! Toàn bộ vẻ kiêu ngạo, điềm tĩnh của vị tổng tài quyền lực nhất thành phố sụp đổ hoàn toàn trong tích tắc.
+Lục Chấn Phong sau khi bị vạch trần vụ hợp đồng lừa đảo đã thẹn quá hóa giận. Ông ta âm thầm câu kết với các cổ đông biến chất và quỹ đầu tư nước ngoài, thu gom cổ phần ngầm nhằm tiến hành một cuộc đảo chính lật đổ quyền lực của Lục Cảnh Hoài ngay tại sảnh chính tòa nhà tập đoàn.
 
-Anh điên cuồng lao ra ngoài cửa sảnh giữa cơn mưa buốt giá, tung một cú đá sấm sét đạp văng tên sát thủ bịt mặt đang cầm chiếc gậy sắt dính máu. Tên sát thủ hoảng sợ nhảy lên chiếc mô tô phân khối lớn nổ máy rồ ga phóng bạt mạng vào màn mưa đêm tẩu thoát.
+Chín giờ sáng, phòng họp hội nghị thượng đỉnh chật kín hàng trăm cổ đông và đại diện báo chí kinh tế.
 
-Phó Cẩm Thần quỳ sụp hai gối xuống vũng nước mưa lạnh ngắt ngập ngụa bùn đất, hai bàn tay run rẩy ôm lấy thân thể gầy guộc, nhẹ bẫng như một chiếc lá khô của Thẩm Diên vào lòng.
+Lục Chấn Phong đứng trên bục phát biểu, tay giơ cao một tập tài liệu tài chính có dấu mộc đỏ, giọng nói đắc thắng, hùng hồn vang khắp hội trường: Kính thưa toàn thể cổ đông! Tôi nắm giữ bằng chứng xác thực cho thấy Chủ tịch Lục Cảnh Hoài trong ba năm qua đã lạm quyền, bí mật chuyển dịch nguồn vốn đầu tư ra nước ngoài gây thất thoát nghiêm trọng! Căn cứ theo điều lệ công ty, tôi đại diện cho bốn mươi mốt phần trăm cổ phần liên minh yêu cầu phế truất chức vụ Chủ tịch của Lục Cảnh Hoài ngay lập tức!
 
-Máu tươi đỏ thẫm từ sau gáy cô tuôn ra xối xả, nhuộm đỏ cả vạt áo sơ mi trắng đắt tiền của anh và hòa lẫn vào dòng nước mưa buốt giá. Khuôn mặt Thẩm Diên trắng bệch không còn một giọt máu, đôi mắt nhắm nghiền, hơi thở mong manh như sợi tơ sắp đứt giữa gió giông.
+Lời tuyên bố như một đòn sấm sét giáng xuống cả hội trường! Các cổ đông nhỏ lẻ bắt đầu hoang mang bàn tán xôn xao, ống kính máy quay chớp nháy liên tục hướng về phía Lục Cảnh Hoài.
 
-Lần đầu tiên trong cuộc đời ba mươi năm kiêu hãnh đứng trên đỉnh cao tiền tài và danh vọng, Phó Cẩm Thần cảm nhận được nỗi sợ hãi tột cùng bóp nghẹt lồng ngực mình đến mức không thở nổi! Cảm giác như chính linh hồn anh đang bị xé toạc ra từng mảnh vụn.
+Lục Cảnh Hoài vẫn ngồi điềm tĩnh ở ghế chủ tọa, nhưng đôi bàn tay siết chặt dưới gầm bàn cho thấy tình thế đang vô cùng hiểm nghèo. Chú hai đã chuẩn bị đòn đánh này suốt nhiều tháng, các chứng từ giả mạo được làm quá tinh vi khiến đội ngũ luật sư tạm thời chưa thể chứng minh nguồn gốc ngay trong buổi sáng hôm nay.
 
-Anh bế xốc cô lên chạy thục mạng ra xe, hét lớn vào mặt viên tài xế riêng đang run rẩy: 'Lái xe đến Bệnh viện Trung ương ngay lập tức! Vượt toàn bộ đèn đỏ! Gọi ngay cho Giám đốc bệnh viện, bảo ông ta huy động toàn bộ chuyên gia phẫu thuật thần kinh giỏi nhất! Nếu đêm nay Thẩm Diên có mệnh hệ nào, tôi thề sẽ san phẳng toàn bộ cái bệnh viện đó!'.
+Đúng vào thời khắc sinh tử ngàn cân treo sợi tóc ấy, Cố Cẩm Chi bưng khay trà nóng thong thả bước vào phòng họp.
 
-Suốt bảy tiếng đồng hồ căng thẳng tột độ bên ngoài phòng phẫu thuật cấp cứu đặc biệt, ánh đèn đỏ phẫu thuật như ngọn lửa thiêu đốt từng khúc ruột của Phó Cẩm Thần.
+Cô đặt nhẹ tách trà lài trước mặt Lục Cảnh Hoài, cúi đầu ngoan ngoãn: Mời Chủ tịch dùng trà ạ.
 
-Anh ngồi bất động trên hàng ghế sắt lạnh lẽo ngoài hành lang, quần áo vẫn ướt sũng nước mưa và loang lổ những vệt máu tươi đã khô thẫm lại. Đôi bàn tay anh run rẩy không ngừng, từng khớp xương nhức buốt vì lo sợ.
+Và ngay giây tiếp theo, bản tin thời sự đặc biệt trong não bộ của Lục Cảnh Hoài lại được kích hoạt với tần số cực nhanh!
 
-Đúng lúc ấy, người trợ lý thân cận của anh mang đến một tập hồ sơ mật dày cộp được niêm phong cẩn thận từ cơ quan giám định:
+Má ơi! Ông chú hai này đúng là diễn viên gạo cội, mặt dày như bức tường thành Vạn Lý Trường Thành luôn á! Dám vu oan giá họa cho sếp yêu quý của tui! Chú nghĩ chú giấu kỹ lắm sao? Trong chiếc két sắt điện tử âm tường sau bức tranh phong cảnh tại căn biệt thự số tám khu nghỉ dưỡng ven biển của chú, đang cất giữ toàn bộ bản hợp đồng mua chuộc cổ đông, tài khoản ngân hàng Thụy Sĩ nhận tiền hối lộ và cả đoạn ghi âm chú thuê hacker làm giả chứng từ tài chính kìa! Mật mã két sắt thì siêu cấp quê mùa: ngày sinh của cô bồ nhí thứ ba là mười hai tháng năm năm một chín chín tám! Sếp ơi mau bấm máy gọi cho Cục Điều tra Kinh tế và Viện Kiểm sát ập vào hốt trọn ổ đi! Bằng chứng nằm mười mươi ở đó, chú hai chỉ có nước vào tù mà bóc lịch mọt gông thôi!
 
-'Phó tổng... chúng tôi đã giải mã toàn bộ dữ liệu trong chiếc USB và cử người tiếp cận hồ sơ lưu trữ của Viện Kiểm sát... Những gì cô Thẩm nói tại sảnh tiệc... hoàn toàn là sự thật một trăm phần trăm!
+Từng chi tiết sắc lẹm, từng con số mật mã rõ ràng như được in trên màn hình vi tính!
 
-Đêm tai nạn năm năm trước, chính Bạch Uyển Đình đã bỏ thuốc kích thích vào ly rượu vang của ngài tại nhà hàng, sau đó cho người dụ xe máy của em gái cô Thẩm ra đường cao tốc... Người lái xe gây tai nạn thực sự là ngài.
+Lục Cảnh Hoài không một giây chần chừ. Dưới gầm bàn, ngón tay anh nhanh như chớp gõ một tin nhắn mã hóa gửi thẳng cho vị Cục trưởng Cảnh sát Điều tra - người bạn thân thiết lâu năm của gia đình anh.
 
-Cô Thẩm vì muốn bảo vệ ngài và tập đoàn nên đã cắn răng ký vào biên bản nhận tội thay... Và đây... đây là hồ sơ bệnh án tối mật của cô Thẩm trong thời gian thụ án tại Trại giam số 4...'.
+Trên bục, Lục Chấn Phong thấy Lục Cảnh Hoài im lặng thì càng đắc chí, gõ mạnh chiếc búa gỗ: Nếu Lục Chủ tịch không thể đưa ra lời giải trình hợp lý, cuộc biểu quyết bãi nhiệm sẽ bắt đầu ngay bây giờ!
 
-Phó Cẩm Thần run rẩy cầm tập tài liệu y tế dày cộm, lật giở từng trang giấy đã ố vàng. Và khi những dòng chữ y khoa hiện ra trước mắt, trái tim anh như bị một bàn tay vô hình bóp nát vụn ra thành trăm mảnh:
+Chờ một chút! Lục Cảnh Hoài chậm rãi đứng dậy. Khí chất vương giả ngút trời tỏa ra từ người anh khiến cả hội trường lập tức nín lặng.
 
-Năm thứ ba trong tù... Thẩm Diên đã tự nguyện ký vào bản cam kết hiến tặng tủy ẩn danh cho một bệnh nhân ung thư máu giai đoạn cuối – mà mã số bệnh nhân nhận tủy in đậm trên hồ sơ... chính là mã số bệnh án của Phó Cẩm Thần trong đợt anh lâm bạo bệnh thập tử nhất sinh ba năm trước!
+Anh nhìn thẳng vào người chú ruột, khóe môi nhếch lên một nụ cười nửa miệng đầy bí ẩn: Chú hai, chú có muốn cùng toàn thể cổ đông ở đây xem một đoạn video phát trực tiếp từ căn biệt thự số tám khu nghỉ dưỡng ven biển của chú không?
 
-Hóa ra người thực sự cứu mạng anh, người cho anh cơ hội sống sót trên cõi đời này... lại chính là người con gái bị anh sỉ nhục, đày đọa suốt năm năm qua!
+Sắc mặt Lục Chấn Phong đột ngột biến sắc, tim ông ta đập thót một cái: Cậu... cậu nói nhảm nhí cái gì đó?
 
-Một tiếng thét nghẹn ngào xé ruột xé gan từ sâu thẳm lồng ngực Phó Cẩm Thần bật ra, anh đấm mạnh nắm tay vào bức tường bê tông cốt thép đến mức da thịt rách toạc, máu tươi chảy ròng ròng trên nền gạch men trắng!
+Đúng lúc ấy, màn hình led khổng lồ bốn trăm inch ở trung tâm hội trường bỗng nhiên bật sáng!
 
-Nỗi đau đớn, sự ân hận tột cùng và nỗi căm ghét chính bản thân mình như những đợt sóng thần hung hãn nhấn chìm toàn bộ tâm trí anh.
+Hình ảnh hiện lên là các cán bộ điều tra thuộc Bộ Công an đang đọc lệnh khám xét khẩn cấp ngay tại phòng ngủ biệt thự của Lục Chấn Phong! Dưới sự chứng kiến của kiểm sát viên, bức tranh phong cảnh được gỡ xuống, một cán bộ bấm đúng dãy số một hai không năm chín tám... Chiếc két sắt mở toang, để lộ hàng cọc tiền đô la, vàng thỏi và toàn bộ tài liệu gốc vạch trần âm mưu đảo chính cùng cuốn sổ tay ghi chép hối lộ nghìn tỷ!
 
-Những giọt nước mắt sám hối muộn màng của Phó Cẩm Thần rơi ướt đẫm từng trang hồ sơ bệnh án. Anh nhớ lại những ngày tháng Thẩm Diên nằm trong xà lim buốt giá, từng mũi kim chọc tủy khổng lồ đâm sâu vào xương chậu để cứu lấy mạng sống của anh.
+Chiếc búa gỗ trên tay Lục Chấn Phong rơi bịch xuống sàn đá. Ông ta run rẩy quỵ sụp hai đầu gối, hai mắt trợn trừng không thể tin nổi vào những gì đang diễn ra trước mắt!
 
-Trong khi anh sống xa hoa nhung lụa trong vòng tay của kẻ thủ ác, thì người con gái yêu anh tha thiết lại phải chịu cảnh dày vò thể xác và tinh thần tột cùng.
+Toàn bộ cổ đông và phóng viên báo chí đồng loạt đứng dậy vỗ tay vang dội như sấm! Công lý đã được thực thi một cách ngoạn mục và chấn động nhất lịch sử thương trường!
 
-Từng lời hứa năm xưa bên bờ sông, từng đóa hoa sơn tra trắng anh từng cài lên mái tóc cô... giờ đây biến thành những chiếc gai nhọn đâm thủng trái tim anh.
+Cảnh sát tư pháp lập tức tiến vào còng tay Lục Chấn Phong đưa đi giữa sự khinh bỉ của toàn thể hội trường.
 
-Cẩm Thần gục đầu bên mép giường bệnh, hai bàn tay siết chặt lấy nhau trong nỗi tuyệt vọng không lối thoát. Anh biết rằng, dù có đánh đổi cả gia sản nghìn tỷ, dù có dâng hiến cả tính mạng mình, anh cũng không thể nào xóa mờ đi những vết sẹo hằn sâu trên tâm hồn và thể xác của Thẩm Diên!
+Khi cơn bão tan đi, Lục Cảnh Hoài bước đến trước mặt Cố Cẩm Chi. Dưới ánh đèn rực rỡ của đại sảnh hội nghị, vị tổng tài quyền lực nhất thành phố bất ngờ nắm lấy bàn tay nhỏ nhắn của cô thư ký thực tập, kéo nhẹ cô vào lòng trước sự chứng kiến ngỡ ngàng của hàng trăm con người.
 
-Bạch Uyển Đình điên cuồng vung tay hắt mạnh toàn bộ lọ axit đậm đặc bốc khói nghi ngút thẳng vào mặt Thẩm Diên đang nằm trên giường bệnh! Trong tích tắc ngàn cân treo sợi tóc giữa sự sống và cái chết, một bóng đen cao lớn bất thần lao tới chắn ngang trước mặt cô! Một tiếng xèo xèo rợn người kèm theo mùi da thịt cháy khét lẹt bốc lên nồng nặc, và tiếng gầm đau đớn xé ruột xé gan của Phó Cẩm Thần vang lên chấn động cả tầng lầu bệnh viện!
+Anh cúi đầu, ghé sát vào tai cô, khẽ thì thầm bằng chất giọng trầm ấm đầy mê hoặc:
 
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Cẩm Chi, cảm ơn tiếng lòng cứu mạng của em suốt thời gian qua. Từ hôm nay, em không cần phải làm thư ký vất vả nữa... Tôi muốn mời em giữ một vị trí duy nhất trong cuộc đời tôi: Bà Lục, Phu nhân Chủ tịch tập đoàn Lục Thị!
 
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Cả hội trường nổ tung trong tiếng reo hò và chúc phúc cuồng nhiệt!
 
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Cố Cẩm Chi đờ đẫn cả người, hai mắt trợn tròn nhìn người đàn ông hoàn mỹ trước mặt, trong đầu tiếng lòng thét lên một tiếng thất thanh chấn động địa cầu:
 
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
+Ủa alo cái gì dợ?! Tui chỉ là con bé làm công ăn lương muốn hóng hớt drama kiếm tiền thưởng tết thôi mà! Sao tự nhiên lại biến thành Phu nhân Tổng tài thế này?! Khoan đã sếp ơi... làm phu nhân thì một tháng được bao nhiêu tiền tiêu vặt vậy sếp?! Trả lời tui mau đồ tổng tài cơ hội kia ơi!
 
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự thật như dòng nước ngầm cuộn sóng, dù có bị vùi lấp bao lâu thì cuối cùng cũng sẽ xé toạc lớp đất đá để vươn lên. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Kẻ gieo gió ắt sẽ phải gặt bão, và cái giá phải trả cho sự bội bạc sẽ luôn là sự cô độc đến tận cùng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
-
-    part3_full = """'A a a!' - Tiếng thét đau đớn cùng cực của Phó Cẩm Thần vang lên làm rung chuyển cả hành lang bệnh viện!
-
-Dòng chất lỏng axit đậm đặc trút trọn vẹn lên lưng và bờ vai phải của anh, thiêu cháy lớp áo sơ mi thành tro than và ăn sâu vào từng thớ thịt da làm máu tươi cùng dịch mô trào ra khét lẹt!
-
-Cơn đau đớn tột cùng như bị hàng ngàn ngọn lửa địa ngục thiêu đốt sống khiến toàn thân anh co giật dữ dội, mồ hôi lạnh toát ra ướt đẫm vầng trán tái mét, từng mạch máu nơi thái dương giật giật điên cuồng.
-
-Thế nhưng dù phải chịu đựng nỗi đau đớn thể xác vượt quá giới hạn chịu đựng của một con người, hai cánh tay rắn rỏi của Phó Cẩm Thần vẫn ghì chặt lấy thân thể Thẩm Diên trong lòng ngực mình, dùng toàn bộ tấm lưng rộng lớn của mình làm lá chắn che chở vững chắc, không để một giọt axit chết chóc nào bắn trúng vào da thịt cô!
-
-Đội ngũ an ninh bệnh viện và lực lượng cảnh sát hình sự lập tức đạp cửa xông vào khống chế bắt giữ Bạch Uyển Đình tại trận.
-
-Ả đàn bà độc ác gào thét điên dại khi chiếc còng số tám lạnh ngắt khóa chặt vào cổ tay. Toàn bộ chứng cứ phạm tội giết người, mua chuộc làm sai lệch hồ sơ tai nạn và mưu sát bằng axit của ả cùng gia tộc họ Bạch đã bị phơi bày hoàn toàn trước ánh sáng pháp lý.
-
-Phó Cẩm Thần được đưa vào phòng cấp cứu đặc biệt để lọc rửa hóa chất và phẫu thuật cấy ghép da khẩn cấp.
-
-Suốt ba tháng ròng rã điều trị bỏng sâu cấp độ ba, anh phải trải qua hàng chục ca phẫu thuật cạo bỏ mô hoại tử đau đớn như xẻ thịt lột da. Thế nhưng anh kiên quyết từ chối tiêm móc-phin giảm đau liều cao, anh muốn dùng chính nỗi đau thể xác này để chuộc lại một phần tội lỗi ngút trời của mình đối với Thẩm Diên.
-
-Sau khi xuất viện với tấm lưng chằng chịt những vết sẹo lồi lõm vĩnh viễn không thể lành lặn, việc đầu tiên Phó Cẩm Thần làm là tổ chức một buổi họp báo quốc tế.
-
-Trước hàng trăm cơ quan thông tấn báo chí, người đàn ông quyền lực nhất thành phố đã cúi đầu nhận toàn bộ trách nhiệm về vụ tai nạn năm năm trước, công khai rửa sạch mọi thanh danh và bồi thường danh dự cho Thẩm Diên.
-
-Đồng thời, anh tuyên bố chuyển giao 50% tài sản cá nhân để thành lập Quỹ Từ Thiện Âm Nhạc mang tên em gái cô, hỗ trợ đào tạo miễn phí cho hàng nghìn trẻ em nghèo có năng khiếu nghệ thuật.
-
-Và rồi, Phó Cẩm Thần tự mình bước vào đồn cảnh sát đầu thú về hành vi che giấu tội phạm năm xưa, chấp nhận mức án ba năm tù giam để đổi lấy sự thanh thản cho linh hồn.
-
-Ba năm sau, dưới ánh nắng ấm áp của một buổi chiều mùa xuân rực rỡ, Thẩm Diên đứng dưới gốc cây hoa sơn tra trắng muốt trong khuôn viên trường nghệ thuật do cô làm hiệu trưởng.
-
-Bàn tay từng bị tổn thương của cô nay đã có thể nhẹ nhàng lướt trên những phím đàn để hướng dẫn cho các em nhỏ khiếm thính.
-
-Từ phía cổng trường, một bóng người cao lớn mặc chiếc áo sơ mi giản dị, một bên vai hơi khẽ nghiêng vì di chứng vết bỏng năm xưa, lặng lẽ dừng bước từ xa nhìn cô.
-
-Thẩm Diên ngẩng đầu lên, ánh mắt hai người giao nhau giữa không trung. Không còn hận thù, không còn dằn vặt, chỉ còn lại sự bình thản của hai tâm hồn đã đi qua bão táp cuộc đời.
-
-Cô khẽ mỉm cười, một nụ cười thanh thản và dịu dàng như đóa hoa sơn tra nở rộ sau mùa đông băng giá.
-
-Những cánh hoa sơn tra trắng muốt rơi bay lượn trong làn gió xuân nhẹ nhàng, đậu lên mái tóc đen nhánh của Thẩm Diên và rơi xuống vạt áo người đàn ông đang đứng lặng thinh dưới hiên trường.
-
-Tình yêu đích thực đôi khi không nhất thiết phải là sự chiếm hữu hay gắn kết trọn đời bên nhau. Với Phó Cẩm Thần, được nhìn thấy người con gái mình yêu mỉm cười hạnh phúc trong sự tự do và thanh thản đã là sự cứu rỗi lớn nhất cho phần đời còn lại.
-
-Và với Thẩm Diên, sự buông bỏ thù hận không phải là tha thứ cho quá khứ cay đắng, mà là để trái tim mình được giải thoát khỏi những gông cùm tăm tối, hướng về một tương lai tươi sáng ngập tràn tiếng đàn dương cầm và ánh nắng ban mai.
-
-Liệu sự sám hối chân thành và vết sẹo bỏng cả đời có đủ để xóa nhòa những tổn thương trong quá khứ? Hãy để lại suy nghĩ và cảm nhận của bạn dưới phần bình luận nhé!
-
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Sự thật như dòng nước ngầm cuộn sóng, dù có bị vùi lấp bao lâu thì cuối cùng cũng sẽ xé toạc lớp đất đá để vươn lên. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Khi bạn dám đứng lên đối diện với nỗi sợ hãi lớn nhất của đời mình, bóng tối sẽ tự khắc phải lùi bước nhường đường. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Giá trị đích thực của một con người không đo bằng tiền tài danh vọng, mà nằm ở nhân cách và sự liêm chính trong tâm hồn. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Kẻ gieo gió ắt sẽ phải gặt bão, và cái giá phải trả cho sự bội bạc sẽ luôn là sự cô độc đến tận cùng. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Gió đêm từ dòng sông Nam Giang thổi qua ô cửa kính sát đất, mang theo hơi ẩm mằn mặn của cơn mưa đầu đông. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Chiếc máy quay truyền hình trực tiếp vẫn chớp đèn đỏ liên tục, truyền tải màn lật kèo chấn động đến hàng triệu khán giả. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Vú Trương quỳ rạp dưới chân tôi khóc lóc thảm thiết, lời thú tội muộn màng vang vọng khắp sảnh lớn. Ánh đèn chùm pha lê rọi xuống những tia sáng lấp lánh lên tà váy nhung đỏ rực rỡ như một đóa hồng kiêu hãnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Bà Lục ôm ngực thở dốc, vẻ mặt kiêu ngạo hống hách thường ngày giờ đây biến thành sự hoảng loạn tột cùng. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đoàn luật sư quốc tế của Thụy Sĩ mở tập tài liệu niêm phong đỏ, từng chữ ký bản quyền sáng chế hiện rõ mồn một. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Các vị tài phiệt trong khán phòng khách sạn Sheraton xì xào bàn tán, thi nhau chỉ trích sự bội bạc của Lục gia. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.
-
-Đội ngũ an ninh đặc nhiệm đứng gác nghiêm trang tại các cửa thoát hiểm, kiểm soát toàn bộ hiện trường. Tiếng nhạc khiêu vũ du dương bỗng im bặt, nhường chỗ cho một sự im lặng nghẹt thở bao trùm khắp đại sảnh. Hạnh phúc đích thực không phải là sự trả thù trong hả hê, mà là sự thanh thản khi tìm lại được chính bản thân mình. Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật."""
+Lục Cảnh Hoài không nhịn được nữa, bật cười sảng khoái, ôm chặt lấy cô gái nhỏ vào lòng giữa tràng pháo tay rộn rã của cả khán phòng!"""
 
     return {
         "title": story_title,
-        "hook": "'Tôi nắm chặt vạt áo Tạ Duệ, mắt ngân ngấn lệ: 'Anh đừng đi, không có anh em biết sống sao?'. Trong đầu tôi thì đang đếm từng giây: 'Nhanh lên con trai, nói câu cút đi xem nào, nồi lẩu hải sản của bà đang sôi sùng sục rồi đấy!'.' - Tạ Duệ bỗng dừng bước quay lại mỉm cười!",
+        "genre": "Sa Điêu Hài Hước",
         "voice": "vi-VN-HoaiMyNeural",
         "parts": [
             {
                 "part_number": 1,
-                "badge_label": "PHẦN 1",
-                "title": "Tập 1: Khi Nam Chính Nghe Được Tiếng Lòng Của Nữ Phụ: Tổng Tài Bá Đạo Và Cô Vợ Sa Điêu",
-                "hook": "'Tôi nắm chặt vạt áo Tạ Duệ, mắt ngân ngấn lệ: 'Anh đừng đi, không có anh em biết sống sao?'. Trong đầu tôi thì đang đếm từng giây: 'Nhanh lên con trai, nói câu cút đi xem nào, nồi lẩu hải sản của bà đang sôi sùng sục rồi đấy!'.' - Tạ Duệ bỗng dừng bước quay lại mỉm cười!",
+                "badge_label": "[TẬP 1]",
+                "title": f"[TẬP 1] {story_title}",
+                "hook": "Thư ký giả ngốc ngơ ngác nhưng tiếng lòng bóc phốt sếp khiến cả phòng họp nhịn cười nội thương!",
                 "body": part1_full,
-                "cliffhanger": "Phó Cẩm Thần hốt hoảng lao theo định giữ lấy cánh tay Thẩm Diên, nhưng đúng khoảnh khắc ngón tay anh vừa chạm vào mép áo khoác cũ của cô, một tiếng sấm sét nổ vang làm mất toàn bộ ánh sáng trong khách sạn! Giữa bóng tối hỗn loạn và tiếng la hét thất thanh, một bóng đen bất ngờ vung chiếc gậy sắt giáng mạnh một đòn chí tử vào sau gáy Thẩm Diên, khiến cô ngã quỵ xuống vũng nước mưa buốt giá ngoài cửa sảnh, máu tươi loang lổ trên nền đá trắng tinh khôi!",
-                "call_to_action": "Bấm theo dõi ngay để đón xem Tập 2 phát sóng tối nay!",
+                "cliffhanger": "Liệu Lục tổng có giữ được bình tĩnh khi nghe thấy những bí mật động trời tiếp theo?",
+                "call_to_action": "Bấm theo dõi kênh để đón xem Tập 2 siêu hài hước vào khung giờ tiếp theo nhé!",
+                "text": part1_full,
                 "full_text": part1_full
             },
             {
                 "part_number": 2,
-                "badge_label": "PHẦN 2",
-                "title": "Tập 2: Đấu Trí Tiếng Lòng",
-                "hook": "'Thẩm Diên!' - Tiếng gầm xé ruột xé gan của Phó Cẩm Thần vang lên xé toạc màn đêm bão giông mịt mùng!...",
+                "badge_label": "[TẬP 2]",
+                "title": f"[TẬP 2] {story_title}",
+                "hook": "Tiệc thượng lưu trà xanh giở trò chuốc thuốc, tiếng lòng thư ký vạch trần màn kịch úp sọt thế kỷ!",
                 "body": part2_full,
-                "cliffhanger": "Bạch Uyển Đình điên cuồng vung tay hắt mạnh toàn bộ lọ axit đậm đặc bốc khói nghi ngút thẳng vào mặt Thẩm Diên đang nằm trên giường bệnh! Trong tích tắc ngàn cân treo sợi tóc giữa sự sống và cái chết, một bóng đen cao lớn bất thần lao tới chắn ngang trước mặt cô! Một tiếng xèo xèo rợn người kèm theo mùi da thịt cháy khét lẹt bốc lên nồng nặc, và tiếng gầm đau đớn xé ruột xé gan của Phó Cẩm Thần vang lên chấn động cả tầng lầu bệnh viện!",
-                "call_to_action": "Đón xem Tập 3 - Đại Kết Cục phát sóng tối nay trên kênh!",
+                "cliffhanger": "Âm mưu đảo chính gia tộc khủng khiếp nào đang chờ đón họ ở đại hội cổ đông?",
+                "call_to_action": "Thả tim và đón xem Tập 3 - Hồi Kết bùng nổ ngay sau đây!",
+                "text": part2_full,
                 "full_text": part2_full
             },
             {
                 "part_number": 3,
-                "badge_label": "PHẦN 3 / KẾT",
-                "title": "Tập 3: Lật Bài Ngửa Hả Hê",
-                "hook": "'A a a!' - Tiếng thét đau đớn cùng cực của Phó Cẩm Thần vang lên làm rung chuyển cả hành lang bệnh viện!...",
+                "badge_label": "[TẬP 3 - KẾT]",
+                "title": f"[TẬP 3 - KẾT] {story_title}",
+                "hook": "Đại hội cổ đông lật kèo phút chót, màn cầu hôn bất ngờ của tổng tài khiến thư ký ngơ ngác!",
                 "body": part3_full,
-                "cliffhanger": "",
-                "call_to_action": "Liệu sự sám hối chân thành và vết sẹo bỏng cả đời có đủ để xóa nhòa những tổn thương trong quá khứ? Hãy để lại suy nghĩ và cảm nhận của bạn dưới phần bình luận nhé!",
+                "cliffhanger": "Hạnh phúc viên mãn của cặp đôi oan gia ngộ nghĩnh nhất giới thương trường!",
+                "call_to_action": "Cảm ơn các bạn đã lắng nghe trọn vẹn bộ truyện! Hãy bình luận cảm nghĩ và theo dõi kênh để đón xem bộ truyện mới tiếp theo nhé!",
+                "text": part3_full,
                 "full_text": part3_full
             }
         ]

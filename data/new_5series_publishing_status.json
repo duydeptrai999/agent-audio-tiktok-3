@@ -1,48 +1,52 @@
 {
+  "_meta": {
+    "last_published_timestamp": 1792215994.7938297,
+    "last_published_time_str": "2026-10-17 12:46:34",
+    "last_published_episode": "VID_new_5_vamat_part3"
+  },
   "new_series1_sadieu": {
-    "part1": false,
-    "part2": false,
-    "part3": false,
+    "part1": true,
+    "part2": true,
+    "part3": true,
     "produced": true,
-    "part1_produced": false,
-    "part2_produced": false,
-    "part3_produced": false
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true
   },
   "new_series2_cungdau": {
-    "part1": false,
-    "part2": false,
-    "part3": false,
+    "part1": true,
+    "part2": true,
+    "part3": true,
     "produced": true,
-    "part1_produced": false,
-    "part2_produced": false,
-    "part3_produced": false
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true
   },
   "new_series3_trinhtham": {
-    "part1": false,
-    "part2": false,
-    "part3": false,
+    "part1": true,
+    "part2": true,
+    "part3": true,
     "produced": true,
-    "part1_produced": false,
-    "part2_produced": false,
-    "part3_produced": false
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true
   },
   "new_series4_vohan": {
-    "part1": false,
-    "part2": false,
-    "part3": false,
+    "part1": true,
+    "part2": true,
+    "part3": true,
     "produced": true,
-    "part1_produced": false,
-    "part2_produced": false,
-    "part3_produced": false
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true
   },
   "new_series5_vamat": {
-    "part1": false,
-    "part2": false,
-    "part3": false,
+    "part1": true,
+    "part2": true,
+    "part3": true,
     "produced": true,
-    "part1_produced": false,
-    "part2_produced": false,
-    "part3_produced": false
-  },
-  "scheduled_base_time": 1792195200.0
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true
+  }
 }

@@ -37,11 +37,8 @@ def get_vungtrom_masterpiece_story(title: str = "") -> Dict[str, Any]:
 
     p1_fill = "Cơn gió mùa hạ thổi qua khung cửa sổ làm lay động những nhành hoa giấy tím biếc trước hiên nhà. Thanh xuân của mỗi người con gái đều có một chàng trai tỏa sáng như ánh mặt trời, rực rỡ đến mức khiến ta vừa khát khao chạm tới vừa lo sợ mình sẽ bị thiêu rụi bởi sự rạng ngời ấy. Mối tình đầu thầm kín dẫu mang theo vị ngọt ngào của những viên kẹo bạc hà, nhưng cũng đong đầy những giọt nước mắt nghẹn ngào của những lời yêu chưa một lần dám cất lên thành lời."
 
-    p1_full = "\n\n".join(p1_chunks) + "\n\n" + "\n\n".join(p1_exp)
-    while len(p1_full.split()) < 3550:
-        p1_full += "\n\n" + p1_fill
-
     p1_cliff = "Khương Ninh siết chặt lọ thủy tinh đựng một ngàn ngôi sao giấy trong tay, nhìn bóng lưng cao lớn của Thẩm Dục Trì đang thu dọn hành lý chuẩn bị rời khỏi thành phố, nước mắt cô tuôn rơi như mưa: 'Thẩm Dục Trì... Anh sắp đi thật rồi sao? Vậy còn lời hứa đợi em ở cánh cổng trường đại học thì sao hả anh?!'..."
+    p1_full = "\n\n".join(p1_chunks) + "\n\n" + "\n\n".join(p1_exp) + "\n\n" + p1_fill + "\n\n" + p1_cliff
 
     # TẬP 2
     p2_chunks = [
@@ -68,11 +65,8 @@ def get_vungtrom_masterpiece_story(title: str = "") -> Dict[str, Any]:
 
     p2_fill = "Đêm Nghi Sơn tuyết phủ trắng xóa từng mái ngói cổ kính rêu phong. Tình yêu đích thực giống như một ngọn lửa âm ỉ cháy dưới lớp tro tàn của thời gian, dù trải qua bao năm tháng xa cách nghìn trùng, chỉ cần một làn gió nhẹ của sự tương phùng là lại bùng lên rực rỡ và ấm áp khôn cùng. Định mệnh đã gắn kết hai tâm hồn lại với nhau thì dù có đi qua bao giông bão bể dâu, cuối cùng họ vẫn sẽ tìm về bên nhau để viết tiếp khúc ca hạnh phúc trọn đời."
 
-    p2_full = "\n\n".join(p2_chunks) + "\n\n" + "\n\n".join(p2_exp)
-    while len(p2_full.split()) < 3550:
-        p2_full += "\n\n" + p2_fill
-
     p2_cliff = "Thẩm Dục Trì ôm chặt Khương Ninh trong vòng tay ấm áp, cúi đầu ghé sát vào tai cô thì thầm bằng chất giọng trầm khàn đầy ma mị: 'Ninh Ninh... Bốn năm qua ở nước Đức lạnh lẽo, đêm nào anh cũng nhớ em đến phát điên... Lần này trở về, anh tuyệt đối sẽ không để bất kỳ ai mang em rời xa anh thêm một lần nào nữa!'..."
+    p2_full = "\n\n".join(p2_chunks) + "\n\n" + "\n\n".join(p2_exp) + "\n\n" + p2_fill + "\n\n" + p2_cliff
 
     # TẬP 3
     p3_chunks = [
@@ -96,11 +90,8 @@ def get_vungtrom_masterpiece_story(title: str = "") -> Dict[str, Any]:
 
     p3_fill = "Ánh pháo hoa muôn màu lung linh soi sáng khắp bầu trời đêm thành phố. Cuộc đời này có biết bao nhiêu cuộc gặp gỡ tình cờ, nhưng tìm được một người vì mình mà kiên định chờ đợi suốt mười năm thanh xuân là điều may mắn và thiêng liêng nhất trần gian. Hạnh phúc không nằm ở những điều hoa mỹ xa xôi, mà hiện hữu trong từng cái ôm ấm áp, từng ánh mắt thâm tình và sự chung thủy sắt son vượt qua mọi khoảng cách thời gian và không gian."
 
-    p3_full = "\n\n".join(p3_chunks) + "\n\n" + "\n\n".join(p3_exp)
-    while len(p3_full.split()) < 3550:
-        p3_full += "\n\n" + p3_fill
-
     p3_cliff = "Thẩm Dục Trì nhẹ nhàng đeo chiếc nhẫn kim cương vào ngón áp út của Khương Ninh, trao cho cô nụ hôn ngọt ngào dưới bầu trời ngập tràn pháo hoa rực rỡ, khép lại trọn vẹn mười năm vụng trộm thích thầm và mở ra một chương mới ngập tràn hạnh phúc lứa đôi..."
+    p3_full = "\n\n".join(p3_chunks) + "\n\n" + "\n\n".join(p3_exp) + "\n\n" + p3_fill + "\n\n" + p3_cliff
 
     return {
         "title": story_title,

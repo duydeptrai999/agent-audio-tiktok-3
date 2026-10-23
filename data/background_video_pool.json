@@ -1,14 +1,14 @@
 {
   "active_video": {
-    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
-    "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+    "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
     "url": "",
-    "title": "traditional_wood_carving_asmr_POqfxxmiNo",
-    "total_duration": 4580.28,
-    "current_offset": 0.0,
-    "audios_used": 0,
+    "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+    "total_duration": 3909.57,
+    "current_offset": 583.47,
+    "audios_used": 1,
     "max_audios": 2,
-    "registered_at": "2026-10-17 04:20:25"
+    "registered_at": "2026-10-23 04:17:18"
   },
   "used_history": [
     {
@@ -202,7 +202,370 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-17 04:18:43"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 593.66,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 04:20:25"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 500.5799999999999,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 07:48:23"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 597.6899999999999,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 07:49:32"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 610.75,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 17:13:32"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 538.95,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 17:18:48"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 610.78,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-17 17:24:45"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 3600.8499999999995,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-18 00:05:48"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 3547.75,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-18 06:12:10"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 3586.96,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-18 09:22:04"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 3608.54,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-18 13:41:37"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 3661.5599999999995,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-18 17:41:24"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 3623.8,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-18 21:24:04"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 3590.29,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 06:06:41"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 3631.91,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 09:11:40"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 609.01,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 13:01:25"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 3646.83,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 16:43:49"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 2608.0699999999997,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 17:20:05"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 3406.8600000000006,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 17:51:33"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 1949.89,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 18:22:04"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 2169.84,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-19 21:23:25"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 1518.3,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-20 10:05:45"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 2486.3499999999995,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-20 12:27:05"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 2179.92,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-20 15:25:23"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 3158.24,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-20 18:25:51"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 2355.9300000000003,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-20 23:11:11"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 2554.6499999999996,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-21 18:49:24"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 1987.34,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-21 21:48:04"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 1257.28,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-22 06:06:21"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 967.23,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-22 07:21:24"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 1320.87,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-22 10:55:23"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 2098.31,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-22 15:06:03"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 2548.62,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-22 18:20:25"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 1322.83,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-22 22:00:20"
     }
   ],
-  "rotation_count": 13
+  "rotation_count": 46
 }

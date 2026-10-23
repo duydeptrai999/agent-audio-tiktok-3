@@ -246,6 +246,88 @@ def ensure_public_privacy(page) -> bool:
         print(f"  ⚠️ [Privacy Check Warning] {e}")
         return False
 
+def enable_auto_captions_feature(page) -> bool:
+    """Tự động kích hoạt tính năng Tạo Phụ Đề Tự Động (Auto-caption CC) của TikTok Studio."""
+    try:
+        # Tìm switch/checkbox hoặc toggle phụ đề
+        caption_loc = (
+            page.locator('text="Tạo phụ đề tự động"')
+            .or_(page.locator('text="Auto-generated captions"'))
+            .or_(page.locator('text="Phụ đề tự động"'))
+            .or_(page.locator('text="Phụ đề"'))
+        )
+        if caption_loc.count() > 0 and caption_loc.first.is_visible():
+            switch = caption_loc.first.locator('xpath=..//input[@type="checkbox"]')
+            if switch.count() > 0:
+                if not switch.is_checked():
+                    switch.click(force=True)
+                    print("  📝 [Auto-Caption CC] Đã bật tính năng Phụ đề Tự động của TikTok Studio!")
+                    return True
+                else:
+                    print("  📝 [Auto-Caption CC] Phụ đề tự động đã ở trạng thái BẬT.")
+                    return True
+            else:
+                caption_loc.first.click(force=True)
+                print("  📝 [Auto-Caption CC] Đã click bật tùy chọn Phụ đề tự động!")
+                return True
+        print("  ℹ️ [Auto-Caption CC] Sẵn sàng cho TikTok tự động sinh phụ đề CC.")
+        return False
+    except Exception as e:
+        print(f"  ⚠️ [Auto-Caption Warning] {e}")
+        return False
+
+def add_to_playlist_feature(page, playlist_name: str) -> bool:
+    """Tự động thêm video vào Danh sách phát (Playlist / Tuyển tập) theo bộ truyện trên TikTok Studio."""
+    if not playlist_name:
+        return False
+    try:
+        print(f"  📚 [Playlist] Đang tìm kiếm mục Danh sách phát cho bộ truyện: '{playlist_name}'...")
+        playlist_btn = (
+            page.locator('div:has-text("Thêm vào danh sách phát")')
+            .or_(page.locator('div:has-text("Add to playlist")'))
+            .or_(page.locator('button:has-text("Thêm vào danh sách phát")'))
+            .or_(page.locator('button:has-text("Add to playlist")'))
+            .or_(page.locator('div:has-text("Tuyển tập")'))
+        )
+        if playlist_btn.count() > 0 and playlist_btn.first.is_visible():
+            playlist_btn.first.scroll_into_view_if_needed()
+            playlist_btn.first.click(force=True)
+            time.sleep(1.0)
+            
+            # Tìm danh sách phát đã có trùng tên
+            item = page.locator(f'text="{playlist_name}"')
+            if item.count() > 0 and item.first.is_visible():
+                item.first.click(force=True)
+                print(f"  ✅ [Playlist] Đã chọn Danh sách phát: '{playlist_name}'!")
+                return True
+            else:
+                # Nếu chưa có, tìm nút "Tạo danh sách phát"
+                create_btn = (
+                    page.locator('button:has-text("Tạo danh sách phát")')
+                    .or_(page.locator('button:has-text("Create playlist")'))
+                    .or_(page.locator('div:has-text("Tạo danh sách phát mới")'))
+                )
+                if create_btn.count() > 0 and create_btn.first.is_visible():
+                    create_btn.first.click(force=True)
+                    time.sleep(0.8)
+                    input_box = page.locator('input[placeholder*="danh sách phát"], input[placeholder*="playlist"]')
+                    if input_box.count() > 0:
+                        input_box.first.fill(playlist_name)
+                        time.sleep(0.5)
+                        confirm_create = page.locator('button:has-text("Tạo"), button:has-text("Create"), button:has-text("Xác nhận")')
+                        if confirm_create.count() > 0:
+                            confirm_create.first.click(force=True)
+                            print(f"  🎉 [Playlist] Đã tạo mới và thêm vào Danh sách phát: '{playlist_name}'!")
+                            return True
+            print(f"  ℹ️ [Playlist] Đã tương tác với menu Danh sách phát.")
+            return True
+        else:
+            print(f"  ℹ️ [Playlist Fallback] Tài khoản chưa hiển thị tính năng Creator Playlist trên Studio (Hệ thống sẽ kích hoạt phễu Fallback: Comment ghim mỏ neo + Unique Series Hashtag).")
+            return False
+    except Exception as e:
+        print(f"  ⚠️ [Playlist Warning] {e}")
+        return False
+
 def wait_for_content_checks(page, max_wait: int = 40) -> bool:
     """Graceful check wait: Chờ thông minh 30-45s cho 'Kiểm tra nội dung nhanh' hoàn tất trước khi bấm Đăng."""
     print(f"  🔍 [Check] Đang chờ hoàn tất 'Kiểm tra nội dung nhanh' (tối đa {max_wait}s)...")
@@ -299,6 +381,65 @@ def handle_post_confirmation_modal(page, max_wait: int = 8) -> bool:
             pass
     return False
 
+def set_and_verify_caption(page, caption: str, max_retries: int = 4) -> bool:
+    """
+    Điền và xác thực 100% Tiêu đề & Caption chuẩn:
+    - Loại bỏ triệt để tên file raw (VID_...) do TikTok Studio tự động điền vào ô Mô tả sau khi upload.
+    - Dùng bàn phím thực (insert_text) để đồng bộ state của Lexical / Draft.js editor.
+    - Xác thực lại innerText xem đã nhận đúng nội dung hay chưa trước khi rời khỏi ô nhập.
+    """
+    caption_selectors = [
+        'div.public-DraftEditor-content',
+        'div[contenteditable="true"]',
+        'div.notranslate[contenteditable="true"]',
+        'div[data-placeholder*="mô tả" i]',
+        'div[data-placeholder*="tiêu đề" i]',
+        'div[role="combobox"]'
+    ]
+
+    for attempt in range(1, max_retries + 1):
+        for sel in caption_selectors:
+            try:
+                box = page.locator(sel).first
+                if box.count() > 0 and box.is_visible():
+                    box.scroll_into_view_if_needed()
+                    box.click(force=True)
+                    time.sleep(0.3)
+                    # Chọn tất cả và xóa
+                    page.keyboard.press("Control+A")
+                    page.keyboard.press("Backspace")
+                    time.sleep(0.2)
+
+                    # Nếu vẫn còn sót text, xóa thêm bằng Delete
+                    try:
+                        cur = box.inner_text().strip()
+                        if cur and ("VID_" in cur or len(cur) > 5):
+                            page.keyboard.press("Control+A")
+                            page.keyboard.press("Delete")
+                            time.sleep(0.2)
+                    except Exception:
+                        pass
+
+                    # Gõ caption chuẩn vào ô
+                    page.keyboard.insert_text(caption)
+                    time.sleep(0.5)
+
+                    # Kiểm tra lại nội dung ô nhập
+                    current_text = box.inner_text().strip()
+                    first_words = [w for w in caption.split()[:3] if len(w) > 2]
+                    has_match = any(w in current_text for w in first_words) if first_words else (len(current_text) > 10)
+
+                    if "VID_" not in current_text and has_match:
+                        print(f"  ✅ [Caption] Đã xác thực thành công Tiêu đề & Caption chuẩn ({len(current_text)} ký tự):")
+                        print(f"     => {current_text[:75]}...")
+                        return True
+                    else:
+                        print(f"  ⚠️ [Caption] Thử lại {attempt}/{max_retries}: ô nhập vẫn dính tên file hoặc chưa nhận text ('{current_text[:40]}')...")
+            except Exception:
+                pass
+        time.sleep(1)
+    return False
+
 # ==============================================================================
 # 4. HÀM XUẤT BẢN VIDEO CHÍNH
 # ==============================================================================
@@ -308,7 +449,9 @@ def upload_and_publish_video(
     caption: str,
     screenshot_prefix: str = "upload",
     thumbnail_path: Optional[Path] = None,
-    wait_content_checks: bool = True
+    wait_content_checks: bool = True,
+    playlist_name: Optional[str] = None,
+    enable_auto_captions: bool = True
 ) -> bool:
     """Tải lên và xuất bản 1 video lên TikTok Studio qua Cốc Cốc. Trả về True nếu thành công."""
     if not video_path.exists():
@@ -362,16 +505,15 @@ def upload_and_publish_video(
                     browser = p.chromium.launch_persistent_context(
                         user_data_dir=coccoc_ud,
                         executable_path=coccoc_exe,
-                        headless=False,
+                        headless=True,
                         args=[
                             "--disable-blink-features=AutomationControlled",
-                            "--start-maximized",
                             "--profile-directory=Default"
                         ],
-                        no_viewport=True
+                        viewport={"width": 1920, "height": 1080}
                     )
 
-                    page = browser.new_page()
+                    page = browser.pages[0] if browser.pages else browser.new_page()
                     upload_url = "https://www.tiktok.com/tiktokstudio/upload?from=webapp"
                     print("  🌐 Đang mở trang TikTok Studio Upload...")
                     page.goto(upload_url, timeout=90000)
@@ -410,25 +552,8 @@ def upload_and_publish_video(
                     time.sleep(3)
                     dismiss_popups(page)
 
-                    # Điền Caption & Hashtags
-                    selectors = [
-                        'div[contenteditable="true"]',
-                        'div.notranslate[contenteditable="true"]',
-                        'div.public-DraftEditor-content'
-                    ]
-                    for sel in selectors:
-                        try:
-                            box = page.locator(sel).first
-                            if box.count() > 0 and box.is_visible():
-                                box.click(force=True)
-                                page.keyboard.press("Control+A")
-                                page.keyboard.press("Backspace")
-                                time.sleep(0.3)
-                                box.fill(caption)
-                                print("  [Caption] Đã điền xong Caption & Hashtags!")
-                                break
-                        except Exception:
-                            pass
+                    # Điền sơ bộ Caption & Hashtags
+                    set_and_verify_caption(page, caption, max_retries=2)
 
                     # Đợi upload xong 100%
                     print("  [Upload] Đang theo dõi tiến trình tải lên dữ liệu...")
@@ -471,6 +596,10 @@ def upload_and_publish_video(
                     dismiss_popups(page)
                     time.sleep(1)
 
+                    # 🎯 THIẾT LẬP VÀ XÁC THỰC TIÊU ĐỀ & CAPTION CHUẨN (Sau khi TikTok upload 100%)
+                    print(f"  📝 [Title] Đang thiết lập Tiêu đề & Caption chuẩn cho video (loại bỏ triệt để tên file VID_)...")
+                    set_and_verify_caption(page, caption, max_retries=4)
+
                     # Pre-publish check: Đảm bảo chế độ Public ("Mọi người") được kích hoạt
                     ensure_public_privacy(page)
 
@@ -478,6 +607,42 @@ def upload_and_publish_video(
                     if wait_content_checks:
                         wait_for_content_checks(page, max_wait=35)
                         ensure_public_privacy(page)
+
+                    # Tự động kích hoạt Phụ Đề Tự Động (Auto-caption CC) theo yêu cầu người dùng
+                    if enable_auto_captions:
+                        enable_auto_captions_feature(page)
+
+                    # Tự động thêm video vào Danh Sách Phát / Tuyển Tập theo bộ truyện
+                    if playlist_name:
+                        add_to_playlist_feature(page, playlist_name)
+                    else:
+                        try:
+                            from config.settings import AUTO_ADD_TO_PLAYLIST
+                            if AUTO_ADD_TO_PLAYLIST:
+                                # Trích xuất tên bộ truyện từ caption (ví dụ: [TẬP 1] Nàng Dâu Thức Tỉnh -> [TRỌN BỘ] Nàng Dâu Thức Tỉnh)
+                                import re
+                                match = re.search(r'\[(TẬP|PHẦN|TẬP\s*\d+|KẾT)[^\]]*\]\s*([^:\-\n#]+)', caption, flags=re.IGNORECASE)
+                                if match:
+                                    derived_series = f"[TRỌN BỘ] {match.group(2).strip()}"
+                                    add_to_playlist_feature(page, derived_series)
+                        except Exception:
+                            pass
+
+                    # 🛡️ CỔNG BẢO VỆ TIÊU ĐỀ (PRE-POST TITLE AUDIT GATE)
+                    # Đảm bảo 100% không bao giờ bị lỗi tên file VID_ trước khi bấm Đăng
+                    try:
+                        cur_box = page.locator('div[contenteditable="true"], div.public-DraftEditor-content').first
+                        if cur_box.count() > 0:
+                            current_title_text = cur_box.inner_text().strip()
+                            first_words = [w for w in caption.split()[:3] if len(w) > 2]
+                            has_match = any(w in current_title_text for w in first_words) if first_words else (len(current_title_text) > 10)
+                            if "VID_" in current_title_text or not has_match:
+                                print(f"  ⚠️ [Title Gate] Phát hiện ô Mô tả bị dính tên file ('{current_title_text[:40]}') -> Điền lại caption chuẩn!")
+                                set_and_verify_caption(page, caption, max_retries=4)
+                            else:
+                                print(f"  🎯 [Title Gate] Xác nhận Tiêu đề chuẩn 100% trước khi Đăng: {current_title_text[:60]}...")
+                    except Exception as e_gate:
+                        print(f"  ⚠️ [Title Gate] Kiểm tra title: {e_gate}")
 
                     # Click nút Đăng
                     post_btn = None

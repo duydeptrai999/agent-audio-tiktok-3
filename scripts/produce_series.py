@@ -140,6 +140,8 @@ async def generate_tts_for_part(text: str, voice: str, output_path: Path):
 
 def produce_story_videos(story_data: dict, prefix: str, bgm_file: Path):
     """Sản xuất toàn bộ audio và render 3 video cho 1 bộ truyện với B-Roll riêng biệt và Thumbnail riêng từng phần."""
+    from core.stories.script_quality_gate import require_preflight_experience
+    require_preflight_experience()
     out_dir = root / "assets" / "output"
     audio_dir = root / "assets" / "audio"
     thumb_dir = root / "assets" / "thumbnails"
@@ -152,6 +154,11 @@ def produce_story_videos(story_data: dict, prefix: str, bgm_file: Path):
     print(f"🎬 BẮT ĐẦU SẢN XUẤT TRỌN BỘ: {story_data['title']}")
     print(f"🎙️ Giọng đọc: {story_data['voice']} (Tốc độ 1.5x)")
     print("=" * 70)
+
+    # BẮT BUỘC: Đọc kinh nghiệm từ GEMINI.md & 5_CYCLES_SCRIPT_EVOLUTION_EXPERIENCE.md trước khi sản xuất
+    from core.stories.script_quality_gate import validate_story_series, require_preflight_experience
+    require_preflight_experience()
+    story_data = validate_story_series(story_data)
 
     for part in story_data["parts"]:
         p_num = part["part_number"]

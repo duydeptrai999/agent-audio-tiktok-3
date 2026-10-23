@@ -72,8 +72,10 @@ class MasterScriptEngine:
         genre_hint: str = ""
     ) -> Dict[str, Any]:
         """
-        GIAI ĐOẠN 1: Bắt buộc tra cứu cơ sở tri thức trước khi viết.
+        GIAI ĐOẠN 1: Bắt buộc tra cứu cơ sở tri thức và kinh nghiệm 10 vòng trước khi viết.
         """
+        from core.stories.script_quality_gate import require_preflight_experience
+        require_preflight_experience()
         logger.info(f"Đang tra cứu cơ sở tri thức cho đề tài: '{topic_title}' (genre: '{genre_hint}')...")
         brief = require_knowledge_consultation(
             category=category,
@@ -155,12 +157,14 @@ class MasterScriptEngine:
         verify_knowledge_gate(consult_data)
 
         from core.narrative_synthesizer import get_masterpiece_narrative
-        return get_masterpiece_narrative(
+        from core.stories.script_quality_gate import validate_story_series
+        raw_story = get_masterpiece_narrative(
             genre_key=genre_key,
             custom_title=title,
             voice=voice,
             consult_data=consult_data
         )
+        return validate_story_series(raw_story)
 
     def generate_full_masterpiece(
         self,

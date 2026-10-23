@@ -31,12 +31,19 @@ POOL_DIR = ROOT_DIR / "assets" / "footage" / "youtube_pool"
 SLICES_DIR = ROOT_DIR / "assets" / "footage" / "slices"
 STATE_FILE = ROOT_DIR / "data" / "background_video_pool.json"
 
+# Danh sách chủ đề video nền: Ưu tiên video ASMR Trung Quốc (Douyin style) giữ chân người xem cực đỉnh:
+# 1. ASMR làm đẹp, chăm sóc da, trang điểm chị em Trung Quốc
+# 2. ASMR nấu ăn mỹ vị ẩm thực truyền thống Trung Hoa
+# 3. ASMR làm bánh / điểm tâm hoa văn nghệ thuật
+# 4. ASMR thủ công mỹ nghệ di sản phi vật thể Trung Quốc (gốm sứ, thêu thùa, chạm khắc)
 DEFAULT_SEARCH_THEMES = [
+    {"theme": "chinese_beauty_asmr", "query": "chinese makeup skincare asmr satisfying douyin no music"},
+    {"theme": "chinese_cooking_asmr", "query": "chinese traditional cooking asmr satisfying street food no music"},
+    {"theme": "chinese_pastry_baking", "query": "traditional chinese pastry dim sum baking asmr no music"},
+    {"theme": "chinese_craft_heritage", "query": "chinese intangible cultural heritage traditional craft embroidery pottery wood asmr"},
+    {"theme": "satisfying_asmr_relaxing", "query": "satisfying visual asmr relaxing handmade craft no music 1 hour"},
     {"theme": "craft", "query": "traditional craft pottery wood carving asmr no music 1 hour"},
-    {"theme": "baking", "query": "baking cake decorating asmr no music 2 hours"},
-    {"theme": "scenery", "query": "peaceful nature landscape 4k relaxing scenery 2 hours"},
-    {"theme": "cooking", "query": "cozy cooking satisfying asmr healing 2 hours"},
-    {"theme": "woodworking", "query": "traditional woodworking craft satisfying asmr 1 hour"}
+    {"theme": "baking", "query": "baking cake decorating asmr no music 2 hours"}
 ]
 
 def extract_video_slice(
@@ -69,9 +76,9 @@ def extract_video_slice(
         str(slice_path)
     ]
     try:
-        subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, timeout=180)
+        subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, timeout=600)
     except subprocess.TimeoutExpired:
-        print(f"[BackgroundManager Error] Timeout 180s khi cắt video slice {slice_path.name}")
+        print(f"[BackgroundManager Error] Timeout 600s khi cắt video slice {slice_path.name}")
         raise
     return slice_path
 

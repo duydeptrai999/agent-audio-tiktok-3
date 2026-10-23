@@ -1,0 +1,52 @@
+{
+  "b2_series1_sadieu": {
+    "produced": true,
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true,
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "b2_series2_vamat": {
+    "produced": true,
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true,
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "b2_series3_cungdau": {
+    "produced": true,
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true,
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "b2_series4_trinhtham": {
+    "produced": true,
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true,
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "b2_series5_chualanh": {
+    "produced": true,
+    "part1_produced": true,
+    "part2_produced": true,
+    "part3_produced": true,
+    "part1": true,
+    "part2": true,
+    "part3": true
+  },
+  "_meta": {
+    "last_published_timestamp": 1792234366.7023034,
+    "last_published_time_str": "2026-10-17 17:52:46",
+    "last_published_episode": "VID_b2_5_chualanh_part3"
+  }
+}

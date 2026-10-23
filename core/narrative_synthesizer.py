@@ -19,7 +19,7 @@ logger = logging.getLogger("NarrativeSynthesizer")
 GENRE_ELEMENTS = {
     "TRONG_SINH": {
         "subjects": [
-            "Thẩm Băng Tuyết thong thả nhấp ngụm rượu vang đỏ, khóe môi khẽ cong lên một nét cười lạnh thấu xương.",
+            "Ngón tay tôi lật nhẹ góc bản hợp đồng ba mươi tỷ, để lộ dòng chữ ký giả mạo của người cha đã khuất.",
             "Lục Diễm run rẩy lấy khăn tay lau mồ hôi trên trán, ánh mắt căm hận nhưng bất lực nhìn về phía tôi.",
             "Bạch Thư Dao co rúm lại dưới chân bàn tiệc, chiếc trâm cài ngọc bích như thiêu đốt da thịt ả.",
             "Phó Trầm Uyên đứng tựa lưng vào chiếc Lincoln bọc thép, ánh mắt thâm trầm như đáy biển đêm.",
@@ -43,8 +43,8 @@ GENRE_ELEMENTS = {
             "Ánh bình minh rực rỡ ló dạng nơi chân trời xa xăm, xua tan đi màn sương mù u ám của mười năm bùn lầy tủi nhục."
         ],
         "psychologies": [
-            "Trong ván cờ sinh tử của giới tài phiệt, kẻ yếu đuối rơi nước mắt chỉ nhận lại sự giẫm đạp không thương tiếc.",
-            "Mười năm sống trong bùn lầy kiếp trước đã tôi luyện cho tôi một trái tim sắt đá, không còn chỗ cho lòng trắc ẩn mù quáng.",
+            "Tiếng bước chân gấp gáp của đoàn thanh tra thuế vang lên trên nền đá hoa cương sáng bóng.",
+            "Từng con số kiểm toán đối chiếu hiện rõ mồn một trên màn hình máy chiếu phòng họp.",
             "Công lý có thể đến muộn màng qua bao thăng trầm, nhưng vòng xoay nhân quả chưa bao giờ bỏ sót bất kỳ ai.",
             "Một người phụ nữ có bản lĩnh tự chủ về kinh tế và kiên định về tinh thần sẽ không bao giờ bị khuất phục trước nghịch cảnh.",
             "Sự phản bội từ những người thân cận nhất luôn để lại những vết sẹo sâu hoắm, nhưng cũng là bài học đắt giá nhất.",
@@ -58,7 +58,7 @@ GENRE_ELEMENTS = {
             "Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.",
             "Ván cờ sinh tử này đã chính thức ngã ngũ, và kẻ thủ ác sẽ phải trả giá đắt cho từng tội lỗi của mình.",
             "Một trật tự mới đã được thiết lập, mở ra kỷ nguyên tự do và thịnh vượng cho những người xứng đáng.",
-            "Từng con số kiểm toán sắc lẹm như những nhát búa đóng chặt vào cỗ quan tài chôn vùi dã tâm của kẻ phản trắc.",
+            "Mũi kéo inox bấm đứt sợi chỉ niêm phong với một tiếng tách dứt khoát.",
             "Bánh xe lịch sử vẫn tiếp tục lăn bánh, cuốn trôi đi những tham vọng ngông cuồng của một gia tộc phù phiếm.",
             "Cánh cửa quá khứ đã vĩnh viễn khép lại, nhường chỗ cho một hành trình mới ngập tràn ánh sáng và niềm kiêu hãnh.",
             "Sức mạnh của ý chí độc lập và lòng quả cảm đã chiến thắng mọi âm mưu đê hèn của lòng dạ con người.",
@@ -108,7 +108,7 @@ GENRE_ELEMENTS = {
             "Mọi toan tính bẩn thỉu cuối cùng đều phải phơi bày dưới ánh sáng công lý đanh thép của pháp luật.",
             "Ván cờ sinh tử này đã chính thức ngã ngũ, và kẻ thủ ác sẽ phải trả giá đắt cho từng tội lỗi của mình.",
             "Một trật tự mới đã được thiết lập, mở ra kỷ nguyên tự do và thịnh vượng cho những người xứng đáng.",
-            "Từng con số kiểm toán sắc lẹm như những nhát búa đóng chặt vào cỗ quan tài chôn vùi dã tâm của kẻ phản trắc.",
+            "Mũi kéo inox bấm đứt sợi chỉ niêm phong với một tiếng tách dứt khoát.",
             "Bánh xe lịch sử vẫn tiếp tục lăn bánh, cuốn trôi đi những tham vọng ngông cuồng của một gia tộc phù phiếm.",
             "Cánh cửa quá khứ đã vĩnh viễn khép lại, nhường chỗ cho một hành trình mới ngập tràn ánh sáng và niềm kiêu hãnh.",
             "Sức mạnh của tình mẫu tử và lòng bao dung đã chiến thắng mọi âm mưu đê hèn của lòng dạ con người.",
@@ -171,9 +171,9 @@ def generate_unique_prose_padding(genre_key: str, min_words: int, existing_paras
 
 def ensure_part_word_count_and_uniqueness(paragraphs: List[str], genre_key: str, target_words: int = 3500) -> str:
     """
-    Đảm bảo 100% đoạn văn là duy nhất và tổng số từ đạt chuẩn >= 3,460 từ.
+    Đảm bảo 100% đoạn văn là duy nhất và KHÔNG BAO GIỜ độn chữ cơ học (Zero Synthetic Padding).
+    Chất lượng kịch tính, nhịp thở và xúc cảm chân thật là ưu tiên tuyệt đối.
     """
-    # 1. Deduplicate while preserving order
     unique_paras: List[str] = []
     seen = set()
     for p in paragraphs:
@@ -182,12 +182,7 @@ def ensure_part_word_count_and_uniqueness(paragraphs: List[str], genre_key: str,
             unique_paras.append(cleaned)
             seen.add(cleaned)
             
-    # 2. If short of target_words, generate unique padding paragraphs
-    cur_words = sum(len(p.split()) for p in unique_paras)
-    if cur_words < target_words:
-        needed_paras = generate_unique_prose_padding(genre_key, target_words, unique_paras)
-        unique_paras.extend(needed_paras)
-        
+    # Triệt tiêu hoàn toàn padding ma trận vô hồn để kịch bản không bị 'giả tạo/độ nhạt'
     return "\n\n".join(unique_paras)
 
 
@@ -205,7 +200,7 @@ def get_me_chong_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoai
     
     return {
         "title": title,
-        "hook": "'Nếu bảy năm trước bà không ném vali đồ của tôi ra đường trong đêm mưa bão, đuổi mẹ con tôi như đuổi một con chó, thì hôm nay bà đã không phải quỳ gối dưới chân tôi cầu xin giữ lại căn biệt thự này!' - Tiếng đập bàn sắc lẹm xé toạc không gian đại hội gia tộc!",
+        "hook": "Chiếc thìa mạ vàng vừa chạm vào đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng đã lộ ra trước mắt tôi.",
         "genre": "ME_CHONG",
         "voice": voice,
         "parts": [
@@ -213,7 +208,7 @@ def get_me_chong_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoai
                 "part_number": 1,
                 "badge_label": "PHẦN 1",
                 "title": "Tập 1: Đêm Mưa Bị Đuổi Khỏi Hào Môn & Thân Thế Thật",
-                "hook": "'Nếu bảy năm trước bà không ném vali đồ của tôi ra đường trong đêm mưa bão, đuổi mẹ con tôi như đuổi một con chó, thì hôm nay bà đã không phải quỳ gối dưới chân tôi!'...",
+                "hook": "Chiếc thìa mạ vàng vừa chạm vào đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng đã lộ ra trước mắt tôi.",
                 "body": p1,
                 "cliffhanger": "Cầm cuốn sổ tay bí mật của mẹ chồng rơi ra từ chiếc vali rách, ánh mắt Nhược Dao lóe lên một tia sáng lạnh lẽo tựa nhát dao cạo: 'Gia tộc họ Hoàng... các người hãy chờ đó!'...",
                 "call_to_action": "Bấm theo dõi để đón xem Tập 2: Màn đấu giá lật kèo chấn động 120 tỷ phát sóng tối nay!",
@@ -222,8 +217,8 @@ def get_me_chong_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoai
             {
                 "part_number": 2,
                 "badge_label": "PHẦN 2",
-                "title": "Tập 2: Màn Đấu Giá 120 Tỷ & Âm Mưu Tống Tiền",
-                "hook": "Bảy năm sau đêm mưa bão định mệnh ấy, Tô Nhược Dao đã hoàn toàn lột xác thành Tổng giám đốc điều hành Quỹ đầu tư Đông Á nắm trong tay sinh sát hàng trăm tập đoàn!",
+                "title": "Tập 2: Màn Sao Kê Tài Khoản Hai Trăm Tỷ",
+                "hook": "Bản sao kê tài khoản hai trăm tỷ vừa ném xuống bàn trà, ánh mắt run rẩy của bà mẹ chồng đã không còn nét kiêu kỳ ngày trước.",
                 "body": p2,
                 "cliffhanger": "Hoàng Minh Triết gửi tin nhắn tống tiền kèm đoạn ghi âm cắt ghép: 'Nếu cô không trả lại biệt thự và đưa tôi 50 tỷ, ngày mai đoạn ghi âm này sẽ tràn ngập trên các mặt báo mạng!'...",
                 "call_to_action": "Đón xem Tập 3 - Đại Kết Cục: Màn vạch mặt tại cổng biệt thự và bản án thích đáng tối nay!",
@@ -232,8 +227,8 @@ def get_me_chong_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoai
             {
                 "part_number": 3,
                 "badge_label": "PHẦN 3 / KẾT",
-                "title": "Tập 3: Đại Kết Cục Viên Mãn & Bản Lĩnh Phụ Nữ Tự Chủ",
-                "hook": "Ngày Tô Nhược Dao chính thức tiếp quản căn biệt thự ven sông, mẹ chồng và chồng cũ quỳ gối khóc lóc van xin ngay trước cổng sắt từng xua đuổi cô bảy năm trước!",
+                "title": "Tập 3: Đại Kết Cục Phong Tỏa Tài Sản",
+                "hook": "Lệnh phong tỏa tài sản và thu hồi căn biệt thự vừa được dán lên cổng chính, bà mẹ chồng đã sụp đổ hoàn toàn trước các vị cổ đông sáng lập.",
                 "body": p3,
                 "cliffhanger": "",
                 "call_to_action": "Nếu bạn là Tô Nhược Dao, liệu bạn có tha thứ cho người chồng bội bạc vì đứa con gái nhỏ? Hãy để lại bình luận chia sẻ nhé!",
@@ -294,7 +289,7 @@ def get_huyen_nghi_full_narrative(custom_title: str = "", voice: str = "vi-VN-Na
         
     return {
         "title": title,
-        "hook": orig.get("hook", "'Sự thật chỉ có một, và hung thủ đang giấu mình sau một vỏ bọc không ai ngờ tới!'..."),
+        "hook": orig.get("hook", "Mũi dao vừa cậy bật góc viên gạch men số mười ba, bức di thư dính máu khô đã rơi tuột xuống lòng bàn tay tôi."),
         "genre": "HUYEN_NGHI",
         "voice": voice,
         "parts": parts
@@ -323,7 +318,7 @@ def get_kinh_di_full_narrative(custom_title: str = "", voice: str = "vi-VN-NamMi
         
     return {
         "title": title,
-        "hook": orig.get("hook", "'Quy tắc thứ nhất khi thuê căn biệt thự số 44: Đúng mười hai giờ đêm, tuyệt đối không được nhìn vào chiếc gương đồng!'..."),
+        "hook": orig.get("hook", "Tiếng cào móng tay dưới gầm chiếc giường gỗ ép vừa dừng lại, mùi bùn ao tanh nồng đã xộc thẳng vào cánh mũi tôi!"),
         "genre": "KINH_DI",
         "voice": voice,
         "parts": parts
@@ -331,9 +326,9 @@ def get_kinh_di_full_narrative(custom_title: str = "", voice: str = "vi-VN-NamMi
 
 
 def get_nguoc_tam_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
-    from core.stories.romance_nguoctam_masterpiece import get_nguoctam_masterpiece_story
+    from core.stories.romance_nguoctam_masterpiece import get_romance_nguoctam_masterpiece_story
     title = custom_title or "Khi Hoa Sơn Tra Tàn Lụi: Nỗi Oan Khuất 7 Năm Của Cô Dâu Thế Thân"
-    orig = get_nguoctam_masterpiece_story(title)
+    orig = get_romance_nguoctam_masterpiece_story(title)
     
     parts = []
     for p in orig["parts"]:
@@ -352,7 +347,7 @@ def get_nguoc_tam_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoa
         
     return {
         "title": title,
-        "hook": orig.get("hook", "'Tôi đã dùng năm năm thanh xuân ngồi tù nhận tội thay anh, đổi lại hôm nay là thiệp cưới mạ vàng của anh cùng người đàn bà đã đâm chết em gái tôi sao?'..."),
+        "hook": orig.get("hook", "Tờ giấy xác nhận ung thư vừa rơi xuống bàn ăn, người chồng mười năm vẫn thong thả gắp miếng cá hồi cho cô thư ký riêng."),
         "genre": "NGUOC_TAM",
         "voice": voice,
         "parts": parts
@@ -360,9 +355,9 @@ def get_nguoc_tam_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoa
 
 
 def get_hao_mon_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
-    from core.stories.romance_haomon_masterpiece import get_haomon_masterpiece_story
+    from core.stories.romance_haomon_masterpiece import get_romance_haomon_masterpiece_story
     title = custom_title or "Bản Hợp Đồng Hôn Nhân 100 Tỷ: Vị Hôn Thê Giả Mạo Của Tổng Tài Tàn Tật"
-    orig = get_haomon_masterpiece_story(title)
+    orig = get_romance_haomon_masterpiece_story(title)
     
     parts = []
     for p in orig["parts"]:
@@ -381,7 +376,7 @@ def get_hao_mon_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiM
         
     return {
         "title": title,
-        "hook": orig.get("hook", "'Ký vào đây! Tôi cho cô 100 tỷ và sự tự do, cô chỉ là kẻ gả thay hèn kém thôi!' - Tiếng đập tập hợp đồng dày cộp xé toạc màn đêm biệt thự..."),
+        "hook": orig.get("hook", "Mũi bút máy vừa chạm vào bản hợp đồng một trăm tỷ, vết son đỏ mận trên cổ tay áo anh ta đã tố cáo tất cả."),
         "genre": "HAO_MON",
         "voice": voice,
         "parts": parts
@@ -389,9 +384,9 @@ def get_hao_mon_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiM
 
 
 def get_cuu_roi_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
-    from core.stories.romance_chualanh_masterpiece import get_chualanh_masterpiece_story
+    from core.stories.romance_chualanh_masterpiece import get_romance_chualanh_masterpiece_story
     title = custom_title or "Ánh Sáng Nơi Tận Cùng Đêm Tối: Bản Hợp Đồng Cứu Rỗi Trái Tim Tổn Thương"
-    orig = get_chualanh_masterpiece_story(title)
+    orig = get_romance_chualanh_masterpiece_story(title)
     
     parts = []
     for p in orig["parts"]:
@@ -410,7 +405,7 @@ def get_cuu_roi_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiM
         
     return {
         "title": title,
-        "hook": orig.get("hook", "'Nếu cô bước qua cánh cửa này, bóng tối trong căn phòng này sẽ nuốt chửng cả cuộc đời cô!' - Tiếng chàng họa sĩ xé toạc màn đêm..."),
+        "hook": orig.get("hook", "Chiếc ô đen vừa che nghiêng qua vạt áo ướt đẫm của tôi giữa ngã tư đường, bức thư tuyệt mệnh trong túi áo tôi đã bị ai đó rút đi."),
         "genre": "CUU_ROI",
         "voice": voice,
         "parts": parts
@@ -423,7 +418,7 @@ def get_sa_dieu_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiM
     orig = get_trong_sinh_hoa_sen_lua_masterpiece_story(title)
     
     # Sử dụng cấu trúc 3 phần với lời thoại tiếng lòng độc đáo
-    hook = "'Tôi nắm chặt vạt áo Tạ Duệ, mắt ngân ngấn lệ: 'Anh đừng đi, không có anh em biết sống sao?'. Trong đầu tôi thì đang đếm từng giây: 'Nhanh lên con trai, nói câu cút đi xem nào, nồi lẩu hải sản của bà đang sôi sùng sục rồi đấy!'.' - Tạ Duệ bỗng dừng bước quay lại mỉm cười!"
+    hook = "Tập hồ sơ ba mươi tỷ bị sếp tổng ném đánh xoạch xuống bàn họp, nhưng trong đầu anh ta đang gào thét vì đói lử lả và quên mang giấy vệ sinh."
     
     parts = []
     for p in orig["parts"]:
@@ -454,7 +449,7 @@ def get_cung_dau_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoai
     title = custom_title or "Hoàng Hậu Bãi Công: Trạch Đấu Không Bằng Đi Thi Khoa Cử Làm Giàu"
     orig = get_trong_sinh_hoa_sen_lua_masterpiece_story(title)
     
-    hook = "'Hoàng thượng, thần thiếp xin tự phế phượng vị, đem theo của hồi môn mở thương quán ở biên cương. Hậu cung ba ngàn giai lệ, ngài cứ tự nhiên phong thưởng cho ai tùy ý!' - Tiếng tháo vương miện ngọc rơi leng keng xé toạc đại điện!"
+    hook = "Chiếc trâm bạc của tôi vừa nhúng vào chén trà hoa cúc của Thục phi, đầu trâm đã sủi lên một lớp bọt xám tro như bồ hóng."
     
     parts = []
     for p in orig["parts"]:
@@ -481,11 +476,11 @@ def get_cung_dau_full_narrative(custom_title: str = "", voice: str = "vi-VN-Hoai
 
 
 def get_vo_han_full_narrative(custom_title: str = "", voice: str = "vi-VN-NamMinhNeural") -> Dict[str, Any]:
-    from core.stories.horror_chuyentau_masterpiece import get_horror_chuyentau_masterpiece_story
-    title = custom_title or "Mạt Thế Kỷ Băng Hà: Tôi Tích Trữ 100 Tỷ Vật Tư Xây Pháo Đài Ấm Áp"
-    orig = get_horror_chuyentau_masterpiece_story(title)
+    from core.stories.mat_the_sinh_ton_masterpiece import get_mat_the_sinh_ton_masterpiece_story
+    title = custom_title or "Trọng Sinh Về 30 Ngày Trước Tận Thế: Boong Ke Bất Khả Xâm Phạm"
+    orig = get_mat_the_sinh_ton_masterpiece_story(title)
     
-    hook = "'Nhiệt độ ngoài trời hạ xuống âm 65 độ C, chim chóc đóng băng rơi rụng như mưa đá. Tôi ngồi trên ghế sofa da cừu nhấp ngụm rượu vang đỏ, nhìn đám người kiếp trước từng cướp đồ ăn của tôi đang quỳ gối xin gói mì tôm qua camera hồng ngoại!'"
+    hook = "Cánh cửa thép chống đạn ba lớp vừa đóng sập chốt cơ học, tiếng đập cửa rầm rầm đã vang lên kèm tiếng khóc the thé của ả em họ ngoài hành lang."
     
     parts = []
     for p in orig["parts"]:
@@ -511,6 +506,91 @@ def get_vo_han_full_narrative(custom_title: str = "", voice: str = "vi-VN-NamMin
     }
 
 
+
+def get_thanh_xuan_full_narrative(custom_title: str = "", voice: str = "vi-VN-HoaiMyNeural") -> Dict[str, Any]:
+    title = custom_title or "Chiếc Thẻ Nhớ Trong Hộp Bút Màu Hồng: Vạch Mặt Hội Trưởng Học Sinh"
+    
+    p1 = """Cốc trà sữa trân châu vừa đổ trọn xuống vạt váy đồng phục trắng của tôi, bàn tay của hội trưởng học sinh Lâm Diễm đã vội vã giơ chiếc khăn ướt lên lau với vẻ mặt xót xa:
+'Hạ Vy à, cậu lại bất cẩn thế rồi. Mau vào nhà vệ sinh thay váy đi, kẻo thầy giám thị nhìn thấy lại trừ điểm thi đua của lớp'.
+
+Cả lớp nhìn tôi bằng ánh mắt chế giễu ngầm. Bố của Lâm Diễm là Chủ tịch Hội đồng Quản trị trường liên cấp này. Mọi người đều nghĩ tôi chỉ là đứa con gái nhà nghèo cam chịu, một kẻ nhận học bổng không dám mở miệng thanh minh.
+
+Tôi không nhận chiếc khăn ướt. Tôi cúi người nhặt chiếc bút dạ quang màu hồng của cô ta rơi trên bục giảng.
+
+Ngón tay tôi vặn nhẹ chuôi bút, rút ra một chiếc thẻ nhớ siêu nhỏ dính dưới ruột mực.
+
+Tôi ngước mắt nhìn thẳng vào nụ cười giả tạo của cô ta:
+'Lâm Diễm, thẻ nhớ này rơi ra từ bút của cậu chiều thứ sáu. Trong này... ghi lại cảnh cậu cùng nhóm bạn lẻn vào phòng hội đồng tráo đổi đề thi học kỳ'.
+
+Nụ cười trên môi cô ta cứng đờ lại. Đôi mắt ả lóe lên một tia hoảng loạn:
+'Cậu... đưa đây ngay!'.
+
+Tôi lùi lại một bước, giơ chiếc điện thoại đã kết nối Bluetooth với hệ thống loa phát thanh giờ chào cờ toàn trường:
+'Năm trăm học sinh bên dưới đang tập hợp rồi. Cậu có muốn cả trường cùng nghe đoạn ghi âm cậu bàn bạc việc hãm hại bạn học không?'."""
+
+    p2 = """Lâm Diễm lao tới giật chiếc điện thoại, nhưng bàn tay của thầy hiệu phó đã đặt lên vai cô ta từ phía sau:
+'Lâm Diễm! Trật tự ngay!'.
+
+Cả sân trường năm trăm học sinh bỗng chốc im phăng phắc. Tiếng loa phát thanh vang lên rành rọt từng câu từng chữ về kế hoạch tráo đổi đề thi học kỳ của nhóm học sinh ưu tú.
+
+Từng gương mặt trong hội đồng khen thưởng dần biến sắc. Người bố quyền lực của Lâm Diễm ngồi trên hàng ghế danh dự siết chặt tách trà đến mức các đầu ngón tay trắng bệch.
+
+Lâm Diễm run rẩy lùi lại ba bước, đôi môi lắp bắp: 'Thầy ơi... Bạn ấy vu khống em!'.
+
+Tôi bước lên bục danh dự, ngắt nhịp rành rọt: 'Vu khống sao? Đoạn băng này... Ghi rõ giọng của cậu!'.
+
+Vật chứng thẻ nhớ Micro-SD lập tức được chuyển giao cho ban thanh tra độc lập của Sở Giáo dục để giám định kỹ thuật số."""
+
+    p3 = """Quyết định đình chỉ học tập một năm và tước toàn bộ danh hiệu thi đua của Lâm Diễm được dán công khai tại bảng tin trung tâm trường học.
+
+Gia đình cô ta tìm mọi cách bưng bít thông tin, nhưng trước làn sóng phẫn nộ của phụ huynh và sự vào cuộc của cơ quan quản lý, trật tự công bằng đã được lập lại.
+
+Cô chủ nhiệm bước tới, vỗ nhẹ vai tôi: 'Hạ Vy... Em xứng đáng với suất học bổng này!'.
+
+Tôi ngẩng cao đầu mỉm cười: 'Cảm ơn cô... Em sẽ tiếp tục nỗ lực!'.
+
+Bước ra khỏi cổng trường trong nắng hè rực rỡ, tôi biết công lý luôn thuộc về người can đảm!"""
+
+    return {
+        "title": title,
+        "hook": "Cốc trà sữa trân châu vừa đổ trọn xuống vạt váy đồng phục trắng của tôi, bàn tay của hội trưởng học sinh Lâm Diễm đã vội vã giơ chiếc khăn ướt lên lau với vẻ mặt xót xa.",
+        "genre": "THANH_XUAN",
+        "voice": voice,
+        "parts": [
+            {
+                "part_number": 1,
+                "badge_label": "PHẦN 1",
+                "title": "Tập 1: Chiếc Thẻ Nhớ Trong Bút Dạ Quang",
+                "hook": "Cốc trà sữa trân châu vừa đổ trọn xuống vạt váy đồng phục trắng của tôi, bàn tay của hội trưởng học sinh Lâm Diễm đã vội vã giơ chiếc khăn ướt lên lau với vẻ mặt xót xa.",
+                "body": p1,
+                "cliffhanger": "Tôi giơ chiếc điện thoại kết nối Bluetooth với hệ thống loa phát thanh toàn trường: 'Năm trăm học sinh đang tập hợp... Cậu có muốn cả trường cùng nghe đoạn ghi âm này không?'...",
+                "call_to_action": "Bình luận 1 nếu bạn ủng hộ việc vạch mặt bắt nạt học đường bằng công nghệ!",
+                "full_text": p1
+            },
+            {
+                "part_number": 2,
+                "badge_label": "PHẦN 2",
+                "title": "Tập 2: Phát Loa Toàn Trường Giờ Chào Cờ",
+                "hook": "Tiếng loa phát thanh vang lên rành rọt từng câu từng chữ về kế hoạch tráo đổi đề thi học kỳ của nhóm học sinh ưu tú.",
+                "body": p2,
+                "cliffhanger": "Vật chứng thẻ nhớ Micro-SD lập tức được chuyển giao cho ban thanh tra độc lập của Sở Giáo dục để giám định kỹ thuật số.",
+                "call_to_action": "Bạn nghĩ hội đồng trường có dám kỷ luật con gái của Chủ tịch không? Bình luận 1 là có, 2 là không!",
+                "full_text": p2
+            },
+            {
+                "part_number": 3,
+                "badge_label": "PHẦN 3 / KẾT",
+                "title": "Tập 3: Đại Kết Cục Công Lý Học Đường",
+                "hook": "Quyết định đình chỉ học tập một năm và tước toàn bộ danh hiệu thi đua của Lâm Diễm được dán công khai tại bảng tin trung tâm.",
+                "body": p3,
+                "cliffhanger": "",
+                "call_to_action": "Bạn đã từng chứng kiến cảnh bắt nạt học đường nào chưa? Chia sẻ câu chuyện của bạn dưới phần bình luận nhé!",
+                "full_text": p3
+            }
+        ]
+    }
+
+
 def get_masterpiece_narrative(
     genre_key: str,
     custom_title: str = "",
@@ -533,7 +613,38 @@ def get_masterpiece_narrative(
     default_voice = "vi-VN-NamMinhNeural" if g in ["HUYEN_NGHI", "TRINH_THAM", "KINH_DI", "VO_HAN", "HIGH_IQ"] else "vi-VN-HoaiMyNeural"
     chosen_voice = voice or default_voice
     
-    if "ME_CHONG" in g or "GIA_DAU" in g or "DOI_SONG" in g:
+    # 10 The loai nang cao thuoc Chuoi Tien Hoa Vong 11 - 20
+    if "Y_KHOA" in g or "CAP_CUU" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_11
+        return get_story_cycle_11(custom_title)
+    elif "HAI_TRINH" in g or "VIEN_DUONG" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_12
+        return get_story_cycle_12(custom_title)
+    elif "CO_NGOAN" in g or "PHUC_CHE" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_13
+        return get_story_cycle_13(custom_title)
+    elif "RAP_CHIEU" in g or "PHIM_NHUA" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_14
+        return get_story_cycle_14(custom_title)
+    elif "BAN_KHONG" in g or "BLOOMBERG" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_15
+        return get_story_cycle_15(custom_title)
+    elif "MICHELIN" in g or "AM_THUC" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_16
+        return get_story_cycle_16(custom_title)
+    elif "BANG_GIA" in g or "BOONG_KE" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_17
+        return get_story_cycle_17(custom_title)
+    elif "OLYMPIC" in g or "THI_CU" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_18
+        return get_story_cycle_18(custom_title)
+    elif "THAI_Y" in g or "DUOC_DIEN" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_19
+        return get_story_cycle_19(custom_title)
+    elif "DU_LIEU_SO" in g or "CYBER" in g:
+        from core.stories.cycles_11_to_20_masterpieces import get_story_cycle_20
+        return get_story_cycle_20(custom_title)
+    elif "ME_CHONG" in g or "GIA_DAU" in g or "DOI_SONG" in g:
         return get_me_chong_full_narrative(custom_title, chosen_voice)
     elif "NGUOC_TAM" in g or "HOA_TANG" in g or "THE_THAN" in g:
         return get_nguoc_tam_full_narrative(custom_title, chosen_voice)
@@ -547,7 +658,9 @@ def get_masterpiece_narrative(
         return get_sa_dieu_full_narrative(custom_title, chosen_voice)
     elif "CUNG_DAU" in g or "TRACH_DAU" in g or "NU_QUYEN" in g:
         return get_cung_dau_full_narrative(custom_title, chosen_voice)
-    elif "CUU_ROI" in g or "CHUA_LANH" in g or "THANH_XUAN" in g:
+    elif "THANH_XUAN" in g or "HOC_DUONG" in g:
+        return get_thanh_xuan_full_narrative(custom_title, chosen_voice)
+    elif "CUU_ROI" in g or "CHUA_LANH" in g:
         return get_cuu_roi_full_narrative(custom_title, chosen_voice)
     elif "VO_HAN" in g or "MAT_THE" in g or "SINH_TON" in g:
         return get_vo_han_full_narrative(custom_title, chosen_voice)
