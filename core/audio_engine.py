@@ -40,6 +40,7 @@ from typing import Dict, Any, List, Optional, Tuple
 
 import edge_tts
 from core.ffmpeg_utils import get_ffmpeg_exe
+from core.voice_profiles import get_voice_profile_for_genre, build_genre_vocal_filter_chain
 from core.bgm_manager import (
     ensure_safe_bgm,
     get_safe_bgm_for_genre,
@@ -122,8 +123,19 @@ def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
     return chunks if chunks else [clean_text]
 
 
-def get_vocal_chain_filter(voice_volume: float = 1.0) -> str:
-    """Chuỗi hiệu ứng Vocal Studio Radio Broadcast cao cấp cho FFmpeg."""
+def get_vocal_chain_filter(voice_volume: float = 1.0, genre: Optional[str] = None) -> str:
+    """
+    Chuỗi hiệu ứng Vocal Studio Radio Broadcast cao cấp cho FFmpeg:
+    - Nếu có genre: Tự động tải Vocal Mastering Profile chuyên biệt (tăng trầm cho trinh thám, air cho sa điêu, nén gắt cho mạt thế sinh tồn...).
+    - Nếu không: Áp dụng chuỗi phát thanh cân bằng tiêu chuẩn.
+    """
+    if genre:
+        try:
+            profile = get_voice_profile_for_genre(genre)
+            return build_genre_vocal_filter_chain(profile, voice_volume=voice_volume)
+        except Exception:
+            pass
+
     return (
         f"highpass=f=75,"
         f"equalizer=f=145:t=q:w=1.2:g=3.5,"
@@ -139,7 +151,8 @@ async def generate_cinema_tts_audio(
     text: str,
     voice: str = "vi-VN-HoaiMyNeural",
     output_path: Optional[Path] = None,
-    target_speed: Optional[float] = None
+    target_speed: Optional[float] = None,
+    genre: Optional[str] = None
 ) -> Path:
     """
     Sinh audio Edge-TTS chất lượng cao đạt chuẩn điện ảnh:
@@ -173,9 +186,24 @@ async def generate_cinema_tts_audio(
     concat_list = output_path.parent / f"{output_path.stem}_concat.txt"
     raw_merged = output_path.parent / f"{output_path.stem}_raw.mp3"
 
-    # Tối ưu rate an toàn tuyệt đối 100% cho Edge-TTS (Tránh lỗi NoAudioReceived)
+    # Tự động tối ưu Voice Profile theo thể loại (Pitch Modulation + Native Rate + Studio Mastering)
+    profile_pitch = "-2Hz" if "NamMinh" in voice else "+1Hz"
+    profile_rate = "+0%"
+    if genre:
+        try:
+            profile = get_voice_profile_for_genre(genre)
+            profile_pitch = profile.pitch
+            profile_rate = profile.rate
+            if voice == "vi-VN-HoaiMyNeural" and "MALE" in profile.profile_id:
+                voice = profile.voice_name
+            elif voice == "vi-VN-NamMinhNeural" and "FEMALE" in profile.profile_id:
+                voice = profile.voice_name
+            if target_speed is None or target_speed == 1.15:
+                target_speed = profile.tempo_multiplier
+        except Exception:
+            pass
+
     is_male = "NamMinh" in voice
-    native_rate = "+0%"
     atempo_factor = round(target_speed, 2)
 
     semaphore = asyncio.Semaphore(1)
@@ -184,7 +212,7 @@ async def generate_cinema_tts_audio(
         async with semaphore:
             for attempt in range(8):
                 try:
-                    comm = edge_tts.Communicate(chk_text, voice=voice)
+                    comm = edge_tts.Communicate(chk_text, voice=voice, pitch=profile_pitch, rate=profile_rate)
                     await asyncio.wait_for(comm.save(str(fpath)), timeout=60.0)
                     if fpath.exists() and fpath.stat().st_size > 500:
                         await asyncio.sleep(0.3)
@@ -285,7 +313,7 @@ def mix_voice_and_safe_bgm(
     except Exception:
         pass
 
-    vocal_filter = get_vocal_chain_filter(voice_volume)
+    vocal_filter = get_vocal_chain_filter(voice_volume, genre=genre_key)
     filter_complex = (
         f"[0:a]{vocal_filter},asplit=2[v_play][v_trigger];"
         f"[1:a]volume={bgm_volume},highpass=f=60,equalizer=f=2000:t=q:w=1.5:g=-3.5[bgm_prep];"

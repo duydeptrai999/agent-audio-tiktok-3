@@ -69,7 +69,11 @@
     "Khách Trọ Phòng Số 7: Người Đàn Bà Mặc Áo Đỏ Dưới Đèn Đường",
     "Lục Tổng Và Cô Thư Ký Tinh Quái: Tiếng Lòng Vạch Trần Kẻ Phản Bội",
     "Vụng Trộm Thích Thầm Anh: Mười Năm Ngọt Ngào Dưới Mái Hiên Mùa Hạ",
-    "Bức Thư Mùa Hạ Mười Năm Trước: Chiếc Ô Xanh Dưới Cơn Mưa Tốt Nghiệp"
+    "Bức Thư Mùa Hạ Mười Năm Trước: Chiếc Ô Xanh Dưới Cơn Mưa Tốt Nghiệp",
+    "Dược Điển Cung Cấm: Chiếc Trâm Bạc Thử Độc Vạch Trần Thục Phi",
+    "Đích Nữ Tướng Môn: Nhận Chiếu Hòa Thân, Nàng San Bằng Biên Cương Về Triều",
+    "Thiên Kim Thật Đoạt Lại Vận Mệnh: Ba Anh Trai Quỳ Gối Cầu Xin Tha Thứ",
+    "Trọng Sinh Về 30 Ngày Trước Tận Thế Băng Giá Âm 60 Độ: Pháo Đài Nhiệt Ngầm 100 Tỷ"
   ],
   "published_hashes": [
     "20cfec388b885e9d9a066e5932dee5dcdd2d9f778da21a2cb2ef2962f9e4344a",
@@ -245,7 +249,14 @@
     "ef91323a606640f6278fc4509e3356659ff8a1b59e4598aa538a2d03937bb417",
     "93b487cb82212e417313f09ab7fc69cf0ccb3a98d518748e7a6ee3089cb8522f",
     "847162aebfa7bedc2cf8afabdbb3ad5ab864959c34b3f59c1c7460ebb24b2588",
-    "8d2b6f53e41b07e866d3e677983268b702228f272af07ca857f65bbbd4a4d266"
+    "8d2b6f53e41b07e866d3e677983268b702228f272af07ca857f65bbbd4a4d266",
+    "2aacebfa6be596216710ac28fb24d9d844c2a4a503ded44f3731da76b8135778",
+    "a09b938e54cc11b6a4e738cef4e5a71c8f21e946dc16719202f38c1264517681",
+    "4ce093331061a5b46e6d699c08742af58a61755e80c3e05553b9a9a1eeba819f",
+    "81abefe3c228f1b8cdc2d981b6c42ce9e9a055ebad885097bd703449b7ed48e9",
+    "a751758372805782156ef31279c7262eb8baf292f3fa1171d17bed3fa44fe16a",
+    "e74dd4fe8f0802f7d09ae8b3cfef52b4a6a35bd826856e6628d7a27962997d03",
+    "f4bc3a7411b80739f967595a5dee34e795df3d98df0cc6201cc91a5f0a84ba1c"
   ],
   "published_history": [
     {
@@ -431,6 +442,13 @@
     "VID_20261023_s01_slot_01_sadieu_part3",
     "VID_20261023_s02_slot_02_thanhxuan_part1",
     "VID_20261023_s02_slot_02_thanhxuan_part2",
-    "VID_20261023_s02_slot_02_thanhxuan_part3"
+    "VID_20261023_s02_slot_02_thanhxuan_part3",
+    "VID_20261023_s03_slot_03_cungdau_part1",
+    "VID_20261023_s03_slot_03_cungdau_part2",
+    "VID_20261023_s03_slot_03_cungdau_part3",
+    "VID_20261023_s04_slot_04_vamat_part1",
+    "VID_20261023_s04_slot_04_vamat_part2",
+    "VID_20261023_s04_slot_04_vamat_part3",
+    "VID_20261023_s05_slot_05_matthe_part1"
   ]
 }

@@ -334,6 +334,45 @@ CẤM TUYỆT ĐỐI đặt các tiêu đề có cấu trúc hoặc từ vựng 
 
 ## 2. NGUYÊN TẮC ÂM THANH & MASTERING (AUDIO BROADCAST STANDARD)
 
+### 🎙️ MA TRẬN 10 VOICE PROFILES ĐIỆN ẢNH ĐỘC BẢN THEO THỂ LOẠI (MULTI-GENRE CINEMA VOICE CODEX):
+> **CẤM DÙNG MỘT TÔNG GIỌNG ĐƠN ĐIỆU CHO TẤT CẢ THỂ LOẠI!**
+> Mỗi thể loại bắt buộc sở hữu một Profile Giọng Đọc được tinh chỉnh âm học chuyên sâu bằng Pitch Modulation, Native Rate và Chuỗi FFmpeg Vocal Studio riêng biệt:
+
+1. **Trinh Thám / Huyền Nghi / Pháp Y** (`DETECTIVE_COLD_MALE`):
+   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-3.5Hz` | Rate: `-2%` | Tempo: `1.12x`
+   - Màu âm: Trầm, đặc, uy nghiêm, đanh thép như trong phòng thẩm vấn. EQ Warmth 110Hz (+4.5dB), Clarity 3.2kHz (+3.8dB).
+2. **Kinh Dị / Quái Đàm / Nguy Dị** (`HORROR_CREEPY_MALE` / `HORROR_WHISPER_FEMALE`):
+   - Giọng: Nam Minh (Pitch `-4.5Hz`, Rate `-4%`) hoặc Hoài My Thì Thào (Pitch `-2.0Hz`, Rate `-3%`) | Tempo: `1.08x`
+   - Màu âm: Lạnh buốt, ma mị, âm u. EQ Deep 90Hz (+5.0dB), Lowpass 6800Hz tạo không gian tối tăm rợn gáy.
+3. **Mạt Thế / Băng Giá / Sinh Tồn** (`SURVIVOR_GRITTY_MALE`):
+   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-1.5Hz` | Rate: `+3%` | Tempo: `1.18x`
+   - Màu âm: Cương quyết, sắt đá, thở dồn dập. EQ Punch 150Hz (+4.0dB), Metallic 2.6kHz (+4.2dB), Compressor nén nhanh.
+4. **Mẹ Chồng / Gia Đấu / Vả Mặt** (`QUEEN_COLD_VENOM_FEMALE`):
+   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `+0.5Hz` | Rate: `+2%` | Tempo: `1.16x`
+   - Màu âm: Bạo lực lạnh, kiêu hãnh, sắc lẹm như dao găm. EQ Velvet 200Hz (+2.8dB), Razor Clarity 4.2kHz (+4.5dB).
+5. **Hào Môn / Thương Chiến / Tổng Tài** (`CEO_AUTHORITY_MALE`):
+   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-2.0Hz` | Rate: `+1%` | Tempo: `1.15x`
+   - Màu âm: Đĩnh đạc, trầm ổn, làm chủ cuộc chơi tài chính. EQ 135Hz (+4.2dB), Broadcast Presence 3.4kHz.
+6. **Sa Điêu / Hài Hước / Tiếng Lòng** (`SATIRIC_SPARKLING_FEMALE`):
+   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `+3.2Hz` | Rate: `+5%` | Tempo: `1.22x`
+   - Màu âm: Nhí nhảnh, nảy tiếng, tinh quái, bay bổng. Air Boost 8000Hz (+2.2dB), Clarity 4.8kHz (+4.0dB).
+7. **Cung Đấu / Trạch Đấu / Dược Điển** (`IMPERIAL_SERENE_FEMALE`):
+   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `-1.2Hz` | Rate: `-2%` | Tempo: `1.10x`
+   - Màu âm: Ung dung, thâm sâu, êm ái như tơ lụa ẩn chứa độc dược. EQ Warmth 180Hz (+3.6dB), Subtext Focus 3.3kHz.
+8. **Chữa Lành / Tâm Lý / Ngược Tâm** (`HEALING_SOUL_FEMALE`):
+   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `-0.5Hz` | Rate: `-4%` | Tempo: `1.05x`
+   - Màu âm: Thủ thỉ, ấm áp, xoa dịu tâm hồn. EQ Warmth 160Hz (+4.2dB), Roll-off dải chói 7.5kHz (-2.0dB) nghe đêm không mỏi tai.
+9. **Thanh Xuân / Học Đường / Cứu Rỗi** (`YOUTH_EMOTIONAL_FEMALE`):
+   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `+1.8Hz` | Rate: `+2%` | Tempo: `1.14x`
+   - Màu âm: Trong trẻo, nhiệt huyết, giàu cảm xúc tuổi trẻ. EQ Clarity 3.8kHz (+3.8dB).
+10. **Hành Động / Cứu Hộ / Vực Sâu** (`ACTION_INTENSE_MALE`):
+   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-2.2Hz` | Rate: `+4%` | Tempo: `1.20x`
+   - Màu âm: Hiệu triệu mạnh mẽ, dồn dập, đanh thép giữa cuồng phong. EQ 130Hz (+4.5dB), Presence 3.1kHz (+4.2dB).
+
+---
+
+### 🎛️ QUY CHUẨN XỬ LÝ ÂM THANH BROADCAST:
+
 1. **BGM vào ngay giây 0.00 (Zero Silence Latency)**: Cắt bỏ 100% khoảng lặng ở đầu file BGM, áp dụng dynamic silenceremove.
 
 2. **Cân bằng Âm lượng & Ducking chuẩn Cinema**: `BGM_VOLUME = 0.18`, `DUCKING_RATIO = 2.0`, `TARGET_LUFS = -14.0`, `TRUE_PEAK = -1.5`.

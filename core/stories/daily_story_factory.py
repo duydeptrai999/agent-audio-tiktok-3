@@ -339,8 +339,15 @@ def get_daily_10_series(target_date: str = "") -> List[Dict[str, Any]]:
             cand_story = candidate_fn() if callable(candidate_fn) else candidate_fn
             cand_title = cand_story.get("title", "")
             if is_title_allowed(cand_title, published_set):
-                chosen_story = cand_story
-                break
+                # Kiểm tra độ dài: tối thiểu 400 từ mỗi part để đảm bảo thời lượng audio >= 100s
+                parts = cand_story.get("parts", [])
+                if parts:
+                    lens = [len((p.get("full_text") or p.get("text") or "").split()) for p in parts]
+                else:
+                    lens = [len(cand_story.get(f"part{i}", "").split()) for i in (1, 2, 3)]
+                if not lens or min(lens) >= 400:
+                    chosen_story = cand_story
+                    break
 
         if not chosen_story and catalog:
             idx = start_offset % len(catalog)
