@@ -22,12 +22,55 @@ from typing import Dict, Any, List, Optional
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+DATA_DIR = ROOT / "data"
+LOG_FILE = DATA_DIR / "autopilot_247.log"
+
+class RobustLoggerTee:
+    def __init__(self, target_stream, log_path: Path):
+        self.stream = target_stream
+        self.log_path = log_path
+        self.log_file = None
+        try:
+            self.log_path.parent.mkdir(parents=True, exist_ok=True)
+            self.log_file = open(self.log_path, "a", encoding="utf-8", buffering=1)
+        except Exception:
+            pass
+
+    def write(self, msg):
+        if self.stream:
+            try:
+                self.stream.write(msg)
+                self.stream.flush()
+            except Exception:
+                pass
+        if self.log_file:
+            try:
+                self.log_file.write(msg)
+                self.log_file.flush()
+            except Exception:
+                pass
+
+    def flush(self):
+        if self.stream:
+            try:
+                self.stream.flush()
+            except Exception:
+                pass
+        if self.log_file:
+            try:
+                self.log_file.flush()
+            except Exception:
+                pass
+
 if hasattr(sys.stdout, "reconfigure"):
     try:
         sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
         sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
     except Exception:
         pass
+
+sys.stdout = RobustLoggerTee(sys.stdout, LOG_FILE)
+sys.stderr = RobustLoggerTee(sys.stderr, LOG_FILE)
 
 from core.audio_engine import generate_cinema_tts_audio
 from core.ffmpeg_utils import render_playable_video, probe_media_file
@@ -85,6 +128,8 @@ def load_daily_status(date_str: str, series_list: List[Dict[str, Any]]) -> Dict[
                 if k not in saved:
                     saved[k] = v
                 elif isinstance(v, dict) and isinstance(saved[k], dict):
+                    if not saved[k].get("produced", False) and "title" in v:
+                        saved[k]["title"] = v["title"]
                     for sub_k, sub_v in v.items():
                         if sub_k not in saved[k]:
                             saved[k][sub_k] = sub_v
@@ -162,7 +207,7 @@ def produce_single_series(series_data: Dict[str, Any], status: Dict[str, Any], d
             except Exception:
                 pass
 
-        # 4. Video MP4 1080p
+        # 4. Video MP4 1080p (Bao gồm Title Banner nổi bật 0.5s đầu, TUYỆT ĐỐI KHÔNG BẬT PHỤ ĐỀ)
         print(f"  🎥 Đang render video 1080p cho Tập {p_num}...")
         render_playable_video(
             output_file=part_video,
@@ -173,7 +218,8 @@ def produce_single_series(series_data: Dict[str, Any], status: Dict[str, Any], d
             bgm_volume=BGM_VOLUME if bgm_file else 0.0,
             voice_volume=VOICE_VOLUME,
             enable_subtitles=False,
-            thumbnail_path=None  # Độc lập, không nhúng attached_pic
+            thumbnail_path=None,  # Độc lập, không nhúng attached_pic
+            title_text=title
         )
 
     status[s_key]["produced"] = True
@@ -197,10 +243,21 @@ def wait_until(target_timestamp: float, label: str):
 def get_caption_for_part(series_conf: dict, part_num: int) -> str:
     badge = f"[TẬP {part_num}]" if part_num < 3 else "[TẬP 3 - KẾT]"
     title = series_conf["title"]
-    hook = series_conf["hooks"][min(part_num - 1, len(series_conf["hooks"]) - 1)]
-    magnet = series_conf["magnets"][min(part_num - 1, len(series_conf["magnets"]) - 1)]
-    tag = series_conf["genre_tag"]
-    return f"{badge} {title}. {hook} {magnet} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #tamtrang {tag}"
+    part_custom_caption = ""
+    for p in series_conf.get("parts", []):
+        if p.get("part_number") == part_num:
+            part_custom_caption = (p.get("caption") or "").strip()
+            break
+    if part_custom_caption and len(part_custom_caption) > 15:
+        desc = part_custom_caption
+    else:
+        hooks = series_conf.get("hooks", [])
+        magnets = series_conf.get("magnets", [])
+        hook = hooks[min(part_num - 1, len(hooks) - 1)] if hooks else ""
+        magnet = magnets[min(part_num - 1, len(magnets) - 1)] if magnets else ""
+        desc = f"{hook} {magnet}".strip()
+    tag = series_conf.get("genre_tag", "#audiotruyen #podcast #fyp")
+    return f"{badge} {title}. {desc} #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #tamtrang {tag}".strip()
 
 def run_one_day_cycle(target_date: str = ""):
     """Vận hành trọn vẹn chu kỳ 10 bộ truyện trong 1 ngày."""
@@ -302,11 +359,15 @@ def run_one_day_cycle(target_date: str = ""):
             for attempt in range(1, 4):
                 print(f"\n📲 Đang tải lên TikTok Studio: {vid_file.name} (Lần thử {attempt}/3)...")
                 try:
+                    clean_series_title = s_title.split(":")[0].strip() if ":" in s_title else s_title
+                    playlist_title = f"[TRỌN BỘ] {clean_series_title}"[:30]
                     upload_success = upload_and_publish_video(
                         video_path=vid_file,
                         caption=caption,
                         screenshot_prefix=f"{s_key}_{p_key}",
-                        thumbnail_path=part_thumb_file if part_thumb_file.exists() else None
+                        thumbnail_path=part_thumb_file if part_thumb_file.exists() else None,
+                        playlist_name=playlist_title,
+                        enable_auto_captions=False
                     )
                 except Exception as ue:
                     print(f"  ⚠️ Lỗi khi đăng: {ue}")

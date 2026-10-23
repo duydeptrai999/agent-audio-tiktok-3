@@ -38,7 +38,7 @@ Thay vào đó là vệt phát quang xanh đục của hợp chất chì thủy 
 Cố Vĩnh Niên đứng tựa két sắt, hai tay khoanh trước ngực mỉm cười:
 'Thẩm Nhược Lam... Đóng dấu thật đi, séc ba trăm triệu đô đã ký sẵn!'.
 
-Tôi không ngẩng đầu, nhẹ nhàng gạt công tắc kính lúp sang chế độ phân cực:
+Tôi không ngẩng đầu, nhẹ nhàng gạt công tắc kính lúp sang lăng kính phân cực:
 'Viên đá này nung tại Chanthaburi, giá gốc chưa tới hai trăm đô la.'.
 
 Sắc mặt Cố Vĩnh Niên giật thót, bàn tay đút túi áo bỗng siết chặt khẩu súng giảm thanh!"""
@@ -280,7 +280,7 @@ Tôi cẩn thận đặt cuốn kinh thư vào hộp kính hút chân không bơ
 # ==============================================================================
 def get_story_cycle_34(title: str = "") -> Dict[str, Any]:
     t = title or "Ba Tao Cáp Thép Đứt Giữa Cuồng Phong: Chiếc Cabin Treo Lơ Lửng Trên Vực Thẳm Tám Trăm Mét"
-    p1 = """Ba tao cáp thép ngoài cùng vừa đứt toác giữa cơn bão quét cấp mười bốn thì cabin treo số chín đã vặn xoắn dữ dội trên độ cao tám trăm mét, làm kẹt cứng chốt hãm thủy lực khẩn cấp.
+    p1 = """Rắc! Ba tao cáp thép ngoài cùng đứt phựt trong gió lốc, chiếc cabin treo số chín chao đảo dữ dội trên độ cao tám trăm mét làm kẹt cứng chốt hãm thủy lực khẩn cấp.
 
 Tiếng kim loại ma sát chát chúa rít lên từng hồi giữa khe núi đá vôi dựng đứng.
 Mười hai hành khách bên trong cabin la hét hoảng loạn, bám chặt vào thanh giằng khi sàn nghiêng ba mươi độ.
@@ -309,9 +309,9 @@ Tôi đạp mạnh cần bẩy cơ học ba lần liên tiếp. Then cài chốt
 
 Nhưng trên đỉnh tháp số ba, Trang Hạo xuất hiện với chiếc kìm cắt nhắm thẳng vào cáp điện phụ!"""
 
-    p3 = """Tiếng cánh quạt trực thăng cứu hộ quân đội gầm vang trên đỉnh mây mù xé toạc màn sương núi đá vôi.
+    p3 = """Tiếng cánh quạt trực thăng cứu nạn khẩn cấp gầm vang trên đỉnh mây mù xé toạc màn sương núi đá vôi.
 
-Hai chiến sĩ đặc công đu dây tiếp cận đỉnh tháp số ba, kịp thời khống chế Trang Hạo trước khi hắn cắt cáp điện.
+Hai kỹ thuật viên cứu hộ đu dây tiếp cận đỉnh tháp số ba, kịp thời khống chế Trang Hạo trước khi hắn cắt cáp điện.
 Chiếc tời cứu hộ công suất lớn nhẹ nhàng kéo cabin số chín cập sát bệ hạ cánh nhà ga an toàn tuyệt đối.
 
 Toàn bộ mười hai hành khách được đưa ra ngoài trong tiếng vỗ tay và nước mắt vỡ òa của hàng trăm thân nhân.
@@ -332,7 +332,7 @@ Xa xa dưới chân núi, thung lũng bình yên dần hiện ra sau cơn cuồn
                 "part_number": 1,
                 "badge_label": "PHẦN 1",
                 "title": "Tập 1: Ba Tao Cáp Thép Đứt Giữa Cuồng Phong",
-                "hook": "Ba tao cáp thép ngoài cùng vừa đứt toác giữa cơn bão quét cấp mười bốn thì cabin treo số chín đã vặn xoắn dữ dội trên độ cao tám trăm mét, làm kẹt cứng chốt hãm thủy lực khẩn cấp.",
+                "hook": "Rắc! Ba tao cáp thép ngoài cùng đứt phựt trong gió lốc, chiếc cabin treo số chín chao đảo dữ dội trên độ cao tám trăm mét làm kẹt cứng chốt hãm thủy lực khẩn cấp.",
                 "body": p1,
                 "cliffhanger": "Đinh Vĩnh rút chốt hãm thép vonfram... Trượt người lao thẳng xuống nóc chiếc cabin đang chao đảo trên vực sâu!",
                 "call_to_action": "Bấm theo dõi đón xem Tập 2: Màn cứu hộ nghẹt thở và bộ mặt thật của tên giám đốc biến chất!",
@@ -367,19 +367,19 @@ Xa xa dưới chân núi, thung lũng bình yên dần hiện ra sau cơn cuồn
 # ==============================================================================
 def get_story_cycle_35(title: str = "") -> Dict[str, Any]:
     t = title or "Máy Phân Tích Sóng Âm Hiện Dải Tần Rỗng: Tiếng Lòng Vạch Trần Thần Tượng Hát Nhép Triệu View"
-    p1 = """Tiếng lòng của tôi vừa vang lên chê chiếc giọng hát nốt cao giả tạo, ca sĩ thần tượng bỗng đánh rơi micro xuống sàn.
+    p1 = """Tiếng lòng của tôi vừa vang lên chê chiếc giọng hát nốt cao giả tạo. Ca sĩ thần tượng bỗng đánh rơi micro xuống sàn.
 
 Màn hình máy phân tích dải tần sóng âm Spectrum Analyzer trước mặt tôi hiển thị một đường thẳng băng không gợn sóng.
 File âm thanh thu sẵn ba mươi hai bit đang chạy ngầm trên máy tính phát nhạc nền với âm lượng tối đa.
 
-Ca sĩ thần tượng Lục Phi vội vàng nhặt micro bọc vàng lên, mặt đỏ bừng gượng cười trước năm nghìn khán giả:
+Ca sĩ thần tượng Lục Phi vội vàng nhặt micro bọc vàng lên. Mặt hắn đỏ bừng gượng cười trước năm nghìn khán giả.
 Tôi thầm nghĩ trong đầu: 'Hát nốt Đô năm mà thanh quản không rung, chiếc răng khểnh bọc sứ sắp rớt ra kìa!'.
 
-Lục Phi giật mình lấy tay che miệng, ánh mắt hoảng hốt nhìn quanh buồng điều khiển âm thanh tầng hai.
-Nhà sản xuất Lâm Chấn bước vào, tay cầm bản hợp đồng tài trợ hai mươi tỷ dí sát vào mặt tôi:
+Lục Phi giật mình lấy tay che miệng. Ánh mắt hắn hoảng hốt nhìn quanh buồng điều khiển âm thanh tầng hai.
+Nhà sản xuất Lâm Chấn bước vào phòng máy. Hắn cầm bản hợp đồng tài trợ hai mươi tỷ dí sát vào mặt tôi:
 'Diệp Khả Vi... Cứ để đĩa than chạy tiếp, đừng phá đám kiếm tiền!'.
 
-Tôi ngước nhìn Lâm Chấn, ngón tay trỏ đặt hờ trên cần gạt âm lượng tổng của bàn mixer ba mươi hai kênh!"""
+Tôi ngước nhìn Lâm Chấn. Ngón tay trỏ của tôi đặt hờ trên cần gạt âm lượng tổng của bàn mixer ba mươi hai kênh!"""
 
     p2 = """Bàn tay của Lâm Chấn vừa chạm cần gạt mixer, tiếng lòng của tôi lại vang dội như loa:
 'Ông béo này lấy tiền mua biệt thự cho bồ, tối qua vừa bị bắt quả tang!'.
@@ -453,46 +453,46 @@ def get_story_cycle_36(title: str = "") -> Dict[str, Any]:
     t = title or "Bản Hối Phiếu Bảy Mươi Triệu Đô Trên Bàn Đàm Phán: Chiếc Bút Ký Mực Tự Hủy Trong Ba Mươi Phút"
     p1 = """Bảy mươi triệu đô la tiền chuộc vừa được xác nhận chuyển khoản vào tài khoản ký thác thì chiếc vali bọc thép chứa con tin đã bị cài kíp nổ áp suất ngược, kim đồng hồ đếm ngược chỉ còn bốn phút mười lăm giây.
 
-Không gian bên trong căn phòng họp lãnh sự quán ngột ngạt như buồng kín không có dưỡng khí.
-Phó tùy viên Triệu Bân đẩy tập hồ sơ miễn trừ tư pháp qua mép bàn tròn bằng kính cường lực:
+Không gian bên trong căn phòng họp hội đồng cứu trợ quốc tế ngột ngạt như buồng kín không có dưỡng khí.
+Phó ban tài chính Triệu Bân đẩy tập hồ sơ miễn trừ tư pháp qua mép bàn tròn bằng kính cường lực.
 'Tần Dịch... Ký giải tỏa tài khoản ngay, Viktor sẽ cắt ngòi nổ sau khi bay!'.
 
-Tôi tựa lưng vào ghế da, chiếc bút máy nẹp vàng trên tay xoay tròn nhịp nhàng theo chiều kim đồng hồ.
+Tôi tựa lưng vào ghế da. Chiếc bút máy nẹp vàng trên tay xoay tròn nhịp nhàng theo chiều kim đồng hồ.
 Ống mực bên trong chiếc bút là hợp chất mực nhạy nhiệt gốc axit amin, sẽ bay hơi không để lại dấu vết sau ba mươi phút.
 
-Tôi nhìn thẳng vào mắt Viktor qua màn hình đàm phán vệ tinh mã hóa:
+Tôi nhìn thẳng vào mắt Viktor qua màn hình đàm phán vệ tinh mã hóa.
 'Thả cháu bé ra cửa khẩu số ba trước, tôi mới ký điều khoản giải ngân cuối cùng.'.
 
-Tên trùm khủng bố gõ báng súng ngắn xuống bàn phát ra tiếng cộc khô khốc:
+Tên trùm khủng bố gõ báng súng ngắn xuống bàn phát ra tiếng cộc khô khốc.
 'Mày có hai phút để ký... Nếu không tòa nhà này biến thành tro!'.
 
 Tôi thong thả mở nắp bút máy, đặt ngòi bút sắc lẹm xuống dòng chữ ký của ngân hàng trung ương!"""
 
     p2 = """Ngòi bút vừa lướt hết nét chữ ký cuối cùng trên bản hối phiếu, tín hiệu mở khóa cửa khẩu số ba đã báo xanh trên màn hình.
 
-Một đặc nhiệm cải trang tài xế cứu thương đã đón được đứa bé chạy nhanh vào xe bọc thép an toàn.
+Một nhân viên bảo an cải trang tài xế cứu thương đã đón được đứa bé chạy nhanh vào xe bọc thép an toàn.
 Viktor nở nụ cười ngạo mạn giơ tay bấm phím xác nhận rút tiền trên máy tính xách tay vệ tinh.
 
 Nhưng màn hình thanh toán quốc tế bỗng đỏ rực với dòng cảnh báo: 'Chữ ký số không hợp lệ do văn bản bị hủy biến tính'.
 Cùng lúc đó, lớp mực ký trên tờ hối phiếu giấy trước mặt Triệu Bân bắt đầu mờ dần rồi biến mất hoàn toàn.
 
 Triệu Bân hoảng hốt chộp lấy tờ giấy trắng trơn, gào thét mất kiểm soát:
-'Mực tự hủy... Tần Dịch, mày dám lừa cả hội đồng ngoại giao!'.
+'Mực tự hủy... Tần Dịch, mày dám lừa cả hội đồng cứu trợ!'.
 
 Hắn rút khẩu súng lục ổ quay giấu dưới ngăn kéo bàn họp nhằm thẳng tim tôi bóp cò.
 Tôi cúi rạp người hất tung chiếc bàn kính cường lực nặng một tạ chắn ngang tầm đạn.
 Tiếng đạn sượt qua mặt kính rít lên xé toạc lớp gỗ ốp tường phía sau!"""
 
-    p3 = """Lực lượng đặc nhiệm phá vỡ cửa kính áp mái. Họ đu dây xuống khống chế Triệu Bân trong chớp mắt.
+    p3 = """Đội an ninh bảo hộ chuyên nghiệp phá vỡ cửa kính áp mái. Họ đu dây xuống khống chế Triệu Bân trong chớp mắt.
 
 Tại sới bạc biên giới, chuyên cơ của Viktor bị phong tỏa bởi xe bọc thép Interpol.
-Bảy mươi triệu đô la được thu hồi nguyên vẹn chuyển về ngân khố quốc gia.
+Bảy mươi triệu đô la được thu hồi nguyên vẹn chuyển về quỹ ký thác bảo trợ.
 
 Đứa bé con tin được trao trả về vòng tay ấm áp của gia đình.
-Triệu Bân bị áp giải ra xe tù với tội danh phản quốc và tống tiền quốc tế.
+Triệu Bân bị áp giải ra xe tù với tội danh cấu kết bắt cóc tống tiền và gian lận tài chính.
 
-Bộ trưởng Ngoại giao bước vào phòng họp, cài huân chương chiến công lên ngực áo tôi:
-'Tần chuyên viên... Anh đã cứu sống con tin và bảo vệ danh dự quốc gia!'.
+Chủ tịch Hội đồng Cứu trợ bước vào phòng họp, bắt chặt tay tôi xúc động:
+'Tần chuyên viên... Anh đã cứu sống con tin, bảo vệ trọn vẹn quỹ cứu trợ!'.
 
 Tôi mỉm cười cất chiếc bút máy mực nhiệt vào hộp nhung, đón ánh ban mai rạng rỡ trên quảng trường."""
 
@@ -525,7 +525,7 @@ Tôi mỉm cười cất chiếc bút máy mực nhiệt vào hộp nhung, đón
                 "part_number": 3,
                 "badge_label": "PHẦN 3",
                 "title": "Tập 3: Huân Chương Chiến Công Và Quảng Trường Hòa Bình",
-                "hook": "Lực lượng đặc nhiệm chống khủng bố phá vỡ cửa kính áp mái đu dây đu thẳng xuống khống chế Triệu Bân.",
+                "hook": "Đội an ninh bảo hộ chuyên nghiệp chống khủng bố phá vỡ cửa kính áp mái đu dây đu thẳng xuống khống chế Triệu Bân.",
                 "body": p3,
                 "cliffhanger": "Ánh ban mai rạng rỡ rọi sáng quảng trường hòa bình, khép lại chuyên án giải cứu con tin chấn động quốc tế!",
                 "call_to_action": "Thả tim nếu bạn ngưỡng mộ sự mưu trí tuyệt đỉnh của nhà ngoại giao Việt Nam!",

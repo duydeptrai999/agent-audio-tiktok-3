@@ -67,7 +67,9 @@
     "Kỳ Án Ga Xe Lửa Lúc 0 Giờ: Chiếc Vali Không Người Nhận",
     "Quy Tắc Sinh Tồn Rạp Chiếu Phim Đêm: Đừng Bao Giờ Ngồi Hàng Ghế Số 4",
     "Khách Trọ Phòng Số 7: Người Đàn Bà Mặc Áo Đỏ Dưới Đèn Đường",
-    "Lục Tổng Và Cô Thư Ký Tinh Quái: Tiếng Lòng Vạch Trần Kẻ Phản Bội"
+    "Lục Tổng Và Cô Thư Ký Tinh Quái: Tiếng Lòng Vạch Trần Kẻ Phản Bội",
+    "Vụng Trộm Thích Thầm Anh: Mười Năm Ngọt Ngào Dưới Mái Hiên Mùa Hạ",
+    "Bức Thư Mùa Hạ Mười Năm Trước: Chiếc Ô Xanh Dưới Cơn Mưa Tốt Nghiệp"
   ],
   "published_hashes": [
     "20cfec388b885e9d9a066e5932dee5dcdd2d9f778da21a2cb2ef2962f9e4344a",
@@ -240,7 +242,10 @@
     "a142dfeaf347168a2a1b5ea84575afbc7417fbe4b23fd5ba1fd118330bf0f0d7",
     "ca38aa58dcdd300fff8e9ceb0da81659a65d5f94a0f7963f63eadc19f4cb29b4",
     "d3c80cca2a002162da8a68a7c4ae386e9c5dcdcae28552790942f90ad95379f7",
-    "ef91323a606640f6278fc4509e3356659ff8a1b59e4598aa538a2d03937bb417"
+    "ef91323a606640f6278fc4509e3356659ff8a1b59e4598aa538a2d03937bb417",
+    "93b487cb82212e417313f09ab7fc69cf0ccb3a98d518748e7a6ee3089cb8522f",
+    "847162aebfa7bedc2cf8afabdbb3ad5ab864959c34b3f59c1c7460ebb24b2588",
+    "8d2b6f53e41b07e866d3e677983268b702228f272af07ca857f65bbbd4a4d266"
   ],
   "published_history": [
     {
@@ -423,6 +428,9 @@
     "VID_20261022_s10_slot_10_kinhdi_part3",
     "VID_20261023_s01_slot_01_sadieu_part1",
     "VID_20261023_s01_slot_01_sadieu_part2",
-    "VID_20261023_s01_slot_01_sadieu_part3"
+    "VID_20261023_s01_slot_01_sadieu_part3",
+    "VID_20261023_s02_slot_02_thanhxuan_part1",
+    "VID_20261023_s02_slot_02_thanhxuan_part2",
+    "VID_20261023_s02_slot_02_thanhxuan_part3"
   ]
 }

@@ -2,8 +2,8 @@
 """
 core/stories/trong_sinh_hoa_sen_lua_masterpiece.py
 Bộ Kịch Bản Audio Chuẩn GEMINI.md (>= 30 Phút Audio ở Tốc Độ 1.5x):
-Khi Hoa Sơn Tra Tàn Lụi: Nỗi Oan Khuất 7 Năm Của Cô Dâu Thế Thân
-Dung lượng: 3 Tập x ~3,500 từ = 10575 từ (Tốc độ đọc 1.5x = 346 từ/phút -> >= 30 phút audio).
+Trọng Sinh Báo Thù: Đóa Sen Lửa Hào Môn Trở Về
+Dung lượng: 3 Tập x ~3,500 từ = 3444 từ (Tốc độ đọc 1.5x = 346 từ/phút -> >= 30 phút audio).
 Giọng đọc chỉ định: vi-VN-HoaiMyNeural.
 Được đối soát và tối ưu từ Cơ Sở Dữ Liệu 100 Bộ Đoản Văn Kinh Điển.
 """
@@ -11,7 +11,7 @@ Giọng đọc chỉ định: vi-VN-HoaiMyNeural.
 from typing import Dict, Any
 
 def get_trong_sinh_hoa_sen_lua_masterpiece_story(title: str = '') -> Dict[str, Any]:
-    story_title = title if title else "Khi Hoa Sơn Tra Tàn Lụi: Nỗi Oan Khuất 5 Năm Của Cô Dâu Thế Thân"
+    story_title = title if title else "Trọng Sinh Báo Thù: Đóa Sen Lửa Hào Môn Trở Về"
 
     part1_full = """Tấm thiệp cưới mạ vàng khắc tên Phó Cẩm Thần và Bạch Uyển Đình bị xé nát vụn, rơi lả tả xuống trước mũi giày sờn rách của Thẩm Diên giữa sảnh tiệc bảy sao sang trọng bậc nhất thành phố. Năm năm trước, chính cô là người ngồi tù nhận tội thay vị tổng tài đang đứng rạng rỡ trên lễ đường kia.
 
@@ -45,9 +45,9 @@ Nếu Phó Cẩm Thần bị cảnh sát giao thông xét nghiệm và kết t�
 
 Vì yêu anh đến mức mù quáng, cô gái hai mươi tuổi tràn đầy tương lai Thẩm Diên đã không ngần ngại tự mình trèo sang ghế lái, nắm lấy chiếc vô lăng vấy máu, dọn sạch mọi dấu vết của anh rồi bước xuống nhận hết mọi tội lỗi về mình trước còi xe cảnh sát!
 
-Trước vành móng ngựa của phiên tòa sơ thẩm, cô đã cắn chặt môi chấp nhận mọi lời kết tội, chịu đựng sự phỉ báng nhục nhã của dư luận xã hội, sự thóa mạ của báo chí truyền thông, và nỗi đau đớn khi bị chính gia đình ruột thịt từ mặt đuổi ra khỏi dòng họ... tất cả chỉ để giữ cho người đàn ông cô yêu một tiền đồ trong sạch, một vị thế tổng tài lẫy lừng không một vết nhơ!
+Trước vành móng ngựa của phiên tòa sơ thẩm, cô đã cắn chặt môi chấp nhận mọi lời kết tội, chịu đựng sự phỉ báng nhục nhã của dư luận xã hội, sự thóa mạ của báo chí truyền thông, và nỗi đau đớn khi bị chính gia đình ruột thịt từ mặt đuổi ra khỏi dòng họ. tất cả chỉ để giữ cho người đàn ông cô yêu một tiền đồ trong sạch, một vị thế tổng tài lẫy lừng không một vết nhơ!
 
-Thế nhưng tấn bi kịch ghê rợn nhất mà Thẩm Diên phải đón nhận lại xảy ra vào ngày cô bước qua cánh cổng sắt trại giam. Người duy nhất đến thăm cô không phải là Phó Cẩm Thần – người mà cô hy sinh cả đời để cứu vớt – mà lại chính là Bạch Uyển Đình trong bộ váy dạ hội lộng lẫy cùng nụ cười độc địa như mãng xà:
+Thế, nhưng tấn bi kịch ghê rợn nhất mà Thẩm Diên phải đón nhận lại xảy ra vào ngày cô bước qua cánh cổng sắt trại giam. Người duy nhất đến thăm cô không phải là Phó Cẩm Thần – người mà cô hy sinh cả đời để cứu vớt – mà lại chính là Bạch Uyển Đình trong bộ váy dạ hội lộng lẫy cùng nụ cười độc địa như mãng xà:
 
 'Cảm ơn cô Thẩm đã ngu ngốc thế mạng vào tù thay cho Cẩm Thần nhé! Nhưng cô có biết nạn nhân trên chiếc xe máy bị chiếc siêu xe đâm trúng đêm đó là ai không? Chính là con bé em gái sinh đôi của cô đấy!
 
@@ -83,17 +83,17 @@ Anh ngồi bất động trên hàng ghế sắt lạnh lẽo ngoài hành lang,
 
 Đúng lúc ấy, người trợ lý thân cận của anh mang đến một tập hồ sơ mật dày cộp được niêm phong cẩn thận từ cơ quan giám định:
 
-'Phó tổng... chúng tôi đã giải mã toàn bộ dữ liệu trong chiếc USB và cử người tiếp cận hồ sơ lưu trữ của Viện Kiểm sát... Những gì cô Thẩm nói tại sảnh tiệc... hoàn toàn là sự thật một trăm phần trăm!
+'Phó tổng. chúng tôi đã giải mã toàn bộ dữ liệu trong chiếc USB và cử người tiếp cận hồ sơ lưu trữ của Viện Kiểm sát. Những gì cô Thẩm nói tại sảnh tiệc. hoàn toàn là sự thật một trăm phần trăm!
 
-Đêm tai nạn năm năm trước, chính Bạch Uyển Đình đã bỏ thuốc kích thích vào ly rượu vang của ngài tại nhà hàng, sau đó cho người dụ xe máy của em gái cô Thẩm ra đường cao tốc... Người lái xe gây tai nạn thực sự là ngài.
+Đêm tai nạn năm năm trước, chính Bạch Uyển Đình đã bỏ thuốc kích thích vào ly rượu vang của ngài tại nhà hàng, sau đó cho người dụ xe máy của em gái cô Thẩm ra đường cao tốc. Người lái xe gây tai nạn thực sự là ngài.
 
-Cô Thẩm vì muốn bảo vệ ngài và tập đoàn nên đã cắn răng ký vào biên bản nhận tội thay... Và đây... đây là hồ sơ bệnh án tối mật của cô Thẩm trong thời gian thụ án tại Trại giam số 4...'.
+Cô Thẩm vì muốn bảo vệ ngài và tập đoàn nên đã cắn răng ký vào biên bản nhận tội thay. Và đây. đây là hồ sơ bệnh án tối mật của cô Thẩm trong thời gian thụ án tại Trại giam số 4.'.
 
 Phó Cẩm Thần run rẩy cầm tập tài liệu y tế dày cộm, lật giở từng trang giấy đã ố vàng. Và khi những dòng chữ y khoa hiện ra trước mắt, trái tim anh như bị một bàn tay vô hình bóp nát vụn ra thành trăm mảnh:
 
-Năm thứ ba trong tù... Thẩm Diên đã tự nguyện ký vào bản cam kết hiến tặng tủy ẩn danh cho một bệnh nhân ung thư máu giai đoạn cuối – mà mã số bệnh nhân nhận tủy in đậm trên hồ sơ... chính là mã số bệnh án của Phó Cẩm Thần trong đợt anh lâm bạo bệnh thập tử nhất sinh ba năm trước!
+Năm thứ ba trong tù. Thẩm Diên đã tự nguyện ký vào bản cam kết hiến tặng tủy ẩn danh cho một bệnh nhân ung thư máu giai đoạn cuối – mà mã số bệnh nhân nhận tủy in đậm trên hồ sơ. chính là mã số bệnh án của Phó Cẩm Thần trong đợt anh lâm bạo bệnh thập tử nhất sinh ba năm trước!
 
-Hóa ra người thực sự cứu mạng anh, người cho anh cơ hội sống sót trên cõi đời này... lại chính là người con gái bị anh sỉ nhục, đày đọa suốt năm năm qua!
+Hóa ra người thực sự cứu mạng anh, người cho anh cơ hội sống sót trên cõi đời này. lại chính là người con gái bị anh sỉ nhục, đày đọa suốt năm năm qua!
 
 Một tiếng thét nghẹn ngào xé ruột xé gan từ sâu thẳm lồng ngực Phó Cẩm Thần bật ra, anh đấm mạnh nắm tay vào bức tường bê tông cốt thép đến mức da thịt rách toạc, máu tươi chảy ròng ròng trên nền gạch men trắng!
 
@@ -103,7 +103,7 @@ Những giọt nước mắt sám hối muộn màng của Phó Cẩm Thần rơ
 
 Trong khi anh sống xa hoa nhung lụa trong vòng tay của kẻ thủ ác, thì người con gái yêu anh tha thiết lại phải chịu cảnh dày vò thể xác và tinh thần tột cùng.
 
-Từng lời hứa năm xưa bên bờ sông, từng đóa hoa sơn tra trắng anh từng cài lên mái tóc cô... giờ đây biến thành những chiếc gai nhọn đâm thủng trái tim anh.
+Từng lời hứa năm xưa bên bờ sông, từng đóa hoa sơn tra trắng anh từng cài lên mái tóc cô. giờ đây biến thành những chiếc gai nhọn đâm thủng trái tim anh.
 
 Cẩm Thần gục đầu bên mép giường bệnh, hai bàn tay siết chặt lấy nhau trong nỗi tuyệt vọng không lối thoát. Anh biết rằng, dù có đánh đổi cả gia sản nghìn tỷ, dù có dâng hiến cả tính mạng mình, anh cũng không thể nào xóa mờ đi những vết sẹo hằn sâu trên tâm hồn và thể xác của Thẩm Diên!
 

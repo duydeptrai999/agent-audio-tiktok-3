@@ -249,7 +249,6 @@ def ensure_public_privacy(page) -> bool:
 def enable_auto_captions_feature(page) -> bool:
     """Tự động kích hoạt tính năng Tạo Phụ Đề Tự Động (Auto-caption CC) của TikTok Studio."""
     try:
-        # Tìm switch/checkbox hoặc toggle phụ đề
         caption_loc = (
             page.locator('text="Tạo phụ đề tự động"')
             .or_(page.locator('text="Auto-generated captions"'))
@@ -270,10 +269,32 @@ def enable_auto_captions_feature(page) -> bool:
                 caption_loc.first.click(force=True)
                 print("  📝 [Auto-Caption CC] Đã click bật tùy chọn Phụ đề tự động!")
                 return True
-        print("  ℹ️ [Auto-Caption CC] Sẵn sàng cho TikTok tự động sinh phụ đề CC.")
         return False
     except Exception as e:
         print(f"  ⚠️ [Auto-Caption Warning] {e}")
+        return False
+
+def disable_auto_captions_feature(page) -> bool:
+    """Đảm bảo TẮT tính năng Tạo Phụ Đề Tự Động (Auto-caption CC) theo yêu cầu 'ko bật phụ đề'."""
+    try:
+        caption_loc = (
+            page.locator('text="Tạo phụ đề tự động"')
+            .or_(page.locator('text="Auto-generated captions"'))
+            .or_(page.locator('text="Phụ đề tự động"'))
+            .or_(page.locator('text="Phụ đề"'))
+        )
+        if caption_loc.count() > 0 and caption_loc.first.is_visible():
+            switch = caption_loc.first.locator('xpath=..//input[@type="checkbox"]')
+            if switch.count() > 0 and switch.is_checked():
+                switch.click(force=True)
+                print("  🚫 [Auto-Caption CC] Đã TẮT Phụ đề tự động của TikTok Studio theo yêu cầu người dùng!")
+                return True
+            else:
+                print("  🚫 [Auto-Caption CC] Phụ đề tự động đã ở trạng thái TẮT.")
+                return True
+        return False
+    except Exception as e:
+        print(f"  ⚠️ [Auto-Caption Disable Warning] {e}")
         return False
 
 def add_to_playlist_feature(page, playlist_name: str) -> bool:
@@ -451,7 +472,7 @@ def upload_and_publish_video(
     thumbnail_path: Optional[Path] = None,
     wait_content_checks: bool = True,
     playlist_name: Optional[str] = None,
-    enable_auto_captions: bool = True
+    enable_auto_captions: bool = False
 ) -> bool:
     """Tải lên và xuất bản 1 video lên TikTok Studio qua Cốc Cốc. Trả về True nếu thành công."""
     if not video_path.exists():
@@ -608,9 +629,11 @@ def upload_and_publish_video(
                         wait_for_content_checks(page, max_wait=35)
                         ensure_public_privacy(page)
 
-                    # Tự động kích hoạt Phụ Đề Tự Động (Auto-caption CC) theo yêu cầu người dùng
+                    # Quản lý Phụ Đề Tự Động (Auto-caption CC): Tắt hoàn toàn nếu enable_auto_captions=False
                     if enable_auto_captions:
                         enable_auto_captions_feature(page)
+                    else:
+                        disable_auto_captions_feature(page)
 
                     # Tự động thêm video vào Danh Sách Phát / Tuyển Tập theo bộ truyện
                     if playlist_name:

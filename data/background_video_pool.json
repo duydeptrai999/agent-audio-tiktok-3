@@ -1,14 +1,14 @@
 {
   "active_video": {
-    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
-    "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+    "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
     "url": "",
-    "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
-    "total_duration": 3909.57,
-    "current_offset": 583.47,
-    "audios_used": 1,
+    "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+    "total_duration": 4754.8,
+    "current_offset": 0.0,
+    "audios_used": 0,
     "max_audios": 2,
-    "registered_at": "2026-10-23 04:17:18"
+    "registered_at": "2026-10-23 09:06:38"
   },
   "used_history": [
     {
@@ -565,7 +565,18 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-22 22:00:20"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 773.5300000000001,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-23 04:17:18"
     }
   ],
-  "rotation_count": 46
+  "rotation_count": 47
 }

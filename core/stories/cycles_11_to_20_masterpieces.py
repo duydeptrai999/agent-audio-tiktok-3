@@ -66,9 +66,9 @@ Tôi lạnh lùng điều chỉnh van gây mê, giọng đanh thép:
 
 Tiếng máy khử rung tim nạp điện vang lên rền vang. Ngoài cửa kính phòng phẫu thuật cách ly, lực lượng thanh tra y tế đã ập đến niêm phong toàn bộ hồ sơ bệnh án."""
 
-    p3 = """Bản giám định luyện kim của Viện Khoa học Hình sự kết luận chiếc kẹp mổ chứa độc tố thạch tín hữu cơ gây nhồi máu cơ tim cấp.
+    p3 = """Bản giám định luyện kim của Viện Khoa học Hình sự kết luận, chiếc kẹp mổ chứa độc tố thạch tín hữu cơ, gây nhồi máu cơ tim cấp.
 
-Hội đồng Kỷ luật Tổng cục Y tế lập tức tước chứng chỉ hành nghề vĩnh viễn và khởi tố viện phó Chu Bá Khiêm về tội cố ý giết người.
+Hội đồng Kỷ luật Tổng cục Y tế lập tức tước chứng chỉ hành nghề vĩnh viễn, đồng thời khởi tố viện phó Chu Bá Khiêm về tội cố ý giết người.
 
 Ca phẫu thuật vi phẫu kéo dài mười hai tiếng thành công rực rỡ, viện trưởng già dần hồi phục tri giác.
 
@@ -248,9 +248,9 @@ Sắc mặt Tống Khắc Lương xám ngoét như tro tàn:
 
 Tôi mỉm cười lạnh lùng, ấn nút truyền dữ liệu vi phổ trực tiếp đến Cục Di sản Quốc gia."""
 
-    p3 = """Bản kết luận giám định quang phổ của Bộ Văn hóa khẳng định bức họa và ba mươi món ngọc ngà của Tống Khắc Lương đều là hàng giả mạo tinh vi bằng bột đá ép polymer.
+    p3 = """Bản kết luận giám định quang phổ của Bộ Văn hóa khẳng định, bức họa và ba mươi món ngọc ngà của Tống Khắc Lương, đều là hàng giả mạo tinh vi bằng bột đá ép polymer.
 
-Lệnh phong tỏa tài sản và bắt giữ khẩn cấp trùm lừa đảo xuyên quốc gia được thực thi ngay tại sàn đấu giá trước sự chứng kiến của năm mươi nhà sưu tập quốc tế.
+Lệnh phong tỏa tài sản và bắt giữ khẩn cấp trùm lừa đảo xuyên quốc gia, được thực thi ngay tại sàn đấu giá, trước sự chứng kiến của năm mươi nhà sưu tập quốc tế.
 
 Kỷ vật thực sự của cha tôi - chiếc la bàn ngọc bích cổ - được tìm thấy nguyên vẹn trong két sắt ngầm.
 
@@ -403,7 +403,7 @@ def get_story_cycle_15(title: str = "") -> Dict[str, Any]:
 Gió rít dữ dội bên ngoài vách kính chống đạn nhìn xuống toàn cảnh quận tài chính rực sáng ánh đèn.
 
 Tổng giám đốc Lục Vĩ Khang ném điếu xì gà đang cháy dở xuống thảm lông cừu, nụ cười ngạo mạn:
-'Thẩm Tri Ý... Cô liều lĩnh bán khống cổ phiếu tập đoàn tôi... Sáng mai cô sẽ phá sản!'.
+'Thẩm Tri Ý... Bán khống cổ phiếu của tôi... Cô sẽ phá sản!'.
 
 Tôi không ngẩng đầu nhìn hắn. Ngón trỏ của tôi gõ nhẹ lên phím Enter của thiết bị bảo mật token ngân hàng Thụy Sĩ:
 'Lục tổng... Sáng mai cổ phiếu của ông... Không còn giá trị để giao dịch nữa!'.
@@ -412,7 +412,7 @@ Khuôn mặt hắn tối sầm lại:
 'Cô điên rồi à? Quỹ tương hỗ của tôi vừa bơm thêm mười nghìn tỷ!'.
 
 Tôi xoay màn hình phụ về phía hắn, để lộ biểu đồ kiểm toán dòng tiền ngầm:
-'Mười nghìn tỷ đó... Là tiền khống từ mười tám công ty ma ở đảo Cayman vừa bị phong tỏa lúc nửa đêm!'."""
+'Mười nghìn tỷ đó... Là tiền khống vừa bị phong tỏa lúc nửa đêm!'."""
 
     p2 = """Lục Vĩ Khang vớ lấy chiếc gạt tàn pha lê lao về phía tôi, nhưng cánh tay rắn chắc của Phó Trầm Uyên đã bẻ ngoặt cổ tay hắn ra sau:
 'Động vào người của tôi... Mày chán sống rồi à?'.
@@ -430,9 +430,9 @@ Lục Vĩ Khang quỳ sụp xuống sàn thảm, đôi mắt vằn đỏ những
 Phó Trầm Uyên lạnh lùng rút chiếc khăn tay lau ngón tay áo:
 'Không ép mày... Là lòng tham của mày tự đào mồ chôn mày!'."""
 
-    p3 = """Ủy ban Chứng khoán Nhà nước ra thông báo đình chỉ giao dịch khẩn cấp toàn bộ hệ sinh thái doanh nghiệp của tập đoàn họ Lục.
+    p3 = """Ủy ban Giám sát Giao dịch Chứng khoán, ra thông báo đình chỉ giao dịch khẩn cấp, toàn bộ hệ sinh thái doanh nghiệp của tập đoàn họ Lục.
 
-Bản án tòa kinh tế tuyên bố truy thu năm nghìn tỷ đồng trốn thuế và tịch thu toàn bộ bất động sản đứng tên Lục Vĩ Khang để bồi thường cho các nhà đầu tư nhỏ lẻ.
+Bản án tòa kinh tế tuyên bố truy thu năm nghìn tỷ đồng trốn thuế, tịch thu toàn bộ bất động sản của Lục Vĩ Khang, để bồi thường cho các nhà đầu tư nhỏ lẻ.
 
 Màn hình giao dịch chuyển sang sắc xanh rực rỡ khi cổ phiếu minh bạch của công ty chúng tôi phục hồi kỷ lục.
 
@@ -495,10 +495,10 @@ def get_story_cycle_16(title: str = "") -> Dict[str, Any]:
 Đại tiệc ngoại giao kỷ niệm ba mươi năm thành lập khách sạn năm sao Metropole bỗng chốc im bặt.
 
 Chủ tịch tập đoàn ẩm thực Doãn Thế Hào từ bàn danh dự bước tới, ánh mắt thâm độc nhìn thẳng vào tôi:
-'Giám đốc Ngọc... Trong đĩa thức ăn tiếp đãi đại sứ lại có dị vật nguy hiểm thế này à?'.
+'Giám đốc Ngọc... Đĩa tiệc của đại sứ... Lại có dị vật nguy hiểm thế này à?'.
 
 Tôi không hoảng sợ. Tôi dùng khăn lụa gắp nhẹ viên nang đặt lên đĩa thủy tinh:
-'Doãn tổng... Viên nang này làm bằng gelatin chịu nhiệt chuyên dụng trong phòng thí nghiệm hóa chất của con trai ông!'.
+'Doãn tổng... Vỏ nang này lấy từ phòng thí nghiệm của con trai ông!'.
 
 Sắc mặt lão già khẽ biến đổi:
 'Cô ngậm máu phun người! Người đâu... Lập tức bắt cô ta lại!'.
@@ -512,7 +512,7 @@ Bếp trưởng Henry Vũ bước ra từ cửa bếp inox, chiếc khay bạc t
 Trên màn hình LED lớn của đại sảnh, hình ảnh con trai Doãn Thế Hào lén lút rạch túi nguyên liệu gan ngỗng nhét viên nang độc hiện rõ từng chi tiết.
 
 Tôi nhỏ một giọt quỳ tím lên bề mặt viên nang trước mặt các phóng viên quốc tế:
-'Dung dịch bên trong viên nang là xyanua liều cao... Ý đồ của ông là đầu độc đại sứ để lật đổ quyền quản lý khách sạn của tôi!'.
+'Bên trong là xyanua liều cao... Ông muốn đầu độc đại sứ để hại tôi!'.
 
 Chất lỏng lập tức chuyển sang màu tím đen kịt rợn người.
 
@@ -520,11 +520,11 @@ Tiếng xôn xao kinh hãi bùng nổ khắp khán phòng đại tiệc.
 
 Con trai Doãn Thế Hào hoảng loạn định bỏ chạy ra cửa thoát hiểm nhưng đã bị đội an ninh đặc nhiệm quật ngã xuống sàn."""
 
-    p3 = """Cơ quan Cảnh sát Điều tra ra quyết định khởi tố và bắt tạm giam cha con Doãn Thế Hào về tội âm mưu ám sát và phá hoại an ninh quốc gia.
+    p3 = """Cơ quan Cảnh sát Điều tra, ra quyết định khởi tố cha con Doãn Thế Hào, về tội âm mưu ám sát và phá hoại an ninh quốc gia.
 
 Toàn bộ chuỗi nhà hàng gắn sao Michelin giả mạo của tập đoàn Doãn thị bị tước giấy phép kinh doanh vĩnh viễn.
 
-Khách sạn Metropole dưới sự dẫn dắt của tôi và bếp trưởng Henry Vũ vinh dự đón nhận danh hiệu điểm đến ẩm thực an toàn và xuất sắc nhất châu Á.
+Khách sạn Metropole, dưới sự dẫn dắt của tôi và Henry Vũ, vinh dự nhận danh hiệu ẩm thực an toàn và xuất sắc nhất châu Á.
 
 Henry Vũ rót hai ly nước trái cây nhiệt đới mỉm cười nâng ly:
 'Bảo Ngọc... Nghệ thuật ẩm thực chân chính là đem lại niềm vui... Không phải mưu mô hèn hạ!'.
@@ -599,7 +599,7 @@ Tôi nhìn qua camera quét nhiệt độ ngoài hành lang. Năm bóng người
 
 Rầm! Khối thuốc nổ tự chế ngoài cửa nổ tung, nhưng cánh cửa thép dày hai mươi phân chỉ khẽ rung rinh.
 
-Luồng khí độc màu xám xịt do nhóm Tiêu Trạch xả vào bị hệ thống thông gió đảo chiều hút ngược trở lại hành lang ngoài.
+Luồng khí độc màu xám xịt do nhóm Tiêu Trạch xả vào, bị hệ thống thông gió đảo chiều, hút ngược trở lại hành lang ngoài.
 
 Tiếng la hét nghẹn ngào của Diệp Nhi vang lên qua hệ thống đàm thoại:
 'Anh Minh ơi... Cứu em với... Khí độc xộc vào mặt nạ rồi!'.
@@ -612,7 +612,7 @@ Tôi cầm micro lạnh lùng đáp trả:
 
     p3 = """Đội cứu hộ boong ke trung tâm sử dụng xe bánh xích hạng nặng đến tiếp quản hiện trường sau cơn bão tuyết lịch sử.
 
-Tiêu Trạch và đồng bọn bị tước toàn bộ quyền công dân boong ke và chuyển đến khu lao động cải tạo hầm mỏ giá lạnh.
+Tiêu Trạch và đồng bọn bị tước toàn bộ quyền công dân boong ke, và chuyển đến khu lao động cải tạo hầm mỏ giá lạnh.
 
 Hệ thống sưởi địa nhiệt và vườn rau khí canh của chúng tôi bước vào vụ thu hoạch đầu tiên, cung cấp nguồn thực phẩm tươi sống cho năm nghìn người sống sót.
 
@@ -687,7 +687,7 @@ Trịnh Phong biến sắc:
 'Mày nói nhảm gì đấy? Đưa đây mau!'.
 
 Tôi lùi lại một bước, chỉ vào góc dưới tờ giấy:
-'Mực in trên giấy là loại mực tím cảm nhiệt chỉ có trong máy in cá nhân tại phòng làm việc của mẹ cậu - Tôn phu nhân!'."""
+'Mực in trên giấy là loại mực tím cảm nhiệt... Chỉ có trong máy in cá nhân tại phòng của mẹ cậu!'."""
 
     p2 = """Trịnh Phong lao tới định cướp lấy tờ giấy, nhưng Khang Duy - thủ khoa toán học ngồi bàn bên cạnh - đã giữ chặt cổ tay hắn:
 'Trịnh Phong... Ngồi yên tại chỗ!'.
@@ -707,7 +707,7 @@ Thầy hiệu trưởng nghiêm nghị gạt tay bà ta ra:
 
     p3 = """Biên bản đình chỉ thi và hủy bỏ toàn bộ kết quả ba năm học của Trịnh Phong được lập ngay tại chỗ.
 
-Cơ quan công an tiến hành khám xét khẩn cấp phòng in đề và khởi tố đường dây buôn bán đề thi học sinh giỏi quốc gia do Tôn phu nhân cầm đầu.
+Cơ quan công an tiến hành khám xét phòng in đề, khởi tố đường dây buôn bán đề thi quốc gia do Tôn phu nhân cầm đầu.
 
 Suất học bổng toàn phần du học tại Đại học Cambridge danh giá được trao lại cho tôi và Khang Duy - hai thí sinh có điểm số thi thật cao nhất toàn quốc.
 
@@ -874,7 +874,7 @@ Két! Tiếng phanh xe rít xé lòng kèm theo tiếng va chạm kinh hoàng đ
 
 Cánh cửa cách âm của phòng sạch bỗng bị khóa chặt từ bên ngoài.
 
-Qua tấm kính cường lực hai lớp, Giám đốc công nghệ Tạ Quang đứng nhìn chúng tôi với nụ cười nham hiểm, trên tay hắn là chiếc kích hoạt bình xịt khí chữa cháy Halon có thể hút sạch dưỡng khí trong sáu mươi giây."""
+Qua tấm kính cường lực hai lớp, Giám đốc công nghệ Tạ Quang đứng nhìn chúng tôi với ánh mắt lạnh băng, trên tay hắn là chiếc kích hoạt bình xịt khí Halon có thể hút sạch oxy trong sáu mươi giây."""
 
     p2 = """Tạ Quang ấn nút xả khí Halon, khí trắng đục phụt ra xối xả từ trần nhà:
 'Đặng Quốc Phong... Mày giỏi phục hồi dữ liệu lắm... Nhưng người chết thì không thể làm nhân chứng!'.
@@ -885,15 +885,15 @@ Minh Khuê ôm ngực ngã quỵ xuống sàn vì thiếu oxy:
 Tôi không nhìn Tạ Quang. Tôi dùng chiếc bút cảm ứng chọc thủng màng loa thông hơi, kích hoạt card mạng dự phòng vệ tinh Starlink:
 'Tạ Quang... Mày quên tao là kỹ sư trưởng hệ thống à?'.
 
-Tít! Toàn bộ file âm thanh và sổ cái chuyển khoản rửa tiền năm nghìn tỷ lập tức được đồng bộ hóa lên máy chủ đám mây của Cục An ninh mạng.
+Tít! Toàn bộ file âm thanh và sổ cái rửa tiền năm nghìn tỷ, lập tức được đồng bộ hóa, lên máy chủ đám mây của Cục An ninh mạng.
 
-Cùng lúc đó, màn hình LED quảng trường trung tâm thành phố tự động phát trực tiếp đoạn ghi âm cuộc gọi cầu cứu của mẹ tôi trước hàng vạn người.
+Cùng lúc đó, màn hình LED quảng trường trung tâm thành phố, tự động phát trực tiếp đoạn ghi âm cầu cứu của mẹ tôi trước hàng vạn người.
 
 Sắc mặt Tạ Quang biến dạng kinh hoàng khi tiếng còi xe cảnh sát đặc nhiệm rú lên ngay dưới chân tòa tháp."""
 
     p3 = """Lực lượng Cảnh sát Cơ động phá tung cửa kính phòng sạch, quăng mặt nạ dưỡng khí cứu sống tôi và Minh Khuê ngay trong gang tấc.
 
-Tạ Quang bị khóa tay bằng còng số tám đưa thẳng lên xe đặc chủng dưới sự chứng kiến của hàng trăm phóng viên báo chí.
+Tạ Quang bị khóa tay bằng còng số tám, đưa thẳng lên xe đặc chủng, dưới sự chứng kiến của hàng trăm phóng viên báo chí.
 
 Vụ án oan khuất mười năm trước của mẹ tôi - kế toán trưởng quỹ từ thiện - chính thức được minh oan và bồi thường danh dự thỏa đáng.
 
@@ -901,7 +901,7 @@ Minh Khuê nắm chặt bàn tay tôi giữa sảnh tòa nhà ngập tràn ánh 
 'Anh Phong... Dữ liệu đã nói lên toàn bộ sự thật... Mẹ anh ở trên trời có thể mỉm cười rồi!'.
 
 Tôi đặt phiến đĩa từ vào hộp nhung bảo quản, ngước mắt nhìn lên nền trời xanh biếc:
-'Dữ liệu số có thể bị xóa... Nhưng dấu vết của tội ác và ánh sáng của sự thật thì vĩnh viễn không bao giờ phai mờ!'.
+'Dữ liệu số có thể bị xóa... Nhưng ánh sáng sự thật vĩnh viễn không bao giờ phai mờ!'.
 
 Chuông điện thoại reo vang báo tin chiến thắng trọn vẹn, khép lại hành trình mười năm tìm lại công lý."""
 

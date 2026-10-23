@@ -26,21 +26,15 @@ Thế nhưng, đúng mười hai giờ đêm, khi luồng sáng trắng từ má
 
 Người đó không hề động đậy, hai tay đặt ngay ngắn trên đùi, chiếc mũ áo mưa che sụp xuống nửa khuôn mặt, chỉ để lộ chiếc cằm nhợt nhạt như sáp nến.
 
-Trần Nam nín thở, tim đập thình thịch như muốn nhảy ra khỏi lồng ngực. Anh vội vã lật bức tường sau lưng buồng chiếu, nơi dán bản Quy tắc an toàn vận hành trực ca đêm bằng giấy ố vàng:
+Trần Nam lùi một bước, lưng đập mạnh vào vách tôn rỉ sét. Dòng mực đỏ cảnh báo dán trên mép bàn máy chiếu đập vào mắt anh: Hàng ghế số bốn vĩnh viễn không bao giờ bán vé! Thấy bóng người ngồi đó, tuyệt đối không được tắt máy chiếu!
 
-Điều một: Hàng ghế số bốn vĩnh viễn không bao giờ bán vé. Nếu nhìn thấy bất kỳ ai ngồi ở hàng ghế này, hãy coi như không nhìn thấy gì và tuyệt đối không được tắt máy chiếu.
+Anh run rẩy siết chặt tay quay cơ học, mắt không dám rời khỏi cuộn phim đang quay tít. Đúng lúc ấy, một tiếng lạo xạo... rôm rốp như tiếng nhai bỏng ngô bỗng vang lên ngay sau gáy anh! Mùi bơ ngọt ngào trộn lẫn với mùi bùn tanh bốc lên ngùn ngụt trong không gian buồng máy chật hẹp.
 
-Điều hai: Nếu nghe thấy tiếng nhai bỏng ngô lạo xạo sau lưng nhưng buồng máy chỉ có một mình bạn, hãy ho nhẹ một tiếng rồi tiếp tục quay tay quay kiểm tra dây phim.
+Nhớ lời dặn gạch chân son trên vách: Khi nghe tiếng nhai sau lưng lúc chỉ có một mình, phải lập tức ho nhẹ rồi tiếp tục quay phim!
 
-Điều ba: Nếu bóng đen ở hàng ghế số bốn đứng dậy quay đầu về phía buồng chiếu, hãy lập tức nhắm chặt mắt lại và đếm từ một đến mười. Trong mười giây đó, dù có ngửi thấy mùi khét lẹt hay tiếng gõ vào mặt kính, tuyệt đối không được mở mắt!
+Trần Nam cắn chặt môi, cố lấy can đảm ho nhẹ một tiếng: Khụ... khụ!
 
-Đúng khoảnh khắc Trần Nam vừa đọc xong dòng chữ cuối cùng, một tiếng lạo xạo... rôm rốp vang lên ngay sau gáy anh!
-
-Mùi bơ ngọt ngào trộn lẫn với mùi tanh nồng của máu bốc lên ngùn ngụt trong không gian buồng máy chật hẹp!
-
-Trần Nam run rẩy cắn chặt môi, cố gắng lấy hết can đảm ho nhẹ một tiếng: Khụ... khụ!
-
-Tiếng nhai bỏng ngô sau lưng bỗng ngưng bặt trong tích tắc. Một sự im lặng chết chóc bao trùm lấy căn phòng.
+Tiếng nhai sau lưng bỗng ngưng bặt trong tích tắc. Một sự im lặng chết chóc bao trùm lấy căn phòng.
 
 Thế nhưng, khi Nam quay mắt nhìn xuống qua khe kính máy chiếu, toàn bộ máu trong người anh như đông cứng lại!
 

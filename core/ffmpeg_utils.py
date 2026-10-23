@@ -219,7 +219,8 @@ def render_playable_video(
     voice_volume: float = 1.0,
     srt_path: Optional[str] = None,
     enable_subtitles: Optional[bool] = None,
-    thumbnail_path: Optional[str] = None
+    thumbnail_path: Optional[str] = None,
+    title_text: str = ""
 ) -> str:
     """
     Ráp nối Voice (NamMinh) + Video nền Ngang 16:9 (1920x1080) + BGM dịu nhẹ + Visual Badge.
@@ -259,7 +260,30 @@ def render_playable_video(
     font_param = f":fontfile='{font_path}'" if font_path else ""
 
     filters_list = []
-    if badge_label:
+    if title_text:
+        clean_badge = badge_label.replace("[", "").replace("]", "").replace("'", "").replace(":", "").strip() if badge_label else "AUDIO ĐẶC SẮC"
+        clean_title = title_text.replace(":", r"\:").replace("'", "").replace(",", r"\,").replace("%", r"\%").strip()
+        words = clean_title.split()
+        if len(clean_title) > 42 and len(words) > 4:
+            mid = len(words) // 2
+            line1 = " ".join(words[:mid])
+            line2 = " ".join(words[mid:])
+            banner_filter = (
+                f"drawbox=y=30:color=black@0.75:width=iw:height=60:t=fill,"
+                f"drawtext=text='{clean_badge}'{font_param}:fontcolor=0xFFCC00:fontsize=34:x=(w-text_w)/2:y=44,"
+                f"drawbox=y=95:color=black@0.65:width=iw:height=100:t=fill,"
+                f"drawtext=text='{line1}'{font_param}:fontcolor=white:fontsize=38:x=(w-text_w)/2:y=105,"
+                f"drawtext=text='{line2}'{font_param}:fontcolor=white:fontsize=38:x=(w-text_w)/2:y=150"
+            )
+        else:
+            banner_filter = (
+                f"drawbox=y=35:color=black@0.75:width=iw:height=65:t=fill,"
+                f"drawtext=text='{clean_badge}'{font_param}:fontcolor=0xFFCC00:fontsize=36:x=(w-text_w)/2:y=50,"
+                f"drawbox=y=105:color=black@0.65:width=iw:height=75:t=fill,"
+                f"drawtext=text='{clean_title}'{font_param}:fontcolor=white:fontsize=40:x=(w-text_w)/2:y=122"
+            )
+        filters_list.append(banner_filter)
+    elif badge_label:
         import re
         clean_label = re.sub(r'\(?\d+\s*phút\)?', '', badge_label, flags=re.IGNORECASE).strip()
         clean_label = clean_label.replace("[", "").replace("]", "").replace("'", "").replace(":", "").strip()
@@ -274,7 +298,7 @@ def render_playable_video(
             from config.settings import ENABLE_SUBTITLES
             enable_subtitles = ENABLE_SUBTITLES
         except Exception:
-            enable_subtitles = True
+            enable_subtitles = False
 
     # Khắc phụ đề Kinetic Subtitles chữ vàng/trắng viền đen chuẩn TikTok High-CTR
     if enable_subtitles and srt_path and os.path.exists(srt_path) and os.path.getsize(srt_path) > 10:

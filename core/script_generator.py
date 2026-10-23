@@ -103,17 +103,31 @@ class MasterScriptEngine:
         relevant_cases = consult_data.get("relevant_cases", [])
         hook_template = consult_data.get("recommended_hook_template", OPENING_HOOK_TEMPLATES_6[0])
 
+        chekhov_props = []
+        for case in relevant_cases:
+            props = case.get("tangible_props", [])
+            for p in props:
+                if p not in chekhov_props:
+                    chekhov_props.append(p)
+        if not chekhov_props:
+            chekhov_props = [
+                "Vật chứng 1: Chiếc USB chứa dữ liệu ẩn hoặc bản khế ước chuyển nhượng ngầm",
+                "Vật chứng 2: Thói quen dị ứng hoặc camera hành trình giấu kín"
+            ]
+
+        benchmark_act_pacing = {}
+        if relevant_cases:
+            benchmark_act_pacing = relevant_cases[0].get("three_acts_pacing", {})
+
         blueprint = {
             "title": title,
             "genre_key": genre_key,
             "premise": premise,
             "consultation_token": consult_data.get("consultation_token", ""),
             "benchmark_cases": [c["title"] for c in relevant_cases],
+            "benchmark_act_pacing": benchmark_act_pacing,
             "hook_strategy": hook_template["type"],
-            "chekhov_guns": [
-                "Vật chứng 1: Chiếc USB chứa dữ liệu ẩn hoặc bản khế ước chuyển nhượng ngầm",
-                "Vật chứng 2: Thói quen dị ứng hoặc camera hành trình giấu kín"
-            ],
+            "chekhov_guns": chekhov_props,
             "villain_architecture": {
                 "tier1_cannon_fodder": "Kẻ sỉ nhục ở mở màn (bị vả mặt nhanh chóng ở cuối Tập 1)",
                 "tier2_mid_antagonist": "Kẻ ngáng đường trục lợi có quyền thế (gây sức ép cực hạn ở Tập 2)",

@@ -2,7 +2,7 @@
 
 *Tài liệu hướng dẫn vĩnh viễn (Always-on Rules) tự động nạp vào bộ nhớ của Agent trong mọi phiên làm việc.*
 
-*Cập nhật sau Chuỗi Thực Nghiệm Tối Ưu Biên Kịch 10 Vòng (10-Cycle Scriptwriting Self-Audit & Master Codex).*
+*Cập nhật sau Chuỗi Thực Nghiệm Tối Ưu Biên Kịch 50 Vòng (50-Cycle Master Scriptwriting Self-Audit & Master Codex 5.0).*
 
 
 
@@ -10,47 +10,98 @@
 
 
 
-## 1. NGUYÊN TẮC VÀNG VỀ SÁNG TÁC KỊCH BẢN (MASTER SCRIPTWRITING CODEX - 10 VÒNG THỰC CHIẾN)
+## 1. NGUYÊN TẮC VÀNG VỀ SÁNG TÁC KỊCH BẢN (MASTER SCRIPTWRITING CODEX 5.0 - 50 VÒNG THỰC CHIẾN)
 
 
 
-### 🌟 CẨM NANG MỞ ĐẦU AUDIO TRIỆU VIEW (THE 3-SECOND DUAL-ENGINE AUDIO HOOK CODEX):
+### 🌟 MA TRẬN 4 TRƯỜNG PHÁI MỞ ĐẦU AUDIO PART 1 TRIỆU VIEW (4-ARCHETYPE AUDIO HOOK CODEX):
 
 > Khán giả TikTok lướt video với tốc độ dưới 1.5 giây mỗi clip. Họ KHÔNG đọc văn bản, họ ĐANG NGHE âm thanh phát ra từ loa điện thoại hoặc tai nghe. Nếu 15 từ đầu tiên không giật màng nhĩ họ bằng một xung đột vật lý sống còn, họ sẽ VUỐT BỎ NGAY LẬP TỨC!
 
-> Để các audio khác nhau không bị trùng lặp mô-típ nhàm chán, Agent BẮT BUỘC áp dụng linh hoạt 2 Chiến Thuật Mở Đầu Kép sau:
+> Để các audio khác nhau không bao giờ bị trùng lặp mô-típ nhàm chán, Agent BẮT BUỘC luân chuyển qua 4 Trường Phái Mở Đầu Audio Triệu View sau:
 
 
 
-#### ⚡ CHIẾN THUẬT A: LÁT CẮT KỊCH TÍNH THOÁNG QUA (THE SENSORY FLASH-FORWARD / COLD TEASER)
+#### ⚡ TRƯỜNG PHÁI 1: LÁT CẮT KỊCH TÍNH THOÁNG QUA (THE MICRO SENSORY FLASH-FORWARD - 12 ĐẾN 20 TỪ)
 
-- **Đặc điểm**: Ngắn gọn 12 - 20 từ (3 - 5 giây). Nêu bật một dị thường âm thanh, vật chứng rợn gáy hoặc khoảnh khắc sinh tử ở đỉnh điểm cao trào mà không giải thích trước, cắt đúng giây phút nghẹt thở rồi quay lại mạch chính.
+- **Đặc điểm**: Ngắn gọn 12 - 20 từ (3 - 5 giây). Nêu bật một dị thường âm thanh, lỗi hình ảnh hoặc vật chứng rợn gáy ở đỉnh điểm cao trào mà không giải thích trước, cắt đúng giây phút nghẹt thở rồi quay lại mạch chính.
 
 - **Thực chiến**:
 
-  - *"Mũi kim đồng hồ trên tay nạn nhân đứng khựng ở hai giờ mười bốn phút sáng, ngay dưới đáy móng tay gãy vụn của cô ấy là sợi len màu xanh cổ vịt - chiếc áo duy nhất tôi mặc trong ngày cưới."*
+  - *"Khung hình video call vừa giật khựng ở giây thứ tư, vệt méo màu xanh lục quanh vành tai em gái tôi đã bóc trần công nghệ Deepfake."*
 
-  - *"Mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng vừa lộ ra dưới đáy bát yến sáu mươi triệu, ngón trỏ của tôi đã bấm nút phát loa ngoài chiếc điện thoại bàn."*
+  - *"Bản khế ước góp vốn một nghìn cây sầu riêng vừa ký xong, mùi bùn đất tanh nồng dưới đế giày gã giám đốc đã bóc trần khu nông trại ảo."*
 
-  - *"Tiếng cào móng tay khô khốc dưới dát giường gỗ ép vừa dừng bặt, một giọt nước lạnh tanh nhỏ thẳng vào giữa trán tôi, mang theo mùi bùn ao tanh tưởi giữa căn hộ tầng bảy không có cửa sổ."*
+  - *"Chiếc kẹp ghim của tôi vừa cậy tung ngăn đáy hộp mica quyên góp, một tập phong bì tiền mặt mang tên bệnh viện bỗng lộ ra."*
 
-  - *"Mũi kéo inox của tôi vừa bấm đứt sợi chỉ niêm phong trên tập hồ sơ ba mươi tỷ, tiếng còi xe thanh tra thuế đã rú lên dưới sảnh."*
+  - *"Kim đồng hồ tốc độ trên xe khách nhảy vọt lên một trăm mười, bảng định vị bên ngoài bỗng hiện ra con đường đèo cụt."*
+
+  - *"Bức tường thạch cao phòng ngủ vừa khoan thủng một lỗ nhỏ, mùi ẩm mốc mười năm trước bỗng xộc thẳng vào mũi tôi."*
 
 
 
-#### ⚡ CHIẾN THUẬT B: HIỆN TRƯỜNG ĐỐI ĐẦU CHI TIẾT CẬN CẢNH (THE IN MEDIA RES DETAILED SENSORY KICK-OFF)
+#### ⚡ TRƯỜNG PHÁI 2: HIỆN TRƯỜNG ĐỐI ĐẦU CHI TIẾT CẬN CẢNH (THE IN MEDIA RES HIGH-STAKES SCENE - 25 ĐẾN 45 TỪ)
 
 - **Đặc điểm**: Chi tiết 25 - 45 từ (8 - 14 giây). Ném thính giả thẳng vào giữa tâm bão của một cuộc đối đầu căng như dây đàn, nơi từng đạo cụ cơ học, tiếng động va chạm và lời thoại dao găm diễn ra trực tiếp không qua hồi tưởng.
 
 - **Thực chiến**:
 
-  - *"Cánh cửa thép chống đạn ba lớp vừa đóng sập chốt cơ học, tiếng đập cửa rầm rầm đã vang lên kèm tiếng khóc the thé của ả em họ ngoài hành lang: 'Chị Lam ơi! Thằng bé sốt bốn mươi độ rồi, cho em xin mẩu nến và gói mì tôm thôi!'. Tôi không mở cửa. Tôi tựa lưng vào vách thép dày mười lăm phân, ngón tay đặt sẵn trên van xả khí cay áp suất cao. Qua lỗ quan sát hồng ngoại, chiếc bọc chăn bông trên tay ả khẽ xốc xếch, để lộ một góc đầu búp bê cao su hỏng một mắt."*
+  - *"Tiếng còng số tám vừa bập tanh tách vào khung giường sắt hai tầng, chiếc dùi cui điện trên tay tên quản đốc đã phóng ra tia lửa xanh lè kèm tiếng khét lẹt: 'Ở đây không có kỹ sư! Chỉ có chỉ tiêu một trăm triệu mỗi ngày!'. Tôi nghiến chặt răng, ngón chân bấm chặt vào mẩu sim rác giấu dưới lớp lót giày thể thao."*
 
-  - *"Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng dội thẳng vào màng nhĩ anh: 'Dừng bút lại đồ ngốc! Bản hợp đồng này ký xuống là mất trắng năm trăm tỷ, chưa kể chiếc cà vạt hoa hòe màu cánh sen chấm bi của sếp nhìn y hệt con công đang xòe đuôi!'. Bàn tay đang cầm bút của vị tổng tài khựng lại giữa không trung."*
+  - *"Bức ảnh chụp lợi nhuận phái sinh vừa gửi tới kèm lời hối thúc nạp tiền. Ngón tay tôi đã gõ xong câu lệnh truy vấn trên sổ cái blockchain. Gã đàn ông ngồi đối diện tôi trong khách sạn năm sao tự xưng là phó giám đốc quỹ đầu tư định lượng Singapore."*
 
-  - *"Luồng sáng trắng từ buồng máy chiếu vừa rọi qua khe kính xuống khán phòng ba trăm chỗ, hàng ghế số bốn vốn niêm phong bỗng có người áo mưa đen ngồi bất động dù ngoài trời nắng ráo suốt ba tuần."*
+  - *"Cột sóng trên điện thoại của ba mươi hành khách đồng loạt chuyển sang màu đỏ rực. Tiếng chốt điện tử bên ngoài cửa phòng sập xuống đánh cạch khô khốc. Căn phòng ven đô biến thành chiếc bẫy trạm BTS lậu nghẹt thở."*
 
-  - *"Chiếc trâm bạc vừa nhúng vào chén trà hoa cúc của Thục phi, đầu trâm đã sủi lên một lớp bọt xám tro như bồ hóng. Thục phi vẫn mỉm cười dịu dàng nâng tách trà lên môi tôi: 'Uống đi con dâu, trà nguội mất ngon'."*
+
+
+#### ⚡ TRƯỜNG PHÁI 3: BẪY TÒ MÒ NGHỊCH LÝ THỰC TẾ (THE PARADOXICAL REALITY HOOK - 15 ĐẾN 28 TỪ)
+
+- **Đặc điểm**: 15 - 28 từ (5 - 8 giây). Đưa ra một nghịch lý vật lý đời thường khiến người nghe lập tức thắc mắc và không thể rời tai nghe.
+
+- **Thực chiến**:
+
+  - *"Chùm sáng tím từ camera điện thoại vừa quét qua đầu đinh ốc treo đồng hồ, một chấm đỏ rực bỗng nhấp nháy phát tín hiệu sóng wifi hai chấm bốn gigahertz ngay trên đầu giường ngủ của tôi."*
+
+  - *"Mũi kim đồng hồ trên tay nạn nhân đứng khựng ở hai giờ mười bốn phút sáng, ngay dưới đáy móng tay gãy vụn của cô ấy là sợi len màu xanh cổ vịt - chiếc áo duy nhất tôi mặc trong ngày cưới."*
+
+
+
+#### ⚡ TRƯỜNG PHÁI 4: ĐẠO CỤ DỊ THƯỜNG BẤT KHẢ THI (THE DETAILED PARADOXICAL PROP HOOK - 25 ĐẾN 35 TỪ)
+
+- **Đặc điểm**: 25 - 35 từ (7 - 10 giây). Đạo cụ đời thường mang đặc tính vật lý bất thường hoặc bất hợp lý gây rùng mình.
+
+- **Thực chiến**:
+
+  - *"Chiếc lồng mèo bằng nhựa vừa đặt lên bàn cân kiểm tra đã kéo kim nhảy vọt lên mười hai cân, tiếng kim loại va chạm lục cục phát ra từ lớp đáy bọc chì dày ba phân."*
+
+  - *"Mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng vừa lộ ra dưới đáy bát yến sáu mươi triệu, ngón trỏ của tôi đã bấm nút phát loa ngoài chiếc điện thoại bàn."*
+
+
+
+---
+
+
+
+### 🚨 QUY TẮC ĐU TREND XÃ HỘI NỔI CỘM & 100% ZERO CHÍNH TRỊ:
+
+> **ĐỂ KỊCH BẢN ĐỘC LẠ, CUỐN HÚT VÀ ĐẠT TRIỆU VIEW BỀN VỮNG:**
+> Agent BẮT BUỘC theo dõi và khai thác các vấn đề xã hội nóng hổi, cạm bẫy dân sự và hiện tượng đời sống đang được cộng đồng mạng quan tâm đặc biệt.
+
+1. **Top Chủ Đề Cạm Bẫy Đời Thực Viral**:
+   - Bẫy việc nhẹ lương cao lừa sang biên giới / khu nhà xưởng khép kín.
+   - Deepfake AI video call giả mạo người thân tống tiền.
+   - Camera giấu kín phát sóng hồng ngoại trong phòng trọ sinh viên.
+   - Bẫy đa cấp nông trại ảo / cây trồng công nghệ cao.
+   - Bẫy 'nuôi heo rồi mổ thịt' (sát trư bàn) tình cảm & sàn tiền ảo ma.
+   - Trục lợi từ thiện bệnh nhi bằng hộp mica hai đáy & livestream giả.
+   - Trạm phát sóng BTS lậu đè sóng đánh cắp mã OTP ở khách sạn ven đô.
+   - Bắt cóc lao động trên các chuyến xe khách chạy lệch tuyến ban đêm.
+   - Đội lốt trạm cứu hộ thú cưng để buôn lậu bằng lồng bọc chì.
+   - Bí ẩn giấu xác sau bức tường thạch cao biệt thự bỏ hoang.
+
+2. **QUY TẮC BẮT BUỘC TUYỆT ĐỐI**: **100% ZERO CHÍNH TRỊ (ZERO POLITICS GUARD)**:
+   - **CẤM TUYỆT ĐỐI**: Không bao giờ nhắc đến "chính trị", "đảng phái", "nhà nước", "chính phủ", "bộ ngoại giao", "lãnh sự quán", "đại sứ quán", "quân đội", "chế độ", "biểu tình", "bầu cử".
+   - Mọi mâu thuẫn và lật kèo BẮT BUỘC giải quyết bằng **năng lực cá nhân, chuyên môn nghề nghiệp, đạo cụ vật lý công nghệ cao và công lý đời thường dân sự** (kỹ sư viễn thông, bác sĩ ngoại khoa, chuyên viên đồ họa, kiểm toán viên, tài xế xe tải).
 
 
 
@@ -98,7 +149,7 @@
 
 2. **Quy luật 3 Giây Đầu Đời Thực (3s Physical Hook)**: 15 từ đầu tiên bắt buộc chứa Dị Thường Thị Giác hoặc Nghịch Lý Hành Động.
 
-3. **Đối Thoại Nhát Gừng Có Dao Găm (Subtext & Psychological Warfare)**: Thoại ngắn (5 - 12 từ), đanh thép, mang tính khiêu khích hoặc gài bẫy. CẤM thoại dài (> 20 từ) mang tính thuyết giảng bệnh án.
+3. **Đối Thoại Nhát Gừng Có Dao Găm (Subtext & Psychological Warfare)**: Thoại ngắn (5 - 12 từ, tối đa 16 từ/vế), đanh thép, mang tính khiêu khích hoặc gài bẫy. CẤM thoại dài (> 20 từ) mang tính thuyết giảng bệnh án.
 
 4. **Quy luật Micro-Pacing 25 Giây & Micro-Movement**: Cứ mỗi 60 - 75 từ thả 1 biến số mới; sau 2 câu thoại có 1 chuyển động cơ thể (xoay cổ tay, hất tách trà, lùi một bước, rút điện thoại).
 
@@ -110,11 +161,11 @@
 
 8. **Chuỗi Hành Trình Vật Chứng Chặt Chẽ (Chain of Custody)**: Vật chứng có lai lịch rõ ràng, không xuất hiện ngẫu nhiên.
 
-9. **Âm Học Đoản Văn Cho Giọng Đọc Edge-TTS (Acoustic Cadence Engine)**: Câu ngắn 8-16 từ (tối đa 20 từ). Cứ sau 12-16 từ có dấu phẩy `,`, dấu hai chấm `:`, hoặc gạch ngang ` - ` lấy hơi. Chốt câu bằng thanh trắc dứt khoát.
+9. **Âm Học Đoản Văn Cho Giọng Đọc Edge-TTS (Acoustic Cadence Engine)**: Câu ngắn 8-16 từ (tối đa 20 từ, TB < 22 từ). Cứ sau 12-16 từ có dấu phẩy `,`, dấu hai chấm `:`, hoặc gạch ngang ` - ` lấy hơi. Chốt câu bằng thanh trắc dứt khoát.
 
 10. **Giao thức Bắt Buộc Đọc Kinh Nghiệm Trước Khi Sản Xuất (Mandatory Pre-flight Experience Gate)**:
 
-    - **BẮT BUỘC 100%**: Trước khi Agent hoặc bất kỳ script/module nào viết kịch bản hay sản xuất audio mới, PHẢI đọc qua `GEMINI.md`, `docs/DAI_KINH_NGHIEM_100_BO_TRUYEN_NGAN_TRUNG_QUOC.md`, `docs/40_CYCLES_SCRIPT_EVOLUTION_MASTERCLASS.md`, `docs/40_CYCLES_AGENT_SCRIPT_AUDIT_REPORT.md`, và tra cứu Cơ sở dữ liệu Tri thức `core/knowledge_base.py`.
+    - **BẮT BUỘC 100%**: Trước khi Agent hoặc bất kỳ script/module nào viết kịch bản hay sản xuất audio mới, PHẢI đọc qua `GEMINI.md`, `docs/DAI_KINH_NGHIEM_100_BO_TRUYEN_NGAN_TRUNG_QUOC.md`, `docs/50_CYCLES_SCRIPT_EVOLUTION_MASTERCLASS.md`, `docs/50_CYCLES_AGENT_SCRIPT_AUDIT_REPORT.md`, và tra cứu Cơ sở dữ liệu Tri thức `core/knowledge_base.py`.
 
     - Bất kỳ kịch bản nào vi phạm đều bị `script_quality_gate.py` tự động từ chối xuất bản và ép viết lại cho tới khi đạt điểm 10/10.
 
@@ -158,9 +209,10 @@ Cấm mở đầu liên tiếp bằng cùng một mô-típ (như liên tục "Ch
 
 
 
-#### 2. CẤM TRÙNG TÊN VÀ LUÂN CHUYỂN 10 VŨ TRỤ NGHỀ NGHIỆP (10 DISTINCT CHARACTER UNIVERSES):
+#### 2. ĐIỀU TIẾT TÊN NHÂN VẬT & MỎ NEO MEME ARCHETYPE (CHARACTER ARCHETYPES & 10 UNIVERSES):
 
-Tuyệt đối CẤM dùng đi dùng lại các tên quen thuộc (Cố Bắc Thần, Liễu Như Yên, Hoàng Minh Triết, Bạch Ngưng Băng). Mỗi audio phải thuộc một Vũ trụ nghề nghiệp chuyên sâu:
+- **Tận dụng Mỏ Neo Meme Viral có kiểm soát**: Các tên meme huyền thoại như *Liễu Như Yên* (trà xanh / bạch liên hoa phản diện), *Bạch Ngưng Băng* (bạch nguyệt quang lạnh lùng), *Cố Bắc Thần* (tổng tài bá đạo) là **Mỏ Neo Nhận Diện Tức Thì (Instant Meme Anchor)** giúp khán giả TikTok hiểu ngay vai vế nhân vật trong 2 giây đầu mà không tốn thời lượng giải thích. Được phép sử dụng làm điểm nhấn viral, nhưng điều tiết tối đa 1-2 slot/ngày để không gây nhàm chán.
+- **Luân chuyển các Vũ trụ Nghề Nghiệp chuyên sâu** cho các slot còn lại:
 
 - *Universe 1*: Kiểm Toán Điều Tra & Thị Trường Vốn (Thẩm Tri Ý, Phó Trầm Uyên, Cố Hàn Châu)
 
@@ -191,40 +243,66 @@ Tuyệt đối CẤM dùng đi dùng lại các tên quen thuộc (Cố Bắc Th
 - *Universe 18*: Kiểm Soát Không Lưu & Radar Hàng Không (Lục Doanh, Cơ trưởng Hoàng Trọng, Bùi Nghị)
 - *Universe 19*: Vi Sinh Học Áp Lực Âm BSL-4 (Tiến sĩ Phương Trực, Tống Quốc Đống)
 - *Universe 20*: Khảo Sát Địa Chất & Móng Ngầm Đô Thị (Kỹ sư An Khê, Triệu Khắc Hùng)
+- *Universe 21*: Thợ Lặn Hang Động Ngập Nước Sâu 80 Mét (Lê Hoàng Phong, Thao Tác Viên Cứu Hộ Tuấn Anh)
+- *Universe 22*: Giàn Khoan Dầu Khí Biển Sâu Siêu Bão (Giàn trưởng Võ Trọng, Kỹ sư Khoan Nam Khánh)
+- *Universe 23*: Kiến Trúc Sư Âm Học Nhà Hát Giao Hưởng (Thẩm Khải Minh, Nghệ sĩ Đàn Dương Cầm Uyển My)
+- *Universe 24*: Huấn Luyện Viên Chó Nghiệp Vụ Cứu Nạn Sạt Lở (Đội trưởng Trương Lâm, Chú chó Rex)
+- *Universe 25*: Kỹ Sư Vệ Tinh Quỹ Đạo Thấp & Viễn Thông Không Gian (Tiến sĩ Chu Khải, Trưởng ca Trực Nhật Huy)
+- *Universe 26*: Pháp Y Độc Chất Học Cổ Sinh & Xác Ướp Cổ (Giám định viên Diệp Lan, Giáo sư Hà Vĩnh)
+- *Universe 27*: Đội Trực Thăng Cứu Hộ Vùng Núi Hiểm Trở (Cơ trưởng Phan Cương, Bác sĩ Hàng không Thúy Nga)
+- *Universe 28*: Nghệ Nhân Luyện Kiếm Truyền Thống & Giám Định Kim Loại (Nghệ nhân Lâm Bảo, Thợ rèn Quốc Đạt)
+- *Universe 29*: Kỹ Thuật Viên An Toàn Bảo Tàng Hạt Nhân Ngầm (Chuyên viên Trần Đạt, Đội trưởng Lê Bách)
+- *Universe 30*: Hoa Tiêu Cảng Biển Nước Sâu Đêm Bão (Hoa tiêu trưởng Doãn Hải, Thuyền trưởng Roger)
 
 
 
-#### 3. CẤM RẬP KHUÔN "CÔNG AN/THUẾ ẬP VÀO" - 10 CƠ CHẾ LẬT KÈO ĐỘC BẢN (10 DIVERSE RESOLUTIONS):
+#### 3. CẤM RẬP KHUÔN "CÔNG AN/BẢO VỆ ẬP VÀO" - 20 CƠ CHẾ LẬT KÈO ĐỘC BẢN (20 NON-OVERLAPPING CLIMAX RESOLUTIONS):
 
-Mỗi audio phải sở hữu một đòn kết liễu riêng biệt:
+Mỗi audio BẮT BUỘC sở hữu một đòn kết liễu riêng biệt, cấm lặp lại cơ chế của 3 audio liền trước:
 
 1. *Margin Call Liquidation*: Cháy tài khoản đòn bẩy tài chính trong 30 giây công bố số liệu.
-
 2. *Rule Inversion Trap*: Đảo ngược quy tắc phòng kín biến kẻ săn mồi thành con mồi.
-
 3. *Digital Forensic Stream*: Camera ngầm tự động livestream lên màn hình LED quảng trường.
-
 4. *Forensic Pathology Match*: Vết mực sáp niêm phong và chuỗi ADN trên di vật cổ.
-
 5. *Time Capsule Will*: Kích hoạt di chúc tín thác ngân hàng Thụy Sĩ 15 năm trước.
-
 6. *Chemical Toxic Indicator*: Giấy quỳ thử độc đổi màu tím than trước sứ thần các nước.
-
 7. *Server Audit Log Extraction*: Địa chỉ MAC và nhật ký máy chủ 2h sáng bóc trần kẻ trộm đề thi.
-
 8. *Pressure Isolation Containment*: Khóa van điều áp cô lập kẻ phản trắc ở khoang ngoài boong ke.
-
 9. *Civil Fraud Void Judgment*: Bản án tòa tuyên hủy toàn bộ giao dịch dân sự do có hành vi lừa dối.
-
 10. *Satirical Psychological Collapse*: Kẻ thù tự thú vì tưởng bí mật đã bại lộ qua tiếng lòng thần dụ.
+11. *Acoustic Resonance Shatter*: Tần số âm thanh cộng hưởng làm nứt vỡ gương hai chiều của phòng thẩm vấn ngầm.
+12. *Air Traffic Radar Trajectory*: Bản đồ radar hàng không bóc trần nhật ký hành trình bay ngụy tạo của kẻ thủ ác.
+13. *BSL-4 Air Pressure Lock*: Hệ thống áp lực âm phòng thí nghiệm tự động cô lập mầm bệnh nguy hiểm.
+14. *Hydrostatic Pressure Float*: Cảm biến thủy lực kích hoạt phao cứu sinh đẩy vật chứng giấu kín lên mặt nước.
+15. *Infrared Spectrum Signature*: Dải quang phổ hồng ngoại bóc trần lớp hóa chất phủ đè lên kiệt tác cổ vật.
+16. *Blockchain Smart Contract Rollback*: Lỗ hổng hợp đồng thông minh kích hoạt lệnh rút cạn toàn bộ bể thanh khoản của sàn ma.
+17. *Cable Load-Stress Failure*: Cảm biến tải trọng cáp treo ghi lại chính xác trọng lượng thừa của thùng hàng lậu.
+18. *Sub-Zero Cryo Crystallization*: Nhiệt độ âm 50 độ C làm đông cứng kết tinh van xả nhiên liệu giả mạo.
+19. *Deep-Sea Sonar Ping Reflection*: Sóng âm sonar phản hồi tọa độ chiếc thùng bọc chì dưới đáy bùn biển sâu.
+20. *Core Soil Strata Analysis*: Mẫu đất địa tầng dưới gầm xe bóc trần vị trí chôn giấu tài sản phi pháp.
 
 
 
-#### 4. CỔNG THẨM ĐỊNH THUẬT TOÁN TƯƠNG ĐỒNG CHÉO (ALGORITHMIC CROSS-SCRIPT GATE):
+#### 4. MA TRẬN 8 DẠNG TIÊU ĐỀ ĐỘC BẢN (8 DISTINCT TITLE TEMPLATES):
+CẤM TUYỆT ĐỐI đặt các tiêu đề có cấu trúc hoặc từ vựng na ná nhau. Mỗi audio phải luân chuyển qua 8 trường phái tiêu đề:
+- *Template 1 (Đạo cụ cơ học + Đột phá nghề nghiệp)*: Chiếc Cờ Lê Thép Số Hai Mươi Tư / Bản Khế Ước Sầu Riêng / Hộp Mica Hai Ngăn
+- *Template 2 (Con số chấn động + Thời khắc sinh tử)*: Lệnh Đóng Băng Lúc Ba Giờ Sáng / Video Call Bốn Giây Bị Lỗi / Lệch Ba Mươi Kilômét
+- *Template 3 (Nghịch lý hiện trường + Vật lý bất khả thi)*: Chiếc Lồng Mèo Bọc Chì Mười Hai Cân / Đinh Ốc Treo Tường Phát Sóng Wifi
+- *Template 4 (Dược lý y điển + Trạch đấu thâm sâu)*: Trâm Bạc Sủi Bọt Xám Tro / Chén Trà Hoa Cúc Cung Đình
+- *Template 5 (Tiếng lòng trào phúng + Hài hước công sở)*: Thư Ký Giả Ngốc Tiếng Lòng Chê Cà Vạt Sếp / Tiếng Lòng Bóc Phốt Phòng Họp
+- *Template 6 (Quy tắc sinh tồn + Địa danh cô lập)*: Rạp Chiếu Phim Hàng Ghế Số Bốn / Khách Sạn Cột Sóng Đỏ Rực Dưới Gầm Giường
+- *Template 7 (Kiểm toán điều tra + Thị trường vốn)*: Mũi Kéo Bấm Chỉ Niêm Phong Ba Mươi Tỷ / Lệnh Bán Khống Năm Nghìn Tỷ
+- *Template 8 (Kỳ án phong ấn + Dấu vết thời gian)*: Bức Tường Thạch Cao Tỏa Mùi Ẩm Mốc Mười Năm / Kẽ Hở Hai Giờ Mười Bốn Phút Sáng
 
-- **Jaccard Vocabulary Similarity < 28%**: So sánh tập từ vựng của kịch bản mới với 10 audio gần nhất. Nếu vượt 28% -> REJECT ngay lập tức vì dấu hiệu "na ná nhau".
+#### 5. CỔNG THẨM ĐỊNH THUẬT TOÁN TƯƠNG ĐỒNG CHÉO SIÊU KHẮT KHE (ALGORITHMIC CROSS-SCRIPT GATE 6.0):
 
-- **Hook Overlap < 40%**: So sánh 25 từ đầu tiên của Part 1. Nếu trùng trên 40% từ ngữ -> REJECT và ép đổi sang Archetype khác.
+- **Jaccard Vocabulary Similarity < 23%**: So sánh tập từ vựng của kịch bản mới với 10 audio gần nhất. Nếu vượt 23% -> REJECT ngay lập tức vì dấu hiệu "na ná nhau".
+
+- **Hook Overlap < 25%**: So sánh 25 từ đầu tiên của Part 1. Nếu trùng trên 25% từ ngữ -> REJECT và ép đổi sang Archetype khác.
+
+- **Title Similarity < 30%**: So sánh từ khóa tiêu đề với toàn bộ lịch sử phát hành. Nếu trùng trên 30% -> REJECT và ép đổi Template tiêu đề khác!
+
+- **Consecutive Syntax Clash = 0**: Cấm tuyệt đối 2-3 audio liên tiếp dùng cùng một cấu trúc ngữ pháp câu đầu.
 
 - **Syntax Rhythm Anti-Clash (Cấm Trùng Nhịp Cú Pháp Mở Đầu)**: Cấm tuyệt đối 2 audio liên tiếp dùng cùng một cấu trúc ngữ pháp câu đầu (ví dụ cấm liên tục dùng cú pháp "X vừa Y... thì Z đã W..."). Bắt buộc luân chuyển qua 10 dạng cú pháp:
 
@@ -275,4 +353,3 @@ Mỗi audio phải sở hữu một đòn kết liễu riêng biệt:
 2. **Giãn cách an toàn chống spam**: 20 phút giữa các tập trong 1 bộ; 45 - 65 phút giữa 2 bộ khác nhau.
 
 3. **Master Pre-publish Audit & Zero Footprint**: Kiểm tra định dạng 1080p, thời lượng > 100s, BGM + giọng nói hoàn chỉnh, dọn dẹp file tạm sau khi đăng.
-

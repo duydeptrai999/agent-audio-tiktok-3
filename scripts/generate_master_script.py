@@ -117,7 +117,8 @@ def main():
     print(" -> Các Case Study kinh điển đối soát làm hình mẫu:")
     for idx, c in enumerate(consult_data["relevant_cases"], 1):
         print(f"    * Case #{idx}: 《{c['title']}》 ({c['author']}) - {c['genre']}")
-        takeaway_short = c.get('key_takeaways', '').split('\n')[0][:95]
+        takeaways = c.get('key_takeaways', '')
+        takeaway_short = str(takeaways[0] if isinstance(takeaways, list) else takeaways).split('\n')[0][:95]
         print(f"      └─ Bài học cốt lõi: {takeaway_short}...")
 
     # GIAI ĐOẠN 2: THIẾT LẬP DÀN Ý KIẾN TRÚC 3 HỒI & MA TRẬN PHẢN DIỆN
