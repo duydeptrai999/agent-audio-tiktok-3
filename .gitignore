@@ -36,6 +36,8 @@ data/*.lock
 # Temporary and log files
 *.log
 *.tmp
+*.pid
+data/*.pid
 .env
 .env.*
 temp_caption.txt

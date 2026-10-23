@@ -145,7 +145,19 @@ def save_daily_status(date_str: str, status: Dict[str, Any]):
 def produce_single_series(series_data: Dict[str, Any], status: Dict[str, Any], date_str: str):
     """Sản xuất 3 tập video của 1 bộ truyện nếu chưa có."""
     s_key = series_data["key"]
-    if status[s_key].get("produced", False):
+    prefix = series_data["prefix"]
+
+    # Kiểm tra xem các tập chưa đăng có đầy đủ file video chưa
+    all_needed_exist = True
+    for part in series_data.get("parts", []):
+        p_num = part["part_number"]
+        if not status.get(s_key, {}).get(f"part{p_num}", False):
+            p_vid = OUTPUT_DIR / f"{prefix}_part{p_num}_final.mp4"
+            if not p_vid.exists() or p_vid.stat().st_size < 500000:
+                all_needed_exist = False
+                break
+
+    if status.get(s_key, {}).get("produced", False) and all_needed_exist:
         return
 
     # Master Quality Gate: Đọc quy chuẩn GEMINI.md & thẩm định kịch bản trước khi sản xuất audio
@@ -334,6 +346,10 @@ def run_one_day_cycle(target_date: str = ""):
             part_thumb_file = THUMB_DIR / f"{prefix}_part{p_idx}_thumb.jpg"
             part_audio_file = AUDIO_DIR / f"{prefix}_part{p_idx}_15x.mp3"
 
+            if not vid_file.exists() or vid_file.stat().st_size < 500000:
+                print(f"⚠️ Chưa có video hoặc file lỗi: {vid_file.name}. Dựng lại ngay...")
+                produce_single_series(conf, status, target_date)
+
             if not vid_file.exists():
                 print(f"❌ Không tìm thấy video: {vid_file.name}. Bỏ qua...")
                 continue
@@ -473,7 +489,23 @@ def run_247_infinite_autopilot():
             else:
                 time.sleep(60)
 
+def acquire_process_lock():
+    PID_FILE = DATA_DIR / "autopilot.pid"
+    if PID_FILE.exists():
+        try:
+            old_pid = int(PID_FILE.read_text(encoding='utf-8').strip())
+            import psutil
+            if psutil.pid_exists(old_pid) and old_pid != os.getpid():
+                proc = psutil.Process(old_pid)
+                if "python" in proc.name().lower():
+                    print(f"⚠️ [PID Lock] Autopilot đang chạy ngầm với PID {old_pid}. Dừng phiên bản trùng lặp.")
+                    sys.exit(0)
+        except Exception:
+            pass
+    PID_FILE.write_text(str(os.getpid()), encoding='utf-8')
+
 def main():
+    acquire_process_lock()
     parser = argparse.ArgumentParser(description="24/7 Master Autopilot: 10 Audio Series Daily")
     parser.add_argument("--once", action="store_true", help="Chỉ chạy chu kỳ của ngày hôm nay rồi dừng")
     parser.add_argument("--date", type=str, default="", help="Chạy ngày cụ thể YYYY-MM-DD")

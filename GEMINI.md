@@ -334,40 +334,72 @@ CẤM TUYỆT ĐỐI đặt các tiêu đề có cấu trúc hoặc từ vựng 
 
 ## 2. NGUYÊN TẮC ÂM THANH & MASTERING (AUDIO BROADCAST STANDARD)
 
-### 🎙️ MA TRẬN 10 VOICE PROFILES ĐIỆN ẢNH ĐỘC BẢN THEO THỂ LOẠI (MULTI-GENRE CINEMA VOICE CODEX):
+### 🎙️ MA TRẬN 48 GIỌNG ĐỌC ĐIỆN ẢNH ĐỘC BẢN & DIỄN ĐỌC ĐA VAI (CINEMA VOCAL STUDIO MASTER PRO 4.0):
 > **CẤM DÙNG MỘT TÔNG GIỌNG ĐƠN ĐIỆU CHO TẤT CẢ THỂ LOẠI!**
-> Mỗi thể loại bắt buộc sở hữu một Profile Giọng Đọc được tinh chỉnh âm học chuyên sâu bằng Pitch Modulation, Native Rate và Chuỗi FFmpeg Vocal Studio riêng biệt:
+> Hệ thống sở hữu ma trận **48 Voice Profiles Điện Ảnh** chia làm 4 nhóm chuyên sâu, kết hợp 6 tầng công nghệ đỉnh cao:
+> 1. Voice gốc Edge-TTS chuẩn phát thanh (Nam Minh & Hoài My).
+> 2. Pitch Modulation (-5.0Hz đến +4.0Hz) & Native Neural Rate (-8% đến +6%).
+> 3. Rubberband Studio Formant Shifting (0.82x đến 1.25x) thay đổi độ tuổi, giới tính và âm sắc không vỡ tiếng.
+> 4. Chuỗi FFmpeg Broadcast EQ, Dynamic Multi-band Compression, De-Esser & Spatial Acoustic Room.
+> 5. Bộ Diễn Đọc Đa Nhân Vật (`generate_multi_role_cinema_tts_audio`): Tự động phát hiện vai diễn (Mẹ chồng, Trà xanh, Kẻ săn mồi, Bé gái, Bác sĩ, Phóng viên, Bếp trưởng, Lão gia...) để gán Profile tương ứng.
+> 6. Bộ Điều Biến Tâm Trạng Cảnh Quay Đa Chiều (`scene_mood`: Tense, Whisper, Climax, Vintage, Normal).
 
-1. **Trinh Thám / Huyền Nghi / Pháp Y** (`DETECTIVE_COLD_MALE`):
-   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-3.5Hz` | Rate: `-2%` | Tempo: `1.12x`
-   - Màu âm: Trầm, đặc, uy nghiêm, đanh thép như trong phòng thẩm vấn. EQ Warmth 110Hz (+4.5dB), Clarity 3.2kHz (+3.8dB).
-2. **Kinh Dị / Quái Đàm / Nguy Dị** (`HORROR_CREEPY_MALE` / `HORROR_WHISPER_FEMALE`):
-   - Giọng: Nam Minh (Pitch `-4.5Hz`, Rate `-4%`) hoặc Hoài My Thì Thào (Pitch `-2.0Hz`, Rate `-3%`) | Tempo: `1.08x`
-   - Màu âm: Lạnh buốt, ma mị, âm u. EQ Deep 90Hz (+5.0dB), Lowpass 6800Hz tạo không gian tối tăm rợn gáy.
-3. **Mạt Thế / Băng Giá / Sinh Tồn** (`SURVIVOR_GRITTY_MALE`):
-   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-1.5Hz` | Rate: `+3%` | Tempo: `1.18x`
-   - Màu âm: Cương quyết, sắt đá, thở dồn dập. EQ Punch 150Hz (+4.0dB), Metallic 2.6kHz (+4.2dB), Compressor nén nhanh.
-4. **Mẹ Chồng / Gia Đấu / Vả Mặt** (`QUEEN_COLD_VENOM_FEMALE`):
-   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `+0.5Hz` | Rate: `+2%` | Tempo: `1.16x`
-   - Màu âm: Bạo lực lạnh, kiêu hãnh, sắc lẹm như dao găm. EQ Velvet 200Hz (+2.8dB), Razor Clarity 4.2kHz (+4.5dB).
-5. **Hào Môn / Thương Chiến / Tổng Tài** (`CEO_AUTHORITY_MALE`):
-   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-2.0Hz` | Rate: `+1%` | Tempo: `1.15x`
-   - Màu âm: Đĩnh đạc, trầm ổn, làm chủ cuộc chơi tài chính. EQ 135Hz (+4.2dB), Broadcast Presence 3.4kHz.
-6. **Sa Điêu / Hài Hước / Tiếng Lòng** (`SATIRIC_SPARKLING_FEMALE`):
-   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `+3.2Hz` | Rate: `+5%` | Tempo: `1.22x`
-   - Màu âm: Nhí nhảnh, nảy tiếng, tinh quái, bay bổng. Air Boost 8000Hz (+2.2dB), Clarity 4.8kHz (+4.0dB).
-7. **Cung Đấu / Trạch Đấu / Dược Điển** (`IMPERIAL_SERENE_FEMALE`):
-   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `-1.2Hz` | Rate: `-2%` | Tempo: `1.10x`
-   - Màu âm: Ung dung, thâm sâu, êm ái như tơ lụa ẩn chứa độc dược. EQ Warmth 180Hz (+3.6dB), Subtext Focus 3.3kHz.
-8. **Chữa Lành / Tâm Lý / Ngược Tâm** (`HEALING_SOUL_FEMALE`):
-   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `-0.5Hz` | Rate: `-4%` | Tempo: `1.05x`
-   - Màu âm: Thủ thỉ, ấm áp, xoa dịu tâm hồn. EQ Warmth 160Hz (+4.2dB), Roll-off dải chói 7.5kHz (-2.0dB) nghe đêm không mỏi tai.
-9. **Thanh Xuân / Học Đường / Cứu Rỗi** (`YOUTH_EMOTIONAL_FEMALE`):
-   - Giọng: `vi-VN-HoaiMyNeural` | Pitch: `+1.8Hz` | Rate: `+2%` | Tempo: `1.14x`
-   - Màu âm: Trong trẻo, nhiệt huyết, giàu cảm xúc tuổi trẻ. EQ Clarity 3.8kHz (+3.8dB).
-10. **Hành Động / Cứu Hộ / Vực Sâu** (`ACTION_INTENSE_MALE`):
-   - Giọng: `vi-VN-NamMinhNeural` | Pitch: `-2.2Hz` | Rate: `+4%` | Tempo: `1.20x`
-   - Màu âm: Hiệu triệu mạnh mẽ, dồn dập, đanh thép giữa cuồng phong. EQ 130Hz (+4.5dB), Presence 3.1kHz (+4.2dB).
+#### 🌟 4 PHÂN NHÓM 48 GIỌNG ĐỌC ĐIỆN ẢNH:
+- **Nhóm 1: Nam Chính & Dẫn Chuyện Nam (14 Giọng Độc Bản)**:
+  1. *Thám Tử Lạnh Lùng* (`DETECTIVE_COLD_MALE`): Trầm, đặc, uy nghiêm, thẩm vấn hiện trường.
+  2. *Quái Đàm Âm U* (`HORROR_CREEPY_MALE`): Lạnh buốt, ma mị, âm u, trầm sát màng nhĩ.
+  3. *Chiến Binh Sinh Tồn* (`SURVIVOR_GRITTY_MALE`): Cương quyết, sắt đá, đếm ngược sinh tử.
+  4. *Tổng Tài Quyền Lực* (`CEO_AUTHORITY_MALE`): Đĩnh đạc, trầm ổn, làm chủ cuộc chơi tài chính.
+  5. *Chỉ Huy Thép* (`ACTION_INTENSE_MALE`): Mạnh mẽ, dồn dập giữa bão tố biển sâu.
+  6. *Nam Sinh Nhiệt Huyết* (`YOUTH_HERO_MALE`): Trẻ trung, thông minh, hào quang thủ khoa.
+  7. *Bác Sĩ Ngoại Khoa Vi Phẫu* (`COLD_SURGEON_MALE`): Điềm đạm, chuẩn xác từng đường dao mổ.
+  8. *Hoa Tiêu Viễn Dương* (`OCEAN_NAVIGATOR_MALE`): Vang rền, dày ấm, uy lực chỉ huy vượt bão.
+  9. *Kỹ Sư Trạm Radar Cực Bắc* (`ARCTIC_RADAR_MALE`): Rắn rỏi, buốt giá âm 50 độ C.
+  10. *Người Kể Chuyện Đêm Khuya* (`MIDNIGHT_STORYTELLER_MALE`): Thì thầm truyền cảm, sâu lắng, thư thái.
+  11. *Chuyên Viên Điều Tra An Ninh Mạng* (`CYBER_FORENSIC_MALE`): Trầm tĩnh, nhịp gãy gọn, bóc trần bẫy Deepfake và trạm BTS lậu.
+  12. *Chuyên Gia Giám Định Cổ Vật* (`ANTIQUE_APPRAISER_MALE`): Thong thả, đĩnh đạc, ấm áp chiều sâu lịch sử bảo vật.
+  13. *Trực Ban Kiểm Soát Không Lưu* (`FLIGHT_CONTROLLER_MALE`): Dứt khoát, chuẩn xác từng giây, giọng tần số vô tuyến hàng không.
+  14. *Nhà Khoa Học Vi Sinh BSL-4* (`BIOHAZARD_SCIENTIST_MALE`): Lạnh lùng, chuẩn xác, đanh thép trong buồng áp lực âm cách ly.
+
+- **Nhóm 2: Nhân Vật Đặc Thù Nam (10 Giọng Độc Bản)**:
+  15. *Trưởng Bối / Lão Gia Thâm Sâu* (`ELDER_PATRIARCH_MALE`): Khàn đặc, thâm sâu, uy quyền gia tộc (Pitch `-5.0Hz`, Rubberband `0.86x`).
+  16. *Kẻ Săn Mồi / Ác Nhân Gằn Giọng* (`DARK_VILLAIN_MALE`): Gằn giọng, nguy hiểm, tàn nhẫn (Pitch `-4.0Hz`, Rubberband `0.90x`).
+  17. *Bóng Ma Tầng Hầm* (`GHOST_WHISPER_MALE`): Âm u, vang vọng từ kẽ nứt tường (Rubberband `0.82x`).
+  18. *Kỹ Sư Công Nghệ Thông Tin* (`NERDY_HACKER_MALE`): Nhanh, gãy gọn, dồn dập bàn phím dữ liệu.
+  19. *Cụ Già Triết Nhân Cổ Đạo* (`WISE_OLD_SAGE_MALE`): Thâm trầm, cổ điển, chậm rãi (Rubberband `0.84x`).
+  20. *Tiếng Lòng Nam Chính Trào Phúng* (`SATIRIC_INTERNAL_MALE`): Hài hước, tếu táo, độc thoại dở khóc dở cười.
+  21. *Thợ Lặn Hang Động Sâu* (`DEEP_CAVE_DIVER_MALE`): Trầm đục, tiếng thở qua buồng áp suất bình khí 80m.
+  22. *Trùm Tài Phiệt Ngầm* (`CRIME_BOSS_CALM_MALE`): Điềm tĩnh đến rợn tóc gáy, giọng mượt giấu nanh vuốt.
+  23. *Phi Công Trực Thăng Cứu Nạn* (`RESCUE_PILOT_MALE`): Gầm vang át tiếng cánh quạt cứu hộ trong cuồng phong sạt lở.
+  24. *Nghệ Nhân Rèn Kiếm Truyền Thống* (`BLACKSMITH_MASTER_MALE`): Khàn đục, vang rền như búa nện đe thép nghìn độ.
+
+- **Nhóm 3: Nữ Chính & Dẫn Chuyện Nữ (14 Giọng Độc Bản)**:
+  25. *Nữ Chủ Bạo Lực Lạnh* (`QUEEN_COLD_VENOM_FEMALE`): Sắc lẹm như dao găm, quý phái, vả mặt đối phương.
+  26. *Tiếng Lòng Tinh Quái* (`SATIRIC_SPARKLING_FEMALE`): Nhí nhảnh, nảy tiếng, tinh nghịch, bóc phốt sếp.
+  27. *Thâm Cung Trầm Mặc* (`IMPERIAL_SERENE_FEMALE`): Ung dung, thâm sâu, êm ái như tơ lụa giấu trâm độc.
+  28. *Chữa Lành Êm Dịu* (`HEALING_SOUL_FEMALE`): Thủ thỉ, ấm áp, vỗ về tâm hồn đêm vắng.
+  29. *Thanh Xuân Trong Sáng* (`YOUTH_EMOTIONAL_FEMALE`): Trong trẻo, giàu cảm xúc tuổi trẻ.
+  30. *Thì Thào Lạnh Gáy* (`HORROR_WHISPER_FEMALE`): Thì thào, lạnh ngắt như thở sau gáy.
+  31. *Nữ Luật Sư Tranh Tụng Đanh Thép* (`LITIGATOR_SHARP_FEMALE`): Đanh thép, chuẩn xác từng điều khoản trước tòa.
+  32. *Nữ Kiểm Toán Tử Huyệt Vốn* (`FORENSIC_AUDITOR_FEMALE`): Rành rọt, lạnh lùng vạch trần sổ sách và dòng tiền bẩn.
+  33. *Nữ Phục Chế Cổ Thư* (`ANCIENT_ARCHIVIST_FEMALE`): Trang nhã, thanh tao, đậm chất thư hương cổ điển.
+  34. *Nữ Minh Tinh Kiêu Kỳ* (`CELEBRITY_DIVA_FEMALE`): Sang chảnh, kiêu kỳ, thâm thúy giới giải trí thượng lưu.
+  35. *Nữ Phóng Viên Điều Tra Hiện Trường* (`INVESTIGATIVE_JOURNALIST_FEMALE`): Cương trực, dấn thân, vạch trần bẫy việc nhẹ lương cao.
+  36. *Bếp Trưởng Michelin Tinh Tế* (`MICHELIN_CHEF_FEMALE`): Sang trọng, chỉn chu, kiểm soát hương vị căn bếp năm sao.
+  37. *Kỹ Sư Viễn Thông Vệ Tinh Quỹ Đạo* (`SPACE_COMM_FEMALE`): Trong vắt, tĩnh tại, chuẩn nhịp sóng truyền thông vũ trụ.
+  38. *Nữ Thi Sĩ Cung Cấm Trữ Tình* (`ANCIENT_POETESS_FEMALE`): Dịu dàng, u hoài, âm vận êm như tiếng đàn tranh đêm trăng.
+
+- **Nhóm 4: Nhân Vật Đặc Thù Nữ (10 Giọng Độc Bản)**:
+  39. *Mẹ Chồng Cay Nghiệt The Thé* (`HARSH_MATRIARCH_FEMALE`): The thé, chua ngoa, đay nghiến (Pitch `+3.0Hz`, Rubberband `1.12x`).
+  40. *Trà Xanh Ngọt Xớt* (`SWEET_TRAITOR_FEMALE`): Giả nai, ngọt ngào giả tạo, nũng nịu thâm độc (Pitch `+4.0Hz`, Rubberband `1.10x`).
+  41. *Bé Gái Cầu Cứu* (`SCARED_CHILD_FEMALE`): Non nớt, hoảng loạn sợ hãi kêu cứu (Pitch `+4.0Hz`, Rubberband `1.20x`).
+  42. *Bác Sĩ Ngoại Khoa Điềm Tĩnh* (`COLD_DOCTOR_FEMALE`): Chính xác, gãy gọn, điềm đạm trước sinh tử.
+  43. *Hoàng Thái Hậu Uy Quyền* (`ANCIENT_EMPRESS_FEMALE`): Bề trên tối thượng, uy nghiêm ngút trời (Rubberband `0.92x`).
+  44. *Nữ Cơ Trưởng / Hoa Tiêu* (`FEMALE_WARRIOR`): Bản lĩnh thép, bình tĩnh chỉ huy.
+  45. *Bà Bác Hàng Xóm Hóng Hớt* (`COMEDY_AUNTIE_FEMALE`): Nhanh mồm, buôn dưa lê tấu hài cực duyên.
+  46. *Giọng Kể Mộng Mơ Truyền Cảm* (`ANGELIC_NARRATOR_FEMALE`): Mượt mà, bay bổng, diệu kỳ.
+  47. *Nữ Đặc Vụ Ngầm Trá Hình* (`UNDERCOVER_AGENT_FEMALE`): Biến ảo khôn lường giữa quyến rũ và quyết đoán tử thần.
+  48. *Bà Thầy Sơn Cước Quái Đàm* (`MYSTIC_SHAMAN_FEMALE`): Khàn đục, cổ quái, âm vực rợn người với lời niệm chú thì thầm.
 
 ---
 

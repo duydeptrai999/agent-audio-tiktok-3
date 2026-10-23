@@ -206,23 +206,20 @@ Cả vạn tướng sĩ quỳ rạp xuống đất đồng thanh hô vang: 'Bái
             {
                 "part_number": 1,
                 "badge_label": "TẬP 1: BỨC TRANH RỈ MÁU LÚC 2H SÁNG",
-                "text": """Hai giờ mười lăm phút sáng ngày rằm tháng bảy, một tiếng chuông điện thoại khẩn cấp xé toạc màn đêm tĩnh mịch tại trụ sở Đội Cảnh sát Hình sự Trọng án thành phố. Giọng nói của người bảo vệ trực ban tại Bảo tàng Mỹ thuật Cổ rên rỉ qua ống nghe, đứt quãng và tràn ngập sự kinh hoàng tột độ:
+                "text": """Chùm tia cực tím vừa quét qua mí mắt bức chân dung thiếu nữ áo tím, vệt chất lỏng màu đỏ thẫm bỗng rỉ ra từng giọt tanh nồng rơi tách tách xuống sàn đá hoa cương.
 
-'Đội trưởng Trần... cứu... cứu tôi với! Bức tranh... bức chân dung 'Cô Gái Mặc Áo Tím' trong căn phòng cấm số 4... máu... máu đang chảy ra từ khóe mắt của nó!'.
+Chiếc máy quét quang phổ huỳnh quang trên tay giám định viên Trần Chấn Hưng khựng lại ở vạch cảnh báo đỏ rực. Người bảo vệ trực ban đứng nép sau góc cột sảnh chính, hai hàm răng đánh vào nhau lập cập:
+'Chấn Hưng... Căn phòng số bốn này đã niêm phong hai mươi năm rồi... Kể từ đêm Giáo sư Hoàng Nhất Phong mất tích!'.
 
-Khi Đội trưởng Trần Chấn Hưng cùng bác sĩ pháp y Hàn Minh có mặt tại hiện trường, bảo tàng cổ kính xây dựng từ thời Pháp thuộc chìm trong một bầu không khí u uất đến lạnh gáy. Dưới ánh đèn pin nghiệp vụ loang loáng, người bảo vệ già đang ngồi co ro run rẩy ở góc sảnh, hai mắt trợn trừng nhìn vào cánh cửa gỗ lim của phòng trưng bày số 4 – nơi đã bị niêm phong suốt hai mươi năm qua kể từ vụ mất tích bí ẩn của Giáo sư Hoàng Nhất Phong.
+Mùi ẩm mốc hòa cùng mùi sắt rỉ tanh nồng bốc lên từ khe khung gỗ sồi. Bức sơn dầu khổ lớn vẽ thiếu nữ áo tím với khóe môi cười bí hiểm đang tỏa ra thứ nhiệt độ âm ỉ bất thường.
 
-Đẩy cánh cửa kêu lên những tiếng 'ken két' ma quái, mùi ẩm mốc xen lẫn một mùi tanh nồng đặc trưng của sắt rỉ lập tức xộc thẳng vào mũi hai điều tra viên. Trên bức tường đá trung tâm, bức sơn dầu khổ lớn vẽ chân dung một người thiếu nữ mặc váy tím với nụ cười bí hiểm đang rọi bóng xuống sàn. 
+Bác sĩ giám định pháp y Hàn Minh đeo găng tay cao su, khẽ miết ngón trỏ vào giọt đỏ trên mặt sàn:
+'Không phải sơn dầu nhân tạo. Đây là máu người tươi nguyên bản, độ đông đặc chỉ mới ba mươi phút!'.
 
-Từ khóe mắt phải của thiếu nữ trong tranh, một dòng chất lỏng màu đỏ thẫm đặc quánh đang chầm chậm rỉ ra, chảy dài xuống gò má rồi nhỏ giọt 'tách... tách...' xuống sàn đá hoa cương lạnh ngắt.
+Đúng lúc đó, chiếc điện thoại bàn cổ điển đặt trên quầy lễ tân sảnh tối - chiếc máy vốn bị cắt đứt dây đồng từ năm năm trước - bỗng đổ chuông dồn dập: Reng! Reng!
 
-Bác sĩ pháp y Hàn Minh đeo găng tay cao su, lập tức tiến lại gần lấy mẫu chất lỏng đưa lên khứu giác kiểm tra sơ bộ: 'Đây không phải sơn vẽ nhân tạo, Đội trưởng Trần. Đây là máu tươi của người, vẫn còn ấm, thời gian rỉ ra chưa quá ba mươi phút!'.
-
-Đúng lúc đó, chiếc điện thoại bàn cổ lỗ sĩ đặt trên bàn lễ tân – chiếc máy vốn đã bị cắt đứt dây điện từ năm năm trước – bỗng nhiên đổ chuông dồn dập: 'Reng... reng... reng...!'.
-
-Trần Chấn Hưng siết chặt báng súng ngắn bên hông, hít một hơi sâu rồi nhấc ống nghe lên áp vào tai. Từ đầu dây bên kia, một giọng nói trầm đục, nghẹt thở vang lên như từ dưới lòng mồ sâu thẳm:
-
-'Hai mươi năm trước... các người đã chôn vùi tôi dưới lớp sơn dầu này... Đêm nay, đến lượt kẻ sát nhân phải đền mạng!'."""
+Trần Chấn Hưng siết chặt chiếc đèn pin kim loại, sải bước nhấc ống nghe áp vào tai. Một giọng nói trầm đục, nghẹt thở vọng lại từ bên kia đường dây:
+'Hai mươi năm trước các người đã chôn vùi tôi sau lớp sơn dầu này... Đêm nay đến lượt kẻ thủ ác phải đền tội!'."""
             },
             {
                 "part_number": 2,
@@ -244,21 +241,19 @@ Bác sĩ pháp y Hàn Minh cẩn thận khám nghiệm thi thể và bức tranh
             {
                 "part_number": 3,
                 "badge_label": "TẬP 3 - KẾT: LẬT MẶT KẺ SÁT NHÂN DANH GIÁ",
-                "text": """Bản đối soát ADN lập tức được gửi khẩn cấp về phòng phân tích gen của Bộ Công an. Kết quả chấn động: Mẫu máu rỉ ra từ bức tranh thuộc về nữ họa sĩ trẻ An Chi – người vừa đoạt giải thưởng mỹ thuật quốc gia và cũng chính là con gái ruột thất lạc của Giáo sư Hoàng Nhất Phong!
+                "text": """Bản đối soát mã gen ADN gửi về từ trung tâm phân tích sinh học độc lập thành phố đã cho kết quả chấn động:
+Người sở hữu mẫu máu rỉ ra từ bức họa chính là nữ nghệ nhân phục chế cổ vật An Chi - con gái ruột thất lạc của cố Giáo sư Hoàng Nhất Phong!
 
-Đêm hôm đó, tại sảnh tiệc đấu giá nghệ thuật quy tụ giới tài phiệt và quan chức cấp cao, Viện trưởng Lâm Khiêm đang đứng trên bục vinh quang nâng ly rượu chúc mừng sự kiện đấu giá bức tranh với mức giá khởi điểm một trăm tỷ đồng. Đột nhiên, toàn bộ ánh sáng trong hội trường vụt tắt ngấm!
+Đêm hôm đó, tại khán phòng đấu giá quốc tế trước sự chứng kiến của hơn hai trăm nhà sưu tầm nghệ thuật, Viện trưởng Lâm Khiêm đang tươi cười nâng ly sâm panh chuẩn bị gõ búa khởi điểm một trăm tỷ đồng.
 
-Màn hình máy chiếu khổng lồ phía sau sân khấu tự động bật sáng, chiếu lên từng trang nhật ký nhuốm máu hai mươi năm trước: 
+Đột nhiên, toàn bộ hệ thống máy chiếu hội trường đồng loạt nhảy kênh. Màn hình LED trung tâm hiện lên bản quét tài liệu nhật ký giám định năm 2004 cùng bản chụp cắt lớp hốc tường bảo tàng:
+'Năm 2004, Lâm Khiêm vì muốn chiếm đoạt công thức màu độc quyền và bức tranh vô giá, đã ra tay sát hại đồng nghiệp rồi ngụy tạo vụ mất tích ly kỳ!'.
 
-'Năm 2004, Lâm Khiêm vì muốn cướp đoạt bản quyền phát minh chất liệu màu vẽ độc quyền và bức tranh bảo vật của ta, đã đánh lén ta từ phía sau, siết cổ ta đến chết rồi chôn thi thể vào hốc tường bảo tàng, ngụy tạo thành một vụ mất tích!'.
+Cánh cửa sảnh tiệc bật mở. Trần Chấn Hưng cùng đội giám định pháp lý sải bước bước vào. Đi bên cạnh anh là An Chi - người đã dùng chính mẫu máu và kiến thức cơ khí phục chế để kích hoạt lại kỳ án chấn động.
 
-Cửa hội trường bật mở, Đội trưởng Trần Chấn Hưng cùng các chiến sĩ cảnh sát hình sự bước vào trong tiếng còi hụ vang dội. Đi bên cạnh anh là An Chi – người con gái đã âm thầm điều tra suốt năm năm, dùng chính máu của mình kích hoạt cơ chế rỉ máu để buộc vụ án năm xưa phải tái khởi động!
+Lâm Khiêm đánh rơi ly pha lê vỡ toang xuống thảm nhung. Hắn hoảng loạn rút chiếc kẹp giấy nhọn hoắt trong túi áo lao về phía An Chi. Nhưng chỉ trong nửa nhịp thở, một cú gạt cổ tay dứt khoát của Chấn Hưng đã tước phăng hung khí, chiếc còng thép bập tanh tách khóa chặt hai cổ tay kẻ sát nhân danh giá!
 
-Khuôn mặt Lâm Khiêm xám ngoét, ly rượu pha lê rơi xuống sàn vỡ vụn. Hắn ta rút ra một con dao găm giấu trong tay áo định lao vào An Chi để thủ tiêu nhân chứng, nhưng chỉ trong chớp mắt, Trần Chấn Hưng đã tung một cú đá sấm sét chuẩn xác tước phăng hung khí, khóa chặt hai tay hắn ta ra sau bằng còng số tám lạnh ngắt!
-
-'Lâm Khiêm! Hai mươi năm trước ông dùng tội ác để đoạt lấy danh vọng, hai mươi năm sau chính công lý và linh hồn của người bị hại đã dẫn lối cho sự thật bước ra ánh sáng!' – Tiếng Trần Chấn Hưng đanh thép vang vọng giữa sảnh đường.
-
-Kẻ sát nhân danh giá quỳ gục xuống sàn nhà trong tiếng thóa mạ căm phẫn của công chúng. Vụ kỳ án viện bảo tàng chính thức khép lại, trả lại sự thanh thản vĩnh hằng cho linh hồn người quá cố dưới ánh ban mai rực rỡ."""
+'Lâm Khiêm, khoa học vật lý và chứng cứ hóa học không bao giờ nói dối!', Chấn Hưng đanh thép chốt lại. Kẻ thủ ác quỵ gối xuống sàn trước ánh nhìn căm phẫn của công chúng."""
             }
         ]
     },
@@ -284,65 +279,57 @@ Kẻ sát nhân danh giá quỳ gục xuống sàn nhà trong tiếng thóa mạ
             {
                 "part_number": 1,
                 "badge_label": "TẬP 1: BẢN HỢP ĐỒNG LƯƠNG 50 TRIỆU",
-                "text": """Lâm Phong – một sinh viên mới tốt nghiệp đang thất nghiệp ngập đầu trong nợ nần – bất ngờ nhận được một cuộc gọi phỏng vấn kỳ lạ cho vị trí nhân viên lễ tân ca đêm tại Khách sạn Vọng Nguyệt, một tòa nhà cổ điển nằm biệt lập ở cuối con dốc ngoại ô thành phố. Mức lương đưa ra cao đến khó tin: năm mươi triệu đồng một tháng, thanh toán theo tuần, kèm bảo hiểm tai nạn trọn gói mười tỷ!
+                "text": """Mũi bút mực dạ quang vừa ký xong bản hợp đồng trực đêm năm mươi triệu, mười dòng chữ in chìm phát quang dưới ánh đèn tia cực tím bỗng rực lên mười điều cấm kỵ sinh tồn đẫm máu.
 
-Bước vào sảnh khách sạn lúc mười một giờ đêm, không khí lạnh lẽo lạ thường bao trùm lấy Lâm Phong dù giữa mùa hè oi bức. Người quản lý mang khuôn mặt tái nhợt không chút biểu cảm đưa cho anh một tập hồ sơ màu đỏ thẫm và dặn dò bằng chất giọng khàn đặc:
+Tiếng chốt thép cửa sảnh khách sạn sập xuống đánh cạch khô khốc. Người quản lý mang gương mặt tái nhợt như sáp nến đã biến mất sau làn khói thuốc lá đặc quánh. Đồng hồ cổ trên tường điểm mười hai tiếng trầm đục.
 
-'Cậu chỉ cần trực từ mười hai giờ đêm đến năm giờ sáng. Công việc rất nhàn, nhưng phải học thuộc lòng mười quy tắc sinh tồn này bằng cả tính mạng. Vi phạm một điều, khách sạn sẽ không chịu trách nhiệm về sự tồn tại của cậu trên cõi đời này nữa!'.
+Lâm Phong nuốt khan một ngụm nước bọt. Anh cầm chiếc đèn pin vỏ nhôm, đọc từng dòng chữ đỏ phát sáng trên tấm mica gắn chặt vào mặt bàn lễ tân:
+'Khách sạn chỉ có ba tầng. Nếu thang máy hiển thị số bốn hoặc tầng âm, tuyệt đối không được bước chân vào.
+Nếu có người hỏi phòng bốn không bốn, hãy trao bông cúc trắng và lùi lại ba bước.
+Từ một đến hai giờ sáng, nghe tiếng cào trong gương sảnh, hãy nhắm chặt mắt đếm đến một trăm!'.
 
-Mười hai giờ đêm, tiếng chuông đồng hồ cổ điểm mười hai tiếng trầm đục. Cánh cửa sảnh khách sạn tự động khóa chặt từ bên ngoài. Lâm Phong ngồi sau quầy lễ tân, run rẩy mở tờ giấy hướng dẫn mạ vàng:
+Một luồng gió lạnh buốt từ gầm cầu thang thổi qua gáy Lâm Phong làm những sợi tóc tơ dựng đứng.
 
-'Quy tắc 1: Khách sạn chỉ có ba tầng. Nếu thang máy hiển thị số 4 hoặc tầng âm, tuyệt đối không được bước vào.
-
-Quy tắc 2: Từ một giờ đến hai giờ sáng, nếu nghe thấy tiếng mèo kêu trong gương sảnh, hãy lập tức nhắm mắt đếm từ một đến một trăm, bất kể ai gọi tên cũng không được mở mắt.
-
-Quy tắc 3: Luôn kiểm tra bóng của những vị khách làm thủ tục nhận phòng. Nếu người nào không có bóng dưới ánh đèn, hãy đưa cho họ chìa khóa phòng 304 và nói câu: 'Chúc quý khách có một giấc ngủ vĩnh hằng'.
-
-Quy tắc 4: Khách sạn tuyệt đối không có phòng 404. Nếu có người phụ nữ mặc sườn xám đỏ hỏi chìa khóa phòng 404, hãy đưa cho cô ta một bông hoa cúc trắng trên bàn và cúi đầu lùi lại ba bước!'.
-
-Đúng lúc đó, đèn trần ở sảnh khách sạn bỗng chốc chớp tắt liên hồi. Từ chiếc thang máy cuối hành lang, tiếng chuông 'Ting!' vang lên khô khốc. Màn hình điện tử hiển thị mũi tên đi lên... dừng lại ở số: TẦNG 4!"""
+Đột nhiên, bóng đèn tuýp trên trần sảnh chớp giật tanh tách. Từ chiếc thang máy bằng đồng cuối dãy hành lang, tiếng chuông 'Ting!' vang lên buốt óc.
+Mũi tên chỉ thị tầng trên bảng điện tử từ từ nhấp nháy, rồi dừng khựng lại ở ký hiệu màu máu: TẦNG BỐN!"""
             },
             {
                 "part_number": 2,
                 "badge_label": "TẬP 2: NGƯỜI PHỤ NỮ ÁO ĐỎ VÀ PHÒNG 404",
-                "text": """Cửa thang máy từ từ mở ra trong bóng tối lờ nhờ. Tiếng guốc mộc 'cộp... cộp... cộp...' gõ đều đặn trên sàn gạch men lạnh ngắt vang vọng khắp hành lang trống vắng. Một người phụ nữ mặc bộ sườn xám màu đỏ thẫm, mái tóc đen dài rũ rượi che kín khuôn mặt, chầm chậm bước về phía quầy lễ tân.
+                "text": """Cửa thang máy mở ra từng phân trong tiếng kim loại cọ xát ken két. Tiếng guốc gỗ 'Cộp... cộp...' vang dội trên sàn gạch men lạnh ngắt.
 
-Tim Lâm Phong như muốn nhảy ra khỏi lồng ngực. Mồ hôi lạnh túa ra ướt đẫm sống lưng. Anh nhìn xuống sàn nhà – dưới chân người phụ nữ hoàn toàn không có bóng, và đôi bàn chân trần của cô ta lơ lửng cách mặt đất chừng mười centimet!
+Một người phụ nữ mặc bộ sườn xám đỏ thẫm, mái tóc đen buông xõa che kín khuôn mặt, từ từ bước về phía quầy lễ tân. Đôi bàn chân trần của ả lơ lửng cách mặt sàn năm phân, dưới ánh đèn huỳnh quang hoàn toàn không có bóng!
 
-'Cậu lễ tân... cho tôi xin chìa khóa phòng bốn không bốn...' – Một giọng nói ma mị, lạnh buốt thấu tận tủy sống thì thào sát tai Lâm Phong!
+Một giọng nói ma mị, lạnh ngắt như băng tuyết phả thẳng vào tai Lâm Phong:
+'Cậu lễ tân... Đưa tôi chìa khóa phòng bốn không bốn...'.
 
-Quy tắc số 4 lập tức hiện lên trong tâm trí! Lâm Phong cắn chặt đầu lưỡi để cơn đau xua tan nỗi sợ hãi tê liệt toàn thân. Anh không dám nhìn thẳng vào mái tóc rũ rượi kia, đôi bàn tay run rẩy với lấy bông hoa cúc trắng cắm trong lọ pha lê trên quầy, cung kính hai tay dâng lên trước mặt:
+Ngón tay Lâm Phong run rẩy nhưng phản xạ cơ học lập tức kích hoạt. Anh không nhìn vào mái tóc rũ rượi kia, với tay rút bông hoa cúc trắng trên lọ pha lê dâng ra phía trước:
+'Khách sạn xin kính tặng quý khách!'.
 
-'Khách sạn chúng tôi xin gửi tặng quý cô...'. Vừa nói, Lâm Phong vừa cúi gập đầu, chầm chậm lùi lại phía sau ba bước theo đúng chỉ dẫn.
+Lâm Phong bấm chặt ngón chân xuống lót giày, lùi thẳng ba bước về phía vách tường gỗ.
+Ả phụ nữ vươn những ngón tay trắng bệch dài ngoằng đón lấy cành hoa. Một tiếng cười the thé xé toạc không gian, bóng áo đỏ lập tức tan biến thành làn khói đen mù mịt.
 
-Người phụ nữ vươn ra một bàn tay trắng bệch, móng tay dài nhọn hoắt sơn màu máu, nhận lấy bông hoa cúc trắng. Không gian rơi vào sự im lặng nghẹt thở kéo dài tưởng như hàng thế kỷ. Rồi đột nhiên, một tiếng cười the thé sắc nhọn vang lên, bóng hình áo đỏ hóa thành một làn khói đen tan biến vào không trung!
-
-Chưa kịp thở phào nhẹ nhõm, chiếc đồng hồ quả lắc điểm đúng hai giờ sáng. Từ chiếc gương đồng khổng lồ treo giữa sảnh khách sạn, tiếng mèo kêu thảm thiết 'meo... meo...' bắt đầu vang lên! 
-
-Nhớ đến Quy tắc số 2, Lâm Phong lập tức nhắm nghiền hai mắt, khoanh tay trước ngực bắt đầu đếm nhẩm: 'Một, hai, ba...'. 
-
-Đột nhiên, một hơi thở lạnh buốt phả ngay sau gáy anh, và tiếng nói ngọt ngào của mẹ anh – người đang ở quê cách xa hàng trăm cây số – bỗng cất lên tha thiết: 'Phong ơi, mở mắt ra nhìn mẹ này con... Mẹ đem cơm lên cho con ăn này...'."""
+Đúng lúc đó, kim đồng hồ nhảy sang một giờ sáng. Từ mặt kính của chiếc gương đồng treo giữa sảnh, tiếng cào móng tay rột rột vang lên điên cuồng kèm tiếng mèo gầm gừ!
+Lâm Phong nhắm nghiền mắt, hai tay siết chặt thành nắm đấm, bắt đầu đếm nhẩm trong cổ họng từng con số sinh tử!"""
             },
             {
                 "part_number": 3,
                 "badge_label": "TẬP 3 - KẾT: PHÁ VỠ VÒNG LẶP KHÔNG GIAN",
-                "text": """'Bất kể ai gọi tên cũng tuyệt đối không được mở mắt!' – Quy tắc vàng sinh tồn găm chặt vào lý trí Lâm Phong. Anh cắn chặt răng đến bật máu, không hề nao núng tiếp tục đếm: 'Chín mươi tám... chín mươi chín... một trăm!'.
+                "text": """'Chín mươi tám... Chín mươi chín... Một trăm!'.
+Lâm Phong mở bừng mắt. Tiếng cào móng tay dừng bặt. Mặt gương đồng phẳng lặng như chưa từng có chuyện gì xảy ra.
 
-Vừa dứt tiếng đếm, một luồng gió mạnh thổi tung cửa sổ làm đổ vỡ bình hoa, tiếng mèo kêu và giọng nói ma quái lập tức biến mất không còn dấu vết. Lâm Phong mở mắt ra, toàn thân ướt sũng mồ hôi như vừa vớt từ dưới nước lên.
+Nhưng khi anh liếc nhìn chiếc đồng hồ cơ trên cổ tay, kim giây đang quay giật lùi ngược chiều kim đồng hồ! Màn đêm ngoài cửa kính không hề sáng lên, mà là một lớp sương mù màu tro quánh đặc. Khách sạn này là một vòng lặp không gian khép kín không lối thoát!
 
-Lúc này là bốn giờ bốn mươi lăm phút sáng, chỉ còn mười lăm phút nữa là hết ca trực. Thế nhưng, khi Lâm Phong nhìn vào chiếc đồng hồ trên tay, anh nhận ra một sự thật kinh hoàng: kim giây của chiếc đồng hồ đang quay ngược chiều kim đồng hồ! 
+Ánh mắt Lâm Phong lia xuống dòng chữ in chìm cuối bản hợp đồng:
+'Phá hủy ngọn nến màu đen trong hốc lò sưởi đá trước tiếng chuông năm giờ sáng để phá vỡ vòng lặp!'.
 
-Không gian bên ngoài cửa kính sảnh khách sạn không phải là đường phố ngoại ô quen thuộc, mà là một màn sương mù màu tím vô tận không đáy. Đây không phải là một khách sạn bình thường, mà là một nút giao không gian bị nguyền rủa trong trò chơi sinh tồn vô hạn lưu!
+Đồng hồ quả lắc đã điểm bốn giờ năm mươi lăm phút!
+Lâm Phong không chần chừ một phần mười giây. Anh vồ lấy chiếc bình chữa cháy bằng thép dưới gầm bàn, lao như mũi tên về phía lò sưởi cuối sảnh. Những cái bóng đen ngòm từ bức tường lao ra bám víu vạt áo hòng kéo anh ngã quỵ.
 
-Nhìn vào bản hợp đồng mạ vàng, Lâm Phong phát hiện ra dòng chữ in chìm bằng mực tàng hình dưới đáy trang giấy: 'Muốn thoát khỏi vòng lặp vô hạn, phải phá hủy ngọn nến trung tâm trong lò sưởi trước tiếng chuông năm giờ!'.
+Lâm Phong gồng hết sức bình sinh, vung chiếc bình thép giáng thẳng một đòn sấm sét xuống ngọn nến đen đang tỏa khói xanh lục!
+Rắc! Tiếng nổ khô khốc xé toạc căn phòng. Toàn bộ ảo ảnh sương mù vỡ vụn như hàng triệu mảnh thủy tinh.
 
-Chỉ còn đúng năm phút! Lâm Phong vồ lấy chiếc bình chữa cháy bằng kim loại dưới gầm bàn, lao thẳng về phía lò sưởi đá cuối sảnh. Những bóng ma ẩn hiện từ trong các bức tranh sơn dầu trên tường lao ra cào cấu, kéo giật vạt áo anh để ngăn cản.
-
-'Tránh ra hết cho tao!' – Lâm Phong gầm lên một tiếng dũng mãnh, vung bình chữa cháy đập nát ngọn nến màu đen đang cháy ngọn lửa màu xanh lục trong lò sưởi!
-
-'OÀNH!'. Một tiếng nổ long trời lở đất vang lên. Toàn bộ không gian ảo ảnh vỡ vụn như những mảnh kính vỡ. Ánh bình minh rực rỡ đầu tiên của ngày mới chiếu rọi qua khung cửa sổ sảnh khách sạn. 
-
-Tiếng chuông đồng hồ điểm đúng năm giờ sáng. Cánh cửa chính bật mở, người quản lý đứng ở ngưỡng cửa với vẻ mặt kinh ngạc tột cùng khi thấy Lâm Phong vẫn còn sống sót nguyên vẹn. Trên quầy lễ tân, một cọc tiền năm mươi triệu đồng cùng chiếc huy hiệu 'Người Sinh Tồn Cấp S' đã nằm sẵn từ lúc nào! Lâm Phong mỉm cười cầm lấy phần thưởng xứng đáng, kiêu hãnh bước ra đón ánh mặt trời rạng rỡ!"""
+Ting! Tiếng chuông năm giờ sáng vang lên giòn giã. Ánh ban mai vàng rực chiếu xuyên qua cửa kính sảnh lớn. Người quản lý đứng sững ở cửa với vẻ mặt kinh ngạc tột cùng. Trên mặt bàn lễ tân, cọc tiền năm mươi triệu đồng tiền mặt và chiếc chìa khóa cửa chính đã nằm ngay ngắn chờ Lâm Phong bước ra ánh sáng!"""
             }
         ]
     },

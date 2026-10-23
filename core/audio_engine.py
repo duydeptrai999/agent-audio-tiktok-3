@@ -40,7 +40,12 @@ from typing import Dict, Any, List, Optional, Tuple
 
 import edge_tts
 from core.ffmpeg_utils import get_ffmpeg_exe
-from core.voice_profiles import get_voice_profile_for_genre, build_genre_vocal_filter_chain
+from core.voice_profiles import (
+    get_voice_profile_for_genre,
+    build_genre_vocal_filter_chain,
+    parse_dialogue_roles,
+    VoiceProfile
+)
 from core.bgm_manager import (
     ensure_safe_bgm,
     get_safe_bgm_for_genre,
@@ -123,7 +128,7 @@ def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
     return chunks if chunks else [clean_text]
 
 
-def get_vocal_chain_filter(voice_volume: float = 1.0, genre: Optional[str] = None) -> str:
+def get_vocal_chain_filter(voice_volume: float = 1.0, genre: Optional[str] = None, scene_mood: str = "normal") -> str:
     """
     Chuỗi hiệu ứng Vocal Studio Radio Broadcast cao cấp cho FFmpeg:
     - Nếu có genre: Tự động tải Vocal Mastering Profile chuyên biệt (tăng trầm cho trinh thám, air cho sa điêu, nén gắt cho mạt thế sinh tồn...).
@@ -132,7 +137,7 @@ def get_vocal_chain_filter(voice_volume: float = 1.0, genre: Optional[str] = Non
     if genre:
         try:
             profile = get_voice_profile_for_genre(genre)
-            return build_genre_vocal_filter_chain(profile, voice_volume=voice_volume)
+            return build_genre_vocal_filter_chain(profile, voice_volume=voice_volume, scene_mood=scene_mood)
         except Exception:
             pass
 
@@ -272,6 +277,139 @@ async def generate_cinema_tts_audio(
             for c in chunk_files:
                 if c.exists():
                     c.unlink(missing_ok=True)
+        except Exception:
+            pass
+
+
+async def generate_multi_role_cinema_tts_audio(
+    text: str,
+    genre: str = "TRONG_SINH",
+    output_path: Optional[Path] = None,
+    target_speed: Optional[float] = None
+) -> Path:
+    """
+    Sinh audio diễn đọc ĐA VAI DIỄN (Multi-Role Voice Acting) đạt chuẩn Hollywood:
+    - Tự động tách lời dẫn và lời thoại nhân vật trong kịch bản bằng parse_dialogue_roles.
+    - Lời dẫn: Dùng Profile của thể loại (ví dụ Nữ chủ bạo lực lạnh, Thám tử trầm lạnh).
+    - Lời thoại: Tự động phân vai (Mẹ chồng the thé, Trà xanh ngọt xớt, Ác nhân gằn giọng, Bé gái cầu cứu...)
+      và áp dụng đúng Voice (Nam Minh / Hoài My) + Rubberband Formant Shifting tương ứng.
+    - Ráp nối liền mạch thành audio hoàn chỉnh với độ chân thực và tương phản cảm xúc vượt trội.
+    """
+    if output_path is None:
+        audio_dir = ROOT_DIR / "assets" / "audio"
+        audio_dir.mkdir(parents=True, exist_ok=True)
+        output_path = audio_dir / "cinema_multi_role_tts_temp.mp3"
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    segments = parse_dialogue_roles(text, default_genre=genre)
+
+    if len(segments) <= 1:
+        return await generate_cinema_tts_audio(
+            text=text,
+            genre=genre,
+            output_path=output_path,
+            target_speed=target_speed
+        )
+
+    ffmpeg = get_ffmpeg_exe()
+    temp_files: List[Path] = []
+    concat_list = output_path.parent / f"{output_path.stem}_multirole_concat.txt"
+    merged_raw = output_path.parent / f"{output_path.stem}_multirole_raw.mp3"
+
+    semaphore = asyncio.Semaphore(1)
+
+    async def synth_segment(idx: int, profile: VoiceProfile, seg_clean: str, raw_p: Path, proc_p: Path):
+        async with semaphore:
+            success = False
+            # Attempt 1: With profile pitch and rate
+            for attempt in range(4):
+                try:
+                    comm = edge_tts.Communicate(seg_clean, voice=profile.voice_name, pitch=profile.pitch, rate=profile.rate)
+                    await asyncio.wait_for(comm.save(str(raw_p)), timeout=30.0)
+                    if raw_p.exists() and raw_p.stat().st_size > 200:
+                        success = True
+                        break
+                except Exception:
+                    await asyncio.sleep(0.5 * (attempt + 1))
+
+            # Attempt 2: Fallback with standard pitch/rate
+            if not success:
+                try:
+                    comm = edge_tts.Communicate(seg_clean, voice=profile.voice_name)
+                    await asyncio.wait_for(comm.save(str(raw_p)), timeout=30.0)
+                    if raw_p.exists() and raw_p.stat().st_size > 200:
+                        success = True
+                except Exception:
+                    pass
+
+            if not success:
+                raise RuntimeError(f"Failed to synthesize segment {idx}: {seg_clean[:30]}")
+
+            # Apply Rubberband Formant Shifting & Profile Filter locally in FFmpeg
+            rb_pitch = profile.rubberband_pitch if profile.rubberband_pitch else 1.0
+            if abs(rb_pitch - 1.0) > 0.01:
+                rb_filter = f"rubberband=pitch={rb_pitch:.3f}:tempo=1.0"
+                subprocess.run([
+                    ffmpeg, "-y",
+                    "-i", str(raw_p),
+                    "-filter:a", rb_filter,
+                    "-c:a", "libmp3lame", "-b:a", "192k",
+                    str(proc_p)
+                ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+            else:
+                proc_p = raw_p
+
+            return proc_p
+
+    try:
+        final_seg_files: List[Path] = []
+        for idx, (profile, seg_text) in enumerate(segments):
+            seg_clean = sanitize_tts_text(seg_text).strip()
+            if not seg_clean:
+                continue
+
+            seg_raw_path = output_path.parent / f"{output_path.stem}_seg_{idx}_raw.mp3"
+            seg_processed_path = output_path.parent / f"{output_path.stem}_seg_{idx}_proc.mp3"
+            temp_files.extend([seg_raw_path, seg_processed_path])
+
+            final_p = await synth_segment(idx, profile, seg_clean, seg_raw_path, seg_processed_path)
+            if final_p.exists() and final_p.stat().st_size > 200:
+                final_seg_files.append(final_p)
+
+        if not final_seg_files:
+            return await generate_cinema_tts_audio(text=text, genre=genre, output_path=output_path, target_speed=target_speed)
+
+        with open(concat_list, "w", encoding="utf-8") as f:
+            for sf in final_seg_files:
+                f.write(f"file \'{sf.resolve().as_posix()}\'\n")
+
+        subprocess.run([
+            ffmpeg, "-y", "-f", "concat", "-safe", "0",
+            "-i", str(concat_list),
+            "-c", "copy",
+            str(merged_raw)
+        ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+
+        final_tempo = target_speed if target_speed else 1.15
+        subprocess.run([
+            ffmpeg, "-y",
+            "-i", str(merged_raw),
+            "-filter:a", f"atempo={final_tempo:.2f}",
+            "-c:a", "libmp3lame", "-b:a", "192k",
+            str(output_path)
+        ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+
+        logger.info(f"Đã tạo xong Multi-Role Cinema TTS Audio ({len(final_seg_files)} vai diễn): {output_path.name}")
+        return output_path
+    finally:
+        try:
+            if concat_list.exists():
+                concat_list.unlink(missing_ok=True)
+            if merged_raw.exists():
+                merged_raw.unlink(missing_ok=True)
+            for f in set(temp_files):
+                if f.exists():
+                    f.unlink(missing_ok=True)
         except Exception:
             pass
 

@@ -226,45 +226,45 @@ def get_story_cycle_43(title: str = "") -> Dict[str, Any]:
     
     p1 = """Chùm sáng tím từ camera điện thoại vừa quét qua đầu đinh ốc treo đồng hồ, một chấm đỏ rực bỗng nhấp nháy phát tín hiệu sóng wifi hai chấm bốn gigahertz ngay trên đầu giường ngủ của tôi.
 
-Căn phòng trọ tầng bốn vừa thuê ban chiều bỗng trở nên lạnh lẽo lạ thường. Tôi tắt toàn bộ đèn tuýp trên trần, kéo chặt tấm rèm cửa sổ dày cộp lại để cô lập hoàn toàn ánh sáng từ ngọn đèn cao áp ngoài ngõ hẻm. Trên màn hình chiếc điện thoại cài phần mềm phân tích phổ vô tuyến mạng nội bộ, một thiết bị phát sóng ẩn danh không tên đang truyền dữ liệu video liên tục với băng thông mười mê-ga-bít mỗi giây về một dải địa chỉ IP tĩnh nội hạt.
+Căn phòng trọ tầng bốn vừa thuê ban chiều bỗng trở nên lạnh lẽo lạ thường. Tôi tắt toàn bộ đèn tuýp trên trần. Tấm rèm cửa sổ dày cộp được kéo chặt lại để cô lập hoàn toàn ánh sáng ngọn đèn cao áp ngoài ngõ hẻm. Trên màn hình điện thoại, phần mềm phân tích phổ vô tuyến lập tức phát cảnh báo. Một thiết bị ẩn danh đang truyền dữ liệu video liên tục mười mê-ga-bít mỗi giây về dải IP tĩnh nội hạt.
 
-Là sinh viên năm cuối khoa Kiến trúc công trình, tôi quá quen thuộc với từng đường gân kết cấu bê tông và hệ thống dây điện âm tường. Chiều nay, lúc trao chìa khóa phòng, gã chủ nhà trọ tên Tài đã nhìn tôi bằng ánh mắt soi mói đáng ngờ. Gã vờ niềm nở dặn dò: 'Phòng này giá rẻ đặc biệt cho nữ sinh ngoan. Chú lắp sẵn quạt thông gió với đồng hồ mới tinh, cấm được tự ý đóng đinh hay đưa bạn trai về ngủ lại đấy nhé!'.
+Tôi là sinh viên năm cuối khoa Kiến trúc công trình. Tôi quá quen thuộc với từng đường gân kết cấu bê tông và hệ thống dây điện âm tường. Chiều nay, gã chủ trọ tên Tài nhìn tôi bằng ánh mắt soi mói đáng ngờ. Gã vờ niềm nở dặn dò: 'Phòng này giá rẻ đặc biệt cho nữ sinh ngoan. Cấm được tự ý đóng đinh hay đưa bạn trai về ngủ lại đấy nhé!'.
 
-Tôi đặt chiếc ba lô đồ nghề kiến trúc lên bàn, rút ra chiếc kìm cắt mũi nhọn và chiếc đồng hồ vạn năng đo dòng rò. Tôi bắc chiếc ghế gỗ ba chân bước lên, áp tai sát vào mặt số chiếc đồng hồ tròn treo tường. Không hề có tiếng kim giây tích tắc cơ học thông thường, thay vào đó là tiếng rít cao tần của một biến áp nguồn siêu nhỏ đang chuyển đổi dòng điện hai trăm hai mươi vôn sang năm vôn DC.
+Tôi đặt ba lô đồ nghề kiến trúc lên bàn. Tôi rút chiếc kìm cắt mũi nhọn và chiếc đồng hồ vạn năng đo dòng rò. Tôi bắc ghế gỗ ba chân bước lên, áp sát tai vào mặt số đồng hồ tròn treo tường. Không hề có tiếng kim giây tích tắc cơ học thông thường. Thay vào đó là tiếng rít cao tần của biến áp nguồn siêu nhỏ đang chuyển đổi dòng điện sang năm vôn DC.
 
-Dùng mũi kéo inox cậy nhẹ lớp mặt nạ nhựa bảo vệ, mặt số bằng bìa cứng bung ra để lộ một bo mạch điện tử vi sai bằng đốt ngón tay. Ngay chính giữa đinh ốc cố định kim giờ là một ống kính quang học mắt cá chỉ bằng đầu tăm, hướng thẳng xuống mép nệm và cửa phòng tắm. Sợi cáp nguồn siêu mỏng màu đen của nó được luồn khéo léo qua lỗ khoan xuyên tường nối thẳng vào hộp điện quạt gió.
+Dùng mũi kéo inox cậy nhẹ lớp mặt nạ bảo vệ, mặt số bằng bìa cứng bung ra. Một bo mạch vi sai bằng đốt ngón tay lộ rõ. Ngay chính giữa đinh ốc cố định kim giờ là ống kính mắt cá bằng đầu tăm. Nó hướng thẳng xuống mép nệm và cửa phòng tắm. Sợi cáp nguồn siêu mỏng màu đen được luồn qua lỗ khoan tường nối thẳng vào hộp điện quạt gió.
 
-Tôi không giật đứt dây nguồn ngay để tránh kích hoạt cảnh báo ngắt kết nối trên máy chủ của kẻ theo dõi. Tôi lấy một mẩu băng dính điện màu đen trong hộp đồ dán đè kín mít lên mắt kính quang học, chặn đứng luồng hình ảnh truyền đi. Đúng hai phút sau, tiếng bước chân lẹp xẹp từ dưới cầu thang bỗng dừng lại ngay trước cửa phòng tôi!"""
+Tôi không giật dây nguồn ngay nhằm tránh kích hoạt cảnh báo trên máy chủ theo dõi. Tôi lấy mẩu băng dính điện dán đè kín mít mắt kính quang học, chặn đứng luồng hình ảnh truyền đi. Đúng hai phút sau, tiếng bước chân lẹp xẹp từ cầu thang dừng lại ngay trước cửa phòng tôi!"""
 
-    p2 = """Tiếng chìa khóa vạn năng vừa tra vào ổ khóa lách cách, ngón tay tôi đã cắm chiếc thẻ nhớ micro SD ba mươi hai gigabyte vào đầu đọc thẻ máy tính xách tay.
+    p2 = """Tiếng chìa khóa tra ổ lách cách. Ngón tay tôi cắm thẻ nhớ micro SD vào đầu đọc máy tính.
 
-Một tiếng gõ cửa cộc cộc vang lên dồn dập kèm giọng nói khàn khàn đầy sốt ruột của gã chủ trọ ngoài hành lang:
-'Cháu Diệp ơi! Cầu dao điện tầng bốn tự dưng bị nhảy áp, chú nghi chập dây quạt thông gió nên vào kiểm tra hộ một lát nhé!'.
+Tiếng gõ cửa cộc cộc vang lên dồn dập ngoài hành lang. Giọng gã chủ trọ khàn khàn đầy sốt ruột:
+'Cháu Diệp ơi! Cầu dao tầng bốn bị nhảy áp. Chú nghi chập quạt gió nên vào kiểm tra hộ một lát nhé!'.
 
-Tim tôi đập mạnh một nhịp nhưng các ngón tay vẫn giữ độ chuẩn xác tuyệt đối của một người quen vẽ kỹ thuật. Gã cuống cuồng vì màn hình theo dõi trên điện thoại của gã bỗng dưng tối om như mực. Tôi hít sâu một hơi, cất giọng bình thản đáp vọng ra ngoài:
-'Cháu vừa tắm xong đang thay quần áo! Chú đợi mười phút nữa để cháu mặc đồ chỉnh tề đã nhé!'.
+Tim tôi đập mạnh một nhịp. Các ngón tay tôi vẫn giữ độ chuẩn xác của dân vẽ kỹ thuật. Gã cuống cuồng vì màn hình theo dõi tối đen như mực. Tôi hít sâu một hơi, bình thản đáp vọng ra:
+'Cháu vừa tắm xong đang thay đồ! Chú đợi mười phút nữa để cháu mặc quần áo chỉnh tề đã nhé!'.
 
-Trong khoảng thời gian quý giá đó, tôi bấm mở thư mục gốc của chiếc thẻ nhớ vừa rút từ khe cắm micro camera. Màn hình laptop mười lăm inch lập tức hiện ra hơn năm mươi thư mục con được phân cấp chi tiết theo số phòng từ bốn lẻ một đến bốn lẻ bốn. Hàng trăm tệp video độ phân giải cao ghi lại sinh hoạt riêng tư của các nữ sinh từng thuê trọ suốt hai năm qua hiện rõ mồn một kèm ngày giờ quay chụp.
+Tôi tranh thủ bấm mở thư mục gốc thẻ nhớ. Màn hình laptop hiện ra hơn năm mươi thư mục con. Hàng trăm tệp video ghi lại cảnh riêng tư của các nữ sinh thuê trọ suốt hai năm qua hiện rõ mồn một.
 
-Kinh khủng hơn, trong một tệp ghi chú có tên danh sách khách thuê, gã lưu đầy đủ số căn cước công dân, trang mạng cá nhân và số điện thoại phụ huynh của từng nạn nhân nhằm mục đích tống tiền khi họ chuyển đi. Máu nóng dồn lên thái dương, tôi lập tức bấm tổ hợp phím sao lưu toàn bộ dữ liệu lên đám mây lưu trữ cá nhân, đồng thời gửi đường link nén dữ liệu cho chị Mai - cựu sinh viên từng ở phòng này năm ngoái.
+Kinh khủng hơn, gã còn lưu danh sách khách thuê. Trong đó có đầy đủ căn cước công dân và số điện thoại phụ huynh để tống tiền. Máu nóng dồn lên thái dương. Tôi bấm sao lưu dữ liệu lên đám mây cá nhân. Tôi gửi link nén cho chị Mai, cựu sinh viên từng ở phòng này năm ngoái.
 
-Bên ngoài cửa, gã chủ trọ không còn đủ kiên nhẫn. Tiếng then cài cửa sắt bắt đầu bị xoay tròn lục cục, gã đang lén dùng chùm chìa khóa phụ để mở chốt trong. Tôi với tay rút chiếc bình xịt hơi cay tự vệ trong túi áo khoác, tay kia cầm chắc thanh thước chữ T bằng nhôm cứng dài một mét, đứng nép sát vào góc chết sau bản lề cửa:
-'Chú Tài! Chú dám bước qua ngạch cửa này một bước, tôi sẽ xịt thẳng áp lực vào mắt chú đấy!'."""
+Gã chủ trọ bên ngoài mất kiên nhẫn. Tiếng then cài cửa sắt xoay tròn lục cục. Gã đang lén dùng chìa khóa phụ mở chốt trong. Tôi rút bình xịt hơi cay trong túi áo. Tay kia tôi cầm chắc thước chữ T bằng nhôm cứng dài một mét. Tôi đứng nép sát góc chết sau bản lề cửa:
+'Chú dám bước qua ngạch cửa, tôi xịt mù mắt chú đấy!'."""
 
-    p3 = """Ánh đèn pha xe bán tải của hội nữ sinh và tổ dân phố vừa chiếu thẳng qua khung cửa thông gió, tiếng còi xe bóp dồn dập đã khiến gã chủ trọ đánh rơi chùm chìa khóa xuống sàn gạch.
+    p3 = """Ánh đèn pha xe bán tải vừa chiếu qua cửa thông gió, tiếng còi dồn dập đã khiến gã chủ trọ đánh rơi chùm chìa khóa.
 
-Cánh cửa phòng bật mở toang, gã chủ trọ bước hụt một nhịp, gương mặt tái mét cắt không còn giọt máu. Trước mắt gã không phải là một nữ sinh hoảng loạn sợ hãi, mà là màn hình máy tính đang phát lặp đi lặp lại đoạn video clip chính gã trèo lên thang gỗ gắn đinh ốc camera giấu kín vào buổi sáng.
+Cửa phòng bật mở toang. Gã bước hụt một nhịp, mặt tái mét không còn giọt máu. Trước mắt gã là màn hình máy tính đang phát đoạn video chính gã trèo thang gắn camera ban sáng.
 
-Gã lắp bắp, nụ cười giả tạo trên khóe môi giật giật méo xệch:
-'Cháu... cháu hiểu lầm rồi! Chú lắp thiết bị cảm biến khói chống cháy nổ để bảo vệ an toàn cho cả xóm trọ thôi mà!'.
+Gã lắp bắp, nụ cười méo xệch:
+'Cháu hiểu lầm rồi! Chú lắp cảm biến khói để bảo vệ an toàn cho cả xóm trọ thôi mà!'.
 
-'Cảm biến khói mà gắn ống kính mắt cá chĩa thẳng vào giường ngủ và kết nối thẻ nhớ ba mươi hai gigabyte sao?', giọng nói sắc lạnh của nữ luật sư bảo vệ quyền lợi phụ nữ vang lên đanh thép từ đầu cầu thang. Đi ngay phía sau cô là bác tổ trưởng dân phố cùng bốn bạn nữ từng là nạn nhân thuê trọ cũ, trên tay cầm sẵn hợp đồng thuê nhà và biên lai nộp tiền cọc.
+'Cảm biến khói mà gắn mắt kính chĩa vào giường ngủ sao?', giọng nữ luật sư vang lên đanh thép từ cầu thang. Đi sau cô là bác tổ trưởng dân phố cùng bốn bạn nữ từng là nạn nhân thuê trọ cũ. Họ cầm sẵn hợp đồng thuê và biên lai cọc tiền.
 
-Gã chủ trọ hoảng loạn thọc tay vào túi quần toan bấm xóa ứng dụng trên điện thoại di động, nhưng tôi đã nhanh tay giật cầu dao tổng của tầng bốn, ngắt hoàn toàn trạm phát sóng wifi nội bộ. Toàn bộ chứng cứ điện tử và dữ liệu video tống tiền trên thẻ nhớ gốc đã được đồng bộ nguyên vẹn vào USB bảo mật trước sự chứng kiến của biên bản hiện trường tổ dân phố.
+Gã chủ trọ hoảng loạn thọc tay túi quần toan xóa app điện thoại. Nhưng tôi đã giật cầu dao tổng tầng bốn, ngắt toàn bộ trạm wifi. Toàn bộ chứng cứ điện tử trên thẻ nhớ đã được đồng bộ vào USB bảo mật trước sự chứng kiến của tổ dân phố.
 
-Gã khuỵu hai đầu gối xuống nền gạch hoa hành lang, đôi bàn tay run rẩy không còn sức phản kháng. Toàn bộ các phòng trọ trong tòa nhà lập tức bị các cơ quan chức năng tiến hành kiểm tra rà soát toàn diện thiết bị quay lén, giấy phép kinh doanh lưu trú của cơ sở bị đình chỉ ngay trong đêm.
+Gã khuỵu hai đầu gối xuống sàn hành lang, đôi tay run rẩy không còn sức phản kháng. Các phòng trọ trong tòa nhà lập tức bị rà soát toàn diện thiết bị quay lén. Cơ sở bị đình chỉ kinh doanh ngay trong đêm.
 
-Tôi thu dọn dụng cụ vẽ và hành lý cá nhân, bước lên chiếc xe bán tải của nhóm bạn để chuyển thẳng vào khu ký túc xá an toàn của trường. Ánh đèn đường phố đêm rực rỡ soi bóng những con người dũng cảm đứng lên bảo vệ nhân phẩm của chính mình. Quyền riêng tư là bất khả xâm phạm, và mọi âm mưu hèn hạ núp bóng đinh ốc vô tri sớm muộn cũng sẽ bị ánh sáng công lý phơi bày trọn vẹn."""
+Tôi thu dọn dụng cụ và hành lý, bước lên xe bán tải chuyển vào ký túc xá an toàn của trường. Ánh đèn đường đêm rực rỡ soi bóng những con người dũng cảm đứng lên bảo vệ nhân phẩm. Quyền riêng tư là bất khả xâm phạm, và mọi âm mưu hèn hạ núp bóng đinh ốc vô tri sớm muộn cũng bị ánh sáng công lý phơi bày trọn vẹn."""
 
     res = {
         "title": t,
@@ -914,54 +914,54 @@ Lòng nhân ái chân chính sẽ luôn đẩy lùi mọi hành vi đen tối.""
 # VÒNG 50: NHÀ TỊCH BIÊN ĐÔ THỊ & VẾT NỨT SAU VÁCH THẠCH CAO (Trường phái 1 - Micro Sensory - 18 từ)
 # ==============================================================================
 def get_story_cycle_50(title: str = "") -> Dict[str, Any]:
-    t = title or "Bức Tường Thạch Cao Tỏa Mùi Ẩm Mốc: Kỹ Sư Giám Định Lật Lại Kỳ Án Mười Năm Biệt Thự Bỏ Hoang"
-    
-    p1 = """Mũi búa kiểm định của tôi vừa gõ nhẹ vào vách thạch cao phòng tắm, một khoảng rỗng sâu ba mươi phân đã phát ra tiếng vang rợn người.
+    t = "Hầm Rượu Cổ Tỏa Mùi Trầm Hương: Dược Sĩ Giám Định Vạch Trần Hũ Thạch Tín Mười Năm"
 
-Căn biệt thự kiểu Pháp cổ ba tầng ở trung tâm thành phố đang được niêm phong để chuẩn bị đưa ra bán đấu giá tài sản tịch biên thi hành án. Mười năm trước, chủ nhân hợp pháp của cơ ngơi này là bà Đoàn Mỹ Lan, một nữ doanh nhân ngành dược thành đạt, bỗng dưng mất tích bí ẩn không để lại bất kỳ tung tích nào. Toàn bộ giấy tờ sở hữu bất động sản sau đó bị một nhóm đầu cơ bất động sản do gã trùm Mã Khắc đứng đầu thâu tóm qua một hợp đồng ủy quyền giả mạo chữ ký.
+    p1 = """Lớp vôi vữa hầm ngầm vừa cạo thủng một mảng nhỏ, mùi ẩm mốc suốt một thập kỷ bỗng xộc thẳng vào mũi tôi.
 
-Tôi là kỹ sư giám định kết cấu công trình dân dụng độc lập được hội đồng thi hành án chỉ định kiểm định an toàn trước khi bán đấu giá. Trên tay tôi là chiếc máy đo khoảng cách laser Bosch GLM và tập hồ sơ bản vẽ thiết kế hoàn công lưu trữ từ năm 2014. Khi đối chiếu từng bức vách, tôi nhận thấy điểm bất thường chết người tại phòng ngủ master tầng hai: Bức tường ngăn giữa tủ quần áo âm tường và phòng tắm có độ dày thực tế lên tới tám mươi phân, trong khi bản vẽ kết cấu chịu lực gốc chỉ dày bốn mươi phân.
+Căn hầm chứa di vật gia tộc họ Đoàn nằm sâu tận đáy đất ba mét đang bị niêm phong để kiểm kê tài sản. Nữ danh y Đông y Đoàn Mỹ Lan đột ngột tạ thế không để lại tăm tích. Quản gia Mã Khắc đưa ra một bản hợp đồng ủy thác có chữ ký giả mạo, toan tính chiếm đoạt trọn bộ kho thảo dược quý hiếm cùng các chum rượu ngâm thảo mộc trăm năm.
 
-Căn phòng nồng nặc mùi vôi vữa ẩm mốc và hóa chất chống thấm cũ kỹ suốt một thập kỷ. Tôi dùng đầu nhọn của búa kiểm định gõ dọc theo mép chân tường, âm thanh phát ra bỗng chuyển từ tiếng đục đặc của bê tông sang tiếng vang rỗng của một khoang chứa nhân tạo.
+Tôi là Trần Chấn, chuyên viên phân tích hóa dược của Viện Giám định Di sản Cổ truyền. Đôi tay tôi nâng bộ dụng cụ chiết tách dung môi, chiếc kẹp inox và các ống thuốc thử hóa học đặc hiệu. Đối chiếu tập sổ nhật ký kê đơn gia truyền, tôi phát hiện góc hầm phía sau bệ chum sành có một mảng vách mới trát vữa dày cộm, bít kín lối thoát hơi tự nhiên.
 
-Đúng lúc đó, cánh cửa phòng bật mở đánh rầm. Gã trùm môi giới bất động sản Mã Khắc bước vào, miệng phì phèo điếu xì gà, khóe môi nhếch lên nụ cười lạnh:
-'Kỹ sư Trần làm việc nhiệt tình quá nhỉ! Biệt thự cũ nát này chiều nay sẽ có lệnh san phẳng để chia lô bán nền. Cậu chỉ cần ký vào biên bản đủ điều kiện tháo dỡ là xong, đừng bới lông tìm vết làm gì cho mệt xác!'.
+Tôi dùng lưỡi dao gạt mẩu bột xám rơi vào chén sứ tráng men. Nhỏ ba giọt dung dịch bạc nitrat vào dung môi, chất lỏng lập tức kết tủa vẩn đục sắc xám tro, bốc lên mùi hăng khét đặc trưng của muối asenit pha tạp.
 
-Hắn tiện tay nhét một chiếc phong bì dày cộm mười triệu tiền mặt vào túi áo bảo hộ của tôi. Tôi rút chiếc phong bì đặt trả lại mép bồn rửa mặt, tay cầm chắc chiếc búa kiểm định:
-'Tường sai lệch bản vẽ bốn mươi phân! Theo quy chuẩn kỹ thuật, tôi bắt buộc phải dùng máy khoan rút lõi để kiểm tra kết cấu bên trong!'.
-Sắc mặt Mã Khắc lập tức biến sắc, tối sầm lại như mây bão!"""
+Bất chợt, then cài cọt kẹt rung chuyển. Quản gia Mã Khắc chống gậy ba toong bước xuống bậc thềm đá rêu phong, khóe môi nhếch nụ cười nham hiểm:
+'Dược sĩ Trần nhọc lòng đào bới làm chi nơi ẩm thấp! Chiều nay xe tải thu mua sẽ chở hết chum vại đi. Cậu đóng mộc xác nhận thảo mộc hỏng, cọc tiền này là của cậu!'.
 
-    p2 = """Mã Khắc vung tay hất văng chiếc máy đo laser trên bàn của tôi xuống sàn gạch hoa vỡ tan thành nhiều mảnh.
+Hắn vứt cọc tiền bọc nilon xuống phiến đá. Tôi hất cọc tiền sang mép bệ, giơ cao chén sứ kết tủa:
+'Nồng độ thạch tín trong mẩu vữa vượt mức tử vong! Mảng vách này là hiện trường án mạng cần niêm phong khẩn cấp!'.
+Mặt Mã Khắc đanh lại, gân xanh co giật dữ dội!"""
 
-Hai gã bảo kê cao lớn từ ngoài hành lang lù lù bước vào, chắn kín lối ra vào duy nhất của căn phòng ngủ tầng hai. Gã nghiến răng ken két, gằn từng giọng đe dọa:
-'Mày muốn sống để về ăn cơm với gia đình không? Tao nói lại lần cuối: Chiều nay máy xúc sẽ ủi phẳng căn nhà này! Không có khoan cắt gì hết!'.
+    p2 = """Chén sứ trên tay tôi vừa đưa lên cao, Mã Khắc đã vung đầu nhọn ba toong sắt đập tan tành giá để dung dịch.
 
-Tôi lùi lại một bước, tựa lưng vào mép bàn đá cẩm thạch kiên cố. Tay phải tôi bí mật bấm vào đầu chiếc bút ký tên cài ở túi áo ngực - thiết bị ghi âm kỹ thuật số chuyên dụng của giám định viên đã kích hoạt và đang đồng bộ trực tiếp dữ liệu âm thanh qua vệ tinh về văn phòng công chứng. Trên giá đỡ kim loại cạnh tường, chiếc máy khoan rút lõi công suất ba nghìn oát đã được tôi đấu nối sẵn vào nguồn điện dự phòng.
+Nước cất và cồn công nghiệp chảy tràn lênh láng trên nền đá hầm. Hai gã lực điền vác xà beng án ngữ bậc thềm duy nhất dẫn lên mặt đất. Mã Khắc gằn từng từ buốt giá:
+'Biết quá nhiều điều dưới đáy mồ thì vĩnh viễn không bao giờ thấy được ánh mặt trời! Điểm chỉ hoặc vùi thây tại đây!'.
 
-Tôi nhìn thẳng vào đôi mắt vằn tia máu của Mã Khắc, giọng nói đanh thép không hề nao núng:
-'Ông sốt sắng muốn ủi phẳng căn biệt thự này trước bốn giờ chiều... Không phải vì tiến độ dự án, mà vì ông sợ chiếc máy khoan rút lõi sẽ bóc trần bí mật mười năm trước ông giấu sau bức tường thạch cao này đúng không? Giấy phép tháo dỡ của ông hoàn toàn vô giá trị khi chưa có chữ ký nghiệm thu của tôi!'.
+Tôi bình tĩnh lùi sát mép cột cẩm thạch, bàn tay bấm chốt van bình xịt khí cacbonic cứu hỏa gắn cạnh vách. Lớp bọt tuyết trắng xóa phụt mạnh vào mặt hai tên tùy tùng khiến chúng ho sặc sụa buông rơi hung khí. Đồng thời, tôi gạt mở nút công tắc thiết bị phát tín hiệu khẩn cấp cài ở dây lưng da.
 
-Lời vừa dứt, tiếng còi xe thanh tra tư pháp bỗng vang lên dồn dập từ dưới sân cổng sắt! Luật sư Thục Quyên, đại diện quyền lợi pháp lý cho người thừa kế duy nhất của bà Đoàn Mỹ Lan, cùng hai cán bộ thi hành án bước nhanh lên cầu thang.
+'Mã Khắc! Mười năm trước ông đã hạ độc thạch tín vào thang thuốc tẩm bổ của bà Mỹ Lan rồi giấu hũ độc dược sau hốc vữa này đúng không? Bản phân tích hóa chất đã tự động truyền về viện kiểm sát qua mạng cáp quang ngầm!'.
 
-'Ông Mã Khắc! Phiên bán đấu giá và lệnh tháo dỡ chiều nay đã bị tòa án đình chỉ khẩn cấp theo yêu cầu bảo lưu chứng cứ!', giọng luật sư Quyên vang lên đanh thép.
+Mã Khắc hoảng loạn thoái lui, lưng đập mạnh vào chum rượu vỡ toang. Đúng lúc đó, còi xe cứu nạn rền vang cùng bước chân rầm rộ của lực lượng tư pháp và Luật sư Thục Quyên ập xuống hầm ngầm qua cửa sập lấy gió.
 
-Mã Khắc giật nảy mình thối lui hai bước, trán lấm tấm mồ hôi hột. Tận dụng giây phút đó, tôi nhấc chiếc máy khoan rút lõi bê tông công nghiệp mũi kim cương một trăm mười milimét, cắm nguồn điện và ấn mạnh vào tâm bức tường nghi vấn. Mũi khoan xoay tít rít lên dữ dội, lớp bụi thạch cao trắng xóa tuôn ra rào rào, để lộ một cánh cửa thép bọc chì niêm phong kín mít sau lớp vữa!"""
+Luật sư Quyên giơ cao lệnh bắt khẩn cấp:
+'Mã Khắc! Hành vi đầu độc chiếm đoạt di sản mười năm trước đã bị khởi tố hình sự!'.
 
-    p3 = """Cánh cửa sắt của chiếc két âm tường bọc chì vừa được mũi khoan kim cương cậy tung khóa cơ học, chiếc hộp kim loại chống ẩm mười năm trước bỗng lộ ra nguyên vẹn.
+Mã Khắc sụp quỵ xuống vũng nước cồn, hai tay run rẩy đưa vào còng số tám. Tôi dùng mũi xà beng cậy tung lớp vách vôi che chắn, để lộ một hộc đá bí mật chôn sâu trong vách hầm!"""
 
-Bên trong hộp kim loại là tập di chúc viết tay nguyên bản có dấu lăn tay của nữ doanh nhân Đoàn Mỹ Lan, cùng một chiếc thẻ nhớ ghi âm lời trăn trối cuối cùng. Toàn bộ sự thật bị chôn vùi suốt một thập kỷ bỗng chốc được bóc trần hoàn toàn: Mười năm trước, chính Mã Khắc và đường dây làm giả giấy tờ đã ép buộc nạn nhân ký vào các hợp đồng ủy quyền khống, sau đó bí mật đổ bê tông che lấp toàn bộ két sắt lưu trữ hồ sơ tài sản gốc hòng xóa sạch mọi dấu vết trước khi sang tên.
+    p3 = """Phiến đá che hộc bí mật vừa bẩy tung, chiếc tráp đồng bọc sơn mài mười năm trước bỗng lộ ra nguyên vẹn nơi đáy hầm.
 
-Mã Khắc đứng chôn chân tại chỗ, gương mặt xám ngoét không còn một tia huyết sắc. Đôi bàn tay của gã run rẩy buông thõng khi biên bản hiện trường được lập tức ký kết dưới sự chứng kiến của lực lượng chức năng. Chiếc còng số tám bập tanh tách vào cổ tay gã và đồng bọn, chấm dứt hoàn toàn mười năm tác oai tác quái của băng nhóm đầu cơ bất động sản lừa đảo.
+Bên trong tráp đồng là tập sổ nhật ký bệnh án viết tay bằng bút lông của nữ danh y quá cố. Từng trang ghi chép cặn kẽ các lần bị đầu độc thạch tín. Đi kèm là chiếc hộp kính chứa lọ thuốc giải độc dán kín chữ ký riêng.
 
-Toàn bộ khối tài sản trị giá hơn một trăm hai mươi tỷ cùng quyền sở hữu căn biệt thự cổ được tòa án phán quyết trao trả lại toàn vẹn cho người con gái của nữ doanh nhân quá cố.
+Toàn bộ chuỗi vật chứng hóa dược và bệnh lý không thể chối cãi đã bóc trần trọn vẹn dã tâm tàn độc của tên quản gia phản trắc suốt một thập kỷ. Mã Khắc run rẩy cúi gập đầu trước biên bản niêm phong của cơ quan pháp luật. Chiếc còng số tám bập tanh tách vào cổ tay gã. Gã không còn thốt nổi một lời ngụy biện.
 
-Luật sư Thục Quyên siết chặt tay tôi, đôi mắt ngấn lệ xúc động:
-'Cảm ơn kỹ sư Trần! Nếu không có sự kiên định và mũi khoan chuẩn xác của anh, có lẽ công lý và di nguyện của người đã khuất mãi mãi bị chôn vùi dưới lớp gạch đá đổ nát chiều nay!'.
+Tòa án nhân dân sau đó ra phán quyết tước bỏ toàn bộ tư cách ủy thác của kẻ thủ ác. Quyền thừa kế khu trang viên và kho tàng thảo dược cổ truyền trị giá hàng trăm tỷ đồng được trao trả trọn vẹn cho người thừa kế chân chính.
 
-Tôi mỉm cười, lau sạch lớp bụi thạch cao vương trên chiếc búa kiểm định:
-'Lương tâm nghề nghiệp và thước đo kỹ thuật không bao giờ cho phép tôi thỏa hiệp với bất kỳ sự dối trá nào.'.
+Luật sư Thục Quyên siết chặt tay tôi, giọng nghẹn ngào:
+'Cảm ơn dược sĩ Trần! Công lý mười năm nay đã được sáng tỏ!'.
 
-Tôi thu dọn dụng cụ đo đạc, bước chân ra khỏi cổng vòm biệt thự cổ kính. Ánh nắng chiều vàng rực rỡ chiếu rọi qua từng tán lá xà cừ, quét sạch không khí u uất của mười năm oan khuất. Sự thật có thể bị che giấu tạm thời dưới lớp vôi vữa, nhưng công lý và lẽ phải sẽ luôn đứng vững trước dòng chảy của thời gian."""
+Tôi mỉm cười thu xếp bộ dụng cụ và chiếc kẹp inox vào vali:
+'Hóa chất có thể kết tủa, nhưng y đức sẽ trường tồn!'.
+
+Tôi bước lên bậc thềm đá, đón nhận luồng gió trong lành của sớm mai. Sau mười năm u tối dưới lòng đất, ánh dương rực rỡ lại chiếu sáng khu vườn dược liệu hồi sinh ngát hương."""
 
     res = {
         "title": t,
@@ -971,30 +971,30 @@ Tôi thu dọn dụng cụ đo đạc, bước chân ra khỏi cổng vòm biệ
             {
                 "part_number": 1,
                 "badge_label": "TẬP 1",
-                "title": "Tập 1: Bức Tường Dày Bất Thường Bốn Mươi Phân",
-                "hook": "Mũi búa kiểm định của tôi vừa gõ nhẹ vào vách thạch cao phòng tắm, một khoảng rỗng sâu ba mươi phân đã phát ra tiếng vang rợn người.",
+                "title": "Tập 1: Vết Vữa Hầm Rượu Kết Tủa Bạc Nitrat",
+                "hook": "Lớp vôi vữa hầm ngầm vừa cạo thủng một mảng nhỏ, mùi ẩm mốc suốt một thập kỷ bỗng xộc thẳng vào mũi tôi.",
                 "body": p1,
-                "cliffhanger": "Sắc mặt Mã Khắc bỗng chốc tối sầm lại!",
-                "call_to_action": "Bấm theo dõi đón xem Tập 2: Màn khoan rút lõi bức tường hé lộ két sắt bọc chì mười năm!",
+                "cliffhanger": "Mặt Mã Khắc đanh lại, gân xanh co giật liên hồi!",
+                "call_to_action": "Bấm theo dõi đón xem Tập 2: Màn phun bọt khí cứu hỏa thoát hiểm dưới hầm ngầm!",
                 "full_text": p1
             },
             {
                 "part_number": 2,
                 "badge_label": "TẬP 2",
-                "title": "Tập 2: Chiếc Két Sắt Âm Tường Bọc Chì",
-                "hook": "Mã Khắc vung tay hất văng chiếc máy đo laser trên bàn của tôi xuống sàn gạch: 'Mày không muốn sống nữa à? Chiều nay đấu giá xong căn này sẽ bị san phẳng làm trung tâm thương mại!'.",
+                "title": "Tập 2: Tráp Đồng Sơn Mài Sau Hộc Đá",
+                "hook": "Chiếc chén sứ trên tay tôi vừa đưa lên cao, Mã Khắc đã vung đầu nhọn ba toong sắt đập vỡ toang giá để thuốc thử.",
                 "body": p2,
-                "cliffhanger": "Lớp bụi thạch cao trắng xóa tuôn ra rào rào, để lộ một chiếc két sắt âm tường bọc chì niêm phong kín mít!",
-                "call_to_action": "Bấm theo dõi đón xem Tập 3 - Đại kết cục: Lật lại kỳ án mười năm trả lại công lý!",
+                "cliffhanger": "Tôi dùng chiếc xà beng cậy tung lớp gạch vôi che chắn, để lộ một hộc đá bí mật chôn sâu trong vách hầm!",
+                "call_to_action": "Bấm theo dõi đón xem Tập 3 - Đại kết cục: Lật lại kỳ án hầm rượu mười năm trả lại công lý!",
                 "full_text": p2
             },
             {
                 "part_number": 3,
                 "badge_label": "TẬP 3 - KẾT",
-                "title": "Tập 3: Bản Di Chúc Viết Tay Dưới Ánh Hoàng Hôn",
-                "hook": "Chiếc két sắt mini được kéo ra ngoài ánh sáng trước sự chứng kiến của cơ quan điều tra và đại diện pháp lý.",
+                "title": "Tập 3: Nhật Ký Bệnh Án Và Chiếc Tráp Sơn Mài",
+                "hook": "Phiến đá che hộc bí mật vừa bẩy tung, chiếc tráp đồng bọc sơn mài mười năm trước bỗng lộ ra nguyên vẹn dưới đáy hầm.",
                 "body": p3,
-                "cliffhanger": "Tôi thu dọn dụng cụ đo đạc, bước ra khỏi cánh cổng sắt hoa văn cổ kính của ngôi biệt thự.",
+                "cliffhanger": "Sau mười năm u tối dưới lòng đất, ánh dương rực rỡ lại chiếu sáng khu vườn dược liệu hồi sinh ngát hương.",
                 "call_to_action": "Hãy chia sẻ câu chuyện để cùng lan tỏa thông điệp: Công lý và sự thật luôn chiến thắng bóng tối nhé!",
                 "full_text": p3
             }

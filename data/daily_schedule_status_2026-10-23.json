@@ -1,9 +1,9 @@
 {
   "_meta": {
     "date": "2026-10-23",
-    "last_published_timestamp": 1792738285.7340138,
-    "last_published_time_str": "2026-10-23 13:51:25",
-    "last_series_completed_timestamp": 1792714368.5738156
+    "last_published_timestamp": 1792745945.846088,
+    "last_published_time_str": "2026-10-23 15:59:05",
+    "last_series_completed_timestamp": 1792745945.864148
   },
   "20261023_slot_01_sadieu": {
     "slot_index": 1,
@@ -17,23 +17,23 @@
     "slot_index": 2,
     "title": "Vụng Trộm Thích Thầm Anh: Mười Năm Ngọt Ngào Dưới Mái Hiên Mùa Hạ",
     "part1": true,
-    "part2": false,
+    "part2": true,
     "part3": true,
     "produced": true
   },
   "20261023_slot_03_cungdau": {
     "slot_index": 3,
     "title": "Đích Nữ Tướng Môn: Nhận Chiếu Hòa Thân, Nàng San Bằng Biên Cương Về Triều",
-    "part1": false,
-    "part2": false,
+    "part1": true,
+    "part2": true,
     "part3": true,
     "produced": true
   },
   "20261023_slot_04_vamat": {
     "slot_index": 4,
     "title": "Thiên Kim Thật Đoạt Lại Vận Mệnh: Ba Anh Trai Quỳ Gối Cầu Xin Tha Thứ",
-    "part1": false,
-    "part2": false,
+    "part1": true,
+    "part2": true,
     "part3": true,
     "produced": true
   },
@@ -41,8 +41,8 @@
     "slot_index": 5,
     "title": "Trọng Sinh Về 30 Ngày Trước Tận Thế Băng Giá Âm 60 Độ: Pháo Đài Nhiệt Ngầm 100 Tỷ",
     "part1": true,
-    "part2": false,
-    "part3": false,
+    "part2": true,
+    "part3": true,
     "produced": true
   },
   "20261023_slot_06_haomon": {
@@ -71,7 +71,7 @@
   },
   "20261023_slot_09_quaidam": {
     "slot_index": 9,
-    "title": "Khách Sạn Nửa Đêm: 10 Quy Tắc Sinh Tồn Ca Đêm",
+    "title": "Chuyến Tàu Ngầm Cuối Cùng: 7 Quy Tắc Sinh Tồn Không Thể Vi Phạm",
     "part1": false,
     "part2": false,
     "part3": false,
@@ -79,7 +79,7 @@
   },
   "20261023_slot_10_kinhdi": {
     "slot_index": 10,
-    "title": "Kỳ Án Viện Bảo Tàng: Bức Họa Rỉ Máu Lúc Nửa Đêm",
+    "title": "Quỷ Khế Giao Ước: Căn Nhà Số 44 Và Chiếc Gương Âm Hồn Không Có Đáy",
     "part1": false,
     "part2": false,
     "part3": false,
