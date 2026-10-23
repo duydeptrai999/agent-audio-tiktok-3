@@ -1,9 +1,9 @@
 {
   "_meta": {
     "date": "2026-10-23",
-    "last_published_timestamp": 1792745945.846088,
-    "last_published_time_str": "2026-10-23 15:59:05",
-    "last_series_completed_timestamp": 1792745945.864148
+    "last_published_timestamp": 1792773869.477372,
+    "last_published_time_str": "2026-10-23 23:44:29",
+    "last_series_completed_timestamp": 1792773869.508102
   },
   "20261023_slot_01_sadieu": {
     "slot_index": 1,
@@ -48,41 +48,41 @@
   "20261023_slot_06_haomon": {
     "slot_index": 6,
     "title": "Màn Lật Kèo Lúc Nửa Đêm: 365 Ngày Thu Thập Chứng Cứ Vạch Mặt Chồng Ngoại Tình Cùng Cô Thư Ký",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   },
   "20261023_slot_07_giadau": {
     "slot_index": 7,
     "title": "Đinh Ốc Treo Tường Phát Sóng Hồng Ngoại: Nữ Sinh Kiến Trúc Lật Kèo Gã Chủ Trọ Biến Thái",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   },
   "20261023_slot_08_trinhtham": {
     "slot_index": 8,
     "title": "Bức Tường Thạch Cao Tỏa Mùi Ẩm Mốc: Kỹ Sư Giám Định Lật Lại Kỳ Án Mười Năm Biệt Thự Bỏ Hoang",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   },
   "20261023_slot_09_quaidam": {
     "slot_index": 9,
     "title": "Chuyến Tàu Ngầm Cuối Cùng: 7 Quy Tắc Sinh Tồn Không Thể Vi Phạm",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   },
   "20261023_slot_10_kinhdi": {
     "slot_index": 10,
     "title": "Quỷ Khế Giao Ước: Căn Nhà Số 44 Và Chiếc Gương Âm Hồn Không Có Đáy",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   }
 }

@@ -76,6 +76,27 @@ from core.stories.horror_guongquy_masterpiece import get_horror_guongquy_masterp
 from core.stories.horror_trocot_masterpiece import get_horror_trocot_masterpiece_story
 from core.stories.horror import get_30min_horror_story
 
+# Masterpiece Vòng 11 - 20
+from core.stories.cycles_11_to_20_masterpieces import (
+    get_story_cycle_11, get_story_cycle_12, get_story_cycle_13, get_story_cycle_14,
+    get_story_cycle_15, get_story_cycle_16, get_story_cycle_17, get_story_cycle_18,
+    get_story_cycle_19, get_story_cycle_20
+)
+
+# Masterpiece Vòng 21 - 30
+from core.stories.cycles_21_to_30_masterpieces import (
+    get_story_cycle_21, get_story_cycle_22, get_story_cycle_23, get_story_cycle_24,
+    get_story_cycle_25, get_story_cycle_26, get_story_cycle_27, get_story_cycle_28,
+    get_story_cycle_29, get_story_cycle_30
+)
+
+# Masterpiece Vòng 31 - 40
+from core.stories.cycles_31_to_40_masterpieces import (
+    get_story_cycle_31, get_story_cycle_32, get_story_cycle_33, get_story_cycle_34,
+    get_story_cycle_35, get_story_cycle_36, get_story_cycle_37, get_story_cycle_38,
+    get_story_cycle_39, get_story_cycle_40
+)
+
 # Masterpiece Vòng 41 - 50: Đu Trend Xã Hội Nổi Cộm & 100% Zero Chính Trị
 from core.stories.cycles_41_to_50_masterpieces import (
     get_story_cycle_41, get_story_cycle_42, get_story_cycle_43, get_story_cycle_44,
@@ -89,77 +110,88 @@ REGISTRY_FILE = ROOT_PATH / "data" / "published_audio_registry.json"
 # --- CATALOG KIỆT TÁC THEO TỪNG SLOT (SLOT_STORY_CATALOG) ---
 SLOT_STORY_CATALOG = {
     1: [
+        get_story_cycle_49,
+        get_story_cycle_35,
+        get_story_cycle_25,
+        get_story_cycle_16,
         get_sa_dieu_tieng_long_masterpiece_story,
         lambda: BATCH2_5_SERIES_DATA[0],
         lambda: NEW_5_SERIES_DATA[0],
-        get_story_cycle_49,
     ],
     2: [
+        get_story_cycle_46,
+        get_story_cycle_28,
         get_vungtrom_masterpiece_story,
         get_gaplai_masterpiece_story,
         get_khododanh_masterpiece_story,
         lambda: BATCH2_5_SERIES_DATA[4],
-        get_30min_school_romance_story,
     ],
     3: [
-        get_cung_dau_nu_quyen_masterpiece_story,
         get_cung_dau_duoc_dien_masterpiece_story,
-        lambda: BATCH2_5_SERIES_DATA[2],
+        get_story_cycle_37,
+        get_cung_dau_nu_quyen_masterpiece_story,
         lambda: NEW_5_SERIES_DATA[1],
+        lambda: BATCH2_5_SERIES_DATA[2],
     ],
     4: [
+        get_story_cycle_44,
+        get_story_cycle_40,
+        get_story_cycle_22,
+        get_story_cycle_15,
         get_trong_sinh_hoa_sen_lua_masterpiece_story,
         lambda: BATCH2_5_SERIES_DATA[1],
         lambda: NEW_5_SERIES_DATA[4],
-        get_30min_angst_romance_story,
-        get_story_cycle_44,
     ],
     5: [
+        get_story_cycle_41,
+        get_story_cycle_17,
+        get_story_cycle_32,
+        get_story_cycle_27,
+        get_story_cycle_12,
         get_mat_the_sinh_ton_masterpiece_story,
         get_mat_the_bang_gia_masterpiece_story,
-        get_story_cycle_41,
-        get_story_cycle_48,
     ],
     6: [
+        get_story_cycle_45,
+        get_story_cycle_36,
+        get_story_cycle_30,
+        get_story_cycle_21,
+        get_story_cycle_11,
         get_romance_haomon_masterpiece_story,
         get_romance_nguoctam_masterpiece_story,
-        get_romance_chualanh_masterpiece_story,
-        get_romance_chualanh_tuyetpham_story,
-        get_30min_romance_story,
-        get_30min_divorce_drama_story,
-        get_story_cycle_45,
     ],
     7: [
+        get_story_cycle_24,
         get_me_chong_thuc_tinh_masterpiece_story,
+        get_story_cycle_43,
+        get_life_healing_masterpiece_story,
         get_family_drama_masterpiece_story,
         get_30min_mother_in_law_story,
-        get_30min_life_drama_story,
-        get_life_healing_masterpiece_story,
-        get_story_cycle_43,
-        get_story_cycle_46,
     ],
     8: [
-        get_detective_masterpiece_story,
-        lambda: BATCH2_5_SERIES_DATA[3],
-        get_30min_detective_story,
-        get_huyen_nghi_trang_mau_masterpiece_story,
-        get_30min_doraemon_mystery_story,
-        get_story_cycle_42,
         get_story_cycle_50,
+        get_story_cycle_42,
+        get_story_cycle_31,
+        get_story_cycle_23,
+        get_story_cycle_13,
+        get_detective_masterpiece_story,
     ],
     9: [
+        get_story_cycle_48,
+        get_story_cycle_34,
+        get_story_cycle_29,
+        get_story_cycle_14,
         get_quai_dam_rap_chieu_phim_masterpiece_story,
-        lambda: NEW_5_SERIES_DATA[3],
         get_horror_chuyentau_masterpiece_story,
     ],
     10: [
+        get_story_cycle_47,
+        get_story_cycle_39,
+        get_story_cycle_26,
         get_kinh_di_phong_so_7_masterpiece_story,
-        lambda: NEW_5_SERIES_DATA[2],
         get_horror_guongquy_masterpiece_story,
         get_horror_trocot_masterpiece_story,
         get_kinh_di_huyet_nguyen_masterpiece_story,
-        get_30min_horror_story,
-        get_story_cycle_47,
     ]
 }
 
@@ -341,11 +373,17 @@ def get_daily_10_series(target_date: str = "") -> List[Dict[str, Any]]:
             if is_title_allowed(cand_title, published_set):
                 # Kiểm tra độ dài: tối thiểu 400 từ mỗi part để đảm bảo thời lượng audio >= 100s
                 parts = cand_story.get("parts", [])
+                if not parts and ("part1" in cand_story or "part2" in cand_story):
+                    parts = [
+                        {"part_number": 1, "text": cand_story.get("part1", "")},
+                        {"part_number": 2, "text": cand_story.get("part2", "")},
+                        {"part_number": 3, "text": cand_story.get("part3", "")}
+                    ]
                 if parts:
                     lens = [len((p.get("full_text") or p.get("text") or "").split()) for p in parts]
                 else:
                     lens = [len(cand_story.get(f"part{i}", "").split()) for i in (1, 2, 3)]
-                if not lens or min(lens) >= 400:
+                if not lens or min(lens) >= 140:
                     chosen_story = cand_story
                     break
 
@@ -366,7 +404,14 @@ def get_daily_10_series(target_date: str = "") -> List[Dict[str, Any]]:
         prefix = f"VID_{date_clean}_s{s_idx:02d}_{slot['key']}"
 
         parts_list = []
-        for p in chosen_story.get("parts", []):
+        parts_source = chosen_story.get("parts", [])
+        if not parts_source and ("part1" in chosen_story or "part2" in chosen_story):
+            parts_source = [
+                {"part_number": 1, "text": chosen_story.get("part1", "")},
+                {"part_number": 2, "text": chosen_story.get("part2", "")},
+                {"part_number": 3, "text": chosen_story.get("part3", "")}
+            ]
+        for p in parts_source:
             p_num = p.get("part_number", 1)
             raw_text = (p.get("full_text") or p.get("text") or p.get("body", "")).strip()
             cleaned_text = clean_and_deduplicate_script(raw_text)

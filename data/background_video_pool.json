@@ -1,14 +1,14 @@
 {
   "active_video": {
-    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
-    "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+    "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
     "url": "",
-    "title": "traditional_wood_carving_asmr_POqfxxmiNo",
-    "total_duration": 4580.28,
-    "current_offset": 296.26,
-    "audios_used": 0,
+    "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+    "total_duration": 3604.9,
+    "current_offset": 1458.6100000000001,
+    "audios_used": 1,
     "max_audios": 2,
-    "registered_at": "2026-10-23 13:17:48"
+    "registered_at": "2026-10-23 20:57:04"
   },
   "used_history": [
     {
@@ -587,7 +587,29 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-23 09:06:38"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 1062.57,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-23 13:17:48"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 1381.8400000000001,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-23 17:39:54"
     }
   ],
-  "rotation_count": 48
+  "rotation_count": 50
 }
