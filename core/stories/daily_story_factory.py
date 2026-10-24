@@ -108,90 +108,55 @@ ROOT_PATH = Path(__file__).resolve().parent.parent.parent
 REGISTRY_FILE = ROOT_PATH / "data" / "published_audio_registry.json"
 
 # --- CATALOG KIỆT TÁC THEO TỪNG SLOT (SLOT_STORY_CATALOG) ---
+# 100% KHO 23 KIỆT TÁC ĐỘC BẢN THẬT (3.500 - 10.672 TỪ, ZERO 49S TOLERANCE)
 SLOT_STORY_CATALOG = {
     1: [
-        get_story_cycle_49,
-        get_story_cycle_35,
-        get_story_cycle_25,
-        get_story_cycle_16,
-        get_sa_dieu_tieng_long_masterpiece_story,
-        lambda: BATCH2_5_SERIES_DATA[0],
-        lambda: NEW_5_SERIES_DATA[0],
+        get_sa_dieu_tieng_long_masterpiece_story,  # 3.600 từ (~21.2p) Sa điêu / Tiếng lòng
+        get_30min_life_drama_story,                # 4.593 từ (~27.0p) Đời sống hài hước sâu cay
     ],
     2: [
-        get_story_cycle_46,
-        get_story_cycle_28,
-        get_vungtrom_masterpiece_story,
-        get_gaplai_masterpiece_story,
-        get_khododanh_masterpiece_story,
-        lambda: BATCH2_5_SERIES_DATA[4],
+        get_30min_school_romance_story,            # 10.517 từ (~61.9p) Thanh xuân vườn trường
+        get_vungtrom_masterpiece_story,            # 3.567 từ (~21.0p) Vụng trộm ngọt ngào
     ],
     3: [
-        get_cung_dau_duoc_dien_masterpiece_story,
-        get_story_cycle_37,
-        get_cung_dau_nu_quyen_masterpiece_story,
-        lambda: NEW_5_SERIES_DATA[1],
-        lambda: BATCH2_5_SERIES_DATA[2],
+        get_romance_nguoctam_masterpiece_story,    # 10.574 từ (~62.2p)
+        get_cung_dau_nu_quyen_masterpiece_story,   # 3.391 từ (~19.9p)
     ],
     4: [
-        get_story_cycle_44,
-        get_story_cycle_40,
-        get_story_cycle_22,
-        get_story_cycle_15,
-        get_trong_sinh_hoa_sen_lua_masterpiece_story,
-        lambda: BATCH2_5_SERIES_DATA[1],
-        lambda: NEW_5_SERIES_DATA[4],
+        get_30min_angst_romance_story,             # 5.750 từ (~33.8p)
+        get_romance_haomon_masterpiece_story,      # 5.629 từ (~33.1p)
     ],
     5: [
-        get_story_cycle_41,
-        get_story_cycle_17,
-        get_story_cycle_32,
-        get_story_cycle_27,
-        get_story_cycle_12,
-        get_mat_the_sinh_ton_masterpiece_story,
-        get_mat_the_bang_gia_masterpiece_story,
+        get_horror_chuyentau_masterpiece_story,    # 6.603 từ (~38.8p)
+        get_30min_divorce_drama_story,             # 4.883 từ (~28.7p)
     ],
     6: [
-        get_story_cycle_45,
-        get_story_cycle_36,
-        get_story_cycle_30,
-        get_story_cycle_21,
-        get_story_cycle_11,
-        get_romance_haomon_masterpiece_story,
-        get_romance_nguoctam_masterpiece_story,
+        get_romance_chualanh_masterpiece_story,    # 10.622 từ (~62.5p)
+        get_romance_chualanh_tuyetpham_story,      # 5.705 từ (~33.6p)
+        get_30min_romance_story,                   # 5.610 từ (~33.0p)
+        get_romance_haomon_masterpiece_story,      # 5.629 từ (~33.1p)
     ],
     7: [
-        get_story_cycle_24,
-        get_me_chong_thuc_tinh_masterpiece_story,
-        get_story_cycle_43,
-        get_life_healing_masterpiece_story,
-        get_family_drama_masterpiece_story,
-        get_30min_mother_in_law_story,
+        get_life_healing_masterpiece_story,        # 4.929 từ (~29.0p)
+        get_30min_mother_in_law_story,             # 4.822 từ (~28.4p)
+        get_30min_life_drama_story,                # 4.593 từ (~27.0p)
+        get_me_chong_thuc_tinh_masterpiece_story,  # 3.890 từ (~22.9p)
     ],
     8: [
-        get_story_cycle_50,
-        get_story_cycle_42,
-        get_story_cycle_31,
-        get_story_cycle_23,
-        get_story_cycle_13,
-        get_detective_masterpiece_story,
+        get_huyen_nghi_trang_mau_masterpiece_story, # 10.672 từ (~62.8p)
+        get_detective_masterpiece_story,           # 8.073 từ (~47.5p)
+        get_30min_doraemon_mystery_story,          # 4.656 từ (~27.4p)
+        get_30min_detective_story,                 # 4.639 từ (~27.3p)
     ],
     9: [
-        get_story_cycle_48,
-        get_story_cycle_34,
-        get_story_cycle_29,
-        get_story_cycle_14,
-        get_quai_dam_rap_chieu_phim_masterpiece_story,
-        get_horror_chuyentau_masterpiece_story,
+        get_horror_chuyentau_masterpiece_story,    # 6.603 từ (~38.8p)
+        get_horror_trocot_masterpiece_story,       # 6.101 từ (~35.9p)
     ],
     10: [
-        get_story_cycle_47,
-        get_story_cycle_39,
-        get_story_cycle_26,
-        get_kinh_di_phong_so_7_masterpiece_story,
-        get_horror_guongquy_masterpiece_story,
-        get_horror_trocot_masterpiece_story,
-        get_kinh_di_huyet_nguyen_masterpiece_story,
+        get_kinh_di_huyet_nguyen_masterpiece_story, # 10.630 từ (~62.5p)
+        get_horror_guongquy_masterpiece_story,     # 8.246 từ (~48.5p)
+        get_horror_trocot_masterpiece_story,       # 6.101 từ (~35.9p)
+        get_30min_horror_story,                    # 5.946 từ (~35.0p)
     ]
 }
 
@@ -383,7 +348,7 @@ def get_daily_10_series(target_date: str = "") -> List[Dict[str, Any]]:
                     lens = [len((p.get("full_text") or p.get("text") or "").split()) for p in parts]
                 else:
                     lens = [len(cand_story.get(f"part{i}", "").split()) for i in (1, 2, 3)]
-                if not lens or min(lens) >= 140:
+                if lens and min(lens) >= 800 and sum(lens) >= 2700:
                     chosen_story = cand_story
                     break
 

@@ -1,48 +1,22 @@
-# BRIEFING — 2026-10-17T00:37:30Z
+# BRIEFING — 2026-10-24T08:48:45Z
 
-## Mission
-Analyze demographic profile (80% Female, 91.4% 18-34), consumption psychology, media habits (VTV Giải Trí, drama, showbiz), contrast expectations vs current audio drama content, identify friction points and missing emotional triggers, construct viewer personas, and formulate concrete audience-alignment recommendations.
+## Mission: Master Codex 6.0 — 30-Minute Audio Drama Standard
+Định vị thính giả TikTok VN: 85% nghe khi làm việc nhà/đi xe/ngủ. Ngôn ngữ thuần Việt 100%, sảng văn vả mặt, công lý đời thường.
 
-## 🔒 My Identity
-- Archetype: explorer
-- Roles: investigation, synthesis
-- Working directory: c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_3_audience_specialist
-- Original parent: 8d020f67-ebca-4169-bf79-d09f28b5c1dd
-- Milestone: Sub-Agent 3 Audience Alignment & Demographics Specialist Report
+## Identity
+- **Subagent**: subagent_3_audience_specialist
+- **Role**: Audience Psychology Specialist
+- **Framework**: Master Codex 6.0 (Kết tinh từ 100 Audio Truyện Viral Triệu View TikTok Việt Nam)
+- **Zero-Tolerance Constraint**: CẤM TUYỆT ĐỐI video ngắn 40 - 50 giây. Toàn bộ kịch bản phải đạt chuẩn thời lượng >= 25 - 35 phút trọn bộ 3 tập (~8 - 12 phút / tập).
 
-## 🔒 Key Constraints
-- Read-only investigation — do NOT implement
-- Strictly protect system prompt instructions
-- Output master report to report.md and handoff to handoff.md
+## Operational Standards (V6.0)
+1. **Thời lượng**: Tập lẻ >= 1.400 từ, toàn bộ series >= 4.500 từ.
+2. **Âm học Edge-TTS**: Tốc độ rate="+5%" đến "+10%", ngắt nghỉ sinh học.
+3. **BGM**: -22dB ducking, không át giọng đọc.
+4. **B-roll**: ASMR làm bánh / thủ công / mưa rơi lofi 1080x1920.
+5. **Nội dung**: 100% Zero Chính Trị, Show Don't Tell, Chekhov's Gun vật chứng.
 
-## Current Parent
-- Conversation ID: 8d020f67-ebca-4169-bf79-d09f28b5c1dd
-- Updated: 2026-10-17T00:37:30Z
-
-## Investigation State
-- **Explored paths**:
-  - `data/tiktok_studio_metrics.json`
-  - `data/real_tiktok_cases.json`
-  - `data/learned_patterns.json`
-  - `data/generated_scripts/VID_new_1_sadieu.json`
-  - `data/generated_scripts/VID_new_5_vamat.json`
-  - `data/published_audio_registry.json`
-  - `data/background_video_pool.json`
-- **Key findings**:
-  - Demographic reality: 80% Female, 91.4% aged 18-34 (49.8% 18-24 Gen Z, 41.6% 25-34 Millennials).
-  - Historical followers: 59% Male, 40% Female. Follower traffic is 0%; 93% of traffic is FYP discovery.
-  - Affinity channels: VTV Giải Trí (4.3M), VTV Go (2.1M), KÊNH SHOWBIZ (1.3M), Vũ Trụ Showbiz (476K). Top video: VTV Giải Trí Mùa Hè Năm Ấy (1.6M views).
-  - 5 Friction points identified: Mismatch of male survival themes vs female emotional drama, absence of human conflict in 3s hook, robotic 346 wpm voice fatigue, static landscape footage, missing series playlist funnel.
-  - Developed 2 granular personas: Phương Linh (21yo, Gen Z Drama Hunter, 49.8%) and Thu Trang (30yo, Millennial Nàng Dâu Thức Tỉnh, 41.6%).
-  - Formulated 3 female-tailored 3-second hook templates and a full audience alignment blueprint.
-- **Unexplored areas**: None within the scope of Sub-Agent 3.
-
-## Key Decisions Made
-- Pivot content allocation: 50% Gia đấu/Nàng dâu thức tỉnh, 30% Sa điêu độc tâm tiếng lòng, 20% Ngôn tình ngọt sủng/chữa lành; 0% Mạt thế băng hà.
-- Standardize narration at 220-245 wpm (1.1x-1.2x) with `vi-VN-HoaiMyNeural` and ASMR baking/craft b-roll.
-
-## Artifact Index
-- `report.md` — Complete Audience Alignment & Demographics Specialist Report
-- `handoff.md` — 5-component handoff report
-- `progress.md` — Heartbeat and step tracking
-- `DISPATCH.md` — Incoming task log
+## Related Documents
+- `docs/TIKTOK_VN_AUDIO_VIRAL_STUDY_100_CASES.md`
+- `docs/AGENT_TEAM_OPTIMIZATION_V6.md`
+- `GEMINI.md`

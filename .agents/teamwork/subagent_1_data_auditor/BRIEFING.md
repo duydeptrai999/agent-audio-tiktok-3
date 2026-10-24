@@ -1,40 +1,22 @@
-# BRIEFING — 2026-10-17T00:40:00Z
+# BRIEFING — 2026-10-24T08:48:45Z
 
-## Mission
-Audit TikTok Studio metrics and published video logs to quantify performance, engagement, traffic sources, and series drop-off rates across Part 1 -> Part 2 -> Part 3.
+## Mission: Master Codex 6.0 — 30-Minute Audio Drama Standard
+Kiểm duyệt thời lượng toán học: Mỗi tập >= 1.400 từ, series >= 4.500 từ (~25-35p audio). Chặn tuyệt đối video ngắn dưới 8 phút.
 
-## 🔒 My Identity
-- Archetype: explorer
-- Roles: Data & Video Performance Auditor, Investigator, Synthesizer
-- Working directory: c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_1_data_auditor\
-- Original parent: 8d020f67-ebca-4169-bf79-d09f28b5c1dd
-- Milestone: Performance & Drop-off Rate Audit
+## Identity
+- **Subagent**: subagent_1_data_auditor
+- **Role**: Data & Metric Auditor
+- **Framework**: Master Codex 6.0 (Kết tinh từ 100 Audio Truyện Viral Triệu View TikTok Việt Nam)
+- **Zero-Tolerance Constraint**: CẤM TUYỆT ĐỐI video ngắn 40 - 50 giây. Toàn bộ kịch bản phải đạt chuẩn thời lượng >= 25 - 35 phút trọn bộ 3 tập (~8 - 12 phút / tập).
 
-## 🔒 Key Constraints
-- Read-only investigation — do NOT implement
-- Inspect data/tiktok_studio_metrics.json, data/published_audio_registry.json, and related logs
-- Provide quantitative drop-off analysis and metric comparison tables
+## Operational Standards (V6.0)
+1. **Thời lượng**: Tập lẻ >= 1.400 từ, toàn bộ series >= 4.500 từ.
+2. **Âm học Edge-TTS**: Tốc độ rate="+5%" đến "+10%", ngắt nghỉ sinh học.
+3. **BGM**: -22dB ducking, không át giọng đọc.
+4. **B-roll**: ASMR làm bánh / thủ công / mưa rơi lofi 1080x1920.
+5. **Nội dung**: 100% Zero Chính Trị, Show Don't Tell, Chekhov's Gun vật chứng.
 
-## Current Parent
-- Conversation ID: 8d020f67-ebca-4169-bf79-d09f28b5c1dd
-- Updated: not yet
-
-## Investigation State
-- **Explored paths**: data/tiktok_studio_metrics.json, data/published_audio_registry.json, config/settings.py, data/content_ledger.json, scripts/fetch_tiktok_studio_data.py, screenshots in data/
-- **Key findings**:
-  1. 7.7K views 7 ngày qua nhưng 93% đến từ FYP, thời gian xem trung bình chỉ 4-7s/view, completion rate ~0.0%.
-  2. Nàng Dâu Thức Tỉnh giữ chân 95.51% từ P1->P2 nhưng rớt 54.12% từ P2->P3 do thiếu Playlist và không kết nối tập.
-  3. Mạt Thế Kỷ Băng Hà duy trì 91.67% retention P1->P3 nhưng view trần thấp hơn drama hào môn.
-  4. Người xem thực tế đảo chiều sang 80% Nữ, 91.4% từ 18-34 tuổi thích VTV Giải Trí/Showbiz drama, đối lập hoàn toàn với follower cũ (59% Nam).
-  5. Kênh mất 4 follower ròng và 0 comments dù có 7.7K views và 138 likes.
-- **Unexplored areas**: none (full audit complete)
-
-## Key Decisions Made
-- Hoàn thành báo cáo kiểm toán chi tiết tại `report.md` và `handoff.md`.
-- Sẵn sàng gửi tóm tắt và bàn giao cho parent orchestrator.
-
-## Artifact Index
-- report.md — Báo cáo kiểm toán hiệu suất video & tỷ lệ suy hao tập truyện chi tiết
-- handoff.md — 5-component self-contained handoff report
-- progress.md — Liveness heartbeat file
-- DISPATCH.md — Incoming message dispatch log
+## Related Documents
+- `docs/TIKTOK_VN_AUDIO_VIRAL_STUDY_100_CASES.md`
+- `docs/AGENT_TEAM_OPTIMIZATION_V6.md`
+- `GEMINI.md`

@@ -1,49 +1,22 @@
-# BRIEFING — 2026-10-17T00:38:00Z
+# BRIEFING — 2026-10-24T08:48:45Z
 
-## Mission
-Analyze why static/slow-repeating scenery loops over 10 minutes cause visual fatigue and swipe-away on TikTok, curate an engaging visual footage strategy (artisanal crafts, ASMR slicing/crafting, dynamic 4K atmospheric scenery), define visual pacing rules (transitions/camera shifts every 5-8s), and detail footage sourcing, licensing, and FFmpeg technical rendering pipeline specs.
+## Mission: Master Codex 6.0 — 30-Minute Audio Drama Standard
+Video nền 1080x1920 dọc thôi miên thị giác: ASMR làm bánh/nấu ăn, điêu khắc thủ công, mưa rơi lofi, hoạt hình 2D vòng lặp.
 
-## 🔒 My Identity
-- Archetype: explorer
-- Roles: Visual Dynamics & Footage Curator
-- Working directory: c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_6_visual_curator
-- Original parent: 8d020f67-ebca-4169-bf79-d09f28b5c1dd
-- Milestone: TikTok 10-Minute Retention & Visual Curation Optimization
+## Identity
+- **Subagent**: subagent_6_visual_curator
+- **Role**: Visual & B-roll Curator
+- **Framework**: Master Codex 6.0 (Kết tinh từ 100 Audio Truyện Viral Triệu View TikTok Việt Nam)
+- **Zero-Tolerance Constraint**: CẤM TUYỆT ĐỐI video ngắn 40 - 50 giây. Toàn bộ kịch bản phải đạt chuẩn thời lượng >= 25 - 35 phút trọn bộ 3 tập (~8 - 12 phút / tập).
 
-## 🔒 Key Constraints
-- Read-only investigation — do NOT modify production code directly in core/ or scripts/
-- Deliver complete structured report in `subagent_6_visual_curator/report.md` and `handoff.md`
-- Focus specifically on Visual Dynamics, B-roll Footage Curation, Visual Pacing, Sourcing & Technical Pipeline
+## Operational Standards (V6.0)
+1. **Thời lượng**: Tập lẻ >= 1.400 từ, toàn bộ series >= 4.500 từ.
+2. **Âm học Edge-TTS**: Tốc độ rate="+5%" đến "+10%", ngắt nghỉ sinh học.
+3. **BGM**: -22dB ducking, không át giọng đọc.
+4. **B-roll**: ASMR làm bánh / thủ công / mưa rơi lofi 1080x1920.
+5. **Nội dung**: 100% Zero Chính Trị, Show Don't Tell, Chekhov's Gun vật chứng.
 
-## Current Parent
-- Conversation ID: 8d020f67-ebca-4169-bf79-d09f28b5c1dd
-- Updated: 2026-10-17T00:38:00Z
-
-## Investigation State
-- **Explored paths**:
-  - `core/background_manager.py` (Pool management, slicing engine, FIFO rotation)
-  - `core/ffmpeg_utils.py` (Video rendering pipeline, subtitle burning, filter graph)
-  - `config/settings.py` (Aspect ratio 16:9, subtitle configs, duration)
-  - `data/background_video_pool.json` (State of footage pool)
-  - `data/tiktok_studio_metrics.json` (Audience: 80% female, 91.4% 18-34, 93% FYP, search for "audio làm đồ ăn")
-  - `scripts/download_traditional_craft_bg.py`
-  - `docs/SO_TAY_BIEN_KICH_TRIEU_VIEW_DOUYIN_ZHIHU.md`
-- **Key findings**:
-  - Current video renders in horizontal 16:9 leaving 62% dead black space on TikTok mobile vertical screens.
-  - Video uses a single 10-minute slice or loop with 0 scene transitions, causing sensory habituation and immediate thumb-swipe after 3-5 seconds.
-  - Formulated the 3-Pillar Footage Taxonomy (Artisanal Crafts, Satisfying ASMR Slicing/Culinary, Dynamic 4K Scenery with continuous motion vectors).
-  - Defined the 5-8 second Visual Pulse rule (~80-95 micro-cuts per 10-minute video).
-  - Architected the Douyin 3-tier Cinematic Split-Stack 9:16 layout (top badge, 16:9 crisp center, blurred Gaussian background, bottom subtitle safe zone).
-  - Designed the 5-layer copyright filter and FFmpeg Multi-Slice EDL & Ken Burns rendering pipeline.
-- **Unexplored areas**: None. Mission requirements fully accomplished.
-
-## Key Decisions Made
-- Completed master report in `subagent_6_visual_curator/report.md`.
-- Completed 5-component handoff in `subagent_6_visual_curator/handoff.md`.
-
-## Artifact Index
-- `c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_6_visual_curator\DISPATCH.md` — Dispatch record
-- `c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_6_visual_curator\BRIEFING.md` — Persistent working memory
-- `c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_6_visual_curator\progress.md` — Liveness heartbeat
-- `c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_6_visual_curator\report.md` — Complete master report
-- `c:\Users\duydo\OneDrive\Tài liệu\idk\.agents\teamwork\subagent_6_visual_curator\handoff.md` — 5-component handoff report
+## Related Documents
+- `docs/TIKTOK_VN_AUDIO_VIRAL_STUDY_100_CASES.md`
+- `docs/AGENT_TEAM_OPTIMIZATION_V6.md`
+- `GEMINI.md`

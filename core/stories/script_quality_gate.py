@@ -1031,7 +1031,17 @@ def validate_story_series(series_data: Dict[str, Any]) -> Dict[str, Any]:
 
         all_warnings.extend(distinct_warnings)
 
-    series_data["quality_audit_passed"] = True
+    # Cổng kiểm duyệt thời lượng chuẩn 30 phút điện ảnh (Zero 49s Tolerance)
+    total_series_words = sum(len((p.get("full_text") or p.get("text") or "").split()) for p in validated_parts)
+    min_part_words = min((len((p.get("full_text") or p.get("text") or "").split()) for p in validated_parts), default=0)
+
+    if total_series_words < 2700 or min_part_words < 700:
+        duration_err = f"LỖI THỜI LƯỢNG NGHIÊM TRỌNG (ZERO 49S TOLERANCE): Series chỉ có {total_series_words} từ (tập ngắn nhất {min_part_words} từ). Tiêu chuẩn bắt buộc là >= 2.700 từ (khuyến nghị >= 4.500 từ, ~25-35 phút audio). Cấm xuất bản kịch bản tóm tắt!"
+        all_warnings.append(duration_err)
+        series_data["quality_audit_passed"] = False
+        logger.error(f"  [ScriptQualityGate] {duration_err}")
+    else:
+        series_data["quality_audit_passed"] = True
 
     series_data["distinctiveness_passed"] = distinct_passed
 
