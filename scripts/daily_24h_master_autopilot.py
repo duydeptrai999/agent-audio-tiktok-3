@@ -179,7 +179,7 @@ def produce_single_series(series_data: Dict[str, Any], status: Dict[str, Any], d
     for part in series_data["parts"]:
         p_num = part["part_number"]
         badge = part["badge_label"]
-        part_audio = AUDIO_DIR / f"{prefix}_part{p_num}_15x.mp3"
+        part_audio = AUDIO_DIR / f"{prefix}_part{p_num}_cinema.mp3"
         part_video = OUTPUT_DIR / f"{prefix}_part{p_num}_final.mp4"
         part_thumb = THUMB_DIR / f"{prefix}_part{p_num}_thumb.jpg"
 
@@ -190,7 +190,7 @@ def produce_single_series(series_data: Dict[str, Any], status: Dict[str, Any], d
                 text=part["text"],
                 voice=voice,
                 output_path=part_audio,
-                target_speed=1.50
+                target_speed=1.08
             ))
 
         if part_video.exists() and part_video.stat().st_size > 500000:
@@ -344,7 +344,7 @@ def run_one_day_cycle(target_date: str = ""):
 
             vid_file = OUTPUT_DIR / f"{prefix}_part{p_idx}_final.mp4"
             part_thumb_file = THUMB_DIR / f"{prefix}_part{p_idx}_thumb.jpg"
-            part_audio_file = AUDIO_DIR / f"{prefix}_part{p_idx}_15x.mp3"
+            part_audio_file = AUDIO_DIR / f"{prefix}_part{p_idx}_cinema.mp3"
 
             if not vid_file.exists() or vid_file.stat().st_size < 500000:
                 print(f"⚠️ Chưa có video hoặc file lỗi: {vid_file.name}. Dựng lại ngay...")

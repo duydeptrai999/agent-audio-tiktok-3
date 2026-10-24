@@ -50,8 +50,8 @@ STATUS_DIR = ROOT_DIR / "data"
 class VideoAuditEngine:
     """Bộ máy Thẩm Định Video & Âm Thanh Toàn Diện Trước Khi Đăng."""
 
-    MIN_VIDEO_SIZE_BYTES = 3 * 1024 * 1024    # Tối thiểu 3 MB
-    MIN_DURATION_SECONDS = 30.0               # Tối thiểu 30s (đáp ứng chuẩn short-form & audio drama)
+    MIN_VIDEO_SIZE_BYTES = 10 * 1024 * 1024   # Tối thiểu 10 MB (chuẩn video dài 1080p)
+    MIN_DURATION_SECONDS = 300.0              # Tối thiểu 300s (5 phút/tập, chuẩn 8-12 phút điện ảnh)
     MIN_MAX_VOLUME_DB = -25.0                 # max_volume phải lớn hơn -25dB (chống tắt tiếng)
     MIN_MEAN_VOLUME_DB = -50.0                # mean_volume phải lớn hơn -50dB
     TITLE_SIMILARITY_THRESHOLD = 0.55         # Tỷ lệ tương đồng tựa đề tối đa cho phép
