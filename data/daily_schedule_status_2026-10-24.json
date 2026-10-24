@@ -1,8 +1,8 @@
 {
   "_meta": {
     "date": "2026-10-24",
-    "last_published_timestamp": 1792800735.3335056,
-    "last_published_time_str": "2026-10-24 07:12:15",
+    "last_published_timestamp": 1792804848.7487233,
+    "last_published_time_str": "2026-10-24 08:20:48",
     "last_series_completed_timestamp": 1792800735.3399389
   },
   "20261024_slot_01_sadieu": {
@@ -16,7 +16,7 @@
   "20261024_slot_02_thanhxuan": {
     "slot_index": 2,
     "title": "Tấm Gỗ Tiêu Âm Phong Cầm Bị Đục Lỗ Ngầm: Mũi Dò Tần Số Sóng Âm Vạch Trần Kẻ Phá Hoại Đêm Diễn",
-    "part1": false,
+    "part1": true,
     "part2": false,
     "part3": false,
     "produced": true
