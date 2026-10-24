@@ -185,7 +185,7 @@
 
 10. **Giao thức Bắt Buộc Đọc Kinh Nghiệm Trước Khi Sản Xuất (Mandatory Pre-flight Experience Gate)**:
 
-    - **BẮT BUỘC 100%**: Trước khi Agent hoặc bất kỳ script/module nào viết kịch bản hay sản xuất audio mới, PHẢI đọc qua `GEMINI.md`, `docs/DAI_KINH_NGHIEM_100_BO_TRUYEN_NGAN_TRUNG_QUOC.md`, `docs/50_CYCLES_SCRIPT_EVOLUTION_MASTERCLASS.md`, `docs/50_CYCLES_AGENT_SCRIPT_AUDIT_REPORT.md`, và tra cứu Cơ sở dữ liệu Tri thức `core/knowledge_base.py`.
+    - **BẮT BUỘC 100%**: Trước khi Agent hoặc bất kỳ script/module nào viết kịch bản hay sản xuất audio mới, PHẢI đọc qua `GEMINI.md`, `docs/DAI_KINH_NGHIEM_100_AUDIO_TIKTOK_TRIEU_VIEW.md`, `docs/DAI_KINH_NGHIEM_100_BO_TRUYEN_NGAN_TRUNG_QUOC.md`, `docs/50_CYCLES_SCRIPT_EVOLUTION_MASTERCLASS.md`, `docs/50_CYCLES_AGENT_SCRIPT_AUDIT_REPORT.md`, và tra cứu Cơ sở dữ liệu Tri thức `core/knowledge_base.py`.
 
     - Bất kỳ kịch bản nào vi phạm đều bị `script_quality_gate.py` tự động từ chối xuất bản và ép viết lại cho tới khi đạt điểm 10/10.
 

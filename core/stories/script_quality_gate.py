@@ -55,6 +55,7 @@ if not (ROOT_DIR / "GEMINI.md").exists():
 RULES_FILE = ROOT_DIR / "GEMINI.md"
 
 EXPERIENCE_100_FILE = ROOT_DIR / "docs" / "DAI_KINH_NGHIEM_100_BO_TRUYEN_NGAN_TRUNG_QUOC.md"
+EXPERIENCE_100_TIKTOK_FILE = ROOT_DIR / "docs" / "DAI_KINH_NGHIEM_100_AUDIO_TIKTOK_TRIEU_VIEW.md"
 
 EXPERIENCE_30_FILE = ROOT_DIR / "docs" / "30_CYCLES_SCRIPT_EVOLUTION_MASTERCLASS.md"
 
@@ -301,7 +302,7 @@ def load_master_codex_rules() -> Dict[str, str]:
 
         print("[ScriptQualityGate] BAT BUOC DOC KINH NGHIEM TRUOC KHI BIEN KICH / LAM AUDIO:")
 
-        print("   Nap thanh cong: GEMINI.md + docs/DAI_KINH_NGHIEM_100_BO_TRUYEN_NGAN_TRUNG_QUOC.md + docs/50_CYCLES_SCRIPT_EVOLUTION_MASTERCLASS.md (Master Codex 5.0)")
+        print("   Nap thanh cong: GEMINI.md + docs/DAI_KINH_NGHIEM_100_AUDIO_TIKTOK_TRIEU_VIEW.md (Master Codex 6.0)")
 
         print("   10 Nguyen Tac Vang: Vat Chat Huu Hinh, Hook 3s Doi Thuc, Zero-Biography, Phan Dien Dang Cap,")
 
