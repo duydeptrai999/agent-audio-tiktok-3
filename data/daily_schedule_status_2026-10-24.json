@@ -1,17 +1,17 @@
 {
   "_meta": {
     "date": "2026-10-24",
-    "last_published_timestamp": 0.0,
-    "last_published_time_str": "",
-    "last_series_completed_timestamp": 0.0
+    "last_published_timestamp": 1792800735.3335056,
+    "last_published_time_str": "2026-10-24 07:12:15",
+    "last_series_completed_timestamp": 1792800735.3399389
   },
   "20261024_slot_01_sadieu": {
     "slot_index": 1,
     "title": "Chiếc Lồng Mèo Bọc Chì Nặng Bất Thường: Bác Sĩ Thú Y Bắt Bài Kẻ Buôn Lậu Đội Lốt Cứu Trợ",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   },
   "20261024_slot_02_thanhxuan": {
     "slot_index": 2,
@@ -19,7 +19,7 @@
     "part1": false,
     "part2": false,
     "part3": false,
-    "produced": false
+    "produced": true
   },
   "20261024_slot_03_cungdau": {
     "slot_index": 3,

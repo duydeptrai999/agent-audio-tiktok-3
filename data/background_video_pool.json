@@ -1,14 +1,14 @@
 {
   "active_video": {
-    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
-    "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+    "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
     "url": "",
-    "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
-    "total_duration": 3604.9,
-    "current_offset": 1458.6100000000001,
+    "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+    "total_duration": 3909.57,
+    "current_offset": 106.11,
     "audios_used": 1,
     "max_audios": 2,
-    "registered_at": "2026-10-23 20:57:04"
+    "registered_at": "2026-10-24 00:53:12"
   },
   "used_history": [
     {
@@ -609,7 +609,18 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-23 17:39:54"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 1550.4,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-23 20:57:04"
     }
   ],
-  "rotation_count": 50
+  "rotation_count": 51
 }

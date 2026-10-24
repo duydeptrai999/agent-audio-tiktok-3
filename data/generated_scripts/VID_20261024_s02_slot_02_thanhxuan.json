@@ -1,144 +1,149 @@
 {
-  "slot_index": 1,
-  "key": "20261024_slot_01_sadieu",
-  "prefix": "VID_20261024_s01_slot_01_sadieu",
-  "title": "Chiếc Lồng Mèo Bọc Chì Nặng Bất Thường: Bác Sĩ Thú Y Bắt Bài Kẻ Buôn Lậu Đội Lốt Cứu Trợ",
-  "genre": "SA_DIEU",
+  "slot_index": 2,
+  "key": "20261024_slot_02_thanhxuan",
+  "prefix": "VID_20261024_s02_slot_02_thanhxuan",
+  "title": "Tấm Gỗ Tiêu Âm Phong Cầm Bị Đục Lỗ Ngầm: Mũi Dò Tần Số Sóng Âm Vạch Trần Kẻ Phá Hoại Đêm Diễn",
+  "genre": "THANH_XUAN",
   "voice": "vi-VN-HoaiMyNeural",
   "bgm_genre": "ROMANCE",
-  "start_time_str": "06:30",
-  "hour": 6,
-  "minute": 30,
-  "genre_tag": "#sađiêuhàihước #audiotruyen #podcast #fyp",
+  "start_time_str": "08:20",
+  "hour": 8,
+  "minute": 20,
+  "genre_tag": "#thanhxuânvườntrường #audiotruyen #podcast #fyp",
   "hooks": [
-    "Tập 1: Chiếc Lồng Mèo Bọc Chì Nặng Bất Thường: Bác Sĩ Thú Y Bắt Bài Kẻ Buôn Lậu Đội Lốt Cứu Trợ. Theo bạn nhân vật chính nên lựa chọn phương án nào? Hãy bình luận 1 hoặc 2 nhé!",
+    "Tập 1: Tấm Gỗ Tiêu Âm Phong Cầm Bị Đục Lỗ Ngầm: Mũi Dò Tần Số Sóng Âm Vạch Trần Kẻ Phá Hoại Đêm Diễn. Theo bạn nhân vật chính nên lựa chọn phương án nào? Hãy bình luận 1 hoặc 2 nhé!",
     "Tập 2: Nút thắt nghẹt thở! Liệu sự thật có như bạn suy đoán không? Để lại dự đoán bên dưới nhé!",
     "Tập 3 (Đại Kết Cục): Màn lật kèo chấn động! Bạn thấy cái kết này đã đủ công bằng và thỏa đáng chưa?"
   ],
   "magnets": [
-    "👉 Đón xem tiếp tập 2 trên kênh lúc 06:30 nhé!",
+    "👉 Đón xem tiếp tập 2 trên kênh lúc 08:20 nhé!",
     "👉 Đón xem tập 3 - Đại kết cục bùng nổ sẽ được đăng tải sớm nhất trên kênh!",
     "👉 Hãy bấm Follow kênh để không bỏ lỡ những bộ audio kịch tính tiếp theo nhé!"
   ],
   "parts": [
     {
       "part_number": 1,
-      "badge_label": "TẬP 1",
-      "text": "Màn hình máy chụp X-quang vừa quét qua chiếc lồng mèo cứu hộ năm trăm nghìn đồng, khung xương chú mèo hiện rõ kèm một khối hình trụ kim loại đặc quánh bọc chì chôn sâu dưới lớp đệm bông nỉ.\n\nPhòng khám thú y của tôi lúc mười một giờ đêm vắng lặng như tờ. Người mang chú mèo tới là một nam thanh niên ăn mặc sành điệu tên Bạch Hạo, tự xưng là trưởng nhóm cứu trợ động vật hoang dã. Hắn liên tục nhìn đồng hồ, hối thúc tôi khám nhanh để hắn kịp chuyến bay quốc tế lúc một giờ sáng.\n\n'Ký giấy kiểm dịch nhanh hộ tôi! Chú mèo này cần đi nước ngoài gấp!', hắn gõ ngón tay lên bàn inox. Tôi nhẹ nhàng vuốt ve chú mèo mướp nhỏ đang nằm ngoan ngoãn. Chân của chú mèo hoàn toàn lành lặn, nhịp tim bình thường, không hề có dấu hiệu thương tật.\n\nNhưng chiếc lồng xách tay bằng nhựa màu hồng lại nặng tới sáu ký, nặng gấp ba lần một chiếc lồng thông thường. Mùi hóa chất tẩy rửa nồng nặc bốc ra từ các khe thoáng khí của lớp đệm bông nỉ.\n\nTôi đeo găng tay y tế, với lấy chiếc kéo phẫu thuật titan đặt trên khay khử trùng. Bạch Hạo bỗng biến sắc, bước nhanh tới chắn trước bàn chụp X-quang:\n'Bác sĩ làm cái gì đấy? Khám cho mèo chứ rạch lồng của tôi làm gì?'. Tôi mỉm cười điềm tĩnh:\n'Tôi kiểm tra dị vật dưới đệm lót để đảm bảo an toàn.'.",
+      "badge_label": "PHẦN 1",
+      "text": "'Cậu dám mang máy đo âm học quét sàn sân khấu sao?' - Nhạc trưởng Lâm Hạo giấu vội chiếc máy phát hạ âm mini vào túi áo vest trước giờ biểu diễn mở màn.\n\nHội trường nhà hát giao hưởng ba nghìn chỗ ngồi đang dần kín khán giả quốc tế. Nghệ sĩ cello Uyển My ngồi ở cánh gà, hai tay run rẩy, lồng ngực đập dồn dập vì tức ngực khó thở.\n\nTôi cầm máy phân tích phổ âm thanh FFT, rọi đầu dò vào vách gỗ sồi tiêu âm phía sau đàn phong cầm:\n'Thưa nhạc trưởng. Tần số mười tám héc này không phải do dàn nhạc tạo ra!'.\n\nLâm Hạo biến sắc, bước tới chắn ngang ống kính máy đo phổ âm:\n'Đừng có vẽ chuyện kiếm cớ. Uyển My không biểu diễn được thì để học trò của tôi thế chỗ!'.\n\nTôi bấm nút phát loa kiểm âm định hướng, âm thanh cộng hưởng rung giật khiến mặt sàn gỗ rền vang:\n'Hạ âm mười tám héc làm giãn nhịp tim nghệ sĩ. Anh gài bẫy hạ bệ My để chiếm vị trí độc tấu sao?'.",
       "caption": "",
-      "full_text": "Màn hình máy chụp X-quang vừa quét qua chiếc lồng mèo cứu hộ năm trăm nghìn đồng, khung xương chú mèo hiện rõ kèm một khối hình trụ kim loại đặc quánh bọc chì chôn sâu dưới lớp đệm bông nỉ.\n\nPhòng khám thú y của tôi lúc mười một giờ đêm vắng lặng như tờ. Người mang chú mèo tới là một nam thanh niên ăn mặc sành điệu tên Bạch Hạo, tự xưng là trưởng nhóm cứu trợ động vật hoang dã. Hắn liên tục nhìn đồng hồ, hối thúc tôi khám nhanh để hắn kịp chuyến bay quốc tế lúc một giờ sáng.\n\n'Ký giấy kiểm dịch nhanh hộ tôi! Chú mèo này cần đi nước ngoài gấp!', hắn gõ ngón tay lên bàn inox. Tôi nhẹ nhàng vuốt ve chú mèo mướp nhỏ đang nằm ngoan ngoãn. Chân của chú mèo hoàn toàn lành lặn, nhịp tim bình thường, không hề có dấu hiệu thương tật.\n\nNhưng chiếc lồng xách tay bằng nhựa màu hồng lại nặng tới sáu ký, nặng gấp ba lần một chiếc lồng thông thường. Mùi hóa chất tẩy rửa nồng nặc bốc ra từ các khe thoáng khí của lớp đệm bông nỉ.\n\nTôi đeo găng tay y tế, với lấy chiếc kéo phẫu thuật titan đặt trên khay khử trùng. Bạch Hạo bỗng biến sắc, bước nhanh tới chắn trước bàn chụp X-quang:\n'Bác sĩ làm cái gì đấy? Khám cho mèo chứ rạch lồng của tôi làm gì?'. Tôi mỉm cười điềm tĩnh:\n'Tôi kiểm tra dị vật dưới đệm lót để đảm bảo an toàn.'.",
-      "body": "Màn hình máy chụp X-quang vừa quét qua chiếc lồng mèo cứu hộ năm trăm nghìn đồng, khung xương chú mèo hiện rõ kèm một khối hình trụ kim loại đặc quánh bọc chì chôn sâu dưới lớp đệm bông nỉ.\n\nPhòng khám thú y của tôi lúc mười một giờ đêm vắng lặng như tờ. Người mang chú mèo tới là một nam thanh niên ăn mặc sành điệu tên Bạch Hạo, tự xưng là trưởng nhóm cứu trợ động vật hoang dã. Hắn liên tục nhìn đồng hồ, hối thúc tôi khám nhanh để hắn kịp chuyến bay quốc tế lúc một giờ sáng.\n\n'Ký giấy kiểm dịch nhanh hộ tôi! Chú mèo này cần đi nước ngoài gấp!', hắn gõ ngón tay lên bàn inox. Tôi nhẹ nhàng vuốt ve chú mèo mướp nhỏ đang nằm ngoan ngoãn. Chân của chú mèo hoàn toàn lành lặn, nhịp tim bình thường, không hề có dấu hiệu thương tật.\n\nNhưng chiếc lồng xách tay bằng nhựa màu hồng lại nặng tới sáu ký, nặng gấp ba lần một chiếc lồng thông thường. Mùi hóa chất tẩy rửa nồng nặc bốc ra từ các khe thoáng khí của lớp đệm bông nỉ.\n\nTôi đeo găng tay y tế, với lấy chiếc kéo phẫu thuật titan đặt trên khay khử trùng. Bạch Hạo bỗng biến sắc, bước nhanh tới chắn trước bàn chụp X-quang:\n'Bác sĩ làm cái gì đấy? Khám cho mèo chứ rạch lồng của tôi làm gì?'. Tôi mỉm cười điềm tĩnh:\n'Tôi kiểm tra dị vật dưới đệm lót để đảm bảo an toàn.'."
+      "full_text": "'Cậu dám mang máy đo âm học quét sàn sân khấu sao?' - Nhạc trưởng Lâm Hạo giấu vội chiếc máy phát hạ âm mini vào túi áo vest trước giờ biểu diễn mở màn.\n\nHội trường nhà hát giao hưởng ba nghìn chỗ ngồi đang dần kín khán giả quốc tế. Nghệ sĩ cello Uyển My ngồi ở cánh gà, hai tay run rẩy, lồng ngực đập dồn dập vì tức ngực khó thở.\n\nTôi cầm máy phân tích phổ âm thanh FFT, rọi đầu dò vào vách gỗ sồi tiêu âm phía sau đàn phong cầm:\n'Thưa nhạc trưởng. Tần số mười tám héc này không phải do dàn nhạc tạo ra!'.\n\nLâm Hạo biến sắc, bước tới chắn ngang ống kính máy đo phổ âm:\n'Đừng có vẽ chuyện kiếm cớ. Uyển My không biểu diễn được thì để học trò của tôi thế chỗ!'.\n\nTôi bấm nút phát loa kiểm âm định hướng, âm thanh cộng hưởng rung giật khiến mặt sàn gỗ rền vang:\n'Hạ âm mười tám héc làm giãn nhịp tim nghệ sĩ. Anh gài bẫy hạ bệ My để chiếm vị trí độc tấu sao?'.",
+      "body": "'Cậu dám mang máy đo âm học quét sàn sân khấu sao?' - Nhạc trưởng Lâm Hạo giấu vội chiếc máy phát hạ âm mini vào túi áo vest trước giờ biểu diễn mở màn.\n\nHội trường nhà hát giao hưởng ba nghìn chỗ ngồi đang dần kín khán giả quốc tế. Nghệ sĩ cello Uyển My ngồi ở cánh gà, hai tay run rẩy, lồng ngực đập dồn dập vì tức ngực khó thở.\n\nTôi cầm máy phân tích phổ âm thanh FFT, rọi đầu dò vào vách gỗ sồi tiêu âm phía sau đàn phong cầm:\n'Thưa nhạc trưởng. Tần số mười tám héc này không phải do dàn nhạc tạo ra!'.\n\nLâm Hạo biến sắc, bước tới chắn ngang ống kính máy đo phổ âm:\n'Đừng có vẽ chuyện kiếm cớ. Uyển My không biểu diễn được thì để học trò của tôi thế chỗ!'.\n\nTôi bấm nút phát loa kiểm âm định hướng, âm thanh cộng hưởng rung giật khiến mặt sàn gỗ rền vang:\n'Hạ âm mười tám héc làm giãn nhịp tim nghệ sĩ. Anh gài bẫy hạ bệ My để chiếm vị trí độc tấu sao?'."
     },
     {
       "part_number": 2,
-      "badge_label": "TẬP 2",
-      "text": "Bạch Hạo giật phắt chiếc quai lồng mèo toan ôm bỏ chạy ra cửa kính. Cô phụ tá Mai Lan nhanh trí bấm nút khóa cửa cuốn tự động của phòng khám: Rầm!\n\nCánh cửa cuốn kim loại hạ sập xuống, chặn đứng đường tẩu thoát của gã thanh niên bảnh bao. Hắn quay ngoắt lại, móc từ túi áo khoác ra một cọc tiền năm mươi triệu ném xuống bàn inox:\n'Bác sĩ cầm lấy chỗ này và ký giấy kiểm dịch ngay! Đừng tự chuốc họa vào thân!'.\n\n'Năm mươi triệu cho một tờ giấy kiểm dịch chú mèo con sao? Giá hời quá nhỉ!', tôi cười nhạt. Mũi kéo titan trên tay tôi rạch một đường dứt khoát vào lớp vải nỉ lót đáy lồng. Dưới lớp mút xốp là một tấm chì cán mỏng bọc kín ba túi nilon chứa bột trắng kết tinh dạng tinh thể lấp lánh. Đây là thủ đoạn buôn lậu chất cấm tinh vi đội lốt hoạt động cứu trợ thú cưng xuyên biên giới.\n\nBạch Hạo hoảng hốt lao tới toan giật lại tang vật. Tôi cầm chiếc kẹp giữ thú y bằng thép dài một mét, gạt chuẩn xác vào cẳng chân khiến hắn ngã dúi dụi xuống sàn gạch. Chú mèo mướp nhảy tót lên nóc tủ thuốc, cất tiếng kêu meo meo giòn giã.\n\nTôi nhấc điện thoại bàn của phòng khám bấm số đường dây nóng chống buôn lậu:\n'Phòng khám thú y An Sinh phát hiện ba! Ký chất cấm ngụy trang đáy lồng thú cưng!'.",
+      "badge_label": "PHẦN 2",
+      "text": "Lâm Hạo toan giật lấy thiết bị đo âm thanh trên tay tôi nhưng trượt chân ngã vào hàng ghế gỗ. Tôi dùng tua-vít chuyên dụng cạy tấm ốp gỗ tiêu âm số chín trên sân khấu vòm.\n\nMột thiết bị phát sóng hạ âm cỡ ngón tay dán keo silicon lộ ra trước sự chứng kiến của ban giám đốc. Uyển My hít sâu một hơi thở nhẹ nhõm, nhịp tim dần đập ổn định trở lại:\n'Thầy Hạo.Em đã kính trọng thầy suốt mười năm qua! Tại sao thầy lại dùng thủ đoạn bẩn thỉu này?'.\n\nLâm Hạo lúng túng biện minh trong hoảng loạn:\n'Tôi. Tôi chỉ muốn thử thách tâm lý nghệ sĩ solist thôi mà!'.\n\nTôi bật màn hình điện thoại kết nối trực tiếp với máy chủ âm thanh trung tâm:\n'Địa chỉ Bluetooth của máy phát hạ âm này vừa khớp với điện thoại của anh!'.",
       "caption": "",
-      "full_text": "Bạch Hạo giật phắt chiếc quai lồng mèo toan ôm bỏ chạy ra cửa kính. Cô phụ tá Mai Lan nhanh trí bấm nút khóa cửa cuốn tự động của phòng khám: Rầm!\n\nCánh cửa cuốn kim loại hạ sập xuống, chặn đứng đường tẩu thoát của gã thanh niên bảnh bao. Hắn quay ngoắt lại, móc từ túi áo khoác ra một cọc tiền năm mươi triệu ném xuống bàn inox:\n'Bác sĩ cầm lấy chỗ này và ký giấy kiểm dịch ngay! Đừng tự chuốc họa vào thân!'.\n\n'Năm mươi triệu cho một tờ giấy kiểm dịch chú mèo con sao? Giá hời quá nhỉ!', tôi cười nhạt. Mũi kéo titan trên tay tôi rạch một đường dứt khoát vào lớp vải nỉ lót đáy lồng. Dưới lớp mút xốp là một tấm chì cán mỏng bọc kín ba túi nilon chứa bột trắng kết tinh dạng tinh thể lấp lánh. Đây là thủ đoạn buôn lậu chất cấm tinh vi đội lốt hoạt động cứu trợ thú cưng xuyên biên giới.\n\nBạch Hạo hoảng hốt lao tới toan giật lại tang vật. Tôi cầm chiếc kẹp giữ thú y bằng thép dài một mét, gạt chuẩn xác vào cẳng chân khiến hắn ngã dúi dụi xuống sàn gạch. Chú mèo mướp nhảy tót lên nóc tủ thuốc, cất tiếng kêu meo meo giòn giã.\n\nTôi nhấc điện thoại bàn của phòng khám bấm số đường dây nóng chống buôn lậu:\n'Phòng khám thú y An Sinh phát hiện ba! Ký chất cấm ngụy trang đáy lồng thú cưng!'.",
-      "body": "Bạch Hạo giật phắt chiếc quai lồng mèo toan ôm bỏ chạy ra cửa kính. Cô phụ tá Mai Lan nhanh trí bấm nút khóa cửa cuốn tự động của phòng khám: Rầm!\n\nCánh cửa cuốn kim loại hạ sập xuống, chặn đứng đường tẩu thoát của gã thanh niên bảnh bao. Hắn quay ngoắt lại, móc từ túi áo khoác ra một cọc tiền năm mươi triệu ném xuống bàn inox:\n'Bác sĩ cầm lấy chỗ này và ký giấy kiểm dịch ngay! Đừng tự chuốc họa vào thân!'.\n\n'Năm mươi triệu cho một tờ giấy kiểm dịch chú mèo con sao? Giá hời quá nhỉ!', tôi cười nhạt. Mũi kéo titan trên tay tôi rạch một đường dứt khoát vào lớp vải nỉ lót đáy lồng. Dưới lớp mút xốp là một tấm chì cán mỏng bọc kín ba túi nilon chứa bột trắng kết tinh dạng tinh thể lấp lánh. Đây là thủ đoạn buôn lậu chất cấm tinh vi đội lốt hoạt động cứu trợ thú cưng xuyên biên giới.\n\nBạch Hạo hoảng hốt lao tới toan giật lại tang vật. Tôi cầm chiếc kẹp giữ thú y bằng thép dài một mét, gạt chuẩn xác vào cẳng chân khiến hắn ngã dúi dụi xuống sàn gạch. Chú mèo mướp nhảy tót lên nóc tủ thuốc, cất tiếng kêu meo meo giòn giã.\n\nTôi nhấc điện thoại bàn của phòng khám bấm số đường dây nóng chống buôn lậu:\n'Phòng khám thú y An Sinh phát hiện ba! Ký chất cấm ngụy trang đáy lồng thú cưng!'."
+      "full_text": "Lâm Hạo toan giật lấy thiết bị đo âm thanh trên tay tôi nhưng trượt chân ngã vào hàng ghế gỗ. Tôi dùng tua-vít chuyên dụng cạy tấm ốp gỗ tiêu âm số chín trên sân khấu vòm.\n\nMột thiết bị phát sóng hạ âm cỡ ngón tay dán keo silicon lộ ra trước sự chứng kiến của ban giám đốc. Uyển My hít sâu một hơi thở nhẹ nhõm, nhịp tim dần đập ổn định trở lại:\n'Thầy Hạo.Em đã kính trọng thầy suốt mười năm qua! Tại sao thầy lại dùng thủ đoạn bẩn thỉu này?'.\n\nLâm Hạo lúng túng biện minh trong hoảng loạn:\n'Tôi. Tôi chỉ muốn thử thách tâm lý nghệ sĩ solist thôi mà!'.\n\nTôi bật màn hình điện thoại kết nối trực tiếp với máy chủ âm thanh trung tâm:\n'Địa chỉ Bluetooth của máy phát hạ âm này vừa khớp với điện thoại của anh!'.",
+      "body": "Lâm Hạo toan giật lấy thiết bị đo âm thanh trên tay tôi nhưng trượt chân ngã vào hàng ghế gỗ. Tôi dùng tua-vít chuyên dụng cạy tấm ốp gỗ tiêu âm số chín trên sân khấu vòm.\n\nMột thiết bị phát sóng hạ âm cỡ ngón tay dán keo silicon lộ ra trước sự chứng kiến của ban giám đốc. Uyển My hít sâu một hơi thở nhẹ nhõm, nhịp tim dần đập ổn định trở lại:\n'Thầy Hạo.Em đã kính trọng thầy suốt mười năm qua! Tại sao thầy lại dùng thủ đoạn bẩn thỉu này?'.\n\nLâm Hạo lúng túng biện minh trong hoảng loạn:\n'Tôi. Tôi chỉ muốn thử thách tâm lý nghệ sĩ solist thôi mà!'.\n\nTôi bật màn hình điện thoại kết nối trực tiếp với máy chủ âm thanh trung tâm:\n'Địa chỉ Bluetooth của máy phát hạ âm này vừa khớp với điện thoại của anh!'."
     },
     {
       "part_number": 3,
-      "badge_label": "TẬP 3 - KẾT",
-      "text": "Lực lượng chức năng có mặt tại phòng khám sau bảy phút.\n\nBạch Hạo bị tra tay vào còng số tám. Toàn bộ gói bột trắng và chiếc lồng mèo bọc chì bị niêm phong. Chiếc điện thoại của đối tượng chứa toàn bộ tin nhắn liên lạc với đường dây buôn lậu quốc tế. Chúng chuyên lợi dụng mác cứu trợ thú cưng để qua mắt kiểm tra an ninh sân bay.\n\nChú mèo mướp nhỏ được lưu lại phòng khám chăm sóc chu đáo. Mai Lan bế chú mèo trên tay mỉm cười:\n'May quá anh Trọng ơi! Bé mèo được an toàn rồi!'. Tôi xoa đầu chú mèo nhỏ:\n'Đúng vậy. Kẻ xấu đã phải trả giá rồi.'.\n\nTôi gắn chiếc vòng cổ nhỏ xinh khắc tên May Mắn vào cổ chú mèo. Chú mèo tung tăng đùa nghịch cuộn len dưới nắng sớm ấm áp. Lòng nhân ái chân chính sẽ luôn đẩy lùi mọi hành vi đen tối.",
+      "badge_label": "PHẦN 3",
+      "text": "Hội đồng nghệ thuật quốc tế quyết định đình chỉ vĩnh viễn tư cách chỉ huy của Lâm Hạo ngay trước buổi diễn. Tấm ốp tiêu âm được hiệu chỉnh lại góc phản xạ âm học chuẩn xác nhất.\n\nUyển My bước lên bục sân khấu dưới ánh đèn spotlight lung linh, tiếng đàn cello vang lên thánh thót xao xuyến triệu con tim. Khán phòng ba nghìn khán giả đứng dậy vỗ tay vang dội suốt năm phút chào đón màn trình diễn đỉnh cao.\n\nTôi đứng ở phòng điều khiển âm học trung tâm, mỉm cười nhìn người bạn đồng hành tỏa sáng kiêu hãnh:\n'Âm thanh chân chính xuất phát từ trái tim. Thủ đoạn đen tối không bao giờ dập tắt được nghệ thuật!'.\n\nTiếng đàn dương cầm hòa quyện trong không gian tuyệt mỹ, đánh dấu cột mốc huy hoàng của nhà hát opera.",
       "caption": "",
-      "full_text": "Lực lượng chức năng có mặt tại phòng khám sau bảy phút.\n\nBạch Hạo bị tra tay vào còng số tám. Toàn bộ gói bột trắng và chiếc lồng mèo bọc chì bị niêm phong. Chiếc điện thoại của đối tượng chứa toàn bộ tin nhắn liên lạc với đường dây buôn lậu quốc tế. Chúng chuyên lợi dụng mác cứu trợ thú cưng để qua mắt kiểm tra an ninh sân bay.\n\nChú mèo mướp nhỏ được lưu lại phòng khám chăm sóc chu đáo. Mai Lan bế chú mèo trên tay mỉm cười:\n'May quá anh Trọng ơi! Bé mèo được an toàn rồi!'. Tôi xoa đầu chú mèo nhỏ:\n'Đúng vậy. Kẻ xấu đã phải trả giá rồi.'.\n\nTôi gắn chiếc vòng cổ nhỏ xinh khắc tên May Mắn vào cổ chú mèo. Chú mèo tung tăng đùa nghịch cuộn len dưới nắng sớm ấm áp. Lòng nhân ái chân chính sẽ luôn đẩy lùi mọi hành vi đen tối.",
-      "body": "Lực lượng chức năng có mặt tại phòng khám sau bảy phút.\n\nBạch Hạo bị tra tay vào còng số tám. Toàn bộ gói bột trắng và chiếc lồng mèo bọc chì bị niêm phong. Chiếc điện thoại của đối tượng chứa toàn bộ tin nhắn liên lạc với đường dây buôn lậu quốc tế. Chúng chuyên lợi dụng mác cứu trợ thú cưng để qua mắt kiểm tra an ninh sân bay.\n\nChú mèo mướp nhỏ được lưu lại phòng khám chăm sóc chu đáo. Mai Lan bế chú mèo trên tay mỉm cười:\n'May quá anh Trọng ơi! Bé mèo được an toàn rồi!'. Tôi xoa đầu chú mèo nhỏ:\n'Đúng vậy. Kẻ xấu đã phải trả giá rồi.'.\n\nTôi gắn chiếc vòng cổ nhỏ xinh khắc tên May Mắn vào cổ chú mèo. Chú mèo tung tăng đùa nghịch cuộn len dưới nắng sớm ấm áp. Lòng nhân ái chân chính sẽ luôn đẩy lùi mọi hành vi đen tối."
+      "full_text": "Hội đồng nghệ thuật quốc tế quyết định đình chỉ vĩnh viễn tư cách chỉ huy của Lâm Hạo ngay trước buổi diễn. Tấm ốp tiêu âm được hiệu chỉnh lại góc phản xạ âm học chuẩn xác nhất.\n\nUyển My bước lên bục sân khấu dưới ánh đèn spotlight lung linh, tiếng đàn cello vang lên thánh thót xao xuyến triệu con tim. Khán phòng ba nghìn khán giả đứng dậy vỗ tay vang dội suốt năm phút chào đón màn trình diễn đỉnh cao.\n\nTôi đứng ở phòng điều khiển âm học trung tâm, mỉm cười nhìn người bạn đồng hành tỏa sáng kiêu hãnh:\n'Âm thanh chân chính xuất phát từ trái tim. Thủ đoạn đen tối không bao giờ dập tắt được nghệ thuật!'.\n\nTiếng đàn dương cầm hòa quyện trong không gian tuyệt mỹ, đánh dấu cột mốc huy hoàng của nhà hát opera.",
+      "body": "Hội đồng nghệ thuật quốc tế quyết định đình chỉ vĩnh viễn tư cách chỉ huy của Lâm Hạo ngay trước buổi diễn. Tấm ốp tiêu âm được hiệu chỉnh lại góc phản xạ âm học chuẩn xác nhất.\n\nUyển My bước lên bục sân khấu dưới ánh đèn spotlight lung linh, tiếng đàn cello vang lên thánh thót xao xuyến triệu con tim. Khán phòng ba nghìn khán giả đứng dậy vỗ tay vang dội suốt năm phút chào đón màn trình diễn đỉnh cao.\n\nTôi đứng ở phòng điều khiển âm học trung tâm, mỉm cười nhìn người bạn đồng hành tỏa sáng kiêu hãnh:\n'Âm thanh chân chính xuất phát từ trái tim. Thủ đoạn đen tối không bao giờ dập tắt được nghệ thuật!'.\n\nTiếng đàn dương cầm hòa quyện trong không gian tuyệt mỹ, đánh dấu cột mốc huy hoàng của nhà hát opera."
     }
   ],
-  "consultation_token": "TOKEN_KB_20261024_005032_f1767372",
+  "consultation_token": "TOKEN_KB_20261024_005033_71399d9a",
   "knowledge_brief": {
     "status": "CONSULTED_SUCCESS",
     "total_knowledge_pool": 103,
     "target_genres": [
-      "SA_DIEU"
+      "HAO_MON",
+      "ME_CHONG",
+      "NGUOC_TAM",
+      "CUU_ROI"
     ],
     "relevant_cases": [
       {
-        "id": "066",
-        "title": "《Tiếng Lòng Của Đại Ca Mèo Quýt》(橘猫老大的心声)",
-        "title_vi": "Tiếng Lòng Của Đại Ca Mèo Quýt",
-        "title_cn": "橘猫老大的心声",
-        "author": "Tri Hồ - Zhihu (Chữa lành hài hước / Động vật thị giác)",
-        "genre": "Hiện đại đô thị / Động vật chuyển sinh / Trùm mafia làm mèo / Hài hước ấm áp",
-        "premise": "Một ông trùm xã hội đen khét tiếng sau khi bị tai nạn xe hơi đã chuyển sinh thành một chú mèo quýt béo ú 8kg được một cô gái làm nghề vẽ tranh minh họa nghèo nhận nuôi. Ông trùm mèo ngày ngày nằm ườn phơi bụng nhưng trong đầu luôn vạch ra các kế hoạch thanh trừng địa bàn, chỉ huy đàn chuột trong khu phố đi giao hàng, bảo kê cô chủ khỏi những kẻ đòi nợ và huấn luyện đàn chó hoang thành đội ngũ vệ sĩ chuyên nghiệp.",
-        "character_setup": " * Đại Ca Quýt (Mèo 8kg): Thân hình tròn quay như quả bóng nhưng ánh mắt sắc lẹm của bạo chúa giang hồ, coi hạt thức ăn cho mèo là 'chiến lợi phẩm'. Mỏ neo: Vết sẹo hình chữ X trên tai trái và chiếc vòng cổ chuông vàng.\n * Cô chủ nhỏ (An Kỳ): Họa sĩ nghèo, ngây thơ, luôn nghĩ mèo của mình 'ngoan ngoãn hiền lành nhất quả đất'.\n * Đàn chuột & Chó hoang: Thuộc hạ trung thành nghe lệnh điều động thông qua tiếng meo meo đặc biệt.",
+        "id": "050",
+        "title": "《Bí Mật Tân Nương Của Trùm Bất Động Sản》(地产巨鳄的秘密新娘)",
+        "title_vi": "Bí Mật Tân Nương Của Trùm Bất Động Sản",
+        "title_cn": "地产巨鳄的秘密新娘",
+        "author": "Tri Hồ - Zhihu (Hào môn trinh thám)",
+        "genre": "Hiện đại đô thị / Mật thất hào môn / Trùm bất động sản / Giải mã cơ quan",
+        "premise": "Nữ kiến trúc sư Lâm Hi kết hôn với trùm bất động sản khét tiếng Tống Hàn Đình và được đưa về sống trong một tòa dinh thự kiểu Gothic biệt lập có 100 căn phòng. Điều khoản duy nhất anh ta đặt ra: Không bao giờ được mở cánh cửa sắt có khắc hình rắn ngậm đuôi ở cuối hành lang tầng 3. Khi Lâm Hi dùng chuyên môn kiến trúc dựng lại bản đồ 3D của tòa nhà, cô phát hiện ra một không gian ngầm khổng lồ không hề có trên bản vẽ xây dựng.",
+        "character_setup": " * Lâm Hi: Kiến trúc sư tài ba, am hiểu kết cấu chịu lực và các cơ quan mật thất cổ điển, không tin vào ma quỷ. Mỏ neo: Máy đo khoảng cách laser kỹ thuật số và chiếc thước cuộn kim loại.\n * Tống Hàn Đình: Lạnh lùng, bí ẩn, mang vết sẹo bỏng lớn trên lưng, luôn kiểm tra camera tòa nhà mỗi đêm. Mỏ neo: Chùm chìa khóa cơ học bằng đồng đúc.\n * Người quản gia già: Câm điếc, ánh mắt luôn nhìn lên trần nhà như thể cảnh báo một mối nguy hiểm vô hình.",
         "tangible_props": [
-          "Vết sẹo hình chữ X trên tai trái và chiếc vòng cổ chuông vàng."
+          "Máy đo khoảng cách laser kỹ thuật số và chiếc thước cuộn kim loại.",
+          "Chùm chìa khóa cơ học bằng đồng đúc."
         ],
-        "three_acts_pacing": "Hồi 1: Hồi 1 (Thích nghi với thân xác bốn chân): Từ một ông trùm quen chỉ tay năm ngón phải học cách ăn hạt khô và dùng khay cát vệ sinh, nhưng giữ vững nguyên tắc giang hồ.\nHồi 2: Hồi 2 (Thiết lập trật tự khu phố): Đánh bại con mèo hoang đầu gấu khu chợ cá, ký 'hiệp ước hòa bình' với đàn chó becgie, dùng đàn chim bồ câu theo dõi đối thủ.\nHồi 3: Hồi 3 (Bảo vệ gia đình nhỏ): Giúp công an phá đường dây buôn lậu ma túy của kẻ thù cũ năm xưa bằng cách dẫn đường cho chó nghiệp vụ; cô chủ được thưởng 500 triệu và đổi sang căn hộ cao cấp cho mèo ở.",
+        "three_acts_pacing": "Hồi 1: Hồi 1 (Mê cung 100 căn phòng): Những âm thanh gõ búa kỳ lạ từ trần nhà và sự chênh lệch diện tích giữa bên trong và bên ngoài tòa nhà.\nHồi 2: Hồi 2 (Giải mã cấu trúc không gian): Lâm Hi phát hiện căn phòng cấm tầng 3 là lối thông xuống một phòng mổ vô trùng ngầm dưới lòng đất.\nHồi 3: Hồi 3 (Phá vỡ bí mật): Đột nhập phòng mổ ngầm, đối diện với Tống Hàn Đình: Bên trong không có xác chết nào, mà là một trung tâm bảo tồn di sản kiến trúc cổ đang bị tập đoàn gia đình hắn tìm cách phá hủy để phân lô bán nền.",
         "act_structure": {
-          "act_1": "Hồi 1 (Thích nghi với thân xác bốn chân): Từ một ông trùm quen chỉ tay năm ngón phải học cách ăn hạt khô và dùng khay cát vệ sinh, nhưng giữ vững nguyên tắc giang hồ.",
-          "act_2": "Hồi 2 (Thiết lập trật tự khu phố): Đánh bại con mèo hoang đầu gấu khu chợ cá, ký 'hiệp ước hòa bình' với đàn chó becgie, dùng đàn chim bồ câu theo dõi đối thủ.",
-          "act_3": "Hồi 3 (Bảo vệ gia đình nhỏ): Giúp công an phá đường dây buôn lậu ma túy của kẻ thù cũ năm xưa bằng cách dẫn đường cho chó nghiệp vụ; cô chủ được thưởng 500 triệu và đổi sang căn hộ cao cấp cho mèo ở."
+          "act_1": "Hồi 1 (Mê cung 100 căn phòng): Những âm thanh gõ búa kỳ lạ từ trần nhà và sự chênh lệch diện tích giữa bên trong và bên ngoài tòa nhà.",
+          "act_2": "Hồi 2 (Giải mã cấu trúc không gian): Lâm Hi phát hiện căn phòng cấm tầng 3 là lối thông xuống một phòng mổ vô trùng ngầm dưới lòng đất.",
+          "act_3": "Hồi 3 (Phá vỡ bí mật): Đột nhập phòng mổ ngầm, đối diện với Tống Hàn Đình: Bên trong không có xác chết nào, mà là một trung tâm bảo tồn di sản kiến trúc cổ đang bị tập đoàn gia đình hắn tìm cách phá hủy để phân lô bán nền."
         },
-        "sample_hook_3s": "Tên chủ nợ xông vào nhà định giật máy tính của cô chủ, tôi vung chiếc chân mèo mập mạp tát 'bốp' một phát làm gãy răng cửa hắn, trong lòng gầm thét: 'Thằng ranh con, dám động vào người hầu xúc cát của ông à?'.",
-        "sample_hook_5s": "Tên chủ nợ xông vào nhà định giật máy tính của cô chủ, tôi vung chiếc chân mèo mập mạp tát 'bốp' một phát làm gãy răng cửa hắn, trong lòng gầm thét: 'Thằng ranh con, dám động vào người hầu xúc cát của ông à?'.",
-        "plot_twist_essence": "Điểm bẻ lái cốt lõi: Thân xác con người của ông trùm trong bệnh viện thực chất vẫn đang sống thực vật; sau khi hoàn thành việc bảo vệ cô gái (người từng cứu anh năm xưa), linh hồn anh quay trở lại thân xác con người và tìm đến cưới cô chủ nhỏ.",
+        "sample_hook_3s": "Tia laser từ máy đo khoảng cách vừa chiếu vào vách tường phòng ngủ, màn hình bỗng hiện thông số âm: Bức tường phía sau đầu giường tôi thực chất là một cánh cửa thép hai lớp dày mười phân có thể mở từ bên ngoài.",
+        "sample_hook_5s": "Tia laser từ máy đo khoảng cách vừa chiếu vào vách tường phòng ngủ, màn hình bỗng hiện thông số âm: Bức tường phía sau đầu giường tôi thực chất là một cánh cửa thép hai lớp dày mười phân có thể mở từ bên ngoài.",
+        "plot_twist_essence": "Điểm bẻ lái cốt lõi: Tống Hàn Đình không phải kẻ độc ác giam cầm cô; anh cưới cô vì cô là hậu duệ của kiến trúc sư trưởng xây dựng tòa nhà này năm xưa, người duy nhất có thể giải mã cơ quan tự hủy để cứu lấy hàng nghìn cổ vật quý giá.",
         "shuangdian_formula": "",
-        "key_takeaways": " - Góc nhìn động vật nhân hóa (Animal POV): Sự tương phản giữa suy nghĩ dữ dằn của trùm giang hồ và hành động 'meo meo cọ chân' dễ thương tạo sức hút vô cùng lớn.\n - Chữa lành và ấm áp: Đem lại cảm giác được bảo bọc, chở che bởi chính những sinh vật nhỏ bé quanh mình.\n - Mẹo chuyển thể Audio TikTok: Tiếng mèo kêu 'Meooo' ngọt ngào đan xen với tiếng lồng tiếng giọng nam trầm gằn giọng của đại ca giang hồ.",
+        "key_takeaways": " - Ứng dụng kiến trúc học vào trinh thám: Biến kết cấu không gian, dầm chịu lực, đường thông gió thành manh mối giải đố tạo sự mới lạ độc đáo.\n - Không khí Gothic hiện đại (Modern Gothic Suspense): Lâu đài cổ kính, bí mật gia tộc, cánh cửa cấm kỵ tạo sức hút bí ẩn không thể cưỡng lại.\n - Mẹo chuyển thể Audio TikTok: Tiếng bước chân chậm rãi trên sàn gỗ cọt kẹt, tiếng kim loại cọ sát khi cánh cửa bí mật từ từ mở ra.",
         "raw_takeaways": [
-          "Góc nhìn động vật nhân hóa (Animal POV): Sự tương phản giữa suy nghĩ dữ dằn của trùm giang hồ và hành động 'meo meo cọ chân' dễ thương tạo sức hút vô cùng lớn.",
-          "Chữa lành và ấm áp: Đem lại cảm giác được bảo bọc, chở che bởi chính những sinh vật nhỏ bé quanh mình.",
-          "Mẹo chuyển thể Audio TikTok: Tiếng mèo kêu 'Meooo' ngọt ngào đan xen với tiếng lồng tiếng giọng nam trầm gằn giọng của đại ca giang hồ."
+          "Ứng dụng kiến trúc học vào trinh thám: Biến kết cấu không gian, dầm chịu lực, đường thông gió thành manh mối giải đố tạo sự mới lạ độc đáo.",
+          "Không khí Gothic hiện đại (Modern Gothic Suspense): Lâu đài cổ kính, bí mật gia tộc, cánh cửa cấm kỵ tạo sức hút bí ẩn không thể cưỡng lại.",
+          "Mẹo chuyển thể Audio TikTok: Tiếng bước chân chậm rãi trên sàn gỗ cọt kẹt, tiếng kim loại cọ sát khi cánh cửa bí mật từ từ mở ra."
         ]
       },
       {
-        "id": "063",
-        "title": "《Từ Phố Đình Đại Bại Bắt Đầu Cứu Thục Hán? Giả Sử Lý Thế Dân Hồn Xuyên Lưu Thiền》(从街亭大败开始拯救蜀汉？假如李世民魂穿刘禅)",
-        "title_vi": "Từ Phố Đình Đại Bại Bắt Đầu Cứu Thục Hán? Giả Sử Lý Thế Dân Hồn Xuyên Lưu Thiền",
-        "title_cn": "从街亭大败开始拯救蜀汉？假如李世民魂穿刘禅",
-        "author": "Tri Hồ Lịch Sử Não Động - Zhihu (Đoạt giải Sáng tạo lịch sử xuất sắc)",
-        "genre": "Lịch sử não động / Hồn xuyên sảng văn / Đế vương tranh bá / Đấu trí quân sự",
-        "premise": "Đường Thái Tông Lý Thế Dân – vị hoàng đế bách chiến bách thắng của Đại Đường bất ngờ trọng sinh vào thân xác của Hậu chủ Lưu Thiền (A Đẩu) đúng vào thời điểm Gia Cát Lượng vừa bại trận tại Nhai Đình, quân Thục chuẩn bị rút lui trong tuyệt vọng. Thay vì đóng vai kẻ bất tài vô dụng 'uống rượu xem múa', Lý Thế Dân đích thân khoác chiến bào, cầm trường thương, dẫn năm nghìn kỵ binh tinh nhuệ tập kích đường vận lương của Tư Mã Ý, mở ra đại nghiệp bắc phạt chấn động Tam Quốc.",
-        "character_setup": " * Lý Thế Dân (Trong lốt Lưu Thiền): Khí phách thiên cổ nhất đế, tài dùng kỵ binh vô địch, coi việc thống nhất thiên hạ là trò chơi chiến thuật sở trường. Mỏ neo: Cây trường thương Mã Đao và tấm bản đồ tác chiến Trung Nguyên.\n * Gia Cát Lượng (Thừa tướng): Cả đời lao tâm khổ tứ, lần đầu tiên được chứng kiến 'Chủ thượng' chỉ đạo quân sự xuất thần đến mức bật khóc vì hạnh phúc.\n * Tư Mã Ý: Đối thủ truyền kiếp của Thục Hán, kinh hoàng khi thấy A Đẩu bỗng nhiên biến thành chiến thần bất khả chiến bại.",
+        "id": "034",
+        "title": "《Chồng Yêu Con Gái Người Giúp Việc, Ta Thành Toàn》(丈夫爱上保姆女儿)",
+        "title_vi": "Chồng Yêu Con Gái Người Giúp Việc, Ta Thành Toàn",
+        "title_cn": "丈夫爱上保姆女儿",
+        "author": "Tri Hồ - Zhihu (Ngược tra sảng văn)",
+        "genre": "Hiện đại đô thị / Hôn nhân tan vỡ / Vả mặt bạch liên hoa / Thu hồi tài sản",
+        "premise": "Chồng của Lâm Hân mê mẩn con gái người giúp việc vì cô ta 'ngây thơ, mộc mạc và không sặc mùi tiền bạc như cô'. Anh ta lén lút tặng nhẫn kim cương, xe sang và đưa cô ta vào công ty của gia đình Lâm Hân làm trợ lý. Lâm Hân không hề đánh ghen; cô lặng lẽ thu thập toàn bộ chứng cứ tham ô, sang tên lại các tài sản mang họ Lâm, rồi hào phóng tổ chức một đám cưới lộng lẫy tác hợp cho đôi tình nhân cùng khoản nợ 50 tỷ kèm theo.",
+        "character_setup": " * Lâm Hân: Đại tiểu thư gia tộc kinh doanh thực phẩm, phong thái quý phái, ra đòn chính xác như bác sĩ phẫu thuật. Mỏ neo: Tệp tài liệu kiểm toán dán nhãn tuyệt mật.\n * Gã chồng vong ân: Xuất thân nghèo khó được nhà vợ nâng đỡ nhưng luôn tự ái hão huyền, căm ghét mùi tiền của giới thượng lưu.\n * Con gái người giúp việc: Giả vờ thanh cao 'em chỉ yêu tâm hồn của anh', nhưng tay luôn lăm lăm đòi túi xách hàng hiệu.",
         "tangible_props": [
-          "Cây trường thương Mã Đao và tấm bản đồ tác chiến Trung Nguyên."
+          "Tệp tài liệu kiểm toán dán nhãn tuyệt mật."
         ],
-        "three_acts_pacing": "Hồi 1: Hồi 1 (Đế vương thức tỉnh): Sắp xếp lại kỷ luật quân đội Thục Hán theo chiến thuật kỵ binh Thiết Kỵ Đại Đường, đích thân chỉ huy phá vòng vây Nhai Đình.\nHồi 2: Hồi 2 (Bắc phạt thần tốc): Vận dụng chiến thuật 'Đánh rắn dập đầu', Lý Thế Dân tập kích bất ngờ lấy trọn Lũng Hữu, đánh tan hai mươi vạn quân Tào Ngụy trong trận giao tranh kinh điển.\nHồi 3: Hồi 3 (Đại thống nhất Tam Quốc): Tiến quân vào Lạc Dương, khôi phục giang sơn nhà Hán; Gia Cát Lượng được an nhàn dưỡng già, nhìn A Đẩu bước lên ngai vàng thống nhất thiên hạ.",
+        "three_acts_pacing": "Hồi 1: Hồi 1 (Màn kịch thanh cao): Đôi tình nhân vụng trộm sau lưng, dùng tiền của nữ chính để thể hiện tình yêu lãng mạn nơi công sở.\nHồi 2: Hồi 2 (Thành toàn hào phóng): Nữ chính chủ động ký đơn ly hôn, để lại cho gã chồng chức Tổng giám đốc của công ty con đang gánh khoản nợ trái phiếu 50 tỷ chuẩn bị đáo hạn.\nHồi 3: Hồi 3 (Đại sụp đổ): Ngày cưới của đôi tình nhân, tòa án ập vào niêm phong toàn bộ xe cộ, nhà cửa; cô gái 'thanh khiết' lập tức ôm số tiền cọc còn lại bỏ trốn, để mặc gã đàn ông nhảy cầu vì vỡ nợ.",
         "act_structure": {
-          "act_1": "Hồi 1 (Đế vương thức tỉnh): Sắp xếp lại kỷ luật quân đội Thục Hán theo chiến thuật kỵ binh Thiết Kỵ Đại Đường, đích thân chỉ huy phá vòng vây Nhai Đình.",
-          "act_2": "Hồi 2 (Bắc phạt thần tốc): Vận dụng chiến thuật 'Đánh rắn dập đầu', Lý Thế Dân tập kích bất ngờ lấy trọn Lũng Hữu, đánh tan hai mươi vạn quân Tào Ngụy trong trận giao tranh kinh điển.",
-          "act_3": "Hồi 3 (Đại thống nhất Tam Quốc): Tiến quân vào Lạc Dương, khôi phục giang sơn nhà Hán; Gia Cát Lượng được an nhàn dưỡng già, nhìn A Đẩu bước lên ngai vàng thống nhất thiên hạ."
+          "act_1": "Hồi 1 (Màn kịch thanh cao): Đôi tình nhân vụng trộm sau lưng, dùng tiền của nữ chính để thể hiện tình yêu lãng mạn nơi công sở.",
+          "act_2": "Hồi 2 (Thành toàn hào phóng): Nữ chính chủ động ký đơn ly hôn, để lại cho gã chồng chức Tổng giám đốc của công ty con đang gánh khoản nợ trái phiếu 50 tỷ chuẩn bị đáo hạn.",
+          "act_3": "Hồi 3 (Đại sụp đổ): Ngày cưới của đôi tình nhân, tòa án ập vào niêm phong toàn bộ xe cộ, nhà cửa; cô gái 'thanh khiết' lập tức ôm số tiền cọc còn lại bỏ trốn, để mặc gã đàn ông nhảy cầu vì vỡ nợ."
         },
-        "sample_hook_3s": "Gia Cát Lượng vừa dâng biểu xin tự giáng chức vì mất Nhai Đình, Lưu Thiền bỗng rút thanh bảo kiếm chém đứt góc bàn long sàng: 'Thừa tướng lui ra nghỉ ngơi, trận này... để trẫm tự mình dẫn kỵ binh đi bẻ gãy cổ Tư Mã Ý!'.",
-        "sample_hook_5s": "Gia Cát Lượng vừa dâng biểu xin tự giáng chức vì mất Nhai Đình, Lưu Thiền bỗng rút thanh bảo kiếm chém đứt góc bàn long sàng: 'Thừa tướng lui ra nghỉ ngơi, trận này... để trẫm tự mình dẫn kỵ binh đi bẻ gãy cổ Tư Mã Ý!'.",
-        "plot_twist_essence": "Điểm bẻ lái cốt lõi: Tư Mã Ý sau khi bị bắt làm tù binh nhìn vào mắt Lưu Thiền đã run rẩy nhận ra: Khí chất đế vương này tuyệt đối không phải của huyết thống Lưu Bị, mà là của một vị Chân Long Thiên Tử vượt thời gian đến nghiền nát thời đại này.",
+        "sample_hook_3s": "Chồng tôi đẩy đĩa bánh rán của con gái người giúp việc sang trước mặt tôi: 'Lâm Hân, cô ấy tuy nghèo nhưng tâm hồn thanh khiết, không thực dụng như cô!'. Tôi cười khẩy: 'Thanh khiết mà quẹt thẻ của tôi ba trăm triệu mua túi xách à?'.",
+        "sample_hook_5s": "Chồng tôi đẩy đĩa bánh rán của con gái người giúp việc sang trước mặt tôi: 'Lâm Hân, cô ấy tuy nghèo nhưng tâm hồn thanh khiết, không thực dụng như cô!'. Tôi cười khẩy: 'Thanh khiết mà quẹt thẻ của tôi ba trăm triệu mua túi xách à?'.",
+        "plot_twist_essence": "Điểm bẻ lái cốt lõi: Con gái người giúp việc từ đầu đã cấu kết với đối thủ cạnh tranh của công ty; cô ta tiếp cận gã chồng chỉ để đánh cắp công thức sản xuất độc quyền, nhưng công thức cô ta lấy được là bản thử nghiệm gây ngộ độc do Lâm Hân cố ý gài lại.",
         "shuangdian_formula": "",
-        "key_takeaways": " - Sức hút của Lịch sử Não Động (Historical 'What-If' Brain-hole): Hoán đổi nhân vật lịch sử tầm cỡ tạo ra khoái cảm sảng văn ở cấp độ vĩ mô.\n - Giải tỏa nỗi ức chế ngàn năm của độc giả: Hình ảnh Gia Cát Lượng khóc ròng vì Thục Hán có minh quân bách chiến là điểm chạm cảm xúc cực kỳ thiêng liêng.\n - Mẹo chuyển thể Audio TikTok: Tiếng trống trận rền vang, tiếng ngựa hí dồn dập, giọng đọc nam trung hào sảng đầy khí phách đế vương.",
+        "key_takeaways": " - Công thức 'Thành toàn cho kẻ phản bội' (Let Them Have Each Other): Đòn trả thù tàn nhẫn nhất là tước bỏ tiền bạc và ép hai kẻ phản bội phải sống chung với nhau trong cảnh nghèo đói cùng cực.\n - Bóc trần sự đạo đức giả: Tương phản giữa lời nói 'không cần tiền' và hành vi quẹt thẻ liên tục tạo sự thỏa mãn khi kẻ phản diện bị vạch trần.\n - Mẹo chuyển thể Audio TikTok: Tiếng quẹt thẻ POS báo lỗi 'Giao dịch bị từ chối do thẻ đã bị khóa', tiếng MC đám cưới ngơ ngác khi công an bước vào sảnh.",
         "raw_takeaways": [
-          "Sức hút của Lịch sử Não Động (Historical 'What-If' Brain-hole): Hoán đổi nhân vật lịch sử tầm cỡ tạo ra khoái cảm sảng văn ở cấp độ vĩ mô.",
-          "Giải tỏa nỗi ức chế ngàn năm của độc giả: Hình ảnh Gia Cát Lượng khóc ròng vì Thục Hán có minh quân bách chiến là điểm chạm cảm xúc cực kỳ thiêng liêng.",
-          "Mẹo chuyển thể Audio TikTok: Tiếng trống trận rền vang, tiếng ngựa hí dồn dập, giọng đọc nam trung hào sảng đầy khí phách đế vương."
+          "Công thức 'Thành toàn cho kẻ phản bội' (Let Them Have Each Other): Đòn trả thù tàn nhẫn nhất là tước bỏ tiền bạc và ép hai kẻ phản bội phải sống chung với nhau trong cảnh nghèo đói cùng cực.",
+          "Bóc trần sự đạo đức giả: Tương phản giữa lời nói 'không cần tiền' và hành vi quẹt thẻ liên tục tạo sự thỏa mãn khi kẻ phản diện bị vạch trần.",
+          "Mẹo chuyển thể Audio TikTok: Tiếng quẹt thẻ POS báo lỗi 'Giao dịch bị từ chối do thẻ đã bị khóa', tiếng MC đám cưới ngơ ngác khi công an bước vào sảnh."
         ]
       },
       {
-        "id": "027",
-        "title": "《Chân Tướng Tàn Bạo》(残酷真相)",
-        "title_vi": "Chân Tướng Tàn Bạo",
-        "title_cn": "残酷真相",
-        "author": "Huyền Thiên Huyễn (玄千幻) - Zhihu (Chuyên mục Phá án)",
-        "genre": "Hình sự trinh thám / Phòng kín cơ học / Mối thù 10 năm",
-        "premise": "Một vụ án mạng phòng kín 10 năm trước tại trường nội trú: Nữ sinh thủ khoa rơi từ tầng thượng xuống đất tử vong, cửa lên sân thượng bị khóa trái từ bên trong bằng ổ khóa duy nhất. Đội trưởng cảnh sát sắp nghỉ hưu lật lại hồ sơ khi nhận được một bức thư nặc danh chứa chìa khóa thứ hai và sơ đồ cơ học của sợi dây cước siêu mảnh.",
-        "character_setup": " * Lão Trần (Cảnh sát già): Mắc bệnh run tay, bị dằn vặt suốt 10 năm vì kết luận vội vàng là tự sát. Mỏ neo: Chiếc chìa khóa rỉ sét đánh số 404.\n * 3 người bạn cùng phòng năm xưa: Hiện đều là những người thành đạt (Luật sư, Bác sĩ, Doanh nhân), mang vỏ bọc hoàn hảo.\n * Người mẹ quét rác: Lao công câm trong trường suốt 10 năm qua.",
+        "id": "001",
+        "title": "《Cung Tường Liễu》(宫墙柳)",
+        "title_vi": "Cung Tường Liễu",
+        "title_cn": "宫墙柳",
+        "author": "Mộng Oa (梦娃) - Zhihu (知乎盐选 · 初代三绝)",
+        "genre": "Cổ đại / Đoản văn cung đình / Phản sáo lộ cung đấu / Tình tỷ muội / BE Day dứt",
+        "premise": "Nữ chính Giang Ánh Liễu 14 tuổi ngây thơ tiến cung, cứ ngỡ mình được hoàng đế cưng chiều nhất vì được gọi bằng nhũ danh 'Liễu Nhi'. Nhưng suốt mười mấy năm thanh xuân nơi cấm cung, nàng và các phi tần dần nhận ra họ chỉ là những mảnh ghép chắp vá cho Tiêu Thục phi – người con gái đã khuất mà đế vương cả đời không thể quên. Hậu cung không hề đấu đá tàn sát; những người phụ nữ nương tựa, sưởi ấm cho nhau giữa lồng son lạnh giá.",
+        "character_setup": " * Giang Ánh Liễu (Nữ chính): Nhập cung năm 14 tuổi, hoạt bát, ngây thơ, thích ăn bánh hoa quế; trải qua năm tháng trở nên thấu triệt, dịu dàng buông bỏ tình si. Mỏ neo: Dải lụa xanh biếc hái liễu.\n * Hoàng đế: Quân vương cô độc, si tình với người cũ đã khuất (Tiêu thị), biến cả hậu cung thành bảo tàng thế thân sống động. Mỏ neo: Chiếc ngọc bội khắc hoa mai cũ kỹ mòn vẹt.\n * Dàn phi tần (Hoàng hậu, Hiền phi, Đức phi): Không hề hãm hại nhau, cùng nhau thêu thùa, nấu lẩu, chăm sóc con cái; cùng chung nỗi bi kịch bị giam cầm thanh xuân.",
         "tangible_props": [
-          "Chiếc chìa khóa rỉ sét đánh số 404."
+          "Dải lụa xanh biếc hái liễu.",
+          "Chiếc ngọc bội khắc hoa mai cũ kỹ mòn vẹt."
         ],
-        "three_acts_pacing": "Hồi 1: Hồi 1 (Lật lại hồ sơ chết): Manh mối mới về sợi dây cước câu cá tìm thấy trong ống thoát nước sân thượng 10 năm trước được phân tích lại.\nHồi 2: Hồi 2 (Đấu trí bất đối xứng): Triệu tập 3 nhân chứng, dùng mâu thuẫn thời gian về tiếng chuông báo thức để bẻ gãy chứng cứ ngoại phạm liên hoàn.\nHồi 3: Hồi 3 (Tái hiện cơ quan phòng kín): Phá vỡ mánh khóe khóa cửa từ bên ngoài bằng trọng lực của chai nước đá tan chảy; hung thủ thực sự chính là kẻ được xem là bạn thân nhất của nạn nhân.",
+        "three_acts_pacing": "Hồi 1: Hồi 1 (Mộng đẹp hoa lệ): Ánh Liễu được ân sủng vô biên, được ban trâm ngọc, ngỡ rằng tấm chân tình đế vương thuộc về mình giữa những đêm hoa đăng lung linh.\nHồi 2: Hồi 2 (Vết nứt hiện thực): Phát hiện chữ 'Liễu' trong tên mình, ánh mắt của Hoàng hậu, nốt ruồi son của Hiền phi đều là bản sao của Tiêu Thục phi quá cố. Hậu cung nhận ra chân tướng nhưng không ghen ghét mà đùm bọc lấy nhau.\nHồi 3: Hồi 3 (Đại kết cục thấu triệt): Hoàng đế già nua băng hà nắm chặt tay Ánh Liễu thì thào gọi 'Liễu Nhi'. Nàng mỉm cười dịu dàng lau nước mắt cho ngài, thanh thản bước ra thềm điện nhìn bầu trời tự do mà thanh xuân đã mất.",
         "act_structure": {
-          "act_1": "Hồi 1 (Lật lại hồ sơ chết): Manh mối mới về sợi dây cước câu cá tìm thấy trong ống thoát nước sân thượng 10 năm trước được phân tích lại.",
-          "act_2": "Hồi 2 (Đấu trí bất đối xứng): Triệu tập 3 nhân chứng, dùng mâu thuẫn thời gian về tiếng chuông báo thức để bẻ gãy chứng cứ ngoại phạm liên hoàn.",
-          "act_3": "Hồi 3 (Tái hiện cơ quan phòng kín): Phá vỡ mánh khóe khóa cửa từ bên ngoài bằng trọng lực của chai nước đá tan chảy; hung thủ thực sự chính là kẻ được xem là bạn thân nhất của nạn nhân."
+          "act_1": "Hồi 1 (Mộng đẹp hoa lệ): Ánh Liễu được ân sủng vô biên, được ban trâm ngọc, ngỡ rằng tấm chân tình đế vương thuộc về mình giữa những đêm hoa đăng lung linh.",
+          "act_2": "Hồi 2 (Vết nứt hiện thực): Phát hiện chữ 'Liễu' trong tên mình, ánh mắt của Hoàng hậu, nốt ruồi son của Hiền phi đều là bản sao của Tiêu Thục phi quá cố. Hậu cung nhận ra chân tướng nhưng không ghen ghét mà đùm bọc lấy nhau.",
+          "act_3": "Hồi 3 (Đại kết cục thấu triệt): Hoàng đế già nua băng hà nắm chặt tay Ánh Liễu thì thào gọi 'Liễu Nhi'. Nàng mỉm cười dịu dàng lau nước mắt cho ngài, thanh thản bước ra thềm điện nhìn bầu trời tự do mà thanh xuân đã mất."
         },
-        "sample_hook_3s": "Mười năm trước, tôi đích thân ký vào biên bản kết luận cô bé tự sát trong phòng kín. Mười năm sau, bức thư gửi đến bàn làm việc của tôi chỉ vỏn vẹn một câu: 'Lão Trần, ông đã giúp chúng tôi giết cô ấy'.",
-        "sample_hook_5s": "Mười năm trước, tôi đích thân ký vào biên bản kết luận cô bé tự sát trong phòng kín. Mười năm sau, bức thư gửi đến bàn làm việc của tôi chỉ vỏn vẹn một câu: 'Lão Trần, ông đã giúp chúng tôi giết cô ấy'.",
-        "plot_twist_essence": "Điểm bẻ lái cốt lõi: Kẻ gửi bức thư không phải mẹ nạn nhân, mà chính là một trong ba thủ phạm do mắc bệnh ung thư giai đoạn cuối cắn rứt lương tâm muốn lôi hai đồng phạm còn lại cùng xuống mồ.",
+        "sample_hook_3s": "Năm mười bốn tuổi ta tiến cung, Hoàng thượng vuốt tóc ta gọi khẽ 'Liễu Nhi'. Mười lăm năm sau ta mới biết, ngài gọi cành liễu năm xưa ngài hái cùng người đã khuất, chứ chưa từng gọi ta.",
+        "sample_hook_5s": "Năm mười bốn tuổi ta tiến cung, Hoàng thượng vuốt tóc ta gọi khẽ 'Liễu Nhi'. Mười lăm năm sau ta mới biết, ngài gọi cành liễu năm xưa ngài hái cùng người đã khuất, chứ chưa từng gọi ta.",
+        "plot_twist_essence": "Điểm bẻ lái cốt lõi: Phá tan ảo tưởng cung đấu đẫm máu. Kẻ thù không phải là phi tần khác; bi kịch lớn nhất là sự 'dịu dàng tàn nhẫn' của đế vương – biến toàn bộ mỹ nhân hậu cung thành những bóng ma sống thế thân cho một nắm tro tàn.",
         "shuangdian_formula": "",
-        "key_takeaways": " - Cơ chế phòng kín cơ học thuần túy: Không dùng yếu tố siêu nhiên, giải thích bằng vật lý và lực căng cơ học tạo sự thỏa mãn trí tuệ cho người nghe.\n - Sức nặng của thời gian: Sự dằn vặt của người điều tra qua một thập kỷ tạo chiều sâu cảm xúc nhân văn.\n - Mẹo chuyển thể Audio TikTok: Tiếng cọt kẹt của cánh cửa sắt rỉ sét mở ra, tiếng thở dài nặng nề của viên cảnh sát già.",
+        "key_takeaways": " - Tinh hoa kịch bản: Khai thác nỗi đau từ sự dịu dàng tàn nhẫn (Gentle Cruelty). Nước mắt rơi không vì oán hận mà vì sự bất lực xót xa trước thanh xuân bị chôn vùi.\n - Xây dựng nhân vật: Khắc họa tình bạn nữ giới (Female Solidarity) giữa chốn thâm cung đối lập hoàn toàn với ngai vàng lạnh lẽo, tạo hiệu ứng cảm xúc sâu thẳm.\n - Mẹo chuyển thể Audio TikTok: Giọng đọc ngôi thứ nhất điềm tĩnh, u buồn. Nhịp chậm ở các đoạn hồi ức, ngắt câu sau 12 từ để âm vang tiếng thở dài.",
         "raw_takeaways": [
-          "Cơ chế phòng kín cơ học thuần túy: Không dùng yếu tố siêu nhiên, giải thích bằng vật lý và lực căng cơ học tạo sự thỏa mãn trí tuệ cho người nghe.",
-          "Sức nặng của thời gian: Sự dằn vặt của người điều tra qua một thập kỷ tạo chiều sâu cảm xúc nhân văn.",
-          "Mẹo chuyển thể Audio TikTok: Tiếng cọt kẹt của cánh cửa sắt rỉ sét mở ra, tiếng thở dài nặng nề của viên cảnh sát già."
+          "Tinh hoa kịch bản: Khai thác nỗi đau từ sự dịu dàng tàn nhẫn (Gentle Cruelty). Nước mắt rơi không vì oán hận mà vì sự bất lực xót xa trước thanh xuân bị chôn vùi.",
+          "Xây dựng nhân vật: Khắc họa tình bạn nữ giới (Female Solidarity) giữa chốn thâm cung đối lập hoàn toàn với ngai vàng lạnh lẽo, tạo hiệu ứng cảm xúc sâu thẳm.",
+          "Mẹo chuyển thể Audio TikTok: Giọng đọc ngôi thứ nhất điềm tĩnh, u buồn. Nhịp chậm ở các đoạn hồi ức, ngắt câu sau 12 từ để âm vang tiếng thở dài."
         ]
       }
     ],
@@ -205,65 +210,65 @@
       }
     ],
     "recommended_hook_template": {
-      "archetype_id": 3,
-      "name": "Nghịch lý tương phản trào phúng & Tiếng lòng (Satirical Subtext Hook)",
-      "type": "Nghịch lý tương phản trào phúng & Tiếng lòng",
-      "sensory_anchor": "Ngòi bút nạm kim cương cách chữ ký một milimét, cà vạt màu cánh sen chấm bi, tiếng lòng bóc phốt sắc lẹm",
-      "desc": "Phá tan sự trang nghiêm của giới thượng lưu bằng sự thật trần trụi, hài hước và bóc mẽ âm mưu ngầm.",
-      "example": "'Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng dội thẳng vào màng nhĩ anh: Dừng bút lại đồ ngốc!'",
-      "strategy_a_flash": "Ngòi bút năm trăm tỷ vừa chạm mặt giấy, tiếng lòng của tôi đã lanh lảnh dội vào tai sếp: 'Ký đi đồ ngốc, ký xong là nhảy lầu tập thể!'.",
-      "strategy_b_detailed": "Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng dội thẳng vào màng nhĩ anh: 'Dừng bút lại đồ ngốc! Bản hợp đồng này ký xuống là mất trắng năm trăm tỷ, chưa kể chiếc cà vạt hoa hòe màu cánh sen chấm bi của sếp nhìn y hệt con công đang xòe đuôi!'. Bàn tay đang cầm bút của vị tổng tài khựng lại giữa không trung.",
+      "archetype_id": 4,
+      "name": "Bạo lực lạnh & Cắt dòng tiền (Cold Violence Financial Hook)",
+      "type": "Bạo lực lạnh & Cắt dòng tiền",
+      "sensory_anchor": "Chiếc thìa mạ vàng chạm đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng, máy ghi âm mini",
+      "desc": "Mẹ chồng - nàng dâu hoặc gia đấu gia tộc: nụ cười điềm đạm ngụy trang âm mưu đoạt tài sản, đáp trả bằng bẫy sao kê.",
+      "example": "'Mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng vừa lộ ra dưới đáy bát yến sáu mươi triệu, ngón trỏ của tôi đã bấm nút phát loa ngoài chiếc điện thoại bàn.'",
+      "strategy_a_flash": "Mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng vừa lộ ra dưới đáy bát yến sáu mươi triệu, ngón trỏ của tôi đã bấm nút phát loa ngoài chiếc điện thoại bàn.",
+      "strategy_b_detailed": "Chiếc thìa mạ vàng vừa chạm vào đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng đã lộ ra trước mắt tôi. Bà Mai ngồi đối diện, chiếc vòng ngọc phỉ thúy trên cổ tay bà khẽ va vào thành bàn kính: Cạch! Tôi không cầm thìa. Tôi đẩy nhẹ chiếc máy ghi âm siêu nhỏ trong lòng bàn tay ra giữa bàn trà: 'Mẹ chu đáo quá. Nhưng mẹ có muốn nghe thử đoạn ghi âm mẹ chỉ đạo nhân viên bảo hiểm đổi người thụ hưởng hợp đồng hai trăm tỷ sang tên mẹ không?'.",
       "best_for": [
-        "SA_DIEU",
-        "HAI_HUOC",
-        "HAO_MON"
+        "ME_CHONG",
+        "GIA_DAU",
+        "NGUOC_TAM"
       ]
     },
     "recommended_hook_archetype": {
-      "archetype_id": 3,
-      "name": "Nghịch lý tương phản trào phúng & Tiếng lòng (Satirical Subtext Hook)",
-      "type": "Nghịch lý tương phản trào phúng & Tiếng lòng",
-      "sensory_anchor": "Ngòi bút nạm kim cương cách chữ ký một milimét, cà vạt màu cánh sen chấm bi, tiếng lòng bóc phốt sắc lẹm",
-      "desc": "Phá tan sự trang nghiêm của giới thượng lưu bằng sự thật trần trụi, hài hước và bóc mẽ âm mưu ngầm.",
-      "example": "'Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng dội thẳng vào màng nhĩ anh: Dừng bút lại đồ ngốc!'",
-      "strategy_a_flash": "Ngòi bút năm trăm tỷ vừa chạm mặt giấy, tiếng lòng của tôi đã lanh lảnh dội vào tai sếp: 'Ký đi đồ ngốc, ký xong là nhảy lầu tập thể!'.",
-      "strategy_b_detailed": "Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng dội thẳng vào màng nhĩ anh: 'Dừng bút lại đồ ngốc! Bản hợp đồng này ký xuống là mất trắng năm trăm tỷ, chưa kể chiếc cà vạt hoa hòe màu cánh sen chấm bi của sếp nhìn y hệt con công đang xòe đuôi!'. Bàn tay đang cầm bút của vị tổng tài khựng lại giữa không trung.",
+      "archetype_id": 4,
+      "name": "Bạo lực lạnh & Cắt dòng tiền (Cold Violence Financial Hook)",
+      "type": "Bạo lực lạnh & Cắt dòng tiền",
+      "sensory_anchor": "Chiếc thìa mạ vàng chạm đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng, máy ghi âm mini",
+      "desc": "Mẹ chồng - nàng dâu hoặc gia đấu gia tộc: nụ cười điềm đạm ngụy trang âm mưu đoạt tài sản, đáp trả bằng bẫy sao kê.",
+      "example": "'Mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng vừa lộ ra dưới đáy bát yến sáu mươi triệu, ngón trỏ của tôi đã bấm nút phát loa ngoài chiếc điện thoại bàn.'",
+      "strategy_a_flash": "Mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng vừa lộ ra dưới đáy bát yến sáu mươi triệu, ngón trỏ của tôi đã bấm nút phát loa ngoài chiếc điện thoại bàn.",
+      "strategy_b_detailed": "Chiếc thìa mạ vàng vừa chạm vào đáy bát yến sáu mươi triệu, mép giấy bảo hiểm nhân thọ người thụ hưởng tên mẹ chồng đã lộ ra trước mắt tôi. Bà Mai ngồi đối diện, chiếc vòng ngọc phỉ thúy trên cổ tay bà khẽ va vào thành bàn kính: Cạch! Tôi không cầm thìa. Tôi đẩy nhẹ chiếc máy ghi âm siêu nhỏ trong lòng bàn tay ra giữa bàn trà: 'Mẹ chu đáo quá. Nhưng mẹ có muốn nghe thử đoạn ghi âm mẹ chỉ đạo nhân viên bảo hiểm đổi người thụ hưởng hợp đồng hai trăm tỷ sang tên mẹ không?'.",
       "best_for": [
-        "SA_DIEU",
-        "HAI_HUOC",
-        "HAO_MON"
+        "ME_CHONG",
+        "GIA_DAU",
+        "NGUOC_TAM"
       ]
     },
     "recommended_character_universe": {
-      "universe_id": 8,
-      "name": "Khách Sạn Năm Sao & Ẩm Thực Michelin (Luxury Hospitality)",
-      "domain": "Đại tiệc ngoại giao, bếp trưởng quốc tế",
+      "universe_id": 2,
+      "name": "Vi Phẫu Thần Kinh & Cấp Cứu Y Khoa (Neuro-Surgical Unit)",
+      "domain": "Bệnh viện tuyến cuối, ghép tạng, tế bào gốc",
       "protagonist_names": [
-        "Giám đốc vận hành Đoàn Bảo Ngọc",
-        "Bếp trưởng Henry Vũ"
+        "Bác sĩ Lương Thế Vinh",
+        "Bác sĩ Nhã Uyên"
       ],
       "antagonist_names": [
-        "Chủ tịch tập đoàn ẩm thực Doãn Thế Hào",
-        "Thanh tra ẩm thực Pierre Đỗ"
+        "Viện phó Chu Bá Khiêm",
+        "Bác sĩ trưởng Doãn Hạo"
       ],
       "supporting_names": [
-        "Phụ bếp trung thành Tiểu Lâm",
-        "Nhà phê bình tự do Mai Phương"
+        "Điều dưỡng trưởng Mỹ Linh",
+        "Bệnh nhân lão tướng Phan"
       ],
-      "conflict_axis": "Cố tình pha chất gây sốc phản vệ vào món tráng miệng yến tiệc quốc tế",
+      "conflict_axis": "Đánh cắp bằng sáng chế mổ vi phẫu & Giả mạo chữ ký hồ sơ hiến tạng",
       "best_for": [
-        "HAO_MON",
-        "SA_DIEU",
-        "VA_MAT"
+        "HUYEN_NGHI",
+        "CUU_ROI",
+        "NGUOC_TAM"
       ]
     },
     "recommended_resolution": {
-      "resolution_id": 10,
-      "name": "Tự thú vì hiểu lầm tiếng lòng là thần dụ (Satirical Psychological Collapse)",
-      "mechanism": "Phản diện tưởng bí mật sát hại của mình đã bị thần linh soi xét qua tiếng lòng của nhân vật chính, tự khai ra toàn bộ đồng bọn trước hội trường.",
+      "resolution_id": 5,
+      "name": "Kích hoạt thư tín thác công chứng 15 năm trước (Time Capsule Will)",
+      "mechanism": "Bản di chúc gửi tại ngân hàng Thụy Sĩ có hiệu lực tự động khi phát sinh giao dịch bất thường, vô hiệu hóa toàn bộ quyền sở hữu giả mạo.",
       "best_for": [
-        "SA_DIEU",
-        "HAI_HUOC"
+        "NGUOC_TAM",
+        "CUU_ROI"
       ]
     },
     "diverse_hooks_catalog": [
@@ -819,12 +824,10 @@
       "sentence_length": "10-20 words per sentence",
       "punctuation_density": "High (commas, ellipses, dashes for breathing pauses)"
     },
-    "consultation_token": "TOKEN_KB_20261024_005032_f1767372",
-    "consulted_at": "2026-10-24T00:50:32.943464"
+    "consultation_token": "TOKEN_KB_20261024_005033_71399d9a",
+    "consulted_at": "2026-10-24T00:50:33.413876"
   },
   "quality_audit_passed": true,
   "distinctiveness_passed": true,
-  "quality_audit_warnings": [
-    "Đoạn 3 dài 84 từ (> 80 từ), khuyến nghị ngắt nhịp thở kịch tính."
-  ]
+  "quality_audit_warnings": []
 }
