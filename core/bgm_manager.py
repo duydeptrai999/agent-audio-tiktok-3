@@ -40,6 +40,15 @@ TIKTOK_TRACKS = {
     "nguoi_yeu_bo_lo": TIKTOK_BGM_DIR / "09 - Nguoi Yeu Bo Lo.mp3",
     "nham_mat_thay_mua_he": TIKTOK_BGM_DIR / "10 - Nham Mat Thay Mua He.mp3",
     "thieu_nien_hoa_hong": TIKTOK_BGM_DIR / "11 - Thieu Nien Hoa Hong.mp3",
+    "the_truth_that_you_leave": TIKTOK_BGM_DIR / "12 - The Truth That You Leave - Pianoboy.mp3",
+    "thanh_nam_hoa_da_no": TIKTOK_BGM_DIR / "13 - Thanh Nam Hoa Da No - Piano.mp3",
+    "snowfall": TIKTOK_BGM_DIR / "14 - Snowfall - Oneheart Ambient.mp3",
+    "cau_xem_troi_toi_roi": TIKTOK_BGM_DIR / "15 - Cau Xem Troi Toi Roi - Piano.mp3",
+    "thoi_khong_sai_lech": TIKTOK_BGM_DIR / "16 - Thoi Khong Sai Lech - Piano.mp3",
+    "secret": TIKTOK_BGM_DIR / "17 - Secret - Jay Chou Piano.mp3",
+    "kiss_the_rain": TIKTOK_BGM_DIR / "18 - Kiss The Rain - Yiruma.mp3",
+    "river_flows_in_you": TIKTOK_BGM_DIR / "19 - River Flows In You - Yiruma Lofi.mp3",
+    "always_with_me": TIKTOK_BGM_DIR / "20 - Always With Me - Spirited Away Piano.mp3",
 }
 
 # Danh sách bài nhạc trong kho Horror_BGM_Audio mới cập nhật
@@ -59,6 +68,10 @@ HORROR_TRACKS = {
 SAFE_BGM_PRESETS: Dict[str, List[Path]] = {
     # 1. Nhạc Cổ Phong / Douyin Instrumental / Da diết Á Đông
     "CHINESE_INSTRUMENTAL": [
+        TIKTOK_TRACKS["thanh_nam_hoa_da_no"],
+        TIKTOK_TRACKS["the_truth_that_you_leave"],
+        TIKTOK_TRACKS["cau_xem_troi_toi_roi"],
+        TIKTOK_TRACKS["thoi_khong_sai_lech"],
         TIKTOK_TRACKS["thu_qua_dong_sang"],
         TIKTOK_TRACKS["da_lau_khong_gap"],
         TIKTOK_TRACKS["bong_la_roi"],
@@ -67,6 +80,10 @@ SAFE_BGM_PRESETS: Dict[str, List[Path]] = {
     ],
     # 2. Gia Đấu Mẹ Chồng / Hào Môn Trà Xanh / Drama Kịch Tính
     "ME_CHONG": [
+        TIKTOK_TRACKS["kiss_the_rain"],
+        TIKTOK_TRACKS["the_truth_that_you_leave"],
+        TIKTOK_TRACKS["thanh_nam_hoa_da_no"],
+        TIKTOK_TRACKS["cau_xem_troi_toi_roi"],
         TIKTOK_TRACKS["cause_i_love_you"],
         TIKTOK_TRACKS["cry_for_me"],
         TIKTOK_TRACKS["nguoi_yeu_bo_lo"],
@@ -74,6 +91,8 @@ SAFE_BGM_PRESETS: Dict[str, List[Path]] = {
     ],
     # 3. Trọng Sinh Vả Mặt / Đấu Trí Cao Trào / Báo Thù
     "TRONG_SINH": [
+        TIKTOK_TRACKS["the_truth_that_you_leave"],
+        TIKTOK_TRACKS["thoi_khong_sai_lech"],
         TIKTOK_TRACKS["cause_i_love_you"],
         TIKTOK_TRACKS["fallin_flower"],
         TIKTOK_TRACKS["thieu_nien_hoa_hong"],
@@ -81,6 +100,10 @@ SAFE_BGM_PRESETS: Dict[str, List[Path]] = {
     ],
     # 4. Thanh Xuân Vườn Trường / Hào Môn Đô Thị / Lãng Mạn
     "ROMANCE": [
+        TIKTOK_TRACKS["secret"],
+        TIKTOK_TRACKS["the_truth_that_you_leave"],
+        TIKTOK_TRACKS["thanh_nam_hoa_da_no"],
+        TIKTOK_TRACKS["cau_xem_troi_toi_roi"],
         TIKTOK_TRACKS["senorita"],
         TIKTOK_TRACKS["fox_rain"],
         TIKTOK_TRACKS["da_lau_khong_gap"],
@@ -89,6 +112,10 @@ SAFE_BGM_PRESETS: Dict[str, List[Path]] = {
     ],
     # 5. Healing / Chữa Lành / ASMR
     "HEALING": [
+        TIKTOK_TRACKS["thanh_nam_hoa_da_no"],
+        TIKTOK_TRACKS["the_truth_that_you_leave"],
+        TIKTOK_TRACKS["cau_xem_troi_toi_roi"],
+        TIKTOK_TRACKS["snowfall"],
         TIKTOK_TRACKS["nham_mat_thay_mua_he"],
         TIKTOK_TRACKS["fox_rain"],
         TIKTOK_TRACKS["thu_qua_dong_sang"],
@@ -99,9 +126,12 @@ SAFE_BGM_PRESETS: Dict[str, List[Path]] = {
         TIKTOK_TRACKS["senorita"],
         TIKTOK_TRACKS["fallin_flower"],
         TIKTOK_TRACKS["thieu_nien_hoa_hong"],
+        TIKTOK_TRACKS["fox_rain"],
     ],
     # 7. Huyền Nghi / Trinh Thám / Mạt Thế Sinh Tồn (100% An toàn bản quyền, không bị TikTok mute)
     "HUYEN_NGHI": [
+        TIKTOK_TRACKS["snowfall"],
+        TIKTOK_TRACKS["secret"],
         HORROR_TRACKS["sweet_dreams"],
         TIKTOK_TRACKS["cry_for_me"],
         TIKTOK_TRACKS["bong_la_roi"],

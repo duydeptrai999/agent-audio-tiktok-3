@@ -128,10 +128,13 @@ class VideoAuditEngine:
             metrics["width"], metrics["height"] = int(dim_match.group(1)), int(dim_match.group(2))
             metrics["has_video"] = True
 
-        if not metrics["has_video"] or metrics["width"] < 1280 or metrics["height"] < 720:
+        # Hỗ trợ cả chuẩn ngang 16:9 (1920x1080 / 1280x720) và chuẩn dọc 9:16 TikTok (1080x1920 / 720x1280)
+        is_hd_horizontal = metrics["width"] >= 1280 and metrics["height"] >= 720
+        is_hd_vertical = metrics["width"] >= 720 and metrics["height"] >= 1280
+        if not metrics["has_video"] or not (is_hd_horizontal or is_hd_vertical):
             return False, (
                 f"🚨 [AUDIT THẤT BẠI] Luồng hình ảnh không đạt chuẩn Full HD/HD "
-                f"({metrics['width']}x{metrics['height']})."
+                f"({metrics['width']}x{metrics['height']}). Bắt buộc >= 1080x1920 (dọc) hoặc >= 1920x1080 (ngang)!"
             ), metrics
 
         # Kiểm tra sự hiện diện của luồng Audio trong MP4

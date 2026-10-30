@@ -1,37 +1,49 @@
 # -*- coding: utf-8 -*-
 """
 core/thumbnail_generator.py
-Tạo Thumbnail chuẩn 16:9 (1920x1080) sắc nét, nghệ thuật cho từng Part / từng Audio:
-- Trích xuất frame đại diện đẹp mắt từ video background của từng part.
-- Tự động phủ gradient bảo vệ thị giác chống chìm chữ.
-- Nhãn Visual Badge (TẬP 1, TẬP 2, TẬP 3 - KẾT) mạ vàng nổi bật.
-- Tiêu đề câu chuyện tiếng Việt chuẩn 100% Unicode không lỗi font.
-- Nhúng thumbnail vào metadata MP4 (Cover Art) hoặc xuất file ảnh riêng để tải lên.
+Tạo Thumbnail chuẩn dọc TikTok 9:16 (1080x1920) sắc nét, hiện đại cho từng Tập / từng Audio:
+- Trích xuất frame đại diện đẹp mắt từ video background của từng tập và center-crop về 1080x1920.
+- Phủ lớp gradient điện ảnh mềm mại (KHÔNG dùng hộp nền đen thô kệch).
+- Phân tầng thị giác rõ ràng bằng font Be Vietnam Pro:
+  1. Nhãn Tập (Pill Badge: TẬP 1/3, TẬP 2/3, TẬP 3 · KẾT) + Nhãn Thể Loại phối màu theo cảm xúc.
+  2. Tên Phim (Main Title) cỡ lớn, chữ đậm sắc nét có bóng đổ mờ (soft Gaussian shadow).
+  3. Mô Tả Phim / Tập (Subtitle) tách riêng bên dưới thanh lịch, dễ đọc ngay trên lưới hồ sơ 3:4 của TikTok.
 """
 
 import os
 import sys
-import re
 import time
 import shutil
 import subprocess
 from pathlib import Path
 from typing import Optional
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
-        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception:
         pass
 
-from core.ffmpeg_utils import get_ffmpeg_exe, get_vietnamese_font_path
+from core.ffmpeg_utils import get_ffmpeg_exe
+from core.visual_design import (
+    clean_part_label,
+    draw_pill,
+    draw_text_with_shadow,
+    fit_text_block,
+    get_font,
+    get_genre_palette,
+    split_title,
+    vertical_gradient,
+    wrap_by_pixels,
+)
+
 
 def extract_video_frame(video_path: Path, output_frame_path: Path, timestamp_sec: float = 15.0) -> bool:
     """Trích xuất 1 frame chất lượng cao từ video tại thời điểm timestamp_sec."""
     ffmpeg = get_ffmpeg_exe()
     output_frame_path.parent.mkdir(parents=True, exist_ok=True)
-    
+
     cmd = [
         ffmpeg, "-y",
         "-ss", str(timestamp_sec),
@@ -43,8 +55,7 @@ def extract_video_frame(video_path: Path, output_frame_path: Path, timestamp_sec
     res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if res.returncode == 0 and output_frame_path.exists() and output_frame_path.stat().st_size > 1000:
         return True
-        
-    # Fallback trích xuất frame tại giây 1 nếu giây 15 vượt quá độ dài
+
     cmd_fallback = [
         ffmpeg, "-y",
         "-ss", "1.0",
@@ -56,25 +67,11 @@ def extract_video_frame(video_path: Path, output_frame_path: Path, timestamp_sec
     res_fb = subprocess.run(cmd_fallback, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return res_fb.returncode == 0 and output_frame_path.exists() and output_frame_path.stat().st_size > 1000
 
+
 def wrap_text(text: str, font: ImageFont.FreeTypeFont, max_width: int, draw: ImageDraw.ImageDraw) -> list[str]:
     """Tự động ngắt dòng thông minh theo độ rộng pixel."""
-    words = text.split()
-    lines = []
-    cur_line = []
-    
-    for word in words:
-        test_line = " ".join(cur_line + [word])
-        bbox = draw.textbbox((0, 0), test_line, font=font)
-        line_w = bbox[2] - bbox[0]
-        if line_w <= max_width or not cur_line:
-            cur_line.append(word)
-        else:
-            lines.append(" ".join(cur_line))
-            cur_line = [word]
-            
-    if cur_line:
-        lines.append(" ".join(cur_line))
-    return lines
+    return wrap_by_pixels(text, font, max_width, draw)
+
 
 def generate_part_thumbnail(
     source_video_or_image: Path,
@@ -82,123 +79,185 @@ def generate_part_thumbnail(
     story_title: str,
     part_label: str = "TẬP 1",
     genre_tag: str = "#AudioTruyện",
-    subtitle_hint: str = "Audio Trọn Bộ • Tốc Độ 1.5x"
+    subtitle_hint: str = "Audio Đời Thực • Cắm Tai Nghe"
 ) -> Path:
     """
-    Tạo thumbnail 1920x1080 hoàn chỉnh cho từng part của câu chuyện.
+    Tạo thumbnail chuẩn dọc 1080x1920 (9:16) tối ưu hóa hiển thị trên lưới Profile TikTok (vùng 3:4 trung tâm).
+    Không dùng nền hộp đen cứng; dùng gradient mềm + font Be Vietnam Pro phân tách Tên Phim và Mô Tả.
     """
     output_thumb_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    # 1. Lấy frame nền từ video hoặc ảnh
     temp_frame = output_thumb_path.parent / f"temp_{output_thumb_path.stem}.jpg"
+
     try:
-        if source_video_or_image.suffix.lower() in [".mp4", ".mov", ".mkv", ".webm"]:
-            success = extract_video_frame(source_video_or_image, temp_frame, timestamp_sec=20.0)
+        source_path = Path(source_video_or_image) if source_video_or_image else None
+        if source_path and source_path.suffix.lower() in [".mp4", ".mov", ".mkv", ".webm"]:
+            success = extract_video_frame(source_path, temp_frame, timestamp_sec=18.0)
             base_img_path = temp_frame if success else None
-        elif source_video_or_image.suffix.lower() in [".jpg", ".jpeg", ".png", ".webp"]:
-            base_img_path = source_video_or_image
+        elif source_path and source_path.suffix.lower() in [".jpg", ".jpeg", ".png", ".webp"]:
+            base_img_path = source_path
         else:
             base_img_path = None
-            
-        width, height = 1920, 1080
+
+        width, height = 1080, 1920
         if base_img_path and base_img_path.exists():
-            base_image = Image.open(base_img_path).convert("RGBA")
-            base_image = base_image.resize((width, height), Image.Resampling.LANCZOS)
+            base_image = Image.open(base_img_path).convert("RGB")
+            base_image = ImageOps.fit(base_image, (width, height), method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
+            base_image = ImageEnhance.Color(base_image).enhance(1.08)
+            base_image = ImageEnhance.Contrast(base_image).enhance(1.05)
+            base_image = base_image.convert("RGBA")
         else:
-            # Fallback gradient tối sang trọng
-            base_image = Image.new("RGBA", (width, height), (15, 20, 35, 255))
-            
-        # 2. Phủ lớp gradient mờ (Vignette + Dark Overlay) để văn bản luôn nổi bần bật
-        overlay = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-        draw_overlay = ImageDraw.Draw(overlay)
-        
-        # Gradient từ trên xuống (top bar) và từ dưới lên (bottom content)
-        for y in range(height):
-            if y < 220:
-                alpha = int(170 * (1.0 - y / 220.0))
-                draw_overlay.line([(0, y), (width, y)], fill=(0, 0, 0, alpha))
-            elif y > 450:
-                alpha = int(210 * ((y - 450) / (height - 450)))
-                draw_overlay.line([(0, y), (width, y)], fill=(0, 0, 0, alpha))
-                
-        combined = Image.alpha_composite(base_image, overlay)
+            base_image = Image.new("RGBA", (width, height), (20, 24, 38, 255))
+
+        pal = get_genre_palette(f"{genre_tag} {story_title}")
+
+        # Scrim điện ảnh siêu nhẹ, giữ độ sáng và vẻ đẹp của video nền ASMR, không tạo bóng đen sẫm
+        grad_layer = vertical_gradient(
+            width,
+            height,
+            [
+                (0, 30),
+                (600, 15),
+                (900, 45),
+                (1200, 80),
+                (1600, 100),
+                (1920, 100),
+            ],
+        )
+        combined = Image.alpha_composite(base_image, grad_layer)
         draw = ImageDraw.Draw(combined)
-        
-        # 3. Nạp font chuẩn tiếng Việt
-        font_candidates = [
-            r"C:\Windows\Fonts\arialbd.ttf",
-            r"C:\Windows\Fonts\segoeuib.ttf",
-            r"C:\Windows\Fonts\tahomabd.ttf"
-        ]
-        font_path = "arialbd.ttf"
-        for cand in font_candidates:
-            if os.path.exists(cand):
-                font_path = cand
-                break
-                
-        font_badge = ImageFont.truetype(font_path, size=46)
-        font_title = ImageFont.truetype(font_path, size=72)
-        font_sub = ImageFont.truetype(font_path, size=38)
-        font_tag = ImageFont.truetype(font_path, size=36)
-        
-        # 4. Vẽ Pill Badge (TẬP X / ĐẠI KẾT CỤC)
-        clean_part = part_label.upper().replace("[", "").replace("]", "").strip()
-        badge_text = f" {clean_part} "
-        bbox_b = draw.textbbox((0, 0), badge_text, font=font_badge)
-        b_w = bbox_b[2] - bbox_b[0]
-        b_h = bbox_b[3] - bbox_b[1]
-        
-        bx0 = 80
-        by0 = 70
-        bx1 = bx0 + b_w + 50
-        by1 = by0 + b_h + 30
-        
-        # Bo góc mềm mại màu vàng hoàng kim với viền nổi
-        draw.rounded_rectangle([bx0, by0, bx1, by1], radius=20, fill=(255, 204, 0, 255), outline=(255, 255, 255, 255), width=3)
-        draw.text((bx0 + 25, by0 + 10), badge_text, font=font_badge, fill=(15, 15, 15, 255))
-        
-        # 5. Vẽ Title chính (có bóng đổ drop-shadow đậm đà)
-        clean_title = story_title.strip()
-        lines = wrap_text(clean_title, font_title, max_width=1740, draw=draw)
-        if len(lines) > 3:
-            lines = lines[:3]
-            lines[-1] += "..."
-            
-        start_y = height - 160 - (len(lines) * 90)
-        for line in lines:
-            # Vẽ bóng đổ 8 hướng tạo chiều sâu khối
-            for dx, dy in [(-3, -3), (3, -3), (-3, 3), (3, 3), (0, 4), (4, 0), (-4, 0), (0, -4)]:
-                draw.text((80 + dx, start_y + dy), line, font=font_title, fill=(0, 0, 0, 240))
-            # Chữ chính màu trắng tinh
-            draw.text((80, start_y), line, font=font_title, fill=(255, 255, 255, 255))
-            start_y += 92
-            
-        # 6. Vẽ Footer Bar (Hashtags + Thể Loại + Hint)
-        tag_text = f"{genre_tag} • {subtitle_hint}"
-        draw.text((80, height - 75), tag_text, font=font_tag, fill=(255, 215, 0, 255))
-        
-        # Lưu file thumbnail định dạng RGB JPEG chất lượng 95
+
+        main_title, sub_title = split_title(story_title)
+        clean_ep = clean_part_label(part_label)
+
+        # Tính toán kích thước khối Tên Phim (Main Title) & Mô Tả (Subtitle)
+        left_x = 80
+        max_text_w = width - left_x * 2 - 16
+        main_font, main_lines = fit_text_block(main_title, "black", 76, 54, max_text_w, 3, draw)
+        main_line_h = int(main_font.size * 1.30)
+        main_block_h = len(main_lines) * main_line_h
+
+        sub_lines = []
+        sub_font = get_font("semibold", 42)
+        sub_line_h = 54
+        if sub_title:
+            sub_font, sub_lines = fit_text_block(sub_title, "semibold", 44, 34, max_text_w, 3, draw)
+            sub_line_h = int(sub_font.size * 1.28)
+        sub_block_h = len(sub_lines) * sub_line_h + (22 if sub_lines else 0)
+
+        # Đặt toàn bộ cụm chữ trong vùng trung tâm lưới 3:4 của TikTok (y = 820 .. 1480)
+        total_content_h = main_block_h + sub_block_h
+        start_y = max(860, 1390 - total_content_h)
+
+        # 1. Vẽ Pill Badge (TẬP 1/3) + Nhãn thể loại phía trên Tên Phim
+        badge_font = get_font("black", 36)
+        pill_box = draw_pill(
+            combined,
+            left_x,
+            start_y - 86,
+            clean_ep,
+            badge_font,
+            pal["accent"],
+            pal["ink"],
+            pad_x=28,
+            pad_y=12,
+            align="left",
+        )
+        genre_label_font = get_font("bold", 30)
+        genre_chip_text = f"•  {pal['label']} AUDIO"
+        draw_text_with_shadow(
+            combined,
+            (pill_box[2] + 20, pill_box[1] + 14),
+            genre_chip_text,
+            genre_label_font,
+            pal["soft"] + (255,),
+            anchor="la",
+            shadow_alpha=180,
+            shadow_blur=6,
+        )
+
+        # 2. Thanh nhấn dọc (Accent Vertical Bar) bên trái khối tiêu đề
+        bar_top = start_y + 8
+        bar_bottom = start_y + total_content_h - 10
+        draw = ImageDraw.Draw(combined)
+        draw.rounded_rectangle(
+            [left_x - 24, bar_top, left_x - 12, bar_bottom],
+            radius=6,
+            fill=pal["accent"] + (255,),
+        )
+
+        # 3. Vẽ Tên Phim (Main Title) sắc nét với bóng đổ mềm
+        cur_y = start_y
+        for idx_l, line in enumerate(main_lines):
+            line_color = (255, 255, 255, 255) if idx_l == 0 else (248, 248, 252, 255)
+            draw_text_with_shadow(
+                combined,
+                (left_x, cur_y),
+                line,
+                main_font,
+                line_color,
+                anchor="la",
+                shadow_alpha=120,
+                shadow_blur=4,
+                shadow_offset=(0, 2),
+                stroke=2,
+                stroke_fill=(12, 16, 24, 230),
+            )
+            cur_y += main_line_h
+
+        # 4. Vẽ Mô Tả Phim / Tập (Subtitle) màu nhấn dịu mắt
+        if sub_lines:
+            cur_y += 18
+            for line in sub_lines:
+                draw_text_with_shadow(
+                    combined,
+                    (left_x, cur_y),
+                    line,
+                    sub_font,
+                    pal["soft"] + (255,),
+                    anchor="la",
+                    shadow_alpha=110,
+                    shadow_blur=3,
+                    shadow_offset=(0, 2),
+                    stroke=2,
+                    stroke_fill=(12, 16, 24, 210),
+                )
+                cur_y += sub_line_h
+
+        # 5. Dòng chân trang tinh tế trong Safe Zone
+        footer_y = min(1510, max(1445, cur_y + 32))
+        footer_font = get_font("medium", 28)
+        clean_tag = genre_tag.replace("_", "").strip() if genre_tag else "#AudioTruyện"
+        footer_text = f"{subtitle_hint}  •  {clean_tag}"
+        draw_text_with_shadow(
+            combined,
+            (left_x, footer_y),
+            footer_text,
+            footer_font,
+            (220, 224, 235, 235),
+            anchor="la",
+            shadow_alpha=180,
+            shadow_blur=6,
+        )
+
         final_rgb = combined.convert("RGB")
         final_rgb.save(str(output_thumb_path), format="JPEG", quality=95)
-        print(f"  🖼️ Đã tạo xong Thumbnail 1080p: {output_thumb_path.name}")
+        print(f"  🖼️ Đã tạo xong Thumbnail dọc 9:16 (1080x1920): {output_thumb_path.name}")
         return output_thumb_path
     finally:
-        # Dọn dẹp triệt để frame tạm trong khối finally
         if temp_frame.exists():
             try:
                 temp_frame.unlink()
             except Exception:
                 pass
 
+
 def attach_thumbnail_to_mp4(video_path: Path, thumbnail_path: Path, output_path: Optional[Path] = None) -> Path:
     """
-    Nhúng thumbnail vào metadata MP4 (Cover Art) để hiển thị trên trình phát và hệ thống.
-    Được bảo vệ bằng cơ chế retry backoff khi gặp khóa file trên Windows (WinError 32)
-    và luôn dọn sạch file tạm trong khối finally.
+    Nhúng thumbnail vào metadata MP4 (Cover Art) nếu được yêu cầu riêng.
     """
     ffmpeg = get_ffmpeg_exe()
     target_out = output_path or (video_path.parent / f"{video_path.stem}_with_thumb.mp4")
-    
+
     cmd = [
         ffmpeg, "-y",
         "-i", str(video_path),
@@ -213,30 +272,27 @@ def attach_thumbnail_to_mp4(video_path: Path, thumbnail_path: Path, output_path:
         res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if res.returncode == 0 and target_out.exists() and target_out.stat().st_size > 100000:
             if output_path is None:
-                # Ghi đè lại file gốc an toàn với retry exponential backoff chống WinError 32
                 max_retries = 5
                 delay = 0.5
                 replaced = False
-                for attempt in range(max_retries):
+                for _ in range(max_retries):
                     try:
                         target_out.replace(video_path)
                         replaced = True
                         break
-                    except (PermissionError, OSError) as e:
+                    except (PermissionError, OSError):
                         time.sleep(delay)
                         delay *= 1.5
                 if not replaced:
                     try:
                         shutil.copyfile(str(target_out), str(video_path))
                         target_out.unlink(missing_ok=True)
-                        replaced = True
                     except Exception as e_copy:
                         print(f"⚠️ [ThumbnailGenerator] Lỗi sao chép fallback thay thế video: {e_copy}")
                 return video_path
             return target_out
         return video_path
     finally:
-        # Dọn dẹp tệp tạm _with_thumb.mp4 nếu output_path là None và tệp tạm vẫn còn tồn tại
         if output_path is None and target_out.exists() and target_out != video_path:
             try:
                 target_out.unlink(missing_ok=True)

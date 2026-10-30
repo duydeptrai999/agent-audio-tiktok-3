@@ -13,6 +13,7 @@ Tuân thủ 100% yêu cầu:
 import os
 import sys
 import json
+from typing import List, Dict, Any, Optional
 import time
 import subprocess
 from pathlib import Path
@@ -170,6 +171,26 @@ class BackgroundVideoManager:
 
         return removed_count
 
+    def _collect_all_candidate_pool_files(self, genre: str = '') -> List[Path]:
+        """Thu thập danh sách video nền 16:9 từ POOL_DIR (youtube_pool) và raw_downloaded."""
+        pool_files = [
+            f for f in POOL_DIR.glob('*.mp4')
+            if f.is_file() and f.stat().st_size > 1000000
+        ]
+        raw_dir = ROOT_DIR / 'assets' / 'footage' / 'raw_downloaded'
+        if raw_dir.exists():
+            for rf in raw_dir.glob('*.mp4'):
+                if rf.is_file() and rf.stat().st_size > 15000000:
+                    pool_files.append(rf)
+
+        g_low = (genre or '').lower()
+        is_dark_genre = any(k in g_low for k in ['kinh dị', 'kinh_di', 'quái đàm', 'quai_dam', 'trinh thám', 'trinh_tham', 'mạt thế', 'mat_the'])
+        if not is_dark_genre and len(pool_files) > 1:
+            filtered = [f for f in pool_files if 'tool_restoration' not in f.name.lower()]
+            if filtered:
+                pool_files = filtered
+        return pool_files
+
     def register_source_video(self, video_path: Path, url: str = "", title: str = "", max_audios: int = 2) -> bool:
         """Đăng ký 1 video nền dài mới vào hệ thống pool."""
         if not video_path.exists() or video_path.stat().st_size < 1000000:
@@ -205,7 +226,7 @@ class BackgroundVideoManager:
         print(f"🎬 [BackgroundManager] Đã kích hoạt video nền mới: {video_path.name} (Thời lượng: {duration/60:.1f} phút)")
         return True
 
-    def rotate_pool_video(self) -> Optional[Path]:
+    def rotate_pool_video(self, genre: str = "") -> Optional[Path]:
         """
         Xoay tua kho video nền khi đã dùng >= 10 audio (hoặc hết thời lượng):
         1. Di chuyển active_video hiện tại vào used_history.
@@ -223,10 +244,7 @@ class BackgroundVideoManager:
         active_filename = active.get("filename") if active else None
 
         # Quét kiểm tra tất cả video có sẵn trong POOL_DIR (> 1MB)
-        pool_files = [
-            f for f in POOL_DIR.glob("*.mp4")
-            if f.is_file() and f.stat().st_size > 1000000
-        ]
+        pool_files = self._collect_all_candidate_pool_files(genre=genre)
 
         # Lọc các video KHÁC video hiện tại
         candidate_files = [f for f in pool_files if f.name != active_filename]
@@ -274,7 +292,7 @@ class BackgroundVideoManager:
 
         return None
 
-    def get_or_download_active_video(self, preferred_url: Optional[str] = None) -> Optional[Path]:
+    def get_or_download_active_video(self, preferred_url: Optional[str] = None, genre: str = "") -> Optional[Path]:
         """Lấy video nền đang hoạt động hoặc tự động tải video mới từ YouTube nếu đã dùng hết 10 audio."""
         active = self.state.get("active_video")
 
@@ -296,13 +314,12 @@ class BackgroundVideoManager:
                     return v_path
                 else:
                     print(f"🔄 [BackgroundManager] Video {v_path.name} đã dùng {active.get('audios_used', 0)}/{active.get('max_audios', 10)} audio (hoặc hết thời lượng). Kích hoạt xoay tua!")
-                    rotated = self.rotate_pool_video()
+                    rotated = self.rotate_pool_video(genre=genre)
                     if rotated:
                         return rotated
 
         # 3. Quét kiểm tra video đã có sẵn trong POOL_DIR
         pool_files = sorted(
-            [f for f in POOL_DIR.glob("*.mp4") if f.stat().st_size > 1000000],
             key=lambda x: x.stat().st_mtime,
             reverse=True
         )
@@ -332,7 +349,8 @@ class BackgroundVideoManager:
         part_number: int,
         duration_seconds: float,
         preferred_url: Optional[str] = None,
-        total_parts: int = 3
+        total_parts: int = 3,
+        genre: str = ""
     ) -> Path:
         """
         Cắt lát một phân đoạn video nền ĐỘC NHẤT (không trùng lặp) cho từng Part / từng Audio.
@@ -341,7 +359,7 @@ class BackgroundVideoManager:
         - Bộ đếm audios_used tăng lên ở tập cuối của chuỗi (part_number == total_parts hoặc part_number == 0).
         - Khi audios_used >= 10, tự động xoay tua sang video khác trong POOL_DIR.
         """
-        source_path = self.get_or_download_active_video(preferred_url=preferred_url)
+        source_path = self.get_or_download_active_video(preferred_url=preferred_url, genre=genre)
         if not source_path or not source_path.exists():
             # Fallback nếu chưa tải xong: lấy video mẫu hiện có trong assets/footage
             cand = list((ROOT_DIR / "assets" / "footage").glob("*clean*.mp4"))
@@ -369,8 +387,13 @@ class BackgroundVideoManager:
         self.cleanup_old_slices(max_age_hours=24, max_total_mb=1000)
 
         if slice_path.exists() and slice_path.stat().st_size > 500000:
-            print(f"🎬 [BackgroundManager] Sử dụng phân đoạn có sẵn: {slice_name}")
-            return slice_path
+            probe_sl = probe_media_file(slice_path)
+            if probe_sl.get('height', 0) > probe_sl.get('width', 0):
+                print(f'⚠️ [BackgroundManager] Slice {slice_name} bị dọc (9:16), tự động xóa để cắt lại 16:9...')
+                slice_path.unlink(missing_ok=True)
+            else:
+                print(f"🎬 [BackgroundManager] Sử dụng phân đoạn có sẵn (16:9): {slice_name}")
+                return slice_path
 
         print(f"✂️ [BackgroundManager] Đang cắt phân đoạn B-Roll riêng cho {series_id} - Tập {part_number}:")
         print(f"   * Từ giây: {int(start_sec)}s ({int(start_sec)//60}m{int(start_sec)%60:02d}s)")

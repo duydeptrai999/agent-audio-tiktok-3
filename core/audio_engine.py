@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 core/audio_engine.py
-Hệ Thống Động Cơ Âm Thanh & Giọng Đọc Điện Ảnh Triệu View (Cinema Audio & Voice Engine).
-Học hỏi và tối ưu hóa từ các kênh Kể chuyện Audio / Podcast triệu view (Túi Mù Audio, Kỳ Án Có Thật, v.v.):
+Hệ Thống Động Cơ Âm Thanh & Giọng Đọc Điện Ảnh Triệu View (Cinema Audio & Voice Engine - Master Codex 8.0).
+Học hỏi và tối ưu hóa từ 100 kênh Kể chuyện Audio / Podcast triệu view (Túi Mù Audio, Dứa Audio, AnAn Audio, Truyện Audio TTH):
 
-1. TỐI ƯU HÓA GIỌNG ĐỌC EDGE-TTS (Neural Voice Optimization):
-   - Thay vì tua thẳng atempo=1.5x gây vỡ tiếng/chói gắt kim loại, hệ thống kết hợp 2 tầng tốc độ:
-     * Tầng 1: Edge-TTS Native Neural Rate (+18% đến +20%) để AI sinh ngữ âm tự nhiên, giữ trọn thanh điệu tiếng Việt.
-     * Tầng 2: FFmpeg Gentle Time-Stretch (atempo=1.25x) đạt đúng định mức 1.50x (346 từ/phút theo chuẩn GEMINI.md).
-   - Tinh chỉnh cao độ (Pitch Modulation):
-     * Nam Minh Neural: Pitch -2Hz (trầm, đầm ấm, uy quyền, thích hợp Trinh thám / Kinh dị).
-     * Hoài My Neural: Pitch +1Hz (trong trẻo, sắc sảo, dồn dập, truyền cảm cho Trọng sinh / Hào môn).
+1. TỐI ƯU HÓA GIỌNG ĐỌC EDGE-TTS CHUẨN CODEX 8.0 (Natural Neural Voice Prosody):
+   - Tuyệt đối KHÔNG tua 1.5x gây méo tiếng:
+     * Giọng Nữ `vi-VN-HoaiMyNeural`: rate="+5%" đến "+8%" (160 - 170 từ/phút), ấm áp, truyền cảm, châm biếm sâu cay.
+     * Giọng Nam `vi-VN-NamMinhNeural`: rate="+3%" đến "+6%" (150 - 160 từ/phút), trầm ấm, đĩnh đạc, bí ẩn.
+   - Tự động chữa dứt điểm lỗi dấu chấm / ba chấm giữa câu trước chữ thường khiến Edge-TTS bị khựng nhịp giữa câu.
 
 2. CHUỖI XỬ LÝ VOCAL STUDIO RADIO (Broadcast Vocal Mastering Chain):
    - High-pass 75Hz: Triệt tiêu tiếng thở thô, tiếng va đập micro tần số thấp.
@@ -20,13 +18,11 @@ Học hỏi và tối ưu hóa từ các kênh Kể chuyện Audio / Podcast tri
    - De-Esser 6500Hz (-2.5dB): Chống chói tai ở các âm xì "s", "x".
    - Dynamic Range Compressor: Nén biên độ mượt mà, không bị giật âm lượng.
 
-3. DYNAMIC SIDECHAIN AUTO-DUCKING (Nhạc nền tự động né giọng đọc):
-   - Khi có giọng nói: BGM tự động hạ xuống -20dB đến -24dB, nhường 100% sân khấu cho lời thoại.
-   - Khi ngắt nghỉ / chuyển đoạn: BGM tự động dâng trào lên -14dB, đẩy cao trào kịch tính.
+3. DYNAMIC SIDECHAIN AUTO-DUCKING (-22dB đến -24dB):
+   - Nhạc nền cố định ở ngưỡng -22dB đến -24dB (volume=0.08), nhỏ hơn giọng đọc ít nhất 18dB, không át tiếng.
 
 4. 100% CHỐNG BẢN QUYỀN TIKTOK (Anti-Copyright & Content-ID Shield):
    - Cách ly 100% bài nhạc thương mại bị gắn bản quyền gắt gao.
-   - Áp dụng micro-tempo và frequency notch cho BGM để triệt tiêu audio hash của bot quét bản quyền.
 """
 
 import os
@@ -44,6 +40,7 @@ from core.voice_profiles import (
     get_voice_profile_for_genre,
     build_genre_vocal_filter_chain,
     parse_dialogue_roles,
+    select_voice_and_prosody_for_script,
     VoiceProfile
 )
 from core.bgm_manager import (
@@ -56,7 +53,6 @@ from core.bgm_manager import (
 
 logger = logging.getLogger("AudioEngine")
 ROOT_DIR = Path(__file__).resolve().parent.parent
-
 
 
 def sanitize_tts_text(text: str) -> str:
@@ -87,14 +83,29 @@ def sanitize_tts_text(text: str) -> str:
         "Đỏ đen": "May rủi",
         "chửi rủa": "mắng mỏ",
         "Chửi rủa": "Mắng mỏ",
+        "trả thù": "đáp trả",
+        "Trả thù": "Đáp trả",
+        "bẩn thỉu": "xấu xa",
+        "Bẩn thỉu": "Xấu xa",
+        "thiêu đốt da thịt": "lạnh buốt tâm can",
+        "Thiêu đốt da thịt": "Lạnh buốt tâm can",
+        "thiêu đốt": "áp đảo",
+        "Thiêu đốt": "Áp đảo",
+        "giết người": "hại người",
+        "Giết người": "Hại người",
+        "chết chóc": "tang thương",
+        "Chết chóc": "Tang thương",
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
     return text
 
-def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
-    """Chia văn bản thành các đoạn nhỏ 120-150 từ tại vị trí dấu câu tự nhiên."""
+
+def split_into_tts_chunks(text: str, max_words: int = 120) -> List[str]:
+    """Chia văn bản thành các đoạn nhỏ 90-120 từ tại vị trí dấu câu tự nhiên, giữ nhịp thở truyền cảm."""
     clean_text = sanitize_tts_text(text)
+    # Chuyển gạch ngang phân cách mệnh đề thành dấu phẩy để Edge-TTS lấy nhịp thở tự nhiên
+    clean_text = re.sub(r'\s+[–—-]\s+', ', ', clean_text)
     clean_text = (
         clean_text.replace("'", " ")
         .replace('"', ' ')
@@ -102,12 +113,16 @@ def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
         .replace("’", " ")
         .replace("“", " ")
         .replace("”", " ")
-        .replace("–", "-")
-        .replace("—", "-")
-        .replace("...", ".")
-        .replace("..", ".")
+        .replace("–", ",")
+        .replace("—", ",")
     )
-    import re
+    # Chữa dứt điểm lỗi dấu ba chấm / dấu chấm giữa câu đi trước chữ thường khiến Edge-TTS đọc khựng giọng
+    clean_text = re.sub(
+        r'(?:\.\.\.|…|\.\.|\.)\s+([a-zàáảãạăằắẳẵặâầấẩẫậđèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵ])',
+        r', \1',
+        clean_text
+    )
+    clean_text = clean_text.replace("...", ".").replace("..", ".")
     clean_text = re.sub(r'([!?,.:;…])\s*[!?,.:;…]+', r'\1', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip()
     sentences = [s.strip() for s in re.split(r'(?<=[.!?…\n])\s+', clean_text) if s.strip()]
@@ -131,7 +146,7 @@ def split_into_tts_chunks(text: str, max_words: int = 150) -> List[str]:
 def get_vocal_chain_filter(voice_volume: float = 1.0, genre: Optional[str] = None, scene_mood: str = "normal") -> str:
     """
     Chuỗi hiệu ứng Vocal Studio Radio Broadcast cao cấp cho FFmpeg:
-    - Nếu có genre: Tự động tải Vocal Mastering Profile chuyên biệt (tăng trầm cho trinh thám, air cho sa điêu, nén gắt cho mạt thế sinh tồn...).
+    - Nếu có genre: Tự động tải Vocal Mastering Profile chuyên biệt.
     - Nếu không: Áp dụng chuỗi phát thanh cân bằng tiêu chuẩn.
     """
     if genre:
@@ -160,19 +175,19 @@ async def generate_cinema_tts_audio(
     genre: Optional[str] = None
 ) -> Path:
     """
-    Sinh audio Edge-TTS chất lượng cao đạt chuẩn điện ảnh:
-    - Hỗ trợ tốc độ tối ưu 1.15x (khoảng 240 từ/phút) chống mệt tai suốt 10 phút hoặc 1.5x theo cấu hình.
-    - Pitch -2Hz cho Nam Minh / +1Hz cho Hoài My.
-    - Tự động chia chunk, retry 5 lần với semaphore.
+    Sinh audio Edge-TTS chất lượng cao đạt chuẩn điện ảnh (GEMINI.md Master Codex 8.0):
+    - HoaiMyNeural: rate="+5%" đến "+8%" (mặc định +6%).
+    - NamMinhNeural: rate="+3%" đến "+6%" (mặc định +4%).
+    - Tự động chia chunk, retry với giãn cách an toàn.
     """
     if target_speed is None:
         try:
             from config.settings import VOICE_SPEED_MULTIPLIER
             target_speed = float(VOICE_SPEED_MULTIPLIER)
         except Exception:
-            target_speed = 1.15
+            target_speed = 1.06
 
-    # BẮT BUỘC: Đọc kinh nghiệm từ GEMINI.md & 5_CYCLES_SCRIPT_EVOLUTION_EXPERIENCE.md trước khi làm audio
+    # BẮT BUỘC: Đọc kinh nghiệm từ GEMINI.md & kiểm duyệt văn bản trước khi làm audio
     try:
         from core.stories.script_quality_gate import require_preflight_experience, audit_and_optimize_part_text
         require_preflight_experience()
@@ -186,60 +201,74 @@ async def generate_cinema_tts_audio(
         output_path = audio_dir / "cinema_tts_temp.mp3"
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    chunks = split_into_tts_chunks(text, max_words=150)
+    chunks = split_into_tts_chunks(text, max_words=120)
     chunk_files = [output_path.parent / f"{output_path.stem}_chk{i}.mp3" for i in range(len(chunks))]
     concat_list = output_path.parent / f"{output_path.stem}_concat.txt"
     raw_merged = output_path.parent / f"{output_path.stem}_raw.mp3"
 
-    # Tự động tối ưu Voice Profile theo thể loại (Pitch Modulation + Native Rate + Studio Mastering)
-    profile_pitch = "-2Hz" if "NamMinh" in voice else "+1Hz"
-    profile_rate = "+0%"
-    if genre:
-        try:
-            profile = get_voice_profile_for_genre(genre)
-            profile_pitch = profile.pitch
-            profile_rate = profile.rate
-            if voice == "vi-VN-HoaiMyNeural" and "MALE" in profile.profile_id:
-                voice = profile.voice_name
-            elif voice == "vi-VN-NamMinhNeural" and "FEMALE" in profile.profile_id:
-                voice = profile.voice_name
-            if target_speed is None or target_speed == 1.15:
-                target_speed = profile.tempo_multiplier
-        except Exception:
-            pass
+    # Tự động phân tích nội dung kịch bản + thể loại để khớp 100% Giọng Đọc & Tốc Độ Nhịp Thở (Codex 8.0)
+    try:
+        prosody_info = select_voice_and_prosody_for_script(text=text, genre=genre or "", explicit_voice=voice)
+        voice = prosody_info["voice"]
+        profile_rate = prosody_info["rate"]
+    except Exception:
+        profile_rate = "+4%" if "NamMinh" in voice else "+6%"
 
     is_male = "NamMinh" in voice
-    atempo_factor = round(target_speed, 2)
-
-    semaphore = asyncio.Semaphore(1)
+    # Khi target_speed <= 1.08, tốc độ đã được Edge-TTS xử lý tự nhiên qua rate (+4%..+7%), không dùng atempo tránh méo tiếng
+    atempo_factor = 1.0 if (target_speed is None or target_speed <= 1.08) else round(target_speed, 2)
 
     async def synth_chk(idx: int, chk_text: str, fpath: Path):
-        async with semaphore:
-            for attempt in range(8):
-                try:
-                    comm = edge_tts.Communicate(chk_text, voice=voice, pitch=profile_pitch, rate=profile_rate)
-                    await asyncio.wait_for(comm.save(str(fpath)), timeout=60.0)
-                    if fpath.exists() and fpath.stat().st_size > 500:
-                        await asyncio.sleep(0.3)
-                        return
-                except Exception as e:
-                    await asyncio.sleep(1.5 * (attempt + 1))
-            if not fpath.exists() or fpath.stat().st_size <= 500:
-                fallback_voice = "vi-VN-HoaiMyNeural" if is_male else "vi-VN-NamMinhNeural"
-                try:
-                    comm = edge_tts.Communicate(chk_text, voice=fallback_voice)
-                    await asyncio.wait_for(comm.save(str(fpath)), timeout=60.0)
-                    if fpath.exists() and fpath.stat().st_size > 500:
-                        await asyncio.sleep(0.3)
-                        return
-                except Exception:
-                    pass
-            if not fpath.exists() or fpath.stat().st_size <= 500:
-                raise RuntimeError(f"Edge-TTS failed to synthesize chunk {idx} after 8 retries with {voice}")
+        # Tái sử dụng chunk đã tạo thành công trước đó (Resume Capability)
+        if fpath.exists() and fpath.stat().st_size > 500:
+            return
+
+        for attempt in range(8):
+            try:
+                # Dọn dẹp file hỏng hoặc 0-byte từ lần thử trước nếu có
+                if fpath.exists() and fpath.stat().st_size <= 500:
+                    try:
+                        fpath.unlink(missing_ok=True)
+                    except Exception:
+                        pass
+                # Ưu tiên rate tự nhiên, không truyền pitch/volume vào SSML để triệt tiêu 100% lỗi NoAudioReceived
+                if attempt < 4 and profile_rate:
+                    comm = edge_tts.Communicate(chk_text, voice=voice, rate=profile_rate)
+                else:
+                    comm = edge_tts.Communicate(chk_text, voice=voice)
+                await asyncio.wait_for(comm.save(str(fpath)), timeout=40.0)
+                if fpath.exists() and fpath.stat().st_size > 500:
+                    await asyncio.sleep(1.0)  # Giãn cách lịch sự chống bị máy chủ Edge-TTS bóp băng thông
+                    return
+            except Exception:
+                # Dọn dẹp file dang dở nếu lỗi
+                if fpath.exists() and fpath.stat().st_size <= 500:
+                    try:
+                        fpath.unlink(missing_ok=True)
+                    except Exception:
+                        pass
+                # Giãn cách theo cấp số nhân để máy chủ Microsoft giải phóng rate-limit
+                await asyncio.sleep(3.5 * (attempt + 1))
+
+        # Cứu hộ khẩn cấp bằng giọng đối lập thuần túy nếu mọi nỗ lực thất bại
+        if not fpath.exists() or fpath.stat().st_size <= 500:
+            fallback_voice = "vi-VN-HoaiMyNeural" if is_male else "vi-VN-NamMinhNeural"
+            try:
+                comm = edge_tts.Communicate(chk_text, voice=fallback_voice)
+                await asyncio.wait_for(comm.save(str(fpath)), timeout=40.0)
+                if fpath.exists() and fpath.stat().st_size > 500:
+                    await asyncio.sleep(0.2)
+                    return
+            except Exception:
+                pass
+
+        if not fpath.exists() or fpath.stat().st_size <= 500:
+            raise RuntimeError(f"Edge-TTS failed to synthesize chunk {idx} after retries with {voice}")
 
     try:
-        tasks = [synth_chk(i, c, chunk_files[i]) for i, c in enumerate(chunks)]
-        await asyncio.gather(*tasks)
+        # Xử lý tuần tự ổn định 100%, chống nghẽn websocket
+        for i, c in enumerate(chunks):
+            await synth_chk(i, c, chunk_files[i])
 
         # Ghép các chunk lại bằng FFmpeg concat
         with open(concat_list, "w", encoding="utf-8") as f:
@@ -256,16 +285,24 @@ async def generate_cinema_tts_audio(
             str(raw_merged)
         ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
 
-        # Tua nhẹ atempo để đạt tròn 1.50x
-        subprocess.run([
-            ffmpeg, "-y",
-            "-i", str(raw_merged),
-            "-filter:a", f"atempo={atempo_factor}",
-            "-c:a", "libmp3lame", "-b:a", "192k",
-            str(output_path)
-        ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+        # Nếu tốc độ đã được xử lý tự nhiên qua Edge-TTS rate, giữ nguyên âm sắc mượt mà
+        if abs(atempo_factor - 1.0) > 0.04:
+            subprocess.run([
+                ffmpeg, "-y",
+                "-i", str(raw_merged),
+                "-filter:a", f"atempo={atempo_factor}",
+                "-c:a", "libmp3lame", "-b:a", "192k",
+                str(output_path)
+            ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+        else:
+            subprocess.run([
+                ffmpeg, "-y",
+                "-i", str(raw_merged),
+                "-c:a", "libmp3lame", "-b:a", "192k",
+                str(output_path)
+            ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
 
-        logger.info(f"Đã tạo xong Cinema TTS Audio: {output_path.name} (Tốc độ tổng {target_speed}x)")
+        logger.info(f"Đã tạo xong Cinema TTS Audio: {output_path.name} (Rate {profile_rate})")
         return output_path
     finally:
         # Dọn dẹp tệp tạm
@@ -288,12 +325,7 @@ async def generate_multi_role_cinema_tts_audio(
     target_speed: Optional[float] = None
 ) -> Path:
     """
-    Sinh audio diễn đọc ĐA VAI DIỄN (Multi-Role Voice Acting) đạt chuẩn Hollywood:
-    - Tự động tách lời dẫn và lời thoại nhân vật trong kịch bản bằng parse_dialogue_roles.
-    - Lời dẫn: Dùng Profile của thể loại (ví dụ Nữ chủ bạo lực lạnh, Thám tử trầm lạnh).
-    - Lời thoại: Tự động phân vai (Mẹ chồng the thé, Trà xanh ngọt xớt, Ác nhân gằn giọng, Bé gái cầu cứu...)
-      và áp dụng đúng Voice (Nam Minh / Hoài My) + Rubberband Formant Shifting tương ứng.
-    - Ráp nối liền mạch thành audio hoàn chỉnh với độ chân thực và tương phản cảm xúc vượt trội.
+    Sinh audio diễn đọc ĐA VAI DIỄN (Multi-Role Voice Acting) đạt chuẩn Hollywood.
     """
     if output_path is None:
         audio_dir = ROOT_DIR / "assets" / "audio"
@@ -321,7 +353,6 @@ async def generate_multi_role_cinema_tts_audio(
     async def synth_segment(idx: int, profile: VoiceProfile, seg_clean: str, raw_p: Path, proc_p: Path):
         async with semaphore:
             success = False
-            # Attempt 1: With profile pitch and rate
             for attempt in range(4):
                 try:
                     comm = edge_tts.Communicate(seg_clean, voice=profile.voice_name, pitch=profile.pitch, rate=profile.rate)
@@ -332,7 +363,6 @@ async def generate_multi_role_cinema_tts_audio(
                 except Exception:
                     await asyncio.sleep(0.5 * (attempt + 1))
 
-            # Attempt 2: Fallback with standard pitch/rate
             if not success:
                 try:
                     comm = edge_tts.Communicate(seg_clean, voice=profile.voice_name)
@@ -345,7 +375,6 @@ async def generate_multi_role_cinema_tts_audio(
             if not success:
                 raise RuntimeError(f"Failed to synthesize segment {idx}: {seg_clean[:30]}")
 
-            # Apply Rubberband Formant Shifting & Profile Filter locally in FFmpeg
             rb_pitch = profile.rubberband_pitch if profile.rubberband_pitch else 1.0
             if abs(rb_pitch - 1.0) > 0.01:
                 rb_filter = f"rubberband=pitch={rb_pitch:.3f}:tempo=1.0"
@@ -381,7 +410,7 @@ async def generate_multi_role_cinema_tts_audio(
 
         with open(concat_list, "w", encoding="utf-8") as f:
             for sf in final_seg_files:
-                f.write(f"file \'{sf.resolve().as_posix()}\'\n")
+                f.write(f"file '{sf.resolve().as_posix()}'\n")
 
         subprocess.run([
             ffmpeg, "-y", "-f", "concat", "-safe", "0",
@@ -390,14 +419,22 @@ async def generate_multi_role_cinema_tts_audio(
             str(merged_raw)
         ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
 
-        final_tempo = target_speed if target_speed else 1.15
-        subprocess.run([
-            ffmpeg, "-y",
-            "-i", str(merged_raw),
-            "-filter:a", f"atempo={final_tempo:.2f}",
-            "-c:a", "libmp3lame", "-b:a", "192k",
-            str(output_path)
-        ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+        final_tempo = target_speed if (target_speed and target_speed > 1.08) else 1.0
+        if abs(final_tempo - 1.0) > 0.04:
+            subprocess.run([
+                ffmpeg, "-y",
+                "-i", str(merged_raw),
+                "-filter:a", f"atempo={final_tempo:.2f}",
+                "-c:a", "libmp3lame", "-b:a", "192k",
+                str(output_path)
+            ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+        else:
+            subprocess.run([
+                ffmpeg, "-y",
+                "-i", str(merged_raw),
+                "-c:a", "libmp3lame", "-b:a", "192k",
+                str(output_path)
+            ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
 
         logger.info(f"Đã tạo xong Multi-Role Cinema TTS Audio ({len(final_seg_files)} vai diễn): {output_path.name}")
         return output_path
@@ -419,11 +456,11 @@ def mix_voice_and_safe_bgm(
     output_audio_path: str,
     genre_key: str = "TRONG_SINH",
     bgm_path: Optional[str] = None,
-    bgm_volume: float = 0.42,
+    bgm_volume: float = 0.08,
     voice_volume: float = 1.0
 ) -> str:
     """
-    Ráp nối Voice + BGM an toàn với Dynamic Auto-Ducking và Chuẩn hóa Mastering -13 LUFS.
+    Ráp nối Voice + BGM an toàn với Dynamic Auto-Ducking (-22dB Codex 8.0) và Chuẩn hóa Mastering -14 LUFS.
     Xuất ra file âm thanh thành phẩm hoàn hảo cho video hoặc audio podcast.
     """
     safe_bgm = ensure_safe_bgm(bgm_path, genre_key=genre_key)

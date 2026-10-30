@@ -1,204 +1,24 @@
 # -*- coding: utf-8 -*-
 """
 core/stories/sa_dieu_tieng_long_masterpiece.py
-Bộ Kịch Bản Audio Sa Điêu Hài Hước - Độc Quyền Triệu View:
-Thư Ký Giả Ngốc: Tiếng Lòng Chê Tổng Tài Khiến Cả Phòng Họp Cười Xỉu
-Dung lượng: 3 Tập chuẩn điện ảnh, nhịp độ dồn dập, hài hước, kịch tính, không lặp lại.
-Giọng đọc chỉ định: vi-VN-HoaiMyNeural.
+Bộ Kịch Bản Audio Chuẩn Điện Ảnh 30 Phút (Master Codex 8.0):
+Thư Ký Cá Mặn Nghe Tiếng Lòng Sếp: Tiếng Lòng Chê Sếp Tổng Khiến Cả Công Ty Dậy Sóng
 """
-
 from typing import Dict, Any
 
 def get_sa_dieu_tieng_long_masterpiece_story(title: str = '') -> Dict[str, Any]:
-    story_title = title if title else "Thư Ký Giả Ngốc: Tiếng Lòng Chê Tổng Tài Khiến Cả Phòng Họp Cười Xỉu"
-
-    part1_full = """Chiếc bút máy nạm kim cương của Lục Cảnh Hoài chỉ còn cách dòng chữ ký bản hợp đồng năm trăm tỷ đúng một milimét, thì một giọng nữ lanh lảnh bỗng nổ tung trong đầu anh: 'Dừng bút lại đồ ngốc! Bản hợp đồng này ký xuống là mất trắng năm trăm tỷ, chưa kể chiếc cà vạt hoa hòe màu cánh sen chấm bi của sếp nhìn y hệt con công đang xòe đuôi ve vãn bạn tình!'.
-
-Bàn tay đang cầm bút của vị tổng tài tối cao tập đoàn Lục Thị khựng lại giữa không trung. Đồng tử anh co rút kịch liệt, suýt chút nữa làm rơi chiếc bút xuống mặt bàn kính!
-
-Anh ngẩng phắt đầu lên, ánh mắt sắc lẹm quét qua toàn bộ phòng họp tầng sáu mươi. Ba mươi vị giám đốc cấp cao vẫn đang im phăng phắc nín thở. Chú hai Lục Chấn Phong vẫn đang mỉm cười đắc ý, còn gã đại diện đối tác ngoại quốc vẫn đang vuốt cằm tỏ vẻ phong nhã. Hoàn toàn không có ai mở miệng!
-
-Đứng ngay sau lưng anh là Cố Cẩm Chi - cô thư ký thực tập mới tròn ba ngày, đeo kính gọng tròn to đùng che nửa mặt, ôm khư khư cuốn sổ tay, vẻ mặt ngơ ngác vô tội như một chú nai tơ.
-
-Trời đất quỷ thần ơi! Sếp của tôi nhìn thì đẹp trai ngời ngời phong độ ngút trời, mà sao mắt nhìn người lại mù dở thế này chứ! Cái gã đối tác mũi lõ da trắng ngồi đối diện kia thực chất là trùm lừa đảo xuyên quốc gia bị Interpol truy nã đỏ, công ty mẹ ở quần đảo Cayman chỉ là cái vỏ bọc rỗng tuếch không có lấy một xu dính túi! Bản hợp đồng này mà ký xuống một cái là năm trăm tỷ tiền mặt của tập đoàn bốc hơi theo mây khói, lúc đó sếp chỉ có nước ra gầm cầu mà uống gió tây bắc! Chưa kể hôm nay sếp phối đồ kiểu gì mà chiếc cà vạt hoa hòe màu cánh sen chấm bi nhìn y hệt con công đang xòe đuôi ve vãn bạn tình thế kia, gu thẩm mỹ âm vô cực đúng là phí hoài một gương mặt yêu nghiệt!
-
-Ai vừa nói? Giọng nói trầm thấp của Lục Cảnh Hoài cất lên, mang theo luồng hàn khí thấu xương làm cả phòng họp rùng mình.
-
-Các vị giám đốc nhìn nhau ngơ ngác, run rẩy lắc đầu: Dạ thưa Chủ tịch, không ai dám lên tiếng ạ!
-
-Lục Cảnh Hoài nheo mắt nhìn quanh, cuối cùng ánh mắt anh dừng lại trên người cô thư ký thực tập Cố Cẩm Chi đang đứng ngay sát bên cạnh. Khuôn mặt cô gái vẫn ngơ ngác như nai tơ, đôi mắt tròn xoe chớp chớp đầy vẻ vô tội, hai tay ôm khư khư cuốn sổ tay trước ngực.
-
-Nhưng ngay trong giây tiếp theo, tiếng nói lanh lảnh kia lại rộn ràng gào thét bên tai anh!
-
-Ủa sếp liếc nhìn tui làm chi vậy cà? Tui chỉ là con bé thực tập quèn lương sáu triệu một tháng đi làm vì đam mê thôi nha! Mau dừng bút lại đi đồ ngốc! Lật ngay sang trang mười bốn, nhìn vào dòng chữ in nhỏ xíu ở điều khoản ba chấm hai kìa! Bọn chúng gài bẫy quy đổi ngoại tệ với điều khoản phạt bồi thường gấp mười lần nếu tiến độ thi công trễ một ngày! Đội ngũ pháp chế của công ty ăn lương trăm triệu mà mắt để dưới gót chân hay sao mà duyệt được cái hợp đồng bán mạng này vậy trời!
-
-Từng câu từng chữ như từng quả bom nổ tung trong màng nhĩ của Lục Cảnh Hoài!
-
-Anh rốt cuộc nhận ra: Tiếng nói này không phải phát ra từ loa, cũng không phải ảo giác... mà chính là suy nghĩ nội tâm, là tiếng lòng của cô thư ký ngố tàu này!
-
-Lục Cảnh Hoài cố nén sự chấn động kinh hoàng trong lồng ngực, mặt không đổi sắc lập tức lật mạnh tập tài liệu dày cộp đến đúng trang mười bốn. Ngón tay thon dài của anh lướt nhanh qua từng dòng chữ in nhỏ xíu ở góc dưới điều khoản ba chấm hai.
-
-Và khi những con số pháp lý tinh vi hiện ra trước mắt, sắc mặt của vị tổng tài tối cao lập tức đen kịt lại như đáy nồi! Quả nhiên đúng từng dấu chấm dấu phẩy như tiếng lòng của cô ta vừa bóc phốt!
-
-Một cái bẫy hoàn hảo được dàn dựng công phu nhằm rút ruột tài sản tập đoàn và đẩy anh vào vòng lao lý!
-
-Lục Cảnh Hoài ném mạnh tập tài liệu xuống giữa bàn, phát ra một tiếng rầm vang dội làm vỡ tan bầu không khí trang nghiêm!
-
-Anh đứng phắt dậy, đôi mắt phượng rực lửa nhìn thẳng vào gã đối tác ngoại quốc và người chú ruột đang bắt đầu toát mồ hôi hột: Giám đốc Lục Chấn Phong! Chú giải thích thế nào về điều khoản bồi thường phạt vi phạm tỷ giá tại trang mười bốn này?
-
-Lục Chấn Phong mặt cắt không còn một giọt máu, lắp bắp: Việc này... việc này chắc do bên soạn thảo sơ suất...
-
-Sơ suất? Lục Cảnh Hoài nhếch mép cười nhạt, giọng nói đanh thép vang vọng: Đội an ninh đâu! Lập tức phong tỏa toàn bộ cửa ra vào, tịch thu tài liệu và mời cảnh sát kinh tế đến đây làm việc cho tôi!
-
-Gã đối tác ngoại quốc thấy kế hoạch bại lộ liền hoảng loạn xách cặp toan bỏ chạy, nhưng đã bị đội vệ sĩ bọc thép tóm gọn ngay tại cửa! Cả phòng họp rơi vào cảnh hỗn loạn nghẹt thở.
-
-Trong lúc hỗn loạn, Lục Cảnh Hoài khẽ liếc mắt nhìn sang Cố Cẩm Chi. Cô nàng vẫn đứng khép nép góc tường, gương mặt giả vờ sợ sệt nép sát góc tường, nhưng tiếng lòng bên trong thì đang mở tiệc ăn mừng rộn rã:
-
-Haha! Đáng đời quân lừa đảo! Cơ mà sếp ngầu thật đấy, ném tập tài liệu cái rầm nhìn uy quyền ghê chưa! Mỗi tội chiếc cà vạt hồng chấm bi vẫn là một vết nhơ thời trang không thể gột rửa! Tan họp mau mau đi sếp ơi, mười hai giờ trưa rồi, tui muốn xuống căn tin ăn cơm sườn nướng mười lăm ngàn quá trời rồi nè!
-
-Khóe môi Lục Cảnh Hoài giật giật kịch liệt. Anh quay lưng bước nhanh ra khỏi phòng họp, vừa đi vừa phải cắn chặt môi để không bật cười thành tiếng trước toàn thể nhân viên!"""
-
-    part2_full = """Sau màn lật tẩy ngoạn mục tại phòng họp hội đồng quản trị, Cố Cẩm Chi chính thức được thăng chức thần tốc từ thư ký thực tập lên làm thư ký đặc nhiệm riêng của Tổng giám đốc, mức lương nhảy vọt từ sáu triệu lên ba mươi triệu đồng một tháng!
-
-Cô nàng vui sướng đến mức đêm nào cũng mơ thấy mình bơi trong một bể đầy ắp tiền mặt. Nhưng niềm vui ngắn chẳng tày gang, nhiệm vụ đầu tiên ở vị trí mới lại là tháp tùng sếp lớn tham dự đêm dạ tiệc thượng lưu mừng sinh nhật sáu mươi tuổi của vị thị trưởng thành phố tại khách sạn Metropole.
-
-Đêm tiệc quy tụ toàn bộ giới tài phiệt, minh tinh màn bạc và các thiên kim tiểu thư danh gia vọng tộc. Lục Cảnh Hoài trong bộ tuxedo đen tuyền lịch lãm, dáng người cao lớn thẳng tắp như cây tùng bách ngạo nghễ, vừa bước vào cửa đã trở thành tâm điểm của hàng trăm ánh mắt ngưỡng mộ.
-
-Cố Cẩm Chi mặc bộ đầm công sở nhã nhặn, đeo kính cận, lặng lẽ cầm cuốn sổ tay và ly nước khoáng đứng nép ở một góc bàn tiệc buffet ngắm nghía đồ ăn ngon.
-
-Thế nhưng, khoảnh khắc yên bình chưa kéo dài được bao lâu thì thiên kim tiểu thư tập đoàn dược phẩm - Bạch Nhược Vi - trong bộ váy dạ hội màu đỏ xẻ tà quyến rũ, tay cầm hai ly rượu vang đỏ thong thả lướt tới gần Lục Cảnh Hoài.
-
-Khuôn mặt Bạch Nhược Vi trang điểm tinh xảo, nở nụ cười kiều diễm mềm mại như nước, giọng nói ngọt ngào phát ra khiến bất kỳ người đàn ông nào cũng phải tan chảy: Anh Cảnh Hoài, lâu lắm rồi không gặp! Chúc mừng dự án mới của anh. Em có thể vinh dự mời anh một ly rượu mừng này được không?
-
-Lục Cảnh Hoài nhàn nhạt nhìn ả, khẽ gật đầu đưa tay định nhận lấy ly rượu vang.
-
-Đúng lúc này, chiếc đài phát thanh độc quyền trong đầu anh lại bắt đầu phát sóng với âm lượng cực đại!
-
-Ối dồi ôi! Chị gái trà xanh ngàn năm tu luyện này lại bắt đầu giở trò mỹ nhân kế rồi! Nhìn cái bộ mặt giả nai ngây thơ kia kìa, bên ngoài thì e ấp ngọt ngào như kẹo sữa, bên trong bụng dạ thì đen ngòm như nước cống! Trong cái ly rượu vang đỏ trên tay phải của ả có bỏ ba viên thuốc an thần cực mạnh kết hợp với bột kích dục nhập lậu từ chợ đen đấy! Chỉ cần sếp uống một ngụm nhỏ, mười lăm phút sau sẽ hoa mắt chóng mặt lăn đùng ra bất tỉnh! Lúc đó ả sẽ giả bộ dìu sếp lên phòng VIP tầng tám, sắp sẵn một đám phóng viên lá cải phục kích chụp ảnh giường chiếu để ép sếp phải cưới ả vào cửa! Tối hôm qua ả vừa nhắn tin với tay nhiếp ảnh gia là 'Lục Cảnh Hoài khó tính như ông già khó ở, sau khi cưới ép gã ký vào bản cam kết phân chia tài sản xong là tôi đá gã ra chuồng gà ngay'! Sếp ơi là sếp, đừng có dại gái mà uống nha, uống xong là mất cả đời trai tân lẫy lừng đấy!
-
-Bàn tay Lục Cảnh Hoài vừa chạm vào thành ly rượu vang bỗng khựng lại như bị điện giật!
-
-Khóe mắt anh co giật liên hồi. Khó ở như ông già? Mất cả đời trai tân?
-
-Lục Cảnh Hoài hít sâu một hơi để ổn định lại nhịp tim đang đập thình thịch vì tức giận lẫn buồn cười. Anh nhìn chằm chằm vào ly rượu vang đỏ sóng sánh trên tay Bạch Nhược Vi, ánh mắt lạnh lẽo đến mức khiến nụ cười kiều diễm của ả ta bắt đầu cứng đờ lại.
-
-Bạch tiểu thư, Lục Cảnh Hoài cất giọng từ tốn, ánh mắt sắc lẹm như chim ưng nhìn con mồi: Tôi trước nay không có thói quen uống rượu của người khác đưa. Hay là... cô uống ly rượu này trước để tỏ lòng thành ý đi?
-
-Bạch Nhược Vi giật bắn mình, sắc mặt lập tức tái nhợt như tờ giấy trắng. Đôi bàn tay cầm ly rượu run bần bật: Anh... anh Cảnh Hoài nói đùa rồi... Đây là ly em lấy riêng cho anh mà...
-
-Sao vậy? Không dám uống à? Lục Cảnh Hoài nhếch mép, từng bước áp sát: Chẳng lẽ trong ly rượu này... có thứ gì đó không nên có sao?
-
-Tiếng động bên bàn tiệc lập tức thu hút sự chú ý của hàng chục quan khách và các phóng viên báo chí xung quanh. Mọi ánh mắt bắt đầu đổ dồn về phía Bạch Nhược Vi.
-
-Bị dồn vào chân tường, Bạch Nhược Vi hoảng sợ lúng túng lùi lại, đôi giày cao gót mười phân bất ngờ trượt trên sàn đá cẩm thạch trơn bóng!
-
-Ả hét lên một tiếng thất thanh, thân hình lảo đảo ngã nhào về phía trước! Toàn bộ ly rượu vang đỏ trên tay hắt thẳng vào chiếc váy dạ hội đắt tiền của chính ả, và theo một đường cong tuyệt mỹ, cả thân hình Bạch tiểu thư đập thẳng mặt vào chiếc bánh kem sinh nhật năm tầng khổng lồ đặt ngay cạnh đó!
-
-Bộp! Rầm!
-
-Chiếc bánh kem sụp đổ tan tành, kem tươi màu trắng xóa và mứt dâu tây đỏ lòm dính bê bết từ đầu đến chân thiên kim tiểu thư họ Bạch! Ả ngẩng đầu lên với bộ mặt lem luốc như một chú hề xiếc thất bại, vừa nhục nhã vừa sợ hãi khóc thét lên giữa tiếng cười ồ của toàn thể quan khách!
-
-Trong lúc lực lượng bảo vệ vội vã đưa Bạch Nhược Vi ra ngoài cấp cứu sự cố, Lục Cảnh Hoài quay sang nhìn Cố Cẩm Chi.
-
-Cô nàng đang vội vã lấy khăn tay che miệng, đôi vai gầy rung lên bần bật như đang khóc thương cho đồng loại, nhưng tiếng lòng bên trong thì đang nổ pháo hoa râm ran:
-
-Trời ơi cứu tui cứu tui! Cười chết mất thôi haha! Màn úp sọt bánh kem thế kỷ này xứng đáng nhận giải Oscar! Đáng đời cái thói rắp tâm hại người! Mà công nhận sếp mình tỉnh đòn thật, một chiêu gậy ông đập lưng ông chuẩn không cần chỉnh! Tối nay về phải thưởng cho sếp mười điểm thanh lịch không có nhưng! Cơ mà cái đĩa thịt bò nướng đằng kia sắp bị người ta gắp hết rồi, sếp ơi mau tha cho tui ra ăn đi mà!
-
-Lục Cảnh Hoài khẽ lắc đầu, trong mắt vô thức hiện lên nét dịu dàng ấm áp mà chính anh cũng không hề hay biết."""
-
-    part3_full = """Sự cố bánh kem chấn động giới thượng lưu chưa kịp lắng xuống thì cơn bão lớn nhất trong lịch sử gia tộc họ Lục chính thức bùng nổ tại đại hội cổ đông thường niên!
-
-Lục Chấn Phong sau khi bị vạch trần vụ hợp đồng lừa đảo đã thẹn quá hóa giận. Ông ta âm thầm câu kết với các cổ đông biến chất và quỹ đầu tư nước ngoài, thu gom cổ phần ngầm nhằm tiến hành một cuộc đảo chính lật đổ quyền lực của Lục Cảnh Hoài ngay tại sảnh chính tòa nhà tập đoàn.
-
-Chín giờ sáng, phòng họp hội nghị thượng đỉnh chật kín hàng trăm cổ đông và đại diện báo chí kinh tế.
-
-Lục Chấn Phong đứng trên bục phát biểu, tay giơ cao một tập tài liệu tài chính có dấu mộc đỏ, giọng nói đắc thắng, hùng hồn vang khắp hội trường: Kính thưa toàn thể cổ đông! Tôi nắm giữ bằng chứng xác thực cho thấy Chủ tịch Lục Cảnh Hoài trong ba năm qua đã lạm quyền, bí mật chuyển dịch nguồn vốn đầu tư ra nước ngoài gây thất thoát nghiêm trọng! Căn cứ theo điều lệ công ty, tôi đại diện cho bốn mươi mốt phần trăm cổ phần liên minh yêu cầu phế truất chức vụ Chủ tịch của Lục Cảnh Hoài ngay lập tức!
-
-Lời tuyên bố như một đòn sấm sét giáng xuống cả hội trường! Các cổ đông nhỏ lẻ bắt đầu hoang mang bàn tán xôn xao, ống kính máy quay chớp nháy liên tục hướng về phía Lục Cảnh Hoài.
-
-Lục Cảnh Hoài vẫn ngồi điềm tĩnh ở ghế chủ tọa, nhưng đôi bàn tay siết chặt dưới gầm bàn cho thấy tình thế đang vô cùng hiểm nghèo. Chú hai đã chuẩn bị đòn đánh này suốt nhiều tháng, các chứng từ giả mạo được làm quá tinh vi khiến đội ngũ luật sư tạm thời chưa thể chứng minh nguồn gốc ngay trong buổi sáng hôm nay.
-
-Đúng vào thời khắc sinh tử ngàn cân treo sợi tóc ấy, Cố Cẩm Chi bưng khay trà nóng thong thả bước vào phòng họp.
-
-Cô đặt nhẹ tách trà lài trước mặt Lục Cảnh Hoài, cúi đầu ngoan ngoãn: Mời Chủ tịch dùng trà ạ.
-
-Và ngay giây tiếp theo, bản tin thời sự đặc biệt trong não bộ của Lục Cảnh Hoài lại được kích hoạt với tần số cực nhanh!
-
-Má ơi! Ông chú hai này đúng là diễn viên gạo cội, mặt dày như bức tường thành Vạn Lý Trường Thành luôn á! Dám vu oan giá họa cho sếp yêu quý của tui! Chú nghĩ chú giấu kỹ lắm sao? Trong chiếc két sắt điện tử âm tường sau bức tranh phong cảnh tại căn biệt thự số tám khu nghỉ dưỡng ven biển của chú, đang cất giữ toàn bộ bản hợp đồng mua chuộc cổ đông, tài khoản ngân hàng Thụy Sĩ nhận tiền hối lộ và cả đoạn ghi âm chú thuê hacker làm giả chứng từ tài chính kìa! Mật mã két sắt thì siêu cấp quê mùa: ngày sinh của cô bồ nhí thứ ba là mười hai tháng năm năm một chín chín tám! Sếp ơi mau bấm máy gọi cho Cục Điều tra Kinh tế và Viện Kiểm sát ập vào hốt trọn ổ đi! Bằng chứng nằm mười mươi ở đó, chú hai chỉ có nước vào tù mà bóc lịch mọt gông thôi!
-
-Từng chi tiết sắc lẹm, từng con số mật mã rõ ràng như được in trên màn hình vi tính!
-
-Lục Cảnh Hoài không một giây chần chừ. Dưới gầm bàn, ngón tay anh nhanh như chớp gõ một tin nhắn mã hóa gửi thẳng cho vị Cục trưởng Cảnh sát Điều tra - người bạn thân thiết lâu năm của gia đình anh.
-
-Trên bục, Lục Chấn Phong thấy Lục Cảnh Hoài im lặng thì càng đắc chí, gõ mạnh chiếc búa gỗ: Nếu Lục Chủ tịch không thể đưa ra lời giải trình hợp lý, cuộc biểu quyết bãi nhiệm sẽ bắt đầu ngay bây giờ!
-
-Chờ một chút! Lục Cảnh Hoài chậm rãi đứng dậy. Khí chất vương giả ngút trời tỏa ra từ người anh khiến cả hội trường lập tức nín lặng.
-
-Anh nhìn thẳng vào người chú ruột, khóe môi nhếch lên một nụ cười nửa miệng đầy bí ẩn: Chú hai, chú có muốn cùng toàn thể cổ đông ở đây xem một đoạn video phát trực tiếp từ căn biệt thự số tám khu nghỉ dưỡng ven biển của chú không?
-
-Sắc mặt Lục Chấn Phong đột ngột biến sắc, tim ông ta đập thót một cái: Cậu... cậu nói nhảm nhí cái gì đó?
-
-Đúng lúc ấy, màn hình led khổng lồ bốn trăm inch ở trung tâm hội trường bỗng nhiên bật sáng!
-
-Hình ảnh hiện lên là các cán bộ điều tra thuộc Bộ Công an đang đọc lệnh khám xét khẩn cấp ngay tại phòng ngủ biệt thự của Lục Chấn Phong! Dưới sự chứng kiến của kiểm sát viên, bức tranh phong cảnh được gỡ xuống, một cán bộ bấm đúng dãy số một hai không năm chín tám... Chiếc két sắt mở toang, để lộ hàng cọc tiền đô la, vàng thỏi và toàn bộ tài liệu gốc vạch trần âm mưu đảo chính cùng cuốn sổ tay ghi chép hối lộ nghìn tỷ!
-
-Chiếc búa gỗ trên tay Lục Chấn Phong rơi bịch xuống sàn đá. Ông ta run rẩy quỵ sụp hai đầu gối, hai mắt trợn trừng không thể tin nổi vào những gì đang diễn ra trước mắt!
-
-Toàn bộ cổ đông và phóng viên báo chí đồng loạt đứng dậy vỗ tay vang dội như sấm! Công lý đã được thực thi một cách ngoạn mục và chấn động nhất lịch sử thương trường!
-
-Cảnh sát tư pháp lập tức tiến vào còng tay Lục Chấn Phong đưa đi giữa sự khinh bỉ của toàn thể hội trường.
-
-Khi cơn bão tan đi, Lục Cảnh Hoài bước đến trước mặt Cố Cẩm Chi. Dưới ánh đèn rực rỡ của đại sảnh hội nghị, vị tổng tài quyền lực nhất thành phố bất ngờ nắm lấy bàn tay nhỏ nhắn của cô thư ký thực tập, kéo nhẹ cô vào lòng trước sự chứng kiến ngỡ ngàng của hàng trăm con người.
-
-Anh cúi đầu, ghé sát vào tai cô, khẽ thì thầm bằng chất giọng trầm ấm đầy mê hoặc:
-
-Cẩm Chi, cảm ơn tiếng lòng cứu mạng của em suốt thời gian qua. Từ hôm nay, em không cần phải làm thư ký vất vả nữa... Tôi muốn mời em giữ một vị trí duy nhất trong cuộc đời tôi: Bà Lục, Phu nhân Chủ tịch tập đoàn Lục Thị!
-
-Cả hội trường nổ tung trong tiếng reo hò và chúc phúc cuồng nhiệt!
-
-Cố Cẩm Chi đờ đẫn cả người, hai mắt trợn tròn nhìn người đàn ông hoàn mỹ trước mặt, trong đầu tiếng lòng thét lên một tiếng thất thanh chấn động địa cầu:
-
-Ủa alo cái gì dợ?! Tui chỉ là con bé làm công ăn lương muốn hóng hớt drama kiếm tiền thưởng tết thôi mà! Sao tự nhiên lại biến thành Phu nhân Tổng tài thế này?! Khoan đã sếp ơi... làm phu nhân thì một tháng được bao nhiêu tiền tiêu vặt vậy sếp?! Trả lời tui mau đồ tổng tài cơ hội kia ơi!
-
-Lục Cảnh Hoài không nhịn được nữa, bật cười sảng khoái, ôm chặt lấy cô gái nhỏ vào lòng giữa tràng pháo tay rộn rã của cả khán phòng!"""
-
+    story_title = title if title else "Thư Ký Cá Mặn Nghe Tiếng Lòng Sếp: Tiếng Lòng Chê Sếp Tổng Khiến Cả Công Ty Dậy Sóng"
+    part1_full = "Bản hợp đồng liên doanh năm trăm tỷ nằm mở sẵn trên mặt bàn gỗ gụ của phòng họp hội đồng quản trị. Sếp tổng Lục Cảnh Hoài vừa vặn nắp chiếc bút máy chuẩn bị ký tên, còn tôi đứng nép ở góc tường bưng khay trà hoa cúc mà trong bụng không nhịn được thở dài ngao ngán. Tôi vừa bưng khay trà bước vào phòng họp hội đồng quản trị lúc chín giờ sáng, thì thấy sếp tổng Lục Cảnh Hoài đang cầm bút chuẩn bị ký vào bản hợp đồng liên doanh năm trăm tỷ.\n\nTôi đứng nép ở góc tường, hai tay ôm khư khư cuốn sổ tay công việc, làm một cô nhân viên thử việc gương mẫu với mức lương bảy triệu một tháng. Nhìn sếp tổng ngồi ở ghế chủ tọa, vest đen phẳng phiu, mặt lạnh như tiền nhưng lại phối chiếc cà vạt hoa hòe màu cánh sen chấm bi chói lóa, tôi không nhịn được mà thầm gào thét trong bụng:\n\n\"Dừng bút lại đồ ngốc ơi là đồ ngốc! Bản hợp đồng này mà ký xuống là mất trắng năm trăm tỷ mồ hôi nước mắt của công ty đấy! Chưa kể hôm nay sếp phối đồ kiểu gì mà chiếc cà vạt hồng chấm bi nhìn y chang con công đang xòe đuôi đi tìm bạn tình thế kia, gu thời trang âm vô cực đúng là phí hoài một gương mặt đẹp trai!\"\n\nAi ngờ đâu, ngay khi dòng suy nghĩ của tôi vừa dứt, bàn tay đang cầm bút ký của sếp bỗng khựng lại giữa không trung!\n\nĐầu bút của anh ấy chỉ còn cách dòng chữ ký đúng một milimét. Sếp ngẩng phắt đầu lên, ánh mắt sắc như dao cạo quét qua toàn bộ phòng họp tầng ba mươi. Ba mươi vị trưởng phòng và phó giám đốc vẫn đang im phăng phắc nín thở chờ đợi. Hoàn toàn không có ai mở miệng!\n\nSếp Lục cau mày, cất giọng trầm thấp đầy vẻ uy quyền: \"Ai vừa lên tiếng đấy?\"\n\nMấy ông giám đốc nhìn nhau ngơ ngác, vội xua tay lia lịa: \"Dạ thưa Tổng giám đốc, phòng họp im lặng tuyệt đối, không ai dám nói câu nào đâu ạ!\"\n\nSếp đưa mắt nhìn quanh một vòng, cuối cùng ánh mắt dừng lại ngay trên khuôn mặt của tôi. Tôi lúc này đang cố hết sức mở to đôi mắt cận thị sau cặp kính tròn xoe, trưng ra vẻ mặt nai tơ ngơ ngác vô tội nhất có thể. Tôi thầm nghĩ trong bụng:\n\n\"Ủa sếp nhìn tôi làm chi vậy trời? Tôi chỉ là con bé thực tập sinh thử việc ngày thứ ba thôi nha! Mau dừng bút lại đi đồ cứng đầu! Lật ngay sang trang mười bốn, nhìn vào dòng chữ in nhỏ xíu ở điều khoản ba chấm hai kìa! Bọn đối tác đang gài bẫy quy đổi tỷ giá ngoại tệ kèm điều khoản bồi thường gấp mười lần nếu chậm tiến độ một ngày đấy! Đội ngũ pháp chế ăn lương trăm triệu mà mắt để dưới gót chân hay sao mà duyệt được cái hợp đồng bán mạng này vậy trời!\"\n\nTôi vừa nghĩ xong câu đó, thì thấy đồng tử của sếp Lục bỗng nhiên co giật nhẹ một cái!\n\nAnh ấy nhìn tôi trân trân như vừa nhìn thấy người ngoài hành tinh. Rồi không nói một lời nào, sếp lập tức lật mạnh tập tài liệu dày cộp đến đúng trang mười bốn. Ngón tay thon dài của sếp lướt nhanh qua từng dòng chữ in li ti ở góc dưới cùng.\n\nVà chỉ ba giây sau, sắc mặt sếp Lục đen kịt lại như đáy nồi!\n\nSếp đập mạnh tập tài liệu xuống mặt bàn kính một tiếng cạch rõ đanh, đứng phắt dậy nhìn thẳng vào gã giám đốc dự án đang ngồi đối diện:\n\n\"Giám đốc Phong! Anh giải thích thế nào về điều khoản phạt bồi thường tỷ giá bất thường ở trang mười bốn này? Ai là người trực tiếp đàm phán hợp đồng này với đối tác?\"\n\nGã giám đốc dự án mặt cắt không còn một hột máu, mồ hôi trán vã ra như tắm, ấp úng không thốt nên lời: \"Dạ... việc này... chắc do bên thư ký soạn thảo sơ suất...\"\n\n\"Sơ suất một điều khoản làm công ty thiệt hại năm trăm tỷ sao?\" - Giọng sếp Lục lạnh như băng: \"Bảo vệ đâu! Lập tức niêm phong toàn bộ tài liệu dự án này, mời bộ phận thanh tra nội bộ và cơ quan điều tra kinh tế đến làm việc ngay cho tôi!\"\n\nCả phòng họp rơi vào cảnh náo loạn trong gang tấc. Mấy ông sếp lớn xì xào hoảng loạn, còn tôi thì len lén thở phào nhẹ nhõm, tiếng lòng bên trong lại bắt đầu rộn ràng mở tiệc:\n\n\"Haha! Đáng đời cái quân ăn hoa hồng sau lưng công ty! Cơ mà sếp ngầu thật đấy, đập bàn một cái nhìn uy quyền ghê chưa! Mỗi tội chiếc cà vạt hồng chấm bi vẫn là một vết nhơ thời trang không thể gột rửa! Tan họp mau mau đi sếp ơi, mười hai giờ trưa rồi, tôi muốn xuống căn tin tầng một ăn cơm sườn nướng mười lăm ngàn quá trời rồi nè!\"\n\nKhóe môi sếp Lục giật giật kịch liệt. Anh ấy quay lưng bước nhanh ra khỏi phòng họp, đi ngang qua chỗ tôi đứng, khẽ liếc mắt nhìn tôi một cái thật sâu. Tôi vội cúi đầu chào thật lễ phép, bụng thầm nghĩ: Sếp này khó tính ghê, liếc người ta hoài!\n\nNhưng tôi đâu có ngờ rằng, chỉ đúng ba mươi phút sau, phòng nhân sự đã gửi thông báo khẩn: Tôi – Cố Cẩm Chi – được thăng chức thần tốc từ thực tập sinh quèn lên làm Thư ký riêng của Tổng giám đốc, mức lương nhảy vọt từ bảy triệu lên ba mươi triệu một tháng!\n\nCầm quyết định bổ nhiệm trên tay, tôi run rẩy không tin vào mắt mình. Ba mươi triệu! Một tháng tôi có thể ăn được bao nhiêu đĩa cơm sườn, uống được bao nhiêu ly trà sữa full topping chứ! Tôi cảm thấy sếp Lục bỗng nhiên đẹp trai ngời ngời, chiếc cà vạt hồng chấm bi ban nãy nhìn kỹ lại hóa ra cũng có nét... nghệ thuật đương đại!\n\nThế nhưng niềm vui ngắn chẳng tày gang. Nhiệm vụ đầu tiên ở vị trí thư ký riêng của tôi là tháp tùng sếp tham dự buổi tiệc tối ngoại giao tại khách sạn năm sao.\n\nBước vào sảnh tiệc lộng lẫy, tôi mặc bộ đầm công sở đơn giản, tay ôm cuốn sổ ghi chép, lặng lẽ đứng nép bên cạnh quầy buffet bánh ngọt ngắm nghía đồ ăn. Còn sếp Lục trong bộ âu phục đặt may cao cấp vừa xuất hiện đã trở thành tâm điểm của cả khán phòng.\n\nĐúng lúc đó, một cô nàng tiểu thư kiêu kỳ diện chiếc đầm đỏ xẻ tà quyến rũ – Bạch Nhược Vi, con gái đối tác lớn – lướt đôi giày cao gót tiến lại gần sếp tôi. Cô ta nở nụ cười ngọt ngào như rót mật vào tai, tay bưng hai ly rượu vang đỏ đưa về phía sếp Lục:\n\n\"Anh Cảnh Hoài, lâu lắm rồi không gặp! Chúc mừng anh vừa ký kết thành công dự án mới. Em có thể vinh dự mời anh một ly rượu mừng này được không?\"\n\nSếp Lục khẽ gật đầu, đưa tay định đón lấy ly rượu vang.\n\nTôi đứng ở góc bàn tiệc, nhìn thấy nụ cười giả lả của cô nàng đầm đỏ thì trực giác mách bảo có gì đó sai sai. Tôi tập trung nhìn kỹ vào chiếc ly rượu trên tay cô ta, trong đầu bỗng nhảy số liên tục:\n\n\"Ối dồi ôi! Chị gái trà xanh ngàn năm tu luyện này lại bắt đầu giở trò mỹ nhân kế rồi! Nhìn cái bộ mặt ngây thơ e ấp kia kìa, bên ngoài thì ngọt ngào như kẹo bông gòn, bên trong thì mưu mô đen ngòm! Trong cái ly rượu vang đỏ trên tay phải của cô ta có bỏ thuốc an thần liều cao đấy! Sếp mà uống vào một ngụm là lăn đùng ra mê man ngay, rồi cô ta sẽ giả bộ dìu sếp lên phòng khách sạn sắp sẵn phóng viên chụp ảnh giường chiếu để ép cưới! Sếp ơi là sếp, đừng có dại gái mà uống nha, uống xong là mất cả đời trai tân lẫy lừng đấy!\"\n\nBàn tay sếp Lục vừa chạm vào thành ly rượu bỗng khựng lại như bị điện giật!\n\nAnh ấy từ từ quay đầu sang nhìn tôi. Qua cặp kính cận tròn xoe, tôi thấy mắt sếp đang bốc lên những tia lửa kỳ lạ. Sếp hít một hơi thật sâu, rồi quay lại nhìn cô nàng tiểu thư đầm đỏ, cất giọng từ tốn:\n\n\"Bạch tiểu thư, tôi trước giờ không có thói quen uống rượu của người khác đưa. Hay là... cô uống ly rượu này trước để tỏ lòng thành ý đi?\"\n\nKhuôn mặt trang điểm tinh xảo của Bạch Nhược Vi bỗng chốc cứng đờ lại. Đôi bàn tay cầm ly rượu của cô ta bắt đầu run bần bật!\n\nCô nàng đầm đỏ ấp úng lùi lại: 'Anh... anh Cảnh Hoài nói đùa rồi...'. Bị dồn vào chân tường, cô ta lúng túng trượt gót giày ngã nhào về phía trước, cả ly rượu vang hắt tung tóe vào chiếc bánh kem năm tầng khổng lồ bên cạnh! Tiếng la hét hỗn loạn vang rền cả sảnh tiệc!"
+    part2_full = "Chiếc bánh kem sinh nhật năm tầng đổ ập xuống giữa sảnh tiệc khách sạn năm sao, kem tươi trắng xóa và mứt dâu tây bết đầy lên chiếc váy dạ hội đắt tiền của tiểu thư Bạch Nhược Hân. Cả sảnh tiệc năm sao bỗng chốc rơi vào cảnh hỗn loạn chưa từng có.\n\nChiếc bánh kem sinh nhật năm tầng khổng lồ bị đè bẹp dí, kem tươi trắng xóa và mứt dâu tây đỏ lòm dính bê bết từ đầu đến chân cô tiểu thư kiêu kỳ Bạch Nhược Vi! Cô ta ngẩng đầu lên với bộ mặt lem luốc như một chú hề, vừa nhục nhã vừa sợ hãi khóc thét lên giữa hàng trăm ánh mắt soi mói và tiếng cười khúc khích của quan khách xung quanh.\n\nTôi đứng ở góc bàn tiệc, vội vàng lấy hai tay che miệng lại, cả người run lên bần bật vì... cố nhịn cười! Tiếng lòng bên trong tôi lúc này đang nổ pháo hoa tưng bừng:\n\n\"Trời đất ơi cứu tôi với! Cười chết mất thôi haha! Màn úp sọt bánh kem thế kỷ này xứng đáng nhận mười giải Oscar! Đáng đời cái thói rắp tâm chuốc thuốc hại người! Mà công nhận sếp mình tỉnh đòn thật đấy, một chiêu gậy ông đập lưng ông mượt mà không tì vết! Cơ mà cái đĩa bò nướng sốt tiêu đen đằng kia sắp bị người ta gắp hết rồi, sếp ơi mau tha cho tôi ra ăn đi mà, đứng nãy giờ bụng tôi biểu tình sôi sùng sục rồi nè!\"\n\nTôi vừa nghĩ xong thì thấy sếp Lục thong thả bước lại gần chỗ tôi đứng. Anh ấy đưa chiếc khăn tay lụa trong túi áo cho tôi, giọng nói trầm ấm pha chút ý cười kín đáo:\n\n\"Lau miệng đi. Cười đến méo cả kính rồi kìa.\"\n\nTôi giật thót tim, vội vàng nhận lấy chiếc khăn tay, ấp úng cúi đầu: \"Dạ... em đâu có cười đâu sếp, em đang thương xót cho chị Bạch tiểu thư mà...\"\n\n\"Thương xót mà đòi ăn bò nướng sốt tiêu đen sao?\" - Sếp Lục buông một câu bâng quơ làm tôi chết lặng tại chỗ!\n\nỦa? Tôi tròn mắt nhìn sếp. Sao sếp biết tôi muốn ăn bò nướng? Rõ ràng tôi mới chỉ nghĩ trong đầu thôi mà? Hay là mặt tôi hiện lên bốn chữ \"thèm ăn bò nướng\" thật?\n\nTôi nuốt nước bọt cái ực, không dám nghĩ linh tinh nữa, ngoan ngoãn đi theo sau lưng sếp ra về.\n\nThế nhưng, chuỗi ngày bình yên của một cô thư ký cá mặn như tôi chưa kéo dài được bao lâu thì một cơn đại địa chấn ập đến tập đoàn.\n\nMột tuần sau, công ty tổ chức Đại hội cổ đông thường niên để bầu lại Hội đồng quản trị. Đây là cuộc chiến sinh tử giữa phe sếp Lục và phe của ông chú ruột Lục Chấn Phong – người nắm giữ ba mươi lăm phần trăm cổ phần và luôn tìm cách lật đổ cháu trai để thâu tóm toàn bộ tập đoàn.\n\nChín giờ sáng, phòng đại hội chật kín hơn hai trăm cổ đông lớn nhỏ cùng đông đảo phóng viên kinh tế. Không khí ngột ngạt và căng thẳng như một bãi chiến trường không tiếng súng.\n\nTôi ngồi ở hàng ghế thư ký phía sau sếp Lục, tay cầm bút ghi chép biên bản cuộc họp.\n\nĐúng lúc cuộc họp bắt đầu, ông chú Lục Chấn Phong bất ngờ đứng dậy, đập mạnh tập hồ sơ tài chính dày cộp xuống bàn chủ tọa, cất giọng sang sảng đầy vẻ đắc thắng:\n\n\"Kính thưa toàn thể quý cổ đông! Hôm nay, tôi xin công bố một sự thật chấn động: Tổng giám đốc Lục Cảnh Hoài trong sáu tháng qua đã có hành vi lạm quyền, bí mật đầu tư thua lỗ hơn tám trăm tỷ đồng vào một dự án năng lượng tái tạo ảo ở nước ngoài, gây thất thoát nghiêm trọng tài sản của công ty! Đây là toàn bộ báo cáo kiểm toán và chứng từ sao kê ngân hàng có dấu đỏ xác nhận!\"\n\nCả hội trường ba trăm người lập tức nổ tung như một quả bom! Tiếng xì xào bàn tán, tiếng đập bàn phẫn nộ và ánh đèn flash máy ảnh chớp nháy liên tục hướng thẳng vào sếp Lục.\n\nMấy vị cổ đông lớn tuổi bắt đầu đứng dậy chất vấn gay gắt: \"Nếu đúng như vậy thì anh Lục không còn đủ tư cách ngồi ở vị trí Tổng giám đốc nữa! Chúng tôi yêu cầu miễn nhiệm ngay lập tức!\"\n\nSếp Lục vẫn ngồi bất động trên ghế chủ tọa, khuôn mặt lạnh lùng không chút biểu cảm. Nhưng tôi ngồi ngay phía sau, nhìn thấy hai bàn tay anh ấy đang siết chặt dưới gầm bàn đến mức nổi gân xanh. Đội ngũ luật sư của sếp đang toát mồ hôi hột thì thầm trao đổi, tình thế hoàn toàn bị động vì đây là tài liệu mật bị ngụy tạo vô cùng tinh vi.\n\nTôi ngồi ở sau, nhìn vẻ mặt đắc thắng như mở cờ trong bụng của ông chú Lục Chấn Phong, trong đầu bỗng lóe lên một ký ức kỳ lạ:\n\n\"Ủa từ từ nha! Cái tập báo cáo kiểm toán dấu đỏ kia nhìn quen quen vậy cà? Để tôi nhớ lại xem... Đúng rồi! Hôm qua lúc tôi xuống phòng văn thư photo tài liệu lúc bảy giờ tối, tôi thấy gã trợ lý của ông chú này đang lén lút dùng con dấu giả trong phòng lưu trữ! Chưa hết, cái dự án năng lượng ảo tám trăm tỷ kia thực chất là do chính ông chú này câu kết với sàn tiền ảo quốc tế để rửa tiền! Toàn bộ file dữ liệu gốc và video camera hành trình lưu lại cảnh ông ta nhận vali tiền mặt từ tay trùm lừa đảo đang nằm trong chiếc thẻ nhớ màu đen giấu dưới đế chiếc bật lửa Zippo mạ vàng mà ông ta đang cầm trên tay kìa!\"\n\nLúc hai người cùng bước vào thang máy riêng để xuống tầng hầm lấy xe, bầu không khí bỗng nhiên trở nên im ắng lạ thường.\n\nTôi đứng nép sát vào góc thang máy, mắt nhìn chăm chú vào những con số tầng đang nhảy lùi dần từ tầng sáu mươi xuống. Trong đầu tôi lúc này như một cái đài phát thanh bị nhiễu sóng, nhảy số liên tục không ngừng:\n\n\"Ủa sao thang máy đi chậm vậy trời? Đứng cạnh sếp áp lực ghê á, người gì đâu mà cao mét tám lăm, mùi nước hoa gỗ trầm hương thơm xỉu lên xỉu xuống. Mỗi tội mặt lúc nào cũng lạnh như băng, cứ như ai giật nợ tám tỷ không bằng. Cơ mà hồi nãy lúc sếp đưa khăn tay cho mình, ngón tay sếp chạm nhẹ vào tay mình một cái, ấm ghê ta... Ê bậy bạ nha Cẩm Chi! Mày chỉ là con bé thực tập thử việc quèn thôi, đừng có mà mơ mộng hão huyền trèo cao ngã đau nha con gái! Mục tiêu tối thượng của mày là kiếm đủ tiền mua một căn chung cư nhỏ và nuôi hai con mèo mướp, nhớ chưa!\"\n\nTôi vừa tự nhắc nhở bản thân xong, thì bất ngờ thấy sếp Lục đứng bên cạnh khẽ hắng giọng một tiếng. Anh ấy đưa tay lên che miệng, bờ vai khẽ rung lên như đang cố nhịn cười.\n\nRồi trước ánh mắt ngơ ngác của tôi, sếp bất ngờ thò tay vào túi áo khoác, lấy ra một chiếc hộp giấy nhỏ xinh xắn còn bốc khói nghi ngút, đưa thẳng về phía tôi:\n\n\"Cầm lấy đi. Bánh trứng nướng phô mai mới ra lò ở tiệm bánh đối diện. Ăn tạm lót dạ đi, rồi lát nữa đi ăn cơm sườn sau.\"\n\nMắt tôi sáng rực lên như vớ được vàng, vội vàng đón lấy chiếc hộp: \"Ôi em cảm ơn Tổng giám đốc nhiều lắm ạ! Sếp đúng là vị cứu tinh của dạ dày em!\"\n\nSếp Lục khẽ mỉm cười, ánh mắt nhìn tôi dịu dàng đến mức làm tim tôi đập thình thịch: \"Ăn đi, đừng có vừa ăn vừa nói xấu tôi trong bụng nữa là được.\"\n\nCâu nói đó làm tôi suýt chút nữa nghẹn miếng bánh trứng trong cổ họng! May mà cửa thang máy vừa lúc mở 'ting' một tiếng cứu nguy, tôi mới vội vàng xách túi chạy tót ra ngoài.\n\nTôi vừa thầm nghĩ đến chữ \"bật lửa Zippo mạ vàng\", thì sếp Lục phía trước bỗng nhiên đứng phắt dậy!\n\nAnh ấy hít một hơi thật sâu, ánh mắt sắc như đại bàng quét thẳng vào ông chú đang đứng trên bục phát biểu!\n\nSếp Lục bước từng bước đĩnh đạc tiến thẳng về phía Lục Chấn Phong, cất giọng sang sảng làm cả hội trường nín thở: 'Chú hai, chú diễn kịch đủ chưa? Chú có dám giao chiếc bật lửa Zippo mạ vàng trong túi áo chú ra đây cho ban kiểm soát kiểm tra không?' Sắc mặt Lục Chấn Phong lập tức biến dạng trong sự hoảng loạn tột cùng!"
+    part3_full = "Hai trăm cổ đông và khách mời trong hội trường đồng loạt quay đầu nhìn chằm chằm vào túi áo vest của phó chủ tịch Lục Chấn Phong, khiến nụ cười đắc thắng trên môi ông ta cứng đờ ngay tức khắc. Cả hội trường hai trăm con người bỗng chốc im phăng phắc như tờ.\n\nMọi ánh mắt đổ dồn về phía chiếc túi áo vest của ông chú Lục Chấn Phong. Nụ cười đắc thắng trên môi ông ta bỗng chốc méo xệch đi. Bàn tay đang đút trong túi áo của ông ta khẽ giật bắn một cái, vẻ mặt hoang mang tột độ như thể vừa bị người ta lột trần tim gan phèo phổi giữa thanh thiên bạch nhật!\n\n\"Cậu... cậu nói linh tinh cái gì đấy? Một chiếc bật lửa thì liên quan gì đến báo cáo tài chính thất thoát tám trăm tỷ?\" - Lục Chấn Phong cố gằn giọng để che giấu đi sự run rẩy trong hơi thở.\n\nSếp Lục khoanh tay trước ngực, nụ cười trên môi sắc lạnh như băng:\n\n\"Có liên quan hay không, chú cứ đặt chiếc bật lửa đó lên bàn này là rõ ngay! Hay là... chú cần tôi nhờ lực lượng bảo vệ và cơ quan thanh tra kiểm tra giúp chú?\"\n\nTôi ngồi ở hàng ghế thư ký, nhìn thấy ông chú đang toát mồ hôi hột thì trong bụng lại bắt đầu hò hét cổ vũ:\n\n\"Đúng rồi sếp ơi! Ép tới bến luôn đi sếp! Cái bật lửa đó xoay ngược phần đáy ba vòng là chiếc thẻ nhớ siêu nhỏ Micro-SD văng ra liền! Trong đó có cả file ghi âm ông ta hứa chia ba mươi phần trăm tiền hoa hồng cho tay giám đốc kiểm toán giả mạo đấy! Phen này thì ông chú tới số rồi, đi ăn cơm tù mọt gông nha con trai!\"\n\nSếp Lục nghe thấy tiếng lòng của tôi thì khóe môi khẽ nhếch lên một nụ cười đầy tự tin. Anh ấy bước thêm một bước, giọng nói đanh thép vang vọng khắp hội trường qua hệ thống micro:\n\n\"Chú hai, nếu chú không tự lấy ra, tôi sẽ mời Trưởng ban Thanh tra nội bộ lấy giúp chú. Chiếc bật lửa Zippo mạ vàng đó, chỉ cần xoay ngược phần đế ba vòng là chiếc thẻ nhớ chứa toàn bộ chứng từ rửa tiền tám trăm tỷ của chú sẽ hiện ra!\"\n\nLời tuyên bố chính xác đến từng chi tiết nhỏ nhất như một tiếng sét đánh ngang tai Lục Chấn Phong!\n\nÔng ta hoảng loạn đến mức lùi vội ra phía sau, chân vướng vào chân ghế ngã chúi xuống sàn nhà. Chiếc bật lửa Zippo mạ vàng từ trong túi áo trượt ra, lăn lông lốc trên mặt thảm đỏ ngay dưới chân sếp Lục!\n\nSếp Lục thong thả cúi xuống nhặt chiếc bật lửa lên. Trước sự chứng kiến của hơn hai trăm cổ đông và ống kính của hàng chục phóng viên, anh ấy nhẹ nhàng vặn ngược phần đế kim loại ba vòng.\n\nTách!\n\nPhần đáy bật lửa bật mở, một chiếc thẻ nhớ màu đen bé xíu rơi ra ngay trên lòng bàn tay sếp Lục!\n\nCả hội trường ồ lên những tiếng kinh ngạc tột độ! Lục Chấn Phong mặt cắt không còn một giọt máu, hai đầu gối nhũn ra ngồi bệt dưới đất, miệng lắp bắp: \"Không thể nào... Làm sao mày biết được bí mật này... Ai đã phản bội tao...\"\n\n\"Không ai phản bội chú cả,\" - Sếp Lục mỉm cười, ánh mắt khẽ liếc về phía cô thư ký nhỏ đang ngồi ngơ ngác ôm cuốn sổ tay: \"Chỉ là người có tâm địa bất lương thì trời không dung đất không tha mà thôi!\"\n\nNgay sau đó, chiếc thẻ nhớ được kết nối trực tiếp với máy tính trung tâm. Toàn bộ các đoạn ghi âm giao dịch rửa tiền, hợp đồng chuyển nhượng ngầm cổ phần và các video thỏa thuận phi pháp của Lục Chấn Phong hiện lên rõ mồn một trên màn hình lớn.\n\nCác cổ đông đồng loạt đứng dậy phẫn nộ yêu cầu bắt giữ kẻ phản bội. Lực lượng bảo vệ cùng cơ quan công an kinh tế đã có mặt tại cửa hội trường, lập biên bản tạm giữ Lục Chấn Phong và phong tỏa toàn bộ tài sản liên quan.\n\nCuộc đảo chính thất bại hoàn toàn. Đại hội cổ đông kết thúc với sự ủng hộ tuyệt đối một trăm phần trăm dành cho sếp Lục Cảnh Hoài!\n\nNăm giờ chiều hôm đó, khi mọi người trong công ty đã về hết, tôi đang lúi húi thu dọn đồ đạc trên bàn làm việc thì cửa phòng Tổng giám đốc bật mở.\n\nSếp Lục bước ra, đã cởi chiếc áo vest ngoài, chỉ mặc chiếc sơ mi trắng xắn tay áo phong độ ngời ngời. Anh ấy bước đến trước bàn tôi, đặt xuống một chiếc hộp quà thắt nơ đỏ xinh xắn.\n\nTôi chớp chớp mắt nhìn sếp, trong đầu thầm nghĩ: \"Ủa sếp tặng quà gì vậy cà? Đừng bảo là thưởng nóng một cọc tiền nha trời, hay là sếp tính trừ lương vì hôm nay tôi ghi biên bản chậm?\"\n\nSếp Lục bật cười thành tiếng. Nụ cười đầu tiên tôi nhìn thấy suốt mấy tháng làm việc, đẹp trai đến mức làm tim tôi lỡ một nhịp!\n\n\"Mở ra xem đi.\" - Sếp bảo.\n\nTôi run run mở nơ hộp quà. Bên trong là một chiếc thẻ ngân hàng mạ vàng và một xấp voucher ăn uống trọn đời tại chuỗi nhà hàng thịt nướng cao cấp nhất thành phố!\n\n\"Từ hôm nay, cô được chuyển sang vị trí Trợ lý đặc biệt của Chủ tịch, lương cứng một trăm triệu một tháng. Chiếc thẻ này là thưởng nóng cho thành tích xuất sắc hôm nay.\" - Sếp Lục nhìn tôi bằng ánh mắt ấm áp khác thường.\n\nTôi sướng đến mức mắt sáng rực như hai bóng đèn pha, tiếng lòng bên trong lại bắt đầu nhảy múa:\n\n\"Á á á! Một trăm triệu một tháng! Lại còn được ăn thịt nướng miễn phí cả đời! Sếp ơi sếp là bồ tát tái thế, là thiên thần hạ phàm! Từ nay sếp bảo tôi đi hướng đông tôi tuyệt đối không dám đi hướng tây, sếp bảo tôi thức đêm làm báo cáo tôi cũng vui vẻ chấp nhận luôn! Mỗi tội cái gu phối cà vạt của sếp sau này để tôi chọn giùm cho nha, chứ nhìn cà vạt hồng chấm bi đau mắt quá trời!\"\n\nSếp Lục khẽ hắng giọng, đưa tay sờ lên chiếc cà vạt của mình, khóe môi cong lên một nụ cười đầy cưng chiều:\n\n\"Được rồi, từ mai cho phép cô chọn cà vạt cho tôi mỗi sáng. Còn bây giờ... có muốn đi ăn thịt nướng bò sốt tiêu đen với tôi không?\"\n\nTôi ngẩng phắt đầu lên, miệng há hốc kinh ngạc nhìn người đàn ông trước mặt:\n\n\"Sếp... sếp nghe thấy hết những gì em nghĩ sao?\"\n\nSếp Lục mỉm cười nháy mắt một cái đầy bí ẩn, xoay người bước ra cửa thang máy:\n\n\"Đi nhanh lên, chậm chân là hết bàn ngon đấy, cô trợ lý cá mặn của tôi!\n\nLúc tôi bước ra khỏi tòa nhà tập đoàn, trời đã bắt đầu nhá nhem tối. Gió mùa thu nhè nhẹ thổi qua những tán cây bên đường mang theo không khí mát mẻ, dễ chịu vô cùng.\n\nMột chiếc siêu xe Maybach màu đen tuyền bóng loáng bỗng từ từ lăn bánh đỗ xịch ngay trước mặt tôi. Cửa kính xe hạ xuống, để lộ gương mặt góc cạnh, điển trai ngời ngời của sếp Lục.\n\nAnh ấy nghiêng đầu, cất giọng trầm ấm: \"Lên xe đi, tôi đưa cô về.\"\n\nTôi giật thót tim, vội vàng xua tay lia lịa: \"Dạ thôi phiền sếp lắm ạ! Em đi xe buýt quen rồi, với lại nhà em ở tận ngoại thành xa xôi hẻo lánh...\"\n\n\"Cô tính để chiếc đài phát thanh trong đầu cô gào thét suốt chặng đường xe buýt à?\" - Sếp Lục nhướn mày, khóe môi nhếch lên một nụ cười trêu chọc: \"Hay là muốn tôi trừ vào tiền thưởng nóng hôm nay?\"\n\nNghe thấy hai chữ \"tiền thưởng\", tôi lập tức ngoan ngoãn như một chú cún con, vội vàng mở cửa xe bước vào ghế phụ: \"Dạ em lên liền đây ạ! Sếp có lòng thì em xin có dạ!\"\n\nNgồi trên chiếc ghế da êm ái của siêu xe, tôi cố hết sức hít thở thật sâu, trong đầu cố gắng niệm thần chú: \"Tĩnh tâm, tĩnh tâm, không được nghĩ linh tinh, không được hát nhạc thiếu nhi, không được chê sếp...\"\n\nThế nhưng chiếc đài phát thanh độc quyền dường như không chịu nghe lời chủ nhân của nó. Bản nhạc K-pop sôi động tự nhiên cứ vang lên rộn ràng trong đầu tôi: \"Ddu-du ddu-du du... Sếp đẹp trai quá... xe sếp thơm quá... ghê chưa ghê chưa...\"\n\nBên cạnh tôi, sếp Lục đang lái xe bỗng bật cười thành tiếng. Anh ấy với tay bật hệ thống loa trên xe, và điều kỳ diệu là... bài hát phát ra từ loa xe lại chính là bản nhạc K-pop mà tôi đang vừa hát thầm trong đầu!\n\nTôi quay ngoắt sang nhìn sếp, mặt đỏ bừng lên như quả cà chua chín mộng.\n\nSếp Lục vừa lái xe vừa đưa một tay sang khẽ xoa nhẹ lên mái tóc tôi, ánh mắt ngập tràn sự dịu dàng và cưng chiều chưa từng thấy:\n\n\"Cố Cẩm Chi, nghe cho kỹ đây: Từ ngày đầu tiên cô bước vào phòng họp, tôi đã nghe thấy tất cả những gì cô nghĩ trong đầu rồi. Nhưng cô có biết điều thú vị nhất là gì không? Chính sự chân thật, thông minh và cả cái mỏ hỗn đáng yêu của cô... đã làm sống lại trái tim nguội lạnh bấy lâu nay của tôi đấy!\n\nBạn có muốn có một cô trợ lý biết đọc tâm lý và đáng yêu như thế này không? Hãy bình luận bên dưới nhé!"
     return {
-        "title": story_title,
-        "genre": "Sa Điêu Hài Hước",
-        "voice": "vi-VN-HoaiMyNeural",
-        "parts": [
-            {
-                "part_number": 1,
-                "badge_label": "[TẬP 1]",
-                "title": f"[TẬP 1] {story_title}",
-                "hook": "Thư ký giả ngốc ngơ ngác nhưng tiếng lòng bóc phốt sếp khiến cả phòng họp nhịn cười nội thương!",
-                "body": part1_full,
-                "cliffhanger": "Liệu Lục tổng có giữ được bình tĩnh khi nghe thấy những bí mật động trời tiếp theo?",
-                "call_to_action": "Bấm theo dõi kênh để đón xem Tập 2 siêu hài hước vào khung giờ tiếp theo nhé!",
-                "text": part1_full,
-                "full_text": part1_full
-            },
-            {
-                "part_number": 2,
-                "badge_label": "[TẬP 2]",
-                "title": f"[TẬP 2] {story_title}",
-                "hook": "Tiệc thượng lưu trà xanh giở trò chuốc thuốc, tiếng lòng thư ký vạch trần màn kịch úp sọt thế kỷ!",
-                "body": part2_full,
-                "cliffhanger": "Âm mưu đảo chính gia tộc khủng khiếp nào đang chờ đón họ ở đại hội cổ đông?",
-                "call_to_action": "Thả tim và đón xem Tập 3 - Hồi Kết bùng nổ ngay sau đây!",
-                "text": part2_full,
-                "full_text": part2_full
-            },
-            {
-                "part_number": 3,
-                "badge_label": "[TẬP 3 - KẾT]",
-                "title": f"[TẬP 3 - KẾT] {story_title}",
-                "hook": "Đại hội cổ đông lật kèo phút chót, màn cầu hôn bất ngờ của tổng tài khiến thư ký ngơ ngác!",
-                "body": part3_full,
-                "cliffhanger": "Hạnh phúc viên mãn của cặp đôi oan gia ngộ nghĩnh nhất giới thương trường!",
-                "call_to_action": "Cảm ơn các bạn đã lắng nghe trọn vẹn bộ truyện! Hãy bình luận cảm nghĩ và theo dõi kênh để đón xem bộ truyện mới tiếp theo nhé!",
-                "text": part3_full,
-                "full_text": part3_full
-            }
+        'title': story_title,
+        'genre': "Đời Sống",
+        'voice': "vi-VN-HoaiMyNeural",
+        'bgm_genre': "ROMANCE",
+        'parts': [
+            {'part_number': 1, 'badge_label': 'TẬP 1', 'title': f'[TẬP 1] {story_title}', 'text': part1_full, 'full_text': part1_full, 'body': part1_full},
+            {'part_number': 2, 'badge_label': 'TẬP 2', 'title': f'[TẬP 2] {story_title}', 'text': part2_full, 'full_text': part2_full, 'body': part2_full},
+            {'part_number': 3, 'badge_label': 'TẬP 3 - KẾT', 'title': f'[TẬP 3 - KẾT] {story_title}', 'text': part3_full, 'full_text': part3_full, 'body': part3_full},
         ]
     }

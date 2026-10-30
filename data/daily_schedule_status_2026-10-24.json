@@ -1,9 +1,9 @@
 {
   "_meta": {
     "date": "2026-10-24",
-    "last_published_timestamp": 1792804848.7487233,
-    "last_published_time_str": "2026-10-24 08:20:48",
-    "last_series_completed_timestamp": 1792800735.3399389
+    "last_published_timestamp": 1792851334.5151355,
+    "last_published_time_str": "2026-10-24 21:15:34",
+    "last_series_completed_timestamp": 1792851334.5712066
   },
   "20261024_slot_01_sadieu": {
     "slot_index": 1,
@@ -23,31 +23,31 @@
   },
   "20261024_slot_03_cungdau": {
     "slot_index": 3,
-    "title": "Lớp Muối Xám Trên Mép Đĩa Ngọc: Muỗng Bích Rút Khỏi Bát Canh Khỉ Sủi Bọt Tím Sẫm",
+    "title": "Khi Hoa Sơn Tra Tàn Lụi: Nỗi Oan Khuất 7 Năm Của Cô Dâu Thế Thân",
     "part1": false,
     "part2": false,
     "part3": false,
-    "produced": false
+    "produced": true
   },
   "20261024_slot_04_vamat": {
     "slot_index": 4,
-    "title": "Lệnh Bán Khống Năm Nghìn Tỷ: Màn Hình Bloomberg Đỏ Rực Lúc 2 Giờ Sáng",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "title": "Bản Hợp Đồng Hôn Nhân 5 Năm: Sự Thức Tỉnh Của Nữ Kế Toán Trưởng Vạch Trần Quỹ Đen Của Chồng",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
   },
   "20261024_slot_05_matthe": {
     "slot_index": 5,
-    "title": "Cáp Thép Boong Trước Đứt Phựt: Vết Máu Tươi Trong Container 404",
+    "title": "Tiếng Cào Cửa Lúc 2 Giờ Sáng: Bí Ẩn Hũ Tro Cốt Dưới Gầm Giường",
     "part1": false,
     "part2": false,
     "part3": false,
-    "produced": false
+    "produced": true
   },
   "20261024_slot_06_haomon": {
     "slot_index": 6,
-    "title": "Lệnh Đóng Băng Tài Khoản Lúc Ba Giờ Sáng: Nữ Giám Đốc An Ninh Mạng Giăng Bẫy Ngược Kẻ Lừa Tình",
+    "title": "Cưới Em Trước Cưng Chiều Em Sau: Bản Hợp Đồng Hôn Nhân 100 Tỷ",
     "part1": false,
     "part2": false,
     "part3": false,
@@ -55,15 +55,40 @@
   },
   "20261024_slot_07_giadau": {
     "slot_index": 7,
-    "title": "Bát Yến Phủ Nhụy Hoa Nghệ Tây: Bản Hạn Mức Tín Dụng Một Trăm Tỷ Bị Khóa",
-    "part1": false,
-    "part2": false,
-    "part3": false,
-    "produced": false
+    "title": "Màn Trả Thù Đã Nhất Đời Tôi: Bát Canh Sau Sinh Của Mẹ Chồng Và Căn Chung Cư Đứng Tên Tôi",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true,
+    "schedule_plan": [
+      {
+        "part_number": 1,
+        "title": "Tập 1: Màn Trả Thù Đã Nhất Đời Tôi",
+        "scheduled_time": "2026-10-24 17:30:00",
+        "video_file": "C:\\Users\\duydo\\Documents\\idk\\assets\\output\\VID_20261024_s07_slot_07_giadau_part1_final.mp4",
+        "caption": "[TẬP 1] Màn Trả Thù Đã Nhất Đời Tôi: Bát Canh Sau Sinh Của Mẹ Chồng Và Căn Chung Cư Đứng Tên Tôi. Tập 1: Màn Trả Thù Đã Nhất Đời Tôi: Bát Canh Sau Sinh Của Mẹ Chồng Và Căn Chung Cư Đứng Tên Tôi. Theo bạn nhân vật chính nên lựa chọn phương án nào? Hãy bình luận 1 hoặc 2 nhé! 👉 Đón xem tiếp tập 2 trên kênh lúc 17:30 nhé! #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #tamtrang #giađấumẹchồng #audiotruyen #podcast #fyp"
+      },
+      {
+        "part_number": 2,
+        "title": "Tập 2: Màn Trả Thù Đã Nhất Đời Tôi",
+        "scheduled_time": "2026-10-24 17:50:00",
+        "video_file": "C:\\Users\\duydo\\Documents\\idk\\assets\\output\\VID_20261024_s07_slot_07_giadau_part2_final.mp4",
+        "caption": "[TẬP 2] Màn Trả Thù Đã Nhất Đời Tôi: Bát Canh Sau Sinh Của Mẹ Chồng Và Căn Chung Cư Đứng Tên Tôi. Tập 2: Nút thắt nghẹt thở! Liệu sự thật có như bạn suy đoán không? Để lại dự đoán bên dưới nhé! 👉 Đón xem tập 3 - Đại kết cục bùng nổ sẽ được đăng tải sớm nhất trên kênh! #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #tamtrang #giađấumẹchồng #audiotruyen #podcast #fyp"
+      },
+      {
+        "part_number": 3,
+        "title": "Tập 3: Màn Trả Thù Đã Nhất Đời Tôi",
+        "scheduled_time": "2026-10-24 18:10:00",
+        "video_file": "C:\\Users\\duydo\\Documents\\idk\\assets\\output\\VID_20261024_s07_slot_07_giadau_part3_final.mp4",
+        "caption": "[TẬP 3 - KẾT] Màn Trả Thù Đã Nhất Đời Tôi: Bát Canh Sau Sinh Của Mẹ Chồng Và Căn Chung Cư Đứng Tên Tôi. Tập 3 (Đại Kết Cục): Màn lật kèo chấn động! Bạn thấy cái kết này đã đủ công bằng và thỏa đáng chưa? 👉 Hãy bấm Follow kênh để không bỏ lỡ những bộ audio kịch tính tiếp theo nhé! #audio #xuhuong #audiotruyen #kểchuyện #podcast #fyp #tamtrang #giađấumẹchồng #audiotruyen #podcast #fyp"
+      }
+    ],
+    "scheduled_start_time": "2026-10-24 17:30:00",
+    "ready_to_publish": true
   },
   "20261024_slot_08_trinhtham": {
     "slot_index": 8,
-    "title": "Video Call Bốn Giây Bị Lỗi Khung Hình: Chuyên Viên Đồ Họa Vạch Trần Băng Nhóm Deepfake Tống Tiền",
+    "title": "Kỳ Án Căn Phòng Số 13: 3 Cuộc Gọi Tử Thần Của Kẻ Đã Mất",
     "part1": false,
     "part2": false,
     "part3": false,
@@ -71,7 +96,7 @@
   },
   "20261024_slot_09_quaidam": {
     "slot_index": 9,
-    "title": "Bánh Răng Máy Chiếu 35mm Rít Lên: Bóng Áo Mưa Đen Ngồi Hàng Ghế Niêm Phong",
+    "title": "Chuyến Tàu Ngầm Cuối Cùng: 7 Quy Tắc Sinh Tồn Không Thể Vi Phạm",
     "part1": false,
     "part2": false,
     "part3": false,
@@ -79,7 +104,7 @@
   },
   "20261024_slot_10_kinhdi": {
     "slot_index": 10,
-    "title": "Chuyến Xe Buýt Đêm Trạm Số Mười Ba: Hành Khách Mang Giày Đỏ Không Có Bóng",
+    "title": "Huyết Nguyện Lúc Nửa Đêm: Chiếc Gương Âm Dương Biệt Thự Cổ",
     "part1": false,
     "part2": false,
     "part3": false,

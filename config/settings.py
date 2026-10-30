@@ -43,20 +43,16 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 EMULATOR_SHARED_DIR = os.getenv("EMULATOR_SHARED_DIR", "")  # Thư mục chia sẻ máy ảo tùy biến
 
-# Cấu hình Giọng đọc Edge-TTS
-VOICE_HIGH_IQ = "vi-VN-NamMinhNeural"   # Giọng nam dứt khoát, thông thái
-VOICE_SLEEP = "vi-VN-HoaiMyNeural"     # Giọng nữ truyền cảm, sâu lắng, nhấn nhá kịch tính
-# Tối ưu nhịp điệu giọng đọc: 1.15x (khoảng 240 từ/phút) giúp giọng đọc tự nhiên, xúc động, không mỏi tai suốt 10 phút
-VOICE_SPEED_MULTIPLIER = float(os.getenv("VOICE_SPEED_MULTIPLIER", "1.15"))
+# Cấu hình Giọng đọc Edge-TTS (Chuẩn Master Codex 8.0)
+VOICE_HIGH_IQ = "vi-VN-NamMinhNeural"   # Giọng nam trầm ấm, đĩnh đạc, bí ẩn (rate +3% đến +6%)
+VOICE_SLEEP = "vi-VN-HoaiMyNeural"     # Giọng nữ ấm, truyền cảm, tâm sự, sắc sảo (rate +5% đến +8%)
+VOICE_SPEED_MULTIPLIER = float(os.getenv("VOICE_SPEED_MULTIPLIER", "1.06"))
 
 # Cấu hình Thời lượng & Dung lượng Kịch bản Audio 30 Phút
 AUDIO_TARGET_DURATION_MINUTES = 30     # Thời lượng tổng bộ truyện audio mục tiêu: 30 phút
 TARGET_DURATION_MINUTES = 10           # Thời lượng mỗi tập mục tiêu trong chuỗi 3 tập (10 phút/tập)
 
 # Tốc độ đọc thực tế đo đạc từ FFmpeg trên giọng đọc AI Edge-TTS tiếng Việt:
-# - Ở 1.0x (gốc): ~208 từ/phút
-# - Ở 1.15x (tối ưu chống mỏi tai): ~240 từ/phút (chuẩn mực cảm xúc cho tệp khán giả Nữ)
-# - Ở 1.5x (tua nhanh tối đa): ~346 từ/phút
 WORDS_PER_MINUTE_BASE = 208
 EFFECTIVE_WORDS_PER_MINUTE = int(WORDS_PER_MINUTE_BASE * VOICE_SPEED_MULTIPLIER)
 WORDS_PER_MINUTE_VIETNAMESE = EFFECTIVE_WORDS_PER_MINUTE
@@ -72,32 +68,32 @@ SCRIPT_BASELINE_MIN_WORDS_30MIN = SCRIPT_MIN_WORDS_30MIN
 SCRIPT_BASELINE_MIN_WORDS_PER_PART = SCRIPT_MIN_WORDS_PER_PART_10MIN
 
 # Cấu hình Chuẩn Hóa Âm Thanh TikTok / YouTube Mastering
-TARGET_LUFS = -14.0
+TARGET_LUFS = -16.0
 TRUE_PEAK = -1.5
 
-# Cấu hình Sidechain Ducking Chuẩn Điện Ảnh (Tránh nấc cục, BGM rõ ràng cảm xúc)
-DUCKING_RELEASE_MS = 750    # Xả nén từ từ trong 750ms để BGM dâng lên êm ái
-DUCKING_ATTACK_MS = 25      # Ép BGM xuống nhanh trong 25ms khi có tiếng nói
+# Cấu hình Sidechain Ducking Chuẩn Điện Ảnh (BGM -22dB đến -24dB theo Codex 8.0)
+DUCKING_RELEASE_MS = 750    # Xả nén từ từ trong 850ms để BGM dâng lên êm ái
+DUCKING_ATTACK_MS = 25      # Ép BGM xuống nhanh trong 20ms khi có tiếng nói
 DUCKING_THRESHOLD = 0.079   # Ngưỡng kích hoạt nhạy bén giữ giọng đọc luôn tách bạch
-DUCKING_RATIO = 4.0         # Tỷ lệ nén 4.0:1 chuẩn cinema
+DUCKING_RATIO = 4.0         # Tỷ lệ nén 4.5:1 chuẩn cinema
 DUCKING_KNEE = 2.5          # Độ mềm đường cong nén
 
 # Phương thức phát hành video: "WEB_STUDIO" (Phương án B - Trợ lý 1-chạm đăng TikTok Web), "ADB" (máy ảo), "TELEGRAM"
 PUBLISH_METHOD = os.getenv("PUBLISH_METHOD", "WEB_STUDIO")
 
-# Cấu hình Render Video
-VIDEO_WIDTH = 1920
-VIDEO_HEIGHT = 1080
+# Cấu hình Render Video Chuẩn Dọc TikTok 9:16 (1080x1920 Full-Screen)
+VIDEO_WIDTH = 1080
+VIDEO_HEIGHT = 1920
 VIDEO_FPS = 30
-BGM_VOLUME = 0.18  # Nhạc nền dịu nhẹ (êm tai, hoàn toàn không lấn át giọng kể chuyện, chống ContentID)
-VOICE_VOLUME = 1.0 # Giọng đọc 100%
+BGM_VOLUME = 0.08   # Chuẩn Codex 8.0: Nhạc nền -22dB đến -24dB (nâng đỡ cảm xúc, không át tiếng nói)
+VOICE_VOLUME = 0.96 # Giọng đọc rõ ràng, ấm áp, nổi bật ngay từ giây 0.0
 
-# Cấu hình Phụ đề: SẠCH MÀN HÌNH (CLEAN SCREEN) ĐỂ DÙNG AUTO-CAPTION CC CỦA TIKTOK STUDIO
-ENABLE_SUBTITLES = False   # KHÔNG chèn phụ đề cứng lên video, để màn hình sạch 100% người xem ngắm visual ASMR
+# Cấu hình Phụ đề Động (Kinetic Captions 3-6 từ/cụm ở 1/3 dưới màn hình Safe Zone)
+ENABLE_SUBTITLES = True    # Bật phụ đề động vàng chanh viền đen giúp khóa chặt thị giác 3 giây đầu
 TIKTOK_AUTO_CAPTION = True # Bật tính năng Auto-caption CC tự động của TikTok Studio khi đăng video
-SUBTITLE_COLOR = "yellow"  # Tùy chọn dự phòng nếu bật phụ đề
-SUBTITLE_FONT_SIZE = 28
-SUBTITLE_MARGIN_V = 520    # Vùng an toàn sát đáy màn hình nếu bật phụ đề
+SUBTITLE_COLOR = "yellow"  # Chữ vàng chanh viền đen nổi bật trên mọi nền B-roll ASMR
+SUBTITLE_FONT_SIZE = 16    # Cỡ chữ chuẩn libass (PlayResY=288) trên khung dọc 9:16 (1080x1920)
+SUBTITLE_MARGIN_V = 68     # Vị trí 1/3 dưới màn hình Safe Zone (tránh icon thả tim và caption TikTok)
 
 # Cấu hình Tuyển Tập / Danh Sách Phát (Playlist)
 AUTO_ADD_TO_PLAYLIST = True # Tự động tạo hoặc thêm 3 Part vào Danh sách phát / Tuyển tập trên TikTok Studio
@@ -105,6 +101,3 @@ AUTO_ADD_TO_PLAYLIST = True # Tự động tạo hoặc thêm 3 Part vào Danh s
 # Cấu hình Phong cách Video Nền & BGM (Ưu tiên Trung Quốc / ASMR theo thị hiếu tệp Nữ)
 PREFERRED_BG_THEME = "chinese_asmr"         # "chinese_asmr", "chinese_beauty", "chinese_cooking", "chinese_pastry", "chinese_craft"
 PREFERRED_BGM_STYLE = "chinese_instrumental" # "chinese_instrumental", "nhoi_nho_ngan_ha", "dai_ngu", "co_cung_hoi_uc"
-
-
-

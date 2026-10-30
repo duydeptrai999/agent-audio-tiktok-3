@@ -50,3 +50,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+TikTok_BGM_Audio/
+data/tiktok_browser_profile/
+test_*.mp3

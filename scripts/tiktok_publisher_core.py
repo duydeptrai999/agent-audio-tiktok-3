@@ -523,16 +523,27 @@ def upload_and_publish_video(
         try:
             with sync_playwright() as p:
                 try:
-                    browser = p.chromium.launch_persistent_context(
-                        user_data_dir=coccoc_ud,
-                        executable_path=coccoc_exe,
-                        headless=True,
-                        args=[
-                            "--disable-blink-features=AutomationControlled",
-                            "--profile-directory=Default"
-                        ],
-                        viewport={"width": 1920, "height": 1080}
-                    )
+                    for launch_attempt in range(1, 4):
+                        try:
+                            browser = p.chromium.launch_persistent_context(
+                                user_data_dir=coccoc_ud,
+                                executable_path=coccoc_exe,
+                                headless=True,
+                                args=[
+                                    "--disable-blink-features=AutomationControlled",
+                                    "--profile-directory=Default"
+                                ],
+                                viewport={"width": 1920, "height": 1080}
+                            )
+                            if browser:
+                                break
+                        except Exception as launch_err:
+                            print(f"  ⚠️ Lỗi khởi động Cốc Cốc (lần {launch_attempt}/3): {launch_err}")
+                            kill_and_clean_coccoc(timeout=3.0)
+                            clean_stale_singleton_locks(coccoc_ud)
+                            time.sleep(2)
+                    if not browser:
+                        raise RuntimeError("Không thể khởi động trình duyệt Cốc Cốc sau 3 lần thử.")
 
                     page = browser.pages[0] if browser.pages else browser.new_page()
                     upload_url = "https://www.tiktok.com/tiktokstudio/upload?from=webapp"

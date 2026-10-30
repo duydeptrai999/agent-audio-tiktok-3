@@ -26,14 +26,16 @@ class TestChineseRetentionOptimization(unittest.TestCase):
         import config.settings as s
         
         # 1. Clean screen cho TikTok Auto-caption CC
-        self.assertFalse(s.ENABLE_SUBTITLES, "ENABLE_SUBTITLES phải là False để nhường chỗ cho TikTok Auto-caption CC")
+        self.assertTrue(s.ENABLE_SUBTITLES, "ENABLE_SUBTITLES phải là True (Kinetic Captions 3-5 từ ở 1/3 dưới theo Codex 8.0)")
+        self.assertEqual(s.VIDEO_WIDTH, 1080)
+        self.assertEqual(s.VIDEO_HEIGHT, 1920)
         self.assertTrue(s.TIKTOK_AUTO_CAPTION, "TIKTOK_AUTO_CAPTION phải là True")
         
         # 2. Playlist automation
         self.assertTrue(s.AUTO_ADD_TO_PLAYLIST, "AUTO_ADD_TO_PLAYLIST phải là True")
         
         # 3. Tempo & Words per minute
-        self.assertAlmostEqual(s.VOICE_SPEED_MULTIPLIER, 1.15, places=2)
+        self.assertAlmostEqual(s.VOICE_SPEED_MULTIPLIER, 1.06, places=2)
         self.assertGreaterEqual(s.EFFECTIVE_WORDS_PER_MINUTE, 200)
         self.assertGreaterEqual(s.SCRIPT_MIN_WORDS_PER_PART_10MIN, 2000)
         

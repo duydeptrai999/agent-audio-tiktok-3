@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "date": "2026-10-28",
+    "last_published_timestamp": 0.0,
+    "last_published_time_str": "",
+    "last_series_completed_timestamp": 0.0
+  },
+  "20261028_slot_01_sadieu": {
+    "slot_index": 1,
+    "title": "Thư Ký Cá Mặn Nghe Tiếng Lòng Sếp: Tiếng Lòng Chê Sếp Tổng Khiến Cả Công Ty Dậy Sóng",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_02_thanhxuan": {
+    "slot_index": 2,
+    "title": "Vụng Trộm Thích Thầm Anh: Mười Năm Ngọt Ngào Dưới Mái Hiên Mùa Hạ",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_03_cungdau": {
+    "slot_index": 3,
+    "title": "Thứ Nữ Ngự Y: Một Nén Hương Thử Độc San Bằng Thâm Cung",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_04_vamat": {
+    "slot_index": 4,
+    "title": "Mẹ Chồng Thức Tỉnh: Trả Lại Con Dâu Về Nơi Tỏa Sáng",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_05_matthe": {
+    "slot_index": 5,
+    "title": "Trọng Sinh Về 30 Ngày Trước Tận Thế Bão Cát: Hầm Trú Ẩn Bất Khả Xâm Phạm",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_06_haomon": {
+    "slot_index": 6,
+    "title": "Tiệm Tạp Hóa Thời Gian Bên Góc Phố: Nơi Cất Giữ Ký Ức Chữa Lành",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_07_giadau": {
+    "slot_index": 7,
+    "title": "Bữa Cơm Giỗ Đầu Sau Ba Năm Làm Dâu: Màn Lật Kèo Đòi Lại Căn Chung Cư Đứng Tên Bố Mẹ Đẻ",
+    "part1": true,
+    "part2": true,
+    "part3": true,
+    "produced": true
+  },
+  "20261028_slot_08_trinhtham": {
+    "slot_index": 8,
+    "title": "Kỳ Án Biệt Thự Trăng Máu: Tiếng Gõ Cửa Của Thám Tử Mất Tích",
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": false
+  },
+  "20261028_slot_09_quaidam": {
+    "slot_index": 9,
+    "title": "Khách Sạn Nửa Đêm: 10 Quy Tắc Sinh Tồn Ca Trực Phòng Số 4",
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": false
+  },
+  "20261028_slot_10_kinhdi": {
+    "slot_index": 10,
+    "title": "Huyết Nguyện Lúc Nửa Đêm: Chiếc Gương Âm Dương Biệt Thự Cổ",
+    "part1": false,
+    "part2": false,
+    "part3": false,
+    "produced": false
+  }
+}

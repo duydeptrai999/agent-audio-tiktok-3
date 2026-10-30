@@ -1,14 +1,14 @@
 {
   "active_video": {
-    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
-    "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+    "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\raw_downloaded\\cooking_home_meals_3_raw.mp4",
+    "filename": "cooking_home_meals_3_raw.mp4",
     "url": "",
-    "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
-    "total_duration": 3909.57,
-    "current_offset": 106.11,
-    "audios_used": 1,
+    "title": "cooking_home_meals_3_raw",
+    "total_duration": 1326.95,
+    "current_offset": 365.79,
+    "audios_used": 0,
     "max_audios": 2,
-    "registered_at": "2026-10-24 00:53:12"
+    "registered_at": "2026-10-30 04:08:47"
   },
   "used_history": [
     {
@@ -620,7 +620,304 @@
       "audios_used": 2,
       "max_audios": 2,
       "registered_at": "2026-10-23 20:57:04"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 106.11,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-24 00:53:12"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\baking_vertical.mp4",
+      "filename": "baking_vertical.mp4",
+      "url": "",
+      "title": "ASMR Làm Bánh Chuẩn Dọc 9:16",
+      "total_duration": 513.68,
+      "current_offset": 463.57,
+      "audios_used": 0,
+      "max_audios": 20,
+      "registered_at": "2026-10-24 09:41:09"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 3356.23,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-24 09:58:44"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 2557.42,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-24 20:12:18"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 1507.07,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-24 21:36:10"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 3403.6800000000003,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-25 08:59:22"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 3077.1399999999994,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-25 10:54:10"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 3316.62,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-25 12:23:25"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 4434.29,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-25 14:57:20"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 1817.6399999999999,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-26 06:05:56"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 2529.3900000000003,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-26 06:47:18"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "filename": "traditional_japanese_craft_asmr_Iv6tzWbx6M.mp4",
+      "url": "",
+      "title": "traditional_japanese_craft_asmr_Iv6tzWbx6M",
+      "total_duration": 3909.57,
+      "current_offset": 3120.51,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-26 07:15:32"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "filename": "vintage_tool_restoration_asmr_H7Vz9jOmB30.mp4",
+      "url": "",
+      "title": "vintage_tool_restoration_asmr_H7Vz9jOmB30",
+      "total_duration": 4754.8,
+      "current_offset": 2559.48,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-26 07:50:52"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "filename": "traditional_wood_carving_asmr_POqfxxmiNo.mp4",
+      "url": "",
+      "title": "traditional_wood_carving_asmr_POqfxxmiNo",
+      "total_duration": 4580.28,
+      "current_offset": 3257.76,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-26 10:54:34"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "filename": "baking_asmr_2hours_3NvvOVrm1uY.mp4",
+      "url": "",
+      "title": "baking_asmr_2hours_3NvvOVrm1uY",
+      "total_duration": 7340.72,
+      "current_offset": 3879.88,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-26 11:24:14"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\baking\\baking_cake_recipes_1_vertical.mp4",
+      "filename": "baking_cake_recipes_1_vertical.mp4",
+      "url": "",
+      "title": "baking_cake_recipes_1_vertical",
+      "total_duration": 655.49,
+      "current_offset": 404.0,
+      "audios_used": 0,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 11:51:44"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\baking\\baking_peach_rice_cake_2_vertical.mp4",
+      "filename": "baking_peach_rice_cake_2_vertical.mp4",
+      "url": "",
+      "title": "baking_peach_rice_cake_2_vertical",
+      "total_duration": 900.0,
+      "current_offset": 849.81,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 13:06:03"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\baking\\baking_strawberry_cake_3_vertical.mp4",
+      "filename": "baking_strawberry_cake_3_vertical.mp4",
+      "url": "",
+      "title": "baking_strawberry_cake_3_vertical",
+      "total_duration": 900.0,
+      "current_offset": 698.1,
+      "audios_used": 0,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 14:26:01"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\cooking\\cooking_french_toast_1_vertical.mp4",
+      "filename": "cooking_french_toast_1_vertical.mp4",
+      "url": "",
+      "title": "cooking_french_toast_1_vertical",
+      "total_duration": 617.6,
+      "current_offset": 434.36,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 14:46:17"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\cooking\\cooking_summer_comfort_2_vertical.mp4",
+      "filename": "cooking_summer_comfort_2_vertical.mp4",
+      "url": "",
+      "title": "cooking_summer_comfort_2_vertical",
+      "total_duration": 828.57,
+      "current_offset": 529.47,
+      "audios_used": 0,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 16:07:46"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\cooking\\cooking_home_meals_3_vertical.mp4",
+      "filename": "cooking_home_meals_3_vertical.mp4",
+      "url": "",
+      "title": "cooking_home_meals_3_vertical",
+      "total_duration": 900.02,
+      "current_offset": 820.44,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 16:41:13"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\baking\\baking_vertical.mp4",
+      "filename": "baking_vertical.mp4",
+      "url": "",
+      "title": "baking_vertical",
+      "total_duration": 513.68,
+      "current_offset": 387.92,
+      "audios_used": 0,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 18:05:49"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\youtube_pool\\traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "filename": "traditional_pottery_teapot_asmr_AGVNlB400qI.mp4",
+      "url": "",
+      "title": "traditional_pottery_teapot_asmr_AGVNlB400qI",
+      "total_duration": 3604.9,
+      "current_offset": 3428.04,
+      "audios_used": 2,
+      "max_audios": 2,
+      "registered_at": "2026-10-27 19:13:35"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\raw_downloaded\\baking_peach_rice_cake_2_raw.mp4",
+      "filename": "baking_peach_rice_cake_2_raw.mp4",
+      "url": "",
+      "title": "baking_peach_rice_cake_2_raw",
+      "total_duration": 1828.1,
+      "current_offset": 1746.1499999999999,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-29 14:02:09"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\raw_downloaded\\baking_strawberry_cake_3_raw.mp4",
+      "filename": "baking_strawberry_cake_3_raw.mp4",
+      "url": "",
+      "title": "baking_strawberry_cake_3_raw",
+      "total_duration": 946.9,
+      "current_offset": 731.3,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-29 16:45:07"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\raw_downloaded\\cooking_french_toast_1_raw.mp4",
+      "filename": "cooking_french_toast_1_raw.mp4",
+      "url": "",
+      "title": "cooking_french_toast_1_raw",
+      "total_duration": 617.6,
+      "current_offset": 358.14,
+      "audios_used": 0,
+      "max_audios": 2,
+      "registered_at": "2026-10-29 18:23:07"
+    },
+    {
+      "filepath": "C:\\Users\\duydo\\Documents\\idk\\assets\\footage\\raw_downloaded\\cooking_summer_comfort_2_raw.mp4",
+      "filename": "cooking_summer_comfort_2_raw.mp4",
+      "url": "",
+      "title": "cooking_summer_comfort_2_raw",
+      "total_duration": 828.57,
+      "current_offset": 749.3199999999999,
+      "audios_used": 1,
+      "max_audios": 2,
+      "registered_at": "2026-10-29 18:31:35"
     }
   ],
-  "rotation_count": 51
+  "rotation_count": 77
 }

@@ -45,7 +45,7 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Nam Minh - Thám Tử Lạnh Lùng",
         genre_match=["HUYEN_NGHI", "TRINH_THAM", "PHAP_Y", "TOI_PHAM"],
         voice_name="vi-VN-NamMinhNeural",
-        pitch="-4Hz", rate="-2%", volume="+0%", tempo_multiplier=1.12,
+        pitch="-3Hz", rate="-2%", volume="-14%", tempo_multiplier=1.0,
         rubberband_pitch=0.96,
         description="Trầm, đặc, uy nghiêm, bí ẩn, nhấn nhá đanh thép như trong phòng thẩm vấn hiện trường.",
         eq_settings={"warmth_freq": 110, "warmth_gain": 4.5, "scoop_freq": 800, "scoop_gain": -2.5, "clarity_freq": 3200, "clarity_gain": 3.8, "deess_freq": 6500, "deess_gain": -2.5},
@@ -58,7 +58,7 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Nam Minh - Quái Đàm Âm U",
         genre_match=["KINH_DI", "QUAI_DAM", "CREEPYPASTA"],
         voice_name="vi-VN-NamMinhNeural",
-        pitch="-4Hz", rate="-4%", volume="+0%", tempo_multiplier=1.08,
+        pitch="-4Hz", rate="-4%", volume="-14%", tempo_multiplier=1.0,
         rubberband_pitch=0.91,
         description="Lạnh buốt, ma mị, âm u, trầm sát màng nhĩ tạo cảm giác rợn gáy trong bóng tối.",
         eq_settings={"warmth_freq": 90, "warmth_gain": 5.0, "scoop_freq": 1000, "scoop_gain": -3.0, "clarity_freq": 2800, "clarity_gain": 2.5, "deess_freq": 6000, "deess_gain": -3.5},
@@ -71,7 +71,7 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Nam Minh - Chiến Binh Sinh Tồn",
         genre_match=["MAT_THE", "BANG_GIA", "SINH_TON", "VO_HAN"],
         voice_name="vi-VN-NamMinhNeural",
-        pitch="-2Hz", rate="+3%", volume="+2%", tempo_multiplier=1.18,
+        pitch="-2Hz", rate="+1%", volume="-14%", tempo_multiplier=1.0,
         rubberband_pitch=0.98,
         description="Gấp gáp, nghẹt thở, sắt đá, cương quyết giữa bão tuyết và đếm ngược sinh tử.",
         eq_settings={"warmth_freq": 150, "warmth_gain": 4.0, "scoop_freq": 900, "scoop_gain": -2.0, "clarity_freq": 2600, "clarity_gain": 4.2, "deess_freq": 6500, "deess_gain": -2.0},
@@ -342,14 +342,14 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
     # --------------------------------------------------------------------------
     "QUEEN_COLD_VENOM_FEMALE": VoiceProfile(
         profile_id="QUEEN_COLD_VENOM_FEMALE",
-        display_name="Hoài My - Nữ Chủ Bạo Lực Lạnh",
-        genre_match=["ME_CHONG", "GIA_DAU", "VA_MAT", "TRONG_SINH"],
+        display_name="Hoài My - Nữ Chủ Tự Sự Điềm Tĩnh",
+        genre_match=["ME_CHONG", "GIA_DAU", "VA_MAT", "TRONG_SINH", "HOAN_DOI"],
         voice_name="vi-VN-HoaiMyNeural",
-        pitch="+0Hz", rate="+2%", volume="+1%", tempo_multiplier=1.16,
+        pitch="-1Hz", rate="+0%", volume="-16%", tempo_multiplier=1.0,
         rubberband_pitch=1.00,
-        description="Sắc lẹm như dao găm, quý phái, bạo lực lạnh, từng câu nhát gừng vả mặt đối phương.",
-        eq_settings={"warmth_freq": 200, "warmth_gain": 2.8, "scoop_freq": 1100, "scoop_gain": -2.0, "clarity_freq": 4200, "clarity_gain": 4.5, "deess_freq": 6800, "deess_gain": -3.0},
-        compressor_settings={"threshold": "-17dB", "ratio": 3.5, "attack": 6, "release": 55}
+        description="Điềm đạm, êm dịu, ấm áp, sâu sắc, giọng nhẹ nhàng không chói gắt.",
+        eq_settings={"warmth_freq": 180, "warmth_gain": 3.8, "scoop_freq": 1150, "scoop_gain": -2.2, "clarity_freq": 3200, "clarity_gain": 2.2, "deess_freq": 6800, "deess_gain": -3.2},
+        compressor_settings={"threshold": "-18dB", "ratio": 2.8, "attack": 8, "release": 65}
     ),
 
     "SATIRIC_SPARKLING_FEMALE": VoiceProfile(
@@ -357,12 +357,12 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Hoài My - Tiếng Lòng Tinh Quái",
         genre_match=["SA_DIEU", "HAI_HUOC", "TIENG_LONG"],
         voice_name="vi-VN-HoaiMyNeural",
-        pitch="+3Hz", rate="+5%", volume="+1%", tempo_multiplier=1.22,
-        rubberband_pitch=1.08,
+        pitch="+0Hz", rate="+2%", volume="-14%", tempo_multiplier=1.0,
+        rubberband_pitch=1.04,
         description="Nhí nhảnh, nảy tiếng, tinh nghịch, lém lỉnh, gây cười giòn giã khi bóc phốt sếp.",
-        eq_settings={"warmth_freq": 240, "warmth_gain": 2.0, "scoop_freq": 1300, "scoop_gain": -1.5, "clarity_freq": 4800, "clarity_gain": 4.0, "deess_freq": 7000, "deess_gain": -2.0},
-        compressor_settings={"threshold": "-15dB", "ratio": 2.6, "attack": 5, "release": 45},
-        special_effects="equalizer=f=8000:t=q:w=1.0:g=2.2"
+        eq_settings={"warmth_freq": 220, "warmth_gain": 2.2, "scoop_freq": 1300, "scoop_gain": -1.5, "clarity_freq": 3600, "clarity_gain": 3.0, "deess_freq": 7000, "deess_gain": -2.5},
+        compressor_settings={"threshold": "-16dB", "ratio": 2.6, "attack": 5, "release": 45},
+        special_effects="equalizer=f=8000:t=q:w=1.0:g=1.2"
     ),
 
     "IMPERIAL_SERENE_FEMALE": VoiceProfile(
@@ -370,11 +370,11 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Hoài My - Thâm Cung Trầm Mặc",
         genre_match=["CUNG_DAU", "TRACH_DAU", "CO_PHONG"],
         voice_name="vi-VN-HoaiMyNeural",
-        pitch="-1Hz", rate="-2%", volume="+0%", tempo_multiplier=1.10,
+        pitch="-1Hz", rate="-1%", volume="-15%", tempo_multiplier=1.0,
         rubberband_pitch=0.96,
         description="Ung dung, thâm sâu, êm ái như tơ lụa nhưng ẩn chứa độc dược và trâm bạc thử độc.",
-        eq_settings={"warmth_freq": 180, "warmth_gain": 3.6, "scoop_freq": 1150, "scoop_gain": -2.2, "clarity_freq": 3300, "clarity_gain": 3.4, "deess_freq": 6400, "deess_gain": -2.6},
-        compressor_settings={"threshold": "-18dB", "ratio": 3.2, "attack": 9, "release": 65}
+        eq_settings={"warmth_freq": 180, "warmth_gain": 3.6, "scoop_freq": 1150, "scoop_gain": -2.2, "clarity_freq": 3300, "clarity_gain": 2.5, "deess_freq": 6400, "deess_gain": -2.6},
+        compressor_settings={"threshold": "-18dB", "ratio": 3.0, "attack": 9, "release": 65}
     ),
 
     "HEALING_SOUL_FEMALE": VoiceProfile(
@@ -382,11 +382,11 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Hoài My - Chữa Lành Êm Dịu",
         genre_match=["CHUA_LANH", "DOI_SONG", "HEALING", "NGUOC_TAM"],
         voice_name="vi-VN-HoaiMyNeural",
-        pitch="-0Hz", rate="-4%", volume="+0%", tempo_multiplier=1.05,
+        pitch="-2Hz", rate="-2%", volume="-18%", tempo_multiplier=1.0,
         rubberband_pitch=0.98,
         description="Thủ thỉ, ấm áp, sâu lắng, vỗ về tâm hồn người nghe trong đêm vắng.",
-        eq_settings={"warmth_freq": 160, "warmth_gain": 4.2, "scoop_freq": 1200, "scoop_gain": -2.0, "clarity_freq": 3000, "clarity_gain": 2.8, "deess_freq": 6500, "deess_gain": -3.0},
-        compressor_settings={"threshold": "-20dB", "ratio": 3.0, "attack": 12, "release": 80},
+        eq_settings={"warmth_freq": 160, "warmth_gain": 4.2, "scoop_freq": 1200, "scoop_gain": -2.0, "clarity_freq": 2800, "clarity_gain": 2.0, "deess_freq": 6500, "deess_gain": -3.5},
+        compressor_settings={"threshold": "-20dB", "ratio": 2.8, "attack": 12, "release": 80},
         special_effects="equalizer=f=7500:t=q:w=1.5:g=-2.0"
     ),
 
@@ -395,11 +395,11 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Hoài My - Thanh Xuân Trong Sáng",
         genre_match=["THANH_XUAN", "CUU_ROI", "HOC_DUONG"],
         voice_name="vi-VN-HoaiMyNeural",
-        pitch="+2Hz", rate="+2%", volume="+1%", tempo_multiplier=1.14,
-        rubberband_pitch=1.04,
+        pitch="-1Hz", rate="+1%", volume="-15%", tempo_multiplier=1.0,
+        rubberband_pitch=1.01,
         description="Trong trẻo, giàu cảm xúc, nhiệt huyết tuổi trẻ, tha thiết vươn lên bảo vệ công lý.",
-        eq_settings={"warmth_freq": 210, "warmth_gain": 2.5, "scoop_freq": 1250, "scoop_gain": -1.8, "clarity_freq": 3800, "clarity_gain": 3.8, "deess_freq": 6600, "deess_gain": -2.4},
-        compressor_settings={"threshold": "-18dB", "ratio": 3.2, "attack": 8, "release": 60}
+        eq_settings={"warmth_freq": 200, "warmth_gain": 2.5, "scoop_freq": 1250, "scoop_gain": -1.8, "clarity_freq": 3400, "clarity_gain": 2.8, "deess_freq": 6600, "deess_gain": -2.8},
+        compressor_settings={"threshold": "-18dB", "ratio": 2.8, "attack": 8, "release": 60}
     ),
 
     "HORROR_WHISPER_FEMALE": VoiceProfile(
@@ -407,10 +407,10 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
         display_name="Hoài My - Thì Thào Lạnh Gáy",
         genre_match=["KINH_DI_NU", "QUAI_DAM_NU"],
         voice_name="vi-VN-HoaiMyNeural",
-        pitch="-2Hz", rate="-3%", volume="+0%", tempo_multiplier=1.08,
+        pitch="-2Hz", rate="-4%", volume="-16%", tempo_multiplier=1.0,
         rubberband_pitch=0.94,
         description="Giọng nữ thì thào, lạnh ngắt, tạo cảm giác có người đang thở ngay sau gáy.",
-        eq_settings={"warmth_freq": 160, "warmth_gain": 3.5, "scoop_freq": 1200, "scoop_gain": -2.0, "clarity_freq": 3500, "clarity_gain": 3.0, "deess_freq": 6200, "deess_gain": -3.0},
+        eq_settings={"warmth_freq": 160, "warmth_gain": 3.5, "scoop_freq": 1200, "scoop_gain": -2.0, "clarity_freq": 3200, "clarity_gain": 2.5, "deess_freq": 6200, "deess_gain": -3.0},
         compressor_settings={"threshold": "-20dB", "ratio": 3.8, "attack": 12, "release": 80},
         special_effects="lowpass=f=7000"
     ),
@@ -638,15 +638,26 @@ VOICE_PROFILES: Dict[str, VoiceProfile] = {
 }
 
 
+def normalize_genre_keyword(text: str) -> str:
+    import unicodedata
+    t = re.sub(r'([a-z\u00e0-\u017e])([A-Z\u0102\u00c2\u0110\u00ca\u00d4\u01a0\u01af])', r'\1 \2', text)
+    t = unicodedata.normalize('NFD', t)
+    t = re.sub(r'[\u0300-\u036f]', '', t)
+    t = t.replace('đ', 'd').replace('Đ', 'D')
+    t = re.sub(r'[^\w\s]', ' ', t)
+    return re.sub(r'\s+', '_', t).upper().strip()
+
+
 # ==============================================================================
 # HÀM LỰA CHỌN VOICE PROFILE TỐI ƯU
 # ==============================================================================
 def get_voice_profile_for_genre(genre: str, preferred_gender: str = "auto") -> VoiceProfile:
     """
     Tự động lựa chọn Voice Profile điện ảnh tối ưu nhất cho thể loại được chỉ định.
-    Hỗ trợ 48 profiles với độ phân hóa âm học chuyên sâu.
+    Hỗ trợ chuẩn hóa tiếng Việt không dấu, đối sánh token và 48 profiles âm học chuyên sâu.
     """
-    g = genre.upper().strip()
+    g = normalize_genre_keyword(genre)
+    tokens = set(g.split("_"))
 
     # 1. Quét trực tiếp danh sách genre_match
     for pid, profile in VOICE_PROFILES.items():
@@ -657,35 +668,35 @@ def get_voice_profile_for_genre(genre: str, preferred_gender: str = "auto") -> V
                 continue
             if preferred_gender == "female" and not is_female:
                 continue
-        if g in profile.genre_match:
+        if any(normalize_genre_keyword(gm) == g for gm in profile.genre_match) or g in profile.genre_match:
             return profile
 
-    # 2. Fallback theo từ khóa đặc thù
-    if any(k in g for k in ["KINH_DI", "MA", "QUAI_DAM", "CREEPY"]):
+    # 2. Fallback theo từ khóa đặc thù chuẩn hóa tiếng Việt
+    if any(k in g for k in ["KINH_DI", "QUAI_DAM", "CREEPY", "HUYET_NGUYEN", "AM_HON", "OAN_HON", "TRUYEN_MA", "BI_AN"]) or ("MA" in tokens and "MAT" not in tokens):
         return VOICE_PROFILES["HORROR_CREEPY_MALE"] if preferred_gender != "female" else VOICE_PROFILES["HORROR_WHISPER_FEMALE"]
 
-    if any(k in g for k in ["TRINH_THAM", "HUYEN_NGHI", "DIEU_TRA", "PHAP_Y", "TOI_PHAM"]):
+    if any(k in g for k in ["TRINH_THAM", "HUYEN_NGHI", "DIEU_TRA", "PHAP_Y", "TOI_PHAM", "KY_AN"]):
         return VOICE_PROFILES["DETECTIVE_COLD_MALE"]
 
-    if any(k in g for k in ["SA_DIEU", "HAI", "TIENG_LONG"]):
+    if any(k in g for k in ["SA_DIEU", "HAI_HUOC", "TIENG_LONG", "CA_MAN"]) or "HAI" in tokens:
         return VOICE_PROFILES["SATIRIC_SPARKLING_FEMALE"] if preferred_gender != "male" else VOICE_PROFILES["SATIRIC_INTERNAL_MALE"]
 
-    if any(k in g for k in ["MAT_THE", "BANG_GIA", "SINH_TON", "VO_HAN"]):
+    if any(k in g for k in ["MAT_THE", "BANG_GIA", "SINH_TON", "VO_HAN", "HONG_THUY"]):
         return VOICE_PROFILES["SURVIVOR_GRITTY_MALE"]
 
-    if any(k in g for k in ["CUNG_DAU", "TRACH_DAU", "CO_PHONG"]):
+    if any(k in g for k in ["CUNG_DAU", "TRACH_DAU", "CO_PHONG", "HOANG_HAU", "NU_QUYEN"]):
         return VOICE_PROFILES["IMPERIAL_SERENE_FEMALE"]
 
-    if any(k in g for k in ["CHUA_LANH", "HEALING", "NGUOC_TAM", "DOI_SONG"]):
-        return VOICE_PROFILES["HEALING_SOUL_FEMALE"]
+    if any(k in g for k in ["CHUA_LANH", "HEALING", "NGUOC_TAM", "DOI_SONG", "TAM_SU", "CUU_ROI", "NHE_NHANG", "LANG_MAN", "HAO_MON"]):
+        return VOICE_PROFILES["HEALING_SOUL_FEMALE"] if preferred_gender != "male" else VOICE_PROFILES["CEO_AUTHORITY_MALE"]
 
-    if any(k in g for k in ["THANH_XUAN", "HOC_DUONG", "CUU_ROI"]):
+    if any(k in g for k in ["THANH_XUAN", "HOC_DUONG", "VUON_TRUONG", "TUOI_TRE", "NGOT_SUNG", "VUNG_TROM"]) or "THANHXUAN" in g:
         return VOICE_PROFILES["YOUTH_EMOTIONAL_FEMALE"] if preferred_gender != "male" else VOICE_PROFILES["YOUTH_HERO_MALE"]
 
-    if any(k in g for k in ["HANH_DONG", "CUU_HO", "BIEN_SAU", "HANG_DONG", "CAP_TREO"]):
-        return VOICE_PROFILES["ACTION_INTENSE_MALE"]
+    if any(k in g for k in ["ME_CHONG", "GIA_DAU", "VA_MAT", "TRONG_SINH", "LY_HON", "HOAN_DOI"]):
+        return VOICE_PROFILES["QUEEN_COLD_VENOM_FEMALE"]
 
-    if any(k in g for k in ["HAO_MON", "THUONG_CHIEN", "TONG_TAI", "TAI_CHINH"]):
+    if any(k in g for k in ["THUONG_CHIEN", "TONG_TAI", "TAI_CHINH", "DO_THI", "HOP_DONG"]):
         return VOICE_PROFILES["CEO_AUTHORITY_MALE"] if preferred_gender == "male" else VOICE_PROFILES["QUEEN_COLD_VENOM_FEMALE"]
 
     if any(k in g for k in ["PHAP_LY", "TOA_AN", "TRANH_TUNG", "KHE_UOC"]):
@@ -728,18 +739,122 @@ def get_voice_profile_for_genre(genre: str, preferred_gender: str = "auto") -> V
     return VOICE_PROFILES["QUEEN_COLD_VENOM_FEMALE"] if preferred_gender == "female" else VOICE_PROFILES["DETECTIVE_COLD_MALE"]
 
 
-def build_genre_vocal_filter_chain(profile: VoiceProfile, voice_volume: float = 1.0, scene_mood: str = "normal") -> str:
+def detect_script_narrator_gender(text: str, genre: str = "") -> str:
+    """
+    Phân tích nội dung kịch bản thực tế & thể loại để xác định chính xác giới tính người kể chuyện ('female' hoặc 'male').
+    Đảm bảo 100% kịch bản ngôi thứ nhất của nữ (váy cưới, mẹ chồng, làm dâu, mang thai, sinh con, nữ chính...) dùng Hoài My,
+    và kịch bản trinh thám / kinh dị / quái đàm / mạt thế / nam chính dùng Nam Minh.
+    """
+    sample = (text or "")[:3500].lower()
+    g = normalize_genre_keyword(genre or "")
+
+    female_cues = [
+        "váy cưới của tôi", "mẹ chồng tôi", "nhà chồng", "chồng tôi", "chồng cũ",
+        "làm dâu", "nàng dâu", "con dâu", "bụng bầu", "mang thai", "tôi sinh",
+        "viện sản", "em chồng", "chị dâu tôi", "vị hôn phu của tôi", "bạn trai tôi",
+        "tôi là cô dâu", "gả thay", "thiên kim", "quý phi", "bổn cung", "thần thiếp",
+        "hầu phủ", "tiểu thư", "tôi bưng khay trà", "thư ký", "nữ kế toán",
+    ]
+    male_cues = [
+        "vợ tôi", "vợ cũ của tôi", "bạn gái tôi", "mẹ vợ tôi", "nhà vợ",
+        "tôi là thám tử", "bác sĩ pháp y", "cảnh sát hình sự", "đội trưởng đội trọng án",
+        "anh ơi", "chú em", "gã thanh niên như tôi",
+    ]
+
+    f_score = sum(2 for c in female_cues if c in sample)
+    m_score = sum(2 for c in male_cues if c in sample)
+
+    if any(k in g for k in ["SA_DIEU", "HAI_HUOC", "TIENG_LONG", "THANH_XUAN", "VUON_TRUONG",
+                            "CUNG_DAU", "NU_QUYEN", "TRONG_SINH", "VA_MAT", "HAO_MON",
+                            "NGON_TINH", "CHUA_LANH", "HEALING", "GIA_DAU", "ME_CHONG",
+                            "LY_HON", "DOI_SONG", "ROMANCE"]):
+        f_score += 3
+    if any(k in g for k in ["TRINH_THAM", "KY_AN", "HUYEN_NGHI", "PHAP_Y", "QUAI_DAM",
+                            "KINH_DI", "TRUYEN_MA", "HORROR", "MAT_THE", "SINH_TON", "DETECTIVE"]):
+        m_score += 3
+
+    return "male" if m_score > f_score else "female"
+
+
+def select_voice_and_prosody_for_script(text: str, genre: str = "", explicit_voice: str = "") -> Dict[str, Any]:
+    """
+    Tự động chọn Giọng đọc (HoaiMyNeural / NamMinhNeural), Tốc độ đọc (Rate), Mood & VoiceProfile
+    khớp 100% với nội dung kịch bản và thể loại (Codex 8.0):
+    - Sa điêu / Tiếng lòng / Hài công sở: HoaiMyNeural, rate=+8% (nhịp lanh lẹ, dí dỏm, sắc sảo)
+    - Gia đấu / Mẹ chồng / Vả mặt / Trọng sinh: HoaiMyNeural, rate=+7% (đanh thép, rõ ràng, dứt khoát)
+    - Hào môn / Ngôn tình đô thị: HoaiMyNeural, rate=+6% (truyền cảm, cuốn hút)
+    - Thanh xuân / Chữa lành / Cung đấu cổ phong: HoaiMyNeural, rate=+5% (ấm áp, sâu lắng, nhịp thở khoan thai)
+    - Mạt thế / Sinh tồn: NamMinhNeural, rate=+6% (gấp gáp, kịch tính)
+    - Trinh thám / Kỳ án / Pháp y: NamMinhNeural, rate=+5% (điềm tĩnh, sắc lạnh, phân tích)
+    - Quy tắc quái đàm: NamMinhNeural, rate=+4% (bí ẩn, rợn ngợp)
+    - Kinh dị đêm khuya / Truyện ma: NamMinhNeural, rate=+3% (trầm sâu, chậm rãi, lạnh gáy)
+    """
+    gender = detect_script_narrator_gender(text, genre)
+    g = normalize_genre_keyword(genre or "")
+
+    # Chọn profile đúng giới tính người kể chuyện trong kịch bản
+    profile = get_voice_profile_for_genre(genre or "GIA_DAU", preferred_gender=gender)
+    voice_name = "vi-VN-NamMinhNeural" if gender == "male" else "vi-VN-HoaiMyNeural"
+
+    scene_mood = "normal"
+    if gender == "female":
+        if any(k in g for k in ["SA_DIEU", "HAI_HUOC", "TIENG_LONG", "CA_MAN"]):
+            rate = "+8%"
+            scene_mood = "normal"
+        elif any(k in g for k in ["GIA_DAU", "ME_CHONG", "VA_MAT", "TRONG_SINH", "LY_HON"]):
+            rate = "+7%"
+            scene_mood = "climax"
+        elif any(k in g for k in ["HAO_MON", "DO_THI", "HOP_DONG"]):
+            rate = "+6%"
+            scene_mood = "normal"
+        elif any(k in g for k in ["CUNG_DAU", "CO_PHONG", "NU_QUYEN"]):
+            rate = "+5%"
+            scene_mood = "tense"
+        else:
+            # Thanh xuân, Chữa lành, Ngược tâm
+            rate = "+5%"
+            scene_mood = "normal"
+    else:
+        if any(k in g for k in ["MAT_THE", "SINH_TON", "BANG_GIA", "HANH_DONG"]):
+            rate = "+6%"
+            scene_mood = "tense"
+        elif any(k in g for k in ["TRINH_THAM", "KY_AN", "HUYEN_NGHI", "PHAP_Y", "DETECTIVE"]):
+            rate = "+5%"
+            scene_mood = "tense"
+        elif any(k in g for k in ["QUAI_DAM"]):
+            rate = "+4%"
+            scene_mood = "whisper"
+        else:
+            # Kinh dị đêm muộn, Truyện ma
+            rate = "+3%"
+            scene_mood = "whisper"
+
+    return {
+        "voice": voice_name,
+        "rate": rate,
+        "gender": gender,
+        "scene_mood": scene_mood,
+        "profile": profile,
+    }
+
+
+def build_genre_vocal_filter_chain(
+    profile: VoiceProfile,
+    voice_volume: float = 1.0,
+    scene_mood: str = "normal",
+    apply_rubberband: bool = False
+) -> str:
     """
     Sinh chuỗi tham số -filter:a hoàn chỉnh của FFmpeg:
-    Bao gồm Rubberband Formant/Pitch shift, Highpass, Warmth EQ, Scoop EQ, Clarity EQ, De-Esser, Compressor
-    và bộ lọc điều biến tâm trạng cảnh quay (Multi-Mood Scene Acoustic Modulation).
+    Mặc định KHÔNG bóp méo pitch bằng rubberband trên giọng dẫn chuyện chính để giữ nguyên âm sắc người thật của Neural TTS,
+    kết hợp Highpass, Warmth EQ, Scoop EQ, Clarity EQ, De-Esser, Compressor và Scene Mood.
     """
     eq = profile.eq_settings
     comp = profile.compressor_settings
     chain_parts = []
 
-    # 1. Rubberband Studio Formant / Pitch (nếu có khác 1.0)
-    if profile.rubberband_pitch and abs(profile.rubberband_pitch - 1.0) > 0.01:
+    # 1. Chỉ dùng Rubberband khi được yêu cầu tường minh (tránh méo tiếng robotic trên giọng dẫn chuyện)
+    if apply_rubberband and profile.rubberband_pitch and abs(profile.rubberband_pitch - 1.0) > 0.01:
         chain_parts.append(f"rubberband=pitch={profile.rubberband_pitch:.3f}:tempo=1.0")
 
     # 2. Bộ lọc Studio Broadcast Mastering chuẩn

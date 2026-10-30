@@ -1,0 +1,191 @@
+# -*- coding: utf-8 -*-
+from pathlib import Path
+
+content = '''# -*- coding: utf-8 -*-
+"""
+core/stories/life_drama.py
+Truyện Audio Đời Sống / Tranh Chấp Gia Tài & Thức Tỉnh Đạo Đức Chuẩn Master Codex 8.0:
+Bữa Cơm Giỗ Chạp Phân Chia Gia Tài: Sự Thức Tỉnh Của Đứa Con Gái Bị Coi Thường Suốt 10 Năm
+- Độ dài chuẩn điện ảnh: 3 Tập x ~1.500 - 1.800 từ (Tổng ~4.700 từ / ~30+ phút audio).
+- 100% Khẩu ngữ đời thường thuần Việt, xưng "Tôi", mỏ hỗn có học thức, không cải lương, không hoạt hình ba xu.
+- Đòn phân xử sắc bén dựa trên luật Thừa kế, chứng thực di chúc hợp pháp và sao kê viện phí 10 năm.
+"""
+
+from typing import Dict, Any
+
+def get_30min_life_drama_story(title: str = "") -> Dict[str, Any]:
+    story_title = title if title and "hôn nhân" not in title.lower() and "quỷ khế" not in title.lower() and "căn phòng số 13" not in title.lower() else "Bữa Cơm Giỗ Chạp Phân Chia Gia Tài: Sự Thức Tỉnh Của Đứa Con Gái Bị Coi Thường Suốt 10 Năm"
+
+    part1_body = """Tôi vừa bưng mâm cơm cúng giỗ đầu của bố đặt lên bàn thờ gia tiên, khói hương nghi ngút còn chưa kịp tan, thì chị dâu tôi – chị Bích Hạnh – đã đẩy mạnh chiếc ghế gỗ ra sau, cất giọng the thé cắt ngang bầu không khí trang nghiêm:
+
+"Hôm nay có mặt đầy đủ các bác, các chú trong dòng họ ở đây, tôi cũng xin nói thẳng luôn cho vuông vắn: Căn nhà cổ bốn trăm mét vuông này của bố để lại, vợ chồng tôi là con trưởng phải có toàn quyền quyết định! Tuần sau chúng tôi sẽ ký hợp đồng bán cho bên dự án để lấy tiền cho cháu đích tôn đi du học và mở rộng chuỗi cửa hàng! Cô Hà là phận con gái đi lấy chồng như bát nước đổ đi, biết điều thì thu dọn đồ đạc cá nhân trong phòng mình dọn đi trong tuần này, đừng có tơ hào đến đất cát hương hỏa của tổ tiên!"
+
+Tiếng xì xào của mười mấy người họ hàng ngồi dưới phòng khách lập tức rộ lên. Mấy người chú thím đằng nội bắt đầu gật gù bảo chị dâu nói cũng có lý, thời buổi này đất hương hỏa giao cho con trai trưởng gánh vác là đúng đạo lý cổ truyền.
+
+Anh trai ruột của tôi – anh Trần Quốc Tuấn – ngồi ở vị trí chủ tọa, tay cầm điếu thuốc lá phà khói mù mịt, mắt nhìn trân trân xuống nền gạch men. Anh ta không hề nhìn tôi lấy một lần, chỉ cất giọng khô khốc đầy vẻ áp đặt:
+
+"Ý của chị dâu cô cũng là ý của tôi. Cô Hà đừng có so bì tị nạnh làm gì cho xấu mặt gia đình. Bố mất rồi, tôi là trưởng nam thay bố gánh vác việc họ. Tôi sẽ trích ra hai trăm triệu cho cô coi như tiền công cô chăm sóc bố mấy năm qua. Cầm lấy số tiền đó rồi tự lo liệu cuộc sống đi!"
+
+Tôi đứng trước di ảnh của bố trên bàn thờ. Bức ảnh chụp bố ngày còn khỏe mạnh, nụ cười hiền hậu và đôi mắt bao dung như đang nhìn xuống đứa con gái út của mình. Trong lòng tôi lúc này không hề có sự sợ hãi, cũng chẳng có những giọt nước mắt ấm ức như mười năm trước. Trải qua một thập kỷ tận mắt chứng kiến sự lạnh lùng, vô ơn và tính toán vụ lợi của chính những người mang cùng dòng máu, trái tim tôi đã tôi luyện nên một sự điềm tĩnh và thép nguội đến gai người.
+
+Mười năm trước, khi mẹ tôi vừa qua đời sau cơn bạo bệnh, bố tôi vì đau buồn mà ngã quỵ rồi bị tai biến mạch máu não, liệt nửa người bên trái và mất khả năng tự chủ sinh hoạt. 
+
+Khi ấy, anh Tuấn vừa mới cưới chị Hạnh. Biết bố nằm liệt giường cần người chăm sóc lâu dài và tốn kém tiền bạc, anh chị lập tức tìm đủ mọi lý do để dọn ra ngoài ở riêng. Anh bảo công việc kinh doanh bận rộn, chị bảo con nhỏ quấy khóc không chịu được mùi thuốc men của người già. 
+
+Căn nhà cổ bốn trăm mét vuông này, trong suốt mười năm ròng rã, chỉ còn lại một mình tôi – cô sinh viên công nghệ thông tin mới ra trường – ngày ngày vừa đi làm kiếm sống vừa tự tay gánh vác tất cả!
+
+Mười năm trời đằng đẵng, có bao nhiêu đêm đông buốt giá tôi phải thức dậy lúc một giờ sáng để lật trở người cho bố đỡ loét da? Có bao nhiêu ngày tôi vừa phải ôm chiếc máy tính xách tay lập trình tăng ca kiếm thêm tiền, vừa tự tay thay bỉm, rửa vết thương, đút từng thìa cháo loãng cho bố?
+
+Những năm tháng ấy, anh Tuấn và chị Hạnh ở đâu? 
+
+Một năm ba trăm sáu mươi lăm ngày, số lần anh chị ghé qua thăm bố chỉ đếm trên đầu ngón tay, mỗi lần ghé qua không quá mười lăm phút vào dịp Tết Nguyên Đán, chụp vội vài tấm ảnh gia đình ấm cúng để đăng lên mạng xã hội khoe lòng hiếu thảo, rồi vội vã đứng dậy xách làn đi vì chê nhà có mùi người ốm!
+
+Tiền thuốc men, tiền máy thở, tiền thuê xe cấp cứu đưa bố đi viện hàng chục lần... anh chị chưa từng đóng góp lấy một triệu đồng! Mỗi lần tôi gọi điện bảo bố tái phát bệnh cần tiền phẫu thuật, anh Tuấn lại than thở việc làm ăn khó khăn, còn chị Hạnh thì chua ngoa bảo tôi là đứa ở gần bố thì phải tự mà lo liệu.
+
+Thế nhưng ngày hôm nay, khi bố vừa nhắm mắt xuôi tay được tròn một năm, nghe tin khu đất quanh căn nhà cổ này nằm trong diện quy hoạch mở rộng đại lộ đô thị và giá đất tăng vọt lên tới hơn bốn mươi tỷ đồng, thì hai con người ấy lại xúng xính đồ hiệu, dẫn theo cả họ hàng kéo về đòi tống cổ tôi ra đường để cướp trắng tài sản!
+
+Họ nghĩ rằng tôi là một đứa con gái hiền lành, quen thói nhẫn nhịn cam chịu suốt mười năm qua, nên hôm nay trước mặt đông đảo bà con dòng tộc, họ có thể dùng cái mác "trưởng nam" và đạo lý cổ hủ để ép tôi nhượng bộ.
+
+Nhìn bộ mặt tham lam, trơ trẽn của anh trai và chị dâu, tôi từ tốn bước xuống bậc thềm, tháo đôi găng tay làm bếp ra, cất giọng rành rọt từng chữ:
+
+"Anh Tuấn, chị Hạnh! Hai người nhắc đến việc bán đất hương hỏa của bố ngọt ngào quá nhỉ? Nhưng trước khi bàn đến chuyện chia chác bốn mươi tỷ này, em muốn hỏi anh chị một câu: Mười năm qua khi bố nằm liệt giường, hai người đã làm tròn chữ hiếu của một người con trưởng và dâu trưởng được bao nhiêu ngày?"
+
+Chị Hạnh bĩu môi một cái thật dài, gạt phắt đi: "Gớm! Lại bài ca kể công chăm sóc bố! Đứa nào ở gần thì đứa đấy chăm, bố nuôi cô ăn học thành tài thì cô phải có nghĩa vụ phụng dưỡng, có gì mà phải đem ra mặc cả ở đây? Tôi nói cho cô biết, giấy trắng mực đen mới là quan trọng! Hôm nay chúng tôi mang về đây tờ giấy biên nhận phân chia nhà đất do chính bố ký tên năm ngoái, có chữ ký của cả tổ trưởng dân phố làm chứng đây này!"
+
+Chị ta đắc ý giơ cao một tờ giấy ố vàng có chữ ký run rẩy của bố lên trước mặt mọi người. 
+
+Tôi nhìn tờ giấy đó, khóe môi khẽ nhếch lên một nụ cười mỉa mai đến tột cùng:
+
+"Chị Hạnh à, chị có chắc là tờ giấy đó do chính bố tự nguyện ký khi còn hoàn toàn tỉnh táo và minh mẫn không? Để tôi mở cho cả dòng họ cùng xem một đoạn video ghi lại chính xác buổi chiều ngày mùng mười tháng tám năm ngoái – cái ngày mà anh chị mang tờ giấy này về ép bố ký tên nhé!""""
+
+    part1_cliff = """Tôi với tay lấy chiếc máy tính cá nhân trên bàn, kết nối với màn hình chiếu lớn giữa phòng khách. Đoạn clip camera giấu kín góc phòng bệnh hiện lên rõ mồn một cảnh chị dâu và anh cả giằng co, ép ngón tay điểm chỉ của người cha đang hôn mê sâu trên giường bệnh! Cả gian phòng khách bỗng chốc lặng ngắt như tờ!"""
+
+    part2_body = """Hình ảnh trên màn hình máy chiếu hiện lên vô cùng sắc nét kèm theo âm thanh trung thực không sót một tạp âm nào.
+
+Trên giường bệnh, người cha già gầy gò ốm yếu đang phải thở oxy qua ống thông mũi, đôi mắt nhắm nghiền trong trạng thái hôn mê sâu vì vừa trải qua một cơn đột quỵ tái phát. 
+
+Thế nhưng đứng bên cạnh giường bệnh, anh Tuấn và chị Hạnh không hề có lấy một giọt nước mắt xót thương hay lo lắng cho tính mạng của bố. Chị Hạnh tay cầm một miếng mút dính mực đỏ, tay kia giữ chặt lấy ngón tay trỏ run rẩy của bố tôi, cố sức ấn mạnh xuống góc dưới của tờ giấy biên nhận phân chia tài sản! 
+
+Trong khi đó, anh Tuấn đứng canh ở cửa sổ, liên tục hối thúc bằng giọng điệu hèn hạ: "Nhanh lên em! Con Hà nó vừa chạy xuống căng tin lấy thuốc, nó mà quay lại bắt gặp thì hỏng hết chuyện!"
+
+Đoạn video kéo dài vỏn vẹn hai phút, nhưng từng giây từng khắc trong đó như những nhát dao cứa nát chút thể diện và lương tri cuối cùng của đôi vợ chồng trưởng nam!
+
+Mười mấy người họ hàng ngồi trong phòng khách ai nấy đều trợn trừng mắt nhìn lên màn hình, há hốc mồm kinh ngạc. Tiếng thở dài ngao ngán xen lẫn những cái lắc đầu khinh bỉ bắt đầu rộ lên khắp các góc bàn. 
+
+Bác ruột của tôi – ông Trần Quốc Đại, người có tiếng nói trọng lượng nhất trong họ – sắc mặt đen kịt lại, đập mạnh chén nước chè xuống bàn phát ra tiếng 'bộp' nảy lửa:
+
+"Khốn nạn! Quá khốn nạn! Tuấn, Hạnh, hai đứa bay dám làm cái trò táng tận lương tâm này với chính người cha đang hấp hối của mình à? Bố mày nằm thở oxy thoi thóp mà mày dám ép tay bố điểm chỉ để cướp đất cướp nhà? Đạo lý làm người của chúng mày vứt cho chó ăn rồi à?"
+
+Anh Tuấn lúc này mặt cắt không còn một hột máu. Gã run rẩy buông rơi điếu thuốc lá xuống sàn nhà, hai bàn tay lúng túng giấu vào túi quần, ấp úng không thốt nên lời: "Bác Đại... bác nghe cháu giải thích... lúc đó bố tỉnh táo... bố đồng ý miệng với cháu rồi..."
+
+"Đồng ý miệng mà phải lén lút lúc em gái đi vắng, đồng ý miệng mà phải bẻ gập ngón tay của người đang hôn mê để ấn vào mực đỏ à?" - Tôi cất giọng đanh thép, từng lời từng chữ như gáo nước lạnh buốt dội thẳng vào bộ mặt giả dối của kẻ phản bội:
+
+"Trần Quốc Tuấn, anh bảo anh là trưởng nam thay bố gánh vác việc họ sao? Để tôi đọc cho toàn thể dòng họ nghe bản báo cáo chi phí điều trị mười năm qua của bố nhé!"
+
+Tôi mở tiếp tệp tài liệu thứ hai in sẵn từ bệnh viện và các nhà thuốc lớn:
+
+"Mười năm bố nằm một chỗ, tổng cộng ba lần phẫu thuật cấp cứu, bốn lần thông tắc mạch máu não, tiền viện phí, tiền giường bệnh dịch vụ, tiền thuốc chống đông máu mỗi tháng... tổng cộng là một tỷ ba trăm hai mươi triệu đồng! Toàn bộ số tiền đó đều trích từ tài khoản tiết kiệm và tiền lương làm thêm đêm ngày của Trần Thu Hà này!"
+
+Tôi quay sang nhìn thẳng vào mắt chị dâu Bích Hạnh, người đang tái mét mặt mày đứng nép vào góc tủ:
+
+"Còn chị Hạnh, người dâu trưởng luôn mồm tự xưng là hiếu thuận! Mười năm qua chị đóng góp được bao nhiêu tiền thuốc cho bố? Đây là bảng sao kê tài khoản ngân hàng của gia đình anh chị: Đúng không đồng không hào! Thậm chí ngày sinh nhật sáu mươi tuổi của bố, chị mang sang cho bố một hộp sữa hạt gần hết hạn sử dụng, nhưng lại lén lấy trộm của bố chiếc bình gốm cổ thời Nguyễn trị giá năm mươi triệu đem bán lấy tiền đi spa làm đẹp!"
+
+Chị Hạnh run bắn người lên, hai môi mấp máy nhưng không thể cãi lại được nửa lời. Toàn bộ bằng chứng từ hình ảnh camera, hóa đơn chứng từ y tế và biên bản sao kê đều rõ ràng rành mạch đến từng con số, không ai có thể chối cãi được!
+
+Các cô chú trong họ bắt đầu chỉ trích dữ dội: "Trời đất ơi, ăn ở thất đức thế này thì trời phạt! Đứa con gái còng lưng nuôi bố mười năm không một lời than thở, vợ chồng đứa con trai thì nhăm nhe cướp đất rồi đuổi em gái đi! Loại người này không xứng đáng mang họ Trần!"
+
+Bị dồn vào bước đường cùng trước sự phẫn nộ của cả dòng họ, chị Hạnh bắt đầu giở thói lu loa, ngồi bệt xuống đất vỗ đùi gào khóc:
+
+"Các bác đừng nghe nó đặt điều vu khống! Tôi với anh Tuấn không có tiền nhưng chúng tôi có công! Dù thế nào thì căn nhà này bố mất đi không để lại di chúc hợp pháp nào cả! Theo luật thừa kế, tài sản này phải chia theo hàng thừa kế thứ nhất! Vợ chồng tôi là con trai trưởng thì vẫn có quyền yêu cầu bán nhà chia tiền! Cô Hà có giỏi thì đưa di chúc của bố ra đây, không có di chúc thì cô đừng hòng độc chiếm một mình!""""
+
+    part2_cliff = """Chị Hạnh vừa dứt lời gào thét thì cửa chính căn nhà cổ bật mở! Một người đàn ông trung niên mang cặp táp da cùng một công chứng viên của Phòng Công chứng Nhà nước số 1 bước vào! Vị công chứng viên cất giọng dõng dạc: 'Ai bảo ông Trần Văn An không để lại di chúc hợp pháp? Tôi chính là người trực tiếp chứng thực bản di chúc công chứng cuối cùng của ông cụ đây!'"""
+
+    part3_body = """Sự xuất hiện bất ngờ của vị công chứng viên Nhà nước – ông Hoàng Đăng Khoa – cùng Luật sư đại diện pháp lý khiến toàn bộ căn nhà cổ bốn trăm mét vuông như nín thở!
+
+Chị Hạnh đang ngồi bệt dưới đất lu loa gào khóc bỗng chốc im bặt như bị ai bóp nghẹt cổ họng. Ả trợn tròn mắt nhìn hai vị khách mặc âu phục chỉnh tề, trong lòng dâng lên một nỗi bất an kinh hoàng tột độ.
+
+Ông Hoàng Đăng Khoa bước vào giữa phòng khách, cúi đầu kính cẩn thắp một nén hương lên bàn thờ của bố tôi, rồi quay lại nhìn toàn thể họ hàng hai bên, cất giọng sang sảng đầy uy quyền:
+
+"Kính thưa toàn thể gia đình và dòng tộc họ Trần! Tôi là Hoàng Đăng Khoa, Công chứng viên thuộc Phòng Công chứng số 1 thành phố. Hôm nay, theo đúng di nguyện và ủy thác pháp lý của cố thân phụ Trần Văn An trước khi qua đời, tôi xin phép được công bố chính thức Bản Di chúc Hợp pháp số 108 được lập và công chứng tại chỗ vào ngày hai mươi tháng sáu năm ngoái – thời điểm ông An hoàn toàn tỉnh táo và minh mẫn tuyệt đối dưới sự giám sát độc lập của Hội đồng Y khoa Bệnh viện Đa khoa Trung ương!"
+
+Vị công chứng viên rút từ trong cặp da ra bản di chúc có đóng dấu mộc đỏ chói cùng video ghi hình quá trình lập di chúc được niêm phong cẩn mật. 
+
+Ông mở văn bản và đọc vang từng điều khoản rõ ràng:
+
+"Thứ nhất: Về tài sản bất động sản gồm căn nhà cổ và mảnh đất bốn trăm mét vuông tại số 45 đường Cổ Ngư này: Căn cứ vào việc người con trai trưởng Trần Quốc Tuấn vào năm năm trước đã nhận của tôi hai mảnh đất thổ cư rộng sáu trăm mét vuông tại thị trấn để bán lấy vốn làm ăn, kèm theo bản cam kết bằng văn bản không tranh chấp phần đất hương hỏa này nữa; và căn cứ vào việc người con gái út Trần Thu Hà đã tận tụy chăm sóc, nuôi dưỡng tôi suốt mười năm đau ốm bệnh tật..."
+
+Vị công chứng viên dừng lại một nhịp, nhìn thẳng vào khuôn mặt đang tái ngắt của anh Tuấn:
+
+"Toàn bộ quyền sở hữu hợp pháp đối với căn nhà cổ bốn trăm mét vuông này được tôi chuyển giao trọn vẹn một trăm phần trăm cho con gái út Trần Thu Hà đứng tên sở hữu riêng! Con gái Trần Thu Hà có toàn quyền quản lý, định đoạt và sử dụng căn nhà làm nơi thờ tự gia tiên họ Trần theo đúng tâm nguyện của tôi!"
+
+Từng lời tuyên đọc của vị công chứng viên như những tiếng sét nổ tung giữa ban ngày chôn vùi toàn bộ ảo mộng cướp đoạt tài sản bốn mươi tỷ của vợ chồng anh Tuấn!
+
+Anh Tuấn bàng hoàng ngã quỵ xuống chiếc ghế trường kỷ, hai mắt vô hồn nhìn vào tờ cam kết nhận đất năm xưa được chiếu to rõ trên màn hình. Gã nhớ lại năm năm trước, khi gã nợ nần cờ bạc bị giang hồ siết nợ, chính bố tôi đã cắn răng bán đi hai mảnh đất hương hỏa ở quê để cứu mạng gã, kèm theo lời dặn dò nghẹn ngào: "Bố cho con nốt phần tài sản này để làm lại cuộc đời, sau này căn nhà cổ ở phố con hãy để lại cho cái Hà nó nương thân...". Thế nhưng lòng tham vô đáy đã làm gã quên sạch lời thề thốt năm xưa!
+
+Chị Hạnh lúc này như phát rồ, ả nhảy cẫng lên gào thét: "Không công bằng! Bố thiên vị! Chúng tôi sẽ kiện! Chúng tôi sẽ kiện ra tòa để đòi lại công bằng cho con trai tôi!"
+
+Vị luật sư đi cùng công chứng viên lúc này mới tiến lên một bước, ánh mắt sắc như dao cạo nhìn thẳng vào ả:
+
+"Bà Bích Hạnh! Tôi xin cảnh báo bà một điều khoản pháp lý vô cùng nghiêm trọng: Hành vi ép ngón tay người đang hôn mê điểm chỉ vào văn bản giả mạo để chiếm đoạt tài sản trên video kia đã cấu thành dấu hiệu của tội 'Lừa đảo chiếm đoạt tài sản' và 'Làm giả tài liệu của cơ quan, tổ chức' theo Điều 174 và Điều 341 Bộ luật Hình sự! Thân chủ tôi – cô Trần Thu Hà – đã nắm giữ đầy đủ chứng cứ và vi bằng pháp lý. Nếu bà còn tiếp tục có hành vi gây rối trật tự, xúc phạm danh dự người đã khuất và đe dọa chiếm giữ bất động sản, chúng tôi sẽ lập tức nộp đơn khởi tố vụ án hình sự sang Cơ quan Cảnh sát Điều tra ngay trong chiều hôm nay!"
+
+Lời cảnh cáo đanh thép về nhà tù và án phạt hình sự như một gáo nước lạnh làm chị dâu tôi lập tức câm như hến. Ả run lẩy bẩy, mặt tái mét như tàu lá chuối, sợ hãi lùi dần ra phía cửa chính không dám thốt thêm nửa lời.
+
+Bác trưởng họ Trần Quốc Đại đứng dậy, nghiêm nghị tuyên bố trước mặt toàn thể dòng họ:
+
+"Hôm nay sự việc đã sáng tỏ như ban ngày! Chú An dưới suối vàng là người anh minh thấu tình đạt lý. Cái Hà nó có hiếu, nó có tâm có đức thì nó xứng đáng được hưởng trọn vẹn căn nhà của bố để lại! Còn vợ chồng thằng Tuấn, bất hiếu bất nhân, tham lam vô độ, từ nay về sau không có tư cách bước chân vào ngôi nhà thờ tự này nữa! Mau cuốn gói đi ngay cho khuất mắt tổ tiên!"
+
+Toàn thể họ hàng đồng loạt đứng dậy quay lưng rời đi, không một ai thèm nhìn hay an ủi vợ chồng anh cả lấy một câu. Bữa cơm giỗ chạp kết thúc trong sự ê chề, nhục nhã tột cùng của những kẻ bất hiếu.
+
+Anh Tuấn quỳ sụp dưới sàn nhà trước mặt tôi, nước mắt nước mũi giàn giụa ôm lấy hai đầu gối:
+
+"Hà ơi... anh xin em! Anh là thằng anh khốn nạn, anh bị vợ xúi giục nên mới mờ mắt vì tiền bạc! Em nghĩ đến tình anh em ruột thịt cùng một mẹ sinh ra mà trích cho anh vài trăm triệu để anh trả nợ ngân hàng được không em? Không có tiền thì tháng sau người ta siết nhà siết cửa của anh mất em ơi..."
+
+Tôi cúi nhìn người anh trai từng cùng tôi lớn lên dưới một mái nhà, trong mắt tôi lúc này chỉ còn lại sự xót xa cho một kiếp người lầm lạc vì lòng tham:
+
+"Anh Tuấn, mười năm trước khi bố liệt giường, em đã từng khóc lóc cầu xin anh về chăm bố một ngày để em có thể thi tốt nghiệp đại học, anh đã nói gì? Anh bảo mỗi người một phận, thân ai nấy lo! Bố đã từng cứu mạng anh một lần bằng hai mảnh đất ở quê, nhưng anh lại lấy sự bao dung đó để tiếp tục bài bạc và nuôi dưỡng lòng tham. Khoản nợ ngày hôm nay là do chính tay anh tạo ra, anh hãy tự mình đi làm chân chính mà trả nợ! Căn nhà này là nơi yên nghỉ của bố và tổ tiên, em sẽ không bao giờ bán đi một tấc đất nào cả!"
+
+Nói xong, tôi quay lưng bước tới thắp một nén hương mới lên bàn thờ của bố. Làn khói trầm thơm ngát tỏa bay trong gian nhà cổ tĩnh lặng và thanh bình.
+
+Bên ngoài thềm hiên, những tia nắng vàng ấm áp của buổi chiều buông xuống rực rỡ, chiếu sáng từng gốc cây cổ thụ mà bố tôi từng tự tay vun trồng. 
+
+Công lý có thể đến muộn, nhưng luật nhân quả chưa từng bỏ sót một ai. Sống trên đời, lòng hiếu thảo, sự chân thành và tri thức sẽ luôn là chiếc khiên vững chắc nhất bảo vệ chúng ta trước mọi sóng gió cuộc đời!"""
+
+    return {
+        "title": story_title,
+        "parts": [
+            {
+                "part_number": 1,
+                "badge_label": "Tập 1",
+                "title": f"{story_title} - Phần 1",
+                "hook": "Vừa đặt mâm cỗ giỗ xuống bàn thờ, chị dâu đã tuyên bố bán nhà cổ bốn mươi tỷ đuổi tôi đi vì con gái như bát nước đổ đi!",
+                "body": part1_body,
+                "cliffhanger": part1_cliff,
+                "call_to_action": "Bấm theo dõi kênh để đón xem màn vạch mặt chấn động ở Tập 2 nhé!",
+                "full_text": f"{part1_body}\\n\\n{part1_cliff}\\n\\nBấm theo dõi kênh để đón xem màn vạch mặt chấn động ở Tập 2 nhé!"
+            },
+            {
+                "part_number": 2,
+                "badge_label": "Tập 2",
+                "title": f"{story_title} - Phần 2",
+                "hook": "Đoạn clip ép tay bố đang hôn mê điểm chỉ giấy tờ hiện lên màn hình khiến cả dòng họ phẫn nộ tột cùng!",
+                "body": part2_body,
+                "cliffhanger": part2_cliff,
+                "call_to_action": "Tập cuối sẽ là hồi kết đắt giá nhất cho kẻ bất hiếu, đừng quên thả tim và follow nhé!",
+                "full_text": f"{part2_body}\\n\\n{part2_cliff}\\n\\nTập cuối sẽ là hồi kết đắt giá nhất cho kẻ bất hiếu, đừng quên thả tim và follow nhé!"
+            },
+            {
+                "part_number": 3,
+                "badge_label": "Tập 3 (Hồi Kết)",
+                "title": f"{story_title} - Tập Cuối",
+                "hook": "Bản di chúc công chứng hợp pháp được mở ra, kẻ bất hiếu mất trắng và bài học đắt giá của luật nhân quả!",
+                "body": part3_body,
+                "cliffhanger": "Sự công bằng và thanh thản tuyệt đối!",
+                "call_to_action": "Bạn nghĩ gì về sự thức tỉnh và bản lĩnh của người con gái trong câu chuyện này? Hãy để lại bình luận nhé!",
+                "full_text": f"{part3_body}\\n\\nBạn nghĩ gì về sự thức tỉnh và bản lĩnh của người con gái trong câu chuyện này? Hãy để lại bình luận nhé!"
+            }
+        ]
+    }
+'''
+
+Path("core/stories/life_drama.py").write_text(content, encoding="utf-8")
+print("Successfully rewritten core/stories/life_drama.py!")

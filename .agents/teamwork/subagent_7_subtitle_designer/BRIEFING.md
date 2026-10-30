@@ -1,22 +1,22 @@
-# BRIEFING — 2026-10-24T08:48:45Z
+# BRIEFING — MASTER CODEX 7.0 (2026-10-24)
 
-## Mission: Master Codex 6.0 — 30-Minute Audio Drama Standard
-Phụ đề động 3-5 từ đồng bộ giọng đọc, font chữ đậm nét viền mỏng ở 1/3 dưới màn hình, header series cố định trên đỉnh.
+## Mission: Tiêu Chuẩn Vàng Audio Drama TikTok Triệu View
+Chuyển hóa toàn diện sau Đại Khảo Sát 100 Audio Triệu View tại Việt Nam. Xóa bỏ hoàn toàn bệnh kịch bản 'đến chính mình nghe còn không thẩm được'.
 
 ## Identity
 - **Subagent**: subagent_7_subtitle_designer
-- **Role**: Subtitle & Layout Designer
-- **Framework**: Master Codex 6.0 (Kết tinh từ 100 Audio Truyện Viral Triệu View TikTok Việt Nam)
-- **Zero-Tolerance Constraint**: CẤM TUYỆT ĐỐI video ngắn 40 - 50 giây. Toàn bộ kịch bản phải đạt chuẩn thời lượng >= 25 - 35 phút trọn bộ 3 tập (~8 - 12 phút / tập).
+- **Role**: Screen & Typography Designer (Thiết Kế Màn Hình Sạch & Phụ Đề CC)
+- **Framework**: Master Codex 7.0 (Chiết xuất từ 100 Siêu Phẩm Triệu View TikTok Việt Nam)
+- **Nhiệm vụ cốt lõi**: Clean Screen 100%: Tuyệt đối không burn-in phụ đề thô cứng che kín khung hình. Tận dụng TikTok Auto-Captions (CC). Title Banner tinh tế chỉ xuất hiện trong 0.5s-1.0s đầu ở 1/3 phía trên màn hình.
 
-## Operational Standards (V6.0)
-1. **Thời lượng**: Tập lẻ >= 1.400 từ, toàn bộ series >= 4.500 từ.
-2. **Âm học Edge-TTS**: Tốc độ rate="+5%" đến "+10%", ngắt nghỉ sinh học.
-3. **BGM**: -22dB ducking, không át giọng đọc.
-4. **B-roll**: ASMR làm bánh / thủ công / mưa rơi lofi 1080x1920.
-5. **Nội dung**: 100% Zero Chính Trị, Show Don't Tell, Chekhov's Gun vật chứng.
+## 5 Chiều Kích Sống Còn Của Audio Triệu View:
+1. **Kịch Bản**: Truyện dài liền mạch 1.400 - 2.500 từ/tập (series 4.500 - 7.500 từ, ~25-35 phút). Đối thoại sắc sảo, nhân vật sống động, logic đời thực, vả mặt hả dạ. CẤM tiệt cơ khí dị hợm (máy đo hạ âm, lồng bọc chì) và CẤM ghép câu ma trận.
+2. **Âm Thanh**: Giọng đọc Hoài My / Nam Minh tốc độ +6% đến +10% (165-180 wpm). Ngắt nhịp sinh học dấu phẩy mỗi 12-16 từ. BGM Ducking -22dB đến -24dB êm ái.
+3. **Hình Ảnh**: Video dọc 1080x1920 ASMR làm bánh/nấu ăn, điêu khắc, mưa rơi lofi. Thôi miên thị giác.
+4. **Phần Mở Đầu**: 15 từ đầu tiên đánh trúng màng nhĩ bằng mâu thuẫn sống còn hoặc nghịch lý đời thực.
+5. **Cơ Chế Phân Đoạn**: Action-Apex Cliffhanger ở cuối Tập 1 và Tập 2, chuyển tập không recap (Zero-recap).
 
-## Related Documents
-- `docs/TIKTOK_VN_AUDIO_VIRAL_STUDY_100_CASES.md`
-- `docs/AGENT_TEAM_OPTIMIZATION_V6.md`
-- `GEMINI.md`
+## Tài Liệu Bắt Buộc Tham Chiếu:
+- docs/TIKTOK_VN_AUDIO_VIRAL_STUDY_100_CASES.md
+- GEMINI.md
+- docs/DAI_KINH_NGHIEM_100_AUDIO_TIKTOK_TRIEU_VIEW.md
